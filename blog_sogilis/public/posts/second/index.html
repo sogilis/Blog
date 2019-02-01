@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Second &middot;  My New Hugo Site" />
+  
+  <meta property="og:site_name" content="My New Hugo Site" />
+  <meta property="og:url" content="https://agervail.github.io/blog_sogilis/public/posts/second/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2019-02-01T19:44:22&#43;01:00" />
+    
+  
+
+  <title>
+     Second &middot;  My New Hugo Site
+  </title>
+
+  <link rel="alternative stylesheet" href="https://agervail.github.io/blog_sogilis/public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://agervail.github.io/blog_sogilis/public/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://agervail.github.io/blog_sogilis/public/css/main.css" />
+  <link rel="stylesheet" href="https://agervail.github.io/blog_sogilis/public/css/github.css" />
+  <link rel="stylesheet" href="https://agervail.github.io/blog_sogilis/public/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="https://agervail.github.io/blog_sogilis/public/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://agervail.github.io/blog_sogilis/public/images/apple-touch-icon.png" />
+
+  
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(https://agervail.github.io/blog_sogilis/public/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="https://agervail.github.io/blog_sogilis/public/">My New Hugo Site</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="https://agervail.github.io/blog_sogilis/public/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Second</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    <div class="paragraph">
+<p>Les patterns <a href="https://martinfowler.com/bliki/ObjectMother.html">Object Mother</a> et <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder</a> apportent chacun leur lot d’avantages à nos tests automatisés, mais peuvent aussi être combinés pour aller plus loin dans la lisibilité et la maintenabilité de nos tests. Nous verrons dans cet article comment il est possible de réaliser cela.</p>
+</div>
+<div class="sect1">
+<h2 id="_pre_requis">Pre-requis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Si vous n’êtes pas familiers avec les patterns <a href="https://martinfowler.com/bliki/ObjectMother.html">Object Mother</a> et <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder</a>, je vous conseille d’approfondir ce sujet avant de continuer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_le_principe">Le principe</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Object Mother permet de fournir des objets pré-configurés pour nos tests :</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>public static HeroBuilder one() {
+   return new HeroBuilder()
+       .name("Leodagan")
+       .allegiance(KingdomMother.one().build())
+       .caste(KNIGHT)
+       .dateOfBirth(LocalDateMother.one());
+}
+public static HeroBuilder deadAt(LocalDate date) {
+   return one()
+       .deathDate(date.minusDays(2));
+}
+public static HeroBuilder merlin() {
+   return one()
+       .name("Merlin")
+       .allegiance(KingdomMother.logres().build())
+       .caste(WIZARD);
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le principe est le suivant :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Chaque Object Mother fournit une factory de base avec une configuration par défaut : c’est la méthode <code>one()</code>.</p>
+</li>
+<li>
+<p>Toutes les autres factories utilisent cette factory de base.</p>
+</li>
+<li>
+<p>Dans cette versions, les Object Mother retournent des builders et non des instances.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_avantages">Avantages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>(1)</strong> Le pattern Object Mother permet d’améliorer la lisibilité des tests en retirant les constantes inutiles à la compréhension du test. Exemple :</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>@Test
+@DisplayName("Can you see all information I have to write in order to build a single hero?")
+void without_mother_object() {
+   Kingdom kingdom = new Kingdom("Logres", new Town("Kaamelott"));
+   LocalDate dateOfBirth = LocalDate.of(-360, 11, 21);
+   Hero hero = new Hero("Merlin", kingdom, WIZARD, dateOfBirth, null);
+   long age = hero.getAgeAt(LocalDate.of(524, 11, 21));
+   Assertions.assertThat(age)
+       .isEqualTo(884);
+}
+@Test
+void with_mother_object() {
+   Hero hero = HeroMother.one()
+       .dateOfBirth(LocalDateMother.one().withYear(-360))
+       .build();
+   long age = hero.getAgeAt(LocalDateMother.one().withYear(524));
+   Assertions.assertThat(age)
+       .isEqualTo(884);
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>L’exemple ici est plutôt trivial, mais imaginez cela dans une vraie application avec des classes ayant de nombreux attributs et/ou de nombreuses compositions.<br></p>
+</div>
+<div class="paragraph">
+<p><strong>(2)</strong> Lors d’une évolution future, si un nouvel attribut obligatoire est ajouté à une classe, alors il suffit de modifier la factory de base pour que tous les tests passent. En effet, la grande majorité des tests n’instancient plus d’objet eux-même, mais passent par une factory. La maintenance est ainsi facilitée (il devient inutile de modifier tous les tests, dans le scénario décrit ci-avant).<br></p>
+</div>
+<div class="paragraph">
+<p><strong>(3)</strong> L’utilisation de builders permet de customiser les objets générés par les Object Mother pour le besoin du test (<code>HeroMother.one().dateOfBirth(&#8230;&#8203;).build()</code>). Sans cela, il faudrait multiplier les factories pour chaque besoin avec une méthode prenant en paramètre toutes les informations nécessaires au cas testé. On peut imaginer que cela nécessiterait une factory par test.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_inconvénients_et_difficultés">Inconvénients et difficultés</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>(1)</strong> Il y a plus de code, essentiellement à cause des builders, et du code pas intéressant à produire qui plus est.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://projectlombok.org/">Lombok</a> peut potentiellement résoudre ce problème puisqu’il permet de générer automatiquement ces builders.<br></p>
+</div>
+<div class="paragraph">
+<p><strong>(2)</strong> La frontière entre méthode de factory et méthode de builder n’est pas toujours facile à identifier. Exemple avec trois possibilités pour créer une même configuration :</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>HeroMother.king().build()
+HeroMother.one().king().build()
+HeroMother.one().caste(KING).build()</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>(3)</strong> <code>.build()</code> est nécessaire partout pour générer l&#8217;objet final (pollution cognitive).<br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ce_quil_faut_retenir">Ce qu’il faut retenir</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Combiné à des assertions custom <a href="http://joel-costigliola.github.io/assertj/">AssertJ</a>, on arrive, avec cette technique, à des tests concis, qui restent lisibles et maintenables, même si on sent qu&#8217;il serait possible de faire mieux avec un langage plus évolué que <strong>Java</strong>, ce que nous verrons dans un prochain article avec <a href="http://kotlinlang.org/">Kotlin</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes">Notes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Ce principe est très largement inspiré par un <a href="http://blog.codeleak.pl/2014/06/test-data-builders-and-object-mother.html">article de Rafał Borowiec</a>.</p>
+</li>
+<li>
+<p>Le projet dont sont issus les extraits les extraits de code est disponible <a href="https://github.com/sogilis/motherobject-builder-java-example">sur Github</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Feb 1, 2019 at 19:44
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+    </div>
+  </div>
+  <footer>
+    
+      
+    
+    
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts disabled" href="#">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts" href="https://agervail.github.io/blog_sogilis/public/posts/conditions_travail/">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+  
+</body>
+</html>
+
