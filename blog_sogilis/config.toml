@@ -2,4 +2,5 @@ baseURL = "https://agervail.github.io/blog_sogilis/public/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "hamburg"
-disqusShortname = "trololu"
+[params]
+  disqus = "trololu"
