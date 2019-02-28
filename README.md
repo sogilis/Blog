@@ -2,6 +2,7 @@
  - [ ] Validate this architecture with non dev writers
  - [ ] Configure github pages to /docs/ from master (blog_sogilis/public should be moved to /docs)
  - [ ] Update design according new Sogilis website
+ - [ ] Complete configuration like `Disqus` account (see `blog_sogilis/config.toml`)
  - [ ] Migrate old articles (ex: [End-to-end testing with chrome headless at Squarescale]https://github.com/sogilis/articles_blog))?
 
 #  Backlog
