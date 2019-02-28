@@ -4,38 +4,60 @@
  - [ ] Update design according new Sogilis website
  - [ ] Migrate old articles (ex: [End-to-end testing with chrome headless at Squarescale]https://github.com/sogilis/articles_blog))?
 
-# First thing to do
+# How to write a new article?
 
-You need to take care of the theme submodule
+1. Install prerequisites:
 
-To do it when you clone the repo do this
-```
-git clone --recursive git@github.com:sogilis/Blog.git
-```
-If it's already too late and you cloned your repo just run this command :
-```
-git submodule update --init
-```
+  - [Docker](https://www.docker.com)
+  - [Git](https://git-scm.com)
 
-# Usage
+2. Download sources:
 
-Then you can run the following commands:
+  ```
+  git clone --recursive git@github.com:sogilis/Blog.git
+  ```
 
-```
-make build-image
-make start-image
-make run-debug-server
-```
+  If it's already too late and you cloned your repo just run this command:
 
-Once you have done that you can modify your articles in ***content/posts*** and it'll automaticaly be updated on the local server :
-http://localhost:1313
+  ```
+  git submodule update --init
+  ```
 
-And then if you're satisfied with your beautiful article you can generate the static site with that command :
-```
-make run-generate
-```
+3. Start blog locally:
 
-If you want to exit the docker you can run
+  ```
+  make build-image
+  make start-image
+  make run-debug-server
+  ```
+
+4. Write your article:
+
+   Create a new text file in `blog_sogilis/content/posts`.
+   Following formats are supported:
+      - [Asciidoc](https://asciidoctor.org) with `.adoc` files
+      - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
+
+5. See the result:
+
+  [http://localhost:1313](http://localhost:1313)
+
+6. Finalize your article, and see the output in real time.
+
+7. When finished, create a new Pull Request to get feedbacks.
+
+8. When Pull Request is ready to be merged, generate static site:
+
+  ```
+  make run-generation
+  ```
+
+9. Push generated static site
+
+10. Merge the Pull Request
+
+# How to stop blog locally?
+
 ```
 make stop-image
 make remove-image
