@@ -4,6 +4,9 @@
  - [ ] Update design according new Sogilis website
  - [ ] Migrate old articles (ex: [End-to-end testing with chrome headless at Squarescale]https://github.com/sogilis/articles_blog))?
 
+#  Backlog
+ - [ ] Automate site generation (`make run-generation`)
+
 # How to write a new article?
 
 1. Install prerequisites:
