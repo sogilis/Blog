@@ -10,7 +10,7 @@ You need to take care of the theme submodule
 
 To do it when you clone the repo do this
 ```
-git clone --recursive git@github.com:agervail/agervail.github.io.git
+git clone --recursive git@github.com:sogilis/Blog.git
 ```
 If it's already too late and you cloned your repo just run this command :
 ```
