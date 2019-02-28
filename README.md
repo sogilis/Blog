@@ -1,3 +1,9 @@
+# Backlog until live
+ - [ ] Validate this architecture with non dev writers
+ - [ ] Configure github pages to /docs/ from master (blog_sogilis/public should be moved to /docs)
+ - [ ] Update design according new Sogilis website
+ - [ ] Migrate old articles (ex: [End-to-end testing with chrome headless at Squarescale]https://github.com/sogilis/articles_blog))?
+
 # First thing to do
 
 You need to take care of the theme submodule
