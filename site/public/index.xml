@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://agervail.github.io/blog_sogilis/public/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Feb 2019 19:44:22 +0100</lastBuildDate>
+    
+	<atom:link href="https://agervail.github.io/blog_sogilis/public/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conditions travail</title>
+      <link>https://agervail.github.io/blog_sogilis/public/posts/conditions_travail/</link>
+      <pubDate>Fri, 01 Feb 2019 19:44:22 +0100</pubDate>
+      
+      <guid>https://agervail.github.io/blog_sogilis/public/posts/conditions_travail/</guid>
+      <description>Nous avons réalisé une étude auprès des professionnels du design d’interfaces numériques travaillant pour les clients externes. Nous nous sommes intéressées plus particulièrement aux prestations proposées et aux manières de travailler selon le profil (ergo, ux, ui&amp;#8230;&amp;#8203;). Malgré une centaine de réponses à certaines questions, il est impossible de généraliser les résultats à l’ensemble de la population des professionnels du design d’IHM travaillant pour des clients externes en France. Néanmoins, des tendances peuvent être observées et certaines d’entre elles nous ont d’ailleurs surpris.</description>
+    </item>
+    
+    <item>
+      <title>Second</title>
+      <link>https://agervail.github.io/blog_sogilis/public/posts/second/</link>
+      <pubDate>Fri, 01 Feb 2019 19:44:22 +0100</pubDate>
+      
+      <guid>https://agervail.github.io/blog_sogilis/public/posts/second/</guid>
+      <description>Les patterns Object Mother et Builder apportent chacun leur lot d’avantages à nos tests automatisés, mais peuvent aussi être combinés pour aller plus loin dans la lisibilité et la maintenabilité de nos tests. Nous verrons dans cet article comment il est possible de réaliser cela.
+ Pre-requis Si vous n’êtes pas familiers avec les patterns Object Mother et Builder, je vous conseille d’approfondir ce sujet avant de continuer.
+   Le principe Object Mother permet de fournir des objets pré-configurés pour nos tests :</description>
+    </item>
+    
+  </channel>
+</rss>

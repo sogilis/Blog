@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://agervail.github.io/blog_sogilis/public/posts/conditions_travail/</loc>
+    <lastmod>2019-02-01T19:44:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agervail.github.io/blog_sogilis/public/posts/second/</loc>
+    <lastmod>2019-02-01T19:44:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://agervail.github.io/blog_sogilis/public/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://agervail.github.io/blog_sogilis/public/</loc>
+    <lastmod>2019-02-01T19:44:22+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://agervail.github.io/blog_sogilis/public/posts/</loc>
+    <lastmod>2019-02-01T19:44:22+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://agervail.github.io/blog_sogilis/public/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
