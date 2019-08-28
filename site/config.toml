@@ -1,0 +1,17 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "hamburg"
+enableEmoji = true
+debug = true
+
+[params]
+  disqus = "trololu"
+
+[blackfriday]
+  taskLists = true
+  smartypants = true
+  angledQuotes = true
+  fencedCode = true
+  extensions = ["tables"]
+  plainIDAnchors = true
