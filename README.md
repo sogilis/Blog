@@ -1,68 +1,82 @@
-# Backlog until live
- - [ ] Validate this architecture with non dev writers
- - [ ] Configure github pages to /docs/ from master (blog_sogilis/public should be moved to /docs)
- - [ ] Update design according new Sogilis website
- - [ ] Complete configuration like `Disqus` account (see `blog_sogilis/config.toml`)
- - [ ] Migrate old articles (ex: [End-to-end testing with chrome headless at Squarescale]https://github.com/sogilis/articles_blog))?
 
-#  Backlog
- - [ ] Automate site generation (`make run-generation`)
+# Sogilis Blog
 
-# How to write a new article?
+Welcome to the open source Blog of Sogilis ! 
 
-1. Install prerequisites:
+## Getting Started
 
-  - [Docker](https://www.docker.com)
-  - [Git](https://git-scm.com)
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-2. Download sources:
+### Prerequisites
 
-  ```
-  git clone --recursive git@github.com:sogilis/Blog.git
-  ```
+You will need to install the following software:
 
-  If it's already too late and you cloned your repo just run this command:
+* Docker >= 1.38 (18.06.1-ce)
+* node >= 10.13.0 (chose a LTS version for production)
+* yarn (non mandatory, it is either npm or yarn)
+* [Git](https://git-scm.com)
+* make
 
-  ```
-  git submodule update --init
-  ```
+### Install
 
-3. Start blog locally:
+A step by step procedure that indicates how to get a development env running
+First fork this project
 
-  ```
-  make build-image
-  make start-image
-  make run-debug-server
-  ```
+```bash
+git clone --recursive git@github.com:sogilis/Blog.git
+cd Blog
+make build-image
+```
 
-4. Write your article:
+### How to write a new article ?
+
+1. Start blog locally:
+
+```Bash
+make start-image
+make run-debug-server
+```
+
+2. Write your article:
 
    Create a new text file in `blog_sogilis/content/posts`.
    Following formats are supported:
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
 
-5. See the result:
+3. See the result at [http://localhost:1313](http://localhost:1313)
 
-  [http://localhost:1313](http://localhost:1313)
+4. Finalize your article, and see the output in real time.
 
-6. Finalize your article, and see the output in real time.
+5. When finished, create a new Pull Request to get feedbacks from other team members.
 
-7. When finished, create a new Pull Request to get feedbacks.
+6. See the deployemet done in your PR to assess generated static site
 
-8. When Pull Request is ready to be merged, generate static site:
+7. Ask a maintener to Merge the Pull Request
 
-  ```
-  make run-generation
-  ```
+### How to stop blog locally?
 
-9. Push generated static site
-
-10. Merge the Pull Request
-
-# How to stop blog locally?
-
-```
+```Bash
 make stop-image
 make remove-image
 ```
+
+## Built With
+
+* [Hugo](https://gohugo.io/) - The content site generator used
+* [Hugo-boiler-plate victor](https://github.com/netlify-templates/victor-hugo) - the netflify hugo site structure chosen
+* [netlify](https://www.netlify.com/) - Used to generate static site and hosting it 
+
+## Contributing
+
+Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/sogilis/Blog/tags).
+
+## Authors
+
+* **Antoine** - *Initial work* - [Agervail](https://github.com/agervail)
+* **Jean-batiste** - *Contributors* - [Jidibus](https://github.com/jibidus)
+* **Nasser** - *Initial work* - [Nas84](https://github.com/Nas84)
