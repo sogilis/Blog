@@ -86,11 +86,11 @@ sbg_selected_sidebar_2_replacement:
 categories:
   - NOTRE VISION
 tags:
-  - '#efficience'
-  - '#procedure'
-  - '#production'
-  - '#software'
-  - '#testing'
+  - 'efficience'
+  - 'procedure'
+  - 'production'
+  - 'software'
+  - 'testing'
   - deployment
 
 ---
