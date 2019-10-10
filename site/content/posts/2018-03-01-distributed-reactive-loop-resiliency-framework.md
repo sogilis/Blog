@@ -87,10 +87,10 @@ categories:
   - DÉVELOPPEMENT
   - Web
 tags:
-  - '#Distributed'
-  - '#distributedsystems'
-  - '#ReactiveLoop'
-  - '#system'
+  - 'Distributed'
+  - 'distributedsystems'
+  - 'ReactiveLoop'
+  - 'system'
   - 3Dprint
 format: image
 

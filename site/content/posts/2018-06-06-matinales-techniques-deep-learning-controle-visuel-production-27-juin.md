@@ -86,7 +86,7 @@ sbg_selected_sidebar_2_replacement:
 categories:
   - NOTRE VISION
 tags:
-  - '#production'
+  - 'production'
   - cnn
   - deeplearning
   - machinelearning
