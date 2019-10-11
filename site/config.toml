@@ -1,7 +1,7 @@
 baseurl = "/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hamburg"
+languageCode = "fr"
+title = "Sogilis blog Site"
+theme = "tale"
 enableEmoji = true
 debug = true
 
