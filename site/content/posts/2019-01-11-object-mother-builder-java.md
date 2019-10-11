@@ -1,8 +1,8 @@
 ---
 title: Object Mother et Builder en Java
-author: Sogilis
+author: jean-baptiste@sogilis.com
 date: 2019-01-11T14:05:55+00:00
-featured_image: /wp-content/uploads/2019/01/objectmother_builder_java.jpg
+image: /img/2019/01/objectmother_builder_java.jpg
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -103,7 +103,8 @@ Si vous n’êtes pas familiers avec les patterns [Object Mother][1] et [Builder
 
 Object Mother permet de fournir des objets pré-configurés pour nos tests :
 
-<pre class="wp-code-highlight prettyprint">public static HeroBuilder one() {
+{{< highlight java >}}
+public static HeroBuilder one() {
    return new HeroBuilder()
        .name("Leodagan")
        .allegiance(KingdomMother.one().build())
@@ -122,7 +123,7 @@ public static HeroBuilder merlin() {
        .allegiance(KingdomMother.logres().build())
        .caste(WIZARD);
 }
-</pre>
+{{< /highlight >}}
 
 Le principe est le suivant :
 
@@ -134,7 +135,8 @@ Le principe est le suivant :
 
 **(1)** Le pattern Object Mother permet d’améliorer la lisibilité des tests en retirant les constantes inutiles à la compréhension du test. Exemple :
 
-<pre class="wp-code-highlight prettyprint">@Test
+{{< highlight java >}}
+@Test
 @DisplayName("Can you see all information I have to write in order to build a single hero?")
 void without_mother_object() {
    Kingdom kingdom = new Kingdom("Logres", new Town("Kaamelott"));
@@ -158,7 +160,7 @@ void with_mother_object() {
    Assertions.assertThat(age)
        .isEqualTo(884);
 }
-</pre>
+{{< /highlight >}}
 
 L’exemple ici est plutôt trivial, mais imaginez cela dans une vraie application avec des classes ayant de nombreux attributs et/ou de nombreuses compositions.  
 
@@ -177,10 +179,11 @@ L’exemple ici est plutôt trivial, mais imaginez cela dans une vraie applicati
 
 **(2)** La frontière entre méthode de factory et méthode de builder n’est pas toujours facile à identifier. Exemple avec trois possibilités pour créer une même configuration : 
 
-<pre class="wp-code-highlight prettyprint">HeroMother.king().build()
+{{< highlight java >}}
+HeroMother.king().build()
 HeroMother.one().king().build()
 HeroMother.one().caste(KING).build()
-</pre>
+{{< /highlight >}}
 
 **(3)** `.build()` est nécessaire partout pour générer l&rsquo;objet final (pollution cognitive).  
 
