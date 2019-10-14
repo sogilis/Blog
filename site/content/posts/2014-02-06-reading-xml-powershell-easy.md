@@ -1,12 +1,8 @@
 ---
 title: Reading xml from PowerShell is really easy!
-author: Tiphaine
+author: Luc
 date: 2014-02-06T08:07:00+00:00
-featured_image: /wp-content/uploads/2016/04/2.La-vie-a-Sogilis.jpg
-tumblr_sogilisblog_permalink:
-  - http://sogilisblog.tumblr.com/post/75781572874/reading-xml-from-powershell-is-really-easy
-tumblr_sogilisblog_id:
-  - 75781572874
+featured_image: /img/2016/04/2.La-vie-a-Sogilis.jpg
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -93,49 +89,48 @@ tags:
   - code
   - dev
   - Powershell
-
 ---
+
 It is amazing to see how simple we can read xml node values from powershell:
 
 <!-- more -->
 
 **Here is a peace of xml file**
 
-<pre class="wp-code-highlight prettyprint">&lt;?xml version="1.0" standalone="yes"?&gt;
-&lt;CoverageDSPriv&gt;
-  &lt;Module&gt;
-    &lt;ModuleName&gt;myLib.dll&lt;/ModuleName&gt;
-    &lt;ImageSize&gt;122880&lt;/ImageSize&gt;
-    &lt;ImageLinkTime&gt;0&lt;/ImageLinkTime&gt;
-    &lt;LinesCovered&gt;791&lt;/LinesCovered&gt;
-    &lt;LinesPartiallyCovered&gt;23&lt;/LinesPartiallyCovered&gt;
-    &lt;LinesNotCovered&gt;856&lt;/LinesNotCovered&gt;
-    &lt;BlocksCovered&gt;1220&lt;/BlocksCovered&gt;
-    &lt;BlocksNotCovered&gt;1289&lt;/BlocksNotCovered&gt;
-    &lt;NamespaceTable&gt;
-      &lt;BlocksCovered&gt;939&lt;/BlocksCovered&gt;
-      &lt;BlocksNotCovered&gt;1054&lt;/BlocksNotCovered&gt;
-    &lt;/NamespaceTable&gt;
-  &lt;/Module&gt;
-&lt;/CoverageDSPriv&gt;
-</pre>
+{{< highlight xml >}}
 
-**PowerShell converts XML elements to properties on .NET objects without the need to
-  
-write any parsing code!**
+<?xml version="1.0" standalone="yes"?>
+<CoverageDSPriv>
+  <Module>
+    <ModuleName>myLib.dll</ModuleName>
+    <ImageSize>122880</ImageSize>
+    <ImageLinkTime>0</ImageLinkTime>
+    <LinesCovered>791</LinesCovered>
+    <LinesPartiallyCovered>23</LinesPartiallyCovered>
+    <LinesNotCovered>856</LinesNotCovered>
+    <BlocksCovered>1220</BlocksCovered>
+    <BlocksNotCovered>1289</BlocksNotCovered>
+    <NamespaceTable>
+      <BlocksCovered>939</BlocksCovered>
+      <BlocksNotCovered>1054</BlocksNotCovered>
+    </NamespaceTable>
+  </Module>
+</CoverageDSPriv>
+{{< /highlight >}}
 
-<pre class="wp-code-highlight prettyprint">$coverageFileXml = “C:tempmyCoverageInfo.xml”
+**PowerShell converts XML elements to properties on .NET objects without the need to write any parsing code!**
+
+{{< highlight powershell >}}
+$coverageFileXml = “C:tempmyCoverageInfo.xml”
 [xml]$xml = (get-content $coverageFileXml)
 [int]$BlocksCovered = $xml.CoverageDSPriv.Module.BlocksCovered
 [int]$BlocksNotCovered = $xml.CoverageDSPriv.Module.BlocksNotCovered
 [int]$TotalBlocks = $BlocksCovered + $BlocksNotCovered
-$CoveragePercent = $BlocksCovered * 100 / $TotalBlocks
-$CoveragePercent2Decimals =  "{0:N2}" -f $CoveragePercent
-Write-Host "Coverage is $CoveragePercent2Decimals %" 
-</pre>
+$CoveragePercent = $BlocksCovered \* 100 / $TotalBlocks
+$CoveragePercent2Decimals = "{0:N2}" -f $CoveragePercent
+Write-Host "Coverage is $CoveragePercent2Decimals %"
+{{< /highlight >}}
 
 **Output is : Coverage is 48.62 %**
 
-More exemples <span style="text-decoration: underline;"><a href="http://www.codeproject.com/Articles/61900/PowerShell-and-XML" target="_blank">here</a></span>.
-
-**Luc**
+More exemples [here](http://www.codeproject.com/Articles/61900/PowerShell-and-XML).
