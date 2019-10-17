@@ -1,12 +1,8 @@
 ---
 title: Qt pour des applications desktop et mobiles simplement (6/7)
-author: Tiphaine
+author: Yves
 date: 2014-05-14T07:54:00+00:00
-featured_image: /wp-content/uploads/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
-tumblr_sogilisblog_permalink:
-  - http://sogilisblog.tumblr.com/post/85705563931/qt-pour-des-applications-desktop-et-mobiles-partie-6
-tumblr_sogilisblog_id:
-  - 85705563931
+featured_image: /img/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -94,67 +90,56 @@ tags:
   - mobile
   - qt
   - qt quick
-
 ---
+
 Suite de la découverte de la programmation desktop et mobile avec Qt.
 
-<a href="#base_app" target="_blank">L&rsquo;application de base</a>
+## Sommaire
 
-  * <a href="#qt" target="_blank">Qt et application Qt Quick</a>
+- [L'application de base]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#base-app" >}})
+  - [Qt et application Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#qt" >}})
+    - [Prérequis]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#req" >}})
+    - [Créer un projet Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#quick" >}})
+    - [Découverte rapide]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#discover" >}})
+  - [2048]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#2048" >}})
+    - [2048.c]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#c" >}})
+    - [2048 en Qt]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#qt" >}})
+- [Interface QML]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#interface" >}})
+  - [Board]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#board" >}})
+    - [Affichage du plateau]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#display" >}})
+    - [Un peu de style]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#style" >}})
+    - [Déplacement et jeu]({{< ref "posts/2014-05-07-qt-applications-desktop-mobiles-4.md" >}})
+  - [Score et status]({{< ref "posts/2014-05-13-qt-applications-desktop-mobiles-5.md" >}})
+  - [Responsive design]({{< ref "posts/2014-05-14-qt-applications-desktop-mobiles-6.md" >}})
+- [Et pour les mobiles]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#mobile" >}})
+  - [Gestures]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#gestures" >}})
+  - [iOS]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#ios" >}})
+  - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
+- [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-  1. <a href="#req" target="_blank">Prérequis</a>
-  2. <a href="#quick" target="_blank">Créer un projet Qt Quick</a>
-  3. <a href="#discover" target="_blank">Découverte rapide</a>
-
-  * <a href="http://blog.sogilis.com/post/84307433806/qt-pour-des-applications-desktop-et-mobiles-simplement#a2048" target="_blank">2048</a>
-
-  1. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">2048.c</a>
-  2. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">2048 en Qt<br /> </a>
-
-<a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Interface QML</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Board</a>
-
-  1. <a href="http://blog.sogilis.com/post/84907918476/qt-pour-des-applications-desktop-et-mobiles-simplement-p#display" target="_blank">Affichage du plateau</a>
-  2. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Un peu de style</a>
-  3. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-4/" target="_blank">Déplacement et jeu</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-5/" target="_blank">Score et status</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-6/" target="_blank">Responsive design</a>
-
-<a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Et pour les mobiles</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Gestures</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">iOS</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Android</a>
-
-&nbsp;
-
-## **Responsive design**
+### Responsive design
 
 <!-- more -->
 
 Maintenant que nous avons une application fonctionnelle, on peut imaginer aller un peu plus loin et exploiter les possibilités de QML.
 
-Par exemple il est possible de rentre l&rsquo;ensemble de notre interface proportionnelle à la zone affichée. Ainsi lorsque vous redimensionnez la fenêtre votre jeu occupe toujours l&rsquo;espace disponible. Finalement c&rsquo;est un peu comme faire
-  
-une interface vectorielle.
+Par exemple il est possible de rentre l'ensemble de notre interface proportionnelle à la zone affichée. Ainsi lorsque vous redimensionnez la fenêtre votre jeu occupe toujours l'espace disponible. Finalement c'est un peu comme faire une interface vectorielle.
 
-Lorsque nous avons créé l&rsquo;objet QML `Tile`, nous avons laissé la possibilité de paramétrer la taille d&rsquo;une tuile avec la propriété `tileWidth`. Et la taille du texte dans la tuile est également fonction de cette propriété. Si nous la
-  
-faisons varier (en lui affectant non plus une valeur mais une fonction) alors l&rsquo;ensemble pourra varier également.
+Lorsque nous avons créé l'objet QML `Tile`, nous avons laissé la possibilité de paramétrer la taille d'une tuile avec la propriété `tileWidth`. Et la taille du texte dans la tuile est également fonction de cette propriété. Si nous la faisons varier (en lui affectant non plus une valeur mais une fonction) alors l'ensemble pourra varier également.
 
 De la même manière il est possible de remplacer les valeurs en dur (police, grille) au niveau du `mail.qml`.
 
-Par exemple, pour faire varier la taille du texte du status et du score, remplaçons l&rsquo;actuel.
+Par exemple, pour faire varier la taille du texte du status et du score, remplaçons l'actuel.
 
-<pre class="wp-code-highlight prettyprint">font.pointSize: 30
-</pre>
+{{< highlight cpp >}}
+font.pointSize: 30
+{{< /highlight >}}
 
 par
 
-<pre class="wp-code-highlight prettyprint">font.pointSize: Math.min(main.width, main.height) / 12
-</pre>
+{{< highlight cpp >}}
+font.pointSize: Math.min(main.width, main.height) / 12
+{{< /highlight >}}
 
 Et pour que cela fonctionne, il faut rajouter `main` comme `id` à notre `Window`.
 
@@ -162,7 +147,8 @@ Ainsi, lorsque la hauteur ou largeur de la fenêtre changera, la taille du texte
 
 Pour le plateau, nous allons faire quasiment la même chose :
 
-<pre class="wp-code-highlight prettyprint">Rectangle {
+{{< highlight cpp >}}
+Rectangle {
   id: mainBoard
   Layout.fillHeight: true
   Layout.fillWidth: true
@@ -192,16 +178,10 @@ Pour le plateau, nous allons faire quasiment la même chose :
     }
   }
 }
-</pre>
+{{< /highlight >}}
 
-Vous noterez juste que j&rsquo;ai introduit un nouveau `Rectangle`. Celui-ci occupe toute la place disponible (via `Layout.fillWidth` et `Layout.fillHeight`) et permet surtout de très facilement centrer horizontalement le plateau.
+Vous noterez juste que j'ai introduit un nouveau `Rectangle`. Celui-ci occupe toute la place disponible (via `Layout.fillWidth` et `Layout.fillHeight`) et permet surtout de très facilement centrer horizontalement le plateau.
 
-&nbsp;
+![](/img/tumblr/tumblr_inline_n48gcutXVJ1sv6muh.png)
 
-<img class="aligncenter" src="http://67.media.tumblr.com/01d874e3cd633f2f0c03f7795f339449/tumblr_inline_n48gcutXVJ1sv6muh.png" alt="" />
-
-&nbsp;
-
-> git: tag <span style="text-decoration: underline;"><a href="https://github.com/sogilis/qt2048/tree/06_responsive" target="_blank">06_responsive</a></span>
-
-**Yves**
+> git: tag [06_responsive](https://github.com/sogilis/qt2048/tree/06_responsive)
