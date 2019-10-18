@@ -2,11 +2,7 @@
 title: Sogilis soutient la candidature de Grenoble au label French Tech
 author: Tiphaine
 date: 2014-03-25T09:18:00+00:00
-featured_image: /wp-content/uploads/2016/04/1.GRENOBLE.jpg
-tumblr_sogilisblog_permalink:
-  - http://sogilisblog.tumblr.com/post/80664609288/sogilis-soutient-la-candidature-de-grenoble-au
-tumblr_sogilisblog_id:
-  - 80664609288
+featured_image: /img/2016/04/1.GRENOBLE.jpg
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -95,20 +91,20 @@ tags:
   - FrenchTech
   - Grenoble
   - Numérique
-
 ---
-<img class="aligncenter" src="http://66.media.tumblr.com/356810eecd7a71b14fc0b615c9f694a4/tumblr_inline_n2mm1gaLIo1szbtlw.png" alt="" />
 
-&nbsp;
+![French Tech](http://66.media.tumblr.com/356810eecd7a71b14fc0b615c9f694a4/tumblr_inline_n2mm1gaLIo1szbtlw.png)
 
-Grenoble est candidate au label “Metropole French Tech” sous la signature <span style="text-decoration: underline;"><a href="http://digital-grenoble.com/" target="_blank">Digital Grenoble</a></span>. Le label sera attribué à quelques collectivités particulièrement actives dans le numérique, et notamment au niveau international. Ensemble, elles formeront la <span style="text-decoration: underline;"><a href="http://www.lafrenchtech.com" target="_blank">French Tech</a></span>.
+Grenoble est candidate au label “Metropole French Tech” sous la signature [Digital Grenoble](http://digital-grenoble.com/). Le label sera attribué à quelques collectivités particulièrement actives dans le numérique, et notamment au niveau international. Ensemble, elles formeront la [French Tech](http://www.lafrenchtech.com).
 
-_“La French Tech, c’est d’abord une ambition : construire un grand mouvement de mobilisation collective pour la croissance et le rayonnement international des startups numériques françaises.“ __<span style="line-height: 1.5;">Fleur Pellerin</span>_
+> _“La French Tech, c’est d’abord une ambition : construire un grand mouvement de mobilisation collective pour la croissance et le rayonnement international des startups numériques françaises.“_
+>
+> Fleur Pellerin
 
 <!-- more -->
 
-<span style="text-decoration: underline;"><a href="http://www.dailymotion.com/video/x1ajwb8_la-french-tech-c-est-vous_news" target="_blank">La French Tech c&rsquo;est vous</a></span> _par <span style="text-decoration: underline;"><a href="http://www.dailymotion.com/frenchtech" target="_blank">FrenchTech</a></span>._
+[La French Tech c'est vous](http://www.dailymotion.com/video/x1ajwb8_la-french-tech-c-est-vous_news) _par [FrenchTech](http://www.dailymotion.com/frenchtech)._
 
-Sogilis et <span style="text-decoration: underline;"><a href="http://www.startup-maker.com/" target="_blank">Startup Maker</a></span> se mobilisent aux côtés de l’ensemble de l’écosystème numérique grenoblois pour que la ville obtienne le label. Cette labellisation constitue pour Grenoble une nouvelle opportunité d’accélérer le développement et la visibilité à l’international des Tech Champions du territoire.
+Sogilis et [Startup Maker](http://www.startup-maker.com/) se mobilisent aux côtés de l’ensemble de l’écosystème numérique grenoblois pour que la ville obtienne le label. Cette labellisation constitue pour Grenoble une nouvelle opportunité d’accélérer le développement et la visibilité à l’international des Tech Champions du territoire.
 
-Alors, rejoignez la dynamique en soutenant vous aussi cette candidature. Inscrivez vous sur le site <span style="text-decoration: underline;"><a href="http://digital-grenoble.com/" target="_blank">Digital Grenoble</a></span> et soyez actifs sur les médias sociaux, et notamment sur Twitter avec le hashtag DigiGre (#DigiGre).
+Alors, rejoignez la dynamique en soutenant vous aussi cette candidature. Inscrivez vous sur le site [Digital Grenoble](http://digital-grenoble.com/) et soyez actifs sur les médias sociaux, et notamment sur Twitter avec le hashtag DigiGre (#DigiGre).
