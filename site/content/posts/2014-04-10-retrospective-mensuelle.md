@@ -2,11 +2,7 @@
 title: La rétrospective mensuelle
 author: Tiphaine
 date: 2014-04-10T08:54:00+00:00
-featured_image: /wp-content/uploads/2016/05/IMG_0527.png
-tumblr_sogilisblog_permalink:
-  - http://sogilisblog.tumblr.com/post/82276753778/la-rétrospective-mensuelle
-tumblr_sogilisblog_id:
-  - 82276753778
+featured_image: /img/2016/05/IMG_0527.png
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -92,44 +88,34 @@ categories:
 tags:
   - amélioration continue
   - vie interne
-
 ---
-**Comme nous l’avons évoqué précédemment sur le blog, nous organisons une rétrospective générale chaque mois chez Sogilis dans un but d’amélioration continue. Elle permet de prendre du recul sur le fonctionnement passé de l’entreprise en interne et de faire évoluer l&rsquo;équipe dans le même sens.**
 
-&nbsp;
+Comme nous l’avons évoqué précédemment sur le blog, nous organisons une rétrospective générale chaque mois chez Sogilis dans un but d’amélioration continue. Elle permet de prendre du recul sur le fonctionnement passé de l’entreprise en interne et de faire évoluer l'équipe dans le même sens.
 
 En amont de la rétro, **nous écrivons chacun sur un Post-it les points positifs et ceux à améliorer** et les mettons dans une boite à idées. Les Post-it sont ensuite triés et affichés dans la salle de réunion : les points positifs sont placés d’un côté, les points négatifs de l’autre. Ceux qui traitent du même sujet sont également rassemblés.
 
-&nbsp;
-
-<img class="aligncenter" src="http://66.media.tumblr.com/2d6a2be3ed0793deed77440ee7bd15e0/tumblr_inline_n3cvtoCAHW1szbtlw.jpg" alt="" />
+![](/img/tumblr/tumblr_inline_n3cvtoCAHW1szbtlw.jpg)
 
 <!-- more -->
-
-&nbsp;
 
 Elle est menée par un facilitateur, différent à chaque rétro, qui structure son déroulement et garantie la qualité des débats.
 
 Un des buts de la rétrospective est de **trouver des solutions aux problèmes soulevés** et de **prendre action pour résoudre ces problèmes**. Toutes les actions (définies par des tâches concrètes) sont notées sur Basecamp et assignées à une personne qui doit effectuer l’action pour la rétro suivante.
 
-Par exemple, lors de la rétrospective de septembre le **manque de partage entre les cellules** avait été soulevé. Les <span style="text-decoration: underline;"><a href="http://sogilis.com/blog/sogiday/" target="_blank">Sogidays</a></span> ont été mis en place pour améliorer ce point.
+Par exemple, lors de la rétrospective de septembre le **manque de partage entre les cellules** avait été soulevé. Les [Sogidays]({{< ref "posts/2013-12-18-sogiday.md" >}}) ont été mis en place pour améliorer ce point.
 
 Les règles ont étés rappelées par le facilitateur lors de la dernière rétro. À gauche, les choses à faire en rétro (“oui”), à droite, les choses à ne pas faire (“non”).
 
-&nbsp;
-
-<img class="aligncenter" src="http://66.media.tumblr.com/99364962ab0c8efc8914274098b5e7b0/tumblr_inline_n3b23pOjeJ1szbtlw.jpg" alt="" />
-
-&nbsp;
+![](/img/tumblr/tumblr_inline_n3b23pOjeJ1szbtlw.jpg)
 
 Les **5 Why** (5 Pourquoi) permettent de trouver la cause principale du problème rencontré. Avec 5 questions commençant par « pourquoi », on essaie de trouver les raisons les plus importantes ayant provoqué le problème pour aboutir à la cause principale.
 
 Voici quelques-uns des **risques qui peuvent découler du non respect des règles** :
 
-  * Ne pas passer revue l’ensemble des éléments évoqués
-  * Se détacher des faits et mettre en cause les personnes
-  * Trouver des solutions trop rapidement, et ne pas chercher les causes racines
-  * Laisser une part trop grande aux émotions et sortir d’une approche pragmatique
-  * Définir un trop grand nombre d’actions
-  * Ne pas identifier clairement les actions
-  * Que tout le monde soit en phase avec ces actions, mais que personne ne fasse rien
+- Ne pas passer revue l’ensemble des éléments évoqués
+- Se détacher des faits et mettre en cause les personnes
+- Trouver des solutions trop rapidement, et ne pas chercher les causes racines
+- Laisser une part trop grande aux émotions et sortir d’une approche pragmatique
+- Définir un trop grand nombre d’actions
+- Ne pas identifier clairement les actions
+- Que tout le monde soit en phase avec ces actions, mais que personne ne fasse rien
