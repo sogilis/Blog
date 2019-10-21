@@ -94,8 +94,6 @@ tags:
 
 Aujourd'hui, tout le monde ou presque utilise [Git](http://git-scm.org) comme outil de gestion des sources. Mais n'avez-vous jamais pensé à utiliser Git pour autre chose que gérer vos codes sources ?
 
-<!-- more -->
-
 Pour ma part c'est, entre autre, la lecture de [progit](http://git-scm.com/book) et du [chapitre dédié aux entrailles de Git](http://git-scm.com/book/en/Git-Internals) qui a commencé à m'y faire penser. En effet, si vous regardez (vraiment) bien, git peut être vu comme une “simple” base de donnée clé/valeur. Bon ok, simple mais avec tout de même une gestion de l'historique, faut pas oublier ce qui fait l'essence de Git quand même. Et c'est là tout l'intérêt de la chose.
 
 Lors du dernier [Sogiday]({{< ref "posts/2013-12-18-sogiday.md" >}}), nous avons eu l'occasion de travailler sur ce point : utiliser Git comme moteur de stockage pour une application.

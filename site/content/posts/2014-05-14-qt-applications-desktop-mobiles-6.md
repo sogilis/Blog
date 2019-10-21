@@ -119,8 +119,6 @@ Suite de la découverte de la programmation desktop et mobile avec Qt.
 
 ### Responsive design
 
-<!-- more -->
-
 Maintenant que nous avons une application fonctionnelle, on peut imaginer aller un peu plus loin et exploiter les possibilités de QML.
 
 Par exemple il est possible de rentre l'ensemble de notre interface proportionnelle à la zone affichée. Ainsi lorsque vous redimensionnez la fenêtre votre jeu occupe toujours l'espace disponible. Finalement c'est un peu comme faire une interface vectorielle.

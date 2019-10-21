@@ -1,5 +1,5 @@
 ---
-title: 'IoT, c’est finiiii : Retour sur le #SiDO2017 vu par Sogilis'
+title: "IoT, c’est finiiii : Retour sur le #SiDO2017 vu par Sogilis"
 author: Tiphaine
 date: 2017-04-11T16:10:06+00:00
 featured_image: /wp-content/uploads/2017/04/SiDO-et-industrie-du-futur.jpg
@@ -104,64 +104,46 @@ Le bidouillage technique et l’objet passif, c’est fini. Pendant 2 jours, nou
 
 Même si on peut encore trouver quelques “gadgets”, la startup valley accueillait des projets relativement matures, c’est à dire qui ont compris POURQUOI et À QUI leur produit est destiné. L’idée farfelue du fond du garage fait de 2 bouts de ficelle n’avait pas sa place. Choix éditorial du SIDO ou réalité marché ? Les 2, nous en sommes persuadés. La surexcitation des premiers PoC (Proof Of Concept) est derrière nous et pour exister, **il faut aller au delà de la technologie**.
 
-Nous ne résistons pas au fameux “Name dropping” des start-up qui nous ont plu : Nous retiendrons notamment <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="http://www.covirtua.com">COVIRTUA</a></span></span> qui utilise la réalité virtuelle pour aider les patients ayant des troubles cognitifs, la canne connectée <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="http://dring.io/fr/">http://dring.io/fr/</a></span></span> pour alerter en cas de chutes de personnes isolées et [JOE][1], notre petit coup de coeur, à destination des enfants.
+Nous ne résistons pas au fameux “Name dropping” des start-up qui nous ont plu : Nous retiendrons notamment (COVIRTUA)[http://www.covirtua.com] qui utilise la réalité virtuelle pour aider les patients ayant des troubles cognitifs, la canne connectée (http://dring.io/fr/)[http://dring.io/fr/] pour alerter en cas de chutes de personnes isolées et [JOE][1], notre petit coup de coeur, à destination des enfants.
 
 # L’IoT n’est plus une fin : c’est un moyen
 
-<img class="wp-image-1885 alignleft" src="http://sogilis.com/wp-content/uploads/2017/04/LU4Y5Dda6TYfAfDyTaM9Y1T1-1024x605.jpg" alt="LU4Y5Dda6TYfAfDyTaM9Y1T1" width="450" height="266" srcset="http://sogilis.com/wp-content/uploads/2017/04/LU4Y5Dda6TYfAfDyTaM9Y1T1-1024x605.jpg 1024w, http://sogilis.com/wp-content/uploads/2017/04/LU4Y5Dda6TYfAfDyTaM9Y1T1-300x177.jpg 300w, http://sogilis.com/wp-content/uploads/2017/04/LU4Y5Dda6TYfAfDyTaM9Y1T1-768x454.jpg 768w" sizes="(max-width: 450px) 100vw, 450px" />
+!(LU4Y5Dda6TYfAfDyTaM9Y1T1)[http://sogilis.com/wp-content/uploads/2017/04/LU4Y5Dda6TYfAfDyTaM9Y1T1-1024x605.jpg]
 
 L’époque des Poc et autres démonstrateurs est derrière nous : les technos arrivent à maturité. On a globalement fait le tour des technologies et de leurs capacités actuelles. Ce qui reste à challenger, c’est l’usage. Et là, le champ des possibles est immense. **La technologie se fait discrète et on travaille les usages, les business models et l’accès marché**. Le programme d’innovation “French Iot” _(Attention à bien prononcer à l’anglaise)_ propose aux porteurs de projets de plancher sur 4 secteurs “métiers”. On ne challenge pas une techno mais son usage.
 
-<div style="clear: both;">
-</div>
+!(YEW9Jbbe352gJAWChD40T7fV)[http://sogilis.com/wp-content/uploads/2017/04/YEW9Jbbe352gJAWChD40T7fV-e1491924306419-1024x618.jpg]
 
-<img class="alignright wp-image-1886" src="http://sogilis.com/wp-content/uploads/2017/04/YEW9Jbbe352gJAWChD40T7fV-e1491924306419-1024x618.jpg" alt="YEW9Jbbe352gJAWChD40T7fV" width="450" height="272" srcset="http://sogilis.com/wp-content/uploads/2017/04/YEW9Jbbe352gJAWChD40T7fV-e1491924306419-1024x618.jpg 1024w, http://sogilis.com/wp-content/uploads/2017/04/YEW9Jbbe352gJAWChD40T7fV-e1491924306419-300x181.jpg 300w, http://sogilis.com/wp-content/uploads/2017/04/YEW9Jbbe352gJAWChD40T7fV-e1491924306419-768x464.jpg 768w" sizes="(max-width: 450px) 100vw, 450px" />
-
-Les projets sont pilotés par les Business Model et l’adéquation produit-marché. On teste, on itère avant de se lancer dans un excès de
-
-création de produit. Comme je dis aux porteurs de projets _“Tout le monde est capable de brûler 200 000 € de R&D avec un produit qui n&rsquo;intéresse personne. Le challenge, c’est de tester son marché avec 20 000€”_. Discours partagé par <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="http://weenov.com">Weenov</a></span></span> et <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="http://www.crea-design.fr/">Créa Design</a></span></span> dans leur retour d’expérience.
-
-<div style="clear: both;">
-</div>
+Les projets sont pilotés par les Business Model et l’adéquation produit-marché. On teste, on itère avant de se lancer dans un excès de création de produit. Comme je dis aux porteurs de projets _“Tout le monde est capable de brûler 200 000 € de R&D avec un produit qui n'intéresse personne. Le challenge, c’est de tester son marché avec 20 000€”_. Discours partagé par (Weenov)[http://weenov.com] et (Créa Design)[http://www.crea-design.fr/] dans leur retour d’expérience.
 
 # L’avenir de l’IoT passe par l’humain
 
-<img class="alignleft wp-image-1878" src="http://sogilis.com/wp-content/uploads/2017/04/C8qSv9rXUAEmA1e.jpglarge-1024x653.jpeg" width="450" height="287" srcset="http://sogilis.com/wp-content/uploads/2017/04/C8qSv9rXUAEmA1e.jpglarge-1024x653.jpeg 1024w, http://sogilis.com/wp-content/uploads/2017/04/C8qSv9rXUAEmA1e.jpglarge-300x191.jpeg 300w, http://sogilis.com/wp-content/uploads/2017/04/C8qSv9rXUAEmA1e.jpglarge-768x490.jpeg 768w, http://sogilis.com/wp-content/uploads/2017/04/C8qSv9rXUAEmA1e.jpglarge.jpeg 1712w" sizes="(max-width: 450px) 100vw, 450px" />Le règne des machines n’est pas (encore) pour tout de suite. **L’humain doit être au coeur des projets IoT, et plus largement dans la transformation numérique des entreprises “traditionnelles”.**. C’est le retour que nous avons de <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="https://twitter.com/TiphaineG_inno/status/849611373533433856">Tiphaine GUITTAT</a></span></span> lors du salon industrie du futur qui avait lieu au même moment et à quelques pas. “l&rsquo;<span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="https://twitter.com/hashtag/industriedufutur?src=hash">#<b>industriedufutur</b></a></span></span> passe avant tout par les Hommes et leurs compétences”. L’humain qui crée, l’humain qui organise, l’humain qui améliore, l’humain qui crée POUR l’humain. Il est donc logique d’intégrer l’humain et son “expérience utilisateur” dans son ensemble pour réussir un projet d’innovation.
+!()[http://sogilis.com/wp-content/uploads/2017/04/C8qSv9rXUAEmA1e.jpglarge-1024x653.jpeg]
 
-<div style="clear: both;">
-</div>
+Le règne des machines n’est pas (encore) pour tout de suite. **L’humain doit être au coeur des projets IoT, et plus largement dans la transformation numérique des entreprises “traditionnelles”.**. C’est le retour que nous avons de (Tiphaine GUITTAT)[https://twitter.com/TiphaineG_inno/status/849611373533433856] lors du salon industrie du futur qui avait lieu au même moment et à quelques pas. “l'(**industriedufutur**)[https://twitter.com/hashtag/industriedufutur?src=hash] passe avant tout par les Hommes et leurs compétences”. L’humain qui crée, l’humain qui organise, l’humain qui améliore, l’humain qui crée POUR l’humain. Il est donc logique d’intégrer l’humain et son “expérience utilisateur” dans son ensemble pour réussir un projet d’innovation.
 
 L’humain utilise alors l’IoT comme une extension de lui même, une nouvelle interface sensorielle.
 
-# <img class="size-large wp-image-1880 aligncenter" src="http://sogilis.com/wp-content/uploads/2017/04/C8uwUCxXkAENpcz.jpglarge-1024x635.jpeg" alt="C8uwUCxXkAENpcz.jpg:large" width="669" height="415" srcset="http://sogilis.com/wp-content/uploads/2017/04/C8uwUCxXkAENpcz.jpglarge-1024x635.jpeg 1024w, http://sogilis.com/wp-content/uploads/2017/04/C8uwUCxXkAENpcz.jpglarge-300x186.jpeg 300w, http://sogilis.com/wp-content/uploads/2017/04/C8uwUCxXkAENpcz.jpglarge-768x476.jpeg 768w, http://sogilis.com/wp-content/uploads/2017/04/C8uwUCxXkAENpcz.jpglarge.jpeg 1588w" sizes="(max-width: 669px) 100vw, 669px" />
-
-<div style="clear: both;">
-</div>
+!(C8uwUCxXkAENpcz.jpg:large)[http://sogilis.com/wp-content/uploads/2017/04/C8uwUCxXkAENpcz.jpglarge-1024x635.jpeg]
 
 # IoT c’est fini : vive l’IoH (Internet of Humans)
 
-<img class="alignleft wp-image-1884" src="http://sogilis.com/wp-content/uploads/2017/04/08VNaLeHA178YtKWYKSHQe3F-e1491924480162-1024x641.jpg" alt="08VNaLeHA178YtKWYKSHQe3F" width="450" height="282" srcset="http://sogilis.com/wp-content/uploads/2017/04/08VNaLeHA178YtKWYKSHQe3F-e1491924480162-1024x641.jpg 1024w, http://sogilis.com/wp-content/uploads/2017/04/08VNaLeHA178YtKWYKSHQe3F-e1491924480162-300x188.jpg 300w, http://sogilis.com/wp-content/uploads/2017/04/08VNaLeHA178YtKWYKSHQe3F-e1491924480162-768x480.jpg 768w, http://sogilis.com/wp-content/uploads/2017/04/08VNaLeHA178YtKWYKSHQe3F-e1491924480162-320x202.jpg 320w" sizes="(max-width: 450px) 100vw, 450px" />
+!(08VNaLeHA178YtKWYKSHQe3F)[http://sogilis.com/wp-content/uploads/2017/04/08VNaLeHA178YtKWYKSHQe3F-e1491924480162-1024x641.jpg]
 
 Si les technologies IoT arrivent maintenant à maturité, on voit apparaître aussi des nouvelles rencontres. Quand plusieurs technologies se complètent, elles créent une complémentarité qui peut devenir intéressante. Même si pour le moment ces projets semblent encore du domaine de la recherche appliquée, il est fort à parier que des entrepreneurs vont trouver des idées pour apporter ces créations hybrides sur le marché. En tout cas, nous avons déjà quelques idées sous le coude 😉
 
-Nous avons été par exemple très impressionné par la présentation de <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="https://www.linkedin.com/mynetwork/invite-sent/primavera-de-filippi-07558536/">Primavera de Filippi</a></span></span> sur l’IoT et la blockchain.
+Nous avons été par exemple très impressionné par la présentation de (Primavera de Filippi)[https://www.linkedin.com/mynetwork/invite-sent/primavera-de-filippi-07558536/] sur l’IoT et la blockchain.
 
-<div style="clear: both;">
-</div>
+!()[http://sogilis.com/wp-content/uploads/2017/04/BXK36eAVfHS8KA9SAUFLCd5U-1024x625.jpg]
 
-<img class="alignright wp-image-1887" src="http://sogilis.com/wp-content/uploads/2017/04/BXK36eAVfHS8KA9SAUFLCd5U-1024x625.jpg" alt="BXK36eAVfHS8KA9SAUFLCd5U" width="450" height="275" srcset="http://sogilis.com/wp-content/uploads/2017/04/BXK36eAVfHS8KA9SAUFLCd5U-1024x625.jpg 1024w, http://sogilis.com/wp-content/uploads/2017/04/BXK36eAVfHS8KA9SAUFLCd5U-300x183.jpg 300w, http://sogilis.com/wp-content/uploads/2017/04/BXK36eAVfHS8KA9SAUFLCd5U-768x469.jpg 768w" sizes="(max-width: 450px) 100vw, 450px" />L’homme pourrait utiliser la blockchain pour garantir la traçabilité des machines et potentiellement, leur laisser plus d’autonomie. Intéressant concept, non ? Que dire alors de la présentation conjointe avec Emmanuel CHIVA, Hugo MERCIER et Jean-Philippe DESBIOLLES sur la rencontre entre l’IA et l’IoT ? Non, les machines n’improvisent pas : elles exécutent ce qu’elles ont appris. Mais le potentiel est énorme. Déjà tout simplement parce que l’objet, lui, n’a pas de zone de confort : sa capacité de calcul lui permet de proposer **des solutions que l’homme n’aurait pas imaginé**, par auto-censure. La machine peut analyser un volume gigantesque de données et prendre des décisions, et sa fiabilité lui donne toute légitimité pour agir. Que ce soit dans le domaine médical avec <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="http://morpheo.co/">Rythm</a></span></span> ou de la défense avec <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="https://www.agueris.com/">Agueris</a></span></span>, ce qui semblait être de la fiction il y a encore quelques années semble maintenant être une réalité. Problème éthique ? Peut-être … Voyons déjà si ces technologies font leurs preuves et rencontrent un marché. Mais de la même manière qu’il existe des comités de bioéthique, nous verrons peut-être apparaître des conseils de technoétique ?
+L’homme pourrait utiliser la blockchain pour garantir la traçabilité des machines et potentiellement, leur laisser plus d’autonomie. Intéressant concept, non ? Que dire alors de la présentation conjointe avec Emmanuel CHIVA, Hugo MERCIER et Jean-Philippe DESBIOLLES sur la rencontre entre l’IA et l’IoT ? Non, les machines n’improvisent pas : elles exécutent ce qu’elles ont appris. Mais le potentiel est énorme. Déjà tout simplement parce que l’objet, lui, n’a pas de zone de confort : sa capacité de calcul lui permet de proposer **des solutions que l’homme n’aurait pas imaginé**, par auto-censure. La machine peut analyser un volume gigantesque de données et prendre des décisions, et sa fiabilité lui donne toute légitimité pour agir. Que ce soit dans le domaine médical avec (Rythm)[http://morpheo.co/] ou de la défense avec (Agueris)[https://www.agueris.com/], ce qui semblait être de la fiction il y a encore quelques années semble maintenant être une réalité. Problème éthique ? Peut-être … Voyons déjà si ces technologies font leurs preuves et rencontrent un marché. Mais de la même manière qu’il existe des comités de bioéthique, nous verrons peut-être apparaître des conseils de technoétique ?
 
-<div style="clear: both;">
-</div>
-
-<img class="alignleft wp-image-1879" src="http://sogilis.com/wp-content/uploads/2017/04/C8t_dApWAAAkDAp.jpglarge-1024x700.jpeg" alt="C8t_dApWAAAkDAp.jpg:large" width="450" height="308" srcset="http://sogilis.com/wp-content/uploads/2017/04/C8t_dApWAAAkDAp.jpglarge-1024x700.jpeg 1024w, http://sogilis.com/wp-content/uploads/2017/04/C8t_dApWAAAkDAp.jpglarge-300x205.jpeg 300w, http://sogilis.com/wp-content/uploads/2017/04/C8t_dApWAAAkDAp.jpglarge-768x525.jpeg 768w" sizes="(max-width: 450px) 100vw, 450px" />
+!(C8t_dApWAAAkDAp.jpg:large)[http://sogilis.com/wp-content/uploads/2017/04/C8t_dApWAAAkDAp.jpglarge-1024x700.jpeg]
   
 Il est évident que ces petits objets inertes qui envahissent notre quotidien doivent eux aussi “monter en compétence” pour garder notre attention. Ils embarquent alors une plus grande intelligence pour se rendre utiles. Car oui, l’avenir de l’IoT, c’est bien l’IoH : **Internet of Humans**. Des machines qui complètent, qui enrichissent, qui aident, qui soignent. Après l’IoT 1.0 des machines passives qui observent, voilà l’IoT 2.0 des machines actives avec notamment les robots.
 
-<div style="clear: both;">
-  <img class="aligncenter wp-image-1876 size-large" src="http://sogilis.com/wp-content/uploads/2017/04/C8p3Q9kW0AE7_07.jpglarge-1024x684.jpeg" alt="C8p3Q9kW0AE7_07.jpg:large" width="669" height="447" srcset="http://sogilis.com/wp-content/uploads/2017/04/C8p3Q9kW0AE7_07.jpglarge-1024x684.jpeg 1024w, http://sogilis.com/wp-content/uploads/2017/04/C8p3Q9kW0AE7_07.jpglarge-300x200.jpeg 300w, http://sogilis.com/wp-content/uploads/2017/04/C8p3Q9kW0AE7_07.jpglarge-768x513.jpeg 768w" sizes="(max-width: 669px) 100vw, 669px" />
-</div>
+!(C8p3Q9kW0AE7_07.jpg:large)[http://sogilis.com/wp-content/uploads/2017/04/C8p3Q9kW0AE7_07.jpglarge-1024x684.jpeg]
 
-### <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="https://www.linkedin.com/in/arnaud-benistant/">Arnaud BENISTANT</a></span></span> &#8211; <span style="text-decoration: underline;"><span style="color: #0000ff; text-decoration: underline;"><a style="color: #0000ff; text-decoration: underline;" href="https://www.linkedin.com/in/margaux-perrin-264aa250/">Margaux PERRIN</a></span></span> &#8211; <span style="text-decoration: underline;"><span style="color: #0000ff; text-decoration: underline;"><a style="color: #0000ff; text-decoration: underline;" href="https://www.linkedin.com/in/tiphaineguittat/">Tiphaine GUITTAT</a></span></span>
+(Arnaud BENISTANT)[https://www.linkedin.com/in/arnaud-benistant/] - (Margaux PERRIN)[https://www.linkedin.com/in/margaux-perrin-264aa250/] - (Tiphaine GUITTAT)[https://www.linkedin.com/in/tiphaineguittat/]
 
- [1]: http://www.projetjoe.com
+[1]: http://www.projetjoe.com

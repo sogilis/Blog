@@ -119,8 +119,6 @@ Suite de la découverte de la programmation desktop et mobile avec Qt.
 
 #### Déplacement et jeu
 
-<!-- more -->
-
 Bon, c'est bien joli mais par contre ça serait plutôt cool de pouvoir jouer, non ?
 
 Le fonctionnement est très simple. Il faut écouter le clavier et sur les touches correspondantes aux flèches exécuter les déplacements demandés.

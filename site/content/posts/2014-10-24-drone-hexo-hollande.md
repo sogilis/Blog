@@ -3,10 +3,6 @@ title: Le drone Hexo+ présenté à François Hollande
 author: Tiphaine
 date: 2014-10-24T08:35:00+00:00
 featured_image: /wp-content/uploads/2014/10/Sogilis-Christophe-Levet-Photographe-7651.jpg
-tumblr_sogilisblog_permalink:
-  - http://sogilisblog.tumblr.com/post/100817290751/le-drone-hexo-présenté-à-françois-hollande
-tumblr_sogilisblog_id:
-  - 100817290751
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -94,15 +90,11 @@ tags:
   - start-up
 
 ---
-**Mardi avait lieu l’inauguration de la Halle Freyssinet, destiné à être le plus grand incubateur de start-up au monde. Christophe Baillon a profité de cet événement pour présenter la jeune entreprise Squadrone System, qui conçoit le drone Hexo+, à François Hollande, introduit par Xavier Niel.**
+Mardi avait lieu l’inauguration de la Halle Freyssinet, destiné à être le plus grand incubateur de start-up au monde. Christophe Baillon a profité de cet événement pour présenter la jeune entreprise Squadrone System, qui conçoit le drone Hexo+, à François Hollande, introduit par Xavier Niel.
 
-<p style="text-align: center">
-  <img src="http://66.media.tumblr.com/b33c5f53ccd13c49eef5bda5cfc403e8/tumblr_inline_ndxw0reE4V1t2p7ex.jpg" />
-</p>
+!()[http://66.media.tumblr.com/b33c5f53ccd13c49eef5bda5cfc403e8/tumblr_inline_ndxw0reE4V1t2p7ex.jpg]
 
 _De gauche à droite : Xavier Niel, François Hollande et Christophe Baillon._
-
-<!-- more -->
 
 Le 21 octobre, la première pierre de la Halle Freyssinet a été posée. L’objectif de ce lieu situé dans le 13ème arrondissement de Paris ? Accueillir 1000 start-up dans les 30000 m2 dès 2016. Comme l’a rappelé Xavier Niel, « un incubateur est un lieu dans lequel on va permettre l’existence d’un écosystème pour que des jeunes puissent créer leur entreprise. On va être capable de leur amener l’ensemble des services dont ils ont besoin. **La France est un pays fantastique pour créer sa boîte** ».
 
@@ -110,6 +102,4 @@ C’est dans cet écosystème propice qu’aurait pu naître Hexo+. Il y a un an
 
 **Retrouvez ci-dessous les photos de l’événement et rendez-vous en mai 2015 pour la livraison des premiers drones !**
 
-<p style="text-align: center">
-  <img src="http://66.media.tumblr.com/01453577a31e129ed3b146c29b3ba4ac/tumblr_inline_ndxw2wyjEY1t2p7ex.jpg" />
-</p>
+!()[http://66.media.tumblr.com/01453577a31e129ed3b146c29b3ba4ac/tumblr_inline_ndxw2wyjEY1t2p7ex.jpg]

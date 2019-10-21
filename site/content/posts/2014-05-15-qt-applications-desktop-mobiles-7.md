@@ -119,8 +119,6 @@ Suite et fin de la découverte de la programmation desktop et mobile avec Qt.
 
 ## Et pour les mobiles ? <a id="mobile"></a>
 
-<!-- more -->
-
 L'application est désormais pleinement fonctionnelle. Ok on pourrait rajouter des choses, comme un menu lorsqu'on gagne / perd. Mais le but n'est pas de partir dans l'exploration de tout ce qui est possible en QML. Rappelez vous, on devait parler de mobile non ?
 
 Voici donc comment transformer votre application _desktop_ en une application mobile.

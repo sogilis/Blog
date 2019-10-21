@@ -127,9 +127,9 @@ public static HeroBuilder merlin() {
 
 Le principe est le suivant :
 
-  * Chaque Object Mother fournit une factory de base avec une configuration par défaut : c’est la méthode `one()`.
-  * Toutes les autres factories utilisent cette factory de base.
-  * Dans cette versions, les Object Mother retournent des builders et non des instances.
+* Chaque Object Mother fournit une factory de base avec une configuration par défaut : c’est la méthode `one()`.
+* Toutes les autres factories utilisent cette factory de base.
+* Dans cette versions, les Object Mother retournent des builders et non des instances.
 
 ## Avantages
 
@@ -185,22 +185,22 @@ HeroMother.one().king().build()
 HeroMother.one().caste(KING).build()
 {{< /highlight >}}
 
-**(3)** `.build()` est nécessaire partout pour générer l&rsquo;objet final (pollution cognitive).  
+**(3)** `.build()` est nécessaire partout pour générer l'objet final (pollution cognitive).  
 
 
 ## Ce qu’il faut retenir
 
-Combiné à des assertions custom [AssertJ][4], on arrive, avec cette technique, à des tests concis, qui restent lisibles et maintenables, même si on sent qu&rsquo;il serait possible de faire mieux avec un langage plus évolué que **Java**, ce que nous verrons dans un prochain article avec [Kotlin][5].
+Combiné à des assertions custom [AssertJ][4], on arrive, avec cette technique, à des tests concis, qui restent lisibles et maintenables, même si on sent qu'il serait possible de faire mieux avec un langage plus évolué que **Java**, ce que nous verrons dans un prochain article avec [Kotlin][5].
 
 ## Notes
 
-  * Ce principe est très largement inspiré par un [article de Rafał Borowiec][6].
-  * Le projet dont sont issus les extraits les extraits de code est disponible [sur Github][7].
+* Ce principe est très largement inspiré par un [article de Rafał Borowiec][6].
+* Le projet dont sont issus les extraits les extraits de code est disponible [sur Github][7].
 
- [1]: https://martinfowler.com/bliki/ObjectMother.html
- [2]: https://en.wikipedia.org/wiki/Builder_pattern
- [3]: https://projectlombok.org/
- [4]: http://joel-costigliola.github.io/assertj/
- [5]: http://kotlinlang.org/
- [6]: http://blog.codeleak.pl/2014/06/test-data-builders-and-object-mother.html
- [7]: https://github.com/sogilis/motherobject-builder-java-example
+[1]: https://martinfowler.com/bliki/ObjectMother.html
+[2]: https://en.wikipedia.org/wiki/Builder_pattern
+[3]: https://projectlombok.org/
+[4]: http://joel-costigliola.github.io/assertj/
+[5]: http://kotlinlang.org/
+[6]: http://blog.codeleak.pl/2014/06/test-data-builders-and-object-mother.html
+[7]: https://github.com/sogilis/motherobject-builder-java-example

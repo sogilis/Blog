@@ -119,8 +119,6 @@ Suite de la découverte de la programmation desktop et mobile avec Qt.
 
 ### Score et status
 
-<!-- more -->
-
 Le plateau est là, le jeu fonctionne. Il serait sympa désormais d'afficher le score et l'état du jeu (gagné / perdu).
 
 On va commencer par afficher deux composants textes qui vont contenir le résultat pour le premier et le score pour le deuxième. L'ensemble va être placé au dessus du plateau et les deux champs sur la même ligne. On va donc utiliser un `ColumnLayout` et un `RowLayout`.

@@ -98,7 +98,7 @@ tags:
 format: link
 
 ---
-# **Retour sur le Web2Day 2018, par Willy Malvault**
+# **Retour sur le Web2Day 2018, par Willy Malvault
 
 Le Web2Day c'est une conférence Nantaise internationale, qui a pour sujet... le Web, qui a réuni 6500 personnes et fête ses 10 ans en 2018. Lors de cette conférence, j'ai :
 
@@ -110,19 +110,19 @@ Le Web2Day c'est une conférence Nantaise internationale, qui a pour sujet... le
 
  **Disclaimer :** J'ajoute qu'étant donné qu'il y avait en moyenne 5 sessions en parallèle, j'ai aussi raté des choses sûrement très bonnes. Tout ça pour dire que je vous invite à aller voir [la page Youtube du Web2Day][5], afin de vous faire une idée par vous même de la popularité de certaines sessions.
 
-## **Un Mot sur l'organisation et l'accueil des speakers**
+## Un Mot sur l'organisation et l'accueil des speakers
 
 Très bon accueil des speakers, on a des goodies, des tickets repas, tickets boisson et cafés gratuits 🙂 Et comme l'évènement à lieu dans une salle de concert, on a même accès aux backstages, avec des loges et des gentils organisateurs pour nous chouchouter (Ils préparent les slides, chauffent la salle, vous équipent de micros, et stressent à votre place...).
 
 Une anecdote sur  l'ouverture de la conf : un concert de musique électro ([Em Shepherd][6]) à 9h00 (c'est... inhabituel, mais je ne saurais dire qui de nous ou des musiciens étaient les plus « déphasés » par rapport à cet horaire matinal). Cela dit, c'était vraiment cool et ça nous préparait à la claque qu'on allait prendre avec le premier talk....
 
-## **Talk d'ouverture : Utopie numérique. Transhumanisme ou hyperhumanisme, mythes, illusions et diversions de Sandrine Roudaut**
+## Talk d'ouverture : Utopie numérique. Transhumanisme ou hyperhumanisme, mythes, illusions et diversions de Sandrine Roudaut
 
 Excellent talk sur la place de l'utopie dans l'avenir du numérique. Quoi de mieux qu'une approche philosophique pour prendre un peu de recul sur notre métier et ouvrir une conférence sur le Web. Un must see ! Spoiler : il ne faut pas plus de personnes que ce qu'il y a dans cette salle pour changer le monde !
 
 {{< youtube LarBMjJk4TY >}}
 
-## **Mon top 1 : Impact Team – Piloter des équipes produit par l’impact**
+## Mon top 1 : Impact Team – Piloter des équipes produit par l’impact
 
 Excellent retour d'expérience sur la réorganisation des équipes chez MeilleursAgents. Il faut vraiment voir tout le talk pour comprendre leur organisation (spoiler : ils sont contents de leurs résultats). Le principe en deux mots : ils gardent les éléments qu'ils trouvent pertinents dans les méthodes agiles traditionnelles (rétrospectives essentiellement), ils cassent les « feature teams » (regardez la vidéo pour comprendre pourquoi, mais c’est le principe des « impact teams »), ils donnent des objectifs business directement aux équipes produit (dev + PO + autres métiers nécessaires), établissent des mesures pour évaluer l'atteinte ou non des objectifs. Ils sont sur des périodes de rétrospectives de 6 semaines, pratiquent depuis 9 mois, ont appris à jeter du code et sont convaincus qu'ils arrivent à délivrer de la valeur à leur produit beaucoup plus vite, et de façon plus pertinente, avec les impact teams.
 
@@ -132,7 +132,7 @@ Excellent retour d'expérience sur la réorganisation des équipes chez Meilleur
 
 © @ptibulle
 
-## **Mon top 2 : Microservices are not Worth the Trouble..??**
+## Mon top 2 : Microservices are not Worth the Trouble..??
 
 « Chaque fois que je viens en France, j'essaie de parler français, mais les français parlent mieux anglais que moi. »
 
@@ -149,7 +149,7 @@ Nous allons recroiser James dans un futur proche, c'est sûr !
 
 {{< youtube 0wPRSGtqmzU >}}
 
-## **Mon top 3 : Agile Methods are Dangerous**
+## Mon top 3 : Agile Methods are Dangerous
 
 Commençons par un mot sur le speaker : Julian Holmes est « principal consultant » chez Toughtworks. Pour donner un ordre d'idée de sa fonction, il est chargé d'accompagner les entreprises clientes dans une transformation qu'il ne qualifie pas d'« agile » mais de « as we are working in Toughtworks ». Julian nous expliquait en off (avec Julien on a passé 3 jours collés à James et Julian) qu'il adorait son job, car sa position l'amenait à avoir des rendez-vous au siège de grandes institutions comme HSBC, BBC, ou encore le gouvernement du Royaume Uni, en jeans / chemise !
 
@@ -157,7 +157,7 @@ Bref, un sacré bonhomme, mais parlons plutôt de son talk : « les méthodes ag
 
 {{< youtube 1eRb0tiKRPc >}}
 
-## **Another World, another Web (blockchain)**
+## Another World, another Web (blockchain)
 
 Un quick talk (20 minutes) sur des applis Web reposant à 100 % sur des technologies blockchain (i.e. avec une infrastructure 100% décentralisée). Par  Elephant Space, créateur de Universal Name System. Ce talk est un « must see » pour toute personne s’intéressant à la blockchain, à la décentralisation ou encore à la lutte contre la censure.
 
@@ -171,7 +171,7 @@ J'ai eu l'occasion d'échanger avec Damien Lecan le lendemain, un personnage tr�
 
 © @ptibule
 
-## **FireSide Chat with Frédéric Mazzela (CEO Blablacar)**
+## FireSide Chat with Frédéric Mazzela (CEO Blablacar)
 
 Interview intéressante de Frédéric Mazzella. Au programme : passage de covoiturage.fr à Blablacar (ou comment créer une marque ?), Comment trouver le bon business modèle (ils en ont essayé plein) ? Comment réussir son internationalisation ?
 
@@ -179,7 +179,7 @@ Cette interview permet de comprendre la culture et l’histoire de Blablacar,  
 
 {{< youtube 1-2_pyUGdt4 >}}
 
-## **CSS custom properties**
+## CSS custom properties
 
 Découverte pour moi des CSS Custom Properties. Bien utilisé, ça a l'air puissant. Vous trouverez une bonne introduction sur ce codepen : <https://codepen.io/Shokeen/pen/ZWyvmj> , mais la vidéo vaut le coup aussi !
 
@@ -191,7 +191,7 @@ Découverte pour moi des CSS Custom Properties. Bien utilisé, ça a l'air puiss
 
 © @ptibule
 
-## **LinuxKit, le linux façon Ikea**
+## LinuxKit, le linux façon Ikea
 
 Utiliser les outils docker pour construire ses propres OS (target cloud, hyperviseurs et bare-metal (ARM ready)), c'est possible avec [LinuxKit][10]. Un très bon talk pour tous les amateurs de Docker.
 
@@ -201,19 +201,19 @@ Utiliser les outils docker pour construire ses propres OS (target cloud, hypervi
 
 © @ptibule
 
-## **Enhance your User and Developer Experience with React & Redux**
+## Enhance your User and Developer Experience with React & Redux
 
 Très bonne introduction à Redux (plus que React) avec des exemples et un speaker qui maîtrise bien le sujet. Je dirais que ce talk est parfait pour des débutants React & Redux, ou pour ceux qui ne connaissent pas ces formidables technologies.
 
 {{< youtube wMaJ8sCuZcg >}}
 
-## **Comment doper efficacement sa cybersécurité au renseignement ?**
+## Comment doper efficacement sa cybersécurité au renseignement ?
 
 Talk assez théorique, mais très intéressant sur les bonnes pratiques en matière de cybersécurité. Le talk insiste sur le renseignement (i.e. construire une base de données avec toutes les informations pertinentes pouvant servir à défendre une infrastructure : blacklist adresses IP et nom de domaines, mais aussi méthodes d'intrusion).
 
 {{< youtube 0FVI02WZWq0 >}}
 
-## **Retour sur notre intervention : Alice au pays des micro-services**
+## Retour sur notre intervention : Alice au pays des micro-services
 
 Le talk a été plutôt bien reçu, il y avait du monde dans la salle (une centaine de personnes).
 
@@ -221,14 +221,14 @@ J'ai eu pas mal de questions en off, sur les 3 jours de la conférence. Ce sont 
 
 {{< youtube xT-YIsLQdlw >}}
 
- [1]: http://julien.giovaresco.fr/
- [2]: https://www.thoughtworks.com/
- [3]: https://troopers.agency/fr/
- [4]: https://les-tilleuls.coop/fr
- [5]: https://www.youtube.com/channel/UCCzfEV7NDD5OvkE3Ua7pcxQ
- [6]: https://soundcloud.com/emshepherdmusic
- [7]: https://pbs.twimg.com/media/Dfp847BX0AApUfr.jpg
- [8]: https://pbs.twimg.com/media/Dfj0ULEWsAExqWr.jpg
- [9]: https://pbs.twimg.com/media/DfkiMU-WAAEHYdC.jpg
- [10]: https://github.com/linuxkit/linuxkit
- [11]: https://pbs.twimg.com/media/DforE97XkAAfGYF.jpg
+[1]: http://julien.giovaresco.fr/
+[2]: https://www.thoughtworks.com/
+[3]: https://troopers.agency/fr/
+[4]: https://les-tilleuls.coop/fr
+[5]: https://www.youtube.com/channel/UCCzfEV7NDD5OvkE3Ua7pcxQ
+[6]: https://soundcloud.com/emshepherdmusic
+[7]: https://pbs.twimg.com/media/Dfp847BX0AApUfr.jpg
+[8]: https://pbs.twimg.com/media/Dfj0ULEWsAExqWr.jpg
+[9]: https://pbs.twimg.com/media/DfkiMU-WAAEHYdC.jpg
+[10]: https://github.com/linuxkit/linuxkit
+[11]: https://pbs.twimg.com/media/DforE97XkAAfGYF.jpg

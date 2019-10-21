@@ -96,8 +96,6 @@ Après 4 mois passés à Sogilis, j'ai décidé de dresser un premier bilan : m
 
 Après 10 ans passés chez Varian devenu Agilent puis localement Persistent Systems. J'ai souhaité donner un nouvel élan à ma carrière, découvrir de nouvelles technologies, de nouveaux collègues. J'avais besoin de changement ; vraiment. Ceci dit, un petit clin d’œil à mon mentor qui se reconnaîtera et mes collègues qui liront ces quelques lignes :).
 
-<!-- more -->
-
 ## Pourquoi postuler chez Sogilis
 
 Étant Agiliste confirmé et convaincu, j'ai recherché les entreprises Grenobloises (je ne suis pas mobile pour le moment) où l'Agilité et les pratiques de Dev ne posent plus question. On a vite fait le tour, elles se comptent à peu près sur les doigts d'une main. Parmi elles, la pépite grenobloise Sogilis. Sogilis était MA CIBLE principale lorsque j'ai décidé de changer. SOGILIS représentait LA société grenobloise qui cultive l'excellence et l'agilité (développement embarqué critique, expertise et formation, développement de sites en Ruby). Et puis, le management cellulaire me semblait un concept intéressant.

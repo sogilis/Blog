@@ -1,5 +1,5 @@
 ---
-title: 'TuleapCon2017 : Venez écouter Enalean et Sogilis, deux start-up de la «French Tech in the Alps» qui séduisent les grands groupes'
+title: "TuleapCon2017 : Venez écouter Enalean et Sogilis, deux start-up de la «French Tech in the Alps» qui séduisent les grands groupes"
 author: Tiphaine
 date: 2017-05-23T10:08:42+00:00
 featured_image: /wp-content/uploads/2017/05/tuleapcon2017.png
@@ -99,57 +99,46 @@ tags:
   - TuleapCon2017
 
 ---
-<h2 style="text-align: center;">
-  DevOps, livraison continue, open innovation, agilité, quand deux start-up arrivent à faire de ces « buzz words » une réalité, les grands comptes industriels comme <strong>Airbus</strong>, <strong>STMicroelectronics</strong> ou <strong>Orange</strong> suivent la marche.
-</h2>
+DevOps, livraison continue, open innovation, agilité, quand deux start-up arrivent à faire de ces « buzz words » une réalité, les grands comptes industriels comme **Airbus**, **STMicroelectronics** ou **Orange** suivent la marche.
 
-<img class="aligncenter size-full wp-image-1920" src="http://sogilis.com/wp-content/uploads/2017/05/Capture-d’écran-2017-05-23-à-11.31.04.png" alt="enaleansogilis" width="611" height="149" srcset="http://sogilis.com/wp-content/uploads/2017/05/Capture-d’écran-2017-05-23-à-11.31.04.png 611w, http://sogilis.com/wp-content/uploads/2017/05/Capture-d’écran-2017-05-23-à-11.31.04-300x73.png 300w" sizes="(max-width: 611px) 100vw, 611px" />
+!(enaleansogilis)[http://sogilis.com/wp-content/uploads/2017/05/Capture-d’écran-2017-05-23-à-11.31.04.png]
 
-[**Enalean**][1], éditeur du logiciel open source Tuleap, basé à Grenoble et Savoie Technolac, et [**Sogilis**][2], société d&rsquo;ingénierie informatique basée à Grenoble et Lyon, collaborent depuis plus de 3 ans. Ensemble, les deux sociétés du sillon alpin fournissent des applications logicielles de haute qualité, de véritables avantages concurrentiels pour les industriels. Car si l’avenir d’une start-up peut être lié à un grand compte, le contraire est tout aussi vrai !
+[**Enalean**][1], éditeur du logiciel open source Tuleap, basé à Grenoble et Savoie Technolac, et [**Sogilis**][2], société d'ingénierie informatique basée à Grenoble et Lyon, collaborent depuis plus de 3 ans. Ensemble, les deux sociétés du sillon alpin fournissent des applications logicielles de haute qualité, de véritables avantages concurrentiels pour les industriels. Car si l’avenir d’une start-up peut être lié à un grand compte, le contraire est tout aussi vrai !
 
-# **Pourquoi ça marche ?**
+## Pourquoi ça marche ?
 
-**Côté start-up **: Enalean et Sogilis partagent les mêmes valeurs : mise en place des dernières méthodologies d&rsquo;ingénierie, exigence envers eux-même, implication des équipes internes. Ces pépites innovent constamment. En matière de business model -avec l&rsquo;<span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="https://blog.enalean.com/open-roadmap-enalean-comment-ca-marche/">Open Roadmap™ de Enalean</a></span></span> ou l’accompagnement <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="http://sogilis.com/competences/">Market Driven Development de Sogilis</a></span></span> par exemple-, en Ressources Humaines -les équipes sont auto-organisées-, en R&D -Hackathons- .
+**Côté start-up** : Enalean et Sogilis partagent les mêmes valeurs : mise en place des dernières méthodologies d'ingénierie, exigence envers eux-même, implication des équipes internes. Ces pépites innovent constamment. En matière de business model -avec l'(Open Roadmap™ de Enalean)[https://blog.enalean.com/open-roadmap-enalean-comment-ca-marche/] ou l’accompagnement (Market Driven Development de Sogilis)[http://sogilis.com/competences/] par exemple-, en Ressources Humaines -les équipes sont auto-organisées-, en R&D -Hackathons- .
 
-**Côté grand compte** : En travaillant avec de petites entreprises, les grands comptes développent et profitent d&rsquo;idées neuves et d&rsquo;une inventivité qui change la donne. À l’heure où des nouveautés émergent chaque jour, il est capital pour les industriels de suivre la cadence. Être la première à lancer et à adopter une innovation est un atout concurrentiel qui n’a pas de prix.
+**Côté grand compte** : En travaillant avec de petites entreprises, les grands comptes développent et profitent d'idées neuves et d'une inventivité qui change la donne. À l’heure où des nouveautés émergent chaque jour, il est capital pour les industriels de suivre la cadence. Être la première à lancer et à adopter une innovation est un atout concurrentiel qui n’a pas de prix.
   
-**TuleapCon 2017, la journée des innovations en ingénierie logicielle **
+## TuleapCon 2017, la journée des innovations en ingénierie logicielle
   
-Enalean et Sogilis partageront le résultat de leur collaboration le 29 juin 2017, à Aix les Bains lors de la <span style="text-decoration: underline;"><span style="color: #0000ff;"><a style="color: #0000ff; text-decoration: underline;" href="https://tuleapcon.tuleap.org/">TuleapCon2017</a></span></span>. Cette journée réunira la communauté Tuleap et présentera notamment les dernières fonctionnalités, développées conjointement.
+Enalean et Sogilis partageront le résultat de leur collaboration le 29 juin 2017, à Aix les Bains lors de la (TuleapCon2017)[https://tuleapcon.tuleap.org/]. Cette journée réunira la communauté Tuleap et présentera notamment les dernières fonctionnalités, développées conjointement.
 
-Airbus, Orange, STMicroelectronics, Jtekt-Toyota ainsi que des PME, témoigneront de leurs enjeux actuels en matière de développement logiciel. Elles expliqueront comment l&rsquo;outil Tuleap les aide à y répondre.
+Airbus, Orange, STMicroelectronics, Jtekt-Toyota ainsi que des PME, témoigneront de leurs enjeux actuels en matière de développement logiciel. Elles expliqueront comment l'outil Tuleap les aide à y répondre.
 
-<span style="color: #33cccc;"><strong>« </strong><em>Vendre des points agiles à des Grands Comptes c&rsquo;est possible. Cette journée est aussi l&rsquo;occasion de montrer que l&rsquo;Open Roadmap, une innovation en matière de business model, ça fonctionne.</em><strong> </strong>»</span> ajoute Manuel Vacelet, Directeur Technique de Enalean.
+**_« Vendre des points agiles à des Grands Comptes c'est possible. Cette journée est aussi l'occasion de montrer que l'Open Roadmap, une innovation en matière de business model, ça fonctionne. »_** ajoute Manuel Vacelet, Directeur Technique de Enalean.
 
-Sogilis présentera concrètement son expertise technique. Son équipe démontrera des développements qui illustrent sa compétence en matière d&rsquo;ingénierie logicielle avancée:  les Pull Requests pour la revue de code et un nouvel outil de Tests et de Traçabilité.
+Sogilis présentera concrètement son expertise technique. Son équipe démontrera des développements qui illustrent sa compétence en matière d'ingénierie logicielle avancée:  les Pull Requests pour la revue de code et un nouvel outil de Tests et de Traçabilité.
 
-<span style="color: #33cccc;"><strong>« </strong><em>L&rsquo;agilité et les pratiques de développements associées sont une force pour Sogilis. Travailler avec Enalean pour apporter à Tuleap des outils permettant de faciliter ces pratiques apporte du sens à notre travail.</em></span>**<span style="color: #33cccc;">»</span> **souligne Luc Jeanniard de chez Sogilis.
+**_« L'agilité et les pratiques de développements associées sont une force pour Sogilis. Travailler avec Enalean pour apporter à Tuleap des outils permettant de faciliter ces pratiques apporte du sens à notre travail. »_** souligne Luc Jeanniard de chez Sogilis.
 
-<h3 dir="ltr">
-  <span style="color: #ff6600;"><strong>A propos de Enalean </strong></span>
-</h3>
+## A propos de Enalean
 
-Enalean est éditeur du logiciel <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.enalean.com/fr/tuleap">Tuleap</a></span>, première suite de Gestion du Cycle de Vie des Applications (ALM) entièrement Open-Source.
+Enalean est éditeur du logiciel (Tuleap)[https://www.enalean.com/fr/tuleap], première suite de Gestion du Cycle de Vie des Applications (ALM) entièrement Open-Source.
 
-Tuleap  permet aux équipes de développement de fournir des applications logicielles plus rapidement, de meilleure qualité, quelles que soit les méthodes utilisées : Agiles, Waterfall, CMMI&#8230;
+Tuleap  permet aux équipes de développement de fournir des applications logicielles plus rapidement, de meilleure qualité, quelles que soit les méthodes utilisées : Agiles, Waterfall, CMMI...
 
 Tuleap organise et automatise les développements : backlog, tâches, bugs, code source, intégration continue, livraisons, documents. La suite est intégrée avec des outils leaders : Git, Jenkins, Eclipse.
 
-<p dir="ltr">
-  <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.enalean.com/" target="_blank">Enalean</a></span> fournit des services professionnels basés sur Tuleap : support SLA, formations  hébergement, mais aussi un service innovant : <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.enalean.com/fr/services#open-roadmap">l&rsquo;Open Roadmap</a></span>™, un Club de financement collaboratif pour la R&D de  Tuleap.
-</p>
+(Enalean)[https://www.enalean.com/] fournit des services professionnels basés sur Tuleap : support SLA, formations  hébergement, mais aussi un service innovant : (l'Open Roadmap)[https://www.enalean.com/fr/services#open-roadmap]™, un Club de financement collaboratif pour la R&D de Tuleap.
 
-<p dir="ltr">
-  <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://twitter.com/TuleapOpenALM" target="_blank">@TuleapOpenALM</a>  <a style="color: #3366ff;" href="https://twitter.com/EnaleanTeam" target="_blank">@EnaleanTeam</a></span>
-</p>
+(@TuleapOpenALM)[https://twitter.com/TuleapOpenALM]
+(@EnaleanTeam)[https://twitter.com/EnaleanTeam]
 
-<h3 dir="ltr">
-  <strong><span style="color: #ff6600;">A propos de Sogilis</span></strong>
-</h3>
+## A propos de Sogilis
 
-<p dir="ltr">
-  Booster d’innovation depuis 2008, Sogilis est une entreprise d’ingénierie informatique qui construit des applications dans des domaines variés. Son équipe pluridisciplinaire se positionne sur un haut niveau de qualité pour créer des logiciels utiles, utilisables et durables, de l’embarqué critique aux applications web cloud native.
-</p>
+Booster d’innovation depuis 2008, Sogilis est une entreprise d’ingénierie informatique qui construit des applications dans des domaines variés. Son équipe pluridisciplinaire se positionne sur un haut niveau de qualité pour créer des logiciels utiles, utilisables et durables, de l’embarqué critique aux applications web cloud native.
 
 L’ADN de Sogilis : Accélération de start-up, accompagnement de PME industrielles dans leur transformation numérique et stratégie d’Open Innovation auprès de grands groupes.
 
@@ -159,20 +148,10 @@ CA 2016 : 2 millions consolidés
   
 35 collaborateurs.
 
-<p dir="ltr">
-  <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://twitter.com/Sogilis" target="_blank">@sogilis</a>  <a style="color: #3366ff;" href="http://sogilis.com/">http://sogilis.com</a>   <a style="color: #3366ff;" href="http://sogilis.com/blog/" target="_blank">http://sogilis.com/blog/</a></span>
-</p>
+(@sogilis)[https://twitter.com/Sogilis]
+(https://sogilis.fr)[https://sogilis.fr]
 
-<p dir="ltr">
-  <img class="size-large wp-image-1919" src="http://sogilis.com/wp-content/uploads/2017/05/Sogilis-Christophe-Levet-Photographe-7461-1024x615.jpg" alt="sogilis" width="669" height="402" srcset="http://sogilis.com/wp-content/uploads/2017/05/Sogilis-Christophe-Levet-Photographe-7461-1024x615.jpg 1024w, http://sogilis.com/wp-content/uploads/2017/05/Sogilis-Christophe-Levet-Photographe-7461-300x180.jpg 300w, http://sogilis.com/wp-content/uploads/2017/05/Sogilis-Christophe-Levet-Photographe-7461-768x461.jpg 768w, http://sogilis.com/wp-content/uploads/2017/05/Sogilis-Christophe-Levet-Photographe-7461.jpg 1200w" sizes="(max-width: 669px) 100vw, 669px" />
-</p>
+!(sogilis)[http://sogilis.com/wp-content/uploads/2017/05/Sogilis-Christophe-Levet-Photographe-7461-1024x615.jpg]
 
-<table class="columnWrapper" border="0" width="300" cellspacing="0" cellpadding="0" align="left">
-  <tr>
-    <td class="columnContainer" valign="top">
-    </td>
-  </tr>
-</table>
-
- [1]: https://www.enalean.com/
- [2]: http://sogilis.com/
+[1]: https://www.enalean.com/
+[2]: http://sogilis.com/

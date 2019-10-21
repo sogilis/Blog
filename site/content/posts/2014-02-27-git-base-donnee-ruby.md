@@ -95,8 +95,6 @@ tags:
 
 ![YES](http://replygif.net/i/877.gif)
 
-<!-- more -->
-
 ## Contexte
 
 Le but étant d'étudier git et de l'utiliser autrement qu'à l'habitude. Par contre, histoire de ne pas travailler dans le vent, il fallait bien développer un petit quelque chose. Nous sommes donc partis sur un grand classique des tutos web : la _todo list_ !

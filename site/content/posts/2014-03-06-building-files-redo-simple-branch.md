@@ -95,8 +95,6 @@ tags:
 
 For a long time, developers have been using `make` as their build system. However, this very simple program have many issues. To help with these, many front-ends have been written and used, such as automake and cmake. Some tried to replace it completely like scons.
 
-<!-- more -->
-
 Let’s build a list of things we are dissatisfied with make:
 
 - Recursive make is broken

@@ -1,6 +1,6 @@
 ---
 title: End-to-end testing with chrome headless at SquareScale
-author: Tiphaine
+author: Adrien Hamraoui
 date: 2017-11-07T12:32:09+00:00
 featured_image: /wp-content/uploads/2017/11/preview-full-s_600ppi.png
 pyre_show_first_featured_image:
@@ -117,10 +117,11 @@ The first milestone for me was to set up the whole environment and process with 
 
 The API is really easy to handle. As you can see on their website it is very straight forward, `goto(url)`, `click()`, `type()`. In the end, showing the homepage’s URL code was really tiny:
 
-<pre class="wp-code-highlight prettyprint">const exists = await chromeless
+{{< highlight js >}}
+const exists = await chromeless
 .goto(sqsc_url)
 .html()
-</pre>
+{{< /highlight >}}
 
 I then decided to write a more complex test which would check if a user could login from the front page. But I run into my second problem, different executions of my test led to different results. Sometimes timeouts, sometimes it could not find the right DOM element. Moreover the whole team had to work for the imminent release and continuing on this project became less important. I felt very disappointed to drop one week of work. I also felt a bit exhausted to have worked one week just to package chrome into docker to finally see that the library I chose was not reliable. On the top of that, the number of contributions on the project, which were quite high when I started to use the library, started to decrease.
 
@@ -136,77 +137,80 @@ Here is the code that allows us to instantiate a new chrome instance before ever
 
 src/setup/browser.js
 
-<pre class="wp-code-highlight prettyprint">const puppeteer = require(&#039;puppeteer&#039;);
+{{< highlight js >}}
+const puppeteer = require('puppeteer');
 
-beforeEach(async () =&gt; {
+beforeEach(async () => {
   jest.setTimeout(2400000); // 40mn by test
 
   browser = await puppeteer.launch({
     args: [
-      &#039;--no-sandbox&#039;,
-      &#039;--disable-setuid-sandbox&#039;
+      '--no-sandbox',
+      '--disable-setuid-sandbox'
     ]
   });
 
   page = await browser.newPage();
 
   // Capture logging
-  page.on(&#039;console&#039;, (...args) =&gt; console.log.apply(console, [&#039;[Browser]&#039;, ...args]));
+  page.on('console', (...args) => console.log.apply(console, ['[Browser]', ...args]));
 });
 
-afterEach(async () =&gt; {
+afterEach(async () => {
   await browser.close();
 });
-</pre>
+{{< /highlight >}}
 
 src/jest.config.js
 
-<pre class="wp-code-highlight prettyprint">const env = process.env.ENV;
-const sqsc_url = env === &#039;dev&#039; ? &#039;squarescale.local&#039; : `squarescale.${env}`;
+{{< highlight js >}}
+const env = process.env.ENV;
+const sqsc_url = env === 'dev' ? 'squarescale.local' : `squarescale.${env}`;
 
 module.exports = {
-  setupTestFrameworkScriptFile: &#039;./setup/browser.js&#039;,
+  setupTestFrameworkScriptFile: './setup/browser.js',
   globals: { // available in all tests
     browser: null,
     page: null,
     sqsc_url
   }
 };
-</pre>
+{{< /highlight >}}
 
 We chose to run a new instance of chrome for every test to keep them separated from each others. We can also imagine that it will be better when we will run them in parallel. In the end, it add a few seconds of overhead but it is non significant compared to the time taken by the test itself.
 
 ### Writing scenarii with Puppeteer, ensure login feature works {#writing-scenarii-with-puppeteer-ensure-login-feature-works}
 
-<pre class="wp-code-highlight prettyprint">const login = process.env.GITHUB_LOGIN;
+{{< highlight js >}}
+const login = process.env.GITHUB_LOGIN;
 const password = process.env.GITHUB_PASSWORD;
 const secret = process.env.GITHUB_SECRET;
 
-const loginSelector = &#039;#login_field&#039;;
-const passwordSelector = &#039;#password&#039;;
-const otpSelector = &#039;#otp&#039;;
+const loginSelector = '#login_field';
+const passwordSelector = '#password';
+const otpSelector = '#otp';
 
 try {
   await page.goto(sqsc_url);
-  await page.click(&#039;form[action="/users/auth/github"] button[type=submit]&#039;);
+  await page.click('form[action="/users/auth/github"] button[type=submit]');
   await page.waitForSelector(loginSelector);
   await page.focus(loginSelector);
   await page.type(login);
   await page.focus(passwordSelector);
   await page.type(password);
-  await page.click(&#039;.btn&#039;);
+  await page.click('.btn');
   await page.waitForSelector(otpSelector);
   await page.focus(otpSelector);
   await page.type(gotp(secret, 6, 30, Math.floor(Date.now() / 1000)));
-  await page.click(&#039;.btn&#039;);
-  await page.waitForNavigation({ waitUntil: &#039;networkidle&#039; });
-  await page.waitForSelector(&#039;html.signed&#039;);
+  await page.click('.btn');
+  await page.waitForNavigation({ waitUntil: 'networkidle' });
+  await page.waitForSelector('html.signed');
 }
 catch (e) {
   console.error(e);
-  throw &#039;Exception during login&#039;;
+  throw 'Exception during login';
 }
-</pre>
+{{< /highlight >}}
 
 ### Running with Docker {#running-with-docker}
 
@@ -214,7 +218,8 @@ The Dockerfile is also very simple, we chose to use a node js image and to add s
 
 Credit to <https://github.com/alekzonder/docker-puppeteer>.
 
-<pre class="wp-code-highlight prettyprint">FROM node:8-slim
+{{< highlight docker >}}
+FROM node:8-slim
 
 RUN apt-get update && \
   apt-get install -yq \
@@ -226,48 +231,50 @@ RUN apt-get update && \
   apt-get clean && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
-</pre>
+{{< /highlight >}}
 
 We simply have to use the image to run our tests with Jest:
 
-<pre class="wp-code-highlight prettyprint">docker run --rm --name &#039;qa-front&#039; qa-front yarn run test
-</pre>
+{{< highlight bash >}}
+docker run --rm --name 'qa-front' qa-front yarn run test
+{{< /highlight >}}
 
 ### Jenkins {#jenkins}
 
 Our Jenkins simply use the docker container we made to run the tests (notice `agent { dockerfile true }`). We configured it to provide the secrets, and to run the tests every 6 hours:
 
-<pre class="wp-code-highlight prettyprint">pipeline {
+{{< highlight js >}}
+pipeline {
   triggers {
-    cron(&#039;0 5,11,17,23 * * *&#039;)
+    cron('0 5,11,17,23 * * *')
   }
   parameters {
     string(
-      name: &#039;env&#039;,
-      defaultValue: env.BRANCH_NAME == &#039;production&#039; ? &#039;production&#039; : &#039;staging&#039;,
-      description: &#039;Environment (staging|production)&#039;)
+      name: 'env',
+      defaultValue: env.BRANCH_NAME == 'production' ? 'production' : 'staging',
+      description: 'Environment (staging|production)')
   }
 
   environment {
-    GITHUB_LOGIN = credentials(&#039;github-login&#039;)
-    GITHUB_PASSWORD = credentials(&#039;github-password&#039;)
-    GITHUB_SECRET = credentials(&#039;github-secret&#039;)
+    GITHUB_LOGIN = credentials('github-login')
+    GITHUB_PASSWORD = credentials('github-password')
+    GITHUB_SECRET = credentials('github-secret')
   }
 
   agent { dockerfile true }
 
   stages {
-    stage(&#039;Run&#039;) {
+    stage('Run') {
       steps {
-        sh &#039;yarn install&#039;;
-        sh &#039;ENV=${params.env} yarn run test&#039;
+        sh 'yarn install';
+        sh 'ENV=${params.env} yarn run test'
       }
     }
   }
   post {
     always {
       withCredentials([
-        string(credentialsId: &#039;qa-${params.env}-slack-webhook&#039;, variable: &#039;SQSC_QA_SLACK_WEBHOOK&#039;)
+        string(credentialsId: 'qa-${params.env}-slack-webhook', variable: 'SQSC_QA_SLACK_WEBHOOK')
       ]) {
         script {
           notifyBuild(currentBuild.currentResult)
@@ -276,7 +283,7 @@ Our Jenkins simply use the docker container we made to run the tests (notice `ag
     }
   }
 }
-</pre>
+{{< /highlight >}}
 
 ## The final word {#the-final-word}
 
@@ -288,10 +295,10 @@ Stay tuned!
 
 Special thanks to Alexandre, Marien, Shanti, Romain, Graham, and Yves for their feedbacks.
 
- [1]: https://github.com/GoogleChrome/puppeteer
- [2]: http://www.squarescale.com/
- [3]: https://github.com/graphcool/chromeless/
- [4]: http://seleniumhq.org/
- [5]: https://facebook.github.io/jest/
- [6]: https://reactjs.org/
- [7]: https://github.com/hamadr/
+[1]: https://github.com/GoogleChrome/puppeteer
+[2]: http://www.squarescale.com/
+[3]: https://github.com/graphcool/chromeless/
+[4]: http://seleniumhq.org/
+[5]: https://facebook.github.io/jest/
+[6]: https://reactjs.org/
+[7]: https://github.com/hamadr/

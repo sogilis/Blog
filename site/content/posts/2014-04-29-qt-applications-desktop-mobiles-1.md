@@ -102,8 +102,6 @@ Mais… (car il y a toujours un mais)
 
 … il y a QtQuick !
 
-<!-- more -->
-
 Bon je vais pas vous faire une intro totale à QtQuick, vous trouverez par exemple pas mal d'informations sur le [wiki de Qt](http://qt-project.org/wiki/Qt_Quick).
 
 Pour faire très simple c'est un framework permettant de créer des interfaces très personnalisables et dynamiques (contrairement aux widgets classiques) basées sur un langage déclaratif, `QML` qui ressemble un peu (de loin les yeux fermés dans le brouillard) à du json et dans lequel on peut injecter du javascript.
@@ -120,7 +118,8 @@ Allez non, en fait il reste un dernier point intéressant : QtMobile. Il est auj
 
 Et c'est donc tout cela que nous allons voir dans cette série d'articles :
 
-- créer une application avec un cœur applicatif en `C++<br />`
+- créer une application avec un cœur applicatif en `C++
+`
 - avoir une interface en QML et voir la liaison entre ces deux parties (initialement l'objectif portait surtout sur ce point mais ça a un peu dérivé ;-))
 - l'exécuter partout !
 

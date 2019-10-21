@@ -97,7 +97,7 @@ On continue dans cet article à décrire l’organisation de la gestion de Sogil
 
 Quelles sont les différentes méthodes que nous avons mises en place pour éviter cette dérive ?
 
-## **La personne responsable n’est pas nécessairement celle qui fait**
+## La personne responsable n’est pas nécessairement celle qui fait
 
 L’association d’une personne responsable à une action est une règle classique dans la méthodologie agile. Être responsable d’une action signifie pour nous de s’assurer que l’action soit faite en temps et en heure. La personne responsable n’a pas l’obligation de réaliser elle-même cette action.
 
@@ -105,9 +105,9 @@ Au bout de quelques semaines, nous avons néanmoins identifié un problème : ce
 
 Arnaud, l’un de nos collègues nous a alors proposé un jeu pour nous aider à nous organiser : le casino game.
 
-## **Casino game**
+## Casino game
 
-C’est un jeu permettant d'appréhender une partie de la méthodologie agile de façon ludique. Les articles décrivant ce jeu et ce qu'il apporte ne manquant pas (par <a href="http://www.agilex.fr/jeu-casino-game/">ici</a>), nous nous concentrerons juste sur ce qu’il a apporté à notre organisation.
+C’est un jeu permettant d'appréhender une partie de la méthodologie agile de façon ludique. Les articles décrivant ce jeu et ce qu'il apporte ne manquant pas (par (ici)[http://www.agilex.fr/jeu-casino-game/]), nous nous concentrerons juste sur ce qu’il a apporté à notre organisation.
 
 Le casino game permet de prendre conscience que quelques règles extrêmement simples permettent de fluidifier formidablement une chaîne de production et ainsi de produire davantage de valeur, tout en réduisant l’en-cours. L’idée est de faire réfléchir l’équipe, à chaque itération, pour améliorer cette chaîne.
 
@@ -130,7 +130,7 @@ Nos avatars
 Concernant le sujet de la prise d’initiative, nous continuons de le travailler au quotidien, notamment grâce à l’initiative poker.
 
 
-## **Initiative poker**
+## Initiative poker
 
 L’initiative poker (disponible [ici](/img/2018/06/initiative_poker.pdf)) est une adaptation très proche, proposée par Augustin, du [Delegation Poker](https://management30.com/product/delegation-poker/) inventé par Jurgen Appelo. Le Delegation Poker est à destination des managers d’équipes. Ces derniers n’existant pas chez nous, nous l’avons remanié pour qu’il réponde à notre problématique de prise d’initiative individuelle. En effet, si nous devons tous nous réunir avant chaque prise de décision, l’entreprise sera paralysée. En revanche certaines décisions méritent une réflexion collective. L’initiative poker a pour ambition de nous aider à discerner ces différentes situations pour gagner en efficacité.
 
@@ -163,7 +163,7 @@ Nous avons introduit ce jeu depuis peu lors des entretiens de recrutement. Ce je
 
 Nous avons décrit comment fonctionnait la responsabilité au niveau des actions simples, ainsi que la façon dont nous encourageons chacun à prendre des initiatives pour fluidifier la prise de décisions dans la société. Il nous reste à présent à aborder la question de la responsabilité de chacun, et de l’ensemble de l’équipe, pour les sujets plus transverses liés à l’entreprise. Qui est responsable du recrutement, de faire en sorte que l’entreprise possède une bonne visibilité, de veiller à ce que les actions liées au business soient faites afin d’avoir des prospects qualifiés etc… ?
 
-## **Rôles tournant**
+## Rôles tournant
 
 Pour résoudre ces questions nous avons identifié et créé 5 rôles au sein de la structure :
 
@@ -188,11 +188,11 @@ Les risques, avec les 5 rôles formalisés étaient :
 
 Si Marion occupe en permanence le rôle de voleuse et qu’elle fait toutes les tâches de ce rôle, elle est la seule à développer ses compétences et sa connaissance sur le sujet. Son départ serait donc dangereux pour nous. Voilà pourquoi nous avons décidé de faire tourner les rôles. Certains d’entre nous ont bien sûr plus ou moins d’affinité pour porter tel ou tel office, mais nous devons tous passer au moins une fois par tous les rôles. Pour se rendre compte des tâches à accomplir, pour monter en compétence, pour remplacer quelqu’un au pied levé. Nous avons opté pour des cycles d’un mois. Quand nous intégrons une nouvelle personne dans l’équipe, elle prend un rôle et binôme avec celui ou celle qui l’occupait précédemment pour être formée. Ce système est en place depuis 15 mois et fonctionne bien. Nous revoyons régulièrement les droits et devoirs de chaque rôle, toujours dans la démarche d’amélioration continue.
 
-## **Conclusion**
+## Conclusion
 
 Un des doutes que nous avons le plus souvent entendu à propos de l’entreprise libérée est le fait de pouvoir prendre des décisions de manière efficace, sans retomber dans un schéma de hiérarchie. De nombreuses personnes pensent qu’une hiérarchie implicite se met nécessairement en place et que, par conséquent, les personnes situées “en bas” de cette pyramide se tournent naturellement et de façon tacite vers les “leaders naturels”. Et c’est vrai. C’est effectivement un risque majeur de cette forme d’organisation si l’on veut que tout le monde participe à son fonctionnement. Toutefois, ne pas se voiler la face et reconnaître ce risque permet de mettre en place des mesures pour le limiter. Être conscients de ce risque nous permet de faire l’effort de demander l’avis de tous pour les questions cruciales liées à l’entreprise. Faire l’effort de donner son avis, même lorsqu’on n’est pas du tout sûr de soi. Ce dernier point repose entièrement sur le fait que l’on s'attache à cultiver un environnement bienveillant, où l’on a le droit de donner son avis, de faire des erreurs, où l’on ne sera pas moqué pour une réflexion pas tout à fait aboutie.
 
 Nous sommes de fait tous responsables. Responsables, identifiés individuellement, de petites actions quotidiennes et de rôles importants mensuellement. Responsables collectivement de veiller à ce qu’une hiérarchie implicite ne se mette pas en place, de veiller à ce que chacun puisse prendre des initiatives sans se sentir coupable en cas d’échec. Cela demande un effort, quotidien, mais nous pensons que les retombées en valent largement la peine.
 
 
- [1]: http://sogilis.com/blog/les-methodes-agiles-au-service-de-la-gestion-dentreprise/
+[1]: http://sogilis.com/blog/les-methodes-agiles-au-service-de-la-gestion-dentreprise/
