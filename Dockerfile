@@ -4,7 +4,8 @@ WORKDIR /blog
 
 RUN apk add --no-cache asciidoctor wget
 
-COPY ./bin/hugo.linux /bin/hugo
+COPY ./bin/hugo.linux ./bin/hugo.linux
+RUN chmod a+x ./bin/hugo.linux
 COPY site site
 COPY src src
 COPY .*rc ./
