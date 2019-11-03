@@ -93,8 +93,6 @@ tags:
 
 It is amazing to see how simple we can read xml node values from powershell:
 
-<!-- more -->
-
 **Here is a peace of xml file**
 
 {{< highlight xml >}}

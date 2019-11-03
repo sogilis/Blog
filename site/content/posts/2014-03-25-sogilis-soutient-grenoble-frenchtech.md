@@ -101,8 +101,6 @@ Grenoble est candidate au label “Metropole French Tech” sous la signature [D
 >
 > Fleur Pellerin
 
-<!-- more -->
-
 [La French Tech c'est vous](http://www.dailymotion.com/video/x1ajwb8_la-french-tech-c-est-vous_news) _par [FrenchTech](http://www.dailymotion.com/frenchtech)._
 
 Sogilis et [Startup Maker](http://www.startup-maker.com/) se mobilisent aux côtés de l’ensemble de l’écosystème numérique grenoblois pour que la ville obtienne le label. Cette labellisation constitue pour Grenoble une nouvelle opportunité d’accélérer le développement et la visibilité à l’international des Tech Champions du territoire.

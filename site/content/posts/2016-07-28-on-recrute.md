@@ -91,40 +91,33 @@ tags:
 ---
 **Au sein de Sogilis, on a les oreilles ouvertes pour recruter des profils de passionnés passionnants à Grenoble et Lyon.**
 
-<img class="wp-image-1128 size-full aligncenter" src="http://sogilis.com/wp-content/uploads/2016/07/Recrutement4.png" alt="Recrutement4" width="722" height="280" srcset="http://sogilis.com/wp-content/uploads/2016/07/Recrutement4.png 722w, http://sogilis.com/wp-content/uploads/2016/07/Recrutement4-300x116.png 300w" sizes="(max-width: 722px) 100vw, 722px" />
+!(Recrutement4)[http://sogilis.com/wp-content/uploads/2016/07/Recrutement4.png]
 
-**Sogilis est une société de services. Pourtant, on a du mal à se considérer comme une SSII.** _[<span style="font-weight: 400;"><span style="text-decoration: underline;">Jérémy et Corentin en parlent d’ailleurs très bien dans un article dédié</span>.</span>][1]_ <span style="font-weight: 400;">Au sein de notre entreprise, on ne se contente pas de développer des logiciels fiables et sur mesure qui tendent vers du zéro défaut. Nous nous assurons que le périmètre développé soit en adéquation avec les besoins de ses utilisateurs et mettons tout en œuvre pour rendre notre client autonome. Cela se traduit par </span>**un accompagnement global des projets de nos clients** <span style="font-weight: 400;">: au-delà du logiciel, nous les aidons à se concentrer sur leur business et les guider dans leur recherche de financement.</span>
+**Sogilis est une société de services. Pourtant, on a du mal à se considérer comme une SSII.** _[Jérémy et Corentin en parlent d’ailleurs très bien dans un article dédié.][1]_ Au sein de notre entreprise, on ne se contente pas de développer des logiciels fiables et sur mesure qui tendent vers du zéro défaut. Nous nous assurons que le périmètre développé soit en adéquation avec les besoins de ses utilisateurs et mettons tout en œuvre pour rendre notre client autonome. Cela se traduit par **un accompagnement global des projets de nos clients** : au-delà du logiciel, nous les aidons à se concentrer sur leur business et les guider dans leur recherche de financement.
 
-**Venir ici, c’est avoir plus de responsabilités que “juste” développer.** <span style="font-weight: 400;">On n’a pas de managers, pas de service RH et pas de commerciaux. La confiance accordée nécessite une responsabilisation de l’équipe, ce qui implique de faire des choix pour l’intérêt commun. Chacun est amené à prendre des responsabilités : proposer, participer, s’impliquer, communiquer, apprendre. En bref, agir. </span>
+**Venir ici, c’est avoir plus de responsabilités que “juste” développer.** On n’a pas de managers, pas de service RH et pas de commerciaux. La confiance accordée nécessite une responsabilisation de l’équipe, ce qui implique de faire des choix pour l’intérêt commun. Chacun est amené à prendre des responsabilités : proposer, participer, s’impliquer, communiquer, apprendre. En bref, agir. 
 
-**On a le droit de se tromper.** <span style="font-weight: 400;">Plutôt que de se résigner, on va chercher à analyser ensemble comment résoudre les problèmes et essayer de s’améliorer. On préfère sortir de notre zone de confort et se poser de nouvelles questions, plutôt que de rester dans la routine. </span>
+**On a le droit de se tromper.** Plutôt que de se résigner, on va chercher à analyser ensemble comment résoudre les problèmes et essayer de s’améliorer. On préfère sortir de notre zone de confort et se poser de nouvelles questions, plutôt que de rester dans la routine. 
 
-**Si tu veux en savoir plus sur Sogilis, nous t’invitons à lire** <span style="text-decoration: underline;"><em><a href="http://sogilis.com/blog/sogilis-histoire/"><b>notre histoire sur le blog</b></a></em></span>**.** 
+**Si tu veux en savoir plus sur Sogilis, nous t’invitons à lire _(notre histoire sur le blog)[http://sogilis.com/blog/sogilis-histoire/]_.** 
 
 **En pratique ? On fait de tout : du web, du back-end, de l’embarqué, du mobile.**
 
-<span style="font-weight: 400;">À notre actif, nous avons développé un logiciel embarqué critique sur un gros avion de ligne, le soft embarqué du drone de loisir </span><span style="text-decoration: underline;"><em><a href="https://hexoplus.com/"><span style="font-weight: 400;">Hexo+</span></a></em></span><span style="font-weight: 400;">, des applications mobiles Android/iOS, une solution d’implantologie dentaire, un logiciel pour gérer un réseau d’imprimantes 3D. </span>
+À notre actif, nous avons développé un logiciel embarqué critique sur un gros avion de ligne, le soft embarqué du drone de loisir _(Hexo+)[https://hexoplus.com/]_, des applications mobiles Android/iOS, une solution d’implantologie dentaire, un logiciel pour gérer un réseau d’imprimantes 3D. 
 
-<span style="font-weight: 400;">À côté de nos clients, </span>**on a aussi une activité de R&D**<span style="font-weight: 400;">. Nous sommes en train de développer un autopilote certifié pour drones, afin de rendre ces derniers aussi sûrs que les avions. </span>
+À côté de nos clients, **on a aussi une activité de R&D**. Nous sommes en train de développer un autopilote certifié pour drones, afin de rendre ces derniers aussi sûrs que les avions. 
 
-<span style="font-weight: 400;">La diversité des projets implique des technos variées et qu’on adapte nos méthodes de travail selon les spécificités du projet. </span>
+La diversité des projets implique des technos variées et qu’on adapte nos méthodes de travail selon les spécificités du projet. 
 
-<span style="font-weight: 400;"><strong>Tout le monde peut entreprendre</strong> : toute initiative est étudiée, Sogilis apporte l’aide nécessaire pour tester la faisabilité du projet d’un membre de l’équipe. C’est ainsi que nous avons déjà créé nos propres clients, ainsi que des filiales Sogilis. </span>
+**Tout le monde peut entreprendre** : toute initiative est étudiée, Sogilis apporte l’aide nécessaire pour tester la faisabilité du projet d’un membre de l’équipe. C’est ainsi que nous avons déjà créé nos propres clients, ainsi que des filiales Sogilis. 
 
-&nbsp;
+**Vous avez envie de participer à l’aventure ?**
 
-<p style="text-align: center;">
-  <b>Vous avez envie de participer à l’aventure ?</b>
-</p>
+* Envoyez-nous votre CV.
+* Présentez-nous vos motivations.
+* Montrez-nous ce dont vous êtes fier(e) (ou pas !).
 
-<p style="text-align: center;">
-  <b><b>Envoyez-nous votre CV.<br /> </b></b><b>Présentez-nous vos motivations.<br /> </b><b>Montrez-nous ce dont vous êtes fier(e) (ou pas !).</b>
-</p>
+- (lyon.job@sogilis.com)[mailto:lyon@sogilis.com]
+- (grenoble.job@sogilis.com)[mailto:grenoble.job@sogilis.com]
 
-<p style="text-align: center;">
-  <span style="text-decoration: underline;"><a href="mailto:grenoble.job@sogilis.com"><span style="font-weight: 400;">grenoble.job@sogilis.com<br /> </span></a><a href="mailto:lyon@sogilis.com"><span style="font-weight: 400;">lyon.job@sogilis.com</span></a></span>
-</p>
-
-&nbsp;
-
- [1]: http://sogilis.com/blog/sogilis-vs-ssii/
+[1]: http://sogilis.com/blog/sogilis-vs-ssii/

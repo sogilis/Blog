@@ -97,8 +97,6 @@ Ces dernières années témoignent d’un engouement certain autour des technolo
 
 ![](/img/2014/04/tumblr_inline_n3b2avvoZ21sc5im4.png "NoSql")
 
-<!-- more -->
-
 ## Le NoSQL, c’est quoi ?
 
 Le terme NoSQL référence une catégorie de systèmes de gestion de bases de données (SGBD) **distribués**, conçus pour la plupart dans le but de traiter des jeux de données volumineux dans des **délais acceptables** pour

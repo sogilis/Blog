@@ -1,12 +1,8 @@
 ---
 title: Qt pour des applications desktop et mobiles simplement (5/7)
-author: Tiphaine
+author: Yves
 date: 2014-05-13T07:20:00+00:00
-featured_image: /wp-content/uploads/2016/05/Sogilis-produits.png
-tumblr_sogilisblog_permalink:
-  - http://sogilisblog.tumblr.com/post/85606263266/qt-pour-des-applications-desktop-et-mobiles-partie-5
-tumblr_sogilisblog_id:
-  - 85606263266
+featured_image: /img/2016/05/Sogilis-produits.png
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -94,62 +90,49 @@ tags:
   - mobile
   - qt
   - qt quick
-
 ---
+
 Suite de la découverte de la programmation desktop et mobile avec Qt.
 
-<a href="#base_app" target="_blank">L&rsquo;application de base</a>
+## Sommaire
 
-  * <a href="#qt" target="_blank">Qt et application Qt Quick</a>
+- [L'application de base]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#base-app" >}})
+  - [Qt et application Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#qt" >}})
+    - [Prérequis]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#req" >}})
+    - [Créer un projet Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#quick" >}})
+    - [Découverte rapide]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#discover" >}})
+  - [2048]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#2048" >}})
+    - [2048.c]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#c" >}})
+    - [2048 en Qt]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#qt" >}})
+- [Interface QML]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#interface" >}})
+  - [Board]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#board" >}})
+    - [Affichage du plateau]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#display" >}})
+    - [Un peu de style]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#style" >}})
+    - [Déplacement et jeu]({{< ref "posts/2014-05-07-qt-applications-desktop-mobiles-4.md" >}})
+  - [Score et status]({{< ref "posts/2014-05-13-qt-applications-desktop-mobiles-5.md" >}})
+  - [Responsive design]({{< ref "posts/2014-05-14-qt-applications-desktop-mobiles-6.md" >}})
+- [Et pour les mobiles]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#mobile" >}})
+  - [Gestures]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#gestures" >}})
+  - [iOS]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#ios" >}})
+  - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
+- [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-  1. <a href="#req" target="_blank">Prérequis</a>
-  2. <a href="#quick" target="_blank">Créer un projet Qt Quick</a>
-  3. <a href="#discover" target="_blank">Découverte rapide</a>
+### Score et status
 
-  * <a href="http://blog.sogilis.com/post/84307433806/qt-pour-des-applications-desktop-et-mobiles-simplement#a2048" target="_blank">2048</a>
+Le plateau est là, le jeu fonctionne. Il serait sympa désormais d'afficher le score et l'état du jeu (gagné / perdu).
 
-  1. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">2048.c</a>
-  2. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">2048 en Qt<br /> </a>
-
-<a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Interface QML</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Board</a>
-
-  1. <a href="http://blog.sogilis.com/post/84907918476/qt-pour-des-applications-desktop-et-mobiles-simplement-p#display" target="_blank">Affichage du plateau</a>
-  2. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Un peu de style</a>
-  3. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-4/" target="_blank">Déplacement et jeu</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-5/" target="_blank">Score et status</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-6/" target="_blank">Responsive design</a>
-
-<a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Et pour les mobiles</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Gestures</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">iOS</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Android</a>
-
-&nbsp;
-
-## **Score et status**
-
-<!-- more -->
-
-Le plateau est là, le jeu fonctionne. Il serait sympa désormais d&rsquo;afficher le score et l&rsquo;état du jeu (gagné / perdu).
-
-On va commencer par afficher deux composants textes qui vont contenir le résultat pour le premier et le score pour le deuxième.
-  
-L&rsquo;ensemble va être placé au dessus du plateau et les deux champs sur la même ligne.
-  
-On va donc utiliser un `ColumnLayout` et un `RowLayout`.
+On va commencer par afficher deux composants textes qui vont contenir le résultat pour le premier et le score pour le deuxième. L'ensemble va être placé au dessus du plateau et les deux champs sur la même ligne. On va donc utiliser un `ColumnLayout` et un `RowLayout`.
 
 Pour ça, commencez par ajouter `QtQuick.Layouts` à votre `qml` :
 
-<pre class="wp-code-highlight prettyprint">import QtQtuick.Layouts 1.1
-</pre>
+{{< highlight cpp >}}
+import QtQtuick.Layouts 1.1
+{{< /highlight >}}
 
 Puis les layouts et les champs textes :
 
-<pre class="wp-code-highlight prettyprint">Rectangle {
+{{< highlight cpp >}}
+Rectangle {
   //...
   ColumnLayout {
     anchors.fill: parent
@@ -175,7 +158,7 @@ Puis les layouts et les champs textes :
     //...
   }
 }
-</pre>
+{{< /highlight >}}
 
 Bon comme vous le voyez, rien de très spécial ici ça reste simple et logique.
 
@@ -183,7 +166,8 @@ Côté `C++` il faut pouvoir récupérer la valeur du score et celle des status.
 
 La première idée est de créer une méthode (je le fais pour le score, vous le ferez pour le reste 😉 ) `score` qui va interroger `board_`.
 
-<pre class="wp-code-highlight prettyprint">// boardmodel.h
+{{< highlight cpp >}}
+// boardmodel.h
 public:
   int score() const;
 
@@ -191,22 +175,21 @@ public:
 int BoardModel::score() const {
   return board_.score();
 }
-</pre>
+{{< /highlight >}}
 
-Si vous vous souvenez bien de l&rsquo;étape précédente, les méthodes de déplacement avaient été préfixées de `Q_INVOKABLE`. Ici pas besoin, nous allons faire autrement et transformer le tout en une _propriété_. Une propriété va être accessible par le QML comme une variable (et non une méthode), et nous allons définir 4 choses :
+Si vous vous souvenez bien de l'étape précédente, les méthodes de déplacement avaient été préfixées de `Q_INVOKABLE`. Ici pas besoin, nous allons faire autrement et transformer le tout en une _propriété_. Une propriété va être accessible par le QML comme une variable (et non une méthode), et nous allons définir 4 choses :
 
-  * le nom de la variable avec son type
-  * la méthode à appeler pour lire la variable
-  * la méthode à appeler pour écrire la variable (optionnel)
-  * le signal utilisé comme notification de mise à jour de la valeur (comme le
-  
-    `dataChanged` vu précédemment)
+- le nom de la variable avec son type
+- la méthode à appeler pour lire la variable
+- la méthode à appeler pour écrire la variable (optionnel)
+- le signal utilisé comme notification de mise à jour de la valeur (comme le `dataChanged` vu précédemment)
 
-Dans notre cas il n&rsquo;y a pas de méthode d&rsquo;écriture mais vous noterez que cela vous permet d&rsquo;avoir un binding bi-directionnel, ce qui est quand même vraiment agréable.
+Dans notre cas il n'y a pas de méthode d'écriture mais vous noterez que cela vous permet d'avoir un binding bi-directionnel, ce qui est quand même vraiment agréable.
 
 On va donc appeler la variable `score`, son type est `int`, la méthode à appeler pour lire la valeur est `score` et comme signal on va faire original, `scoreChanged`.
 
-<pre class="wp-code-highlight prettyprint">// boardmodel.h
+{{< highlight cpp >}}
+// boardmodel.h
 class BoardModel : public QAbstractListModel
 {
   Q_OBJECT
@@ -219,15 +202,14 @@ signals:
 
   //...
 }
-</pre>
+{{< /highlight >}}
 
-Et voilà, vous pouvez maintenant remplacer `"score"` dans votre fichier `qml `par `board.score`. Trop facile, non ?
+Et voilà, vous pouvez maintenant remplacer `"score"` dans votre fichier `qml`par `board.score`. Trop facile, non ?
 
-Par contre, vous pouvez constater que la valeur ne change pas… en effet, comme avant, il faut émettre le signal lorsque la valeur change pour demander son rafraichissement. De la même manière, un signal va être émit par la classe `Board `lorsque le score change, et nous allons juste propager ce signal vers le signal
-  
-`scoreChanged` que nous venons de créer.
+Par contre, vous pouvez constater que la valeur ne change pas… en effet, comme avant, il faut émettre le signal lorsque la valeur change pour demander son rafraichissement. De la même manière, un signal va être émit par la classe `Board`lorsque le score change, et nous allons juste propager ce signal vers le signal `scoreChanged` que nous venons de créer.
 
-<pre class="wp-code-highlight prettyprint">// board.h
+{{< highlight cpp >}}
+// board.h
 signals:
   void scoreChanged();
 
@@ -243,21 +225,15 @@ bool Board::slide(t_value array[kSize]) {
 BoardModel::BoardModel(QObject *parent) :
   QAbstractListModel(parent)
 {
-  connect(&amp;board_, &amp;Board::boardChangedAfterMovement, this, &amp;BoardModel::onDataChanged);
-  connect(&amp;board_, &amp;Board::scoreChanged, this, &amp;BoardModel::scoreChanged);
+  connect(&board_, &Board::boardChangedAfterMovement, this, &BoardModel::onDataChanged);
+  connect(&board_, &Board::scoreChanged, this, &BoardModel::scoreChanged);
 }
-</pre>
+{{< /highlight >}}
 
 Et voilà, rien de plus à faire, ça fonctionne déjà ! Agréable, non ?
 
 Je vous laisse faire la suite pour les états de jeux (gagné / perdu).
 
-&nbsp;
+![](/img/tumblr/tumblr_inline_n48gchB3dB1sv6muh.png)
 
-<img class="aligncenter" src="http://67.media.tumblr.com/e13c415ae3e84abaee217e823fb4c554/tumblr_inline_n48gchB3dB1sv6muh.png" alt="" />
-
-&nbsp;
-
-> git: tag <span style="text-decoration: underline;"><a href="https://github.com/sogilis/qt2048/tree/05_score_statuses" target="_blank">05_score_statuses</a></span>
-
-**Yves**
+> git: tag [05_score_statuses](https://github.com/sogilis/qt2048/tree/05_score_statuses)

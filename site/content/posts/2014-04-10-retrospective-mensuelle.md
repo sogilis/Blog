@@ -96,8 +96,6 @@ En amont de la rétro, **nous écrivons chacun sur un Post-it les points positif
 
 ![](/img/tumblr/tumblr_inline_n3cvtoCAHW1szbtlw.jpg)
 
-<!-- more -->
-
 Elle est menée par un facilitateur, différent à chaque rétro, qui structure son déroulement et garantie la qualité des débats.
 
 Un des buts de la rétrospective est de **trouver des solutions aux problèmes soulevés** et de **prendre action pour résoudre ces problèmes**. Toutes les actions (définies par des tâches concrètes) sont notées sur Basecamp et assignées à une personne qui doit effectuer l’action pour la rétro suivante.

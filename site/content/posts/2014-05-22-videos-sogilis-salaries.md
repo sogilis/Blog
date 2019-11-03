@@ -1,12 +1,8 @@
 ---
-title: 'Vidéos : Sogilis, vu par ses salariés'
+title: "Vidéos : Sogilis, vu par ses salariés"
 author: Tiphaine
 date: 2014-05-22T07:33:00+00:00
 featured_image: /wp-content/uploads/2014/05/Sogilis-Christophe-Levet-Photographe-8389.jpg
-tumblr_sogilisblog_permalink:
-  - http://sogilisblog.tumblr.com/post/86486041896/vidéos-sogilis-vu-par-ses-salariés
-tumblr_sogilisblog_id:
-  - 86486041896
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -97,30 +93,22 @@ tags:
   - recrutement
 
 ---
-**Il y a quelques temps les équipes ont étés filmées pendant une journée dans les bureaux de Sogilis. Certains des membres de l&rsquo;équipe ont parlé de Sogilis devant la caméra.**
+Il y a quelques temps les équipes ont étés filmées pendant une journée dans les bureaux de Sogilis. Certains des membres de l'équipe ont parlé de Sogilis devant la caméra.
 
 La première vidéo présente la société et son mode de fonctionnement atypique.
 
 Une des particularités de Sogilis qui plait aux équipes est la possibilité d’**entreprendre en gardant un statut de salarié**.
 
-<!-- more -->
+La manière dont se passe le recrutement chez Sogilis est également disruptive. **On rencontre d'abord les membres des équipes**, ce qui permet de savoir avec qui l'on va travailler et de voir directement si le courant passe. C'est seulement dans un deuxième temps que l'on rencontre les équipes dirigeantes.
 
-La manière dont se passe le recrutement chez Sogilis est également disruptive. **On rencontre d&rsquo;abord les membres des équipes**, ce qui permet de savoir avec qui l&rsquo;on va travailler et de voir directement si le courant passe. C&rsquo;est seulement dans un deuxième temps que l&rsquo;on rencontre les équipes dirigeantes.
-
-**Les entretiens individuels se font tous les 4 mois**, ce qui permet d&rsquo;avoir une boucle de rétroaction courte et d&rsquo;avoir un moment de dialogue privilégié avec les équipes dirigeantes pour faire le point et avoir des pistes d&rsquo;amélioration personnelle.
-
-&nbsp;
+**Les entretiens individuels se font tous les 4 mois**, ce qui permet d'avoir une boucle de rétroaction courte et d'avoir un moment de dialogue privilégié avec les équipes dirigeantes pour faire le point et avoir des pistes d'amélioration personnelle.
 
 {{< youtube 3dTQHLqrGRA >}}
 
-&nbsp;
-
-Dans cette deuxième vidéo les équipes donnent leur avis sur le <span style="text-decoration: underline;"><a href="http://sogilis.com/blog/management-sans-manager-sogilis/" target="_blank">mode d’organisation cellulaire</a></span> de l’entreprise.
+Dans cette deuxième vidéo les équipes donnent leur avis sur le (mode d’organisation cellulaire)[http://sogilis.com/blog/management-sans-manager-sogilis/] de l’entreprise.
   
 Les salariés parlent aussi de la **liberté des équipes dans leur travail** et de leur volonté d’**amélioration continue**.
 
-&nbsp;
-
 {{< youtube qaMI7SlFnoQ >}}
 
-Pour voir toutes les vidéos de Sogilis, <span style="text-decoration: underline;"><a href="https://www.youtube.com/user/SogilisFR">c’est par ici</a>.</span>
+Pour voir toutes les vidéos de Sogilis, (c’est par ici)[https://www.youtube.com/user/SogilisFR].

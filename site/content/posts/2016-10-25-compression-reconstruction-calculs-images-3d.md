@@ -1,6 +1,6 @@
 ---
-title: 'Compression, reconstruction d&rsquo;images et calculs au-delà de la troisième dimension'
-author: Tiphaine
+title: "Compression, reconstruction d'images et calculs au-delà de la troisième dimension"
+author: Alexandre Dumont
 date: 2016-10-25T08:00:22+00:00
 featured_image: /wp-content/uploads/2015/10/Sogilis-Christophe-Levet-Photographe-7461.jpg
 pyre_show_first_featured_image:
@@ -89,129 +89,97 @@ tags:
   - développement
 
 ---
-**Ce billet présente l&rsquo;algorithme PCA (Principal Component Analysis, ou encore analyse en composantes principales). Il s’agit d’une technique mathématique qui identifie et explique la corrélation d&rsquo;un ensemble de données discrètes. Cet article pose les bases de cet algorithme et détaille une de ses applications pour la reconstruction d’image.**
+Ce billet présente l'algorithme PCA (Principal Component Analysis, ou encore analyse en composantes principales). Il s’agit d’une technique mathématique qui identifie et explique la corrélation d'un ensemble de données discrètes. Cet article pose les bases de cet algorithme et détaille une de ses applications pour la reconstruction d’image.
 
-&nbsp;
+## Le PCA : une méthode, plein d'applications !
 
-## **Le PCA : une méthode, plein d&rsquo;applications !**
+L'analyse en composantes principales est **une technique d'analyse et de visualisation de données qui est populaire dans un très grand nombre de domaines** qui n'ont, _a priori,_ pas grand chose à voir entre eux. En effet, on retrouve l'algorithme PCA en économie, en biologie, mais aussi en physique, en mathématiques (évidemment), en apprentissage automatique (machine learning), sans oublier les sciences sociales ou encore la finance. Pour être bref, le PCA est utilisé dans à peu près tous les domaines qui manipulent des données quantifiables et qui ont besoin de faire des statistiques pour trouver une structure, un modèle dans la donnée, afin d'être en mesure d'expliquer leur provenance et leurs fluctuations.
 
-<span style="font-weight: 400;">L&rsquo;analyse en composantes principales est </span>**une technique d&rsquo;analyse et de visualisation de données qui est populaire dans un très grand nombre de domaines** <span style="font-weight: 400;">qui n&rsquo;ont, </span>_<span style="font-weight: 400;">a priori,</span>_ <span style="font-weight: 400;">pas grand chose à voir entre eux. En effet, on retrouve l&rsquo;algorithme PCA en économie, en biologie, mais aussi en physique, en mathématiques (évidemment), en apprentissage automatique (machine learning), sans oublier les sciences sociales ou encore la finance. Pour être bref, le PCA est utilisé dans à peu près tous les domaines qui manipulent des données quantifiables et qui ont besoin de faire des statistiques pour trouver une structure, un modèle dans la donnée, afin d&rsquo;être en mesure d&rsquo;expliquer leur provenance et leurs fluctuations.</span>
+D'autre part, il s'agit d'**une technique qui est relativement simple à appréhender**, pourvu qu'on soit à l'aise avec certains fondamentaux mathématiques (notions de matrices, d'espaces vectoriels et de statistiques). C'est ce qui explique d’ailleurs pourquoi le PCA a été utilisé dans des domaines si différents.
 
-<span style="font-weight: 400;">D&rsquo;autre part, il s&rsquo;agit d&rsquo;</span>**une technique qui est relativement simple à appréhender**<span style="font-weight: 400;">, pourvu qu&rsquo;on soit à l&rsquo;aise avec certains fondamentaux mathématiques (notions de matrices, d&rsquo;espaces vectoriels et de statistiques). C&rsquo;est ce qui explique d’ailleurs pourquoi le PCA a été utilisé dans des domaines si différents.</span>
+## Principal Component Analysis
 
-&nbsp;
+L'analyse en composantes principales (PCA) est une technique statistique qui se charge d'expliciter la covariance d'un ensemble de données. La représentation de la donnée en amont est laissée à la discrétion de l'utilisateur, et nous reviendrons dessus dans un cas d'utilisation concret plus loin dans ce billet. En particulier, **le PCA permet de déterminer les axes** (_ie_ les directions) **selon lesquels le jeu de données varie le plus**. Il s'agit d'une méthode qui permet d'éliminer la corrélation des données et de trouver une représentation moins redondante, plus compacte, de la même information.
 
-## **Principal Component Analysis**
+**Les calculs mis en œuvre lors de l'application du PCA reposent essentiellement sur des notions d'algèbre linéaire.** Cet article se veut didactique et présente le principe via différents schémas, en laissant un peu de côté le détail des formules mathématiques. En pratique, cet algorithme est disponible dans de nombreuses librairies d'algèbre linéaire, pour un vaste panel de langages de programmation. Il n'est donc pas nécessaire de le réimplémenter pour construire de nouveaux algorithmes par dessus.
 
-<span style="font-weight: 400;">L&rsquo;analyse en composantes principales (PCA) est une technique statistique qui se charge d&rsquo;expliciter la covariance d&rsquo;un ensemble de données. La représentation de la donnée en amont est laissée à la discrétion de l&rsquo;utilisateur, et nous reviendrons dessus dans un cas d&rsquo;utilisation concret plus loin dans ce billet. En particulier, </span>**le PCA permet de déterminer les axes** <span style="font-weight: 400;">(</span>_<span style="font-weight: 400;">ie</span>_ <span style="font-weight: 400;">les directions) </span>**selon lesquels le jeu de données varie le plus**<span style="font-weight: 400;">. Il s&rsquo;agit d&rsquo;une méthode qui permet d&rsquo;éliminer la corrélation des données et de trouver une représentation moins redondante, plus compacte, de la même information.</span>
+Dans un soucis de clarification (et surtout parce que l'esprit humain n'est pas vraiment habitué à se représenter les choses au-delà de trois dimensions), **la technique du PCA sera présentée dans un espace en deux dimensions**. Le jeu de données initial est donc un ensemble de points entièrement définis par leurs coordonnées dans un repère usuel (i,j).
 
-**Les calculs mis en œuvre lors de l&rsquo;application du PCA reposent essentiellement sur des notions d&rsquo;algèbre linéaire.** <span style="font-weight: 400;">Cet article se veut didactique et présente le principe via différents schémas, en laissant un peu de côté le détail des formules mathématiques. En pratique, cet algorithme est disponible dans de nombreuses librairies d&rsquo;algèbre linéaire, pour un vaste panel de langages de programmation. Il n&rsquo;est donc pas nécessaire de le réimplémenter pour construire de nouveaux algorithmes par dessus.</span>
+Il faut garder en tête que le PCA repose sur des calculs d'algèbre linéaire valables pour un nombre quelconque de dimensions (on parle aussi _d'algèbre linéaire en dimension finie_) et que **le PCA peut être utilisé sur des données représentées par autant de coordonnées que l'on veut**. En d'autres termes, on peut faire tourner cette méthode aussi bien sur des points en deux dimensions que sur des échantillons sanguins décrits par des centaines de paramètres différents (concentration d'un type d'enzyme, taux de plaquettes...). L'application de cette technique à la compression et à la reconstruction d'images manipule par exemple des _points_ qui ont plus de 10 000 coordonnées différentes (le nombre de pixels dans chaque image), comme nous le verrons dans la prochaine section.
 
-<span style="font-weight: 400;">Dans un soucis de clarification (et surtout parce que l&rsquo;esprit humain n&rsquo;est pas vraiment habitué à se représenter les choses au-delà de trois dimensions),</span> **la technique du PCA sera présentée dans un espace en deux dimensions**<span style="font-weight: 400;">. Le jeu de données initial est donc un ensemble de points entièrement définis par leurs coordonnées dans un repère usuel (i,j).</span>
+Intuitivement, la technique du PCA permet de **trouver un repère** (de l'espace dans lequel on travaille) **qui minimise le degré de corrélation des données**. Dans la figure suivante, cela revient à trouver le repère (u,v) centré sur le point moyen du jeu de données alors qu'on ne connaît que les points dans le repère initial (i,j).
 
-<span style="font-weight: 400;">Il faut garder en tête que le PCA repose sur des calculs d&rsquo;algèbre linéaire valables pour un nombre quelconque de dimensions (on parle aussi </span>_<span style="font-weight: 400;">d&rsquo;algèbre linéaire en dimension finie</span>_<span style="font-weight: 400;">) et que</span> **le PCA peut être utilisé sur des données représentées par autant de coordonnées que l&rsquo;on veut**<span style="font-weight: 400;">. En d&rsquo;autres termes, on peut faire tourner cette méthode aussi bien sur des points en deux dimensions que sur des échantillons sanguins décrits par des centaines de paramètres différents (concentration d&rsquo;un type d&rsquo;enzyme, taux de plaquettes&#8230;). L&rsquo;application de cette technique à la compression et à la reconstruction d&rsquo;images manipule par exemple des </span>_<span style="font-weight: 400;">points</span>_ <span style="font-weight: 400;">qui ont plus de 10 000 coordonnées différentes (le nombre de pixels dans chaque image), comme nous le verrons dans la prochaine section.</span>
+!(data-representation)[http://sogilis.com/wp-content/uploads/2016/10/data-representation.png]
 
-<span style="font-weight: 400;">Intuitivement, la technique du PCA permet de </span>**trouver un repère** <span style="font-weight: 400;">(de l&rsquo;espace dans lequel on travaille) </span>**qui minimise le degré de corrélation des données**<span style="font-weight: 400;">. Dans la figure suivante, cela revient à trouver le repère (u,v) centré sur le point moyen du jeu de données alors qu&rsquo;on ne connaît que les points dans le repère initial (i,j).</span>
+Le principe du PCA est plutôt simple, puisqu'**on travaille sur un objet en particulier : la matrice de covariance du jeu de données**. Cette matrice décrit le degré de corrélation de chaque coordonnée des points du jeu de données, c'est-à-dire que les coefficients de cette matrice sont des mesures représentant à quel point telle coordonnée est couplée à telle autre coordonnée pour les échantillons observés. La méthode usuelle pour construire la matrice de covariance consiste à créer une matrice qui a pour chaque ligne un point du jeu de données. On recentre le jeu de données autour de la moyenne, et on multiplie la transposée de la matrice par elle-même pour en déduire la matrice de covariance (à un facteur de normalisation près).
 
-<img class="aligncenter size-full wp-image-1330" src="http://sogilis.com/wp-content/uploads/2016/10/data-representation.png" alt="data-representation" width="895" height="354" srcset="http://sogilis.com/wp-content/uploads/2016/10/data-representation.png 895w, http://sogilis.com/wp-content/uploads/2016/10/data-representation-300x119.png 300w, http://sogilis.com/wp-content/uploads/2016/10/data-representation-768x304.png 768w" sizes="(max-width: 895px) 100vw, 895px" />
+Des théorèmes mathématiques bien connus - dont un de mes favoris, le (théorème spectral)[https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_spectral] - garantissent que **cette matrice de covariance est diagonalisable**, qu'on peut via ses vecteurs propres en déduire une base orthonormale de l'espace, et qu'ils sont en plus dirigés dans les directions où les données varient le plus. Dans notre cas, il s'agit de la base (u,v). **Ces vecteurs propres u et v**, puisqu'ils décrivent les directions dans lesquelles les données sont le plus dispersées, **sont appelés** **composantes principales**. Par ailleurs, il faut savoir qu'à chaque vecteur propre est associée une valeur propre (_eigenvector_ et _eigenvalue_ en anglais) et qu'un vecteur propre contribue d'autant plus à la variabilité des données que sa valeur propre associée est grande (relativement aux autres valeurs propres).
 
-<span style="font-weight: 400;">Le principe du PCA est plutôt simple, puisqu&rsquo;</span>**on travaille sur un objet en particulier : la matrice de covariance du jeu de données**<span style="font-weight: 400;">. Cette matrice décrit le degré de corrélation de chaque coordonnée des points du jeu de données, c&rsquo;est-à-dire que les coefficients de cette matrice sont des mesures représentant à quel point telle coordonnée est couplée à telle autre coordonnée pour les échantillons observés. La méthode usuelle pour construire la matrice de covariance consiste à créer une matrice qui a pour chaque ligne un point du jeu de données. On recentre le jeu de données autour de la moyenne, et on multiplie la transposée de la matrice par elle-même pour en déduire la matrice de covariance (à un facteur de normalisation près).</span>
+On est donc capable, en sortie de PCA, de connaître les principaux axes de dispersion des données, mais aussi de savoir quels axes décrivent le mieux cette dispersion. **Ces informations ouvrent la voie à des représentations plus compactes, et moins redondantes des données**. Souvent, les données observées disposent d'une structure cachée que le PCA fait ressortir. On se rend alors compte que les données peuvent être représentées différemment tout en conservant un degré de précision raisonnable. Par exemple, dans la figure suivante, on se rend compte qu'on a tout intérêt à représenter les données uniquement selon l'axe u, puisque l'axe v décrit très peu la dispersion du jeu de données.
 
-<span style="font-weight: 400;">Des théorèmes mathématiques bien connus &#8211; dont un de mes favoris, le</span><span style="text-decoration: underline;"><a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_spectral"> <span style="font-weight: 400;">théorème spectral</span></a></span> <span style="font-weight: 400;">&#8211; garantissent que </span>**cette matrice de covariance est diagonalisable**<span style="font-weight: 400;">, qu&rsquo;on peut via ses vecteurs propres en déduire une base orthonormale de l&rsquo;espace, et qu&rsquo;ils sont en plus dirigés dans les directions où les données varient le plus. Dans notre cas, il s&rsquo;agit de la base (u,v). </span>**Ces vecteurs propres u et v**<span style="font-weight: 400;">, puisqu&rsquo;ils décrivent les directions dans lesquelles les données sont le plus dispersées, </span>**sont appelés** **composantes principales**<span style="font-weight: 400;">. Par ailleurs, il faut savoir qu&rsquo;à chaque vecteur propre est associée une valeur propre (</span>_<span style="font-weight: 400;">eigenvector</span>_ <span style="font-weight: 400;">et </span>_<span style="font-weight: 400;">eigenvalue</span>_ <span style="font-weight: 400;">en anglais) et qu&rsquo;un vecteur propre contribue d&rsquo;autant plus à la variabilité des données que sa valeur propre associée est grande (relativement aux autres valeurs propres).</span>
+!(dimensionality-reduction)[http://sogilis.com/wp-content/uploads/2016/10/dimensionality-reduction.png]
 
-<span style="font-weight: 400;">On est donc capable, en sortie de PCA, de connaître les principaux axes de dispersion des données, mais aussi de savoir quels axes décrivent le mieux cette dispersion. </span>**Ces informations ouvrent la voie à des représentations plus compactes, et moins redondantes des données**<span style="font-weight: 400;">. Souvent, les données observées disposent d&rsquo;une structure cachée que le PCA fait ressortir. On se rend alors compte que les données peuvent être représentées différemment tout en conservant un degré de précision raisonnable. Par exemple, dans la figure suivante, on se rend compte qu&rsquo;on a tout intérêt à représenter les données uniquement selon l&rsquo;axe u, puisque l&rsquo;axe v décrit très peu la dispersion du jeu de données.</span>
+Supposons que notre jeu de données compte 1 000 points (de deux coordonnées chacun). Il faut donc 2 000 valeurs dans le repère (i,j) pour décrire totalement le jeu de données. Après le PCA, il faut 1 004 valeurs distinctes :
 
-<img class="aligncenter size-full wp-image-1335" src="http://sogilis.com/wp-content/uploads/2016/10/dimensionality-reduction.png" alt="dimensionality-reduction" width="895" height="354" srcset="http://sogilis.com/wp-content/uploads/2016/10/dimensionality-reduction.png 895w, http://sogilis.com/wp-content/uploads/2016/10/dimensionality-reduction-300x119.png 300w, http://sogilis.com/wp-content/uploads/2016/10/dimensionality-reduction-768x304.png 768w" sizes="(max-width: 895px) 100vw, 895px" />
+- 2 valeurs pour décaler l'origine du repère sur la moyenne des points ;
+- 2 valeurs pour décrire l'axe u ;
+- 1 000 valeurs pour décrire les abscisses de chaque point sur l'axe u.
 
-<span style="font-weight: 400;">Supposons que notre jeu de données compte 1 000 points (de deux coordonnées chacun). Il faut donc 2 000 valeurs dans le repère (i,j) pour décrire totalement le jeu de données. Après le PCA, il faut 1 004 valeurs distinctes :</span>
+On a donc réduit de moitié l'espace nécessaire pour stocker les données. Le gain est d'autant plus intéressant si les données ont beaucoup de composantes principales qui ne contribuent pas à leur dispersion. Cette technique est souvent nommée « **réduction de complexité** » dans la littérature.
 
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">2 valeurs pour décaler l&rsquo;origine du repère sur la moyenne des points ;</span>
-</li>
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">2 valeurs pour décrire l&rsquo;axe u ;</span>
-</li>
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">1 000 valeurs pour décrire les abscisses de chaque point sur l&rsquo;axe u.</span>
-</li>
+## Une application : compression et reconstruction d'images
 
-<span style="font-weight: 400;">On a donc réduit de moitié l&rsquo;espace nécessaire pour stocker les données. Le gain est d&rsquo;autant plus intéressant si les données ont beaucoup de composantes principales qui ne contribuent pas à leur dispersion. Cette technique est souvent nommée « </span>**réduction de complexité**<span style="font-weight: 400;"> » dans la littérature.</span>
+La compression et la reconnaissance d'images forment un pan de l'apprentissage automatique (_machine learning_) dans lequel **le** **PCA est largement utilisé**, notamment **pour réduire le nombre de variables nécessaires à la représentation - et donc au stockage, en mémoire vive ou sur disque - d'une image**.
 
-&nbsp;
+Avant d'aller plus loin, il est nécessaire de poser certains prérequis qui vont garantir que les pixels des images seront très corrélés. Par conséquent, le recours au PCA n'en sera que plus utile et les résultats seront plus faciles à appréhender visuellement. On pose donc les prérequis suivants :
 
-## **Une application : compression et reconstruction d&rsquo;images**
+- les images manipulées sont à la même résolution ;
+- le contenu des images est relativement similaire d'une image à l'autre.
 
-<span style="font-weight: 400;">La compression et la reconnaissance d&rsquo;images forment un pan de l&rsquo;apprentissage automatique (</span>_<span style="font-weight: 400;">machine learning</span>_<span style="font-weight: 400;">) dans lequel </span>**le** **PCA est largement utilisé**<span style="font-weight: 400;">, notamment </span>**pour réduire le nombre de variables nécessaires à la représentation &#8211; et donc au stockage, en mémoire vive ou sur disque &#8211; d&rsquo;une image**<span style="font-weight: 400;">.</span>
+Afin de prendre en compte les suppositions précédentes, **nous travaillerons avec le trombinoscope ci-dessous**. Chaque image est à la résolution 92 x 128 et est en nuances de gris (pour chaque pixel, il y a une seule valeur sur 8 bits qui décrit la nuance de gris). Ce jeu d'images est disponible sur le web, il s'agit d'ailleurs d'un échantillon d'une base d'images bien plus importante utilisée dans un bon nombre d'articles de recherche.
 
-<span style="font-weight: 400;">Avant d&rsquo;aller plus loin, il est nécessaire de poser certains prérequis qui vont garantir que les pixels des images seront très corrélés. Par conséquent, le recours au PCA n&rsquo;en sera que plus utile et les résultats seront plus faciles à appréhender visuellement. On pose donc les prérequis suivants :</span>
+!(tetes-one)[http://sogilis.com/wp-content/uploads/2016/10/Têtes-one.png]
 
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">les images manipulées sont à la même résolution ;</span>
-</li>
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">le contenu des images est relativement similaire d&rsquo;une image à l&rsquo;autre.</span>
-</li>
+En terme de représentation, chaque image est une matrice de taille 92 x 128, qui contient des entiers entre 0 et 255 (les nuances de gris de chaque pixel). On peut aussi voir chaque image sous un autre angle : au lieu de la représenter par une matrice, on peut la modéliser par une seule ligne (en mettant toutes les lignes qui composent l'image bout à bout). Chaque point (ou _vecteur_, en algèbre linéaire ce sont les mêmes notions) obtenu a alors 92 x 128 = 11 776 coordonnées. Nous allons donc lancer le PCA dans un espace à 11 776 dimensions !
 
-<span style="font-weight: 400;">Afin de prendre en compte les suppositions précédentes, </span>**nous travaillerons avec le trombinoscope ci-dessous**<span style="font-weight: 400;">. Chaque image est à la résolution 92 x 128 et est en nuances de gris (pour chaque pixel, il y a une seule valeur sur 8 bits qui décrit la nuance de gris). Ce jeu d&rsquo;images est disponible sur le web, il s&rsquo;agit d&rsquo;ailleurs d&rsquo;un échantillon d&rsquo;une base d&rsquo;images bien plus importante utilisée dans un bon nombre d&rsquo;articles de recherche.</span>
+**On construit donc notre matrice représentant le jeu de données** en plaçant, pour chaque ligne, le point correspondant à chaque image. Cette matrice a donc une taille de 6 x 11 776 (il y a 6 images en tout). On multiplie la transposée par elle-même, on normalise par le nombre d'images, et on obtient la fameuse matrice de covariance de taille 11 776 x 11 776 à diagonaliser ! On constate qu'on est déjà bien sorti du cadre de l'exemple avec les points en deux dimensions, et que ces calculs peuvent vite devenir coûteux. Heureusement, la grande majorité des librairies d'algèbre linéaire sont optimisées pour les calculs matriciels, via le recours à des _sparse matrices_, à certaines heuristiques de calculs ou encore en déportant le calcul sur GPU.
 
-<img class="aligncenter size-full wp-image-1331" src="http://sogilis.com/wp-content/uploads/2016/10/Têtes-one.png" alt="tetes-one" width="724" height="150" srcset="http://sogilis.com/wp-content/uploads/2016/10/Têtes-one.png 724w, http://sogilis.com/wp-content/uploads/2016/10/Têtes-one-300x62.png 300w" sizes="(max-width: 724px) 100vw, 724px" />
+Une fois la diagonalisation terminée, le PCA nous retourne une liste de six vecteurs propres (car il y a six images distinctes dans le jeu de données) avec les valeurs propres associées. Ces vecteurs propres sont nécessairement de taille 11 776 = 92 x 128, la même taille que les images initiales. Et si on les imprimait, pour voir à quoi elles ressemblent ? Ci-dessous sont présentées les images par ordre décroissant de valeur propre.
 
-<span style="font-weight: 400;">En terme de représentation, chaque image est une matrice de taille 92 x 128, qui contient des entiers entre 0 et 255 (les nuances de gris de chaque pixel). On peut aussi voir chaque image sous un autre angle : au lieu de la représenter par une matrice, on peut la modéliser par une seule ligne (en mettant toutes les lignes qui composent l&rsquo;image bout à bout). Chaque point (ou </span>_<span style="font-weight: 400;">vecteur</span>_<span style="font-weight: 400;">, en algèbre linéaire ce sont les mêmes notions) obtenu a alors 92 x 128 = 11 776 coordonnées. Nous allons donc lancer le PCA dans un espace à 11 776 dimensions !</span>
+!(tetes-two)[http://sogilis.com/wp-content/uploads/2016/10/Têtes-two.png]
 
-**On construit donc notre matrice représentant le jeu de données** <span style="font-weight: 400;">en plaçant, pour chaque ligne, le point correspondant à chaque image. Cette matrice a donc une taille de 6 x 11 776 (il y a 6 images en tout). On multiplie la transposée par elle-même, on normalise par le nombre d&rsquo;images, et on obtient la fameuse matrice de covariance de taille 11 776 x 11 776 à diagonaliser ! On constate qu&rsquo;on est déjà bien sorti du cadre de l&rsquo;exemple avec les points en deux dimensions, et que ces calculs peuvent vite devenir coûteux. Heureusement, la grande majorité des librairies d&rsquo;algèbre linéaire sont optimisées pour les calculs matriciels, via le recours à des </span>_<span style="font-weight: 400;">sparse matrices</span>_<span style="font-weight: 400;">, à certaines heuristiques de calculs ou encore en déportant le calcul sur GPU.</span>
+Intéressant, n'est-ce pas ? **Ces images** **montrent les directions dans lesquelles les images initiales varient le plus.** Plusieurs caractéristiques sont remarquables :
 
-<span style="font-weight: 400;">Une fois la diagonalisation terminée, le PCA nous retourne une liste de six vecteurs propres (car il y a six images distinctes dans le jeu de données) avec les valeurs propres associées. Ces vecteurs propres sont nécessairement de taille 11 776 = 92 x 128, la même taille que les images initiales. Et si on les imprimait, pour voir à quoi elles ressemblent ? Ci-dessous sont présentées les images par ordre décroissant de valeur propre.</span>
+- la dernière _image propre_ contribue très peu à expliquer la donnée (elle est toute « bruitée ») ;
+- les autres images propres cristallisent plusieurs caractéristiques de l'image (la couleur du fond, la teinte du visage, l'importance des lunettes ou des rides).
 
-<img class="aligncenter size-full wp-image-1332" src="http://sogilis.com/wp-content/uploads/2016/10/Têtes-two.png" alt="tetes-two" width="725" height="148" srcset="http://sogilis.com/wp-content/uploads/2016/10/Têtes-two.png 725w, http://sogilis.com/wp-content/uploads/2016/10/Têtes-two-300x61.png 300w" sizes="(max-width: 725px) 100vw, 725px" />
+Rien qu'avec ces images, le PCA permet de classer les images initiales par rapport à des images _de référence_. On peut alors représenter chaque image initiale dans le repère formé par les _images propres_, qui du coup se ramène à 6 coordonnées (contre 11 776 initialement). Il est donc plus facile d'étudier la donnée car il y a bien moins de variables à considérer).
 
-<span style="font-weight: 400;">Intéressant, n&rsquo;est-ce pas ? </span>**Ces images** **montrent les directions dans lesquelles les images initiales varient le plus.** <span style="font-weight: 400;">Plusieurs caractéristiques sont remarquables :</span>
+**La reconstruction de la troisième image du jeu de données est montrée ci-dessous**, en appliquant successivement chaque composante principale à la précédente image. Il y a 7 images en tout, parce qu'on part de l'_image moyenne_ (calculée en faisant la moyenne des nuances de gris des images initiales) et en appliquant successivement chacune des 6 composantes principales.
 
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">la dernière </span><i><span style="font-weight: 400;">image propre</span></i><span style="font-weight: 400;"> contribue très peu à expliquer la donnée (elle est toute « bruitée ») ;</span>
-</li>
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">les autres images propres cristallisent plusieurs caractéristiques de l&rsquo;image (la couleur du fond, la teinte du visage, l&rsquo;importance des lunettes ou des rides).</span>
-</li>
+!(tetes-three)[http://sogilis.com/wp-content/uploads/2016/10/Têtes-three.png]
 
-<span style="font-weight: 400;">Rien qu&rsquo;avec ces images, le PCA permet de classer les images initiales par rapport à des images </span>_<span style="font-weight: 400;">de référence</span>_<span style="font-weight: 400;">. On peut alors représenter chaque image initiale dans le repère formé par les </span>_<span style="font-weight: 400;">images propres</span>_<span style="font-weight: 400;">, qui du coup se ramène à 6 coordonnées (contre 11 776 initialement). Il est donc plus facile d&rsquo;étudier la donnée car il y a bien moins de variables à considérer).</span>
+La reconstruction fonctionne, donc les mathématiques ne mentent pas ! Plus sérieusement, on remarque que les deux dernières reconstructions n'apportent pas énormément de valeur à l'image. On peut donc encoder l'image avec seulement ses quatre principales composantes et conserver ses caractéristiques. Quel est **le gain en terme d'espace de stockage**, pour toutes les images, en ne gardant que les quatre principales composantes ? Sans PCA, on a besoin de 6 x 11 776 = 70 656 octets (valeurs de 8 bits).
 
-**La reconstruction de la troisième image du jeu de données est montrée ci-dessous**<span style="font-weight: 400;">, en appliquant successivement chaque composante principale à la précédente image. Il y a 7 images en tout, parce qu&rsquo;on part de l&rsquo;</span>_<span style="font-weight: 400;">image moyenne</span>_ <span style="font-weight: 400;">(calculée en faisant la moyenne des nuances de gris des images initiales) et en appliquant successivement chacune des 6 composantes principales.</span>
+Avec PCA, on a besoin de stocker 58 904 octets :
 
-<img class="aligncenter size-full wp-image-1333" src="http://sogilis.com/wp-content/uploads/2016/10/Têtes-three.png" alt="tetes-three" width="727" height="302" srcset="http://sogilis.com/wp-content/uploads/2016/10/Têtes-three.png 727w, http://sogilis.com/wp-content/uploads/2016/10/Têtes-three-300x125.png 300w" sizes="(max-width: 727px) 100vw, 727px" />
+- l'image moyenne et les 4 vecteurs propres, soit 11 776 x (1 + 4) = 58 880 octets ;
+- pour chaque image, sa représentation dans le repère des vecteurs propres, soit 6 x 4 octets.
 
-<span style="font-weight: 400;">La reconstruction fonctionne, donc les mathématiques ne mentent pas ! Plus sérieusement, on remarque que les deux dernières reconstructions n&rsquo;apportent pas énormément de valeur à l&rsquo;image. On peut donc encoder l&rsquo;image avec seulement ses quatre principales composantes et conserver ses caractéristiques. Quel est </span>**le gain en terme d&rsquo;espace de stockage**<span style="font-weight: 400;">, pour toutes les images, en ne gardant que les quatre principales composantes ? Sans PCA, on a besoin de 6 x 11 776 = 70 656 octets (valeurs de 8 bits).</span>
+Ce qui réalise un taux de compression de 16,63% sans pour autant perdre le contenu de l'image. La qualité est dégradée évidemment, mais cela a en pratique peu d'impact (en apprentissage automatique notamment) car **l'essence même de l'image est préservée**.
 
-<span style="font-weight: 400;">Avec PCA, on a besoin de stocker 58 904 octets :</span>
+## En résumé
 
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">l&rsquo;image moyenne et les 4 vecteurs propres, soit 11 776 x (1 + 4) = 58 880 octets ;</span>
-</li>
-<li style="font-weight: 400;">
-  <span style="font-weight: 400;">pour chaque image, sa représentation dans le repère des vecteurs propres, soit 6 x 4 octets.</span>
-</li>
+Nous avons vu que la matrice de covariance issue du jeu de données initial est diagonalisable. L'algorithme permet de récupérer une base de vecteurs propres de cette matrice de covariance ainsi que les valeurs propres associées. **Plus grande est la valeur propre, plus le vecteur propre correspondant décrit l'axe selon lequel les données sont le plus dispersées** (et par conséquent décrit mieux le jeu de données).
 
-<span style="font-weight: 400;">Ce qui réalise un taux de compression de 16,63% sans pour autant perdre le contenu de l&rsquo;image. La qualité est dégradée évidemment, mais cela a en pratique peu d&rsquo;impact (en apprentissage automatique notamment) car </span>**l&rsquo;essence même de l&rsquo;image est préservée**<span style="font-weight: 400;">.</span>
+Dans ce billet, nous avons introduit les concepts sur lesquels repose le PCA. Cette procédure mathématique cherche à **décorréler les données pour en trouver les axes de variation prépondérants**. Comme nous l'avons vu, l'analyse en composantes principales est applicable _a priori_ sur des données de provenances diverses. Elle permet d'en déceler la structure, d'expliquer la manière dont elles sont liées les unes avec les autres. Les applications de cette technique sont larges, et nous en avons détaillé une, axée sur la compression et la reconstruction d'un ensemble d'images.
 
-&nbsp;
+C'est tout pour aujourd'hui !
 
-## **En résumé**
+(Alexandre Dumont)[https://twitter.com/_dumontal]
 
-<span style="font-weight: 400;">Nous avons vu que la matrice de covariance issue du jeu de données initial est diagonalisable. L&rsquo;algorithme permet de récupérer une base de vecteurs propres de cette matrice de covariance ainsi que les valeurs propres associées. </span>**Plus grande est la valeur propre, plus le vecteur propre correspondant décrit l&rsquo;axe selon lequel les données sont le plus dispersées** <span style="font-weight: 400;">(et par conséquent décrit mieux le jeu de données).</span>
+## Références
 
-<span style="font-weight: 400;">Dans ce billet, nous avons introduit les concepts sur lesquels repose le PCA. Cette procédure mathématique cherche à </span>**décorréler les données pour en trouver les axes de variation prépondérants**<span style="font-weight: 400;">. Comme nous l&rsquo;avons vu, l&rsquo;analyse en composantes principales est applicable </span>_<span style="font-weight: 400;">a priori</span>_ <span style="font-weight: 400;">sur des données de provenances diverses. Elle permet d&rsquo;en déceler la structure, d&rsquo;expliquer la manière dont elles sont liées les unes avec les autres. Les applications de cette technique sont larges, et nous en avons détaillé une, axée sur la compression et la reconstruction d&rsquo;un ensemble d&rsquo;images.</span>
-
-<span style="font-weight: 400;">C&rsquo;est tout pour aujourd&rsquo;hui !</span>
-
-<span style="text-decoration: underline;"><a href="https://twitter.com/_dumontal"><span style="font-weight: 400;">Alexandre Dumont</span></a></span>
-
-## **Références**
-
-<li style="font-weight: 400;">
-  <span style="text-decoration: underline;"><a href="http://setosa.io/ev/principal-component-analysis/"><span style="font-weight: 400;">Visualisation en 3D du PCA (en, html)</span></a></span>
-</li>
-<li style="font-weight: 400;">
-  <span style="text-decoration: underline;"><a href="https://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf"><span style="font-weight: 400;">Analyse du bruit d&rsquo;un jeu de données et décomposition par valeurs singulières (en, pdf)</span></a></span>
-</li>
-<li style="font-weight: 400;">
-  <span style="text-decoration: underline;"><a href="https://en.wikipedia.org/wiki/Principal_component_analysis"><span style="font-weight: 400;">Article détaillé sur Wikipedia (en, html)</span></a></span>
-</li>
+- (Visualisation en 3D du PCA (en, html))[http://setosa.io/ev/principal-component-analysis/]
+- (Analyse du bruit d'un jeu de données et décomposition par valeurs singulières (en, pdf))[https://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf]
+- (Article détaillé sur Wikipedia (en, html))[https://en.wikipedia.org/wiki/Principal_component_analysis]

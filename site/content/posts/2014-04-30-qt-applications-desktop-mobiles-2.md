@@ -1,12 +1,8 @@
 ---
 title: Qt pour des applications desktop et mobiles simplement (2/7)
-author: Tiphaine
+author: Yves
 date: 2014-04-30T08:12:00+00:00
-featured_image: /wp-content/uploads/2014/04/Sogilis-Christophe-Levet-Photographe-7433.jpg
-tumblr_sogilisblog_permalink:
-  - http://sogilisblog.tumblr.com/post/84307433806/qt-pour-des-applications-desktop-et-mobiles
-tumblr_sogilisblog_id:
-  - 84307433806
+featured_image: /img/2014/04/Sogilis-Christophe-Levet-Photographe-7433.jpg
 pyre_show_first_featured_image:
   - no
 pyre_portfolio_width_100:
@@ -94,71 +90,59 @@ tags:
   - mobile
   - qt
   - qt quick
-
 ---
+
 Suite de la découverte de la programmation desktop et mobile avec Qt.
 
-<a href="#base_app" target="_blank">L&rsquo;application de base</a>
+## Sommaire
 
-  * <a href="#qt" target="_blank">Qt et application Qt Quick</a>
+- [L'application de base]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#base-app" >}})
+  - [Qt et application Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#qt" >}})
+    - [Prérequis]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#req" >}})
+    - [Créer un projet Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#quick" >}})
+    - [Découverte rapide]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#discover" >}})
+  - [2048]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#2048" >}})
+    - [2048.c]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#c" >}})
+    - [2048 en Qt]({{< relref "posts/2014-04-30-qt-applications-desktop-mobiles-2.md#qt" >}})
+- [Interface QML]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#interface" >}})
+  - [Board]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#board" >}})
+    - [Affichage du plateau]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#display" >}})
+    - [Un peu de style]({{< relref "posts/2014-05-06-qt-applications-desktop-mobiles-3.md#style" >}})
+    - [Déplacement et jeu]({{< ref "posts/2014-05-07-qt-applications-desktop-mobiles-4.md" >}})
+  - [Score et status]({{< ref "posts/2014-05-13-qt-applications-desktop-mobiles-5.md" >}})
+  - [Responsive design]({{< ref "posts/2014-05-14-qt-applications-desktop-mobiles-6.md" >}})
+- [Et pour les mobiles]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#mobile" >}})
+  - [Gestures]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#gestures" >}})
+  - [iOS]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#ios" >}})
+  - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
+- [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-  1. <a href="#req" target="_blank">Prérequis</a>
-  2. <a href="#quick" target="_blank">Créer un projet Qt Quick</a>
-  3. <a href="#discover" target="_blank">Découverte rapide</a>
-
-  * <a href="http://blog.sogilis.com/post/84307433806/qt-pour-des-applications-desktop-et-mobiles-simplement#a2048" target="_blank">2048</a>
-
-  1. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">2048.c</a>
-  2. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">2048 en Qt<br /> </a>
-
-<a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Interface QML</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Board</a>
-
-  1. <a href="http://blog.sogilis.com/post/84907918476/qt-pour-des-applications-desktop-et-mobiles-simplement-p#display" target="_blank">Affichage du plateau</a>
-  2. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-1/" target="_blank">Un peu de style</a>
-  3. <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-4/" target="_blank">Déplacement et jeu</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-5/" target="_blank">Score et status</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-6/" target="_blank">Responsive design</a>
-
-<a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Et pour les mobiles</a>
-
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Gestures</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">iOS</a>
-  * <a href="http://sogilis.com/blog/qt-applications-desktop-mobiles-7/" target="_blank">Android</a>
-
-## 
-
-## **2048**
+### 2048 <a id="2048"></a>
 
 Maintenant que notre application QtQuick fonctionne intéressons nous à notre 2048.
 
-&nbsp;
+#### 2048.c <a id="c"></a>
 
-## **2048.c**
+Le but étant d'explorer des technologies, pas de développer un jeu, je me suis donc basé sur une implémentation du 2048 en `c` que vous pouvez [trouver ici](https://github.com/mevdschee/2048.c).
 
-Le but étant d&rsquo;explorer des technologies, pas de développer un jeu, je me suis donc basé sur une implémentation du 2048 en `c` que vous pouvez <span style="text-decoration: underline;"><a href="https://github.com/mevdschee/2048.c" target="_blank">trouver ici</a></span>.
+C'est une implémentation en console pour Linux. Bon ça fonctionne aussi sous mac 😉
 
-C&rsquo;est une implémentation en console pour Linux. Bon ça fonctionne aussi sous mac 😉
+Le code est relativement simple, il y a une matrice 4*4 qui représente le plateau. Les mouvements sont simplifiés puisque seul le mouvement vers le haut est implémenté. Les autres mouvements sont une combinaison de rotation vers la droite et de déplacement vers le haut (une rotation, un déplacement, 3 rotations donne un déplacement vers la gauche par exemple).
 
-Le code est relativement simple, il y a une matrice 4&#215;4 qui représente le plateau. Les mouvements sont simplifiés puisque seul le mouvement vers le haut est implémenté. Les autres mouvements sont une combinaison de rotation vers la droite et de déplacement vers le haut (une rotation, un déplacement, 3 rotations donne un déplacement vers la gauche par exemple).
+J'ai gardé les principes de base, juste quelques petites modifications mineurs entre autre au niveau de ces déplacements.
 
-J&rsquo;ai gardé les principes de base, juste quelques petites modifications mineurs entre autre au niveau de ces déplacements.
+#### 2048 en Qt <a id="qt"></a>
 
-&nbsp;
-
-## **2048 en Qt**
-
-J&rsquo;ai donc ajouté une classe `Board` qui hérite de `QObject`. Il est bienvenue d&rsquo;hériter de `QObject` car ça apporte plein de choses, comme les signaux et slots.
+J'ai donc ajouté une classe `Board` qui hérite de `QObject`. Il est bienvenue d'hériter de `QObject` car ça apporte plein de choses, comme les signaux et slots.
 
 Voici le _header_ de cette classe.
 
-<pre class="wp-code-highlight prettyprint">#ifndef BOARD_H
+{{< highlight cpp >}}
+#ifndef BOARD_H
 #define BOARD_H
 
-#include &lt;QObject&gt;
-#include &lt;QStringList&gt;
+#include <QObject>
+#include <QStringList>
 
 typedef int8_t t_index;
 typedef uint16_t t_value;
@@ -217,22 +201,23 @@ private:
 };
 
 #endif // BOARD_H
-</pre>
+{{< /highlight >}}
 
 Au niveau des méthodes publiques rien de très complexe :
 
-  * une méthode qui affiche dans la console le contenu du plateau
-  * quatre méthodes de déplacement
-  * une méthode pour récupérer la valeur d&rsquo;une case (tuile) en fonction des coordonnées
-  * une méthode pour récupérer le score
-  * deux méthodes pour savoir si le jeux est fini et si on a gagné
-  * une méthode d&rsquo;init
+- une méthode qui affiche dans la console le contenu du plateau
+- quatre méthodes de déplacement
+- une méthode pour récupérer la valeur d'une case (tuile) en fonction des coordonnées
+- une méthode pour récupérer le score
+- deux méthodes pour savoir si le jeux est fini et si on a gagné
+- une méthode d'init
 
-Je ne détaille pas vraiment les méthodes privées ni l&rsquo;implémentation, ce n&rsquo;est pas tellement le sujet et github est là.
+Je ne détaille pas vraiment les méthodes privées ni l'implémentation, ce n'est pas tellement le sujet et github est là.
 
-Juste histoire de voir que tout fonctionne bien j&rsquo;ai changé le `main` comme suit :
+Juste histoire de voir que tout fonctionne bien j'ai changé le `main` comme suit :
 
-<pre class="wp-code-highlight prettyprint">int main(int argc, char *argv[])
+{{< highlight cpp >}}
+int main(int argc, char *argv[])
 {
     Q_UNUSED(argc)
     Q_UNUSED(argv)
@@ -250,27 +235,20 @@ Juste histoire de voir que tout fonctionne bien j&rsquo;ai changé le `main` com
 
     return 0;
 }
-</pre>
+{{< /highlight >}}
 
-C&rsquo;est pas super beau mais ça permet de se rendre compte que oui ça fonctionne.
+C'est pas super beau mais ça permet de se rendre compte que oui ça fonctionne.
 
 **Apparté C++11**
 
 Petit apparté rapide. Normalement vous devriez avoir un warning du genre :
 
-> /Users/yves/Projects/Qt/qt2048/board.cpp:93: avertissement : ‘auto’ type specifier is a C++11 extension [-Wc++11-extensions]
-  
-> auto time = QTime::currentTime();
-  
-> ^
+> /Users/yves/Projects/Qt/qt2048/board.cpp:93: avertissement : ‘auto’ type specifier is a C++11 extension [-Wc++11-extensions] auto time = QTime::currentTime(); ^
 
-C&rsquo;est normal, j&rsquo;utilise `auto` qui vient de `C++11`. Il faut donc l&rsquo;activer
-  
-dans le fichier `qt2048.pro` :
+C'est normal, j'utilise `auto` qui vient de `C++11`. Il faut donc l'activer dans le fichier `qt2048.pro` :
 
-<pre class="wp-code-highlight prettyprint">CONFIG+=c++11
-</pre>
+{{< highlight cpp >}}
+CONFIG+=c++11
+{{< /highlight >}}
 
-> git: tag <span style="text-decoration: underline;"><a href="https://github.com/sogilis/qt2048/tree/O2_2048" target="_blank">02_2048</a></span>
-
-**Yves**
+> git: tag [02_2048](https://github.com/sogilis/qt2048/tree/O2_2048)

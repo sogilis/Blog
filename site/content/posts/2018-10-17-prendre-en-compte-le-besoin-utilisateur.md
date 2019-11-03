@@ -17,7 +17,7 @@ La base du métier d’ergonome est de prendre en compte le besoin utilisateur e
 J’analyse cette expérience afin d’essayer de confirmer ou non l’hypothèse selon laquelle la conception sans utilisateur est difficile et est un non-sens.
 
 
-# **On déroule quand même la démarche centrée utilisateur.**
+# On déroule quand même la démarche centrée utilisateur.
 
 ## Exploration : comprendre la demande et reformuler une problématique.
 
@@ -48,7 +48,7 @@ J’ai proposé au client de commencer par un atelier de partage d’information
 A l’issu de l’entretien, j’ai pu identifier des axes d’améliorations à travailler, que j’ai validé avec le client.
 
 
-## **Idéation et conception : recherche des solutions possibles.**
+## Idéation et conception : recherche des solutions possibles.
 
 Je lui ai ensuite proposé de poursuivre par une phase d’idéation. Cette phase permet de rechercher différentes solutions. Pendant une heure, le client et moi avons utilisé un tableau blanc pour dessiner les solutions qui nous paraissaient répondre aux problèmes. Nous avons pris les problèmes un par un.
 
@@ -66,7 +66,7 @@ J’ai finalement réussi à finaliser ma proposition sous forme de maquette cli
 
 
 
-## **C'est difficile de se mettre à la place de l'utilisateur et d'y rester.**
+## C'est difficile de se mettre à la place de l'utilisateur et d'y rester.
 
 Lors de ce travail, je me suis basée uniquement sur le point de vue de mon client. J’ai pu constater trois problèmes à cela : la déperdition d’information d’un intermédiaire, la vision technique du client et un avis unique qui n’est pas utilisateur.
 
@@ -82,7 +82,7 @@ Enfin, le troisième point concerne le fait que j’avais un seul interlocuteur.
 
 
 
-## **Concevoir pour une personne es**
+## Concevoir pour une personne es
 
 
 Ce qui m’a manqué pendant cette conception sans utilisateur, c’est de parler du métier à l’état pur, sans considération pour la solution technique. Nous ne pouvons pas connaître tous les métiers du monde, ce serait impossible et pas vraiment souhaitable. Le travail de conception débute donc naturellement par la compréhension du métier. Quelles sont les tâches à réaliser, dans quel but, comment sont-elles réalisées, quels sont les problèmes parfois rencontrés, etc. Chaque individu suit un chemin différent pour son métier. Rencontrer différentes personnes permet donc d’identifier et de comprendre les chemins possibles, les raisons qui poussent à faire différemment, comprendre le contexte d’utilisation global.
@@ -95,7 +95,7 @@ Enfin, rencontrer plusieurs personnes permet d’identifier plus facilement si l
 L’exercice de l’entretien n’est pas facile. Il demande une préparation afin de récolter de l’information pertinente avant de s’engager dans la recherche de solution. Lorsque l’information de base est erronée, nous formulons une hypothèse fausse, trouver une solution qui ne résout pas le problème et au final l’utilisateur a des difficultés à utiliser la solution ou refuse carrément de l’utiliser.
 
 
-## **Conclusion**
+## Conclusion
 
 
 

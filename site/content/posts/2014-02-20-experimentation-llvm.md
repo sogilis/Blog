@@ -92,8 +92,6 @@ tags:
 
 Aujourd’hui, nous avons continué dans notre nouvelle tradition des SogiDays. Un sujet que j’ai proposé concernait LLVM et avait pour but d’expérimenter la création d’un compilateur pour un micro-langage.
 
-<!-- more -->
-
 L’intérêt principal de [LLVM](http://llvm.org) est qu’il est possible de générer facilement un interpréteur et un compilateur optimisé grâce à la représentation intermédiaire LLVM. Il est aussi possible, par exemple, d’exécuter son code en JavaScript en utilisant ASM-JS. Les possibilités sont multiples. Ensuite, cela permet de facilement découvrir différents aspects de la compilation. Ces sujets ne sont pas encode abordés, mais il peut être intéressant de voir comment compiler :
 
 - des closures (fonctions avec contexte)

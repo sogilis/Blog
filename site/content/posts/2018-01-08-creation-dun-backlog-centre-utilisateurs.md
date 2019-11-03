@@ -1,6 +1,6 @@
 ---
-title: 'Création d&rsquo;un backlog centré utilisateurs : l&rsquo;utilisation des UX Cards'
-author: Sogilis
+title: "Création d'un backlog centré utilisateurs : l'utilisation des UX Cards"
+author: Marion Georges
 date: 2018-01-08T15:59:03+00:00
 pyre_show_first_featured_image:
   - no
@@ -90,23 +90,23 @@ tags:
   - méthodologie
 
 ---
-# Comment l&rsquo;utilisation des UX cards lors d&rsquo;un focus group, nous a permis de créer un backlog ?
+# Comment l'utilisation des UX cards lors d'un focus group, nous a permis de créer un backlog ?
 
 ## Introduction
 
-Une PME a fait appel à nous pour notre compétence en ergonomie. En effet, elle désirait de l&rsquo;aide pour retravailler un dashboard. Celui-ci a été réalisé en interne et sans implication des utilisateurs. Ces derniers demandent aujourd&rsquo;hui de l’améliorer, car leurs usages ont évolué. Ils souhaitaient désormais l’utiliser comme un véritable outil de pilotage d’équipe. Le dashboard devait donc être plus simple pour une meilleure lisibilité et plus graphique pour un meilleur confort d’utilisation.
+Une PME a fait appel à nous pour notre compétence en ergonomie. En effet, elle désirait de l'aide pour retravailler un dashboard. Celui-ci a été réalisé en interne et sans implication des utilisateurs. Ces derniers demandent aujourd'hui de l’améliorer, car leurs usages ont évolué. Ils souhaitaient désormais l’utiliser comme un véritable outil de pilotage d’équipe. Le dashboard devait donc être plus simple pour une meilleure lisibilité et plus graphique pour un meilleur confort d’utilisation.
 
 Plusieurs clients pilotes de notre client étaient prêts à s’investir en co-design pour définir les contours de ce nouveau dashboard. Nous avons donc organisé un focus group. C’est un entretien collectif, qui réunit plusieurs utilisateurs autour d’un même sujet, d’une problématique. Le but est d’explorer les besoins, les idées ou les opinions de chacun.
 
 ## Objectifs
 
-Le premier objectif de ce focus groupe était **l’implication des utilisateurs dans la construction de la vision du dashboard**. Nous avons donc contacté les clients désirants s&rsquo;investir dans ce travail. Par ailleurs, cette séance permettait à notre client de renforcer les liens entre la PME et ses clients.
+Le premier objectif de ce focus groupe était **l’implication des utilisateurs dans la construction de la vision du dashboard**. Nous avons donc contacté les clients désirants s'investir dans ce travail. Par ailleurs, cette séance permettait à notre client de renforcer les liens entre la PME et ses clients.
 
-Le second objectif était **l&rsquo;identification d&rsquo;une ambiance graphique** souhaitée par les utilisateurs. En effet, aujourd&rsquo;hui ceux-ci n&rsquo;ont pas envie d’utiliser le dashboard, car il n’a rien d’attrayant.
+Le second objectif était **l'identification d'une ambiance graphique** souhaitée par les utilisateurs. En effet, aujourd'hui ceux-ci n'ont pas envie d’utiliser le dashboard, car il n’a rien d’attrayant.
 
 Le troisième objectif était de **créer un bakclog**. Nous ne devions pas participer au développement de la solution, mais ce focus group était une très bonne opportunité de récolter leurs besoins et attentes en termes de fonctionnalités. Ainsi, nous en avons profité pour définir les contours d’un backlog centré utilisateurs. Bien sûr, le but n’était pas d’écrire les users stories, ni de prioriser. Notre but était de définir une vision macro du dashboard avec les fonctionnalités clefs.
 
-<img class="size-medium wp-image-2228 aligncenter" src="http://sogilis.com/wp-content/uploads/2018/01/WP_20171213_002-2-300x225.jpg" alt="Les utilisateurs en séance d'idéation sur une table avec des post-it" width="300" height="225" srcset="http://sogilis.com/wp-content/uploads/2018/01/WP_20171213_002-2-300x225.jpg 300w, http://sogilis.com/wp-content/uploads/2018/01/WP_20171213_002-2-768x576.jpg 768w, http://sogilis.com/wp-content/uploads/2018/01/WP_20171213_002-2-1024x768.jpg 1024w, http://sogilis.com/wp-content/uploads/2018/01/WP_20171213_002-2.jpg 1632w" sizes="(max-width: 300px) 100vw, 300px" />
+!(Les utilisateurs en séance d'idéation sur une table avec des post-it)[http://sogilis.com/wp-content/uploads/2018/01/WP_20171213_002-2-300x225.jpg]
 
 ## Matériel
 
@@ -114,12 +114,12 @@ Notre séance de co-design devait donc répondre à la question suivante : quel 
   
 7 participants étaient présents :
 
-  * 6 utilisateurs d’entreprises de professions et secteurs d’activité différents
-  * moi-même, ergonome, qui animait la séance
+* 6 utilisateurs d’entreprises de professions et secteurs d’activité différents
+* moi-même, ergonome, qui animait la séance
 
 Nous étions dans une grande salle de réunion qui permettait d’avoir 3 espaces de réflexion distincts.
   
-Nous avons utilisé les [UX Cards][1] présentées par Carine Lallemand, chercheuse en psychologie et ergonomie des Itérations Homme-Machine. Ces cartes sont basées sur une approche psychologique de l&rsquo;expérience et utilisées pour explorer les besoins des utilisateurs.
+Nous avons utilisé les [UX Cards][1] présentées par Carine Lallemand, chercheuse en psychologie et ergonomie des Itérations Homme-Machine. Ces cartes sont basées sur une approche psychologique de l'expérience et utilisées pour explorer les besoins des utilisateurs.
 
 ## Méthode
 
@@ -135,25 +135,15 @@ Le but était d’éveiller les cerveaux, de se projeter dans le futur pour faci
   
 Nous avons utilisé l’outil UX Cards, en technique de combinaison. Par groupe de deux personnes, les participants ont essayé de répondre à ces trois questions :
 
-<li style="list-style-type: none">
-  <ul>
-    <li>
-      Comment le design visuel pourrait favoriser la stimulation et le plaisir d’utilisation ?
-    </li>
-    <li>
-      Quels contenus, informations, pourraient renforcer le sentiment de compétence et d’efficacité ?
-    </li>
-    <li>
-      Comment les fonctionnalités pourraient contribuer à l’autonomie et l’indépendance ?
-    </li>
-  </ul>
-</li>
+- Comment le design visuel pourrait favoriser la stimulation et le plaisir d’utilisation ?
+- Quels contenus, informations, pourraient renforcer le sentiment de compétence et d’efficacité ?
+- Comment les fonctionnalités pourraient contribuer à l’autonomie et l’indépendance ?
 
 Toutes les idées ont été partagées à l’ensemble du groupe et discutées. Elles ont constitué notre base pour le maquettage.
   
 **4.** **Activité de génération** : papier/crayon.
   
-Les participants, toujours en groupe de deux personnes, ont ensuite essayé de concrétiser les idées qu&rsquo;ils avaient eu en dessinant sur une feuille de papier en niveau de gris. Les maquettes ont ensuite été partagé à l’ensemble du groupe et discutées.
+Les participants, toujours en groupe de deux personnes, ont ensuite essayé de concrétiser les idées qu'ils avaient eu en dessinant sur une feuille de papier en niveau de gris. Les maquettes ont ensuite été partagé à l’ensemble du groupe et discutées.
 
 ## Résultats
 
@@ -167,10 +157,10 @@ Finalement, nous avons atteint nos objectifs. En effet, les 26 idées concernant
   
 Les utilisateurs ont tous joué le jeu en échangeant leur vision de leur métier, de leurs problématiques quotidiennes.
   
-De mon côté, un point est à améliorer concernant l’animation : l’enregistrement des moments de partage au groupe. J’ai perdu de l’information en oubliant d&rsquo;enregistrer les restitutions des petits groupes à l’ensemble.
+De mon côté, un point est à améliorer concernant l’animation : l’enregistrement des moments de partage au groupe. J’ai perdu de l’information en oubliant d'enregistrer les restitutions des petits groupes à l’ensemble.
   
-Par contre, cette séance m’a permis de proposer une maquette plus aboutie à mon client, avec des données réelles. Par conséquent, le client n&rsquo;a demandé pratiquement aucune correction, ce que je trouve satisfaisant.
+Par contre, cette séance m’a permis de proposer une maquette plus aboutie à mon client, avec des données réelles. Par conséquent, le client n'a demandé pratiquement aucune correction, ce que je trouve satisfaisant.
 
-Marion Georges &#8211; <span style="text-decoration: underline"><a href="https://twitter.com/mgeorges_">@mgeorges_</a></span>
+Marion Georges - (@mgeorges_)[https://twitter.com/mgeorges_]
 
- [1]: https://uxmind.eu/portfolio/ux-design-and-evaluation-cards/
+[1]: https://uxmind.eu/portfolio/ux-design-and-evaluation-cards/

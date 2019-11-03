@@ -97,8 +97,6 @@ Nous avons été confronté à ce problème lorsque nous avons commencé à trav
 
 Voici le processus que nous avons mis en place pour limiter le phénomène de ré-apprentissage.
 
-<!-- more -->
-
 ## Catégoriser les connaissances
 
 Nous avons tout d'abord catégorisé les différents types d'apprentissages. Cela nous a permis de mieux identifier les tâches sur lesquels l'apprentissage est le plus susceptible d'arriver. Cette liste va très probablement évoluer dans le temps, mais voici celle dont nous disposons pour l'instant :
