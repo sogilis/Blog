@@ -44,7 +44,7 @@ make run-debug-server
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
 
-3. See the result at [http://localhost:1313](http://localhost:1313)
+3. See the result at [http://localhost:3000](http://localhost:3000)
 
 4. Finalize your article, and see the output in real time.
 
