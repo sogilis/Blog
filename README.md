@@ -44,7 +44,7 @@ make run-debug-server
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
 
-3. See the result at [http://localhost:1313](http://localhost:1313)
+3. See the result at [http://localhost:3000](http://localhost:3000)
 
 4. Finalize your article, and see the output in real time.
 
@@ -78,5 +78,5 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 * **Antoine** - *Initial work* - [Agervail](https://github.com/agervail)
-* **Jean-batiste** - *Contributors* - [Jidibus](https://github.com/jibidus)
+* **Jean-Baptiste** - *Contributors* - [Jidibus](https://github.com/jibidus)
 * **Nasser** - *Initial work* - [Nas84](https://github.com/Nas84)
