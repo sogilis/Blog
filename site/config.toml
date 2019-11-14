@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "fr"
 title = "Sogilis blog Site"
-theme = "tale"
+theme = "sogilis"
 enableEmoji = true
 debug = true
 
