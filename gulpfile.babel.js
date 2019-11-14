@@ -73,6 +73,7 @@ gulp.task("svg", () => {
 
 gulp.task("server", ["hugo", "css", "js", "svg"], () => {
   browserSync.init({
+    open: false, // Because of headless environment (Docker)
     server: {
       baseDir: "./dist"
     }
