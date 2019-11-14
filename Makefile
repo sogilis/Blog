@@ -12,6 +12,7 @@ start-debug-image:
 
 run-debug-server:
 	docker exec -it $(CONTAINER_NAME) npm start
+
 run-generation:
 	docker exec -it $(CONTAINER_NAME) npm run build
 
