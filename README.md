@@ -25,7 +25,7 @@ First fork this project
 ```bash
 git clone --recursive git@github.com:sogilis/Blog.git
 cd Blog
-make build-image
+make build
 ```
 
 ### How to write a new article ?
@@ -33,8 +33,7 @@ make build-image
 1. Start blog locally:
 
 ```Bash
-make start-image
-make run-debug-server
+make start
 ```
 
 2. Write your article:
@@ -57,8 +56,8 @@ make run-debug-server
 ### How to stop blog locally?
 
 ```Bash
-make stop-image
-make remove-image
+make stop
+make remove
 ```
 
 ## Built With
