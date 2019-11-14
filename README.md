@@ -40,7 +40,7 @@ Wait a view seconds then, go to [http://localhost:3000](http://localhost:3000).
 
 2. Write your article:
 
-   Create a new text file in `blog_sogilis/content/posts`.
+   Create a new text file in `site/content/posts`.
    Following formats are supported:
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
