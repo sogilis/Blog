@@ -12,8 +12,6 @@ These instructions will get you a copy of the project up and running on your loc
 You will need to install the following software:
 
 * Docker >= 1.38 (18.06.1-ce)
-* node >= 10.13.0 (chose a LTS version for production)
-* yarn (non mandatory, it is either npm or yarn)
 * [Git](https://git-scm.com)
 * make
 
