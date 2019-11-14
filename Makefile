@@ -11,7 +11,7 @@ start:
 		--rm --name $(CONTAINER_NAME) $(IMAGE_NAME)
 
 run-generation:
-	docker exec -it $(CONTAINER_NAME) npm run build
+	docker exec -it $(CONTAINER_NAME) yarn run build
 
 stop:
 	docker stop $(CONTAINER_NAME)

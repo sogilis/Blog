@@ -17,7 +17,7 @@ COPY gulpfile.babel.js gulpfile.babel.js
 COPY webpack.conf.js webpack.conf.js
 COPY yarn.lock yarn.lock
 
-RUN npm install
+RUN yarn install
 
 EXPOSE 3000
-CMD npm start
+CMD yarn start
