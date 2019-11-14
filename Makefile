@@ -6,8 +6,8 @@ build:
 
 start:
 	docker run -d -t -p 3000:3000 \
-		-v $(CURDIR)/site:/blog/site \
-		-v $(CURDIR)/src:/blog/src \
+		--mount type=bind,src=$(CURDIR)/site,dst=/blog/site,consistency=cached \
+		--mount type=bind,src=$(CURDIR)/src,dst=/blog/src,consistency=cached \
 		--rm --name $(CONTAINER_NAME) $(IMAGE_NAME)
 
 run-generation:
