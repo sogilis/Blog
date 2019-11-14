@@ -6,6 +6,7 @@ RUN apk add --no-cache asciidoctor wget
 
 COPY ./bin/hugo.linux ./bin/hugo.linux
 RUN chmod a+x ./bin/hugo.linux
+RUN ln /blog/bin/hugo.linux /usr/local/bin/hugo
 COPY site site
 COPY src src
 COPY .*rc ./
