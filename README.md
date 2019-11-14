@@ -26,13 +26,17 @@ cd Blog
 make build
 ```
 
-### How to write a new article ?
-
-1. Start blog locally:
+### How run blog locally?
 
 ```Bash
 make start
 ```
+
+Wait a view seconds then, go to [http://localhost:3000](http://localhost:3000).
+
+### How to write a new article?
+
+1. Run blog locally (see above).
 
 2. Write your article:
 
