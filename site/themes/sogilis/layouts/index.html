@@ -1,4 +1,245 @@
 {{ define "main" }}
-  <h1>Hello World</h1>
-  <p>This is a test</p>
+        <div class="content_header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-2 offset-md-1 col-lg-2 offset-lg-2 col-xl-2 offset-xl-2">
+                        <a href="index.html"><img src="{{ "images/logo_sogilis.svg" | relURL }}"></a>
+                    </div>
+
+                    <nav class="col-md-6 offset-md-3 col-lg-4 offset-lg-3 col-xl-5 offset-xl-2 ">
+                        <div class="dropdown">
+                            <button class="dropbtn">Services</button>
+                            <div class="dropdown-content">
+                                <a href="services-applications-cloud-native.html">Applications Cloud Natives</a>
+                                <a href="services-embarques-et-iot.html">Logiciels Embarqués & IoT</a>
+                                <a href="services-logiciels-critiques.html">Logiciels Critiques</a>
+                            </div>
+                        </div>
+                        <a href="vision.html" class="menu_link_1">Notre Vision</a>
+                        <a href="contact.html" class="menu_link_2">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container blog_index">
+            <div class="row">
+
+
+                <!--DEBUT DE LA BOUCLE POUR L'AFFICHAGE DES THUMBNAILS ARTICLE-->
+                <div class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="blog_index_article">
+                        <a href="#NULL">
+                            <img src="img_article/img_blog.jpg">
+                            <h1 class="title_name">Title goes here. Long title to test here.</h1>
+                            <p>Lire la suite...</p>
+                        </a>
+                    </div>
+                </div>
+                <!--FIN DE LA BOUCLE-->
+
+            </div>
+        </div>
+
+
+
+         <footer class="container-fluid" style="margin-top: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-1">
+                        <a href="index.html"><img src="{{ "images/logo_sogilis_alone.svg" | relURL }}"></a>
+                    </div>
+
+                    <div class="col-10 col-sm-5 col-md-4 offset-md-1 col-lg-3 offset-lg-1">
+                        <h1 class="title_level_1">Contact</h1>
+                        <a class="btn_dark_grey" href="contact.html">Contactez nous
+                            <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 7.5 10.3" style="enable-background:new 0 0 7.5 10.3;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:none;stroke-width:3;}
+                            </style>
+                            <path id="Tracé_16" class="st0" d="M1.2,9.2l4.1-4.1L1.1,1.2"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-2 col-sm-7 col-md-1 col-lg-1">
+                        <a class="liens_sociaux twitter" href="https://twitter.com/Sogilis?lang=fr">
+                            <svg version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                 x="0px" y="0px" width="27.1px" height="22.1px" viewBox="0 0 27.1 22.1" style="enable-background:new 0 0 27.1 22.1;"
+                                 xml:space="preserve" class="twitter">
+                            <defs>
+                            </defs>
+                            <path id="ico_twitter_1_" d="M27.1,2.6c-1,0.4-2.1,0.7-3.2,0.9c1.2-0.7,2-1.8,2.5-3.1c-1.1,0.6-2.3,1.1-3.5,1.4
+                                c-2.1-2.2-5.6-2.4-7.9-0.3c-1.1,1.1-1.8,2.5-1.8,4.1c0,0.4,0,0.9,0.1,1.3C8.9,6.6,4.7,4.5,1.9,1C0.4,3.6,1.2,6.8,3.6,8.4
+                                c-0.9,0-1.8-0.3-2.5-0.7v0.1c0,2.7,1.9,4.9,4.5,5.5c-0.5,0.1-1,0.2-1.5,0.2c-0.4,0-0.7,0-1-0.1c0.7,2.3,2.8,3.8,5.2,3.9
+                                c-2,1.5-4.4,2.4-6.9,2.4c-0.4,0-0.9,0-1.3-0.1c2.5,1.6,5.5,2.5,8.5,2.5c8.7,0.1,15.8-6.9,15.8-15.6c0-0.1,0-0.1,0-0.2l0-0.7
+                                C25.5,4.7,26.4,3.7,27.1,2.6z"/>
+                            </svg>
+                        </a>
+                        <br>
+                        <a class="liens_sociaux" href="https://www.linkedin.com/company/sogilis/">
+                            <svg version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                 x="0px" y="0px" width="25.2px" height="24px" viewBox="0 0 25.2 24" style="enable-background:new 0 0 25.2 24;"
+                                 xml:space="preserve">
+                            <defs>
+                            </defs>
+                            <path id="ico_linkedin_1_" class="st0" d="M25.2,14.7V24h-5.4v-8.7c0-2.2-0.8-3.7-2.7-3.7c-1.2,0-2.4,0.8-2.8,2
+                                c-0.1,0.4-0.2,0.9-0.2,1.3V24H8.7c0,0,0.1-14.7,0-16.2h5.4v2.3l0,0.1h0v-0.1c1-1.7,2.9-2.8,4.9-2.7C22.5,7.4,25.2,9.8,25.2,14.7z
+                                 M3.1,0C1.5-0.1,0.2,1,0,2.6s1,2.9,2.5,3.1c0.1,0,0.3,0,0.4,0h0c1.5,0.1,2.9-1,3.1-2.5S5.1,0.2,3.5,0C3.4,0,3.2,0,3.1,0z M0.3,24
+                                h5.4V7.8H0.3V24z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-10 offset-1 col-sm-6 offset-sm-1 col-md-5 offset-md-2 offset-lg-0 col-lg-3 adresses">
+                        <p class="title_name">Sogilis Grenoble</p>
+                        <p class="text_description">
+                            4 Avenue Doyen Louis Weil<br>
+                            38000 Grenoble<br>
+                            04 26 78 05 07
+                        </p>
+                    </div>
+
+                    <div class="col-10 offset-1 col-sm-5 offset-sm-0 col-md-4 col-lg-3 adresses">
+                        <p class="title_name">Sogilis Lyon</p>
+                        <p class="text_description">
+                            45 Rue Sainte-Geneviève<br>
+                            69006 Lyon <br>
+                            07 68 25 60 95
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row liens_pages">
+                    <div class="col-11 offset-1  col-sm-7 col-md-5 offset-md-1 col-lg-3 offset-lg-2">
+                        <h1 class="title_level_1">Services</h1>
+                        <ul>
+                            <li><a href="services-applications-cloud-native.html" class="liens_text">Applications Cloud Natives</a></li>
+                            <li><a href="services-embarques-et-iot.html" class="liens_text">Logiciels Embarqués & IoT</a></li>
+                            <li><a href="services-logiciels-critiques.html" class="liens_text">Logiciels Critiques</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-11 offset-1  col-sm-5 col-md-4 offset-md-0 col-lg-3 offset-lg-1">
+                        <h1 class="title_level_1">L'Entreprise</h1>
+                        <ul>
+                            <li><a href="vision.html" class="liens_text">Notre Vision</a></li>
+                            <li><a href="emplois.html" class="liens_text">Emplois</a></li>
+                            <li><a href="" class="liens_text">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="trait_gris_clair"></div>
+                    </div>
+                </div>
+                <div class="row subfooter  justify-content-between">
+                    <div class="col-9 col-sm-8 col-md-4 col-lg-4">
+                        <p class="text_description">Sogilis - Tous Droits Réservés - 2019</p>
+                    </div>
+                    <div class="col-2 col-sm-3 col-md-2 col-lg-1">
+                        <a href="">Mentions Légales</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Menu Mobile -->
+        <div class="content-menu-mobile" id="content-menu">
+            <div class="container">
+              <div class="col-xs-3">
+                <a href="index.html">
+                   <img src="{{ "images/logo_sogilis.svg" | relURL }}">
+                </a>
+              </div>
+              <div class="col-xs-2 col-xs-offset-7">
+                <a href="#" class="menuBtn">
+                  <span class="lines"></span>
+                </a>
+                <nav class="mainMenuMobile">
+                <ul>
+                  <li>
+                    <a href="services-applications-cloud-native.html">Applications Cloud Natives</a>
+                  </li>
+                  <li>
+                    <a href="services-embarques-et-iot.html">Logiciels Embarqués & IoT<</a>
+                  </li>
+                  <li>
+                    <a href="services-logiciels-critiques.html">Logiciels Critiques</a>
+                  </li>
+                   <li>
+                    <a href="vision.html">Notre Vision</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              </div>
+            </div>
+          </div>
+
+
+    <!-- Script Display Menu Mobile -->
+    <script>
+        $('.menuBtn').click(function() {
+          $(this).toggleClass('act');
+            if($(this).hasClass('act')) {
+              $('.mainMenuMobile').addClass('act');
+            }
+            else {
+              $('.mainMenuMobile').removeClass('act');
+            }
+        });
+    </script>
+
+
+    <!-- Change class header Tablet and Desktop when user is scrolling -->
+    <script type="text/javascript">
+        $(function() {
+            //caches a jQuery object containing the header element
+            var header = $(".content_header");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 100) {
+                    header.removeClass('content_header').addClass("content_header_scroll");
+                } else {
+                    header.removeClass("content_header_scroll").addClass('content_header');
+                }
+            });
+        });
+    </script>
+
+    <!-- Change class header Mobile  when user is scrolling -->
+    <script type="text/javascript">
+        $(function() {
+            //caches a jQuery object containing the header element
+            var header = $(".content-menu-mobile");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 300) {
+                    header.removeClass('content-menu-mobile').addClass("content-menu-mobile_scroll");
+                } else {
+                    header.removeClass("content-menu-mobile_scroll").addClass('content-menu-mobile');
+                }
+            });
+        });
+    </script>
+
+    <!-- Init Animations script -->
+    <script>
+        AOS.init();
+    </script>
+
 {{ end }}
+
+

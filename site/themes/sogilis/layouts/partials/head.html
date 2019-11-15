@@ -1,0 +1,22 @@
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <title>{{ .Site.Title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="{{ "css/sup1200.css" | relURL }}" type="text/css" />
+        <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="{{ "css/992-1199" | relURL }}.css" type="text/css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="{{ "css/768-991" | relURL }}.css" type="text/css" />
+        <link rel="stylesheet" media="screen and (min-width: 576px) and (max-width: 767px)" href="{{ "css/576-767" | relURL }}.css" type="text/css" />
+        <link rel="stylesheet" media="screen and (max-width: 575px)" href="{{ "css/inf576.css" | relURL }}" type="text/css" />
+
+
+        <link rel="stylesheet" type="text/css" href="{{ "css/bootstrap.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/aos.css" | relURL }}" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+        <script src="{{ "js/aos.js" | relURL }}"></script>
+        <script src="{{ "js/js.cookie.js" | relURL }}" charset="utf-8" type="text/javascript"></script>
+
+        <link rel="icon" type="image/png" href="{{ "images/favicon.png" | relURL }}"/>
+    </head>

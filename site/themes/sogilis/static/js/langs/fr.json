@@ -1,0 +1,49 @@
+{
+  "token": {
+    "menu_btn_services": "Services",
+    	"menu_btn_cloud": "Applications Cloud Natives",
+    	"menu_btn_embarque": "Logiciels Embarqué & IoT",
+    	"menu_btn_critique": "Logiciels Critiques",
+    "menu_btn_vision": "Notre Vision",
+    "menu_btn_contact": "Contact",
+    "menu_btn_job": "Emplois",
+    "menu_btn_contact": "Contact",
+    "menu_btn_blog": "Blog",
+
+    "footer_titre_contact": "Contact",
+    "footer_titre_services": "Services",
+    "footer_titre_entreprise": "Entreprise",
+
+    "home_zone_1_text": "Experts dans la création de logiciels sur mesure de haute qualité pour votre entreprise.",
+
+    "home_zone_2_text": "Nous sommes une équipe de passionnés du génie logiciel, qui adore créer des logiciels qui compte vraiment, le  tout avec un esprit d’enthousiasme et une pointe de créativité. A Sogilis, nous contestons l’utilisation du mot “impossible”, nous croyons que derrière chaque chose impossible se cache un nouveau défi.",
+    
+    "home_zone_2_activ_cat": "Service",
+
+    "home_zone_2_activ1_title": "Applications Cloud Natives",
+    "home_zone_2_activ1_text": "Experts dans la création de logiciels sur mesure de haute qualité pour votre entreprise.",
+    
+    "home_zone_2_activ2_title": "Logiciels Embarqué & IoT",
+    "home_zone_2_activ2_text": "Dans un monde où les appareils connectés ont leurs propres cerveaux, il est primordial de leur fournir des logiciels embarqués de haute qualité qui leurs apportent fiabilité et efficacité. Derrière chaque remarquable appareil connecté se cache un remarquable logiciel. Nous vous apportons notre savoir-faire pour offrir à vos appareils le logiciel qu’ils méritent.",
+    
+    "home_zone_3_text": "Quand des vies dépendent d’un logiciel, il n’y a pas de place pour l’erreur. Nous avons mis au point une méthode permettant de développer des  logiciels haute criticité tout en maintenant une agilité constante. Sogilis a créé des logiciels critiques pour différents domaines industriels (aéronautique, médical, nucléaire…).",
+   
+    "home_zone_4_text": "Vers le 0 Défaut. ",
+    "home_zone_5_text": "La perfection n’existe pas, nous le savons. Mais nous voulons créer les logiciels les plus fiables et les plus robustes pour atteindre le plus haut niveau d'exigence.",
+
+    "home_zone_6_text": "La meilleure expérience utilisateur.",
+    "home_zone_7_text": "Un logiciel ce n’est pas simplement du code. C’est aussi de l’efficacité, de la fiabilité, et de l’utilisabilité. Nous croyons que les meilleurs logiciels doivent servir les besoins des utilisateurs. ",
+
+    "home_zone_8_text": "Faites les meilleurs choix.",
+    "home_zone_9_text": "Nous ne sommes pas une simple entreprise de logiciels, mais une équipe chevronnée, composée d’ingénieurs, de concepteurs et de gens d’affaire. Notre but : remettre en question vos croyances, mettre à l’épreuve votre projet et le propulser au niveau supérieur. ",
+  
+    "home_zone_10_text": "Pas une simple équipe.",
+    "home_zone_11_text": "Experts, passionnés, dévoués, engagés : Voici comment nos clients nous définissent. Nous les aidons à fournir des produits incroyables à leurs utilisateurs.",
+
+    "home_zone_12_text": "Nous sommes aussi passés par là.",
+    "home_zone_13_text": "Nous avons créé de nombreuses startups et de nombreux produits.  De l’esquisse à la production, nous savons donc comment gérer des projets et donner vie à vos idées.",
+
+    "home_zone_14_text": "Dans le même bateau.",
+    "home_zone_15_text": "Nous partageons le même but : votre succès. Pour ce faire, nous devons éliminer les barrières entre nous et  agir comme une seule et même équipe. Laissons le potentiel s'exprimer ensemble."
+  }
+}
