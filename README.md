@@ -12,8 +12,6 @@ These instructions will get you a copy of the project up and running on your loc
 You will need to install the following software:
 
 * Docker >= 1.38 (18.06.1-ce)
-* node >= 10.13.0 (chose a LTS version for production)
-* yarn (non mandatory, it is either npm or yarn)
 * [Git](https://git-scm.com)
 * make
 
@@ -25,21 +23,24 @@ First fork this project
 ```bash
 git clone --recursive git@github.com:sogilis/Blog.git
 cd Blog
-make build-image
+make build
 ```
 
-### How to write a new article ?
-
-1. Start blog locally:
+### How run blog locally?
 
 ```Bash
-make start-image
-make run-debug-server
+make start
 ```
+
+Wait a view seconds then, go to [http://localhost:3000](http://localhost:3000).
+
+### How to write a new article?
+
+1. Run blog locally (see above).
 
 2. Write your article:
 
-   Create a new text file in `blog_sogilis/content/posts`.
+   Create a new text file in `site/content/posts`.
    Following formats are supported:
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
@@ -57,8 +58,8 @@ make run-debug-server
 ### How to stop blog locally?
 
 ```Bash
-make stop-image
-make remove-image
+make stop
+make remove
 ```
 
 ## Built With

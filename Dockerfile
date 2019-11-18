@@ -6,6 +6,7 @@ RUN apk add --no-cache asciidoctor wget
 
 COPY ./bin/hugo.linux ./bin/hugo.linux
 RUN chmod a+x ./bin/hugo.linux
+RUN ln /blog/bin/hugo.linux /usr/local/bin/hugo
 COPY site site
 COPY src src
 COPY .*rc ./
@@ -16,7 +17,7 @@ COPY gulpfile.babel.js gulpfile.babel.js
 COPY webpack.conf.js webpack.conf.js
 COPY yarn.lock yarn.lock
 
-RUN npm install
+RUN yarn install
 
 EXPOSE 3000
-CMD npm start
+CMD yarn start

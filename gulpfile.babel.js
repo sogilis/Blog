@@ -73,14 +73,15 @@ gulp.task("svg", () => {
 
 gulp.task("server", ["hugo", "css", "js", "svg"], () => {
   browserSync.init({
+    open: false, // Because of headless environment (Docker)
     server: {
       baseDir: "./dist"
     }
   });
-  gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
-  gulp.watch("./site/static/img/icons-*.svg", ["svg"]);
-  gulp.watch("./site/**/*", ["hugo"]);
+  gulp.watch("src/js/**/*.js", ["js"]);
+  gulp.watch("src/css/**/*.css", ["css"]);
+  gulp.watch("site/static/img/icons-*.svg", ["svg"]);
+  gulp.watch("site/**/*", ["hugo"]);
 });
 
 function buildSite(cb, options) {
