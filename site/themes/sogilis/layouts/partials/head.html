@@ -4,12 +4,16 @@
         <title>{{ .Site.Title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="{{ "css/sup1200.css" | relURL }}" type="text/css" />
-        <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="{{ "css/992-1199" | relURL }}.css" type="text/css" />
-        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="{{ "css/768-991" | relURL }}.css" type="text/css" />
-        <link rel="stylesheet" media="screen and (min-width: 576px) and (max-width: 767px)" href="{{ "css/576-767" | relURL }}.css" type="text/css" />
-        <link rel="stylesheet" media="screen and (max-width: 575px)" href="{{ "css/inf576.css" | relURL }}" type="text/css" />
-
+        {{ $style := resources.Get "sass/sup1200.scss" | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="{{ $style.Permalink }}" type="text/css" />
+        {{ $style := resources.Get "sass/992-1199.scss" | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="{{ $style.Permalink }}" type="text/css" />
+        {{ $style := resources.Get "sass/768-991.scss" | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="{{ $style.Permalink }}" type="text/css" />
+        {{ $style := resources.Get "sass/576-767.scss" | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" media="screen and (min-width: 576px) and (max-width: 767px)" href="{{ $style.Permalink }}" type="text/css" />
+        {{ $style := resources.Get "sass/inf576.scss" | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" media="screen and (max-width: 575px)" href="{{ $style.Permalink }}" type="text/css" />
 
         <link rel="stylesheet" type="text/css" href="{{ "css/bootstrap.css" | relURL }}">
         <link rel="stylesheet" href="{{ "css/aos.css" | relURL }}" />
