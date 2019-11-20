@@ -1,15 +1,18 @@
 FROM node:10.6-alpine
 
 ENV HUGO_VERSION='0.59.1'
-ENV HUGO_NAME="hugo_${HUGO_VERSION}_Linux-64bit"
+ENV HUGO_NAME="hugo_extended_${HUGO_VERSION}_Linux-64bit"
 ENV HUGO_BASE_URL="https://github.com/gohugoio/hugo/releases/download"
 ENV HUGO_URL="${HUGO_BASE_URL}/v${HUGO_VERSION}/${HUGO_NAME}.tar.gz"
 
 WORKDIR /blog
 
+# libxxx are required by extended edition of Hugo
 RUN apk add --no-cache \
     asciidoctor \
-    wget
+    wget \
+    libc6-compat \
+    libstdc++
 
 RUN mkdir ./bin/ && \
     wget -qO- "${HUGO_URL}" | tar xvz -C ./bin/ && \
