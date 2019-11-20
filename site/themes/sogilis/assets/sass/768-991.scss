@@ -228,7 +228,7 @@ $light-electric-blue:#A7E4EA;
 			width:50px;
 		}
 
-		.dropbtn{ 
+		.dropbtn{
 			font-family: 'Montserrat', sans-serif;
 			color:$wolf-blue;
 			text-decoration:none;
@@ -262,8 +262,8 @@ $light-electric-blue:#A7E4EA;
 		.dropbtn:hover:before{
 			width:50px;
 		}
-		
-		
+
+
 		/* The container <div> - needed to position the dropdown content */
 		.dropdown {
 		    position: relative;
@@ -403,7 +403,7 @@ $light-electric-blue:#A7E4EA;
 			width:50px;
 		}
 
-		.dropbtn{ 
+		.dropbtn{
 			font-family: 'Montserrat', sans-serif;
 			color:$wolf-blue;
 			text-decoration:none;
@@ -437,8 +437,8 @@ $light-electric-blue:#A7E4EA;
 		.dropbtn:hover:before{
 			width:50px;
 		}
-		
-		
+
+
 		/* The container <div> - needed to position the dropdown content */
 		.dropdown {
 		    position: relative;
@@ -553,7 +553,7 @@ $light-electric-blue:#A7E4EA;
 		  	-o-transition: all 0.3s;
 			transition: all 0.3s;
     	}
-    	
+
     	.lien_1:hover:after{
     		width:50px;
     	}
@@ -569,7 +569,7 @@ $light-electric-blue:#A7E4EA;
 }
 
 
-//FOOTER 
+//FOOTER
 
 footer{
 
@@ -864,8 +864,8 @@ footer{
 
 .lets_create_something{
 
-	margin-bottom: 50px; 
-	margin-top: 25px; 
+	margin-bottom: 50px;
+	margin-top: 25px;
 
 	h2{
 		font-family: 'EB Garamond', serif;
@@ -889,7 +889,7 @@ footer{
 }
 
 .lets_create_something_light_blue{
-	background-color:$light-electric-blue;	
+	background-color:$light-electric-blue;
 	padding-bottom:70px;
 
 	h2{
@@ -915,7 +915,7 @@ footer{
 
 
 .lets_create_something_light_blue_bis{
-	background-color:$light-electric-blue;	
+	background-color:$light-electric-blue;
 	padding-bottom:70px;
 	margin-bottom: -50px;
 	margin-top: 50px;
@@ -1140,7 +1140,7 @@ textarea:focus{
 .home_zone_1{
 	background-color:$super-light-grey;
 	width:100%;
-	height:60vh;	
+	height:60vh;
 	border:15px solid white;
 	overflow:hidden;
 
@@ -1183,8 +1183,8 @@ textarea:focus{
 	.descr_text{
 		font-family: 'EB Garamond', serif;
 		font-size:1.2em;
-		color:$medium-grey;	
-		margin-top:20px;	
+		color:$medium-grey;
+		margin-top:20px;
 	}
 
 	.descr_text p::before{
@@ -1208,7 +1208,7 @@ textarea:focus{
 	}
 
 	.activity_1{
-		margin-top:0px; 
+		margin-top:0px;
 		.fond_1{
 			background:url('../img/fond_activity_1.svg') no-repeat;
 		    background-size: 85%;
@@ -1260,7 +1260,7 @@ textarea:focus{
 	}
 
 	.activity_2{
-		margin-top:0px; 
+		margin-top:0px;
 		overflow:hidden;
 		.fond_1{
 			background:url('../img/fond_activity_1.svg') no-repeat;
@@ -1304,7 +1304,7 @@ textarea:focus{
 		.text_description{
 			line-height:2.1em;
 			margin-top:20px;
-			margin-bottom:40px; 
+			margin-bottom:40px;
 		}
 
 		.title_subcategory{
@@ -1561,7 +1561,7 @@ textarea:focus{
 	    padding-bottom:10px;
 
 		.accordion {
-		   
+
 		    border-right:none;
 		    border-left:none;
 		    color: #444;
@@ -1614,7 +1614,7 @@ textarea:focus{
 			    	margin-top:8px;
 			    	font-size:0.8em;
 			    }
-			    
+
 			    .btn_dark_grey{
 	    			color: $dark_grey;
 			    	margin-top: 20px;
@@ -1632,7 +1632,7 @@ textarea:focus{
 				}
 	    	}
 		}
-	
+
 		.active, .accordion:hover {
 		    background-color: none;
 		}
@@ -1759,7 +1759,7 @@ textarea:focus{
 /**********************************************************************************************************************************************************/
 
 .content_purpose_1{
-	padding-top:200px; 
+	padding-top:200px;
 
 	.title_level_1{
 		font-size:2.3em;
@@ -2034,7 +2034,7 @@ textarea:focus{
 	.title_zone::before{
 		margin-top:12px;
 	}
-	
+
 	.bis{
 		margin-bottom: 40px;
 	}
@@ -2319,7 +2319,7 @@ textarea:focus{
 		margin-top:0px;
 	}
 
-	.bis{ 
+	.bis{
 		.title_name_2{
 			color: #016099;
 		    font-size: 1.2em;
@@ -2565,147 +2565,146 @@ textarea:focus{
 			}
 		}
 
-		.blog_title_1{
-			font-family: 'EB Garamond', serif;
-			font-size: 1.7rem;
-			color:$medium-grey;
-			font-weight: 700;
-			margin-bottom: 20px;
-			margin-left: 30px;
-		}
+        .content {
+            font-family: 'EB Garamond', serif;
+            font-size: 1rem;
+            color:$medium-grey;
+            font-weight: 400;
+            margin-left: 60px;
+    		h1{
+    			font-family: 'EB Garamond', serif;
+    			font-size: 1.7rem;
+    			color:$medium-grey;
+    			font-weight: 700;
+    			margin-bottom: 20px;
+    			margin-left: 30px;
+    		}
 
-		.blog_title_1::before{
-			content: '';
-		    height: 5px;
-		    width: 20px;
-		    background-color: #A7E4EA;
-		    display: block;
-		    position: absolute;
-		    margin-top: 15px;
-		    margin-left: -30px;
-		}
+    		h1::before{
+    			content: '';
+    		    height: 5px;
+    		    width: 20px;
+    		    background-color: #A7E4EA;
+    		    display: block;
+    		    position: absolute;
+    		    margin-top: 15px;
+    		    margin-left: -30px;
+    		}
 
-		.blog_title_2{
-			font-family: 'EB Garamond', serif;
-			font-size: 1.4rem;
-			color:$medium-grey;
-			font-weight: 700;
-			margin-bottom: 20px;
-			margin-left: 45px;
-		}
+    		h2{
+    			font-family: 'EB Garamond', serif;
+    			font-size: 1.4rem;
+    			color:$medium-grey;
+    			font-weight: 700;
+    			margin-bottom: 20px;
+    			margin-left: 45px;
+    		}
 
-		.blog_title_3{
-			font-family: 'EB Garamond', serif;
-			font-size: 1.2rem;
-			color:$medium-grey;
-			font-weight: 700;
-			margin-bottom: 10px;
-			margin-left: 60px;
-		}
+    		h3{
+    			font-family: 'EB Garamond', serif;
+    			font-size: 1.2rem;
+    			color:$medium-grey;
+    			font-weight: 700;
+    			margin-bottom: 10px;
+    			margin-left: 60px;
+    		}
 
-		.blog_text_normal{
-			font-family: 'EB Garamond', serif;
-			font-size: 1rem;
-			color:$medium-grey;
-			font-weight: 400;
-			margin-left: 60px;
-		}
+    		em{
+    			font-family: 'EB Garamond', serif;
+    			font-size: 1rem;
+    			color:$medium-grey;
+    			font-weight: 400;
+    			font-style: italic;
+    			margin-left: 60px;
+    		}
 
-		.blog_text_italic{
-			font-family: 'EB Garamond', serif;
-			font-size: 1rem;
-			color:$medium-grey;
-			font-weight: 400;
-			font-style: italic;
-			margin-left: 60px;
-		}
+    		strong{
+    			font-family: 'EB Garamond', serif;
+    			font-size: 1rem;
+    			color:$medium-grey;
+    			font-weight: 600;
+    			margin-left: 60px;
+    		}
 
-		.blog_text_gras{
-			font-family: 'EB Garamond', serif;
-			font-size: 1rem;
-			color:$medium-grey;
-			font-weight: 600;
-			margin-left: 60px;
-		}
+    		a{
+    			color:$wolf-blue;
+    			font-weight: 700;
+    			text-decoration: underline;
+    			-webkit-transition: all 0.3s;
+    			-moz-transition: all 0.3s;
+    			-o-transition: all 0.3s;
+    			transition: all 0.3s;
+    		}
 
-		.blog_simple_link{
-			color:$wolf-blue;
-			font-weight: 700;
-			text-decoration: underline;
-			-webkit-transition: all 0.3s;
-			-moz-transition: all 0.3s;
-			-o-transition: all 0.3s;
-			transition: all 0.3s;
-		}
+    		a:hover{
+    			color: $dark_grey;
+    		}
 
-		.blog_simple_link:hover{
-			color: $dark_grey;
-		}
+    		blockquote{
+    			width: 80%;
+    			font-family: 'EB Garamond', serif;
+    			font-size: 1rem;
+    			color:$medium-grey;
+    			font-weight: 400;
+    			font-style: italic;
+    			margin-left: 60px;
+    			margin-top: 30px;
+    			margin-bottom: 30px;
+    			padding-top:30px;
+    			padding-bottom:15px;
+    			padding-left:20px;
+    			padding-right:20px;
+    			border:solid 5px transparent;
+    			border-left-color: $dark_blue;
 
-		.blog_quotes{
-			width: 80%;
-			font-family: 'EB Garamond', serif;
-			font-size: 1rem;
-			color:$medium-grey;
-			font-weight: 400;
-			font-style: italic;
-			margin-left: 60px;
-			margin-top: 30px;
-			margin-bottom: 30px;
-			padding-top:30px;
-			padding-bottom:15px;
-			padding-left:20px;
-			padding-right:20px;
-			border:solid 5px transparent;
-			border-left-color: $dark_blue;
+    			-webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			-moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			background-color:white;
+    		}
 
-			-webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			-moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			background-color:white;
-		}
+    		pre{
+    			width: 80%;
+    			font-family: 'Montserrat', serif;
+    			font-size: 0.8rem;
+    			color:$medium-grey;
+    			font-weight: 400;
+    			margin-left: 60px;
+    			margin-top: 30px;
+    			margin-bottom: 30px;
+    			padding-top:30px;
+    			padding-bottom:15px;
+    			padding-left:20px;
+    			padding-right:20px;
+    			border:solid 5px transparent;
+    			border-left-color: $medium_blue;
 
-		.blog_code{
-			width: 80%;
-			font-family: 'Montserrat', serif;
-			font-size: 0.8rem;
-			color:$medium-grey;
-			font-weight: 400;
-			margin-left: 60px;
-			margin-top: 30px;
-			margin-bottom: 30px;
-			padding-top:30px;
-			padding-bottom:15px;
-			padding-left:20px;
-			padding-right:20px;
-			border:solid 5px transparent;
-			border-left-color: $medium_blue;
+    			-webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			-moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			background-color:white;
+    		}
 
-			-webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			-moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			background-color:white;
-		}
+    		ul{
+    			font-family: 'EB Garamond', serif;
+    			font-size: 1rem;
+    			color:$medium-grey;
+    			font-weight: 400;
+    			margin-left: 110px;
+    			list-style: url('../img/puce_list.svg');
+    			margin-top:20px;
+    			margin-bottom: 30px;
 
-		.blog_list{
-			font-family: 'EB Garamond', serif;
-			font-size: 1rem;
-			color:$medium-grey;
-			font-weight: 400;
-			margin-left: 110px;
-			list-style: url('../img/puce_list.svg');
-			margin-top:20px;
-			margin-bottom: 30px;
+    			li{
+    				margin-top:5px;
+    			}
+    		}
 
-			li{
-				margin-top:5px;
-			}
-		}
-
-		.blog_img{
-			-webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			-moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-			margin-left: 60px;
-		}
+    		img{
+    			-webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			-moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    			margin-left: 60px;
+    		}
+        }
 	}
