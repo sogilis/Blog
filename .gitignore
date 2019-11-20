@@ -3,3 +3,6 @@ dist/
 export/
 /npm-debug.log
 yarn-error.log
+
+# You can download manually Hugo binaries here
+bin/
