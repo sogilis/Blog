@@ -1,12 +1,22 @@
 FROM node:10.6-alpine
 
+ENV HUGO_VERSION='0.59.1'
+ENV HUGO_NAME="hugo_${HUGO_VERSION}_Linux-64bit"
+ENV HUGO_BASE_URL="https://github.com/gohugoio/hugo/releases/download"
+ENV HUGO_URL="${HUGO_BASE_URL}/v${HUGO_VERSION}/${HUGO_NAME}.tar.gz"
+
 WORKDIR /blog
 
-RUN apk add --no-cache asciidoctor wget
+RUN apk add --no-cache \
+    asciidoctor \
+    wget
 
-COPY ./bin/hugo.linux ./bin/hugo.linux
-RUN chmod a+x ./bin/hugo.linux
-RUN ln /blog/bin/hugo.linux /usr/local/bin/hugo
+RUN mkdir ./bin/ && \
+    wget -qO- "${HUGO_URL}" | tar xvz -C ./bin/ && \
+    mv ./bin/hugo bin/hugo.linux && \
+    chmod a+x ./bin/hugo.linux && \
+    ln /blog/bin/hugo.linux /usr/local/bin/hugo
+
 COPY site site
 COPY src src
 COPY .*rc ./
