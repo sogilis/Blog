@@ -4,11 +4,11 @@ name = "Sogilis"
 license = "MIT"
 licenselink = "https://github.com/sogilis/Blog/blob/master/site/themes/sogilis/LICENSE"
 description = ""
-homepage = "http://sogilis.com/"
+homepage = "https://sogilis.com/"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
   name = "Sogilis"
-  homepage = "http://sogilis.com/"
+  homepage = "https://sogilis.com/"
