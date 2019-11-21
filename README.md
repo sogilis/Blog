@@ -66,11 +66,17 @@ make remove
 
 * [Hugo](https://gohugo.io/) - The content site generator used
 * [Hugo-boiler-plate victor](https://github.com/netlify-templates/victor-hugo) - the netflify hugo site structure chosen
-* [netlify](https://www.netlify.com/) - Used to generate static site and hosting it 
+* [netlify](https://www.netlify.com/) - Used to generate static site and hosting it
 
 ## Contributing
 
 Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Additional ressources
+
+Some additional ressources are available in [Google Drive](https://drive.google.com/drive/u/0/folders/1_R28VjeHrld1SloP-40tBQyde9G0Z-sR):
+    - UI Design (static pages)
+    - Articles exported with old blog (Wordpress)
 
 ## Versioning
 
@@ -81,3 +87,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Antoine** - *Initial work* - [Agervail](https://github.com/agervail)
 * **Jean-Baptiste** - *Contributors* - [Jidibus](https://github.com/jibidus)
 * **Nasser** - *Initial work* - [Nas84](https://github.com/Nas84)
+* **Nicolas** - *UI Design*
