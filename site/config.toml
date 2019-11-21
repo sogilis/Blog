@@ -1,4 +1,5 @@
 baseurl = "/"
+defaultContentLanguage = "fr"
 languageCode = "fr"
 title = "Sogilis blog Site"
 theme = "sogilis"
@@ -8,10 +9,89 @@ debug = true
 [params]
   disqus = "trololu"
 
-[blackfriday]
-  taskLists = true
-  smartypants = true
-  angledQuotes = true
-  fencedCode = true
-  extensions = ["tables"]
-  plainIDAnchors = true
+# I18N - ENGLISH --------------------------------------------------------------
+
+[languages.en]
+  languageName = "English"
+
+[[languages.en.menu.main]]
+  identifier = "services"
+  name   = "Services"
+  weight = 1
+
+[[languages.en.menu.main]]
+  identifier = "services-applications-cloud-native"
+  url    = "https://sogilis.com/services-cloud-native-applications.html"
+  name   = "Cloud Native Applications"
+  parent = "services"
+  weight = 10
+
+[[languages.en.menu.main]]
+  identifier = "services-embarques-et-iot"
+  url    = "https://sogilis.com/services-embedded-and-iot.html"
+  name   = "Embedded Softwares & IoT"
+  parent = "services"
+  weight = 11
+
+[[languages.en.menu.main]]
+  identifier = "services-logiciels-critiques"
+  url    = "https://sogilis.com/services-safety-critical.html"
+  name   = "Safety-Critical Software"
+  parent = "services"
+  weight = 12
+
+[[languages.en.menu.main]]
+  identifier = "vision"
+  url    = "https://sogilis.com/purpose.html"
+  name   = "Our Purpose"
+  weight = 2
+
+[[languages.en.menu.main]]
+  identifier = "contact"
+  url    = "https://sogilis.com/contact.html"
+  name   = "Contact"
+  weight = 3
+
+# I18N - FRENCH ---------------------------------------------------------------
+
+[languages.fr]
+  languageName = "Français"
+
+[[languages.fr.menu.main]]
+  identifier = "services"
+  name   = "Services"
+  weight = 1
+
+[[languages.fr.menu.main]]
+  identifier = "services-applications-cloud-native"
+  url    = "https://sogilis.fr/services-applications-cloud-native.html"
+  name   = "Applications Cloud Natives"
+  parent = "services"
+  weight = 10
+
+[[languages.fr.menu.main]]
+  identifier = "services-embarques-et-iot"
+  url    = "https://sogilis.fr/services-embarques-et-iot.html"
+  name   = "Logiciels Embarqués & IoT"
+  parent = "services"
+  weight = 11
+
+[[languages.fr.menu.main]]
+  identifier = "services-logiciels-critiques"
+  url    = "https://sogilis.fr/services-logiciels-critiques.html"
+  name   = "Logiciels Critiques"
+  parent = "services"
+  weight = 12
+
+[[languages.fr.menu.main]]
+  identifier = "vision"
+  url    = "https://sogilis.fr/vision.html"
+  name   = "Notre Vision"
+  weight = 2
+
+[[languages.fr.menu.main]]
+  identifier = "contact"
+  url    = "https://sogilis.fr/contact.html"
+  name   = "Contact"
+  weight = 3
+
