@@ -146,7 +146,7 @@ le détail des points 4.0 sur papier libre, à savoir :
  
  Cet accord se traduit par l'envoi du dossier complet de notre futur salarié à l'attention du consulat général de France dans son pays d'origine (En l'occurrence, consulat français à Sydney). Il y sera ensuite convoqué pour un entretien pour délivrance de visa.
  
- Par ailleurs, son dossier est ensuite transmis à l'OFII [(Office Français de l'Immigration et de l'Intégration](http://www.ofii.fr/)) qui est en charge de la suite de la procédure depuis la France.
+ Par ailleurs, son dossier est ensuite transmis à l'OFII ([Office Français de l'Immigration et de l'Intégration](http://www.ofii.fr/)) qui est en charge de la suite de la procédure depuis la France.
  
  Notre futur collègue Haze a donc été convoqué pour un entretien **début août 2017** au Consulat, où il a du fournir l'ensemble de ses papiers d'identité, ainsi que le cerfa 15187*02 original et visé par la DIRECCTE. Il y a rempli le « LONG-STAY VISA APPLICATION FORM » [https://www.diplomatie.gouv.fr/IMG/pdf/Long_Stay_Visa_Application_Form-2.pdf](https://www.diplomatie.gouv.fr/IMG/pdf/Long_Stay_Visa_Application_Form-2.pdf)
  
