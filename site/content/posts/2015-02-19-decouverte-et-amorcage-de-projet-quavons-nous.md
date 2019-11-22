@@ -94,7 +94,7 @@ tags:
   - storymap
 
 ---
-Dans ce dernier article, nous allons revoir les (problèmes rencontrés avec les story maps)[http://sogilis.com/blog/decouverte-amorcage-projet-storymap/] et expliquer comment la planification par capacités apporte des réponses plus pertinentes dans notre contexte. Cette rétrospective nous montrera que l'essentiel n'est pas dans la méthode de Liz, mais bien dans sa façon d'approcher et de prioriser les problèmes - favoriser (« les individus et leurs interactions plus que les processus et les outils »)[http://www.agilemanifesto.org/iso/fr/]. Ceci nous mènera naturellement à une petite réflexion sur notre approche de l'agilité avec nos porteurs de projet.
+Dans ce dernier article, nous allons revoir les [problèmes rencontrés avec les story maps](http://sogilis.com/blog/decouverte-amorcage-projet-storymap/) et expliquer comment la planification par capacités apporte des réponses plus pertinentes dans notre contexte. Cette rétrospective nous montrera que l'essentiel n'est pas dans la méthode de Liz, mais bien dans sa façon d'approcher et de prioriser les problèmes - favoriser [« les individus et leurs interactions plus que les processus et les outils »](http://www.agilemanifesto.org/iso/fr/). Ceci nous mènera naturellement à une petite réflexion sur notre approche de l'agilité avec nos porteurs de projet.
 
 ## Quelques leçons tirées de la cartographie par capacité
 
@@ -102,7 +102,7 @@ Dans ce dernier article, nous allons revoir les (problèmes rencontrés avec les
 
 Dans le cadre d'une story map, l'accent est mis sur les activités et les cas d'utilisation du système. Cela peut conduire à se focaliser sur les utilisateurs principaux du système, au détriment d'autres acteurs moins en vue mais dont l'implication dans le projet peut être déterminante. Ainsi, au cours du développement d'une application web, nous avions fixé des pré-requis pour les navigateurs des clients. Mais nous nous sommes rendus compte bien tardivement que certains de nos collègues (impliqués indirectement dans le projet) n'avaient alors plus accès à l'application, car les pré-requis étaient trop hauts pour leur machine !
 
-De plus, un focus trop rapide sur les utilisateurs entraîne facilement un focus sur les fonctionnalités, ce qui se fait au détriment de l'analyse des besoins et de la recherche de solutions. Le niveau de détails est trop bas pour s'imprégner des enjeux et des problématiques du projet. Cela peut même (induire en erreur)[http://lizkeogh.com/2010/02/02/theyre-not-user-stories/] sur l'acteur et le besoin réel auquel répond la fonctionnalité.
+De plus, un focus trop rapide sur les utilisateurs entraîne facilement un focus sur les fonctionnalités, ce qui se fait au détriment de l'analyse des besoins et de la recherche de solutions. Le niveau de détails est trop bas pour s'imprégner des enjeux et des problématiques du projet. Cela peut même [induire en erreur](http://lizkeogh.com/2010/02/02/theyre-not-user-stories/) sur l'acteur et le besoin réel auquel répond la fonctionnalité.
 
 La vision du projet, avec sa proposition de valeur mais aussi son impact sur les acteurs, est à cultiver dès le début : **balayer tous les acteurs du projet, essayer de comprendre leurs besoins, leur attitude et leur impact sur le projet, si celui-ci sert leurs intérêts ou bien peut être un frein**. Cette analyse a aussi pour but de ne pas se fixer d'oeillères sur ce qu'il faut réaliser : le but est de satisfaire au maximum les besoins de chaque acteur du projet. La solution ne passe pas forcément par une liste de fonctionnalités !
 
@@ -137,7 +137,7 @@ En se focalisant sur les risques d'échec ainsi que sur les points différencian
 
 ### Traiter l'estimation comme une projection, pas un engagement
 
-Bien que l'on sorte du cadre strict de la planification, l'estimation du coût d'un projet est la suite logique pour un porteur. Là encore, Dan North en a très bien décrit les enjeux et les écueils dans (The Perils of Estimation)[http://dannorth.net/2009/07/01/the-perils-of-estimation/] et même proposé son idée dans (Blink Estimation)[http://dannorth.net/2013/08/08/blink-estimation/].
+Bien que l'on sorte du cadre strict de la planification, l'estimation du coût d'un projet est la suite logique pour un porteur. Là encore, Dan North en a très bien décrit les enjeux et les écueils dans [The Perils of Estimation](http://dannorth.net/2009/07/01/the-perils-of-estimation/) et même proposé son idée dans [Blink Estimation](http://dannorth.net/2013/08/08/blink-estimation/).
 
 Sans rentrer dans le détail de ce débat (voir tout ce qui concerne le (No Estimates))[https://twitter.com/search?q=%23NoEstimates&src=typd], la méthode de Liz apporte son petit grain de sel aux estimations. En effet, plus vous estimez que le niveau de risque est fort, plus il y a d'inconnus sur les problèmes que vous allez rencontrer, et plus votre estimation sera incertaine. Jusqu'au point où une estimation n'est plus pertinente et où vous devez commencer par une approche exploratoire, moins risquée et moins coûteuse.
 
@@ -153,7 +153,7 @@ Comme noté dans le premier article, la story map pose problème dans notre cont
 
 Quand l'équipe a acquis plus de maturité sur le domaine, ses enjeux et ses problèmes, il peut être intéressant d'engager un processus orienté story map. Celle-ci permet de récapituler la vision de ce qu'on veut réaliser, la réordonner, préparer les détails des prochaines itérations, quand la vision du projet s'est stabilisée. Elle permettra alors un **suivi des étapes du projet** à la vue de tous, lot par lot.
 
-Peut-on complètement se passer de la story map ? Je crois que oui. Comme noté par Dan North, des (équipes très efficaces)[http://dannorth.net/2013/01/15/accelerating-agile/] se sont construites en dehors de la culture agile classique, simplement en appliquant du bon sens dans leurs pratiques. La planification par capacités n'est qu'une des pratiques supportant ce type d'approche.
+Peut-on complètement se passer de la story map ? Je crois que oui. Comme noté par Dan North, des [équipes très efficaces](http://dannorth.net/2013/01/15/accelerating-agile/) se sont construites en dehors de la culture agile classique, simplement en appliquant du bon sens dans leurs pratiques. La planification par capacités n'est qu'une des pratiques supportant ce type d'approche.
 
 ## Changer notre approche de l'agilité (encore et toujours)
 
@@ -161,7 +161,7 @@ Avoir persisté si longtemps dans une approche inadaptée amène une remise en q
 
 ### Sortir des rails des process agiles
 
-Tout le monde a vécu un jour ou l'autre cette expérience : copier une approche qui a « déjà marché » ailleurs ; et quand ça ne marche pas, recommencer en expliquant que les règles n'ont pas été bien suivies. Certaines méthodes agiles ont un côté très cadré, cérémonieux qui encouragent ce comportement. Dans le pire des cas, on arrive à (l'agilité Cargo Cult)[http://mikehadlow.blogspot.co.uk/2014/03/coconut-headphones-why-agile-has-failed.html], où l'équipe se déclare agile parce qu'elle applique toutes les règles, mais sans en tirer les bénéfices car elle n'a pas su les adapter à son contexte.
+Tout le monde a vécu un jour ou l'autre cette expérience : copier une approche qui a « déjà marché » ailleurs ; et quand ça ne marche pas, recommencer en expliquant que les règles n'ont pas été bien suivies. Certaines méthodes agiles ont un côté très cadré, cérémonieux qui encouragent ce comportement. Dans le pire des cas, on arrive à [l'agilité Cargo Cult](http://mikehadlow.blogspot.co.uk/2014/03/coconut-headphones-why-agile-has-failed.html), où l'équipe se déclare agile parce qu'elle applique toutes les règles, mais sans en tirer les bénéfices car elle n'a pas su les adapter à son contexte.
 
 Ce qui est rarement dit sur les méthodes agiles, c'est qu’**elles demandent souvent une bonne maturité sur le domaine du projet pour être 100% effective**. Rien n'est plus plaisant que de travailler sur un projet complexe où chaque itération réussit son objectif, car l'équipe maîtrise les enjeux, réagit immédiatement aux problèmes rencontrés, communique efficacement avec les autres acteurs du projet.
 

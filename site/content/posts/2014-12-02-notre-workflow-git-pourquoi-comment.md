@@ -90,9 +90,9 @@ tags:
   - workflow
 
 ---
-Depuis l'avènement d'outils de gestion de code source de bonne qualité ((Git)[http://git-scm.com/] et (mercurial)[http://mercurial.selenic.com/] principalement) et surtout qui ne vous brident — presque — plus, vous pouvez enfin laisser libre court à votre imagination concernant votre flux de travail. Branches, rebase, merge…. Oui mais pour que le tout reste utilisable, surtout lorsque vous travaillez à plusieurs, il convient de régir tout ceci mais aussi de tenter de le conformer le plus possible à vos contraintes réelles — développement, production, tests…. Bref, il convient de définir un flux de travail — un _workflow_.
+Depuis l'avènement d'outils de gestion de code source de bonne qualité [(Git](http://git-scm.com/) et [mercurial](http://mercurial.selenic.com/) principalement) et surtout qui ne vous brident — presque — plus, vous pouvez enfin laisser libre court à votre imagination concernant votre flux de travail. Branches, rebase, merge…. Oui mais pour que le tout reste utilisable, surtout lorsque vous travaillez à plusieurs, il convient de régir tout ceci mais aussi de tenter de le conformer le plus possible à vos contraintes réelles — développement, production, tests…. Bref, il convient de définir un flux de travail — un _workflow_.
 
-!()[http://sogilis.com/wp-content/uploads/2014/12/tumblr_inline_nflo1khSyE1sv6muh.png]
+![](/img/2014/12/tumblr_inline_nflo1khSyE1sv6muh.png)
 
 Plutôt que de simplement vous présenter notre workflow, vous trouverez ici le _pourquoi_ et le _comment_, c'est au final ce qui est le plus important.
 
@@ -149,9 +149,9 @@ git commit
 ...
 {{< /highlight >}}
 
-Le problème, c'est que le résultat devient quelque peu… différent de ce qui était escompté. Pourtant, vous utilisez Git, on vous a toujours dit que les branches c'étaient bien, qu'il ne faut pas avoir peur des fusions, etc. L'un des difficultés provient du fait que, lorsqu'on utilise des (DVCS)[http://en.wikipedia.org/wiki/Distributed_revision_control] à plusieurs — ou pas d'ailleurs — on crée automatiquement des branches divergentes même si il est d'usage d'avoir toujours une référence nommée et partagée (_master_ soug Git). Et forcément, s'il y a branches divergentes et qu'on utilise Git de base, il y a forcément une prolifération du nombre de fusion puisqu'on tente, naturellement, de se maintenir à jour par rapport à la base de code commune. Voici par exemple le résultat qu'on peut obtenir.
+Le problème, c'est que le résultat devient quelque peu… différent de ce qui était escompté. Pourtant, vous utilisez Git, on vous a toujours dit que les branches c'étaient bien, qu'il ne faut pas avoir peur des fusions, etc. L'un des difficultés provient du fait que, lorsqu'on utilise des [DVCS](http://en.wikipedia.org/wiki/Distributed_revision_control) à plusieurs — ou pas d'ailleurs — on crée automatiquement des branches divergentes même si il est d'usage d'avoir toujours une référence nommée et partagée (_master_ soug Git). Et forcément, s'il y a branches divergentes et qu'on utilise Git de base, il y a forcément une prolifération du nombre de fusion puisqu'on tente, naturellement, de se maintenir à jour par rapport à la base de code commune. Voici par exemple le résultat qu'on peut obtenir.
 
-!()[http://sogilis.com/wp-content/uploads/2014/12/tumblr_inline_nez8kcKWWl1sv6muh.png]
+![](/img/2014/12/tumblr_inline_nez8kcKWWl1sv6muh.png)
 
 Pour info c'est un vrai historique hein 😉
 
@@ -165,19 +165,19 @@ Un workflow — dans notre cas pour Git — c'est surtout la définition de comm
 
 En fait, il y en a plein.
 
-Dans les plus connus, si vous avez des développements en production avec branche de maintenance et autres, que vous faites du (SemVer)[http://semver.org/] par exemple, il y a (Git Flow)[http://nvie.com/posts/a-successful-git-branching-model/] :
+Dans les plus connus, si vous avez des développements en production avec branche de maintenance et autres, que vous faites du [SemVer](http://semver.org/) par exemple, il y a [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/) :
 
-!()[http://sogilis.com/wp-content/uploads/2014/12/tumblr_inline_nez8ktrbKd1sv6muh.png]
+![](/img/2014/12/tumblr_inline_nez8ktrbKd1sv6muh.png)
 
-Vous pouvez trouver plus d'infos sur le lien précédent, sur le (projet Github)[https://github.com/nvie/gitflow] ou chez (Atlassian)[https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow].
+Vous pouvez trouver plus d'infos sur le lien précédent, sur le [projet Github](https://github.com/nvie/gitflow) ou chez [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
 
-A noter qu'il existe une variante pour (mercurial)[http://mercurial.selenic.com/], (hgflow)[https://bitbucket.org/yujiewu/hgflow/wiki/Home]. Ces deux workflow sont d'ailleurs utilisables directement dans (SourceTree)[http://www.sourcetreeapp.com/], le client (Git)[http://git-scm.com/] et (mercurial)[http://mercurial.selenic.com/] édité par (Atlassian)[https://fr.atlassian.com/].
+A noter qu'il existe une variante pour [mercurial](http://mercurial.selenic.com/), [hgflow](https://bitbucket.org/yujiewu/hgflow/wiki/Home). Ces deux workflow sont d'ailleurs utilisables directement dans [SourceTree](http://www.sourcetreeapp.com/), le client [Git](http://git-scm.com/) et [mercurial](http://mercurial.selenic.com/) édité par [Atlassian](https://fr.atlassian.com/).
 
-L'autre workflow très courant aujourd'hui c'est le (Github Flow)[https://guides.github.com/introduction/flow/index.html].
+L'autre workflow très courant aujourd'hui c'est le [Github Flow](https://guides.github.com/introduction/flow/index.html).
 
-!()[http://sogilis.com/wp-content/uploads/2014/12/tumblr_inline_nez8l9PRWV1sv6muh.png]
+![](/img/2014/12/tumblr_inline_nez8l9PRWV1sv6muh.png)
 
-Il est très pratique si vous êtes dans le cadre de déploiement continu et si vous utilisez des systèmes comme (Github)[https://github.com/] / (bitbucket)[https://bitbucket.org] / (stash)[https://www.atlassian.com/software/stash] / autre solution d'hébergement avec code review et pull request.
+Il est très pratique si vous êtes dans le cadre de déploiement continu et si vous utilisez des systèmes comme [Github](https://github.com/) / [bitbucket](https://bitbucket.org) / [stash](https://www.atlassian.com/software/stash) / autre solution d'hébergement avec code review et pull request.
 
 ## Un workflow doit répondre à nos besoins
 
@@ -217,7 +217,7 @@ Je vais reprendre les objectifs et essayer de placer en face de chacun une “r�
   L'objectif est vraiment de pouvoir naviguer facilement dans l'historique, essentiellement pour y rechercher la cause d'un mauvais comportement qui n'aurait pas été mis en évidence par les tests automatisés.La première solution à mettre en place c'est de limiter au maximum les commits “sans valeur”, par exemple les commits de synchronisation avec l’_upstream_, et garantir le meilleur rapport signal/bruit possible. Pour ça c'est assez facile, il suffit d'interdir les `pull/merge` de synchronisation. Si on souhaite tout de même bénéficier d'améliorations qui sont dans le tronc commun, il faut utiliser `rebase` ce qui linéarise l'historique.La deuxième chose c'est d'éviter au maximum les croisements de branches. La solution passe également par l'utilisation systématique de `rebase` avant d'intégrer les changements.Ceci doit permettre de ne pas avoir de commits inutiles et donc de pouvoir lire facilement l'historique car plus linéaire, moins plat de spaghettis.
 
 3. **Pouvoir désactiver une fonctionnalité** :
-  Le scénario est le suivant : on détecte après coup une fonctionnalité qui pose problème (ou simplement on veut supprimer une fonctionnalité).Il faut alors pouvoir visualiser très rapidement la fonctionnalité et l'ensemble de ses modifications. La pire chose qui existerait c'est de faire du merge en _fast forward_, c'est-à-dire une linéarisation des commits de la branche. On les rajoute simplement au-dessus du tronc commun. Si on fait ça — et ceux qui ont fait du `svn` (pouah !) connaissent très bien — il devient très compliqué d'identifier l'ensemble des modifications liées à une fonctionnalité. Et donc il devient très compliqué de les annuler.La solution est donc d'avoir tant que possible un unique commit pour chaque intégration de fonctionnalité dans le tronc commun. Si cela est fait, on peut annuler facilement par la réalisation d'un commit inversé. Vous pouvez utiliser directement la commande (`git revert`)[https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/] pour le faire. A ce moment de décision, vous avez deux choix :
+  Le scénario est le suivant : on détecte après coup une fonctionnalité qui pose problème (ou simplement on veut supprimer une fonctionnalité).Il faut alors pouvoir visualiser très rapidement la fonctionnalité et l'ensemble de ses modifications. La pire chose qui existerait c'est de faire du merge en _fast forward_, c'est-à-dire une linéarisation des commits de la branche. On les rajoute simplement au-dessus du tronc commun. Si on fait ça — et ceux qui ont fait du `svn` (pouah !) connaissent très bien — il devient très compliqué d'identifier l'ensemble des modifications liées à une fonctionnalité. Et donc il devient très compliqué de les annuler.La solution est donc d'avoir tant que possible un unique commit pour chaque intégration de fonctionnalité dans le tronc commun. Si cela est fait, on peut annuler facilement par la réalisation d'un commit inversé. Vous pouvez utiliser directement la commande [`git revert`](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/) pour le faire. A ce moment de décision, vous avez deux choix :
   * faire des merges systématiquement sans _fast forward_ : `git merge --no-ff`
   * faire des merges avec fusion de tous les commits en un seul : `<code>git merge --squash`
 
@@ -226,7 +226,7 @@ Je vais reprendre les objectifs et essayer de placer en face de chacun une “r�
 
 Ceci interdit donc l'utilisation de `merge --squash` au profit de `merge --no-ff`. En effet, dans ce cas nous avons un commit de merge mais la branche et donc le détail des opérations restent visibles.
 
-Par contre, souvenez-vous, on parlait un peu plus haut d'historique propre. Dans ce cas la bonne pratique, avant de réaliser la fusion, est de nettoyer l'historique de la branche. Je vous encourage donc vivement l'utilisation de (`rebase --interactive`)[https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase-i] voir même de (`rebase -i --autosquash`)[https://coderwall.com/p/hh-4ea/git-rebase-autosquash] — ça c'est une pratique qu'elle est bien ! Le but est d'améliorer les messages, fusionner certains commits entre eux voir même les réordonner ou les supprimer.
+Par contre, souvenez-vous, on parlait un peu plus haut d'historique propre. Dans ce cas la bonne pratique, avant de réaliser la fusion, est de nettoyer l'historique de la branche. Je vous encourage donc vivement l'utilisation de [`rebase --interactive`](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase-i) voir même de [`rebase -i --autosquash`](https://coderwall.com/p/hh-4ea/git-rebase-autosquash) — ça c'est une pratique qu'elle est bien ! Le but est d'améliorer les messages, fusionner certains commits entre eux voir même les réordonner ou les supprimer.
 
 Le rebase va obliger à réécrire l'historique et donc probablement à forcer les `push` mais ce n'est pas grave, c'est une bonne chose d'avoir un historique propre.
 
@@ -243,7 +243,7 @@ Le rebase va obliger à réécrire l'historique et donc probablement à forcer l
 
 Vous vous souvenez de l'historique horrible du début de l'article ? Maintenant voici ce que cela donne :
 
-!()[http://sogilis.com/wp-content/uploads/2014/12/tumblr_inline_nez8lrqrff1sv6muh.png]
+![](/img/2014/12/tumblr_inline_nez8lrqrff1sv6muh.png)
 
 Ceci est une capture du vrai résultat, sur le même projet. Bon ok vous n'avez pas les commentaires des commits, mais voici ce qu'on peut en tirer :
 
@@ -343,33 +343,33 @@ Voici les quelques commandes / principes que nous utilisons pour mettre en œuvr
 
 Aujourd'hui le workflow tel que défini est une aide précieuse dans notre développement. Il reste des points toujours délicats autour de la branche d'intégration. L'idéal serait de pouvoir valider nos modifications plus facilement, et donc de fusionner directement dans `master` et ne plus avoir cette branche intermédiaire. Mais cela est directement lié au métier et non une simple contrainte d'outillage.
 
-Si nous voulions aller plus loin, il serait possible d'utiliser des _pull requests_ entre les branches de fonctionnalité et la branche d'intégration, voir entre la branche d'intégration et `master`. Actuellement nous ne faisons pas de revue systématique mais travaillons beaucoup par binômage et en tournant sur tous les aspects du code. Le problème des _pull requests_ est que la fusion depuis (Github)[https://github.com/] ne permet pas de facilement faire un rebase avant. Il faudrait le faire en dehors de l'outil, ce qui n'est pas terrible. Il existe par contre des forges qui permettent de réaliser ce type d'opérations.
+Si nous voulions aller plus loin, il serait possible d'utiliser des _pull requests_ entre les branches de fonctionnalité et la branche d'intégration, voir entre la branche d'intégration et `master`. Actuellement nous ne faisons pas de revue systématique mais travaillons beaucoup par binômage et en tournant sur tous les aspects du code. Le problème des _pull requests_ est que la fusion depuis [Github](https://github.com/) ne permet pas de facilement faire un rebase avant. Il faudrait le faire en dehors de l'outil, ce qui n'est pas terrible. Il existe par contre des forges qui permettent de réaliser ce type d'opérations.
 
 Que pensez-vous de ce workflow ? Lequel utilisez-vous de votre côté, et surtout pourquoi ?
 
 ## Pour aller plus loin
 
-Si vous souhaitez aller plus loin, ou juste apprendre Git, nous (donnons des formations Git)[http://sogilis.com/formations].
+Si vous souhaitez aller plus loin, ou juste apprendre Git, nous [donnons des formations Git](http://sogilis.com/formations).
 
 Et si vous n'êtes pas rassasiés, voici une petite collection de liens à suivre :
 
 * Git Flow 
-  * (A successful Git branching model)[http://nvie.com/posts/a-successful-git-branching-model/]
-  * (GitFlow)[https://github.com/nvie/gitflow]
-  * (GitFlow by Atlassian)[https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow]
-* (Hg Flow)[https://bitbucket.org/yujiewu/hgflow/wiki/Home]
-* (Github flow)[https://guides.github.com/introduction/flow/index.html]
-* (Git revert)[https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/]
+  * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+  * [GitFlow](https://github.com/nvie/gitflow)
+  * [GitFlow by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+* [Hg Flow](https://bitbucket.org/yujiewu/hgflow/wiki/Home)
+* [Github flow](https://guides.github.com/introduction/flow/index.html)
+* [Git revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/)
 * Git rebase 
-  * (chez Atlassian)[https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase]
-  * (doc Git)[http://git-scm.com/book/fr/Les-branches-avec-Git-Rebaser]
+  * [chez Atlassian](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+  * [doc Git](http://git-scm.com/book/fr/Les-branches-avec-Git-Rebaser)
 * Git rebase -i 
-  * (chez Atlassian)[https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase-i]
-  * (doc Git)[http://git-scm.com/book/en/Git-Tools-Rewriting-History]
+  * [chez Atlassian](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase-i)
+  * [doc Git](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
 * Git rebase -i –autosquash 
-  * (protip Coderwall)[https://coderwall.com/p/hh-4ea]
-  * (keep your branch clean with fixup and autosquash)[http://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html]
+  * [protip Coderwall](https://coderwall.com/p/hh-4ea)
+  * [keep your branch clean with fixup and autosquash](http://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html)
 * Git rerere 
-  * (doc Git)[http://git-scm.com/blog/2010/03/08/rerere.html]
-  * (Git rerere ma commande préférée)[http://hypedrivendev.wordpress.com/2013/08/30/git-rerere-ma-commande-preferee/]
-* Si vous voulez comprendre pourquoi et comment utiliser rebase et avoir un historique propre, je vous conseille vivement (ce post de Linus Torvalds sur la lkml)[http://www.mail-archive.com/dri-devel@lists.sourceforge.net/msg39091.html]. C'est plein de bons conseils pour bien utiliser Git.
+  * [doc Git](http://git-scm.com/blog/2010/03/08/rerere.html)
+  * [Git rerere ma commande préférée](http://hypedrivendev.wordpress.com/2013/08/30/git-rerere-ma-commande-preferee/)
+* Si vous voulez comprendre pourquoi et comment utiliser rebase et avoir un historique propre, je vous conseille vivement [ce post de Linus Torvalds sur la lkml](http://www.mail-archive.com/dri-devel@lists.sourceforge.net/msg39091.html). C'est plein de bons conseils pour bien utiliser Git.

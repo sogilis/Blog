@@ -123,13 +123,13 @@ Rejoignez-nous !
 
 **Antoine Gervail, Ingénieur machine learning / systèmes embarqués**
 
-!()[http://sogilis.com/wp-content/uploads/2018/06/485_396_Antoine-Gervail.jpg]
+![](/img/2018/06/485_396_Antoine-Gervail.jpg)
 
 Précédemment employé en machine learning, il a rejoint Sogilis il y a plus d'un an pour continuer dans ce domaine. Parallèlement il est impliqué dans le développement de CAP2018, le projet d'autopilote de drone certifié porté par Sogilis. Il continue d'apporter son aide sur les thématiques d'apprentissage et de vision par ordinateur.
 
 **Lucas Felix, Ingénieur vision par ordinateur.**
 
-!()[http://sogilis.com/wp-content/uploads/2018/06/483_256_Lucas-Felix.jpg]
+![](/img/2018/06/483_256_Lucas-Felix.jpg)
 
 Depuis 3 ans à Sogilis, il a essentiellement travaillé sur des problématiques de vision par ordinateur et de learning autour du tracking visuel pour les drones volants et sous-marins (Hexo+ et iBubble). Plus récemment en imagerie multispectrale pour l'agronomie. La vision par ordinateur étant de plus en plus liée au deep learning, l'évolution vers ce domaine en était une suite logique.
 

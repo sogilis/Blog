@@ -97,7 +97,7 @@ tags:
 ---
 Les Ergonomes à Sogilis depuis quelques mois, nous avons mis en place les Ergogames : un rendez-vous régulier ouvert à tous les membres de l’entreprise pour découvrir des notions d’ ergonomie cognitive par le jeu. À chaque séance, des profils aussi variés que développeurs, DAF, assistante de direction ou chargée de projets innovants se retrouvent pour partager ensemble un moment de détente et d’apprentissage. Retour d’expérience sur la mise en place de ces Ergogames.
 
-!(Photo lors d'un ergogame à Lyon)[http://sogilis.com/wp-content/uploads/2017/05/ergogame-1024x576.jpeg]
+![Photo lors d'un ergogame à Lyon](/img/2017/05/ergogame-1024x576.jpeg)
 
 # Pourquoi avons-nous lancé Les Ergogames ?
 
@@ -115,7 +115,7 @@ Nous avons cherché dans nos expériences passées ce qui pourrait correspondre 
 
 > _En passant devant la partie enfant du musée des civilisations d’Ottawa, je les ai vus tellement contents d’être au musée, il y avait de la vie, ils étaient curieux, touchaient à tout, posaient pleins de questions. Je suis donc entrée dans cette partie, pour tester l’expérience. Il y avait un parcours avec des boxes, pour découvrir une dizaine de pays du monde. Dans chaque box, les enfants pouvaient résoudre des énigmes, jouer avec des instruments de musique, dessiner des motifs ethniques etc. La gamification était très intéressante, car dans chaque box se trouvait une poinçonneuse et l’enfant avait un passeport dans lequel il pouvait prendre des notes et surtout reporter son poinçon. Les enfants passaient par tous les boxes pour remplir leur carnet et ne pas manquer de poinçons._ 
 
-!(Photo d'un passeport ergo rempli et tamponné)[http://sogilis.com/wp-content/uploads/2017/05/IMG_3938-2-300x203.jpg]
+![Photo d'un passeport ergo rempli et tamponné](/img/2017/05/IMG_3938-2-300x203.jpg)
 
 Nous nous sommes donc lancées dans la réalisation d’un passeport ergo, faisant office de carnet de notes, gribouillages, compteur de points. Le passeport est composé d’une page par principe, à annoter et tamponner en fin de chaque séance d’Ergogame. Pour encore plus de fun, nous avons choisi des tampons avec des animaux mignons. Rien de mieux pour fidéliser un auditoire que de lui faire collectionner des animaux mignons ! 😀
 
@@ -123,14 +123,14 @@ Nous nous sommes donc lancées dans la réalisation d’un passeport ergo, faisa
 
 Pour la partie apprentissage, nous avons misé sur des maquettes pour apprendre par l’expérience, associées à un support diaporama qui présente le principe ainsi que des exemples qu’on trouve dans la vie de tous les jours sur des sites actuels.
 
-Par exemple si l’on regarde le (site de cette agence artistique)[http://www.agence-adequat.com/fiche.cfm/0-0_389646_kyan_khojandi.html], la lecture est difficile à cause du choix de typographie et de l’utilisation des majuscules. La typographie est déterminante pour une lecture confortable, et l’attention doit être portée sur :
+Par exemple si l’on regarde le [site de cette agence artistique](http://www.agence-adequat.com/fiche.cfm/0-0_389646_kyan_khojandi.html), la lecture est difficile à cause du choix de typographie et de l’utilisation des majuscules. La typographie est déterminante pour une lecture confortable, et l’attention doit être portée sur :
 
 * espacement entre les lettres, entre les mots, entre les lignes
 * empattements
 * hauteur des lettres
 * longueur des lignes et l’alignement
 
-(Wikiwand)[http://www.wikiwand.com] propose par exemple d’afficher les contenus Wikipédia avec une typographie plus ergonomique que celle de Wikipédia ((voir un article dans Wikiwand)[https://www.wikiwand.com/fr/Typographie]), et la possibilité de personnaliser certains attributs.
+[Wikiwand](http://www.wikiwand.com) propose par exemple d’afficher les contenus Wikipédia avec une typographie plus ergonomique que celle de Wikipédia [(voir un article dans Wikiwand](https://www.wikiwand.com/fr/Typographie)), et la possibilité de personnaliser certains attributs.
 
 L’idée est de montrer que même si on a l’impression que c’est du bon sens, encore aujourd’hui, on utilise des sites qui n’appliquent pas les bonnes pratiques d’ ergonomie. N’y aurait-t-il pas tout de même une expertise métier derrière le bon sens ?
 
@@ -138,7 +138,7 @@ L’idée est de montrer que même si on a l’impression que c’est du bon sen
 
 Pour le format, nous nous sommes inspirées d’un atelier de Julien Champagne, présenté lors des UX Days 2015 (conférence pour les professionnels de l’expérience utilisateur). Il menait une étude quantitative avec ses élèves et avait conçu un site internet qui permettait de tester 4 ou 5 principes d’ ergonomie.
 
-La première étape était, bien entendu, de lister les principes que nous souhaitions aborder. Pour cela, nous avons brainstormé en nous appuyant sur le travail de Bastien et Scapin*, et sur (un article de blog écrit il y a quelques années par Margaux)[https://www.margaux-perrin.com/bases-dergo-notions-a-connaitre-et-a-appliquer/], résumant les principes ergo fondamentaux. Nous avons ainsi choisi une quinzaine de principes à présenter et illustrer. Nous avons ensuite regroupé ces principes en 6 grands thèmes, qui formeraient nos séances d’Ergogames.
+La première étape était, bien entendu, de lister les principes que nous souhaitions aborder. Pour cela, nous avons brainstormé en nous appuyant sur le travail de Bastien et Scapin*, et sur [un article de blog écrit il y a quelques années par Margaux](https://www.margaux-perrin.com/bases-dergo-notions-a-connaitre-et-a-appliquer/), résumant les principes ergo fondamentaux. Nous avons ainsi choisi une quinzaine de principes à présenter et illustrer. Nous avons ensuite regroupé ces principes en 6 grands thèmes, qui formeraient nos séances d’Ergogames.
 
 Pour l’aspect pratique, nous avons choisi de réaliser des maquettes interactives (avec UX Pin). Pour illustrer les différents principes, nous avons proposé une IHM avec une tâche à accomplir pour chaque principe. Afin de convaincre les participant·e·s du bien-fondé de chaque principe ergo, nous avons essayé de mettre en place une approche scientifique : pour chaque principe, faire tester à la moitié du groupe une version qui applique correctement le principe (le jeu “contrôle”) et une version qui bafoue la règle (le jeu « test »).
 
@@ -153,7 +153,7 @@ Les Ergogames se déroulent environ une fois par mois entre midi et deux, dure e
 4. Puis on enchaine sur le jeu suivant.
 5. En fin d’Ergogame, les pages remplies des passeports sont tamponnées !
 
-!(Photo d'un participant heureux d'avoir validé son passeport ergo)[http://sogilis.com/wp-content/uploads/2017/05/IMG_3942-4b-203x300.jpg]
+![Photo d'un participant heureux d'avoir validé son passeport ergo](/img/2017/05/IMG_3942-4b-203x300.jpg)
 
 # Difficultés rencontrées
 
@@ -173,14 +173,14 @@ Pour ancrer davantage les principes ergos dans la tête des collègues avec qui 
 
 Une critique d’un développement réalisé passe toujours mieux si elle se réfère à des notions connues et objectives, plutôt qu’au simple avis de l’ergonome.
 
-!(Capture d'écran d'un quizz ergogame via slack)[http://sogilis.com/wp-content/uploads/2017/05/PrtScr-capture.png]
+![Capture d'écran d'un quizz ergogame via slack](/img/2017/05/PrtScr-capture.png)
 
-Il y a forcément des imperfections et des pistes d’amélioration dans Les Ergogames. Toutefois, nous voulions pouvoir les partager avec quiconque serait intéressé, afin de capitaliser sur ce travail existant. Nous avons décidé de développer un site web en définissant une licence d'utilisation et en modifiant les images utilisées dans les jeux. Vous pouvez voir le résultat en visant ce site : (https://www.ergogames.fr/)[https://www.ergogames.fr/]. A vous de jouer maintenant !
+Il y a forcément des imperfections et des pistes d’amélioration dans Les Ergogames. Toutefois, nous voulions pouvoir les partager avec quiconque serait intéressé, afin de capitaliser sur ce travail existant. Nous avons décidé de développer un site web en définissant une licence d'utilisation et en modifiant les images utilisées dans les jeux. Vous pouvez voir le résultat en visant ce site : [https://www.ergogames.fr/](https://www.ergogames.fr/). A vous de jouer maintenant !
 
 D’ici là, n’hésitez pas nous contacter pour plus d'informations, ou pour échanger sur des bonnes pratiques de sensibilisation des équipes aux principes d’ergonomie !
 
-_(Critères Ergonomiques pour l’Évaluation d’Interfaces Utilisateurs)[http://blocnotes.iergo.fr/wp-content/uploads/2011/04/criteres.pdf] (version 2.1), J. M. Christian Bastien and Dominique L. Scapin, INRIA, Technical report N° 156 Mai 1993_
+_[Critères Ergonomiques pour l’Évaluation d’Interfaces Utilisateurs](http://blocnotes.iergo.fr/wp-content/uploads/2011/04/criteres.pdf) (version 2.1), J. M. Christian Bastien and Dominique L. Scapin, INRIA, Technical report N° 156 Mai 1993_
 
-Marion Georges - (@mgeorges_)[https://twitter.com/mgeorges_]
+Marion Georges - [@mgeorges_](https://twitter.com/mgeorges_)
 
-Margaux Perrin - (@Margauxlergo)[https://twitter.com/Margauxlergo] - (www.margaux-perrin.com)[http://www.margaux-perrin.com]
+Margaux Perrin - [@Margauxlergo](https://twitter.com/Margauxlergo) - [www.margaux-perrin.com](http://www.margaux-perrin.com)

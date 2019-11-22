@@ -98,9 +98,9 @@ tags:
 ---
 ## Did you ever wonder how GitHub-like code review works? Fear no more, and discover the intricacies of developing a system for inline comments !
 
-Thanks to GitHub and the like, the practice of code review have become widespread. Even for small projects, one can feel the benefits: catching errors, loopholes, or artificial complexity, sharing the knowledge of how code fulfills its function, enforcing or teaching common guidelines and patterns... Last year, we were asked to develop a Pull Request plugin for the (Tuleap)[https://www.tuleap.org/] platform (an open-source forge to track project development). This plugin was designed as an alternative to (Gerrit)[https://www.gerritcodereview.com/] (which ships by default), in order to support different team workflows. This project gave us a wonderful opportunity to dive into the intricacies of a web-based code review system: how do you manage the workflow of a pull request, from creation to updates and final merge ? How do you detect conflicts ? What's the best way to display diffs ? And most of all, **how do you implement an inline comments system for code review** ?
+Thanks to GitHub and the like, the practice of code review have become widespread. Even for small projects, one can feel the benefits: catching errors, loopholes, or artificial complexity, sharing the knowledge of how code fulfills its function, enforcing or teaching common guidelines and patterns... Last year, we were asked to develop a Pull Request plugin for the [Tuleap](https://www.tuleap.org/) platform (an open-source forge to track project development). This plugin was designed as an alternative to [Gerrit](https://www.gerritcodereview.com/) (which ships by default), in order to support different team workflows. This project gave us a wonderful opportunity to dive into the intricacies of a web-based code review system: how do you manage the workflow of a pull request, from creation to updates and final merge ? How do you detect conflicts ? What's the best way to display diffs ? And most of all, **how do you implement an inline comments system for code review** ?
 
-In this article, we will focus on this last problem as this is the hallmark of any code review system. As we will see, this is not so obvious and requires some conceptualization and computation. But it will serve as a good illustration of the power of (changesets)[http://sogilis.com/blog/demystifying-git-concepts-to-understand/] for any capable VCS (namely Git), as it is an important cornerstone of our solution.
+In this article, we will focus on this last problem as this is the hallmark of any code review system. As we will see, this is not so obvious and requires some conceptualization and computation. But it will serve as a good illustration of the power of [changesets](http://sogilis.com/blog/demystifying-git-concepts-to-understand/) for any capable VCS (namely Git), as it is an important cornerstone of our solution.
 
 ### What Problem Are We Talking about?
 
@@ -118,11 +118,11 @@ In the past, code review was mainly patch-based. But now many code review system
 - « I find this part is complicated and not sure I understand all the details - can we rewrite it? »
 - « Cool! That's a neat way to solve this issue. I will be sure to apply it next time I have the same problem. »
 
-!(Github_inline_comment)[http://sogilis.com/wp-content/uploads/2017/02/Github_inline_comment.png]
+![Github_inline_comment](/img/2017/02/Github_inline_comment.png)
 
 And then you proceed to the next chunk of code which you feel is either unsatisfactory/confusing/cool... Later you get a full review of your comments and associated diffs, provide a global comment and request changes before approval. Then the changeset gets updated by the original developer, and you can see at first sight which of your comments are still relevant and which ones are outdated, showing progress in the review process. Sometimes it just feels good…
 
-!(Github_show_outdated)[http://sogilis.com/wp-content/uploads/2017/02/Github_show_outdated.png]
+![Github_show_outdated](/img/2017/02/Github_show_outdated.png)
 
 Wait! What just happens when we talked about outdated comments? How does GitHub knows whether my comment is still relevant or not? As is often the case in a complex system, complicated issues can hide in plain sight (1). Let's dive into the intricacies of keeping inline comments up to date during a code review process.
 
@@ -213,11 +213,11 @@ We create a pull request which inserts a line B1 between A4 and A5. So the origi
 
 The review goes like this:
 
-!(PR_before_update)[http://sogilis.com/wp-content/uploads/2017/02/PR_before_update.png]
+![PR_before_update](/img/2017/02/PR_before_update.png)
 
 After review, it is decided to introduce another change between lines A1 and A2, and to delete A3, so the updated pull request looks like (notice how the deleted line still counts in the diff offset):
 
-!(PR_after_update)[http://sogilis.com/wp-content/uploads/2017/02/PR_after_update.png]
+![PR_after_update](/img/2017/02/PR_after_update.png)
 
 So far so good. Any inline comments on line 1 should stay in place. Any inline comments on the second line or below should move down by one line. The inline comment on A3 should be marked as outdated.
 
@@ -249,7 +249,7 @@ What if we juxtapose the offset coordinates from the original diff on this one?
 
 It is pretty easy to infer which lines were in the previous diff (kept and removed lines) and which ones are only in the new diff (added lines) - and thus, it is pretty easy to compute offsets for **both original and new diffs** on the update diff. We can then translate offsets from one space to the other.
 
-!(PR_update)[http://sogilis.com/wp-content/uploads/2017/02/PR_update.png]
+![PR_update](/img/2017/02/PR_update.png)
 
 We can detail the procedure to update inline comments on an added or kept line:
 
@@ -358,7 +358,7 @@ With these rules for computing offsets, it is obvious that some offset columns o
 - The _Update[After]_ column matches with the _Final[After]_ column
 - The _Original[Before]_ column matches with the _Final[Before]_ column
 
-!(Matching_columns)[http://sogilis.com/wp-content/uploads/2017/02/Matching_columns.png]
+![Matching_columns](/img/2017/02/Matching_columns.png)
 
 Then we can redefine the rules to update inline comments. For added or kept lines in the original diff:
 
@@ -382,27 +382,27 @@ For removed lines, the rules play differently:
 
 It the rules seem a bit complicated, the visualization plays nicely to understand the mechanism.
 
-!(Matching_update)[http://sogilis.com/wp-content/uploads/2017/02/Matching_update.png]
+![Matching_update](/img/2017/02/Matching_update.png)
 
 ### The General Problem and its Solution
 
 Did we really solve the full problem? Actually, we made a strong hidden hypothesis: the pull request base, against which the original diff is computed, never changes with update. In other words, the update is always a fast forward. But this is not necessarily the case. It is pretty common in a pull request to ask the developer to **rebase** changes against the latest source. Suddenly, the original diff against which inline comments were made does not reflect the state of the pull request before update. In other words, some comments may be outdated because the base itself has changed. Also, the updated (or 'final') pull request should now be computed against the new base to reflect the changes.
 
-!(Update_vs_rebase)[http://sogilis.com/wp-content/uploads/2017/02/Update_vs_rebase.png]
+![Update_vs_rebase](/img/2017/02/Update_vs_rebase.png)
 
 Here is an example. We will focus on deleted lines to illustrate the problems.
 
-!(Rebase)[http://sogilis.com/wp-content/uploads/2017/02/Rebase.png]
+![Rebase](/img/2017/02/Rebase.png)
 
 What has changed? The rebase has deleted two lines from the original base, including one which was also part of the pull request itself. This implies that any comment put on lines A2 and A3 are now outdated. Also some offsets should move around. Let's apply our previous procedure with three diffs:
 
-!(Rebase_naive)[http://sogilis.com/wp-content/uploads/2017/02/Rebase_naive.png]
+![Rebase_naive](/img/2017/02/Rebase_naive.png)
 
 It seems we can still apply the rules to outdate or move inline comments on added or kept lines, _even though_ the final diff is computed against a different base. This happens because both the final and update diffs have the same final state. However, we now have a problem with inline comments on deleted lines: especially the offset _Original[B]_ does not match _Final[B]_ for line A5. How can we translate the inline comment in this case?
 
 Fortunately, we now have a good grasp about how diffs can be used to translate offsets. From the full figure, it is quite obvious that the _base diff_ is the missing link between the old master and the new master. Let's plug it into our translation schema.
 
-!(Rebase_ok)[http://sogilis.com/wp-content/uploads/2017/02/Rebase_ok.png]
+![Rebase_ok](/img/2017/02/Rebase_ok.png)
 
 Again, it is important to notice how offset columns match between diffs:
 
@@ -431,4 +431,4 @@ Notice that rules are now a bit more complicated for removed lines. In particula
 
 As it happens, defining the algorithmic rules for updating inline comments was not so trivial. Cases like rebase long baffled us and we were not sure we understood how it impacted inline comments. Actually, it took us a few iterations to set things straight. Yet, once we found the gist of it, it looked surprisingly natural: we just describe the space of each changeset with some coordinates, identify how those spaces connect to each other, and apply rules to translate coordinates between connected spaces.
 
-_(Simon Denier)[https://twitter.com/simondenier]_
+_[Simon Denier](https://twitter.com/simondenier)_

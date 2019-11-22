@@ -102,15 +102,15 @@ Je voulais être capable de voir d'un coup d'œil sur quelle période s'étalait
 
 ## SogiMood, pour mieux piloter les projets
 
-Comme je sais que la meilleure façon de ne jamais commencer un logiciel est de passer **_trop_** _de temps_ à le _penser_, j'ai développé un premier prototype en à peine 4h à l'aide de la techno que j'utilise aujourd'hui le plus : (ReactJS)[https://facebook.github.io/react/]. Ce fut l'occasion de tester (create-react-app)[https://github.com/facebookincubator/create-react-app] qui venait tout juste d'être publié et qui m'a permis de démarrer très rapidement sans me soucier de la mise en place de l'environnement de développement. Est ainsi né (SogiMood)[https://github.com/sogilis/SogiMood].
+Comme je sais que la meilleure façon de ne jamais commencer un logiciel est de passer **_trop_** _de temps_ à le _penser_, j'ai développé un premier prototype en à peine 4h à l'aide de la techno que j'utilise aujourd'hui le plus : [ReactJS](https://facebook.github.io/react/). Ce fut l'occasion de tester [create-react-app](https://github.com/facebookincubator/create-react-app) qui venait tout juste d'être publié et qui m'a permis de démarrer très rapidement sans me soucier de la mise en place de l'environnement de développement. Est ainsi né [SogiMood](https://github.com/sogilis/SogiMood).
 
-!(sogimood 0.1-alpha)[http://sogilis.com/wp-content/uploads/2016/12/Capture-d’écran-2016-12-02-à-18.07.05-1024x560.png]
+![sogimood 0.1-alpha](/img/2016/12/Capture-d’écran-2016-12-02-à-18.07.05-1024x560.png)
 
 _La v0.1-alpha, extrêmement basique. Afin de ne pas dévoiler les clients avec lesquels nous travaillons, les noms de projets ont été remplacés par des titres de dessins animés Pixar._
 
-En deux mois de travail en pointillé sur cet outil et rejoint par (Alexandre)[https://twitter.com/_dumontal] qui a développé le backend (écrit en Go), je suis arrivé à une version qui me satisfaisait en termes de fonctionnalités.
+En deux mois de travail en pointillé sur cet outil et rejoint par [Alexandre](https://twitter.com/_dumontal) qui a développé le backend (écrit en Go), je suis arrivé à une version qui me satisfaisait en termes de fonctionnalités.
 
-!(sogimood 0.6)[http://sogilis.com/wp-content/uploads/2016/12/Capture-d’écran-2016-12-02-à-18.21.39-1024x592.png]
+![sogimood 0.6](/img/2016/12/Capture-d’écran-2016-12-02-à-18.21.39-1024x592.png)
 
 _La 0.6 qui devient aujourd'hui la 1.0._
 
@@ -126,7 +126,7 @@ La santé se mesure ainsi sur les trois objectifs que nous devons atteindre en t
 
 Dernièrement, Christophe nous a présenté le principe de sollicitation d'avis qu'il souhaitait appliquer à Sogilis. Ce principe part du constat que le consensus est impossible à atteindre au sein d'une société et pose le principe du « c'est celui qui fait qui décide »… à condition de prendre l'avis des collègues spécialistes dans le domaine concerné et celui de ceux que la décision concerne.
 
-Comme SogiMood est avant tout un projet personnel développé pour m’amuser (bien qu'utilisé au sein de Sogilis), j'étais parti du principe que le choix de la licence n'intéresserait pas forcément les foules. Développant moi-même (quelques logiciels libres)[https://github.com/marienfressinaud] sur mon temps libre, je partais sur une licence MIT… lorsqu'on me suggéra une licence Apache vis-à-vis des brevets… puis une licence type GPL car non-permissive. D'un choix unilatéral, on est donc passé à une sollicitation d'avis. J'ai donc pris le temps d'étudier le pour et le contre et le choix s'est révélé plus compliqué que prévu. Les licences considérées étaient les suivantes :
+Comme SogiMood est avant tout un projet personnel développé pour m’amuser (bien qu'utilisé au sein de Sogilis), j'étais parti du principe que le choix de la licence n'intéresserait pas forcément les foules. Développant moi-même [quelques logiciels libres](https://github.com/marienfressinaud) sur mon temps libre, je partais sur une licence MIT… lorsqu'on me suggéra une licence Apache vis-à-vis des brevets… puis une licence type GPL car non-permissive. D'un choix unilatéral, on est donc passé à une sollicitation d'avis. J'ai donc pris le temps d'étudier le pour et le contre et le choix s'est révélé plus compliqué que prévu. Les licences considérées étaient les suivantes :
 
 * MIT (licence permissive) : les droits sont larges et les contraintes très faibles. Elle a l'avantage d'être l'une des plus connues et les gens n'ont généralement pas besoin de se poser de questions quant à l'usage qu'ils peuvent faire du code ;
 * Apache (licence permissive) : similaire à la MIT dans les faits, elle est toutefois conseillée par la FSF pour sa clause sur les brevets ;
@@ -144,7 +144,7 @@ Si on ne prévoit pas de faire évoluer le logiciel, il en est peut-être autrem
 
 Voici quelques liens qui peuvent être utiles :
 
-* (Le dépôt de code)[https://github.com/sogilis/SogiMood]
-* (Le bugtracker)[https://github.com/sogilis/SogiMood/issues]
+* [Le dépôt de code](https://github.com/sogilis/SogiMood)
+* [Le bugtracker](https://github.com/sogilis/SogiMood/issues)
 
-(Marien Fressinaud)[https://twitter.com/berumuron]
+[Marien Fressinaud](https://twitter.com/berumuron)

@@ -92,9 +92,9 @@ tags:
 ---
 ## How we iterated on feedback
 
-_(After running each workshop)[http://sogilis.com/blog/designing-hexo-mobile-app-design-sprints/]_, we got a lot of ideas down on paper. It’s good to have ideas but you can’t test and build ‘em all. You have to make decisions. In the previous article, we talked about how we agreed on one or a few solutions and resisted the temptation to introduce any new ideas. Well, we did. Most of the time. But stabilising a design approval can be tricky. In the final two parts of the article series, we’ll talk about our decision-making process and how feedback can be both extremely valuable and hard to manage.
+_[After running each workshop](http://sogilis.com/blog/designing-hexo-mobile-app-design-sprints/)_, we got a lot of ideas down on paper. It’s good to have ideas but you can’t test and build ‘em all. You have to make decisions. In the previous article, we talked about how we agreed on one or a few solutions and resisted the temptation to introduce any new ideas. Well, we did. Most of the time. But stabilising a design approval can be tricky. In the final two parts of the article series, we’ll talk about our decision-making process and how feedback can be both extremely valuable and hard to manage.
 
- !(testing)[http://sogilis.com/wp-content/uploads/2016/07/testing.gif]
+ ![testing](/img/2016/07/testing.gif)
 
 ## Set the rules of the game
 
@@ -106,17 +106,17 @@ For designing the Hexo+ mobile app our team decided to prototype early and repla
 
 **IOS and Android guidelines**
 
-We respected _(Android)[https://material.google.com/#]_ and _(IOS)[https://developer.apple.com/ios/human-interface-guidelines/]_ standards and based our UI on these guidelines. We created two different storyboards, one for each OS. We tried to build a look-and-feel as consistent as possible across both platforms.
+We respected _[Android](https://material.google.com/#)_ and _[IOS](https://developer.apple.com/ios/human-interface-guidelines/)_ standards and based our UI on these guidelines. We created two different storyboards, one for each OS. We tried to build a look-and-feel as consistent as possible across both platforms.
 
-!(pfc-android-1)[http://sogilis.com/wp-content/uploads/2016/07/pfc-android-1.jpg]
+![pfc-android-1](/img/2016/07/pfc-android-1.jpg)
 
-!(pfc-android-2)[http://sogilis.com/wp-content/uploads/2016/07/pfc-android-2.jpg]
+![pfc-android-2](/img/2016/07/pfc-android-2.jpg)
 
 _Pre-Flight Check for Android._
 
-!(pfc-ios-1)[http://sogilis.com/wp-content/uploads/2016/07/pfc-ios-1.jpg]
+![pfc-ios-1](/img/2016/07/pfc-ios-1.jpg)
 
-!(pfc-ios-2)[http://sogilis.com/wp-content/uploads/2016/07/pfc-ios-2.jpg]
+![pfc-ios-2](/img/2016/07/pfc-ios-2.jpg)
 
 _Pre-Flight Check for IOS._
 
@@ -149,15 +149,15 @@ _Why 12?_ Because more than 12 different items in a list introduces cognitive co
 
 We knew our 12 pre-setted movements would make awesome footages. We tested them on the field.
 
-!(mouvements)[http://sogilis.com/wp-content/uploads/2016/07/mouvements.jpg]
+![mouvements](/img/2016/07/mouvements.jpg)
 
 _Simplifying the list of movements on a whiteboard during a workshop._
 
-!(1.01---Camera-Movements)[http://sogilis.com/wp-content/uploads/2016/07/1.01-Camera-Movements.png]
+![1.01---Camera-Movements](/img/2016/07/1.01-Camera-Movements.png)
 
 _List of 12 pre-setted movements._
 
-!(Camerafollow)[http://sogilis.com/wp-content/uploads/2016/07/Camerafollow.png]
+![Camerafollow](/img/2016/07/Camerafollow.png)
 
 _Follow camera movement in action._
 

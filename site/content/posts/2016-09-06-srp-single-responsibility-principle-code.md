@@ -90,7 +90,7 @@ tags:
   - SRP
 
 ---
-Le principe de responsabilité unique (**Single Responsibility Principle** ou SRP) fait partie d'un ensemble de 5 principes de la programmation orientée objet : _(SOLID)[https://fr.wikipedia.org/wiki/SOLID_(informatique)]_.
+Le principe de responsabilité unique (**Single Responsibility Principle** ou SRP) fait partie d'un ensemble de 5 principes de la programmation orientée objet : _[SOLID](https://fr.wikipedia.org/wiki/SOLID_(informatique))_.
 
 - **S** : Single Responsibility Principle
 - **O** : Open/Closed Principle
@@ -108,7 +108,7 @@ Partons du nom de principe : « responsabilité unique ». Naïvement, on peut
 
 Nous sommes en programmation orientée objet, on peut donc supposer que le principe s'applique pour chaque objet, donc pour chaque classe.  
 
-!(niveau d'application (1))[http://sogilis.com/wp-content/uploads/2016/02/niveau-dapplication-1.png]
+!(niveau d'application (1))[/img/2016/02/niveau-dapplication-1.png]
 
 Ensuite, **qu'est-ce qu'une responsabilité ?**
 
@@ -116,7 +116,7 @@ Ensuite, **qu'est-ce qu'une responsabilité ?**
 
 Encore une fois, naïvement, on peut se dire que c'est une fonctionnalité, une tâche ou un rôle comme calculer une moyenne, générer un fichier PDF, gérer des utilisateurs... Mais alors, comment savoir si on est en face d'une responsabilité unique ou de plusieurs responsabilités ?  Je m'explique : « calculer une moyenne » peut être vu comme plusieurs responsabilités : « sommer », « compter le nombre de valeurs » et « diviser ». On pourrait alors aller très loin jusqu'à ne trouver que des **responsabilités unitaires**.  
 
-!(composition de responsabilités)[http://sogilis.com/wp-content/uploads/2016/02/composition-de-responsabilités.png]
+![composition de responsabilités](/img/2016/02/composition-de-responsabilités.png)
 
 En appliquant cela sur une base de code, on arriverait alors à des classes minimalistes qui ne contiendraient qu'une seule méthode d'une seule ligne... **absurde**.  
 
@@ -153,7 +153,7 @@ Il y a donc quelque chose qui cloche avec cette interprétation naïve.
 
 ## Que dit Internet ?
 
-Une recherche rapide sur _(Grogeule)[http://www.grogueule.fr]_ nous donne les éléments suivants :
+Une recherche rapide sur _[Grogeule](http://www.grogueule.fr)_ nous donne les éléments suivants :
 
 * _Every class should have a single responsibility, and that responsibility should be entirely encapsulated by the class_
   Le niveau d'abstraction est la **classe**. **De plus, on va ici plus loin que notre interprétation naïve : il y a **bijection** entre classe et responsabilité.
@@ -168,7 +168,7 @@ Bref, tout ça reste encore un peu flou, revenons à l'origine du principe.
 
 ## Origines
 
-Le SRP est défini pour la première fois par **Robert C. Martin** dans le livre « Agile Software Development, Principles, Patterns, and Practices » ((_extrait et résumé ainsi par l'auteur : A class should have only one reason to change_)[https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view]). Le niveau d'abstraction défini est la **classe** et on a la définition d'une responsabilité : **une raison de changer**. Ça commence à s'éclaircir.
+Le SRP est défini pour la première fois par **Robert C. Martin** dans le livre « Agile Software Development, Principles, Patterns, and Practices » [(_extrait et résumé ainsi par l'auteur : A class should have only one reason to change_](https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view)). Le niveau d'abstraction défini est la **classe** et on a la définition d'une responsabilité : **une raison de changer**. Ça commence à s'éclaircir.
 
 Ok, mais n'importe quelle raison est valable ? Comment peut-on connaître toutes les raisons possibles de changement ? Robert (appelons le ainsi) nous aide un peu : _If you can think of more than one motive for changing a class, then that class has more than one responsibility_. Il faut donc **imaginer** toutes les raisons de changement possibles... pas sûr que cela aide beaucoup, on retombe potentiellement sur le découpage en classes d'une seule méthode d'une seule ligne.
 
@@ -217,7 +217,7 @@ Robert est clair sur ce point : **c'est presque toujours à** **éviter** puisqu
 
 - Difficulté : **comment savoir ce qui va changer dans le futur ?** On peut imaginer beaucoup de choses, mais qu'est-ce qui sera vraiment appliqué ? Il y a toujours le risque d'anticiper des évolutions qui n'arriverons jamais... L'article de Robert ne nous aide pas vraiment (voire pas du tout).
 
-- De plus, cette anticipation est en contradiction avec le principe _(YAGNI)[https://fr.wikipedia.org/wiki/YAGNI]_ ou _(KISS)[https://fr.wikipedia.org/wiki/Principe_KISS]_ !
+- De plus, cette anticipation est en contradiction avec le principe _[YAGNI](https://fr.wikipedia.org/wiki/YAGNI)_ ou _[KISS](https://fr.wikipedia.org/wiki/Principe_KISS)_ !
 
 Personnellement, je fais une étude de risque rapide dont voici les détails. Sur une classe donnée, pour chaque évolution que je peux imaginer (généralement entre 2 et 5), je calcule le coefficient suivant :
 
@@ -230,7 +230,7 @@ Et je ne garde alors que les évolutions dont le coefficient est le plus grand. 
 - la connaissance de l'environnement fonctionnel et technique de l'application, des contraintes et difficultés actuelles, bref une idée du futur de l'application, fonctionnelle et technique ;
 - mon expérience dans le contexte actuel (fonctionnel et technique).
 
-!(calcul de risque)[http://sogilis.com/wp-content/uploads/2016/02/calcul-de-risque.png]
+![calcul de risque](/img/2016/02/calcul-de-risque.png)
 
 Si je trouve plusieurs raisons, je scinde la classe en autant de raisons. Si j'en trouve une seule, et si d'autres classes sont aussi concernées par la même raison, alors je fusionne ces classes pour n'en former qu'une seule.
 
@@ -270,7 +270,7 @@ Il ne faut pas oublier que ce n'est qu'un principe parmi d'autres. Et cette sép
 
 Voici d’autres méthodes ou pratiques, complémentaires ou non, qui donnent d’autres orientations pour découper le code :
 
-- _(Composed Method)[http://c2.com/ppr/wiki/WikiPagesAboutRefactoring/ComposedMethod.html]_
-- _(DDD)[https://en.wikipedia.org/wiki/Domain-driven_design]_
+- _[Composed Method](http://c2.com/ppr/wiki/WikiPagesAboutRefactoring/ComposedMethod.html)_
+- _[DDD](https://en.wikipedia.org/wiki/Domain-driven_design)_
 
-_(Jean-Baptiste)[https://fr.linkedin.com/in/jean-baptiste-mille-0383b81/fr]_
+_[Jean-Baptiste](https://fr.linkedin.com/in/jean-baptiste-mille-0383b81/fr)_

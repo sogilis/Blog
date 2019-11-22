@@ -181,13 +181,13 @@ That’s quite easy. Torrents can be identified by their _info hash_, wich is a 
 
 There is also alternatives to the DNS system such as namecoin or djdns. This article is not about them though.
 
-Once identified, we need a software that can produce a webpage for an url like (http://9420241a7fbf98730abfbfe26a6289eeca732aa2.bitweb/page.html)[http://9420241a7fbf98730abfbfe26a6289eeca732aa2.bitweb/page.html]. It’s relatively easy to create a HTTP proxy software, or a HTTP server, that would return the content of the torrent.
+Once identified, we need a software that can produce a webpage for an url like [http://9420241a7fbf98730abfbfe26a6289eeca732aa2.bitweb/page.html](http://9420241a7fbf98730abfbfe26a6289eeca732aa2.bitweb/page.html). It’s relatively easy to create a HTTP proxy software, or a HTTP server, that would return the content of the torrent.
 
 #### Update files in a torrent
 
 If you want to modify your website, just create a new torrent. You then need to link the new one to the old one. The problem is that once created, a torrent cannot be modified. You need a mechanism to tell everyone that a specific torrent has a new version. There are many ways to do that.
 
-One includes using a protocol extension (DHT Store)[http://www.rasterbar.com/products/libtorrent/dht_store.html] that is being created at the moment. You then have to use cryptography to ensure that only the author can update its torrent.
+One includes using a protocol extension [DHT Store](http://www.rasterbar.com/products/libtorrent/dht_store.html) that is being created at the moment. You then have to use cryptography to ensure that only the author can update its torrent.
 
 #### Find a way to add comments to a webpage
 
@@ -220,7 +220,7 @@ We get a protocol that:
 * allow fast downloads by downloading from multiple peers at once
 * allow some interactive behavior using JavaScript
 
-This is being developped on (github)[https://github.com/mildred/bitweb] but the main job for the moment is to agree on an extension for mutable torrents. This has to take place on the (BitTorrent mailing list)[http://bittorrent.org/mailing_list.html] (which seems to have problems). It can also be discussed on the (libtorrent)[http://thread.gmane.org/gmane.network.bit-torrent.libtorrent/4969] mailing list.
+This is being developped on [github](https://github.com/mildred/bitweb) but the main job for the moment is to agree on an extension for mutable torrents. This has to take place on the [BitTorrent mailing list](http://bittorrent.org/mailing_list.html) (which seems to have problems). It can also be discussed on the [libtorrent](http://thread.gmane.org/gmane.network.bit-torrent.libtorrent/4969) mailing list.
 
 To perfect privacy, content that is not within bitweb should be blocked by the browser and JavaScript should be limited to bitweb in accessing the network.
 

@@ -98,13 +98,13 @@ L’idée initiale est d’équiper 5 bureaux de capteurs de température et de 
   
 Pour centraliser les données remontées nous avons choisi un Raspberry Pi 3. Les capteurs quant à eux sont reliés pour chaque zone de mesure à un arduino. La transmission se fait sans fil à l’aide des modules NRF24.
 
-!(node_open)[http://sogilis.com/wp-content/uploads/2017/06/node_open-217x300.jpg]
+![node_open](/img/2017/06/node_open-217x300.jpg)
   
-!(node_closed)[http://sogilis.com/wp-content/uploads/2017/06/node_closed-300x200.jpg]
+![node_closed](/img/2017/06/node_closed-300x200.jpg)
 
 _Un noeud arduino qui transmet la luminosité et la température_
 
-!(Raspberry)[http://sogilis.com/wp-content/uploads/2017/06/Raspberry-300x159.jpg]
+![Raspberry](/img/2017/06/Raspberry-300x159.jpg)
 
 _Le Raspberry Pi relié à un arduino permettant la réception des données capteurs_
 
@@ -118,15 +118,15 @@ L’utilisation de la librairie est intuitive et assigne à chaque nœud un iden
 
 ## L’architecture
 
-!(Article IOT)[http://sogilis.com/wp-content/uploads/2017/06/Article-IOT-1024x768.png]
+![Article IOT](/img/2017/06/Article-IOT-1024x768.png)
 
-Afin de stocker un grand nombre de données et de permettre à notre architecture d’être “scalable”, nous utilisons les services (SquareScale)[http://www.squarescale.com]. Ce choix permet d’envisager la mise en place de cette expérience IOT sur d’autres sites sans avoir à modifier la solution. En effet le serveur passe à l’échelle sans intervention de notre part.
+Afin de stocker un grand nombre de données et de permettre à notre architecture d’être “scalable”, nous utilisons les services [SquareScale](http://www.squarescale.com). Ce choix permet d’envisager la mise en place de cette expérience IOT sur d’autres sites sans avoir à modifier la solution. En effet le serveur passe à l’échelle sans intervention de notre part.
 
 À partir du moment où chaque nœud est identifié à l’intérieur d’un réseau et que chaque Raspberry Pi est identifié sur le serveur il n’y a aucune limite quant au nombre de sites équipés.
 
 # Le résultat de l’expérience
 
-Cela fait plusieurs semaines que les données des capteurs sont récoltées et stockées dans une base de donnée Postgres fournie par l’architecture mise en place sur (SquareScale)[http://www.squarescale.com].
+Cela fait plusieurs semaines que les données des capteurs sont récoltées et stockées dans une base de donnée Postgres fournie par l’architecture mise en place sur [SquareScale](http://www.squarescale.com).
 
 Les points à retenir :
 

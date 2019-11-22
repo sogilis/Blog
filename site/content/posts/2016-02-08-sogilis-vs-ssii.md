@@ -93,11 +93,11 @@ tags:
 ---
 ## Ceci n'est pas une SSII / ESN / Société de service / Boîte de consulting...
 
-Nous n'aimons pas nous appeler (SSII)[http://t.umblr.com/redirect?z=https%3A%2F%2Flmddgtfy.net%2F%3Fq%3DSSII+%21wfr&t=MTMyNWEwN2I5Y2YyYWMzNmM2MDAxMTIzMDEyZTEzYzM1ZjI4ZmUyZSw0UHNZSXdhMw%3D%3D]. Vous allez dire que c'est le cas de toutes les SSII, et vous avez raison.
+Nous n'aimons pas nous appeler [SSII](http://t.umblr.com/redirect?z=https%3A%2F%2Flmddgtfy.net%2F%3Fq%3DSSII+%21wfr&t=MTMyNWEwN2I5Y2YyYWMzNmM2MDAxMTIzMDEyZTEzYzM1ZjI4ZmUyZSw0UHNZSXdhMw%3D%3D). Vous allez dire que c'est le cas de toutes les SSII, et vous avez raison.
 
-!()[http://sogilis.com/wp-content/uploads/2016/02/PasSSII.jpg]
+![](/img/2016/02/PasSSII.jpg)
 
-Sogilis est une société de service. C'est indéniable. Cependant, cette affirmation nous égratigne, tant l'image collective des SSII est mauvaise. On peut d'ailleurs trouver en ligne de (nombreux avis négatifs)[http://t.umblr.com/redirect?z=http%3A%2F%2Fgeneral.developpez.com%2Farticles%2Fle-monde-informatique%2Fssii%2F%3Fpage%3Dpage_1&t=Nzg3OTgzM2FlZjg1YzQ4YTFmN2ViMGRkN2Q3YzM1MzE5MjBmYWExOSw0UHNZSXdhMw%3D%3D]. Nous avons l'impression que quelque chose dans l'organisation de Sogilis l'éloigne du modèle général des SSII.
+Sogilis est une société de service. C'est indéniable. Cependant, cette affirmation nous égratigne, tant l'image collective des SSII est mauvaise. On peut d'ailleurs trouver en ligne de [nombreux avis négatifs](http://t.umblr.com/redirect?z=http%3A%2F%2Fgeneral.developpez.com%2Farticles%2Fle-monde-informatique%2Fssii%2F%3Fpage%3Dpage_1&t=Nzg3OTgzM2FlZjg1YzQ4YTFmN2ViMGRkN2Q3YzM1MzE5MjBmYWExOSw0UHNZSXdhMw%3D%3D). Nous avons l'impression que quelque chose dans l'organisation de Sogilis l'éloigne du modèle général des SSII.
 
 Dans les SSII, il existe généralement une séparation entre les différents métiers. Les développeurs n'ont jamais à s'occuper de trouver des projets ou d’organiser des équipes. Chez nous, c'est le contraire. **Le développeur n'est pas un exécutant. Il s'implique dans la vie et les décisions importantes de l'entreprise.**
 
@@ -119,7 +119,7 @@ Dès le premier jeudi suivant sa candidature, à 11h40 précises, nous nous rass
 
 Un animateur est chargé de faciliter ce point sur les candidatures en cours de traitement. Chacune est dans un des quatre états suivants : nouvelles, entretiens techniques, entretiens avec les dirigeants, va nous rejoindre. La candidature de Marie vient d'arriver, elle entre donc dans le début du tableau, en tant que nouvelle candidature.
 
-!(Notre kanban de recrutement)[http://66.media.tumblr.com/8374fda731d44a42741f42d786f1f5a0/tumblr_inline_o2ll7ePiuS1tqsd8s_540.png]
+![Notre kanban de recrutement](http://66.media.tumblr.com/8374fda731d44a42741f42d786f1f5a0/tumblr_inline_o2ll7ePiuS1tqsd8s_540.png)
 
 L'animateur passe en revue les nouvelles candidatures, présente donc Marie en rappelant les différents commentaires qui ont déjà été fait sur Basecamp jusqu'à présent, et lance le débat. Pour passer cette première étape, la candidature de Marie doit séduire l'équipe. Ils doivent vouloir la rencontrer pour un entretien technique. En gardant en tête les objectifs de recrutement et les besoins que nous ressentons tous les jours, nous décidons que les compétences de Marie en embarqué seraient un plus pour Sogilis. Un binôme se désigne pour la rencontrer et évaluer si la collaboration de l'équipe avec elle serait viable, **tant sur le plan humain que technique**. Il se chargera de lui envoyer un e-mail après le point recrutement.
 
@@ -143,18 +143,18 @@ Cette organisation passe par une allocation supplémentaire de temps collectifs.
 
 **Réunion de solution + réunion d'information dans un but d'aide à la décision**
 
-!(Diagramme de nos réunions)[http://67.media.tumblr.com/a3cafae54229767107ed696c6076d2b4/tumblr_inline_o2ll8bnCVU1tqsd8s_540.png]
+![Diagramme de nos réunions](http://67.media.tumblr.com/a3cafae54229767107ed696c6076d2b4/tumblr_inline_o2ll8bnCVU1tqsd8s_540.png)
 
 - Basecamp / _quotidien, irrégulier_ 
   - un support de discussion permanent, cloisonné par projet
-- (point activité)[https://twitter.com/_crev_/status/643708426841915392] / _hebdomadaire, régulier_
+- [point activité](https://twitter.com/_crev_/status/643708426841915392) / _hebdomadaire, régulier_
   - donne une vision d'ensemble des projets en cours et à venir
   - mise en parallèle avec les disponibilités des développeurs
 - point recrutement / _hebdomadaire, régulier_
   - revue des candidatures et de leur progression dans le processus
   - permet de ne pas perdre un candidat (dilution des responsabilités)
   - régule le temps de réponse moyen à une candidature
-- (point amélioration continue)[https://twitter.com/chbaillon/status/691917348777934849] (alias rétro) / _bi-hebdomadaire, régulier_
+- [point amélioration continue](https://twitter.com/chbaillon/status/691917348777934849) (alias rétro) / _bi-hebdomadaire, régulier_
   - discussion autour des problèmes rencontrés dans l'entreprise
   - constitution éventuelle de groupes de travail sur les problèmes sélectionnés
   - prise d'actions pour tendre vers leur résolution

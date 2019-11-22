@@ -98,7 +98,7 @@ tags:
 ---
 Pour un développeur, piloter des Google Docs depuis son application est une fonctionnalité relativement puissante. Les API Google permettent beaucoup de choses en ce sens. En revanche, ce n'est pas toujours facile de s'y retrouver dans les méandres des différentes technologies, API et documentations que l'on peut trouver sur la toile. Suite aux difficultés que j'ai pu rencontrer en cherchant une documentation claire, je vais essayer ici de synthétiser les différentes étapes permettant de réaliser une opération assez fondamentale : **lire le contenu d’un document Google Sheet en utilisant une connexion authentifiée avec OAuth 2 en mode server to server**.
 
-!(Lecture d'un un fichier Google Sheet en Ruby[http://sogilis.com/wp-content/uploads/2015/03/Oauth2GoogleDocs.png]
+!(Lecture d'un un fichier Google Sheet en Ruby[/img/2015/03/Oauth2GoogleDocs.png]
 
 Pour les pressés, voici le code Ruby qui fait le boulot :
 
@@ -108,7 +108,7 @@ require 'google/api_client'
 require 'google_drive'
 
 # Get following info from Service Account created at 
-# (https://code.google.com/apis/console)[https://code.google.com/apis/console]
+# [https://code.google.com/apis/console](https://code.google.com/apis/console)
 account_email = 'xxxxxx@developer.gserviceaccount.com' 
 key_file = 'private-key-for-xxxxxx.p12' 
 key_secret = 'notasecret'
@@ -143,15 +143,15 @@ Mais passons à la première étape : l’authentification.
 
 ## Authentification avec OAuth
   
-!(Lecture d'un un fichier Google Sheet en Ruby - OAuth2)[http://sogilis.com/wp-content/uploads/2015/03/Securirty-with-OAuth2.png]
+![Lecture d'un un fichier Google Sheet en Ruby - OAuth2](/img/2015/03/Securirty-with-OAuth2.png)
 
 La première difficulté est de comprendre les mécanismes du protocole OAuth 2.0 utilisé par Google, Facebook… Pour schématiser – beaucoup –, le principe consiste à **récupérer un jeton** (représenté par une chaîne de caractères) qui permettra ensuite d’interroger les services google **sous une certaine identité** pendant une durée définie.
 
-De nombreux articles expliquent cette techno en détail, notamment celui-ci : « (Comprendre OAuth2)[http://www.bubblecode.net/fr/2013/03/10/comprendre-oauth2/] ».
+De nombreux articles expliquent cette techno en détail, notamment celui-ci : « [Comprendre OAuth2](http://www.bubblecode.net/fr/2013/03/10/comprendre-oauth2/) ».
 
 A noter : Google propose aussi une authentification par OAuth 1.0, mais la déconseille, même si elle est encore largement utilisée.
 
-Histoire de ne pas réinventer la roue, nous allons utiliser la gem ruby (gem google drive)[https://github.com/gimite/google-drive-ruby] pour l'authentification. Elle permet d’accéder aux documents Google Drive par la même occasion.
+Histoire de ne pas réinventer la roue, nous allons utiliser la gem ruby [gem google drive](https://github.com/gimite/google-drive-ruby) pour l'authentification. Elle permet d’accéder aux documents Google Drive par la même occasion.
   
 En revanche, l’exemple donné par cette gem passe par une étape où **l’utilisateur doit rentrer un code d’activation**.
 
@@ -159,17 +159,17 @@ En effet, il faut bien comprendre que le protocole OAuth 2.0 est principalement 
   
 Ces informations permettront au site web A d’utiliser les services du site B **sous l’identité de l’utilisateur**.
 
-!()[http://66.media.tumblr.com/0fdd94bc61cdd22489b72e57b6e36d01/tumblr_inline_nl1mtk2rGO1totr0l.png]
+![](http://66.media.tumblr.com/0fdd94bc61cdd22489b72e57b6e36d01/tumblr_inline_nl1mtk2rGO1totr0l.png)
 
 Bien souvent, vous remarquerez qu’une liste de services est affichée sur cette page de login. Ces derniers correspondent au périmètre d’autorisation (cf. attribut « scope » plus bas) du jeton renvoyé.
 
 Tout ceci est bien joli, mais nous cherchons une authentification « serveur à serveur », donc sans interaction de l’utilisateur, comme pendant l’exécution d’un batch par exemple.
 
-Il n’y a pas 36 solutions, il faut utiliser un **compte de service**, et Google propose justement ce type de comptes (cf. (documentation google)[https://developers.google.com/accounts/docs/OAuth2ServiceAccount]).
+Il n’y a pas 36 solutions, il faut utiliser un **compte de service**, et Google propose justement ce type de comptes [cf. (documentation google](https://developers.google.com/accounts/docs/OAuth2ServiceAccount)).
   
 Ces comptes, destinés à être utilisés uniquement par des services, correspondent à des traitements serveurs. Ils sont rattachés à de vrais comptes utilisateurs, sachant que chaque utilisateur peut en créer plusieurs.
   
-Pour **en créer un**, il faut passer par la (Google Developers Console)[https://console.developers.google.com/] comme ceci :
+Pour **en créer un**, il faut passer par la [Google Developers Console](https://console.developers.google.com/) comme ceci :
 
 * _Créer projet_
 * Menu _API et authentification > API_
@@ -181,7 +181,7 @@ Pour **en créer un**, il faut passer par la (Google Developers Console)[https:/
 
 Ensuite, il ne reste plus qu’à coder avec tous ces éléments :
 
-* (Installation de la gem - google drive)[https://github.com/gimite/google-drive-ruby]
+* [Installation de la gem - google drive](https://github.com/gimite/google-drive-ruby)
   {{< highlight bash >}}
   sudo gem install google_drive
   {{< /highlight >}}
@@ -218,7 +218,7 @@ Ensuite, il ne reste plus qu’à coder avec tous ces éléments :
 
 L’attribut « scope » contient les noms de domaine associés aux services Google auxquels on pourra accéder ensuite.
   
-Vous pouvez trouver la liste des scopes avec l’(OAuth 2.0 Playground)[https://developers.google.com/oauthplayground/].
+Vous pouvez trouver la liste des scopes avec l’[OAuth 2.0 Playground](https://developers.google.com/oauthplayground/).
   
 Les autres attributs sont des valeurs fixes fournies par Google.
 
@@ -237,7 +237,7 @@ Il est temps de passer à la seconde étape, la juridiction.
 
 ## Gestion des autorisations
 
-!()[http://66.media.tumblr.com/554141290c7b7613945641b9f490a5d8/tumblr_inline_nl01x4nlU11totr0l.png]
+![](http://66.media.tumblr.com/554141290c7b7613945641b9f490a5d8/tumblr_inline_nl01x4nlU11totr0l.png)
 
 Pour que notre compte de service puisse accéder à un fichier Google, il faut lui **donner accès**.
   
@@ -249,7 +249,7 @@ Troisième étape : lecture du contenu.
 
 ## Lecture de fichier Google Sheet
 
-!(Lecture d'un un fichier Google Sheet en Ruby - Google Spreadsheet + Ruby)[http://sogilis.com/wp-content/uploads/2015/03/Google-Spreadsheet-Ruby.png]
+![Lecture d'un un fichier Google Sheet en Ruby - Google Spreadsheet + Ruby](/img/2015/03/Google-Spreadsheet-Ruby.png)
 
 Enfin, pour lire un document, on peut vouloir le faire à partir de l’**identifiant** du document.
   
@@ -261,7 +261,7 @@ Dans ce cas, l’identifiant est :
   
 _0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE_
 
-Grâce à la (gem google drive)[https://github.com/gimite/google-drive-ruby], nous pouvons lire le contenu de la Google Sheet relativement facilement :
+Grâce à la [gem google drive](https://github.com/gimite/google-drive-ruby), nous pouvons lire le contenu de la Google Sheet relativement facilement :
 
 {{< highlight ruby >}}
 document_id = "0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE"

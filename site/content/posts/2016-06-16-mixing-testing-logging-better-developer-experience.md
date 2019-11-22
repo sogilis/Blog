@@ -94,7 +94,7 @@ People love a great article about a new programming paradigm/vision/motto which 
 
 ## [Getting the Right Feedback with Logging][1]
 
-What to do with (logging)[https://en.wikipedia.org/wiki/Logfile]? A log is a trace of events, which allows one to reconstruct what has happened. Good practices tell you to have events at different levels of granularity. I especially like the ones from (bunyan)[https://github.com/trentm/node-bunyan#levels] on this topic. Shameless copy-paste from the doc:
+What to do with [logging](https://en.wikipedia.org/wiki/Logfile)? A log is a trace of events, which allows one to reconstruct what has happened. Good practices tell you to have events at different levels of granularity. I especially like the ones from [bunyan](https://github.com/trentm/node-bunyan#levels) on this topic. Shameless copy-paste from the doc:
 
 > « fatal »: The service/app is going to stop or become unusable now. An operator should definitely look into this soon.
 >
@@ -165,7 +165,7 @@ $ npm start | bunyan --condition 'this.context == "restApp"'
 13:50:35.351Z  WARN mw: GET /productions/10 -> Status 404 (context=restApp)
 {{< /highlight >}}
 
-In any case, partitioning your log output to ease filtering is a good idea. I like the approach of (node debug)[https://github.com/visionmedia/debug] (although, as its name implies, I would keep it for debugging purpose).
+In any case, partitioning your log output to ease filtering is a good idea. I like the approach of [node debug](https://github.com/visionmedia/debug) (although, as its name implies, I would keep it for debugging purpose).
 
 {{< highlight bash >}}
 const debug = require('debug')('restApp')
@@ -176,7 +176,7 @@ $ DEBUG=restApp npm start
 restApp GET /printers
 {{< /highlight >}}
 
-That was rather down-to-earth. Notice I did not discuss where to put the log, how to rotate files etc. This is (not your app concern)[http://12factor.net/logs]: it should just dump events on standard output and let the infrastructure manages it. This, however, can have some impact on our next practice - testing.
+That was rather down-to-earth. Notice I did not discuss where to put the log, how to rotate files etc. This is [not your app concern](http://12factor.net/logs): it should just dump events on standard output and let the infrastructure manages it. This, however, can have some impact on our next practice - testing.
 
 ## [Getting the Right Feedback with Automated Tests?][2]
 

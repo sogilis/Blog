@@ -102,7 +102,7 @@ Dans notre expérience, l'approche story map demande une certaine maturité des 
 
 ## Qu'attend-on de nous ?
 
-Dans (l'article précédent)[http://sogilis.com/blog/decouverte-amorcage-projet-storymap/], nous avons expliqué pourquoi la story map n'était pas l'outil le plus adapté pour découvrir et planifier un nouveau projet. Bien que favorisant la discussion, le focus sur les activités des utilisateurs et les lots de fonctionnalité ne permet pas d'aborder les questions fondamentales du porteur de projet à ce stade :
+Dans [l'article précédent](http://sogilis.com/blog/decouverte-amorcage-projet-storymap/), nous avons expliqué pourquoi la story map n'était pas l'outil le plus adapté pour découvrir et planifier un nouveau projet. Bien que favorisant la discussion, le focus sur les activités des utilisateurs et les lots de fonctionnalité ne permet pas d'aborder les questions fondamentales du porteur de projet à ce stade :
 
 * la valeur proposée par le projet est-elle bien identifiée ?
 * est-ce qu'on a repéré les problèmes clés ?
@@ -124,9 +124,9 @@ Imaginez passer la journée à recadrer les participants, expliquer une approche
 
 ## La solution qui sauve la vie
 
-Par hasard, c'est peu après cet échec que j'ai (re)découvert le blog de Liz Keogh et en particulier son article intitulé (Capability-based Planning and Lightweight Analysis)[http://lizkeogh.com/2013/09/05/capability-based-planning-and-lightweight-analysis/]. Et cet article fut une bouée de secours, nous apportant des idées et des méthodes pour aborder ce projet et de nombreux autres. Les sessions suivantes de notre projet d'accompagnement furent nettement plus positives et productives juste en s'essayant à quelques principes.
+Par hasard, c'est peu après cet échec que j'ai (re)découvert le blog de Liz Keogh et en particulier son article intitulé [Capability-based Planning and Lightweight Analysis](http://lizkeogh.com/2013/09/05/capability-based-planning-and-lightweight-analysis/). Et cet article fut une bouée de secours, nous apportant des idées et des méthodes pour aborder ce projet et de nombreux autres. Les sessions suivantes de notre projet d'accompagnement furent nettement plus positives et productives juste en s'essayant à quelques principes.
 
-Le but de cet article n'est pas de présenter toutes les idées de Liz, rassemblées dans sa thématique (Embracing Uncertainty)[http://lizkeogh.com/embracing-uncertainty/] ainsi que celles exposées par Dan North dans sa série sur (Deliberate Discovery)[http://dannorth.net/2010/08/30/introducing-deliberate-discovery/]. Ces lectures sont cependant vivement recommandées pour leur richesse, leur aspect didactique et pour comprendre d'où viennent ces idées (attention, il y en a pour quelques heures si vous plongez dedans !). Nous allons plutôt présenter comment nous exploitons ces idées dans notre approche de découverte d'un projet.
+Le but de cet article n'est pas de présenter toutes les idées de Liz, rassemblées dans sa thématique [Embracing Uncertainty](http://lizkeogh.com/embracing-uncertainty/) ainsi que celles exposées par Dan North dans sa série sur [Deliberate Discovery](http://dannorth.net/2010/08/30/introducing-deliberate-discovery/). Ces lectures sont cependant vivement recommandées pour leur richesse, leur aspect didactique et pour comprendre d'où viennent ces idées (attention, il y en a pour quelques heures si vous plongez dedans !). Nous allons plutôt présenter comment nous exploitons ces idées dans notre approche de découverte d'un projet.
 
 ## Découverte de projet : comment démarrer ?
 
@@ -186,13 +186,13 @@ Vient ensuite la seconde étape, qui consiste à évaluer le risque lié à chaq
 
 Quand un client pose une question, il est parfois difficile de formuler une réponse quand on est soi-même incertain. En tant que professionnels, ne pas être capable de répondre précisément (combien ça va coûter, combien de temps pour développer telle fonctionnalité) apparaît comme un aveu d'incompétence. Pourtant l'informatique est bien un domaine où il est difficile de tout connaître. Cette évaluation vous encourage à être honnête avec vous-même et votre porteur de projet : **les points durs se cachent derrière votre ignorance, donc identifier et reconnaître ceux-ci vous permettra de progresser plus vite vers la conclusion du projet.** C'est certainement l'aspect le plus intéressant de la méthode de Liz.
 
-!()[http://sogilis.com/wp-content/uploads/2015/02/capabilities.001-1024x768.png]
+![](/img/2015/02/capabilities.001-1024x768.png)
 
 Quelques mots-clés pour décrire les capacités, des flèches pour indiquer les dépendances principales, des chiffres pour indiquer le risque… La discussion peut commencer ! Cette commodité risquée à 4 peut-elle être simplifiée ou remplacée ? Quelle priorité donnée au spoiler ? Quelle relation entre ces deux différentiateurs qui semblent indépendants ? Peut-on en choisir celui qui a le plus de valeur ?
 
 ### Passer de la carte aux étapes de réalisation
 
-Comme noté par (Dan North)[http://dannorth.net/2010/08/30/introducing-deliberate-discovery/], si vous réfléchissez à des projets passés et notez tout ce qui a pu gêner leur réalisation, le frein principal aura été tout ce que vous ignoriez au début et n'avez pu prévoir : ces technologies que vous avez apprises en cours de route, ces fausses pistes qui semblaient prometteuses, ces changements d'objectifs liés de à nouvelles opportunités, et tous les accidents de parcours qui ont affecté la vie du projet. Suivant son principe de _découverte délibérée_, plus vite on détecte et attaque les points incertains d'un projet, plus l'équipe sera capable de se projeter sur la réalisation, plus les risques de dérive diminuent.
+Comme noté par [Dan North](http://dannorth.net/2010/08/30/introducing-deliberate-discovery/), si vous réfléchissez à des projets passés et notez tout ce qui a pu gêner leur réalisation, le frein principal aura été tout ce que vous ignoriez au début et n'avez pu prévoir : ces technologies que vous avez apprises en cours de route, ces fausses pistes qui semblaient prometteuses, ces changements d'objectifs liés de à nouvelles opportunités, et tous les accidents de parcours qui ont affecté la vie du projet. Suivant son principe de _découverte délibérée_, plus vite on détecte et attaque les points incertains d'un projet, plus l'équipe sera capable de se projeter sur la réalisation, plus les risques de dérive diminuent.
 
 Par nature, la capacité différenciante du projet est celle que personne n'a jamais fait. Elle est donc risquée : vous ne savez donc pas combien cela va coûter ni si cela va marcher. Cela tombe bien. Comme vous ne voulez probablement pas prendre tous les risques d'un seul coup, **pourquoi ne pas commencer par l'aspect de votre projet qui apporte la valeur et qui peut en même temps le faire échouer ?**
 
@@ -209,4 +209,4 @@ En répétant cette analyse sur les capacités, leur valeur et leur risque, les 
 
 Un autre principe pour préparer votre plan d'attaque est de fixer des rendez-vous réguliers pour démontrer la valeur du projet. Quelle est la prochaine étape ? Quelle valeur pensez-vous pouvoir démontrer la prochaine fois ? Cela vaut-il le coup ? **Quand vous pouvez décrire de quoi sera capable la prochaine version du système et que vous êtes confiants dans votre capacité de le réaliser, alors vous êtes prêts pour démarrer le projet !**
 
-Après cette présentation générale de la méthode, nous verrons dans le prochain article quelques leçons issues de notre expérience. Nous pourrons les comparer avec (l'approche story map)[http://sogilis.com/blog/decouverte-amorcage-projet-storymap/] et voir comment cela affecte notre vision de l'accompagnement agile.
+Après cette présentation générale de la méthode, nous verrons dans le prochain article quelques leçons issues de notre expérience. Nous pourrons les comparer avec [l'approche story map](http://sogilis.com/blog/decouverte-amorcage-projet-storymap/) et voir comment cela affecte notre vision de l'accompagnement agile.

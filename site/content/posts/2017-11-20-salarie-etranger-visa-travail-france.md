@@ -108,17 +108,17 @@ Je vais tenter de vous décrire de manière synthétique et détaillée l'ensemb
 
   _« Le visa de long séjour valant titre de séjour (VLS-TS) permet d'entrer en France et d'y séjourner de 4 mois à 1 an sans avoir à demander tout de suite un titre de séjour. Il s'agit d'une vignette apposée sur votre passeport par l'administration. »_
 
-  !()[http://sogilis.com/wp-content/uploads/2017/10/Capture-d’écran-2017-10-30-à-16.06.45.png]
+  ![](/img/2017/10/Capture-d’écran-2017-10-30-à-16.06.45.png)
 
 * Avril 2017 : La première étape est de prouver la **« non-opposabilité » de l'offre d'emploi sur le marché français**. Il est important que l'entreprise puisse justifier que si elle va chercher à l'étranger les compétences, c'est parce qu'elle n'a pas pu les trouver en France. Il nous a donc fallu publier une offre d'emploi sur Pôle Emploi. **(Attention, les annonces sur d'autres sites d'emploi ne fonctionnent pas, il faut publier sur PE)**, sur une durée d'au moins 3 semaines. N'ayant reçu qu'une seule réponse à cette annonce, non pertinente, nous avons ainsi pu justifier de notre besoin de compétences étrangères.
 
-  !()[http://sogilis.com/wp-content/uploads/2017/10/Capture-d’écran-2017-10-30-à-16.20.18.png]
+  ![](/img/2017/10/Capture-d’écran-2017-10-30-à-16.20.18.png)
 
 * Mai 2017 : Nous avons ensuite complété le **formulaire CERFA 15187*02**, permettant d'enclencher la procédure au niveau de la DIRECCTE (Direction régionale des entreprises, de la concurrence, de la consommation, du travail et de l'emploi) de notre département.
 
-  !()[http://sogilis.com/wp-content/uploads/2017/10/Capture-d’écran-2017-10-30-à-16.26.58.png]
+  ![](/img/2017/10/Capture-d’écran-2017-10-30-à-16.26.58.png)
 
-Ce document, qui comporte 5 pages, est fondamental pour l'instruction du dossier du futur salarié. Pour nous, seules les 2 premières pages étaient pertinentes. (https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15187.do)[https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15187.do] et sa notice n°51883#02 : (https://www.formulaires.modernisation.gouv.fr/gf/getNotice.do?cerfaNotice=51883&cerfaFormulaire=15187)[https://www.formulaires.modernisation.gouv.fr/gf/getNotice.do?cerfaNotice=51883&cerfaFormulaire=15187]
+Ce document, qui comporte 5 pages, est fondamental pour l'instruction du dossier du futur salarié. Pour nous, seules les 2 premières pages étaient pertinentes. [https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15187.do](https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15187.do) et sa notice n°51883#02 : [https://www.formulaires.modernisation.gouv.fr/gf/getNotice.do?cerfaNotice=51883&cerfaFormulaire=15187](https://www.formulaires.modernisation.gouv.fr/gf/getNotice.do?cerfaNotice=51883&cerfaFormulaire=15187)
 
 **La liste des pièces à fournir est la suivante :**
 
@@ -146,13 +146,13 @@ le détail des points 4.0 sur papier libre, à savoir :
  
  Cet accord se traduit par l'envoi du dossier complet de notre futur salarié à l'attention du consulat général de France dans son pays d'origine (En l'occurrence, consulat français à Sydney). Il y sera ensuite convoqué pour un entretien pour délivrance de visa.
  
- Par ailleurs, son dossier est ensuite transmis à l'OFII ((Office Français de l'Immigration et de l'Intégration)[http://www.ofii.fr/]) qui est en charge de la suite de la procédure depuis la France.
+ Par ailleurs, son dossier est ensuite transmis à l'OFII [(Office Français de l'Immigration et de l'Intégration](http://www.ofii.fr/)) qui est en charge de la suite de la procédure depuis la France.
  
- Notre futur collègue Haze a donc été convoqué pour un entretien **début août 2017** au Consulat, où il a du fournir l'ensemble de ses papiers d'identité, ainsi que le cerfa 15187*02 original et visé par la DIRECCTE. Il y a rempli le « LONG-STAY VISA APPLICATION FORM » (https://www.diplomatie.gouv.fr/IMG/pdf/Long_Stay_Visa_Application_Form-2.pdf)[https://www.diplomatie.gouv.fr/IMG/pdf/Long_Stay_Visa_Application_Form-2.pdf]
+ Notre futur collègue Haze a donc été convoqué pour un entretien **début août 2017** au Consulat, où il a du fournir l'ensemble de ses papiers d'identité, ainsi que le cerfa 15187*02 original et visé par la DIRECCTE. Il y a rempli le « LONG-STAY VISA APPLICATION FORM » [https://www.diplomatie.gouv.fr/IMG/pdf/Long_Stay_Visa_Application_Form-2.pdf](https://www.diplomatie.gouv.fr/IMG/pdf/Long_Stay_Visa_Application_Form-2.pdf)
  
  Dix jours plus tard, il obtenait son accord d'entrée sur le territoire français, moyennant 99€ au service immigration/visa de l'aéroport et démarrait son contrat de travail le **4 septembre 2017 !**
  
- !()[http://sogilis.com/wp-content/uploads/2017/11/20171031_144322-min-300x225.jpg]
+ ![](/img/2017/11/20171031_144322-min-300x225.jpg)
  
  Mais la procédure n'est pas terminée 🙂
  
@@ -168,11 +168,11 @@ le détail des points 4.0 sur papier libre, à savoir :
  
  - Signer un « contrat d'intégration républicaine »
  
- !()[http://sogilis.com/wp-content/uploads/2017/11/cir-min-768x1024.jpg]
+ ![](/img/2017/11/cir-min-768x1024.jpg)
  
  Il obtient alors le visa « OFII » qui vaut titre de long séjour.
  
- !()[http://sogilis.com/wp-content/uploads/2017/11/20171031_144455-min-300x225.jpg]
+ ![](/img/2017/11/20171031_144455-min-300x225.jpg)
  
  Avec sa bonne note de 19/25, Haze devra suivre 100 heures de cours de français, ce qui est le minimum requis pour valider le visa. Ce nombre d'heures peut être porté à 400h.
 
@@ -191,6 +191,6 @@ Et vous ? Avez-vous déjà recruté un salarié étranger ? Quelle procédure av
 
 Nous serons ravis d'en discuter, et de répondre à toutes vos questions. La procédure est longue est complexe, autant s'appuyer sur l'expérience d'une entreprise qui est déjà passée par là... et avec succès 😉
 
-De plus, nous recrutons en permanence, alors que vous soyez étranger ou non, n'hésitez pas à postuler ! (http://sogilis.com/recrutement/)[http://sogilis.com/recrutement/]
+De plus, nous recrutons en permanence, alors que vous soyez étranger ou non, n'hésitez pas à postuler ! [http://sogilis.com/recrutement/](http://sogilis.com/recrutement/)
 
 [1]: https://www.service-public.fr/particuliers/vosdroits/F16922

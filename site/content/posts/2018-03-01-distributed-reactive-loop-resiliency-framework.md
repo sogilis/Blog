@@ -101,7 +101,7 @@ Once upon a time, we were tasked with designing a distributed system for 3D prin
 
 From a faraway point of view, distributed 3D printing is not different from the job parallelisation we often stumble upon in the cloud. Given one model and some quantities, create some jobs and dispatch them on available workers.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/3d_printing_cloud.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/3d_printing_cloud.png)
 
 But when tackling the customaries of 3D printing, we quickly had to face the following evidence.
 
@@ -125,7 +125,7 @@ But given the above reasons, it was obvious that our main challenge would not be
 
 There have been many warnings over the last years, even « horror stories », that micro-services systems are not _easier_ to design and understand, because you have to handle the cost of communication. From a graph point of view, you have to think about the _n_ nodes of your system, but also about the _m_ ways nodes communicate between them (with _m_ somewhere between _n-1_ and _n*(n-1)/2_). In other words, the more you add micro-services, the more you multiply how they can interact and fail with each other.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/nodes_connections.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/nodes_connections.png)
 
 Since we were wandering into unknown territories, the most sensible thing to do was to simplify the system, make it easier to reason about. To this end, we removed intermediaries (such as message queues), starting with just the core nodes required to perform the task: a server/supervisor and some workers.
 
@@ -133,7 +133,7 @@ Since we were wandering into unknown territories, the most sensible thing to do 
 
 We consider two primary nodes in our system: a supervisor in charge of dispatching and monitoring jobs overall, and a worker in charge of monitoring a printer. Both nodes communicate directly through a full-duplex channel. By removing intermediaries, we also take care of limiting data redundancy between nodes, so that state is easier to reconcile in case of inconsistencies.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/architecture_overview.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/architecture_overview.png)
 
 Each node has a purpose which it follows, regardless of the system status. The supervisor handles requests from customers and updates from workers. It must be available at all time, even if its responses are outdated. On the contrary, the worker targets job consistency. It monitors and mirrors precisely the state of the printer, and continue to do so even in case of network failure. For the worker, there is no need or no rush to send updates about the job, as long as it keeps things consistent.
 
@@ -141,7 +141,7 @@ We have simplified the structure and stated the purpose of each node. Now we mus
 
 We called this protocol a **reactive loop** because it always starts with a request for the current worker state (considered locally consistent), so that the supervisor properly reacts to it. This small exchange is enough to let the supervisor refresh its internal state, and to send new commands to the worker for the next thing to do.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/reactive_loop.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/reactive_loop.png)
 
 Together, those design decisions make it easier to reason about the system by having a simple **thought framework**, with basically distributed decisions being made in one place - the supervisor. It also imposed a clear separation of concerns between worker and supervisor, with the worker focusing on keeping its own state consistent (with regards to job processing in the printer), while the supervisor focused on worker commands and state reconciliation whenever it could communicate with workers. Overall, it makes it easier to reason about failure and recovery modes.
 
@@ -149,7 +149,7 @@ Together, those design decisions make it easier to reason about the system by ha
 
 Before illustrating the reactive loop with use cases, we should describe how the worker represents the printer state. The printer is easily modelled as a finite-state machine. Each state indicates what the printer is currently doing, which action to take or monitor, and which messages sent by the supervisor are valid. The figure below shows a simplified version of the FSM: there are three normal states, which models the regular process; one special state catches errors to allow the worker to recover.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/full_fsm.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/full_fsm.png)
 
 After the initial startup, the worker goes by default to the **ready state**. This is the normal state to wait for print jobs from the server. When a print message is received, the worker goes into a **printing state**, monitoring the physical printer until it has finished. It sends progress updates to the supervisor but does not accept any messages. Once the job is done, the printer is not readily available as the item must be retrieved from the printer box. Instead, the worker transitions into a **waiting for retrieval** state. It simply waits for a signal that the human operator has retrieved the item, so that it can finally go back to the **ready state** and accept a new job.
 
@@ -169,13 +169,13 @@ To set things into motion, a customer should of course issue a print order. The 
 
 When a job request is created on the server, the server checks whether the printer is connected and sends a request for state. The printer answers « ready to print » so the supervisor looks up one job to do in the current printer queue and sends it to the printer.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/nominal_path.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/nominal_path.png)
 
 ### [][8]{#user-content-postponing-a-job.anchor}Postponing a Job
 
 When the server requests the state, the printer might be processing another job. In this case, the roundtrip stops immediately with a no-op. Since the job is already in the queue, it will be processed later.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/postponing.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/postponing.png)
 
 ### [][9]{#user-content-consuming-a-job-queue.anchor}Consuming a Job Queue
 
@@ -183,25 +183,25 @@ Because a manual operation is required to retrieve the item from the box, the pr
 
 Once finished printing, the printer goes into the waiting state. When receiving this state, the supervisor updates the job status in its database, and notifies the operator that the item is ready. Then the operator can signal the supervisor that the item has been effectively retrieved, marking the job as done in the database. This happens whether or not the printer is online. When the next roundtrip happens, and the printer is still waiting for retrieval, the supervisor checks the job status and signals it has been effectively retrieved. The printer can finally go back to the ready state, where another roundtrip triggers the next job in queue.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/consuming_queue.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/consuming_queue.png)
 
 ### [][10]{#user-content-starting-after-wakeupreconnection.anchor}Starting after Wakeup/Reconnection
 
 When the printer comes back online in the ready state, how does it get deferred jobs? A simple roundtrip to the supervisor indicates the printer is ready and can trigger a job command if one is available in the queue.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/deferred_start.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/deferred_start.png)
 
 ### [][11]{#user-content-state-reconciliation.anchor}State Reconciliation
 
 Update messages may be lost when the connection is down. But an interrupted connection should not alter the printing process. For example, the printer might finish its job and go to the « waiting retrieval » state. Meanwhile the job is still marked in progress in the supervisor. Next steps can not happen until state has been reconciled. After reconnection, a status exchange is enough so that the supervisor updates the job state. Only then can the process proceed normally with the retrieval stage before going back to ready.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/reconciliation.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/reconciliation.png)
 
 ### [][12]{#user-content-error-detection-and-recovery.anchor}Error Detection and Recovery
 
 Failure can happen anytime during a printing process: the model might be faulty, the mechanism can derail, or the printer could simply be powered off because someone pulls the plug. In most cases, it is impossible to resume a failed job, because of the physical properties of the material. When this happens, the worker simply goes into an error state. This can happen whether the printer is online or offline with the supervisor. Once the printer is online again, a roundtrip is enough for the supervisor to detect the error state and notify the job as failed.
 
-!()[https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/error_notification.png]
+![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/error_notification.png)
 
 The process is then similar to the « waiting retrieval » state. The operator cleans up the mess, checks the printer is operational, then signals the job as « recovering » for the supervisor. At the next roundtrip, when the printer sends the error state and the supervisor sees the job as recovering, it can send the recover signal to the printer. This signal puts the printer back in ready state, which can then start over.
 
@@ -260,9 +260,9 @@ Most often we rely on existing solutions because they are proven and most proble
 
 Finally, we would like to point out that we did not design the reactive loop as some kind of mental toy or funny experiment in engineering. On the contrary, we were acting on a limited budget so designing something simple was paramount. In the end, having a simple thought framework made us more confident when changes were brought into the system.
 
-_Simon Denier (@twitter)[https://twitter.com/simondenier] – (@github)[https://github.com/sdenier/]_
+_Simon Denier [@twitter](https://twitter.com/simondenier) – [@github](https://github.com/sdenier/)_
 
-Some figures made with (Icons by Icons8)[https://icons8.com/]
+Some figures made with [Icons by Icons8](https://icons8.com/)
 
 [1]: https://github.com/sdenier/Articles-Sogilis/blob/distributed_reactive_loop/distributed_reactive_loop/distributed_reactive_loop.md#challenges-of-3d-printing---in-a-distributed-context
 [2]: https://github.com/sdenier/Articles-Sogilis/blob/distributed_reactive_loop/distributed_reactive_loop/distributed_reactive_loop.md#how-not-to-think-and-design-a-distributed-system
