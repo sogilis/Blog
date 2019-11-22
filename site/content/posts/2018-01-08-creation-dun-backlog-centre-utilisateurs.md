@@ -106,7 +106,7 @@ Le second objectif était **l'identification d'une ambiance graphique** souhait�
 
 Le troisième objectif était de **créer un bakclog**. Nous ne devions pas participer au développement de la solution, mais ce focus group était une très bonne opportunité de récolter leurs besoins et attentes en termes de fonctionnalités. Ainsi, nous en avons profité pour définir les contours d’un backlog centré utilisateurs. Bien sûr, le but n’était pas d’écrire les users stories, ni de prioriser. Notre but était de définir une vision macro du dashboard avec les fonctionnalités clefs.
 
-!(Les utilisateurs en séance d'idéation sur une table avec des post-it)[http://sogilis.com/wp-content/uploads/2018/01/WP_20171213_002-2-300x225.jpg]
+![Les utilisateurs en séance d'idéation sur une table avec des post-it](/img/2018/01/WP_20171213_002-2-300x225.jpg)
 
 ## Matériel
 
@@ -161,6 +161,6 @@ De mon côté, un point est à améliorer concernant l’animation : l’enregis
   
 Par contre, cette séance m’a permis de proposer une maquette plus aboutie à mon client, avec des données réelles. Par conséquent, le client n'a demandé pratiquement aucune correction, ce que je trouve satisfaisant.
 
-Marion Georges - (@mgeorges_)[https://twitter.com/mgeorges_]
+Marion Georges - [@mgeorges_](https://twitter.com/mgeorges_)
 
 [1]: https://uxmind.eu/portfolio/ux-design-and-evaluation-cards/

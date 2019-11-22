@@ -92,7 +92,7 @@ tags:
 ---
 Après le succès du projet Hexo+ avec un Kickstarter à 1.3 M$, Sogilis fait profiter aux porteurs de projets lyonnais d’une demi-journée d'accompagnement au design de leur Business Model.
 
-!()[http://66.media.tumblr.com/67e03cb7915aac32dc12f34f18dd4289/tumblr_inline_nexfoerc9H1t2p7ex.jpg]
+![](http://66.media.tumblr.com/67e03cb7915aac32dc12f34f18dd4289/tumblr_inline_nexfoerc9H1t2p7ex.jpg)
 
 Depuis 2008, nous développons des applications pour les start-up du numérique. Grâce à ces années d’expérience et à la création de Startup Maker, 1er fonds d’accélération Lean Startup, nous avons une connaissance affinée des problématiques réelles des jeunes entreprises. Implantés à Lyon depuis peu, nous proposons une **demi-journée de conseil et de sensibilisation au test marché itératif pour les entrepreneurs le 4 décembre.**
 

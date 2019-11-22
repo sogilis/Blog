@@ -91,11 +91,11 @@ tags:
   - viedebureau
 
 ---
-**Depuis le 4 février 2013, on a pris l’habitude de retrouver Vicky tous les matins avec plaisir. En stage de fin d'études à l'Ensimag puis en CDI au sein de la Sogiteam durant deux ans, il s'envole aujourd’hui pour monter sa boîte. Victor, c'est 26 ans de vitamines : il est co-organisateur du (Startup Weekend Grenoble)[http://grenoble.startupweekend.org/] et des (HumanTalks)[https://humantalks.com/cities/grenoble], ces conférences proposées par les développeurs pour les développeurs tous les mois dans les villes de France. Et comme il a plusieurs cordes à son arc, quand il ne fait pas le poisson dans l’eau, il est capable de gravir le Mont-Blanc !**
+**Depuis le 4 février 2013, on a pris l’habitude de retrouver Vicky tous les matins avec plaisir. En stage de fin d'études à l'Ensimag puis en CDI au sein de la Sogiteam durant deux ans, il s'envole aujourd’hui pour monter sa boîte. Victor, c'est 26 ans de vitamines : il est co-organisateur du [Startup Weekend Grenoble](http://grenoble.startupweekend.org/) et des [HumanTalks](https://humantalks.com/cities/grenoble), ces conférences proposées par les développeurs pour les développeurs tous les mois dans les villes de France. Et comme il a plusieurs cordes à son arc, quand il ne fait pas le poisson dans l’eau, il est capable de gravir le Mont-Blanc !**
 
 Le virus de l'entrepreneuriat l'a piqué lors de la première édition du Startup Weekend Grenoble. Depuis, il a enthousiasmé un bon nombre de clients, s'est creusé les méninges et a fortement contribué à la banane de l'équipe. Retour sur ces 2 bougies soufflées à Sogilis et mise en lumière de ses perspectives !
 
-!()[http://67.media.tumblr.com/c916964cbc5a55a5dbc7c1e2b2c853df/tumblr_inline_nra2ayLG7i1t2p7ex_540.jpg]
+![](http://67.media.tumblr.com/c916964cbc5a55a5dbc7c1e2b2c853df/tumblr_inline_nra2ayLG7i1t2p7ex_540.jpg)
 
 **Victor, quels sont tes projets ?**
 
@@ -113,17 +113,17 @@ La confiance est un facteur nécessaire pour la réussite de toute entreprise. S
 
 Je me sens assez solide avec cette expérience de 2 ans pour me lancer. J'ai toujours considéré Sogilis comme une étape pour apprendre. Je considère que c'est une réussite, ces deux ans sont un véritable tremplin pour la suite.
 
-!()[http://66.media.tumblr.com/980e35dbf085d418300d8a5e04649c27/tumblr_inline_nra27s2Yig1t2p7ex_540.jpg]
+![](http://66.media.tumblr.com/980e35dbf085d418300d8a5e04649c27/tumblr_inline_nra27s2Yig1t2p7ex_540.jpg)
 
 **Quel est ton souvenir le plus parlant à Sogilis ?**
 
 La première fois que j'ai pris la voiture de Sogilis pour aller voir un client, j'ai fait le plein. L'essence à la place du diesel, c'était de la haute voltige !
 
-Plus sérieusement, un de mes plus beaux souvenirs est une semaine de télétravail en binômage à Istanbul et à Barcelone. De Sogilis, je retiens l'envie de partager et de transmettre. Cela m'a tout de suite impressionné : il y a un effort de transmission d'une personne à une autre. Cela vaut en interne et avec les clients, que l'on cherche à rendre autonomes. Pour rebondir sur l'autonomie, c'est quelque chose que je recherchais, même si je ne connaissais pas véritablement la signification: prendre des décisions, être responsable. Aujourd'hui, la dépendance à un collaborateur est quelque chose que je ne peux plus envisager. Pour la start-up (3DKF)[http://www.3dkreaform.eu/], nous sommes passés d'un brevet à une solution industrielle, jusqu'au transfert de compétences chez le client. Pour moi, c'est génial dans le sens où j'ai tout vu sur un projet. Même si ce dernier évolue et va continuer, j'ai fait une boucle complète. J'estime que c'est une énorme valeur pour créer ma boîte.
+Plus sérieusement, un de mes plus beaux souvenirs est une semaine de télétravail en binômage à Istanbul et à Barcelone. De Sogilis, je retiens l'envie de partager et de transmettre. Cela m'a tout de suite impressionné : il y a un effort de transmission d'une personne à une autre. Cela vaut en interne et avec les clients, que l'on cherche à rendre autonomes. Pour rebondir sur l'autonomie, c'est quelque chose que je recherchais, même si je ne connaissais pas véritablement la signification: prendre des décisions, être responsable. Aujourd'hui, la dépendance à un collaborateur est quelque chose que je ne peux plus envisager. Pour la start-up [3DKF](http://www.3dkreaform.eu/), nous sommes passés d'un brevet à une solution industrielle, jusqu'au transfert de compétences chez le client. Pour moi, c'est génial dans le sens où j'ai tout vu sur un projet. Même si ce dernier évolue et va continuer, j'ai fait une boucle complète. J'estime que c'est une énorme valeur pour créer ma boîte.
 
 Enfin, parmi les faits marquants, j'ai instauré le mini golf, le premier bureau debout et la balle de grossesse au sein des locaux.
 
-!()[http://66.media.tumblr.com/e0a7cff1738079e36821d65ad947fee3/tumblr_inline_nriypwskT41t2p7ex_540.jpg]
+![](http://66.media.tumblr.com/e0a7cff1738079e36821d65ad947fee3/tumblr_inline_nriypwskT41t2p7ex_540.jpg)
 
 **Qu'est-ce qu'on peut te souhaiter ?**
 

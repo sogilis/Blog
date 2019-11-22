@@ -177,6 +177,6 @@ Et voilà, maintenant une personne qui clone le repo sera immédiatement dans la
 
 ## Quelques liens intéressants
 
-* (git config)[http://git-scm.com/docs/git-config]
-* (vagrant)[https://www.vagrantup.com/]
-* (EOF github)[https://help.github.com/articles/dealing-with-line-endings/]
+* [git config](http://git-scm.com/docs/git-config)
+* [vagrant](https://www.vagrantup.com/)
+* [EOF github](https://help.github.com/articles/dealing-with-line-endings/)

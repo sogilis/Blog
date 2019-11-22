@@ -94,7 +94,7 @@ tags:
   - serious game
 
 ---
-!(Innovation et Serious Game)[http://sogilis.com/wp-content/uploads/2017/07/Be-Ready-1024x442.jpg]
+![Innovation et Serious Game](/img/2017/07/Be-Ready-1024x442.jpg)
 
 Toutes les entreprises ont besoin d’innover pour exister et prendre de nouvelles part de marché : une position un peu trop “conservatrice” sur un marché traditionnel et c’est le risque de l’uberisation dans les prochains mois. Mais pour ces entreprises, PME, ETI ou Grands Groupes, l’innovation est parfois perçue comme une prise de risque. C’est vrai, innover c’est accepter de prendre un risque. Comme tous les risques, ceux-ci peuvent être maîtrisés si l’on comprend quels sont les bons leviers. Regardons en détail les challenges à franchir :
 
@@ -108,7 +108,7 @@ Adopter une stratégie d’innovation va plus loin que simplement distribuer un 
 
 ## Centrer l'organisation sur l’innovation
 
-Le Casino Game est un serious game inventé par (@agilex)[http://www.agilex.fr/jeu-casino-game/] qui permet aux joueurs de découvrir quelques concepts d’organisation basés sur le Lean :
+Le Casino Game est un serious game inventé par [@agilex](http://www.agilex.fr/jeu-casino-game/) qui permet aux joueurs de découvrir quelques concepts d’organisation basés sur le Lean :
 
 - Le management visuel
 - La mesure / Les indicateurs
@@ -124,9 +124,9 @@ Après plusieurs tentatives, les joueurs finissent par comprendre quelle est l�
 
 ## Lean, serious game et Innovation : quel rapport ?
 
-!(Casino Game : Les apprentissages)[http://sogilis.com/wp-content/uploads/2017/07/CasinoGame-1024x533.jpg]
+![Casino Game : Les apprentissages](/img/2017/07/CasinoGame-1024x533.jpg)
 
-Le Casino Game est un serious game particulièrement ludique. Que ce soit dans (un espace de coworking)[https://twitter.com/cascrum/status/846456150774177792], dans (une pépinière de startup)[http://www.inovallee.com/casino-game-au-tarmac-travailler-moins-individuellement-pour-performer-plus-collectivement-grace-au-kanban/] ou en entreprise : tous les participants prennent un plaisir sincère à jouer. Mais c’est souvent la discussion à l’issue du jeu qui se révèle être la plus importante.
+Le Casino Game est un serious game particulièrement ludique. Que ce soit dans [un espace de coworking](https://twitter.com/cascrum/status/846456150774177792), dans [une pépinière de startup](http://www.inovallee.com/casino-game-au-tarmac-travailler-moins-individuellement-pour-performer-plus-collectivement-grace-au-kanban/) ou en entreprise : tous les participants prennent un plaisir sincère à jouer. Mais c’est souvent la discussion à l’issue du jeu qui se révèle être la plus importante.
 
 “Imaginons que la dernière étape soit l’accès au marché de votre produit, quelle a été votre stratégie ?”. Et là, en général, les yeux s’illuminent.
 
@@ -138,4 +138,4 @@ Le Casino Game est un serious game particulièrement ludique. Que ce soit dans (
 
 Et vous, quelle est votre stratégie ? Est-ce que votre innovation est tirée par un besoin du marché ou est-ce vous qui poussez un nouveau produit en espérant qu’il trouvera preneur ?
 
-**(Arnaud BENISTANT)[https://www.linkedin.com/in/arnaud-benistant/]**
+**[Arnaud BENISTANT](https://www.linkedin.com/in/arnaud-benistant/)**

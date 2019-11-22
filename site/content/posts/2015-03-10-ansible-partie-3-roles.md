@@ -91,7 +91,7 @@ tags:
   - roles
 
 ---
-Dans notre précédent article, nous avons vu comment installer l'application (ipfs)[https://github.com/jbenet/go-ipfs] sur notre serveur. Nous avons fait le tout de manière très simple, avec un playbook global. Cela est peu élégant si nous souhaitons déployer plusieurs services sur la même machine. Et comment faire pour découper une suite de tâches simples que nous voudrions pouvoir réutiliser ? La réponse à ces deux questions se trouve dans les rôles Ansible. Les rôles sont une manière un peu plus élégante d'inclure des tâches Ansible au sein d'autres tâches en déclarant des dépendances.
+Dans notre précédent article, nous avons vu comment installer l'application [ipfs](https://github.com/jbenet/go-ipfs) sur notre serveur. Nous avons fait le tout de manière très simple, avec un playbook global. Cela est peu élégant si nous souhaitons déployer plusieurs services sur la même machine. Et comment faire pour découper une suite de tâches simples que nous voudrions pouvoir réutiliser ? La réponse à ces deux questions se trouve dans les rôles Ansible. Les rôles sont une manière un peu plus élégante d'inclure des tâches Ansible au sein d'autres tâches en déclarant des dépendances.
 
 ## Transformer notre playbook en rôle
 
@@ -152,7 +152,7 @@ La variable `name` permet de nommer différents éléments du système correspon
 * trouver le chemin vers le fichier de configuration cjdns qui se trouve dans un volume docker séparé
 * et créer un lien symbolique de ce fichier vers `/etc`.
 
-Nous voyons avec cela comment utiliser les variables. Pour utiliser une variable, il existe la syntaxe `{{ *variable_name* }}`. Cette syntaxe correspond au langage de template (Jinja2)[http://jinja.pocoo.org/] et nécessite d'inclure les variables entre quotes pour rester valide YAML. Voir la (documentation Ansible sur les variables)[http://docs.ansible.com/playbooks_variables.html].
+Nous voyons avec cela comment utiliser les variables. Pour utiliser une variable, il existe la syntaxe `{{ *variable_name* }}`. Cette syntaxe correspond au langage de template [Jinja2](http://jinja.pocoo.org/) et nécessite d'inclure les variables entre quotes pour rester valide YAML. Voir la [documentation Ansible sur les variables](http://docs.ansible.com/playbooks_variables.html).
 
 Les modules peuvent définir des variables de leur propre chef, mais il est également possible d'enregistrer le résultat d'un module dans une variable avec la syntaxe `register: *variable_name* `. Pour visualiser les champs disponibles, il faut utiliser l'option `-v` sur la ligne de commande lorsqu'on exécute le playbook. Dans notre exemple, un champ `file` est disponible, et sera utilisé avec la syntaxe `{{cjdroute_conf.file}}`.
 
@@ -303,7 +303,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
 
 Nous voudrions pouvoir accéder au container docker en utilisant SSH avec un utilisateur particulier. Ceci peut se faire de manière générique pour tout container Docker, et c'est comme cela que nous l'implémenterons. Nous définirons un rôle pour ajouter un accès ssh, et l'utiliseront pour le docker cjdns.
 
-Nous aurons besoin de `nsenter`, donc nous (l'installons avec docker)[http://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/]. Ensuite, nous créons un utilisateur avec l'UID 0 (afin qu'il ait les permissions d'exécuter `nsenter`), et nous spécifions une clef ssh de login, avec la commande `nsenter` qui nous permettra d'entrer dans le container :
+Nous aurons besoin de `nsenter`, donc nous [l'installons avec docker](http://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/). Ensuite, nous créons un utilisateur avec l'UID 0 (afin qu'il ait les permissions d'exécuter `nsenter`), et nous spécifions une clef ssh de login, avec la commande `nsenter` qui nous permettra d'entrer dans le container :
 
 * `roles/docker-ssh/vars/main.yml` :
   {{< highlight yml >}}
@@ -345,4 +345,4 @@ Et notre playbook principal va être augmenté afin de définir la variable `ssh
       ssh_key: '{{admin_sshkey}}'
 {{< /highlight >}}
 
-Nous avons vu dans cet article comment organiser notre code Ansible afin qu'il soit plus maintenable. Les rôles définissent des unités de code comme pourraient l'être des fonctions dans un langage plus classique. Il n'est pas possible d'invoquer un rôle directement au milieu d'une liste de tâches (dans ce cas, (la directive include)[http://docs.ansible.com/playbooks_roles.html] et (le module _include vars_)[http://docs.ansible.com/include_vars_module.html] existent), mais il est possible de définir des dépendances entre rôles. En guise d'exercice, il est laissé au soin du lecteur de décomposer le module `systemd-docker-service` en un rôle séparé.
+Nous avons vu dans cet article comment organiser notre code Ansible afin qu'il soit plus maintenable. Les rôles définissent des unités de code comme pourraient l'être des fonctions dans un langage plus classique. Il n'est pas possible d'invoquer un rôle directement au milieu d'une liste de tâches [dans ce cas, (la directive include](http://docs.ansible.com/playbooks_roles.html) et [le module _include vars_](http://docs.ansible.com/include_vars_module.html) existent), mais il est possible de définir des dépendances entre rôles. En guise d'exercice, il est laissé au soin du lecteur de décomposer le module `systemd-docker-service` en un rôle séparé.

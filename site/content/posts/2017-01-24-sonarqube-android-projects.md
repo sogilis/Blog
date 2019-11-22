@@ -103,11 +103,11 @@ tags:
 ---
 # How to monitor code quality of your Android application with SonarQube ?
 
-(SonarQube.org)[http://www.sonarqube.org] is a powerful tool to monitor and analyze code quality, and especially technical debt on Java projects (and more). As Android projects are based on Java sources, it is possible to analyze such projects with SonarQube. But if you already tried this, you probably noticed how difficult it is to find right and complete documentation.
+[SonarQube.org](http://www.sonarqube.org) is a powerful tool to monitor and analyze code quality, and especially technical debt on Java projects (and more). As Android projects are based on Java sources, it is possible to analyze such projects with SonarQube. But if you already tried this, you probably noticed how difficult it is to find right and complete documentation.
 
 So, we will see here how to configure an existing Android project built with **gradle** with 3 different modules: a **android application**, a **android library,** and a common **java library**.
 
-A sample project is available here: (https://github.com/sogilis/sonarqube-for-android-example)[https://github.com/sogilis/sonarqube-for-android-example].
+A sample project is available here: [https://github.com/sogilis/sonarqube-for-android-example](https://github.com/sogilis/sonarqube-for-android-example).
 
 ## Prerequisites
 
@@ -117,7 +117,7 @@ Gradle 3.x is not compatible with Sonar plugin, you have to choose **Gradle 2.x*
 
 First of all, a SonarQube server instance may be useful to check your configuration.
 
-The simplest way to do this is maybe with the (sonarqube docker image)[https://store.docker.com/images/3f8fc4ce-eb8e-40ad-88ba-69e97299c64f?tab=description], especially with **sonarqube:alpine** lightweight image.
+The simplest way to do this is maybe with the [sonarqube docker image](https://store.docker.com/images/3f8fc4ce-eb8e-40ad-88ba-69e97299c64f?tab=description), especially with **sonarqube:alpine** lightweight image.
 
 ## Configure Gradle
 
@@ -249,7 +249,7 @@ jacoco {
 
 Here is what you can get :
 
-!(SonarQube)[http://sogilis.com/wp-content/uploads/2017/01/SonarQube.jpg]
+![SonarQube](/img/2017/01/SonarQube.jpg)
 
 ## Android Studio plugin
 
@@ -292,11 +292,11 @@ Android flavors are not managed natively with SonarQube gradle plugin. You have 
 
 The given configuration here allow you to analyze a single module without others. But each module will appear as a stand alone project in SonarQube like this:
 
-!(SonarQube Projects)[http://sogilis.com/wp-content/uploads/2017/01/SonarQube-Projects-1024x225.jpg]
+![SonarQube Projects](/img/2017/01/SonarQube-Projects-1024x225.jpg)
 
 If you want all modules in a single project in SonarQube, you can move SonarQube plugins from modules to parent **build.gradle** (see (branch merge_modules_in_single_sonarqube_project in example project[https://github.com/sogilis/sonarqube-for-android-example/tree/merge_modules_in_single_sonarqube_project]):
 
-!(SonarQube Projects2)[http://sogilis.com/wp-content/uploads/2017/01/SonarQube-Projects2-1024x165.jpg]
+![SonarQube Projects2](/img/2017/01/SonarQube-Projects2-1024x165.jpg)
 
 ## Possible issues
 
@@ -319,12 +319,12 @@ java.lang.NullPointerException
 
 Here are some useful links to go further:
 
-- (SonarQube gradle plugin documentation)[http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle]
-- (Using SonarQube with Jenkins Continuous Integration and GitHub to Improve Code Review)[http://macoscope.com/blog/using-sonarqube-with-jenkins-continuous-integration-and-github-to-improve-code-review/]
-- (Android continuous integration using Gradle, Android Studio and Jenkins)[https://www.coshx.com/blog/2015/03/31/android-continuous-integration-using-gradle-android-studio-and-jenkins/]
-- (SonarQube GitHub Plugin)[http://docs.sonarqube.org/display/PLUG/GitHub+Plugin]
-- (GitHub pull request analysis)[http://www.sonarqube.org/github-pull-request-analysis-helps-fix-the-leak/]
-- (jenkins + sonar + github integration)[http://stackoverflow.com/questions/32047585/jenkins-sonar-github-integration]
+- [SonarQube gradle plugin documentation](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle)
+- [Using SonarQube with Jenkins Continuous Integration and GitHub to Improve Code Review](http://macoscope.com/blog/using-sonarqube-with-jenkins-continuous-integration-and-github-to-improve-code-review/)
+- [Android continuous integration using Gradle, Android Studio and Jenkins](https://www.coshx.com/blog/2015/03/31/android-continuous-integration-using-gradle-android-studio-and-jenkins/)
+- [SonarQube GitHub Plugin](http://docs.sonarqube.org/display/PLUG/GitHub+Plugin)
+- [GitHub pull request analysis](http://www.sonarqube.org/github-pull-request-analysis-helps-fix-the-leak/)
+- [jenkins + sonar + github integration](http://stackoverflow.com/questions/32047585/jenkins-sonar-github-integration)
 
 Jean-Baptiste
 

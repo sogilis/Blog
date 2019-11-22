@@ -213,7 +213,7 @@ You have to find a STUN server that talk TCP. There are not many out there. I c
 At the server end, the server SHOULD keep the connection open, and let the client close it, unless the server has determined that the connection has timed out (for example, due to the client disconnecting from the network).  Bindings learned by the client will remain valid in intervening NATs only while the connection remains open.  Only the client knows how long it needs the binding.
 ```
 
-Next, you have to find a Node.js implementation that speaks TCP. I hacked the existing vs-stun node module to use TCP instead of UDP. The code is available on (github mildred/vs-stun)[https://github.com/mildred/vs-stun/]. Because stun.stunprotocol.org closes the connection too early and vs-stun send multiple queries to determine the type of NAT (by changing the source port and source IP), it failed. So I simplified vs-stun using a short parameter. In this mode, it doesn’t check everything.
+Next, you have to find a Node.js implementation that speaks TCP. I hacked the existing vs-stun node module to use TCP instead of UDP. The code is available on [github mildred/vs-stun](https://github.com/mildred/vs-stun/). Because stun.stunprotocol.org closes the connection too early and vs-stun send multiple queries to determine the type of NAT (by changing the source port and source IP), it failed. So I simplified vs-stun using a short parameter. In this mode, it doesn’t check everything.
 
 To this day, I haven’t got it to work. Mostly because I haven’t found a suitable STUN server. Otherwise, I think it would work.
 
@@ -293,6 +293,6 @@ If you want to host this kind of server in web providers, beware that they might
 
 ## References
 
-* (Peer-to-Peer Communication Across Network Address Translators)[http://www.brynosaurus.com/pub/net/p2pnat/]
-* (RFC 5389)[https://tools.ietf.org/html/rfc5389] (and the obsolete (RFC 3489)[https://tools.ietf.org/html/rfc3489])
-* (draft-ietf-behave-nat-behavior-discovery-02)[http://wiki.tools.ietf.org/html/draft-ietf-behave-nat-behavior-discovery-02] that has some bits from RFC 3489 not included in RFC 5389.
+* [Peer-to-Peer Communication Across Network Address Translators](http://www.brynosaurus.com/pub/net/p2pnat/)
+* [RFC 5389](https://tools.ietf.org/html/rfc5389) [and the obsolete (RFC 3489](https://tools.ietf.org/html/rfc3489))
+* [draft-ietf-behave-nat-behavior-discovery-02](http://wiki.tools.ietf.org/html/draft-ietf-behave-nat-behavior-discovery-02) that has some bits from RFC 3489 not included in RFC 5389.

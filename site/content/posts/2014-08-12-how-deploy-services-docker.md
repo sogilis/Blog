@@ -133,18 +133,18 @@ This works well for everything except for the user file list. Notice that if an 
 
 The code:
 
-* (docker-mail on github)[https://github.com/mildred/docker-mail]
-* (docker-roundcube on github)[https://github.com/mildred/docker-roundcube]
+* [docker-mail on github](https://github.com/mildred/docker-mail)
+* [docker-roundcube on github](https://github.com/mildred/docker-roundcube)
 
 ## How to have docker containers always running
 
 Docker by default is restarting containers at startup that were running at shutdown. This is a good feature but isn’t really a good solution when you want to ensure the container is always running. There are many ways the docker container could not be restarted.
 
-You’ll have to configure (host integration)[https://docs.docker.com/articles/host_integration/]. This is the only reliable way to do it. It requires writing a service file (for either systemd, upstart or sysvinit) and installing it. This is not strainghtfoward either.
+You’ll have to configure [host integration](https://docs.docker.com/articles/host_integration/). This is the only reliable way to do it. It requires writing a service file (for either systemd, upstart or sysvinit) and installing it. This is not strainghtfoward either.
 
 ### Gear from OpenShift
 
-There is a tool called (geard)[https://openshift.github.io/geard/] from the OpenShift project. It seems perfect for the task we have. It is a daemon that ensures that the docker services you want are always running and managed by systemd. It provides a JSON file format to describe how to provision a few docker containers running together. It manages docker volumes in separate images so you can keep backups or change the system image and keep your data.
+There is a tool called [geard](https://openshift.github.io/geard/) from the OpenShift project. It seems perfect for the task we have. It is a daemon that ensures that the docker services you want are always running and managed by systemd. It provides a JSON file format to describe how to provision a few docker containers running together. It manages docker volumes in separate images so you can keep backups or change the system image and keep your data.
 
 The JSON deployment file looks like:
 
@@ -184,7 +184,7 @@ The JSON deployment file looks like:
 
 Moreover, it lets you specify ssh keys for your containers, and set up the ssh daemon so these ssh keys can let you in the containers directly. `ssh container-name@host` will provide you a shell on the container `container-name` running on `host`.
 
-Unfortunately, it is not really supposed to be run on its own on a debian host ((although it could be done)[https://gist.github.com/mildred/4e32276fc197395f0f81]) and the ssh feature doesn’t work unless containers are isolated. Isolation changes the script that is run by the container at startup and it breaks things.
+Unfortunately, it is not really supposed to be run on its own on a debian host ([although it could be done](https://gist.github.com/mildred/4e32276fc197395f0f81)) and the ssh feature doesn’t work unless containers are isolated. Isolation changes the script that is run by the container at startup and it breaks things.
 
 On top of this, the deployment JSON file is not documented anywhere.
 
@@ -214,7 +214,7 @@ systemctl start $name-roundcube
 
 There is however a few things to execute first and some shell functions to define. However I like this solution the most because the configuration (the three variables at the top) is separated from the code that run the deployment.
 
-How is that implemented? Following (host integration)[https://docs.docker.com/articles/host_integration/] you have to ensure a few things on your host system:
+How is that implemented? Following [host integration](https://docs.docker.com/articles/host_integration/) you have to ensure a few things on your host system:
 
 * that you are running systemd:
   {{< highlight systemd >}}

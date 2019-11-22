@@ -97,7 +97,7 @@ tags:
   - riak
 
 ---
-Dans un (billet précédent)[http://sogilis.com/blog/mouvement-nosql/], nous avons établi une brève description des systèmes de stockage NoSQL (“_Not Only SQL_”) en partant des cas d'utilisation qu'ils visent à résoudre. Après avoir dégagé des points de comparaison entre ces technologies et les bases de données relationnelles, plus traditionnelles, nous en avons conclu que les moteurs de stockage NoSQL ne sont pas destinés aux mêmes usages que les bases relationnelles classiques. Par conséquent, ces deux technologies peuvent très bien cohabiter au sein d'un même logiciel sans interférer entre elles ; l'idée étant de toujours utiliser un outil adapté au problème qu'on souhaite résoudre.
+Dans un [billet précédent](http://sogilis.com/blog/mouvement-nosql/), nous avons établi une brève description des systèmes de stockage NoSQL (“_Not Only SQL_”) en partant des cas d'utilisation qu'ils visent à résoudre. Après avoir dégagé des points de comparaison entre ces technologies et les bases de données relationnelles, plus traditionnelles, nous en avons conclu que les moteurs de stockage NoSQL ne sont pas destinés aux mêmes usages que les bases relationnelles classiques. Par conséquent, ces deux technologies peuvent très bien cohabiter au sein d'un même logiciel sans interférer entre elles ; l'idée étant de toujours utiliser un outil adapté au problème qu'on souhaite résoudre.
 
 La famille des systèmes NoSQL compte des systèmes très hétérogènes qui répondent chacun à des besoins très spécifiques. De façon générale, on arrive à les classer en quatre grands ensembles : les bases **clé-valeur**, **les bases documents**, **les bases orientées colonnes** et **les bases de type graphe**.
 
@@ -111,7 +111,7 @@ De par leur simplicité de fonctionnement, **les bases de données clé-valeur s
 
 Exemples : Riak, Redis, Amazon DynamoDB, MemCached…
 
-!()[http://sogilis.com/wp-content/uploads/2014/11/tumblr_inline_ncppxsqeBr1sc5im4.png]
+![](/img/2014/11/tumblr_inline_ncppxsqeBr1sc5im4.png)
 
 ## Les bases de données documents
 
@@ -121,7 +121,7 @@ L'unité d'information stockée est ici le document qui encode et encapsule la d
 
 Exemples : MongoDB, RethinkDB, CouchDB, Terrastore…
 
-!()[http://sogilis.com/wp-content/uploads/2014/11/tumblr_inline_ncppyebVo51sc5im4.png]
+![](/img/2014/11/tumblr_inline_ncppyebVo51sc5im4.png)
 
 ## Les bases de données orientées colonnes
 
@@ -133,7 +133,7 @@ De par leur structure, ces systèmes supportent bien le partitionnement sur plus
 
 Exemples : Apache HBase, Apache Cassandra, Hypertable, Apache Accumulo…
 
-!()[http://sogilis.com/wp-content/uploads/2014/11/tumblr_inline_ncppyr3M7h1sc5im4.png]
+![](/img/2014/11/tumblr_inline_ncppyr3M7h1sc5im4.png)
 
 ## Les bases de données de type graphe
 
@@ -147,7 +147,7 @@ Par construction, ces bases de données **n'offrent pas une bonne scalabilité h
 
 Exemples : Neo4J, Infinite Graph, DEX…
 
-!()[http://sogilis.com/wp-content/uploads/2014/11/tumblr_inline_ncppz4EuZo1sc5im4.png]
+![](/img/2014/11/tumblr_inline_ncppz4EuZo1sc5im4.png)
 
 ## Cohérence, disponibilité et partitionnement
 
@@ -161,11 +161,11 @@ Enfin, un système de stockage distribué est dit tolérant au **partitionnement
 
 Un résultat connu sous le nom de (lemme de Brewer _(en)_)[http://en.wikipedia.org/wiki/CAP_theorem] prouve que seulement deux de ces caractéristiques sur trois peuvent être présentes simultanément au sein d'un système de gestion de bases de données (qu'il soit NoSQL ou non). Les systèmes relationnels, par exemple, supportent très bien la disponibilité et la cohérence des données mais sont relativement pas (ou peu) adaptés au partitionnement physique - bien que certains travaux aillent dans ce sens, notamment sur _PostgreSQL_. Les systèmes NoSQL, quant à eux, sont conçus pour être distribués sur un réseau de machines physiques, ce qui implique un compromis entre la cohérence des données et la disponibilité des serveurs. Souvent, ces systèmes implémentent une notion de **cohérence finale** (_ie_ les modifications sur les données sont propagées sur toutes les machines au bout d'un certain temps) afin de garantir une haute disponibilité des données.
 
-!()[http://sogilis.com/wp-content/uploads/2014/11/tumblr_inline_ncpr1fhc5T1sc5im4.png]
+![](/img/2014/11/tumblr_inline_ncpr1fhc5T1sc5im4.png)
 
 ## Références
 
 1. Un catalogue à jour des systèmes de stockage NoSQL existants.
-  (nosql-database.org)[http://nosql-database.org/]
+  [nosql-database.org](http://nosql-database.org/)
 2. Une vue approfondie de plusieurs catégories de systèmes NoSQL.
   (Not Only SQL _(en)_)[https://en.wikipedia.org/wiki/NoSQL]

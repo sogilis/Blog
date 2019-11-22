@@ -107,7 +107,7 @@ Arnaud, l’un de nos collègues nous a alors proposé un jeu pour nous aider à
 
 ## Casino game
 
-C’est un jeu permettant d'appréhender une partie de la méthodologie agile de façon ludique. Les articles décrivant ce jeu et ce qu'il apporte ne manquant pas (par (ici)[http://www.agilex.fr/jeu-casino-game/]), nous nous concentrerons juste sur ce qu’il a apporté à notre organisation.
+C’est un jeu permettant d'appréhender une partie de la méthodologie agile de façon ludique. Les articles décrivant ce jeu et ce qu'il apporte ne manquant pas [par (ici](http://www.agilex.fr/jeu-casino-game/)), nous nous concentrerons juste sur ce qu’il a apporté à notre organisation.
 
 Le casino game permet de prendre conscience que quelques règles extrêmement simples permettent de fluidifier formidablement une chaîne de production et ainsi de produire davantage de valeur, tout en réduisant l’en-cours. L’idée est de faire réfléchir l’équipe, à chaque itération, pour améliorer cette chaîne.
 

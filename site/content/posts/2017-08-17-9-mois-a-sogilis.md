@@ -97,7 +97,7 @@ Moi, aujourd’hui, je travaille (pourquoi ? J’y reviendrai), et comme la pér
 
 # D'où je viens ?
 
-!(Margaux_1200x800)[http://sogilis.com/wp-content/uploads/2017/08/Margaux_1200x800-150x150.jpg]
+![Margaux_1200x800](/img/2017/08/Margaux_1200x800-150x150.jpg)
 
 Margaux, 31 ans, je suis ergonome ou UX-designer depuis 3 ans. Avant ça, j’ai fait des études en biologie à Lyon, plus précisément en neurosciences, et une thèse sur les interfaces cerveau-ordinateur (comment contrôler un ordinateur par la “pensée”, plutôt classe comme sujet). En fin de thèse, je ne souhaitais pas continuer dans le domaine de la recherche académique, et j’ai trouvé un poste de chargée de recherche dans une start-up à Paris. Ça s’est mal passé et je suis rentrée à Lyon après les 6 mois de ma période d’essai. J’ai alors commencé à chercher du boulot dans le domaine de l’ergonomie numérique qui m’intéressait, et j’ai trouvé un poste à Grenoble chez un éditeur de logiciel.
 
@@ -107,13 +107,13 @@ Après 2 ans dans cette entreprise et une expérience vraiment enrichissante, le
 
 # Pourquoi se tourner vers Sogilis ?
 
-Lorsque je suis arrivée dans l’entreprise où j’étais précédemment, une des personnes qui m’a le mieux accueillie était Luc Jeanniard, scrum-master arrivé un mois avant moi, en charge de mettre en place l’agilité dans l’entreprise. Il venait de Sogilis, et est reparti pour Sogilis 18 mois plus tard ((son retour d’expérience ici)[http://sogilis.com/blog/sogilis-entreprise-pas-comme-autres/]). Nous avons continué à déjeuner ensemble régulièrement, et son discours sur Sogilis était très attrayant : **une entreprise libérée, aux horaires souples, basée sur la confiance et l’implication, avec une grande variété de projets courts**. Tout ce dont je rêvais. Il m’a fallu tout de même une dizaine de mois pour sauter le pas, entre son départ et ma candidature. Tout est une question de balance bénéfice/risque : en juillet 2016 le bénéfice semblait conséquent et le risque faible, il était temps ! Dernier argument pour Sogilis : **l’existence de Sogilis Lyon**. Pour des raisons personnelles, je souhaitais retourner à Lyon à moyen terme. Trouver un boulot à Lyon il y a un an m’aurait mis dans une situation compliquée (trop tôt), et trouver une entreprise 100% grenobloise me condamnait à changer à nouveau d’entreprise un an plus tard, ou à renoncer à mon projet de retour à Lyon. La situation de Sogilis et les échos que j’en avais me laissaient supposer un possible basculement de Grenoble à Lyon le moment venu.
+Lorsque je suis arrivée dans l’entreprise où j’étais précédemment, une des personnes qui m’a le mieux accueillie était Luc Jeanniard, scrum-master arrivé un mois avant moi, en charge de mettre en place l’agilité dans l’entreprise. Il venait de Sogilis, et est reparti pour Sogilis 18 mois plus tard ([son retour d’expérience ici](http://sogilis.com/blog/sogilis-entreprise-pas-comme-autres/)). Nous avons continué à déjeuner ensemble régulièrement, et son discours sur Sogilis était très attrayant : **une entreprise libérée, aux horaires souples, basée sur la confiance et l’implication, avec une grande variété de projets courts**. Tout ce dont je rêvais. Il m’a fallu tout de même une dizaine de mois pour sauter le pas, entre son départ et ma candidature. Tout est une question de balance bénéfice/risque : en juillet 2016 le bénéfice semblait conséquent et le risque faible, il était temps ! Dernier argument pour Sogilis : **l’existence de Sogilis Lyon**. Pour des raisons personnelles, je souhaitais retourner à Lyon à moyen terme. Trouver un boulot à Lyon il y a un an m’aurait mis dans une situation compliquée (trop tôt), et trouver une entreprise 100% grenobloise me condamnait à changer à nouveau d’entreprise un an plus tard, ou à renoncer à mon projet de retour à Lyon. La situation de Sogilis et les échos que j’en avais me laissaient supposer un possible basculement de Grenoble à Lyon le moment venu.
 
 # Processus de recrutement
 
 Luc m’avait prévenu que les équipes se retrouvaient le jeudi en fin de matinée pour un point recrutement, j’ai donc envoyé ma candidature un jeudi matin. Le lendemain, je recevais un mail de Myriam, chargée de communication, me proposant un **entretien avec deux développeurs et elle-même**. Elle me disait d’apporter un ou plusieurs **exemples de projets personnels pour les leur présenter**.
 
-Les développeurs·ses ont sûrement toutes et tous des projets personnels en développement, mais moi je n’avais pas vraiment de projets personnels en ergonomie, sauf éventuellement la refonte de mon CV opérée quelques mois plus tôt dans le but de tester une méthode d’ergo ((j’en parle sur mon blog perso ici)[https://www.margaux-perrin.com/nouveau-cv/]). J’ai donc parlé de deux projets personnels montrant mon **envie d’apprendre et d’entreprendre, ma créativité et ma persévérance** : en 2016 je m’étais lancée dans un challenge photo (réalisation d’une photo par semaine sur un thème imposé) et en juillet j’avais commencé à apprendre le dessin avec un livre intitulé “you can draw in 30 days” (que je suivais scrupuleusement, une séance par jour).
+Les développeurs·ses ont sûrement toutes et tous des projets personnels en développement, mais moi je n’avais pas vraiment de projets personnels en ergonomie, sauf éventuellement la refonte de mon CV opérée quelques mois plus tôt dans le but de tester une méthode d’ergo ([j’en parle sur mon blog perso ici](https://www.margaux-perrin.com/nouveau-cv/)). J’ai donc parlé de deux projets personnels montrant mon **envie d’apprendre et d’entreprendre, ma créativité et ma persévérance** : en 2016 je m’étais lancée dans un challenge photo (réalisation d’une photo par semaine sur un thème imposé) et en juillet j’avais commencé à apprendre le dessin avec un livre intitulé “you can draw in 30 days” (que je suivais scrupuleusement, une séance par jour).
 
 Lors de l’entretien, on a parlé de Sogilis, de moi, de mes envies, de mes pratiques. L’ancienne UX-designer, Laurie, est intervenue par Skype et m’a fait faire une sorte de **test technique** en me demandant d’analyser une interface web. Moins de deux heures après la fin de l’entretien, j’avais un mail me proposant un **entretien avec l’un des deux associés**, Laurent. Quelle réactivité décidément ! L’entretien avec Laurent s’est bien passé également, assez informel, nous avons à nouveau abordé mes envies, mes motivations, ma vision de l’entreprise etc. Et Laurent m’a appelé quelques jours plus tard pour me faire une proposition. Comme c’était l’été et que j’avais tout de même envoyé d’autres candidatures à droite et à gauche, j’ai demandé un délai pour répondre afin d’évaluer les autres opportunités qui s’offraient à moi. Un mois plus tard, je revenais vers Laurent avec la **décision ferme et sans regret de rejoindre Sogilis**.
 
@@ -136,7 +136,7 @@ J’ai également participé à une douzaine d’avant-ventes, dans des secteurs
 Le besoin d'ergonomie, au regard de la taille de l'entreprise, est cyclique et me laisse du temps pour d'autres activités. En particulier, je m’implique dans les questions de communication interne et externe :
 
 * mise en place d’une landing page pour Sogilis Australie
-  !(licorne-sticker)[http://sogilis.com/wp-content/uploads/2017/08/licorne-sticker.png]
+  ![licorne-sticker](/img/2017/08/licorne-sticker.png)
 * (co-)écriture d’articles de blog
 * participation à des conférences en tant qu’oratrice ou visiteuse (live-tweet, sketchnotes, networking…)
 * mise en place d’un workshop interne pour réfléchir à des supports de communication
@@ -145,13 +145,13 @@ Le besoin d'ergonomie, au regard de la taille de l'entreprise, est cyclique et m
 * cocréation de supports de communication pour des évènements organisés par Sogilis
 * mise à jour du livret d’accueil
 * mise en place d’une dynamique de partage entre Sogilis Lyon et Sogilis Grenoble : 
-    * avec Marion, ergonome à Lyon, nous avons organisé des _Ergogames_ (petits jeux pour sensibiliser aux pratiques d’ergonomie, (on en parle ici)[http://sogilis.com/blog/lergogame-jeu-decouvrir-principes-de-conception-dergonomie-cognitive/]) ;
+    * avec Marion, ergonome à Lyon, nous avons organisé des _Ergogames_ [petits jeux pour sensibiliser aux pratiques d’ergonomie, (on en parle ici](http://sogilis.com/blog/lergogame-jeu-decouvrir-principes-de-conception-dergonomie-cognitive/)) ;
     * avec Kevin, développeur à Lyon, nous avons mis en place un challenge photo (une photo par mois sur un thème donné avec photo gagnante publiée sur Twitter, permettant également de renouveler le stock de photos pour la communication externe)
 * organisation des premières rétrospectives de l’équipe “Cloud Native”
 
 Enfin, de manière ponctuelle, je participe au recrutement et je fais un peu de business development.
 
-!(Retrospective)[http://sogilis.com/wp-content/uploads/2017/08/IMG_5087-1200x800-1024x683.jpg]
+![Retrospective](/img/2017/08/IMG_5087-1200x800-1024x683.jpg)
 
 # Bilan de ces 9 mois
 
@@ -189,4 +189,4 @@ Je vais déménager à Lyon dans les prochaines semaines, le contexte va changer
 
 Le défi qui m’attend va être de trouver un ou plusieurs projets pour remplacer mon “gros projet” (qui est presque terminé), avec la contrainte de la distance par rapport aux équipes puisque je vais continuer à travailler sur les projets de Grenoble. Mais je ne doute pas d’y arriver !
 
-Margaux Perrin - (@Margauxlergo)[https://twitter.com/Margauxlergo] - (www.margaux-perrin.com)[http://www.margaux-perrin.com]
+Margaux Perrin - [@Margauxlergo](https://twitter.com/Margauxlergo) - [www.margaux-perrin.com](http://www.margaux-perrin.com)

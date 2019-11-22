@@ -108,7 +108,7 @@ Une story map est un atelier rassemblant différents acteurs d'un projet (_Produ
 
 La story map est un processus itératif : les activités et cas d'utilisation sont raffinés au fur et à mesure de l'atelier. A l'issue du processus, les cas d'utilisation seront déclinés en stories pour décrire les fonctionnalités et rentreront dans le backlog suivant la priorité décidée par les lots.
 
-Si vous ignorez tout des story maps et que vous voulez lire la suite de cet article, je vous recommande (« The new user story backlog is a map »)[https://jpattonassociates.com/the-new-backlog/]. Vous en saurez plus sur l'origine de l'idée, les étapes à suivre, et l'usage que l'on peut en faire en gestion de projet agile.
+Si vous ignorez tout des story maps et que vous voulez lire la suite de cet article, je vous recommande [« The new user story backlog is a map »](https://jpattonassociates.com/the-new-backlog/). Vous en saurez plus sur l'origine de l'idée, les étapes à suivre, et l'usage que l'on peut en faire en gestion de projet agile.
 
 ## La story map comme outil de découverte d'un projet ?
 
@@ -145,7 +145,7 @@ Il est parfois difficile d'expliquer la nuance entre activité, cas d'utilisatio
 
 ### Granularité hétérogène des activités et cas d'utilisation
 
-La granularité des activités et cas d'utilisation est très variable au sein d'une story map. A la manière de la (loi de futilité de Parkinson)[http://fr.wikipedia.org/wiki/Loi_de_futilit%C3%A9_de_Parkinson], des aspects « simples » de la story map se retrouvent au même niveau d'expression que des aspects complexes, entretenant une certaine confusion sur les points durs du projet. En essayant de balayer toutes les activités du projet, les aspects les plus difficiles ne sont pas nécessairement les plus approfondis.
+La granularité des activités et cas d'utilisation est très variable au sein d'une story map. A la manière de la [loi de futilité de Parkinson](http://fr.wikipedia.org/wiki/Loi_de_futilit%C3%A9_de_Parkinson), des aspects « simples » de la story map se retrouvent au même niveau d'expression que des aspects complexes, entretenant une certaine confusion sur les points durs du projet. En essayant de balayer toutes les activités du projet, les aspects les plus difficiles ne sont pas nécessairement les plus approfondis.
 
 ### Granularité hétérogène entre différentes story maps
 
@@ -198,4 +198,4 @@ On dit « si tu as un marteau dans la tête, alors toutes les vis ressemblent à
 Bien sûr, il ne s'agit pas de remettre en cause la story map comme outil de planification de projet, quand celui-ci devient plus mature, que le périmètre des fonctionnalités se dessine et que les priorités sont identifiées. Simplement, elle ne peut pas venir trop tôt dans la découverte d'un projet, car **elle risque de figer des décisions sur les fonctionnalités à un moment où celles-ci sont encore méconnues.** Nous verrons dans le prochain article une approche qui se focalise sur les capacités et les risques du projet, afin de trouver une organisation plus pragmatique du développement.
 
 
-_* A propos des estimations, comment les faire, les exploiter intelligemment et les éviter quand ce n'est pas utile, je recommande Dan North ((The Perils of Estimation)[http://dannorth.net/2009/07/01/the-perils-of-estimation/], (Blink Estimation)[http://dannorth.net/2013/08/08/blink-estimation/]) et aussi tout ce qui touche au mouvement NoEstimates. Mais c'est un autre sujet._
+_* A propos des estimations, comment les faire, les exploiter intelligemment et les éviter quand ce n'est pas utile, je recommande Dan North ([The Perils of Estimation](http://dannorth.net/2009/07/01/the-perils-of-estimation/), [Blink Estimation](http://dannorth.net/2013/08/08/blink-estimation/)) et aussi tout ce qui touche au mouvement NoEstimates. Mais c'est un autre sujet._

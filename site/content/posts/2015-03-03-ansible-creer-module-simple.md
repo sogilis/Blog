@@ -137,7 +137,7 @@ Ceci indique à Ansible qu'il n'y a pas eu d'erreur (variable `failed`), que le 
 
 ## Un module pour installer des projets go
 
-Pour les besoins de cet article, nous allons faire un module qui installe un programme écrit dans le (langage Go)[http://golang.org/]. Une fois qu'on a `go` installé, il est très simple et rapide de compiler un programme Go. En effet, tout est généralement compilé statiquement sans dépendances externes, et l'outil `go` permet de récupérer récursivement toutes les sources nécessaires à un programme. Par exemple, pour installer le projet (GitHub go-ipfs)[https://github.com/jbenet/go-ipfs], il suffit d'exécuter les commandes suivantes :
+Pour les besoins de cet article, nous allons faire un module qui installe un programme écrit dans le [langage Go](http://golang.org/). Une fois qu'on a `go` installé, il est très simple et rapide de compiler un programme Go. En effet, tout est généralement compilé statiquement sans dépendances externes, et l'outil `go` permet de récupérer récursivement toutes les sources nécessaires à un programme. Par exemple, pour installer le projet [GitHub go-ipfs](https://github.com/jbenet/go-ipfs), il suffit d'exécuter les commandes suivantes :
 
 {{< highlight bash >}}
 go get github.com/jbenet/go-ipfs/cmd/ipfs
@@ -149,9 +149,9 @@ Ceci va télécharger les sources dans  `$GOPATH/src`, compiler dans `$GOPATH/p
 
 ## Installation dans /usr/local avec stow
 
-Une autre astuce réside dans l'installation dans `/usr/local` en utilisant (stow)[https://www.gnu.org/software/stow/]. C'est un programme qui permet de gérer le préfixe `/usr/local` et avec des liens symboliques, permet de savoir quel fichier appartient à quelle installation. Le principe est simple, au lieu d'installer un programme dans `/usr/local/{bin,lib,share,…}` directement, on l'installe dans `/usr/local/stow/progname/{bin,lib,share,…}`. Ensuite on invoque stow et on lui demande de créer des liens symboliques dans `/usr/local/{bin,lib,share,…}` pointant vers les fichiers équivalents dans `/usr/local/stow/progname/{bin,lib,share,…}`.
+Une autre astuce réside dans l'installation dans `/usr/local` en utilisant [stow](https://www.gnu.org/software/stow/). C'est un programme qui permet de gérer le préfixe `/usr/local` et avec des liens symboliques, permet de savoir quel fichier appartient à quelle installation. Le principe est simple, au lieu d'installer un programme dans `/usr/local/{bin,lib,share,…}` directement, on l'installe dans `/usr/local/stow/progname/{bin,lib,share,…}`. Ensuite on invoque stow et on lui demande de créer des liens symboliques dans `/usr/local/{bin,lib,share,…}` pointant vers les fichiers équivalents dans `/usr/local/stow/progname/{bin,lib,share,…}`.
 
-Par exemple, si on considère le langage (Lua)[http://www.lua.org/] installé, nous trouvons les liens symboliques suivants :
+Par exemple, si on considère le langage [Lua](http://www.lua.org/) installé, nous trouvons les liens symboliques suivants :
 
 {{< highlight bash >}}
 lrwxrwxrwx 1 root staff    21 août   6 14:17 /usr/local/bin/lua -> ../stow/lua52/bin/lua
@@ -214,7 +214,7 @@ Ne pas oublier la commande `exec 3>&1 >/dev/null 2>&1` qui ferme la sortie stand
 
 ## Un peu de robustesse
 
-Afin de gérer les erreurs, le cas où les commandes exécutées retournent un code d'erreur différent de zéro, nous allons utiliser bash au lieu du vénérable shell POSIX sh et utiliser la commande (trap)[http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_02.html]. Nous allons aussi initialiser les variables dans le cas où notre environnement n'est pas propre, et donner une valeur par défaut à la variable `$name` :
+Afin de gérer les erreurs, le cas où les commandes exécutées retournent un code d'erreur différent de zéro, nous allons utiliser bash au lieu du vénérable shell POSIX sh et utiliser la commande [trap](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_02.html). Nous allons aussi initialiser les variables dans le cas où notre environnement n'est pas propre, et donner une valeur par défaut à la variable `$name` :
 
 {{< highlight ini >}}
 #!/bin/bash

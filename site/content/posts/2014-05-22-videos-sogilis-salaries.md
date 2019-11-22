@@ -105,10 +105,10 @@ La manière dont se passe le recrutement chez Sogilis est également disruptive.
 
 {{< youtube 3dTQHLqrGRA >}}
 
-Dans cette deuxième vidéo les équipes donnent leur avis sur le (mode d’organisation cellulaire)[http://sogilis.com/blog/management-sans-manager-sogilis/] de l’entreprise.
+Dans cette deuxième vidéo les équipes donnent leur avis sur le [mode d’organisation cellulaire](http://sogilis.com/blog/management-sans-manager-sogilis/) de l’entreprise.
   
 Les salariés parlent aussi de la **liberté des équipes dans leur travail** et de leur volonté d’**amélioration continue**.
 
 {{< youtube qaMI7SlFnoQ >}}
 
-Pour voir toutes les vidéos de Sogilis, (c’est par ici)[https://www.youtube.com/user/SogilisFR].
+Pour voir toutes les vidéos de Sogilis, [c’est par ici](https://www.youtube.com/user/SogilisFR).

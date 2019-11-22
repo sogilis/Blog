@@ -88,9 +88,9 @@ categories:
 ---
 Dans le cadre d’un projet sur lequel nous travaillons actuellement, nous avons été amenés à implémenter un service web spring-boot capable de stocker des objets relativement simples dans une base de données.
 
-!(Support du stockage JPA et MongoDB dans une application Spring-boot - header)[http://sogilis.com/wp-content/uploads/2017/07/blog-header-2-1024x309.png]
+![Support du stockage JPA et MongoDB dans une application Spring-boot - header](/img/2017/07/blog-header-2-1024x309.png)
 
-La particularité de ce service réside dans sa compatibilité avec **différents moteurs de stockage** : relationnelle (ex: Oracle, Postgres...) et NoSQL orienté document (principalement MongoDB). Cette exigence vient directement des contraintes du client qui distribue sa solution logicielle avec différentes bases de données. L’environnement technique est bien évidemment lié aux contraintes du client, et comprend le framework (Spring Boot)[https://projects.spring.io/spring-boot/] pour le développement de microservices avec des couches de persistance type **JPA** (Java Persistence API) et **MongoDB**.
+La particularité de ce service réside dans sa compatibilité avec **différents moteurs de stockage** : relationnelle (ex: Oracle, Postgres...) et NoSQL orienté document (principalement MongoDB). Cette exigence vient directement des contraintes du client qui distribue sa solution logicielle avec différentes bases de données. L’environnement technique est bien évidemment lié aux contraintes du client, et comprend le framework [Spring Boot](https://projects.spring.io/spring-boot/) pour le développement de microservices avec des couches de persistance type **JPA** (Java Persistence API) et **MongoDB**.
 
 Le défi consiste à implémenter ces deux couches de persistance en minimisant la duplication de code.
 
@@ -116,7 +116,7 @@ L’idée derrière le développement de ce service est de laisser à l’admini
 
 Nous souhaitons donc éviter ceci :
 
-!(Support du stockage JPA et MongoDB dans une application Spring-boot - solution avec duplications)[http://sogilis.com/wp-content/uploads/2017/07/blog-solution-avec-duplications.png]
+![Support du stockage JPA et MongoDB dans une application Spring-boot - solution avec duplications](/img/2017/07/blog-solution-avec-duplications.png)
 
 Une autre solution à cette problématique pourrait être de créer plusieurs artefacts, l’un dédiée à l’application utilisant une couche d’abstraction (Spring Data Commons par exemple), et les autres implémentant chacun un type de persistance donné. C’est alors la constitution du classpath qui déterminerait quelle persistance utiliser (grâce au système d’auto-configuration de Spring Boot).
 
@@ -128,7 +128,7 @@ Premier constat : les modules [Spring Data JPA][2] et [Spring Data MongoDB][3] d
 
 Nous pouvons donc nous baser sur ce module pour écrire le code commun aux 2 types de persistances, et en particulier le Repository, ce qui donne ceci :
 
-!(Support du stockage JPA et MongoDB dans une application Spring-boot - class diagramm)[http://sogilis.com/wp-content/uploads/2017/07/blog-class-diagramm.png]
+![Support du stockage JPA et MongoDB dans une application Spring-boot - class diagramm](/img/2017/07/blog-class-diagramm.png)
 
 Ainsi, il n’est nécessaire de déclarer dans notre application que l’interface _PersonRepository_, les implémentations pour JPA ou Mongo étant générées automatiquement par Spring.
 
@@ -148,7 +148,7 @@ Il suffit alors d’annoter une même classe avec ces 2 annotations, ce qui évi
 Toute entité doit pouvoir être identifiée de manière unique. Pour cela, il existe aussi 2 annotations distinctes, mais qui ont le même nom (_@Id_) :
 
 - JPA : _javax.persistence.Id_
-- MongoDB : _org.springframework.data.annotation.Id_ ((permet de mapper la colonne sur l’identifiant natif MongoDB : _id)[http://docs.spring.io/spring-data/data-mongo/docs/1.10.4.RELEASE/reference/html/#mongo-template.id-handling])
+- MongoDB : _org.springframework.data.annotation.Id_ ([permet de mapper la colonne sur l’identifiant natif MongoDB : _id](http://docs.spring.io/spring-data/data-mongo/docs/1.10.4.RELEASE/reference/html/#mongo-template.id-handling))
 
 Attention au type de cet identifiant et comment il sera défini, il doit être à la fois compatible avec JPA et MongoDB.
 
