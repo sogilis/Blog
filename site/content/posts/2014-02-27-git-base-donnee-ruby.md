@@ -93,7 +93,7 @@ tags:
 
 [La première partie consacrée]({{< ref "posts/2014-02-19-git-base-donnee-entrailles.md" >}}) à [Git](http://git-scm.org) vous a montré brièvement le stockage interne et surtout comment écrire une donnée, la lier à une clé et récupérer le contenu derrière cette clé. Pour cette deuxième partie, nous allons réaliser la même chose mais en utilisant un vrai langage de programmation, Ruby.
 
-![YES](http://replygif.net/i/877.gif)
+![YES](/img/yes.gif)
 
 ## Contexte
 
@@ -379,7 +379,7 @@ Et pour une petite démo en live rendez-vous sur [gungnir.herokuapp.com/](http:/
 
 Ainsi s'achève notre petite découverte de git comme moteur de stockage.
 
-![Dr House](http://replygif.net/i/113.gif)
+![Dr House](/img/sad.gif)
 
 Il y a encore beaucoup de choses à découvrir comme par exemple les possibilités d'utilisation concurrente, les branches, les hooks, etc. Bien que l'accès ne soit pas des plus simples, pouvoir profiter du moteur de git peut être vraiment intéressant.
 
@@ -392,4 +392,4 @@ Ha oui, un dernier rappel sur git avant de se quitter. Sogilis dispense toujours
 - [Git Internals : Chapitre 9 de Pro Git](http://git-scm.com/book/en/Git-Internals)
 - [rugged](https://github.com/libgit2/rugged)
 
-[1]: http://66.media.tumblr.com/7f18ea0122e2eaa803e1777183244874/tumblr_inline_n0vyhn1Kpy1sv6muh.png
+[1]: https://66.media.tumblr.com/7f18ea0122e2eaa803e1777183244874/tumblr_inline_n0vyhn1Kpy1sv6muh.png

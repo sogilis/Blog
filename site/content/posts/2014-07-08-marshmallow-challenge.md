@@ -105,11 +105,11 @@ Les règles sont simples :
 - l'équipe gagnante est l'équipe qui place le marshmallow en un seul morceau le plus haut.
 - chaque équipe doit choisir un observateur et un manager…
 
-![](http://67.media.tumblr.com/abb095ba6d00e89056765f1cb699bea6/tumblr_inline_n5gltsgkGh1sy619z.jpg)
+![](https://67.media.tumblr.com/abb095ba6d00e89056765f1cb699bea6/tumblr_inline_n5gltsgkGh1sy619z.jpg)
 
 David, le responsable des équipes était missionné pour trouver un petit cadeau pour l'équipe gagnante. Nous étions au lendemain de Pâques.
 
-![](http://67.media.tumblr.com/6bef8ec8cf7eb059affe8fead7c7ac1f/tumblr_inline_n5glsetohN1sy619z.jpg)
+![](https://67.media.tumblr.com/6bef8ec8cf7eb059affe8fead7c7ac1f/tumblr_inline_n5glsetohN1sy619z.jpg)
 
 J'avais prévu un peu de musique pour l'ambiance. J'avais choisi Toto, c'est rock et entraînant !
 
@@ -127,19 +127,19 @@ J'explique les règles énoncées ci-dessus, nous formons 4 équipes de 5 ou 6 p
 
 C'est fou comme le challenge est très vite pris au sérieux, les équipes se concentrent et adoptent différentes stratégies.
 
-![](http://66.media.tumblr.com/362a74c8a13189dedae83f61bea1fbe7/tumblr_inline_n5gm4kggiZ1sy619z.jpg)
+![](https://66.media.tumblr.com/362a74c8a13189dedae83f61bea1fbe7/tumblr_inline_n5gm4kggiZ1sy619z.jpg)
 
-![](http://65.media.tumblr.com/a52312e1d878d7a8bf9f7775b5314225/tumblr_inline_n5gm6yD4dc1sy619z.jpg)
+![](https://65.media.tumblr.com/a52312e1d878d7a8bf9f7775b5314225/tumblr_inline_n5gm6yD4dc1sy619z.jpg)
 
-![](http://67.media.tumblr.com/44553b4e6d849f543f43daca90f3f925/tumblr_inline_n5gm84Jqq21sy619z.jpg)
+![](https://67.media.tumblr.com/44553b4e6d849f543f43daca90f3f925/tumblr_inline_n5gm84Jqq21sy619z.jpg)
 
 Le temps passe … vite. J'annonce 15 minutes, 10 minutes, 5 minutes, 2 minutes, 5, 4, 3, 2, 1, c'est fini, on lève les mains !
 
-![](http://67.media.tumblr.com/8f4f7c7ca4f909f2c8e2287ab077ff4d/tumblr_inline_n5gm9n4GQx1sy619z.jpg)
+![](https://67.media.tumblr.com/8f4f7c7ca4f909f2c8e2287ab077ff4d/tumblr_inline_n5gm9n4GQx1sy619z.jpg)
 
-![](http://67.media.tumblr.com/a85399a7f62544c3d1ed35ddd8f9ae41/tumblr_inline_n5gmb2gsIu1sy619z.jpg)
+![](https://67.media.tumblr.com/a85399a7f62544c3d1ed35ddd8f9ae41/tumblr_inline_n5gmb2gsIu1sy619z.jpg)
 
-![](http://67.media.tumblr.com/dc5cf6fd2ac676d682488945e203d92c/tumblr_inline_n5gmcdKzjA1sy619z.jpg)
+![](https://67.media.tumblr.com/dc5cf6fd2ac676d682488945e203d92c/tumblr_inline_n5gmcdKzjA1sy619z.jpg)
 
 Verdict :
   
@@ -147,7 +147,7 @@ Verdict :
 - Une tour à 40 cm
 - 2 échecs à 0 cm 🙂
 
-![](http://66.media.tumblr.com/0cd78a903821958056358f57b8d768cd/tumblr_inline_n5gmjt6XsK1sy619z.jpg)
+![](https://66.media.tumblr.com/0cd78a903821958056358f57b8d768cd/tumblr_inline_n5gmjt6XsK1sy619z.jpg)
 
 Nous prenons le temps de débriefer. Les observateurs font leurs retours. Les équipes qui ont voulu faire une tour très haute dès le début ont eu des difficultés à obtenir quelque chose de stable ! Les essais moins ambitieux mais successifs - des itérations - ont permis de s'appuyer sur des premiers résultats concluants pour infine obtenir un meilleur résultat. On a aussi pu remarquer l'importance de la communication; les équipes ayant pris le temps de débattre d'une stratégie avant de commencer s'en sont mieux sorties !
 
@@ -155,7 +155,7 @@ Nous prenons le temps de débriefer. Les observateurs font leurs retours. Les é
 
 Nous avons passé un très bon moment. Les équipes, tirées au sort, ont permis à des personnes ne travaillant pas nécessairement ensemble au quotidien d'échanger, de bâtir quelque chose. Les membres de la direction ont pris part au jeu, au milieu des équipes, et j'ai trouvé ça très sympa ! Tout cela remet une bonne dose de convivialité dans les équipes !
 
-![](http://67.media.tumblr.com/fc0f81678d5e6d53138da5fb6accce27/tumblr_inline_n5gmf3McHI1sy619z.jpg)
+![](https://67.media.tumblr.com/fc0f81678d5e6d53138da5fb6accce27/tumblr_inline_n5gmf3McHI1sy619z.jpg)
 
 Le jeu permet d'observer les points suivants :
   

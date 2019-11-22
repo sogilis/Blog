@@ -92,7 +92,7 @@ tags:
 ---
 Mardi avait lieu l’inauguration de la Halle Freyssinet, destiné à être le plus grand incubateur de start-up au monde. Christophe Baillon a profité de cet événement pour présenter la jeune entreprise Squadrone System, qui conçoit le drone Hexo+, à François Hollande, introduit par Xavier Niel.
 
-![](http://66.media.tumblr.com/b33c5f53ccd13c49eef5bda5cfc403e8/tumblr_inline_ndxw0reE4V1t2p7ex.jpg)
+![](https://66.media.tumblr.com/b33c5f53ccd13c49eef5bda5cfc403e8/tumblr_inline_ndxw0reE4V1t2p7ex.jpg)
 
 _De gauche à droite : Xavier Niel, François Hollande et Christophe Baillon._
 
@@ -102,4 +102,4 @@ C’est dans cet écosystème propice qu’aurait pu naître Hexo+. Il y a un an
 
 **Retrouvez ci-dessous les photos de l’événement et rendez-vous en mai 2015 pour la livraison des premiers drones !**
 
-![](http://66.media.tumblr.com/01453577a31e129ed3b146c29b3ba4ac/tumblr_inline_ndxw2wyjEY1t2p7ex.jpg)
+![](https://66.media.tumblr.com/01453577a31e129ed3b146c29b3ba4ac/tumblr_inline_ndxw2wyjEY1t2p7ex.jpg)

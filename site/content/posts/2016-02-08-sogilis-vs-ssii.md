@@ -119,7 +119,7 @@ Dès le premier jeudi suivant sa candidature, à 11h40 précises, nous nous rass
 
 Un animateur est chargé de faciliter ce point sur les candidatures en cours de traitement. Chacune est dans un des quatre états suivants : nouvelles, entretiens techniques, entretiens avec les dirigeants, va nous rejoindre. La candidature de Marie vient d'arriver, elle entre donc dans le début du tableau, en tant que nouvelle candidature.
 
-![Notre kanban de recrutement](http://66.media.tumblr.com/8374fda731d44a42741f42d786f1f5a0/tumblr_inline_o2ll7ePiuS1tqsd8s_540.png)
+![Notre kanban de recrutement](https://66.media.tumblr.com/8374fda731d44a42741f42d786f1f5a0/tumblr_inline_o2ll7ePiuS1tqsd8s_540.png)
 
 L'animateur passe en revue les nouvelles candidatures, présente donc Marie en rappelant les différents commentaires qui ont déjà été fait sur Basecamp jusqu'à présent, et lance le débat. Pour passer cette première étape, la candidature de Marie doit séduire l'équipe. Ils doivent vouloir la rencontrer pour un entretien technique. En gardant en tête les objectifs de recrutement et les besoins que nous ressentons tous les jours, nous décidons que les compétences de Marie en embarqué seraient un plus pour Sogilis. Un binôme se désigne pour la rencontrer et évaluer si la collaboration de l'équipe avec elle serait viable, **tant sur le plan humain que technique**. Il se chargera de lui envoyer un e-mail après le point recrutement.
 
@@ -143,7 +143,7 @@ Cette organisation passe par une allocation supplémentaire de temps collectifs.
 
 **Réunion de solution + réunion d'information dans un but d'aide à la décision**
 
-![Diagramme de nos réunions](http://67.media.tumblr.com/a3cafae54229767107ed696c6076d2b4/tumblr_inline_o2ll8bnCVU1tqsd8s_540.png)
+![Diagramme de nos réunions](https://67.media.tumblr.com/a3cafae54229767107ed696c6076d2b4/tumblr_inline_o2ll8bnCVU1tqsd8s_540.png)
 
 - Basecamp / _quotidien, irrégulier_ 
   - un support de discussion permanent, cloisonné par projet

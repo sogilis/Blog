@@ -104,7 +104,7 @@ Voici donc la première partie relatant cette exploration : les entrailles deGit
 
 Pourquoi vouloir utiliser Git pour stocker des données (autre que du code) ? C'est pas faute d'avoir un grand nombre de bases de données disponibles.
 
-![No idea](http://replygif.net/i/1220.gif)
+![No idea](/img/no_idea.gif)
 
 Oui, mais. Il y a plein de choses sympa avec Git. La première étant évidemment l'accès à l'historique. Pouvoir remonter dans le temps peut être vraiment intéressant suivant les données que l'on manipule. Et avec Git c'est en standard (c'est un peu le but…).
 
@@ -116,7 +116,7 @@ Une autre raison est de pouvoir imaginer sauvegarder des données simplement dan
 
 Et puis ça semble fun aussi !
 
-![Fun Yeah](http://replygif.net/i/244.gif)
+![Fun Yeah](/img/fuck_yeah.gif)
 
 ## Enregistrer une donnée dans Git
 
@@ -304,5 +304,5 @@ Un dernier point sur git avant de se quitter. Sogilis dispense aussi des formati
 - [Vidéo Git : the NoSQL database](http://vimeo.com/44458223) par Brandon Keepers
 - [Git Internals : Chapitre 9 de Pro Git](http://git-scm.com/book/en/Git-Internals)
 
-[1]: http://66.media.tumblr.com/3db4a26ac339ea068f96de5ecea2f176/tumblr_inline_n0vyfg5SJf1sv6muh.png
-[2]: http://66.media.tumblr.com/7f18ea0122e2eaa803e1777183244874/tumblr_inline_n0vyg2SID51sv6muh.png
+[1]: https://66.media.tumblr.com/3db4a26ac339ea068f96de5ecea2f176/tumblr_inline_n0vyfg5SJf1sv6muh.png
+[2]: https://66.media.tumblr.com/7f18ea0122e2eaa803e1777183244874/tumblr_inline_n0vyg2SID51sv6muh.png
