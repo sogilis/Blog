@@ -4,6 +4,7 @@ title = "Sogilis blog Site"
 theme = "sogilis"
 enableEmoji = true
 debug = true
+paginate = 999
 
 [params]
   disqus = "trololu"
