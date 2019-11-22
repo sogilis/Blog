@@ -130,7 +130,7 @@ Par exemple si l’on regarde le [site de cette agence artistique](http://www.ag
 * hauteur des lettres
 * longueur des lignes et l’alignement
 
-[Wikiwand](http://www.wikiwand.com) propose par exemple d’afficher les contenus Wikipédia avec une typographie plus ergonomique que celle de Wikipédia [(voir un article dans Wikiwand](https://www.wikiwand.com/fr/Typographie)), et la possibilité de personnaliser certains attributs.
+[Wikiwand](http://www.wikiwand.com) propose par exemple d’afficher les contenus Wikipédia avec une typographie plus ergonomique que celle de Wikipédia ([voir un article dans Wikiwand](https://www.wikiwand.com/fr/Typographie)), et la possibilité de personnaliser certains attributs.
 
 L’idée est de montrer que même si on a l’impression que c’est du bon sens, encore aujourd’hui, on utilise des sites qui n’appliquent pas les bonnes pratiques d’ ergonomie. N’y aurait-t-il pas tout de même une expertise métier derrière le bon sens ?
 
