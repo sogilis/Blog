@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<main>
+    <div class="container blog_article">
+
+        <div class="row header">
+            <div class="col-12 offset-1 col-sm-6 offset-sm-0 col-md-6 col-lg-6">
+                <img src="{{ "images/blog/img_blog.jpg" | relURL }}">
+            </div>
+            <div class="col-11 offset-2 col-sm-6 offset-sm-0 col-md-5 col-lg-4 article_title">
+                <h1>{{ .Title }}</h1>
+                <p>
+                    {{ i18n "writtenBy" }}
+                    {{- if .Params.Author }}
+                        {{ .Params.Author }}
+                    {{- else }}
+                        {{ .Site.Params.Author }}
+                    {{- end }}
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row content">
+             <div class="col-12">
+                {{ .Content }}
+            </div>
+        </div>
+
+        <img src="{{ "images/blog/img_blog.jpg" | relURL }}">
+    </div>
+</main>
+{{ end }}
