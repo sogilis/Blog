@@ -168,7 +168,7 @@ Bref, tout ça reste encore un peu flou, revenons à l'origine du principe.
 
 ## Origines
 
-Le SRP est défini pour la première fois par **Robert C. Martin** dans le livre « Agile Software Development, Principles, Patterns, and Practices » [(_extrait et résumé ainsi par l'auteur : A class should have only one reason to change_](https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view)). Le niveau d'abstraction défini est la **classe** et on a la définition d'une responsabilité : **une raison de changer**. Ça commence à s'éclaircir.
+Le SRP est défini pour la première fois par **Robert C. Martin** dans le livre « Agile Software Development, Principles, Patterns, and Practices » ([_extrait et résumé ainsi par l'auteur : A class should have only one reason to change_](https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view)). Le niveau d'abstraction défini est la **classe** et on a la définition d'une responsabilité : **une raison de changer**. Ça commence à s'éclaircir.
 
 Ok, mais n'importe quelle raison est valable ? Comment peut-on connaître toutes les raisons possibles de changement ? Robert (appelons le ainsi) nous aide un peu : _If you can think of more than one motive for changing a class, then that class has more than one responsibility_. Il faut donc **imaginer** toutes les raisons de changement possibles... pas sûr que cela aide beaucoup, on retombe potentiellement sur le découpage en classes d'une seule méthode d'une seule ligne.
 
