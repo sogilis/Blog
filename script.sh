@@ -1,22 +1,24 @@
 #!/bin/bash
 MD_FOLDER=/home/yann/Documents/Sogilis/Blog/site/content/posts
 IMG_FOLDER=/home/yann/Documents/Sogilis/Blog/site/static/img
+### THIS IS A SANDBOX SCRIPT USED FOR THE WORDPRESS -> HUGO MIGRATION
+### ALREADY EXECUTED BUT WE SHOULD KEEP A TRACE OF IT IN CASE OF REUSE
 
 #### CLEANUP IMAGES
 
-# ALL_IMAGES=$(find $IMG_FOLDER -type f)
-# for IMAGE in $ALL_IMAGES
-# do
-#     echo "Image check : $IMAGE"
-#     REGEXP_SED="s#.*/\(.*\..*\)#\1#"
-#     IMAGE_NAME=$(echo $IMAGE | sed $REGEXP_SED)
-#     RES=$(grep -R "$IMAGE_NAME" $MD_FOLDER)
-#     if [[ -z $RES ]]
-#     then
-#         echo "Image not used : $IMAGE_NAME"
-#         rm $IMAGE
-#     fi   
-# done
+ALL_IMAGES=$(find $IMG_FOLDER -type f)
+for IMAGE in $ALL_IMAGES
+do
+    echo "Image check : $IMAGE"
+    REGEXP_SED="s#.*/\(.*\..*\)#\1#"
+    IMAGE_NAME=$(echo $IMAGE | sed $REGEXP_SED)
+    RES=$(grep -R "$IMAGE_NAME" $MD_FOLDER)
+    if [[ -z $RES ]]
+    then
+        echo "Image not used : $IMAGE_NAME"
+        rm $IMAGE
+    fi   
+done
 
 #### VERIFY THAT EVERYTHING IS STILL AVAILABLE
 
