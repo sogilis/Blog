@@ -13,7 +13,7 @@ import inject from "gulp-inject";
 import cssnano from "cssnano";
 
 const browserSync = BrowserSync.create();
-const defaultArgs = ["-d", "../dist", "-s", "site"];
+const defaultArgs = ["-d", "../dist", "-s", "site", "--i18n-warnings"];
 
 var hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
 
