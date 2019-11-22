@@ -3,7 +3,7 @@
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
-  HUGO_VERSION = "0.58.3"
+  HUGO_VERSION = "0.59.1"   # Warning: should match Dockerfile
 
 [context.deploy-preview]
   command = "yarn build-preview"
