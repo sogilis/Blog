@@ -110,7 +110,7 @@ J’ai donc entrepris et travaillé très dur pour changer la culture d’entrep
 
 Après les premiers résultats concrets tels que la sortie d’une version mobile du produit dans les délais, une qualité en très nette amélioration, le développement d’une nouvelle génération de produits débutée et une structuration/priorisation de tous les projets, j’avais en quelque sorte terminé ma mission. C’est pourquoi j’ai décidé de quitter cette entreprise ; je devais passer le témoin afin que d’autres choses puissent être abordées. **En analysant la situation, je n’ai pas cessé d'insuffler des valeurs de coopération, de confiance, d’agilité projet, mais aussi comportementale.** Ces valeurs qui me paraissent essentielles sont aujourd’hui, si ce n’est assimilées, comprises. Je suis fier du chemin parcouru par les équipes et par les managers que je n’ai pas ménagés du tout ! Le changement est effectif.
 
-![](http://67.media.tumblr.com/cdc73641d881a34a116c896caefc449b/tumblr_inline_ny06qaA0Ie1t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/cdc73641d881a34a116c896caefc449b/tumblr_inline_ny06qaA0Ie1t2p7ex_540.jpg)
 
 J’ai énormément appris dans cette entreprise, sur moi notamment. J’ai compris que l’équipe de Sogilis m’avais permis d’avancer rapidement en l’espace d’une année, de prendre confiance, de m’éclater, de focaliser mon énergie sur ma passion pour le développement de logiciel. Ces raisons me poussent à travailler à nouveau dans cette belle entreprise où faire confiance est une valeur acquise. **Pour moi, aujourd’hui, c’est une évidence : les plus beaux projets ne peuvent sortir que d’un état d’esprit libéré.**
 

@@ -118,35 +118,35 @@ Parfois, à la fin de la journée, les Sogigens ont la chance d’être témoins
 
 TMS, troubles circulatoires, risques aggravés de mort prématurée. Ou alors juste parce que c’est agréable, surtout lors de tâches complexes. Bref, autant de raisons pour apprécier travailler régulièrement debout. Et avec un bureau fait main, c’est encore mieux !
 
-![](http://67.media.tumblr.com/220c88eebbc2c9a76f20f4c8378234b2/tumblr_inline_nvle2iIiob1t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/220c88eebbc2c9a76f20f4c8378234b2/tumblr_inline_nvle2iIiob1t2p7ex_540.jpg)
 
 ## 6. Le sumo
 
 En mouvement perpétuel grâce à l’énergie solaire, le sumo nous rappelle qu’il ne faut jamais s’endormir sur nos acquis. Il représente l’honneur et la fierté, il nous accompagne depuis plus de deux ans maintenant. Il est le symbole de l’engagement et de la détermination que nous mettons dans la réalisation des projets de nos clients.
 
-![](http://66.media.tumblr.com/1299b5652d67601b72f2b6fd8ecac0af/tumblr_inline_nv6ow4XtLY1t2p7ex_540.jpg)
+![](https://66.media.tumblr.com/1299b5652d67601b72f2b6fd8ecac0af/tumblr_inline_nv6ow4XtLY1t2p7ex_540.jpg)
 
 ## 7. La peluche
 
 Le Bisounours, le symbole de Sogilis et la preuve que le pays des bisounours existe. Il livre une bataille de tous les instants contre le monstre Sumo de Valentin, son homonyme maléfique. La justice triomphera-t-elle, ou les forces du mal Nippone déferleront-t-elles pour transformer le beau pays de Sogiland en enfer capitaliste de travailleurs arnachés ? Seul l'avenir nous le dira. On revient après une page de pub’ !
 
-![](http://67.media.tumblr.com/39e3fa4d7b11e385abb4ed822e06c780/tumblr_inline_nv6ovrF8e81t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/39e3fa4d7b11e385abb4ed822e06c780/tumblr_inline_nv6ovrF8e81t2p7ex_540.jpg)
 
 Bon, ils s’entendent bien quand même !
 
-![](http://67.media.tumblr.com/705f6fb588001ea8b3097b936d2e0d32/tumblr_inline_nv6owiOOIa1t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/705f6fb588001ea8b3097b936d2e0d32/tumblr_inline_nv6owiOOIa1t2p7ex_540.jpg)
 
 ## 8. La Wii
 
 En temps normal, on ne la remarque pas. Elle sait rester discrète, cachée derrière le vidéo projecteur de la salle de pause. Et pourtant, pendant la pause de midi, elle devient la star du bureau. Celle sur qui tout amateur de parties endiablées de Mario Kart se rue afin d'assouvir sa soif de conquête du podium.
 
-![](http://66.media.tumblr.com/efc722d6121ef4cb95b3336b6b4c03c5/tumblr_inline_nv6oxaxGdU1t2p7ex_540.jpg)
+![](https://66.media.tumblr.com/efc722d6121ef4cb95b3336b6b4c03c5/tumblr_inline_nv6oxaxGdU1t2p7ex_540.jpg)
 
 ## 9. ****La coupe SogiPong
 
 Chaque année à Sogilis, un tournoi de ping-pong est organisé par MousS’ qui fait tout ce qui est en son pouvoir pour nous satisfaire. Une coupe est offerte au meilleur pongiste. Comme Valentin règne sans partage sur le tournoi depuis sa création, il est désormais appelé SogiPong - Valentin Brossard. (_Enfin, ça c'était avant. JB a pris la relève...)_
 
-![](http://67.media.tumblr.com/d889940a0adc27545b8a01cc07164102/tumblr_inline_nv6oy0H7Ct1t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/d889940a0adc27545b8a01cc07164102/tumblr_inline_nv6oy0H7Ct1t2p7ex_540.jpg)
 
 Comme la suite est encore longue, **rendez-vous mardi prochain sur le blog pour découvrir la suite des objets insolites !**
 

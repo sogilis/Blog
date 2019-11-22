@@ -212,4 +212,4 @@ Et comme on [apprécie les Lego](https://twitter.com/_crev_/status/6437084268419
 * [Re-pigmentation de photographies](http://tinyclouds.org/colorize/)
 * [Lego Paper Plane Machine](https://www.youtube.com/watch?v=jU7dFrxvPKA)
 
-![](http://www.gravatar.com/avatar/2405b32ff817cd55c9e5404e004b048b.png)
+![](https://www.gravatar.com/avatar/2405b32ff817cd55c9e5404e004b048b.png)

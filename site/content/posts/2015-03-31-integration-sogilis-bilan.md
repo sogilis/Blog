@@ -95,7 +95,7 @@ Il y a quelques années, j’aspirais à mieux gérer mon temps et à prendre ma
 
 À la fin de l’année 2014, juste après mon diplôme, je fais le choix de chercher l’entreprise qui correspond réellement à mes valeurs et à mes aspirations. Alors que mon entourage me soutient sans être absolument convaincu du réalisme de ma recherche, je pense l’avoir trouvée en janvier. Je ne connais rien des entreprises libérées mais les témoignages de ses salariés me font sauter le pas sans inquiétude. Voilà mes premières impressions après un mois ici.
 
-![](http://66.media.tumblr.com/d00a3c922194ffe01aef43efacf88256/tumblr_inline_nlq2t9rCNJ1t2p7ex_500.jpg)
+![](https://66.media.tumblr.com/d00a3c922194ffe01aef43efacf88256/tumblr_inline_nlq2t9rCNJ1t2p7ex_500.jpg)
 [_We’re not slacking off. Our code is compiling._](https://xkcd.com/303/)
 
 **Chez Sogilis, on peut être soi-même, et cela se ressent dès l’arrivée dans l’entreprise**. J’ai la sensation que grâce à une structure horizontale, sans relations hiérarchiques, les échanges sont plus vrais et sincères. Il n’y a pas de faux semblant et c’est très agréable d’évoluer dans ce contexte. On se réfère à ce qu’on entend, puisqu’on est honnête. Cela permet de communiquer sans barrière et de résoudre les conflits entre nous rapidement.
