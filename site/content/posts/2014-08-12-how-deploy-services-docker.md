@@ -184,7 +184,7 @@ The JSON deployment file looks like:
 
 Moreover, it lets you specify ssh keys for your containers, and set up the ssh daemon so these ssh keys can let you in the containers directly. `ssh container-name@host` will provide you a shell on the container `container-name` running on `host`.
 
-Unfortunately, it is not really supposed to be run on its own on a debian host [(although it could be done](https://gist.github.com/mildred/4e32276fc197395f0f81)) and the ssh feature doesn’t work unless containers are isolated. Isolation changes the script that is run by the container at startup and it breaks things.
+Unfortunately, it is not really supposed to be run on its own on a debian host ([although it could be done](https://gist.github.com/mildred/4e32276fc197395f0f81)) and the ssh feature doesn’t work unless containers are isolated. Isolation changes the script that is run by the container at startup and it breaks things.
 
 On top of this, the deployment JSON file is not documented anywhere.
 
