@@ -120,7 +120,7 @@ Finalement, **être précis, drôle et informatif à la fois**.
 
 ## L’organisation du livret à la loupe
 
-![](http://67.media.tumblr.com/7fa6955928df320edf7529696e102953/tumblr_inline_nz32xnD2id1t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/7fa6955928df320edf7529696e102953/tumblr_inline_nz32xnD2id1t2p7ex_540.jpg)
 
 **Une culture partagée** : qui on est, comprendre d’où on vient pour mieux appréhender ce que l’on fait aujourd’hui. Notre histoire, notre actualité, nos objectifs.
 

@@ -100,6 +100,6 @@ Sur le blog de l'entreprise collaborative tenu par Aurélie Duthoit, nos deux co
 
 Peut-être cela donnera-t-il des idées à certains pour la nouvelle année…
 
-![Entreprise libérée](http://67.media.tumblr.com/1efcb4b72c5cadb2e590eae1967adfe6/tumblr_inline_nhcads24EA1t2p7ex.png)
+![Entreprise libérée](https://67.media.tumblr.com/1efcb4b72c5cadb2e590eae1967adfe6/tumblr_inline_nhcads24EA1t2p7ex.png)
 
 **Etre une entreprise libérée, c'est pas si facile… Mais on ne la laissera pas tomber !**

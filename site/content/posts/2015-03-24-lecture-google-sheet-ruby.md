@@ -159,7 +159,7 @@ En effet, il faut bien comprendre que le protocole OAuth 2.0 est principalement 
   
 Ces informations permettront au site web A d’utiliser les services du site B **sous l’identité de l’utilisateur**.
 
-![](http://66.media.tumblr.com/0fdd94bc61cdd22489b72e57b6e36d01/tumblr_inline_nl1mtk2rGO1totr0l.png)
+![](https://66.media.tumblr.com/0fdd94bc61cdd22489b72e57b6e36d01/tumblr_inline_nl1mtk2rGO1totr0l.png)
 
 Bien souvent, vous remarquerez qu’une liste de services est affichée sur cette page de login. Ces derniers correspondent au périmètre d’autorisation (cf. attribut « scope » plus bas) du jeton renvoyé.
 
@@ -237,7 +237,7 @@ Il est temps de passer à la seconde étape, la juridiction.
 
 ## Gestion des autorisations
 
-![](http://66.media.tumblr.com/554141290c7b7613945641b9f490a5d8/tumblr_inline_nl01x4nlU11totr0l.png)
+![](https://66.media.tumblr.com/554141290c7b7613945641b9f490a5d8/tumblr_inline_nl01x4nlU11totr0l.png)
 
 Pour que notre compte de service puisse accéder à un fichier Google, il faut lui **donner accès**.
   

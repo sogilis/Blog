@@ -244,6 +244,6 @@ Et pour finir cet veille, voici un article basé sur des interviews de certains 
 * [qu'avons-nous appris de la planification par capacités](http://blog.sogilis.com/post/111473929716/d%C3%A9couverte-et-amor%C3%A7age-de-projet-quavons-nous)
 * [How to Level up as a Developer](https://medium.freecodecamp.com/how-to-level-up-as-a-developer-87344584777c)
 
-[1]: http://67.media.tumblr.com/4e8e610a765d515139c83dc932c21070/tumblr_inline_o3glitq8841sv6muh_500.png
-[2]: http://65.media.tumblr.com/d01433967c51343c087a92b8a1e1c8bb/tumblr_inline_o3glit0sNk1sv6muh_500.png
-[3]: http://66.media.tumblr.com/fc1aa83fbbcd44a53c57fb8aa83be904/tumblr_inline_o3glitBxNN1sv6muh_500.jpg
+[1]: https://67.media.tumblr.com/4e8e610a765d515139c83dc932c21070/tumblr_inline_o3glitq8841sv6muh_500.png
+[2]: https://65.media.tumblr.com/d01433967c51343c087a92b8a1e1c8bb/tumblr_inline_o3glit0sNk1sv6muh_500.png
+[3]: https://66.media.tumblr.com/fc1aa83fbbcd44a53c57fb8aa83be904/tumblr_inline_o3glitBxNN1sv6muh_500.jpg

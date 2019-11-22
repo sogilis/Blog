@@ -96,19 +96,19 @@ tags:
 
 Un jour, il a fallu créer un indicateur d’occupation, autrement dit un calendrier. Le lendemain, on s’est dit que ce serait cool de le faire en Lego, ou comment joindre l’utile à l’agréable ! Les indicateurs c’est utile à lire, mais barbant à remplir. Et pourtant, avec un outil du genre, on a envie d'y consacrer plus de temps que nécessaire : _« attends, je finis mon avatar, il faut que je lui trouve un accessoire qui va bien !_ ».
 
-![](http://67.media.tumblr.com/c5434790c0da02e930c34b28dc3e1b2f/tumblr_inline_nv6ouhkqHe1t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/c5434790c0da02e930c34b28dc3e1b2f/tumblr_inline_nv6ouhkqHe1t2p7ex_540.jpg)
 
 ## 2. Le plan de domination du monde
 
 Vous connaissez le _[Google Master Plan](https://www.flickr.com/photos/jurvetson/21470089/sizes/o/)_ ? Et bien nous avons aussi le notre. C’est surtout un moyen pour rêver et imaginer… ce qui peut se révéler réalisable !
 
-![](http://67.media.tumblr.com/28e8d307e5e68720089afdbf4c9bf75e/tumblr_inline_nv6ov1L66X1t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/28e8d307e5e68720089afdbf4c9bf75e/tumblr_inline_nv6ov1L66X1t2p7ex_540.jpg)
 
 ## 3. Les drones
 
 Petits ou grands, on peut les trouver au sol, sur les bureaux, et même en au-dessus de nos têtes. Ils sont parfois décortiqués, mais nous veillons toujours à les bichonner.
 
-![](http://65.media.tumblr.com/072b72912397921f825ba4c74c1ebf9c/tumblr_inline_nvleacXxPM1t2p7ex_540.jpg)
+![](https://65.media.tumblr.com/072b72912397921f825ba4c74c1ebf9c/tumblr_inline_nvleacXxPM1t2p7ex_540.jpg)
 
 ## 4. La balle de grossesse
 

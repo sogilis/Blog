@@ -104,7 +104,7 @@ Aujourd’hui, quand je rencontre des porteurs de projets, ce qu’ils souhaite
 
 Ne soyons pas dupe : oui, il y a toujours besoin d’argent pour accroître son business, mais il existe des techniques pour optimiser le remplissage de la caisse, sans avoir à développer l’ensemble de son produit ou de son offre.
 
-![](http://67.media.tumblr.com/b7cbae29ae58bf1ff849326316ec8e50/tumblr_inline_nhpl6svsSS1t2p7ex.jpg)
+![](https://67.media.tumblr.com/b7cbae29ae58bf1ff849326316ec8e50/tumblr_inline_nhpl6svsSS1t2p7ex.jpg)
 [Photo : FryskLab](https://www.flickr.com/photos/83026924@N03/15978492030/)
 
 Aujourd’hui, on remplace aisément le _« business plan sur la comète »_ réalisé avec un joli tableur, par une feuille A4 ou A3 si on a de l’inspiration, en mode paysage, avec un certain nombre de cases à remplir et des post-it, que l’on appelle canvas. A-t-on réellement changé les choses ? Est-ce que les investisseurs vont se pencher sur votre cas avec ce changement de formalisme ? Est-ce que la nébuleuse Kickstarter va se jeter sur votre produit grâce à ce canvas ? Beaucoup de start-up y croient dur comme fer, certains organismes publics en sont même convaincus, c’est pour dire la révolution. Mais l’investisseur, le banquier, etc., sont-ils davantage rassurés sur la pertinence de votre offre, la validité de votre business et la rentabilité très très rapide de votre petite entreprise ? Inutile de vous donner la réponse…
@@ -121,7 +121,7 @@ Beaucoup de porteurs de projets sont convaincus de l’Utilité de leur produit
 
 Sauf que s’enfermer dans la stratégie de l’utile peut abattre des portes qui vous tendent les bras. Pour illustration, allez faire un tour sur Kickstarter ou sur les réseaux sociaux, vous y trouverez alors de nombreux projets qui au départ pouvaient avoir un côté utile, et qui se sont transformés en produits gadgets, non plus destinés au commun des mortels en quête de praticité, mais destinés aux _« early adopters »_.
 
-![](http://67.media.tumblr.com/0acfc074689f6682aafb1d8f54efa447/tumblr_inline_nhplxtiGW71t2p7ex.jpg)
+![](https://67.media.tumblr.com/0acfc074689f6682aafb1d8f54efa447/tumblr_inline_nhplxtiGW71t2p7ex.jpg)
 [Photo : Athenamama](https://www.flickr.com/photos/athenamama/479968460/in/photolist-JpXUh-7G6C7f-mzokDT-mzpz2F-r6naL-mzpYoG-4TV6EK-kf7SET-cmeS8W-efnNX-55uEqn-KhA7x-mKAEPc-qawVhh-4Xc5kF-qc4gRF-ee9Ua-mzqDZq-qT7DF-3ycmba-63k8m4-4vVEwC-88bV13-pVh1Vx-pep2qS-65BmEv-BHGEN-73RR8S-73MUdT-73MUfz-73RR9U-73RRdy-73MUcv-7JKRUu-bsyz5-bsyz6-731gwH-6pbVV6-cq2dD3-5kvsKf-piiEWk-7vuinq-3ycd3H-7z2hSs-prpY64-2LD5j4-qbmPKT-eEW9Tf-pVaGBw-8XJgRw)
 
 Cette stratégie est tout aussi excellente que la première, les _« early adopters »_ sont nombreux, prêts à mettre des centaines, voire des milliers d’€uros dans le dernier gadget à la mode, quitte à attendre 12 mois la production du soit disant _« dernier produit branché en avance sur les autres mais que je n’aurai que dans 12 mois »_. Oui, cette clientèle existe, et il ne faut surtout pas la négliger.

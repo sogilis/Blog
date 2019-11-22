@@ -392,4 +392,4 @@ Ha oui, un dernier rappel sur git avant de se quitter. Sogilis dispense toujours
 - [Git Internals : Chapitre 9 de Pro Git](http://git-scm.com/book/en/Git-Internals)
 - [rugged](https://github.com/libgit2/rugged)
 
-[1]: http://66.media.tumblr.com/7f18ea0122e2eaa803e1777183244874/tumblr_inline_n0vyhn1Kpy1sv6muh.png
+[1]: https://66.media.tumblr.com/7f18ea0122e2eaa803e1777183244874/tumblr_inline_n0vyhn1Kpy1sv6muh.png

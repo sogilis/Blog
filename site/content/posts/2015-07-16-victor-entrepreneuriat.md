@@ -95,7 +95,7 @@ tags:
 
 Le virus de l'entrepreneuriat l'a piqué lors de la première édition du Startup Weekend Grenoble. Depuis, il a enthousiasmé un bon nombre de clients, s'est creusé les méninges et a fortement contribué à la banane de l'équipe. Retour sur ces 2 bougies soufflées à Sogilis et mise en lumière de ses perspectives !
 
-![](http://67.media.tumblr.com/c916964cbc5a55a5dbc7c1e2b2c853df/tumblr_inline_nra2ayLG7i1t2p7ex_540.jpg)
+![](https://67.media.tumblr.com/c916964cbc5a55a5dbc7c1e2b2c853df/tumblr_inline_nra2ayLG7i1t2p7ex_540.jpg)
 
 **Victor, quels sont tes projets ?**
 
@@ -113,7 +113,7 @@ La confiance est un facteur nécessaire pour la réussite de toute entreprise. S
 
 Je me sens assez solide avec cette expérience de 2 ans pour me lancer. J'ai toujours considéré Sogilis comme une étape pour apprendre. Je considère que c'est une réussite, ces deux ans sont un véritable tremplin pour la suite.
 
-![](http://66.media.tumblr.com/980e35dbf085d418300d8a5e04649c27/tumblr_inline_nra27s2Yig1t2p7ex_540.jpg)
+![](https://66.media.tumblr.com/980e35dbf085d418300d8a5e04649c27/tumblr_inline_nra27s2Yig1t2p7ex_540.jpg)
 
 **Quel est ton souvenir le plus parlant à Sogilis ?**
 
@@ -123,7 +123,7 @@ Plus sérieusement, un de mes plus beaux souvenirs est une semaine de télétrav
 
 Enfin, parmi les faits marquants, j'ai instauré le mini golf, le premier bureau debout et la balle de grossesse au sein des locaux.
 
-![](http://66.media.tumblr.com/e0a7cff1738079e36821d65ad947fee3/tumblr_inline_nriypwskT41t2p7ex_540.jpg)
+![](https://66.media.tumblr.com/e0a7cff1738079e36821d65ad947fee3/tumblr_inline_nriypwskT41t2p7ex_540.jpg)
 
 **Qu'est-ce qu'on peut te souhaiter ?**
 

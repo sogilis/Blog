@@ -96,7 +96,7 @@ Des salariés qui gèrent leur travail comme ils le veulent, des équipes sans s
 
 ## Et si l’on prenait du plaisir au travail ?
 
-![Plaisir au travail](http://65.media.tumblr.com/8717f94c566c3a1906647968bb9daea9/tumblr_inline_n20v6dcJf11szbtlw.gif)
+![Plaisir au travail](https://65.media.tumblr.com/8717f94c566c3a1906647968bb9daea9/tumblr_inline_n20v6dcJf11szbtlw.gif)
 
 Les employés doivent répondre à trois missions uniquement :
 

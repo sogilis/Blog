@@ -93,7 +93,7 @@ tags:
   - Numérique
 ---
 
-![French Tech](http://66.media.tumblr.com/356810eecd7a71b14fc0b615c9f694a4/tumblr_inline_n2mm1gaLIo1szbtlw.png)
+![French Tech](https://66.media.tumblr.com/356810eecd7a71b14fc0b615c9f694a4/tumblr_inline_n2mm1gaLIo1szbtlw.png)
 
 Grenoble est candidate au label “Metropole French Tech” sous la signature [Digital Grenoble](http://digital-grenoble.com/). Le label sera attribué à quelques collectivités particulièrement actives dans le numérique, et notamment au niveau international. Ensemble, elles formeront la [French Tech](http://www.lafrenchtech.com).
 
