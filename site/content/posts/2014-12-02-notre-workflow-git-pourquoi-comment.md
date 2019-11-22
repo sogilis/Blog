@@ -90,7 +90,7 @@ tags:
   - workflow
 
 ---
-Depuis l'avènement d'outils de gestion de code source de bonne qualité [(Git](http://git-scm.com/) et [mercurial](http://mercurial.selenic.com/) principalement) et surtout qui ne vous brident — presque — plus, vous pouvez enfin laisser libre court à votre imagination concernant votre flux de travail. Branches, rebase, merge…. Oui mais pour que le tout reste utilisable, surtout lorsque vous travaillez à plusieurs, il convient de régir tout ceci mais aussi de tenter de le conformer le plus possible à vos contraintes réelles — développement, production, tests…. Bref, il convient de définir un flux de travail — un _workflow_.
+Depuis l'avènement d'outils de gestion de code source de bonne qualité ([Git](http://git-scm.com/) et [mercurial](http://mercurial.selenic.com/) principalement) et surtout qui ne vous brident — presque — plus, vous pouvez enfin laisser libre court à votre imagination concernant votre flux de travail. Branches, rebase, merge…. Oui mais pour que le tout reste utilisable, surtout lorsque vous travaillez à plusieurs, il convient de régir tout ceci mais aussi de tenter de le conformer le plus possible à vos contraintes réelles — développement, production, tests…. Bref, il convient de définir un flux de travail — un _workflow_.
 
 ![](/img/2014/12/tumblr_inline_nflo1khSyE1sv6muh.png)
 
