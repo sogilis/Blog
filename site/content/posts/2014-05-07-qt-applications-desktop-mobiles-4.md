@@ -2,7 +2,7 @@
 title: Qt pour des applications desktop et mobiles simplement (4/7)
 author: Yves
 date: 2014-05-07T08:26:00+00:00
-featured_image: /img/2014/08/Sogilis-Christophe-Levet-Photographe-7517.jpg
+image: /img/2014/08/Sogilis-Christophe-Levet-Photographe-7517.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

@@ -2,7 +2,7 @@
 title: Tous responsables = personne responsable ?
 author: Sogilis
 date: 2018-06-26T14:20:00+00:00
-featured_image: /img/2018/06/affiches_roles.jpg
+image: /img/2018/06/affiches_roles.jpg
 categories:
   - LA VIE À SOGILIS
 tags:

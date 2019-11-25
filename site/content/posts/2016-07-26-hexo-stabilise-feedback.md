@@ -2,7 +2,7 @@
 title: "Hexo+: Stabilise feedback (part #4)"
 author: Laurie
 date: 2016-07-26T09:30:32+00:00
-featured_image: /wp-content/uploads/2016/07/xavproto_1-min-BW-min.jpg
+image: /wp-content/uploads/2016/07/xavproto_1-min-BW-min.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

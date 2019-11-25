@@ -2,7 +2,7 @@
 title: Lecture d’un fichier Google Sheet en Ruby avec OAuth2
 author: Sogilis
 date: 2015-03-24T12:54:22+00:00
-featured_image: /wp-content/uploads/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
+image: /wp-content/uploads/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

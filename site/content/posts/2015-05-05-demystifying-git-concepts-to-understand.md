@@ -2,7 +2,7 @@
 title: "Demystifying Git: 3 Concepts to Understand the Git Model"
 author: Simon Denier
 date: 2015-05-05T13:44:00+00:00
-featured_image: /wp-content/uploads/2016/04/Sogilis-Christophe-Levet-Photographe-7898.jpg
+image: /wp-content/uploads/2016/04/Sogilis-Christophe-Levet-Photographe-7898.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

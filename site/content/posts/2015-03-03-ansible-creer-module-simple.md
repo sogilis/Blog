@@ -2,7 +2,7 @@
 title: "Ansible partie 2 : Créer un module simple pour installer des projets Go"
 author: Sogilis
 date: 2015-03-03T12:26:06+00:00
-featured_image: /wp-content/uploads/2016/04/2.Developpement-e1460448074336.jpg
+image: /wp-content/uploads/2016/04/2.Developpement-e1460448074336.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

@@ -2,7 +2,7 @@
 title: "Ansible partie 3 : Les rôles"
 author: Sogilis
 date: 2015-03-10T13:03:36+00:00
-featured_image: /wp-content/uploads/2015/03/Sogilis-Christophe-Levet-Photographe-7503.jpg
+image: /wp-content/uploads/2015/03/Sogilis-Christophe-Levet-Photographe-7503.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

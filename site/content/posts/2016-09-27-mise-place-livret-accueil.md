@@ -2,7 +2,7 @@
 title: "La mise en place du livret d'accueil"
 author: Myriam
 date: 2016-09-27T07:00:22+00:00
-featured_image: /wp-content/uploads/2015/12/Sogilis-Christophe-Levet-Photographe-7811.jpg
+image: /wp-content/uploads/2015/12/Sogilis-Christophe-Levet-Photographe-7811.jpg
 categories:
   - LA VIE À SOGILIS
 tags:

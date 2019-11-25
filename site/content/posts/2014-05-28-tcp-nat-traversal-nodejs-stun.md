@@ -2,7 +2,7 @@
 title: How To TCP NAT Traversal using Node.js and a STUN Server
 author: Shanti
 date: 2014-05-28T07:57:00+00:00
-featured_image: /wp-content/uploads/2016/04/2.Produits.jpg
+image: /wp-content/uploads/2016/04/2.Produits.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

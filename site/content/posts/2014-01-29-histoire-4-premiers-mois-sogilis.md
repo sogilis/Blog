@@ -2,7 +2,7 @@
 title: Histoire de mes 4 premiers mois chez Sogilis
 author: Luc
 date: 2014-01-29T05:59:00+00:00
-featured_image: /img/2014/01/Sogilis-Christophe-Levet-Photographe-7914.jpg
+image: /img/2014/01/Sogilis-Christophe-Levet-Photographe-7914.jpg
 categories:
   - LA VIE À SOGILIS
 tags:

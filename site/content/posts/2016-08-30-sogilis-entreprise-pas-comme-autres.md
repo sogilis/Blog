@@ -2,7 +2,7 @@
 title: Sogilis, une entreprise pas comme les autres
 author: Luc
 date: 2016-08-30T12:00:26+00:00
-featured_image: /wp-content/uploads/2015/11/Luc.jpg
+image: /wp-content/uploads/2015/11/Luc.jpg
 categories:
   - LA VIE À SOGILIS
 tags:

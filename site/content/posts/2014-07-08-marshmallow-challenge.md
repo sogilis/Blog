@@ -2,7 +2,7 @@
 title: Marshmallow challenge – Build a tower, build a team
 author: Luc Jeanniard
 date: 2014-07-08T07:25:00+00:00
-featured_image: /wp-content/uploads/2016/04/1.Produits.jpg
+image: /wp-content/uploads/2016/04/1.Produits.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

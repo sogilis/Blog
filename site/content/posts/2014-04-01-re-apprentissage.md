@@ -2,7 +2,7 @@
 title: Le Re-Apprentissage
 author: Valentin
 date: 2014-04-01T07:26:00+00:00
-featured_image: /img/2016/04/0.Haut_page.jpg
+image: /img/2016/04/0.Haut_page.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
