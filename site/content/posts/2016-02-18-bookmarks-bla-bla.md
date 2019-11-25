@@ -2,7 +2,7 @@
 title: De tout, de rien, des bookmarks, du bla bla
 author: Yves Brissaud
 date: 2016-02-18T13:49:31+00:00
-featured_image: /wp-content/uploads/2016/04/1.Formations.jpg
+image: /wp-content/uploads/2016/04/1.Formations.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

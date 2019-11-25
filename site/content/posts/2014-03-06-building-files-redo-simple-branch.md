@@ -2,7 +2,7 @@
 title: "Building files: redo, the simple branch"
 author: Shanti
 date: 2014-03-06T09:04:00+00:00
-featured_image: /img/2016/04/2.La-vie-a-Sogilis.jpg
+image: /img/2016/04/2.La-vie-a-Sogilis.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

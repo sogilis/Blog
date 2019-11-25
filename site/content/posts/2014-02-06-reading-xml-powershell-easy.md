@@ -2,7 +2,7 @@
 title: Reading xml from PowerShell is really easy!
 author: Luc
 date: 2014-02-06T08:07:00+00:00
-featured_image: /img/2016/04/2.La-vie-a-Sogilis.jpg
+image: /img/2016/04/2.La-vie-a-Sogilis.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

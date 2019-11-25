@@ -2,7 +2,7 @@
 title: "User testing and decision-making (part #3)"
 author: Laurie
 date: 2016-07-13T10:19:55+00:00
-featured_image: /wp-content/uploads/2016/07/CameraFollowBlack.jpg
+image: /wp-content/uploads/2016/07/CameraFollowBlack.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

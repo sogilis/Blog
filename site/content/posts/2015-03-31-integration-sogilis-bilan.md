@@ -2,7 +2,7 @@
 title: "Mon intégration au sein de Sogilis : bilan après un mois"
 author: Jérémy
 date: 2015-03-31T12:11:33+00:00
-featured_image: /wp-content/uploads/2015/03/Jérémy-1.jpg
+image: /wp-content/uploads/2015/03/Jérémy-1.jpg
 categories:
   - NOTRE VISION
 tags:

@@ -2,7 +2,7 @@
 title: "Designing Hexo+ Mobile App (part #1)"
 author: Laurie
 date: 2016-06-28T13:39:43+00:00
-featured_image: /wp-content/uploads/2016/06/Hexo-NB.jpg
+image: /wp-content/uploads/2016/06/Hexo-NB.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

@@ -2,7 +2,7 @@
 title: "Demystifying Git: 3 Concepts to Do Everything with Git"
 author: Simon Denier
 date: 2015-05-12T13:05:31+00:00
-featured_image: /wp-content/uploads/2016/05/Sogilis-Christophe-Levet-Photographe-8824-e1462795824232.jpg
+image: /wp-content/uploads/2016/05/Sogilis-Christophe-Levet-Photographe-8824-e1462795824232.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

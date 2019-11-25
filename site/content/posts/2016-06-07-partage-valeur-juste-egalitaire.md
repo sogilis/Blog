@@ -2,7 +2,7 @@
 title: "Partage de la valeur : l’équilibre entre juste et égalitaire"
 author: Christophe Baillon
 date: 2016-06-07T08:42:41+00:00
-featured_image: /wp-content/uploads/2016/06/Moneymoneymoney.jpg
+image: /wp-content/uploads/2016/06/Moneymoneymoney.jpg
 categories:
   - NOTRE VISION
 tags:

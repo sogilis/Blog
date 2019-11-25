@@ -2,7 +2,7 @@
 title: "Casino Game : Un serious game pour Innover"
 author: Arnaud BENISTANT
 date: 2017-07-11T08:37:13+00:00
-featured_image: /wp-content/uploads/2017/07/Be-Ready-CasinoGame.jpg
+image: /wp-content/uploads/2017/07/Be-Ready-CasinoGame.jpg
 categories:
   - NOTRE VISION
 tags:

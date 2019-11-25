@@ -2,7 +2,7 @@
 title: Une vision du business, ou comment éviter de se prendre le mur !
 author: Xavier Spengler
 date: 2015-01-15T13:10:00+00:00
-featured_image: /wp-content/uploads/2016/04/3.CS_BUSINESS_BasPage.jpg
+image: /wp-content/uploads/2016/04/3.CS_BUSINESS_BasPage.jpg
 categories:
   - NOTRE VISION
 tags:
