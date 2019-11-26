@@ -2401,7 +2401,9 @@ textarea:focus{
 			margin-bottom: 50px;
 
 			img{
+                height: 100%;
 				width: 100%;
+                object-fit: cover;
 				-webkit-transition: all 0.8s;
 				-moz-transition: all 0.8s;
 				-o-transition: all 0.8s;
