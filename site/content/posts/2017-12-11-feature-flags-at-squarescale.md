@@ -4,7 +4,7 @@ author: Adrien
 date: 2017-12-11T15:20:42+00:00
 draft: true
 private: true
-image: /wp-content/uploads/2017/12/flipper.png
+image: /img/2017/12/flipper.png
 categories:
   - DÉVELOPPEMENT
 tags:

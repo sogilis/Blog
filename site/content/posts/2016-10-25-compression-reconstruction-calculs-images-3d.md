@@ -2,7 +2,7 @@
 title: "Compression, reconstruction d'images et calculs au-delà de la troisième dimension"
 author: Alexandre Dumont
 date: 2016-10-25T08:00:22+00:00
-image: /wp-content/uploads/2015/10/Sogilis-Christophe-Levet-Photographe-7461.jpg
+image: /img/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

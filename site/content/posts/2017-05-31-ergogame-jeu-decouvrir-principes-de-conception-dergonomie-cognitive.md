@@ -2,7 +2,7 @@
 title: "Les Ergogames : découvrir les principes de conception d'ergonomie cognitive en jouant"
 author: Marion et Margaux
 date: 2017-05-31T15:30:46+00:00
-image: /wp-content/uploads/2017/05/ergogame.jpeg
+image: /img/2017/05/ergogame.jpeg
 categories:
   - ERGONOMIE
   - LA VIE À SOGILIS

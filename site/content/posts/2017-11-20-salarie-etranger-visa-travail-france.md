@@ -2,7 +2,7 @@
 title: "Recruter un salarié étranger pour travailler en France : Le visa, ce parcours du combattant ?!"
 author: Tiphaine Guittat
 date: 2017-11-20T15:20:54+00:00
-image: /wp-content/uploads/2017/11/ofii-min.jpg
+image: /img/2017/11/ofii-min.jpg
 categories:
   - LA VIE À SOGILIS
 tags:

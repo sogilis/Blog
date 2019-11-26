@@ -2,7 +2,7 @@
 title: "Vidéos : Sogilis, vu par ses salariés"
 author: Tiphaine
 date: 2014-05-22T07:33:00+00:00
-image: /wp-content/uploads/2014/05/Sogilis-Christophe-Levet-Photographe-8389.jpg
+image: /img/2014/05/Sogilis-Christophe-Levet-Photographe-8389.jpg
 categories:
   - NOTRE VISION
 tags:

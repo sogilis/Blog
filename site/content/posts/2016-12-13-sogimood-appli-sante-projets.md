@@ -2,7 +2,7 @@
 title: "SogiMood : l’appli qui surveille la santé de l'ensemble de nos projets"
 author: Marien Fressinaud
 date: 2016-12-13T10:15:45+00:00
-image: /wp-content/uploads/2016/05/Sogilis-Christophe-Levet-Photographe-8218.jpg
+image: /img/2016/05/Sogilis-Christophe-Levet-Photographe-8218.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

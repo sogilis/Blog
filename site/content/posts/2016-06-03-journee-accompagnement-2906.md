@@ -2,7 +2,7 @@
 title: Profitez d’½ journée d’accompagnement Business Model Design
 author: Tiphaine
 date: 2016-06-03T09:00:28+00:00
-image: /wp-content/uploads/2015/02/storymap.jpg
+image: /img/2015/02/storymap.jpg
 categories:
   - NOTRE VISION
 tags:
