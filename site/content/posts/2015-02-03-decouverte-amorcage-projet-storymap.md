@@ -2,7 +2,7 @@
 title: "Découverte et amorçage de projet : le problème avec les story maps"
 author: Simon Denier
 date: 2015-02-03T14:32:00+00:00
-image: /wp-content/uploads/2015/02/Jérémy2.jpg
+image: /img/2015/02/Jérémy2.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

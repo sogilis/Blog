@@ -2,7 +2,7 @@
 title: Un témoignage de notre équipe pour clôturer l’année
 author: Tiphaine
 date: 2014-12-30T13:37:25+00:00
-image: /wp-content/uploads/2016/04/1.Design.jpg
+image: /img/2016/04/1.Design.jpg
 categories:
   - NOTRE VISION
 tags:

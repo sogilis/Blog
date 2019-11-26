@@ -2,7 +2,7 @@
 title: "The Distributed Reactive Loop: Handling Resiliency with a Simple Thought Framework"
 author: Simon Denier
 date: 2018-03-01T09:21:28+00:00
-image: /wp-content/uploads/2018/02/full_fsm.png
+image: /img/2018/02/full_fsm.png
 categories:
   - DÉVELOPPEMENT
   - Web

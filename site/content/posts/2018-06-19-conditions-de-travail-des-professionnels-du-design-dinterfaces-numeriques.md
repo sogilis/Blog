@@ -2,7 +2,7 @@
 title: "Conditions de travail des professionnels du design d'interfaces numériques travaillant pour les clients externes"
 author: Sogilis
 date: 2018-06-19T15:33:22+00:00
-image: /wp-content/uploads/2018/06/banière_questionnaire.png
+image: /img/2018/06/banière_questionnaire.png
 categories:
   - DESIGN
   - ERGONOMIE

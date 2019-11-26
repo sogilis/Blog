@@ -2,7 +2,7 @@
 title: "SSII : Attends chérie… C’est pas c’que tu crois !"
 author: Jérémy et Corentin
 date: 2016-02-08T16:12:25+00:00
-image: /wp-content/uploads/2016/04/2.On-simplique.jpg
+image: /img/2016/04/2.On-simplique.jpg
 categories:
   - NOTRE VISION
 tags:

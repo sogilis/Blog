@@ -2,7 +2,7 @@
 title: "Du prototypage rapide à l’industrialisation d'un logiciel : le bilan de 3DKreaForm"
 author: Tiphaine
 date: 2014-11-25T15:01:00+00:00
-image: /wp-content/uploads/2016/04/1.Notre-vision.jpg
+image: /img/2016/04/1.Notre-vision.jpg
 categories:
   - NOTRE VISION
   - TÉMOIGNAGES CLIENTS

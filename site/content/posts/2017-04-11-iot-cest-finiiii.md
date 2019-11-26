@@ -2,7 +2,7 @@
 title: "IoT, c’est finiiii : Retour sur le #SiDO2017 vu par Sogilis"
 author: Tiphaine
 date: 2017-04-11T16:10:06+00:00
-image: /wp-content/uploads/2017/04/SiDO-et-industrie-du-futur.jpg
+image: /img/2017/04/SiDO-et-industrie-du-futur.jpg
 categories:
   - NOTRE VISION
 tags:

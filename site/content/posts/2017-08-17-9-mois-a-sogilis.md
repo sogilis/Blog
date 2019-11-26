@@ -2,7 +2,7 @@
 title: "9 mois à Sogilis : bilan d'une salariée"
 author: Margaux
 date: 2017-08-17T11:45:28+00:00
-image: /wp-content/uploads/2017/08/margaux-au-bureau.jpg
+image: /img/2017/08/margaux-au-bureau.jpg
 categories:
   - LA VIE À SOGILIS
 tags:
