@@ -1,7 +1,7 @@
 {{ define "main" }}
     <div class="container blog_index">
         <div class="row">
-            {{ range .Site.RegularPages.ByDate }}
+            {{ range (.Site.RegularPages.ByDate).Reverse }}
                 {{ .Render "summary" }}
             {{ end }}
         </div>
