@@ -2,7 +2,7 @@
 title: "Les objets insolites au sein de Sogilis #1"
 author: Sogilis
 date: 2016-08-16T13:51:08+00:00
-featured_image: /wp-content/uploads/2015/09/SogiPeluche.jpg
+image: /img/2015/09/SogiPeluche.jpg
 categories:
   - LA VIE À SOGILIS
 tags:

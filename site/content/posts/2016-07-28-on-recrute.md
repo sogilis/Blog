@@ -2,7 +2,7 @@
 title: On recrute !
 author: Tiphaine
 date: 2016-07-28T10:37:41+00:00
-featured_image: /wp-content/uploads/2016/07/Sogilis-Christophe-Levet-Photographe-7971.jpg
+image: /img/2016/07/Sogilis-Christophe-Levet-Photographe-7971.jpg
 categories:
   - LA VIE À SOGILIS
 tags:

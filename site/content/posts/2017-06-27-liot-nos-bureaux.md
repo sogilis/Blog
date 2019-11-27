@@ -3,7 +3,7 @@ title: Expérimentation de l’IOT dans les bureaux Sogilis
 author: Tiphaine
 date: -001-11-30T00:00:00+00:00
 draft: true
-featured_image: /wp-content/uploads/2017/06/node_closed.jpg
+image: /img/2017/06/node_closed.jpg
 categories:
   - Non classé
 

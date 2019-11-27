@@ -2,7 +2,7 @@
 title: "pure.js: template engine without markup"
 author: Shanti
 date: 2016-04-05T09:49:45+00:00
-featured_image: /wp-content/uploads/2016/04/1.Produits.jpg
+image: /img/2016/04/1.Produits.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

@@ -2,7 +2,7 @@
 title: "[Matinales techniques] PME du numérique : (re) découvrez les bonnes pratiques pour sécuriser votre mise en production logicielle le 26 juin"
 author: Tiphaine
 date: 2018-06-05T14:35:58+00:00
-featured_image: /wp-content/uploads/2018/06/illustration-prod.jpg
+image: /img/2018/06/illustration-prod.jpg
 categories:
   - NOTRE VISION
 tags:

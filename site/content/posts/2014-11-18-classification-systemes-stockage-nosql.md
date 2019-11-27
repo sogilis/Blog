@@ -2,7 +2,7 @@
 title: Classification des systèmes de stockage NoSQL
 author: Alexandre
 date: 2014-11-18T14:03:33+00:00
-featured_image: /wp-content/uploads/2014/11/Sogilis-Christophe-Levet-Photographe-8877.jpg
+image: /img/2014/11/Sogilis-Christophe-Levet-Photographe-8877.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

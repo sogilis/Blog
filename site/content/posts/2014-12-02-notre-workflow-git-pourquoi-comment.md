@@ -2,7 +2,7 @@
 title: Notre workflow Git, pourquoi, comment
 author: Yves Brissaud
 date: 2014-12-02T09:03:45+00:00
-featured_image: /wp-content/uploads/2016/04/1.Produits.jpg
+image: /img/2016/04/1.Produits.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

@@ -2,7 +2,7 @@
 title: "Designing Hexo+ Mobile App: Design Sprints (part #2)"
 author: Laurie
 date: 2016-07-05T15:06:09+00:00
-featured_image: /wp-content/uploads/2016/06/Hexo-article-1.jpg
+image: /img/2016/06/Hexo-article-1.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

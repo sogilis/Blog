@@ -2,7 +2,7 @@
 title: "Découverte et amorçage de projet : planifier des capacités et des risques"
 author: Simon Denier
 date: 2015-02-10T15:21:00+00:00
-featured_image: /wp-content/uploads/2015/02/storymap.jpg
+image: /img/2015/02/storymap.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

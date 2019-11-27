@@ -2,7 +2,7 @@
 title: SonarQube for Android Projects
 author: Jean-Baptiste
 date: 2017-01-24T09:26:44+00:00
-featured_image: /wp-content/uploads/2016/04/2.Notre-vision.jpg
+image: /img/2016/04/2.Notre-vision.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

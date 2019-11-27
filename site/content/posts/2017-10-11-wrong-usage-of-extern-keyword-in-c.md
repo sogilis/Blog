@@ -2,7 +2,7 @@
 title: "Compiling & Dangerous : wrong usage of extern keyword in C"
 author: Victor Lambret
 date: 2017-10-11T13:27:23+00:00
-featured_image: /wp-content/uploads/2017/10/first_image.png
+image: /img/2017/10/first_image.png
 categories:
   - DÉVELOPPEMENT
 

@@ -2,7 +2,7 @@
 title: The Future of the Web in Peer to Peer
 author: Sogilis
 date: 2014-09-05T12:26:00+00:00
-featured_image: /wp-content/uploads/2016/04/2.Produits.jpg
+image: /img/2016/04/2.Produits.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

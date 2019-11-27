@@ -2,7 +2,7 @@
 title: Joyeux Noël !
 author: Tiphaine
 date: 2014-12-24T14:13:36+00:00
-featured_image: /wp-content/uploads/2016/04/5.png
+image: /img/2016/04/5.png
 categories:
   - LA VIE À SOGILIS
 tags:

@@ -2,7 +2,7 @@
 title: Les méthodes agiles au service de la gestion d’entreprise
 author: Sogilis
 date: 2018-06-12T08:11:26+00:00
-featured_image: /wp-content/uploads/2018/06/Recompense-pommes.png
+image: /img/2018/06/Recompense-pommes.png
 categories:
   - LA VIE À SOGILIS
 tags:

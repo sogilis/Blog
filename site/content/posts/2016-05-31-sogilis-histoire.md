@@ -2,7 +2,7 @@
 title: "Sogilis : notre histoire"
 author: Myriam, avec l'aide de l'équipe
 date: 2016-05-31T14:36:55+00:00
-featured_image: /wp-content/uploads/2016/04/0.Haut_page.png
+image: /img/2016/04/0.Haut_page.png
 categories:
   - NOTRE VISION
 tags:

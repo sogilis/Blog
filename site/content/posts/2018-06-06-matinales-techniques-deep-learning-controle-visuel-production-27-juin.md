@@ -2,7 +2,7 @@
 title: "[Matinales techniques] Le deep learning au service du contrôle visuel en production : découverte des cas d'usages et démonstration le 27 juin"
 author: Tiphaine
 date: 2018-06-06T10:26:26+00:00
-featured_image: /wp-content/uploads/2018/06/CNN.jpg
+image: /img/2018/06/CNN.jpg
 categories:
   - NOTRE VISION
 tags:

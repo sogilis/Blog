@@ -2,7 +2,7 @@
 title: Expérimentation LLVM
 author: Shanti
 date: 2014-02-20T10:01:00+00:00
-featured_image: /img/2016/04/2.Developpement-1.jpg
+image: /img/2016/04/2.Developpement-1.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

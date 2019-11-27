@@ -2,7 +2,7 @@
 title: Single Responsibility Principle dans mon code
 author: Jean-Baptiste
 date: 2016-09-06T07:00:21+00:00
-featured_image: /wp-content/uploads/2016/02/Sogilis-Christophe-Levet-Photographe-7803.jpg
+image: /img/2016/02/Sogilis-Christophe-Levet-Photographe-7803.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

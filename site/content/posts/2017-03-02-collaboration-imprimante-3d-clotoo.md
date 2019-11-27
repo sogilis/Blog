@@ -2,7 +2,7 @@
 title: "Retour d’expérience : collaboration autour de l’imprimante 3D de Clotoo, « la manufacture particulière »"
 author: Tiphaine
 date: 2017-03-02T09:46:27+00:00
-featured_image: /wp-content/uploads/2017/03/article_clotoo3.jpg
+image: /img/2017/03/article_clotoo3.jpg
 categories:
   - NOTRE VISION
   - TÉMOIGNAGES CLIENTS

@@ -2,7 +2,7 @@
 title: "Inline Comments: the Stuff that Pull Requests Are Made of"
 author: Simon Denier
 date: 2017-02-07T15:49:06+00:00
-featured_image: /wp-content/uploads/2017/02/Matching_columns-2.png
+image: /img/2017/02/Matching_columns-2.png
 categories:
   - DÉVELOPPEMENT
 tags:
