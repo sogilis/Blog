@@ -1,5 +1,7 @@
 baseurl = "/"
 languageCode = "fr"
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = true
 title = "Sogilis blog Site"
 theme = "sogilis"
 enableEmoji = true
@@ -8,10 +10,16 @@ debug = true
 [params]
   disqus = "trololu"
 
-[blackfriday]
-  taskLists = true
-  smartypants = true
-  angledQuotes = true
-  fencedCode = true
-  extensions = ["tables"]
-  plainIDAnchors = true
+[languages.en]
+  languageName = "English"
+
+  [languages.en.params]
+    twitter = "https://twitter.com/Sogilis?lang=en"
+    linkedin = "https://www.linkedin.com/company/sogilis/"
+
+[languages.fr]
+  languageName = "Français"
+
+  [languages.fr.params]
+    twitter = "https://twitter.com/Sogilis?lang=fr"
+    linkedin = "https://www.linkedin.com/company/sogilis/"

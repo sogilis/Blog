@@ -6,3 +6,42 @@ other = "le"
 
 [publishdate]
 other = "{{ .PublishDate.Day }} {{ index $.Site.Data.months_fr (printf \"%d\" .PublishDate.Month) }} {{ .PublishDate.Year }}"
+
+[services]
+other = "Services"
+
+[cloudNativeApplications]
+other = "Applications Cloud Natives"
+
+[embeddedSoftwares]
+other = "Logiciels Embarqués & IoT"
+
+[criticalSoftwares]
+other = "Logiciels Critiques"
+
+[theCompany]
+other = "L'Entreprise"
+
+[ourVision]
+other = "Notre Vision"
+
+[contact]
+other = "Contact"
+
+[jobs]
+other = "Emplois"
+
+[blog]
+other = "Blog"
+
+[contactUs]
+other = "Contactez nous"
+
+[readMore]
+other = "Lire la suite"
+
+[LegalInfo]
+other = "Mentions Légales"
+
+[allRightsReserved]
+other = "Sogilis - Tous Droits Réservés - 2019"
