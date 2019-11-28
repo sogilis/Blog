@@ -1,11 +1,8 @@
 [writtenBy]
 other = "Written by"
 
-[on]
-other = "on"
-
 [publishdate]
-other = "{{ .PublishDate.Format \"January 2, 2006\" }}"
+other = "Published on {{ .PublishDate.Format \"January 2, 2006\" }}"
 
 [services]
 other = "Services"

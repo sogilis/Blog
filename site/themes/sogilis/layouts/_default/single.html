@@ -15,11 +15,15 @@
                 <h1>{{ .Title }}</h1>
                 <p>
                     {{ i18n "writtenBy" }}
-                    {{- if .Params.Author }}
-                        {{ .Params.Author }}
+                    {{- with .Params.Author }}
+                        {{ . }}
                     {{- else }}
                         {{ .Site.Params.Author }}
                     {{- end }}
+                    <br />
+                    <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">
+                        {{ i18n "publishdate" . }}
+                    </time>
                 </p>
             </div>
         </div>
