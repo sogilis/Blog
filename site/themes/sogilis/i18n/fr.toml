@@ -5,7 +5,7 @@ other = "Écrit par"
 other = "le"
 
 [publishdate]
-other = "{{ .PublishDate.Day }} {{ index $.Site.Data.months_fr (printf \"%d\" .PublishDate.Month) }} {{ .PublishDate.Year }}"
+other = "{{ .Date.Day }} {{ index $.Site.Data.mois (printf \"%d\" .Date.Month) }} {{ .Date.Year }}"
 
 [services]
 other = "Services"

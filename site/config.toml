@@ -26,4 +26,3 @@ paginate = 999
   [languages.fr.params]
     twitter = "https://twitter.com/Sogilis?lang=fr"
     linkedin = "https://www.linkedin.com/company/sogilis/"
-    dateFormat = "2 January 2006"

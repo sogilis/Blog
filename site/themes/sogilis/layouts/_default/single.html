@@ -23,7 +23,7 @@
                     <br />
                     {{- with .PublishDate }}
                         {{ i18n "on" }}
-                        {{ .Format $.Site.Params.dateFormat }}
+                        {{ .Day }} {{ index $.Site.Data.mois (printf "%d" .Month) }} {{ .Year }}
                     {{- end }}
 
                 </p>
