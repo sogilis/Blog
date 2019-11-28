@@ -12,7 +12,6 @@ paginate = 999
   disqus = "trololu"
 
 [languages.en]
-  baseURL = "https://blog.sogilis.com"
   languageName = "English"
 
   [languages.en.params]
@@ -22,7 +21,6 @@ paginate = 999
 
 
 [languages.fr]
-  baseURL = "https://blog.sogilis.fr"
   languageName = "Français"
 
   [languages.fr.params]
