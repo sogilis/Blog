@@ -8,7 +8,7 @@
                 {{ with .Params.image }}
                     <img src="{{ . | relURL }}">
                 {{ else }}
-                    <img src="{{ "images/img_blog.jpg" | relURL }}">
+                    <img src="{{ "images/blog_preview_default.jpg" | relURL }}">
                 {{ end }}
             </div>
             <div class="col-11 offset-2 col-sm-6 offset-sm-0 col-md-5 col-lg-4 article_title">
@@ -34,7 +34,7 @@
         {{ with .Params.image }}
             <img src="{{ . | relURL }}">
         {{ else }}
-            <img src="{{ "images/img_blog.jpg" | relURL }}">
+            <img src="{{ "images/blog_preview_default.jpg" | relURL }}">
         {{ end }}
     </div>
 </main>
