@@ -7,9 +7,7 @@ theme = "sogilis"
 enableEmoji = true
 debug = true
 paginate = 999
-
-[params]
-  disqus = "trololu"
+disqusShortname = "sogilisblog"
 
 [languages.en]
   languageName = "English"

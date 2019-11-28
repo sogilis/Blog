@@ -40,6 +40,10 @@
         {{ else }}
             <img src="{{ "images/blog_preview_default.jpg" | relURL }}">
         {{ end }}
+
+        <div class="comments">
+            {{ template "_internal/disqus.html" . }}
+        </div>
     </div>
 </main>
 {{ end }}
