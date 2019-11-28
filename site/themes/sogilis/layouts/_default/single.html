@@ -21,10 +21,11 @@
                         {{ .Site.Params.Author }}
                     {{- end }}
                     <br />
-                    {{- with .PublishDate }}
-                        {{ i18n "on" }}
-                        {{ .Day }} {{ index $.Site.Data.mois (printf "%d" .Month) }} {{ .Year }}
-                    {{- end }}
+                    <time class="post-date" datetime="{{ .PublishDate | safeHTML }}">
+                        {{ i18n "on" }} {{ i18n "publishdate" . }}
+                      </time>
+
+                  
 
                 </p>
             </div>

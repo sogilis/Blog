@@ -2,7 +2,7 @@
 other = "Écrit par"
 
 [on]
-other = "le"
+other = "publié le"
 
 [publishdate]
 other = "{{ .Date.Day }} {{ index $.Site.Data.mois (printf \"%d\" .Date.Month) }} {{ .Date.Year }}"
