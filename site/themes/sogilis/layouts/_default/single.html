@@ -15,11 +15,17 @@
                 <h1>{{ .Title }}</h1>
                 <p>
                     {{ i18n "writtenBy" }}
-                    {{- if .Params.Author }}
-                        {{ .Params.Author }}
+                    {{- with .Params.Author }}
+                        {{ . }}
                     {{- else }}
                         {{ .Site.Params.Author }}
                     {{- end }}
+                    <br />
+                    {{- with .PublishDate }}
+                        {{ i18n "on" }}
+                        {{ .Format $.Site.Params.dateFormat }}
+                    {{- end }}
+
                 </p>
             </div>
         </div>
