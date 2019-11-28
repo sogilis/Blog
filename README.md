@@ -3,8 +3,7 @@
 # Sogilis Blog
 
 Welcome to the open source Blog of Sogilis !
-For now, this blog is not live.
-Follow [Github project](https://github.com/orgs/sogilis/projects/3) to see what's remains to be done before live.
+Follow [Github project](https://github.com/orgs/sogilis/projects/3) to see what's remains to be done.
 
 ## Getting Started
 
