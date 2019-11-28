@@ -1,11 +1,8 @@
 [writtenBy]
 other = "Écrit par"
 
-[on]
-other = "publié le"
-
 [publishdate]
-other = "{{ .Date.Day }} {{ index $.Site.Data.mois (printf \"%d\" .Date.Month) }} {{ .Date.Year }}"
+other = "Publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf \"%d\" .Date.Month) }} {{ .Date.Year }}"
 
 [services]
 other = "Services"
