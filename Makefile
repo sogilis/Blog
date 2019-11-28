@@ -5,7 +5,9 @@ build:
 	docker build -t $(IMAGE_NAME) .
 
 start:
-	docker run -d -t -p 3000:3000 \
+	docker run -d -t \
+		-p 3000:3000 \
+		-p 3001:3001 \
 		--mount type=bind,src=$(CURDIR)/site,dst=/blog/site,consistency=cached \
 		--mount type=bind,src=$(CURDIR)/src,dst=/blog/src,consistency=cached \
 		--rm --name $(CONTAINER_NAME) $(IMAGE_NAME)

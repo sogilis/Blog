@@ -34,7 +34,9 @@ make build
 make start
 ```
 
-Wait a view seconds then, go to [http://localhost:3000](http://localhost:3000).
+Wait a view seconds then, go to:
+    - [http://localhost:3000](http://localhost:3000) for english version
+    - [http://localhost:3001](http://localhost:3001) for french version
 
 ### How to write a new article?
 
