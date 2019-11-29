@@ -2,6 +2,7 @@
         <meta charset="utf-8" />
         <title>Sogilis | {{ .Title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ .Summary | default .Site.Params.SiteDescription }}">
 
         {{ $styles := dict "(min-width: 1200px)" "sass/sup1200.scss" "(min-width: 992px) and (max-width: 1199px)" "sass/992-1199.scss" "(min-width: 768px) and (max-width: 991px)" "sass/768-991.scss" "(min-width: 576px) and (max-width: 767px)" "sass/576-767.scss" "(max-width: 575px)" "sass/inf576.scss" }}
         {{ range $media_query, $sass_style := $styles }}
