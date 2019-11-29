@@ -2,9 +2,9 @@
     <div class="blog_index_article">
         <a href="{{ .Permalink }}">
             {{ with .Params.image }}
-                <img src="{{ . | relURL }}">
+                <img alt="Illustration de l'article" src="{{ . | relURL }}">
             {{ else }}
-                <img src="{{ "images/blog_preview_default.jpg" | relURL }}">
+                <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
             {{ end }}
             <h1 class="title_name">{{ .Title }}</h1>
             <p>{{ i18n "readMore" }}…</p>
