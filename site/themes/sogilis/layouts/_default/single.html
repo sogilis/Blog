@@ -6,9 +6,9 @@
         <div class="row header">
             <div class="col-12 offset-1 col-sm-6 offset-sm-0 col-md-6 col-lg-6">
                 {{ with .Params.image }}
-                    <img src="{{ . | relURL }}">
+                    <img alt="Illustration de l'article" src="{{ . | relURL }}">
                 {{ else }}
-                    <img src="{{ "images/blog_preview_default.jpg" | relURL }}">
+                    <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
                 {{ end }}
             </div>
             <div class="col-11 offset-2 col-sm-6 offset-sm-0 col-md-5 col-lg-4 article_title">
@@ -36,9 +36,9 @@
         </div>
 
         {{ with .Params.image }}
-            <img src="{{ . | relURL }}">
+            <img alt="Illustration de l'article" src="{{ . | relURL }}">
         {{ else }}
-            <img src="{{ "images/blog_preview_default.jpg" | relURL }}">
+            <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
         {{ end }}
 
         <div class="comments">

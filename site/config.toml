@@ -1,12 +1,16 @@
 baseurl = "/"
 languageCode = "fr"
 defaultContentLanguage = "fr"
-title = "Sogilis blog Site"
+title = "Blog Site"
 theme = "sogilis"
 enableEmoji = true
 debug = true
 paginate = 999
 disqusShortname = "sogilisblog"
+enableRobotsTXT = true
+
+[params]
+  siteDescription = "Série d'articles écrits par les membres de Sogilis décrivants la vie en entreprise ou des sujets techniques précis"
 
 [languages.fr]
   languageName = "Français"
