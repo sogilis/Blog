@@ -8,8 +8,8 @@ It is alive with following urls:
 - [https://blog.sogilis.com](https://blog.sogilis.com)
 - [https://blog.sogilis.com](https://blog.sogilis.fr)
 
-:info: For the moment, all is in french.
-:info: All articles regardless their languages are visible in all languages.
+:information_source: For the moment, all is in french.
+:information_source: All articles regardless their languages are visible in all languages.
 
 The backlog is available in [Github project](https://github.com/orgs/sogilis/projects/3).
 Additional information can be found in [Wiki](https://github.com/sogilis/Blog/wiki).
@@ -19,7 +19,7 @@ Additional information can be found in [Wiki](https://github.com/sogilis/Blog/wi
 ## Online
 
 1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in with your Google account.
-:info: All members of Sogilis team have access to this admin interface.
+:information_source: All members of Sogilis team have access to this admin interface.
 
 2. That's it. You now can now create/modify/review/delete/publish articles.
 
@@ -73,7 +73,7 @@ Wait a view seconds then, go to [http://localhost:3000](http://localhost:3000).
 ### Publish your article
 
 1. Create a new Pull Request to get feedbacks from other team members.
-:info: Netlify provides a preview environment. See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
+:information_source: Netlify provides a preview environment. See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
 
 5. Merge the Pull Request into `master` branch.
 
