@@ -1,22 +1,12 @@
 baseurl = "/"
 languageCode = "fr"
 defaultContentLanguage = "fr"
-defaultContentLanguageInSubdir = true
 title = "Sogilis blog Site"
 theme = "sogilis"
 enableEmoji = true
 debug = true
 paginate = 999
 disqusShortname = "sogilisblog"
-
-[languages.en]
-  languageName = "English"
-
-  [languages.en.params]
-    twitter = "https://twitter.com/Sogilis?lang=en"
-    linkedin = "https://www.linkedin.com/company/sogilis/"
-    dateFormat = "January 2 2006"
-
 
 [languages.fr]
   languageName = "Français"
