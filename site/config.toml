@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "fr"
 defaultContentLanguage = "fr"
-title = "Sogilis blog Site"
+title = "Blog Site"
 theme = "sogilis"
 enableEmoji = true
 debug = true
