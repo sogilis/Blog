@@ -3,32 +3,53 @@
 # Sogilis Blog
 
 Welcome to the open source Blog of Sogilis !
-Follow [Github project](https://github.com/orgs/sogilis/projects/3) to see what's remains to be done.
+It is alive with following urls:
 
-## Getting Started
+- [https://blog.sogilis.com](https://blog.sogilis.com)
+- [https://blog.sogilis.com](https://blog.sogilis.fr)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+:info: For the moment, all is in french.
+:info: All articles regardless their languages are visible in all languages.
+
+The backlog is available in [Github project](https://github.com/orgs/sogilis/projects/3).
+Additional information can be found in [Wiki](https://github.com/sogilis/Blog/wiki).
+
+# How to write a new article?
+
+## Online
+
+1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in with your Google account.
+:info: All members of Sogilis team have access to this admin interface.
+
+2. That's it. You now can now create/modify/review/delete/publish articles.
+
+## Offline
+
+These instructions will get you a copy of the project up and running on your local machine.
+So you will be able to write a new article off line.
 
 ### Prerequisites
 
 You will need to install the following software:
 
-* Docker >= 1.38 (18.06.1-ce)
+* [Docker](https://www.docker.com)
 * [Git](https://git-scm.com)
-* make
+* `make`
 
-### Install
+### Installation
 
-A step by step procedure that indicates how to get a development env running
-First fork this project
-
+1. Get sources:
 ```bash
 git clone --recursive git@github.com:sogilis/Blog.git
 cd Blog
+```
+
+2. Create the docker image.
+```bash
 make build
 ```
 
-### How run blog locally?
+### Start the blog
 
 ```Bash
 make start
@@ -36,26 +57,27 @@ make start
 
 Wait a view seconds then, go to [http://localhost:3000](http://localhost:3000).
 
-### How to write a new article?
+### Write a new article
 
-1. Run blog locally (see above).
-
-2. Write your article:
+1. Write your article:
 
    Create a new text file in `site/content/posts`.
    Following formats are supported:
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
 
-3. See the result at [http://localhost:3000](http://localhost:3000)
+2. See the result at [http://localhost:3000](http://localhost:3000)
 
-4. Finalize your article, and see the output in real time.
+3. Finalize your article, and see the output in real time.
 
-5. When finished, create a new Pull Request to get feedbacks from other team members.
+### Publish your article
 
-6. See the deployemet done in your PR to assess generated static site
+1. Create a new Pull Request to get feedbacks from other team members.
+:info: Netlify provides a preview environment. See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
 
-7. Ask a maintener to Merge the Pull Request
+5. Merge the Pull Request into `master` branch.
+
+6. It's done, the deployment is automated.
 
 ### How to stop blog locally?
 
@@ -64,29 +86,19 @@ make stop
 make remove
 ```
 
-## Built With
-
-* [Hugo](https://gohugo.io/) - The content site generator used
-* [Hugo-boiler-plate victor](https://github.com/netlify-templates/victor-hugo) - the netflify hugo site structure chosen
-* [netlify](https://www.netlify.com/) - Used to generate static site and hosting it
-
-## Contributing
+# Contributing
 
 Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Additional ressources
-
-Some additional ressources are available in [Google Drive](https://drive.google.com/drive/u/0/folders/1_R28VjeHrld1SloP-40tBQyde9G0Z-sR):
-    - UI Design (static pages)
-    - Articles exported with old blog (Wordpress)
-
-## Versioning
+# Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/sogilis/Blog/tags).
 
-## Authors
+# Authors
 
-* **Antoine** - *Initial work* - [Agervail](https://github.com/agervail)
-* **Jean-Baptiste** - *Contributors* - [Jidibus](https://github.com/jibidus)
-* **Nasser** - *Initial work* - [Nas84](https://github.com/Nas84)
-* **Nicolas** - *UI Design*
+* @agervail
+* @Nas84
+* @thimaisogilis
+* @jibidus)
+* @yanngit
+* @nicolaserre
