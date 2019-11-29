@@ -93,12 +93,3 @@ Please read [CONTRIBUTING.md]() for details on our code of conduct, and the proc
 # Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/sogilis/Blog/tags).
-
-# Authors
-
-* @agervail
-* @Nas84
-* @thimaisogilis
-* @jibidus)
-* @yanngit
-* @nicolaserre
