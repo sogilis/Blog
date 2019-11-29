@@ -11,7 +11,7 @@ It is alive with following urls:
 :information_source: For the moment, all is in french.
 :information_source: All articles regardless their languages are visible in all languages.
 
-The backlog is available in [Github project](https://github.com/orgs/sogilis/projects/3).
+The backlog is available in [Github project](https://github.com/sogilis/Blog/projects/2).
 Additional information can be found in [Wiki](https://github.com/sogilis/Blog/wiki).
 
 # How to write a new article?
