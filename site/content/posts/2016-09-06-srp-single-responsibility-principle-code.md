@@ -157,7 +157,7 @@ Si je trouve plusieurs raisons, je scinde la classe en autant de raisons. Si j'e
 Ensuite, il y a des exceptions, notamment les cas suivants présentés par Robert :
 
 - Les contraintes de l'environnement empêchent d'appliquer le SRP. Là, on devrait s'en rendre compte facilement.
-- L'intérêt d'isoler d'un code. Là, c'est plus ambigu.
+- L'intérêt d'isoler du code. Là, c'est plus ambigu.
 
 On peut facilement voir que ce principe reste difficile à appliquer.
 
