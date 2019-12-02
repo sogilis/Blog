@@ -18,9 +18,9 @@ Comme le nom l'indique, vous trouverez de tout et de rien, principalement autour
 
 Bonne lecture !
 
-## Un peu de contenu
+# Un peu de contenu
 
-### Langages
+## Langages
 
 Je sais pas vous, mais je trouve que ces dernières années sont vraiment intéressantes en termes de langages de programmation. Nous avons vu arriver (ou simplement devenir plus visible) Go, Rust, Elixir, Scala, Elm, Clojure, etc. Programmation fonctionnelle, programmation réactive, nouveaux modèles objets, tant de changements (ou remises au goût du jour) qui font basculer des équipes sur une technologie ou une autre. Une nouvelle technologie, un peu moins courante que les autres, est une façon de monter des équipes différemment, notamment avec des profils plus experts. Néanmoins, que donnent ces équipes dans le temps ? Voici par exemple le témoignage de CrowdStrike qui [migre de Scala à Golang](http://jimplush.com/talk/2015/12/19/moving-a-team-from-scala-to-golang/). Ce n'est pas nécessairement à généraliser, mais il est intéressant de voir que ce qui peut séduire dans un premier temps peut aussi se retourner contre vous par la suite. Et au-delà de la beauté, pureté d'un langage, il est un facteur à ne pas sous-estimer : la productivité.
 
@@ -36,11 +36,11 @@ Histoire de rester dans les nouveaux langages et dans les emoji, il m'est très 
 
 ![Emojicode][2]
 
-### Web
+## Web
 
 Il existe, depuis longtemps, de très nombreuses études, articles, blog post, sur la criticité de réaliser des sites web rapides. Avec l'avènement des applications web, des single page app, le problème est encore plus central aujourd'hui. Néanmoins, le temps moyen de chargement semble être toujours autour de 5 secondes sur desktop et 8 secondes sur mobile. Quand on sait que [66% des utilisateurs n'attendent que 4 secondes](http://www.yottaa.com/company/blog/application-optimization/the-four-second-syndrome/), j'espère que vous comprendrez l'avantage significatif de réaliser des applications réellement rapides à charger.
 
-### JavaScript
+## JavaScript
 
 JavaScript continue encore et encore d'évoluer. Néanmoins, il existe souvent un décallage entre ce que le langage propose et ce qui est supporté par les navigateurs, un peu dans tous les sens. Quoi qu'il en soit vous serez ravis d'apprendre que de nouvelles [méthodes sur les objets sont arrivées dans Chrome](https://twitter.com/malyw/status/704972953029623808) :
 
@@ -93,17 +93,17 @@ sine x =
   foldl (i sum -> sum + (pow -1 i) * (pow x (i * 2 + 1)) / (fact (i * 2 + 1))) 0 [0..9]
 {{< /highlight >}}
 
-### CSS, SVG
+## CSS, SVG
 
 Allez voir ce magnifique [tigre en SVG](http://codepen.io/eslam-nasser/pen/VexqvG) ! C'est juste vraiment impressionnant, d'autant plus qu'il n'est fait aucun usage de Javascript.
 
 ![][3]
 
-### Infrastructure
+## Infrastructure
 
 Lorsque vous avez des gros besoins de fiabilité pour héberger des applications, en général vous pratiquez du _failover_. Par exemple, vous déployez vos applications dans deux data centers. L'un est actif, l'autre en attente de problème sur le premier. Dans chacun des deux cas, vous avez aussi prévu une certaine marche pour rattraper d'éventuels pics de charge, entre autres. Vous arrivez en substance à trois fois les ressources uniques nécessaires pour le fonctionnement. A contrario, vous pouvez imaginer des systèmes répartis sur plusieurs sites, trois par exemple. Chacun traite une partie de l'application et chacun a ses propres ressources en attente. Rien que le fait de passer sur trois sites est déjà un gain, un peu lorsque vous passez d'un raid 1 à un raid 5. Mais surtout, vous réduisez les ressources inutilisées, [l'exemple de Google](http://highscalability.com/blog/2016/2/23/googles-transition-from-single-datacenter-to-failover-to-a-n.html) indique un passage 300% à 170% de ressources utilisées. Je vous laisse imaginer les gains qui peuvent en résulter !
 
-### Misc
+## Misc
 
 Voici un très intéressant article sur la façon dont sont gérées [les inventions de Google](http://rue89.nouvelobs.com/2016/02/28/secret-inventions-google-tuons-projets-263297) : en allant plus loin que juste « échoue vite et recommence » qui ne permet pas toujours de faire les bons choix. Avoir une culture de l'échec peut être quelque chose de positif. Encore faut-il avoir de la méthode pour que l'échec soit exploitable. L'un des points clés semble être de prendre à bras le corps les éléments les plus risqués en premier. Rien ne sert de passer du temps (et des risques d'échecs) sur des éléments triviaux si le problème clé n'est pas traité. Il faut s'attaquer là où ça fait mal, tout de suite.
 
@@ -126,9 +126,9 @@ Et pour finir cet veille, voici un article basé sur des interviews de certains 
 * Level 3: Being a Team Player
 * Level 4: Organize & Hustle
 
-## Liste de liens
+# Liste de liens
 
-### Langages
+## Langages
 
 * [Moving a team from Scala to Golang](http://jimplush.com/talk/2015/12/19/moving-a-team-from-scala-to-golang/)
 * [The best way to build a dev team: Go where the devs aren’t](https://medium.com/@cameronp/the-best-way-to-build-a-dev-team-go-where-the-devs-aren-t-d3f226cfe749)
@@ -136,11 +136,11 @@ Et pour finir cet veille, voici un article basé sur des interviews de certains 
 * [Atom Git Commit Messages](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages)
 * [Emojicode](http://www.emojicode.org/)
 
-### Web
+## Web
 
 * [The Four Seconds Syndrome — How Latency Impacts User Behavior](http://www.yottaa.com/company/blog/application-optimization/the-four-second-syndrome/)
 
-### Javascript
+## Javascript
 
 * (Object.values(), Object.entries() and Object.getOwnPropertyDescriptors() landed in Chrome.)[https://twitter.com/malyw/status/704972953029623808]
 * [The Node.js Event Loop is a Damn Mess](http://sheldonkreger.com/the-nodejs-event-loop-is-a-damn-mess.html)
@@ -148,15 +148,15 @@ Et pour finir cet veille, voici un article basé sur des interviews de certains 
 * [JS/Alt](http://rahulsom.github.io/jsalt/)
 * [JS/Alt Elm version](https://gist.github.com/eunomie/bd4d8d491d686580167b)
 
-### CSS, SVG
+## CSS, SVG
 
 * [Tigre](http://codepen.io/eslam-nasser/pen/VexqvG)
 
-### Infrastructure
+## Infrastructure
 
 * [Google’s Transition From Single Datacenter, To Failover, To A Native Multihome Architecture](http://highscalability.com/blog/2016/2/23/googles-transition-from-single-datacenter-to-failover-to-a-n.html)
 
-### Misc
+## Misc
 
 * [Le secret des inventions de Google ? Nous tuons nos projets](http://rue89.nouvelobs.com/2016/02/28/secret-inventions-google-tuons-projets-263297)
 * [le problème avec les story maps](http://blog.sogilis.com/post/109977013776/d%C3%A9couverte-et-amor%C3%A7age-de-projet-le-probl%C3%A8me)

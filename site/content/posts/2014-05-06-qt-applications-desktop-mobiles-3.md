@@ -14,7 +14,7 @@ tags:
 
 Suite de la découverte de la programmation desktop et mobile avec Qt.
 
-## Sommaire
+# Sommaire
 
 - [L'application de base]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#base-app" >}})
   - [Qt et application Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#qt" >}})
@@ -37,15 +37,15 @@ Suite de la découverte de la programmation desktop et mobile avec Qt.
   - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
 - [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-## Interface QML <a id="interface"></a>
+# Interface QML <a id="interface"></a>
 
 Maintenant que notre plateau de jeu est fonctionnel et que nous avons les actions de base, nous pouvons commencer à les afficher.
 
 Comme indiqué, l'affichage va se faire en utilisant les possibilités de QML.
 
-### Board <a id="board"></a>
+## Board <a id="board"></a>
 
-##### Affichage du plateau <a id="display"></a>
+#### Affichage du plateau <a id="display"></a>
 
 Pour commencer en douceur, on peut modifier le fichier `qml` pour afficher une grille de 4 cases de côté. Et pour ça il convient d'utiliser un objet… `Grid`
 
@@ -203,7 +203,7 @@ Et voilà, votre plateau de jeu est affiché. Vous avez les 16 cases avec normal
 
 ![](/img/tumblr/tumblr_inline_n48gawrFT61sv6muh.png)
 
-#### Un peu de style <a id="style"></a>
+### Un peu de style <a id="style"></a>
 
 Bon par contre c'est pas super sexy pour le moment… on va donc y remédier rapidement.
 

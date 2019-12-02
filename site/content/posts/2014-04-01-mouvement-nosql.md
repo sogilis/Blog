@@ -17,13 +17,13 @@ Ces dernières années témoignent d’un engouement certain autour des technolo
 
 ![](/img/2014/04/tumblr_inline_n3b2avvoZ21sc5im4.png "NoSql")
 
-## Le NoSQL, c’est quoi ?
+# Le NoSQL, c’est quoi ?
 
 Le terme NoSQL référence une catégorie de systèmes de gestion de bases de données (SGBD) **distribués**, conçus pour la plupart dans le but de traiter des jeux de données volumineux dans des **délais acceptables** pour
 
 l’utilisateur. Ils viennent ainsi enrichir le panel des moteurs de stockage traditionnels, dont la majorité sont des systèmes de stockage relationnels (SQL). Les deux catégories ne sont d’ailleurs pas destinées aux mêmes cas d’utilisation et diffèrent en bien des aspects : architecture logicielle et matérielle, fonctionnement interne et interprétation de l’information… Les systèmes NoSQL sont développés dans le souci de maintenir des temps de réponse bas malgré un débit de requêtes parfois très élevé. Leur **architecture** se veut **simple **: ils n’offrent pas les mêmes garanties que les bases relationnelles (contraintes ACID notamment). En particulier, l’absence de schéma structurel permet de **stocker des données hétérogènes** au sein d’une même base et d’accélérer les traitements, puisque certaines vérifications structurelles (intégrité des tables) n’ont plus lieu d’être.
 
-## Et les bases de données relationnelles, ça suffit pas?
+# Et les bases de données relationnelles, ça suffit pas?
 
 Les bases de données relationnelles répondent à des cas d’utilisation très spécifiques et ne sont pas conçues pour répondre à tous les scénarios. En effet, le recours à une base relationnelle peut se révéler inadapté dans les conditions suivantes :
 
@@ -44,7 +44,7 @@ Souvent, la transition d’un système relationnel vers un système NoSQL est m
 - la parallélisation des traitements sur les données
 - l’absence de point de contention (Single Point of Failure)
 
-## Comparatif NoSQL / Relationnel
+# Comparatif NoSQL / Relationnel
 
 De façon générale, les systèmes NoSQL ont tendance à suivre les
 
@@ -67,7 +67,7 @@ Le tableau suivant expose des points de comparaison entre les systèmes relatio
 | **Principales caractéristiques** | BASE                 | ACID                    |
 | **Ancienneté de la technologie** | Récente              | Eprouvée                |
 
-## Que retenir ?
+# Que retenir ?
 
 Ainsi, **les moteurs de stockage NoSQL ne sont pas destinés aux mêmes usages que les moteurs relationnels** traditionnels. Par exemple, les systèmes NoSQL ne supportent pas les contraintes d’intégrité qui sont inhérentes aux systèmes relationnels (et qui les rendent indispensables lorsque la cohérence de la base doit être garantie à tout moment).
 

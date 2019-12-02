@@ -14,9 +14,9 @@ tags:
   - deployment
 
 ---
-# Quelle qu’en soit la fréquence, la livraison de nouvelles fonctionnalités à vos clients est souvent un moment stressant : Une mauvaise maîtrise de cette étape clé peut avoir des répercussions directes sur votre activité.
+Quelle qu’en soit la fréquence, la livraison de nouvelles fonctionnalités à vos clients est souvent un moment stressant : Une mauvaise maîtrise de cette étape clé peut avoir des répercussions directes sur votre activité.
 
-## Les problèmes que nous voyons souvent :
+Les problèmes que nous voyons souvent :
 
 * Vos procédures sont longues, délicates et coûteuses ? Ou pire, vous n’avez pas de process ?
 * Vous aimeriez livrer de nouvelles fonctionnalités à vos clients plus fréquemment, plus régulièrement ?

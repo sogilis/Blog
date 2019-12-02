@@ -16,11 +16,11 @@ Les patterns [Object Mother][1] et [Builder][2] apportent chacun leur lot d’av
 
 Nous verrons dans cet article comment il est possible de réaliser cela.
 
-## Pre-requis
+# Pre-requis
 
 Si vous n’êtes pas familiers avec les patterns [Object Mother][1] et [Builder][2], je vous conseille d’approfondir ce sujet avant de continuer.
 
-## Le principe
+# Le principe
 
 Object Mother permet de fournir des objets pré-configurés pour nos tests :
 
@@ -52,7 +52,7 @@ Le principe est le suivant :
 * Toutes les autres factories utilisent cette factory de base.
 * Dans cette versions, les Object Mother retournent des builders et non des instances.
 
-## Avantages
+# Avantages
 
 **(1)** Le pattern Object Mother permet d’améliorer la lisibilité des tests en retirant les constantes inutiles à la compréhension du test. Exemple :
 
@@ -91,7 +91,7 @@ L’exemple ici est plutôt trivial, mais imaginez cela dans une vraie applicati
 
 **(3)** L’utilisation de builders permet de customiser les objets générés par les Object Mother pour le besoin du test (`HeroMother.one().dateOfBirth(...).build()`). Sans cela, il faudrait multiplier les factories pour chaque besoin avec une méthode prenant en paramètre toutes les informations nécessaires au cas testé. On peut imaginer que cela nécessiterait une factory par test.
 
-## Inconvénients et difficultés
+# Inconvénients et difficultés
 
 **(1)** Il y a plus de code, essentiellement à cause des builders, et du code pas intéressant à produire qui plus est. 
 
@@ -109,11 +109,11 @@ HeroMother.one().caste(KING).build()
 **(3)** `.build()` est nécessaire partout pour générer l'objet final (pollution cognitive).  
 
 
-## Ce qu’il faut retenir
+# Ce qu’il faut retenir
 
 Combiné à des assertions custom [AssertJ][4], on arrive, avec cette technique, à des tests concis, qui restent lisibles et maintenables, même si on sent qu'il serait possible de faire mieux avec un langage plus évolué que **Java**, ce que nous verrons dans un prochain article avec [Kotlin][5].
 
-## Notes
+# Notes
 
 * Ce principe est très largement inspiré par un [article de Rafał Borowiec][6].
 * Le projet dont sont issus les extraits les extraits de code est disponible [sur Github][7].

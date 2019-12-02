@@ -16,9 +16,9 @@ tags:
 ---
 Dans ce dernier article, nous allons revoir les [problèmes rencontrés avec les story maps](http://sogilis.com/blog/decouverte-amorcage-projet-storymap/) et expliquer comment la planification par capacités apporte des réponses plus pertinentes dans notre contexte. Cette rétrospective nous montrera que l'essentiel n'est pas dans la méthode de Liz, mais bien dans sa façon d'approcher et de prioriser les problèmes - favoriser [« les individus et leurs interactions plus que les processus et les outils »](http://www.agilemanifesto.org/iso/fr/). Ceci nous mènera naturellement à une petite réflexion sur notre approche de l'agilité avec nos porteurs de projet.
 
-## Quelques leçons tirées de la cartographie par capacité
+# Quelques leçons tirées de la cartographie par capacité
 
-### Les utilisateurs ne représentent que la partie visible des acteurs du projet
+## Les utilisateurs ne représentent que la partie visible des acteurs du projet
 
 Dans le cadre d'une story map, l'accent est mis sur les activités et les cas d'utilisation du système. Cela peut conduire à se focaliser sur les utilisateurs principaux du système, au détriment d'autres acteurs moins en vue mais dont l'implication dans le projet peut être déterminante. Ainsi, au cours du développement d'une application web, nous avions fixé des pré-requis pour les navigateurs des clients. Mais nous nous sommes rendus compte bien tardivement que certains de nos collègues (impliqués indirectement dans le projet) n'avaient alors plus accès à l'application, car les pré-requis étaient trop hauts pour leur machine !
 
@@ -26,7 +26,7 @@ De plus, un focus trop rapide sur les utilisateurs entraîne facilement un focus
 
 La vision du projet, avec sa proposition de valeur mais aussi son impact sur les acteurs, est à cultiver dès le début : **balayer tous les acteurs du projet, essayer de comprendre leurs besoins, leur attitude et leur impact sur le projet, si celui-ci sert leurs intérêts ou bien peut être un frein**. Cette analyse a aussi pour but de ne pas se fixer d'oeillères sur ce qu'il faut réaliser : le but est de satisfaire au maximum les besoins de chaque acteur du projet. La solution ne passe pas forcément par une liste de fonctionnalités !
 
-### Le focus est sur la résolution de problèmes, pas sur les fonctionnalités
+## Le focus est sur la résolution de problèmes, pas sur les fonctionnalités
 
 Le focus trop rapide sur les fonctionnalités peut aussi avoir des effets négatifs lors de la réalisation du projet.
 
@@ -43,7 +43,7 @@ Bref, la story map peut donner une fausse impression de complétude, à la mani�
 * En exprimant les futures _capacités_ du système, vous savez que vous devez chercher une solution pour satisfaire ces capacités. Les moyens de les satisfaire sont multiples et peuvent être remises en cause en cours de projet (nouvelles options, solutions alternatives et moins coûteuses). Le terme de capacité permet aussi plus facilement d'aborder les aspects non fonctionnels du système (robustesse, performance…).
 * En cas d'échec avec une solution, il est plus facile de repartir de la capacité que d'une fonctionnalité (quel est le problème, le besoin ? Comment y répondre ?).
 
-### La planification est basée sur le dérisquage et la valorisation du projet, pas sur la priorisation par estimation
+## La planification est basée sur le dérisquage et la valorisation du projet, pas sur la priorisation par estimation
 
 La pratique courante issue des story maps et des méthodologies agiles est de prioriser les stories par rapport à leur valeur et leur coût estimé, pour les placer dans l'ordre dans le backlog. La notion de chemin critique, voire de MVP, est parfois abordée mais pas nécessairement approfondie. Le backlog ressemble alors à une liste de fonctionnalités à développer.
 
@@ -55,7 +55,7 @@ La pratique courante issue des story maps et des méthodologies agiles est de pr
 
 En se focalisant sur les risques d'échec ainsi que sur les points différenciants, l'accent est mis sur l'essentiel : trouver la prochaine étape la plus sûre et la plus rapide pour démontrer la valeur du projet, avant de passer à la suivante. **L'approche vise la réalisation de la vision**, la résolution des problèmes rencontrés, plutôt que la coche de fonctionnalités dans une liste.
 
-### Traiter l'estimation comme une projection, pas un engagement
+## Traiter l'estimation comme une projection, pas un engagement
 
 Bien que l'on sorte du cadre strict de la planification, l'estimation du coût d'un projet est la suite logique pour un porteur. Là encore, Dan North en a très bien décrit les enjeux et les écueils dans [The Perils of Estimation](http://dannorth.net/2009/07/01/the-perils-of-estimation/) et même proposé son idée dans [Blink Estimation](http://dannorth.net/2013/08/08/blink-estimation/).
 
@@ -63,11 +63,11 @@ Sans rentrer dans le détail de ce débat (voir tout ce qui concerne le (No Esti
 
 Plus simplement, la question de l'estimation peut être traitée par l'équipe comme une projection dans l'avenir. **Quelle horizon se donne-t-elle pour trouver une solution à ce problème ? Et quelle confiance a-t-elle dans cette horizon ?** Si l'équipe n'est pas confiante, comment réduire le risque ? Si besoin, l'équipe peut renforcer son opinion en utilisant le poker planning, mais l'estimation ne doit pas se transformer en chiffrage de fonctionnalités à la carte.
 
-### Et si le porteur de projet a déjà un cahier des charges, un backlog, des idées toutes prêtes…
+## Et si le porteur de projet a déjà un cahier des charges, un backlog, des idées toutes prêtes…
 
 Stop ! La démarche ci-dessus doit normalement pousser tout le monde à remettre en cause des fonctionnalités prématurées, à proposer d'autres solutions. Si le porteur insiste pour inclure une fonctionnalité dans votre cartographie, comment pouvez-vous la réexprimer comme une capacité, en gardant la fonctionnalité comme un exemple de solution concrète pour cette capacité ? Comme proposé par Liz, demandez au porteur **pourquoi** il veut cette fonctionnalité et jusqu'à remonter aux besoins pour pouvoir exprimer la capacité.
 
-## Obsolète, la story map ?
+# Obsolète, la story map ?
 
 Comme noté dans le premier article, la story map pose problème dans notre contexte de découverte de projet, où le domaine est souvent nouveau pour l'équipe et les pratiques agiles inconnues des porteurs de projet. **La planification par capacités est plus abordable** et nous permet de découvrir plus rapidement les fondamentaux d'un projet naissant, mais aussi d'organiser les premières itérations, produire des prototypes de démonstration, prévoir les prochaines étapes - et pourquoi pas servir de base à une story map qui détaillera plus les fonctionnalités.
 
@@ -75,11 +75,11 @@ Quand l'équipe a acquis plus de maturité sur le domaine, ses enjeux et ses pro
 
 Peut-on complètement se passer de la story map ? Je crois que oui. Comme noté par Dan North, des [équipes très efficaces](http://dannorth.net/2013/01/15/accelerating-agile/) se sont construites en dehors de la culture agile classique, simplement en appliquant du bon sens dans leurs pratiques. La planification par capacités n'est qu'une des pratiques supportant ce type d'approche.
 
-## Changer notre approche de l'agilité (encore et toujours)
+# Changer notre approche de l'agilité (encore et toujours)
 
 Avoir persisté si longtemps dans une approche inadaptée amène une remise en question. Au-delà de l'utilité de la planification par capacités, cette expérience nous a forcé à oublier certaines méthodes et pratiques de l'agilité pour revenir aux fondamentaux.
 
-### Sortir des rails des process agiles
+## Sortir des rails des process agiles
 
 Tout le monde a vécu un jour ou l'autre cette expérience : copier une approche qui a « déjà marché » ailleurs ; et quand ça ne marche pas, recommencer en expliquant que les règles n'ont pas été bien suivies. Certaines méthodes agiles ont un côté très cadré, cérémonieux qui encouragent ce comportement. Dans le pire des cas, on arrive à [l'agilité Cargo Cult](http://mikehadlow.blogspot.co.uk/2014/03/coconut-headphones-why-agile-has-failed.html), où l'équipe se déclare agile parce qu'elle applique toutes les règles, mais sans en tirer les bénéfices car elle n'a pas su les adapter à son contexte.
 
@@ -91,7 +91,7 @@ Par ailleurs, les outils agiles comme la story map semblent souvent simples, voi
 
 C'est pourquoi choisir une approche moins structurée que la story map, comme la planification par capacité, est intéressant. Le niveau d'entrée est faible, car n'imposant pas différents concepts hiérarchisés (activité, cas d'utilisation, fonctionnalité) : la _capacité_ résume ces concepts tout étant suffisamment souple pour que chacun se l'approprie. A ce stade, l'essentiel pour nous est d'échanger sur le projet. **En enlevant des barrières de communication, il est plus facile pour l'équipe de faire valoir son point de vue, sa force de proposition, et de ne pas apparaître comme une simple exécutante.**
 
-### La culture de l'accompagnement
+## La culture de l'accompagnement
 
 Mais dans l'approche de Liz Keogh, l'aspect le plus intéressant et révélateur est certainement la prise en considération de sa propre ignorance et des risques associés. D'abord parce qu'elle met l'accent sur le non-dit des projets au forfait, typique des SSII : sur quelles bases et quelles estimations la proposition de forfait a-t-elle été faite ? Quels risques ont été pris en compte ? Comment l'équipe va-t-elle gérer et communiquer sur ces risques ? En règle générale, les risques ne sont considérés que comme un facteur multiplicateur dans l'estimation (car le temps est court pour faire une proposition) et les risques seront gérés comme ils arrivent, et parfois dans l'urgence de la crise.
 

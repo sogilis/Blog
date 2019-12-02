@@ -10,7 +10,7 @@ tags:
   - devops
 
 ---
-## La gestion de configuration
+# La gestion de configuration
 
 Ansible est un outil de déploiement automatique, il permet de facilement et surtout de manière reproductible, provisionner une machine. De manière concrète, cela permet :
 
@@ -28,7 +28,7 @@ Les systèmes de déploiement comme chef, puppet, cfengine ou ansible dont nous 
 
 Une partie intéressante de ces systèmes concerne également la gestion d'un parc de serveurs. Ils intègrent des outils afin de déployer de multiples serveurs sur la base d'une configuration similaire. Nous n'aborderons pas cette partie afin de se concentrer sur les fondamentaux de la configuration de systèmes.
 
-## Ansible, comment ça marche
+# Ansible, comment ça marche
 
 Différents outils fonctionnent différemment. En ce qui concerne Ansible, ou plus particulièrement `ansible-playbook`, il s'agit d'un outil en ligne de commande qui va lire une configuration, se connecter à un serveur, et exécuter les commandes nécessaires sur ce serveur afin d'appliquer la configuration. Dans le jargon Ansible, cette configuration se nomme _Playbook_. Il s'agit de la liste des opérations à exécuter afin de configurer le système.
 

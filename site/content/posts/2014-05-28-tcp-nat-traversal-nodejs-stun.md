@@ -17,7 +17,7 @@ The solution might be in a decentralized protocol for address attribution such 
 
 But let’s dive in the subject at hand. How to do NAT traversal. Let’s first refresh our memory about basic sockets.
 
-## UDP Sockets
+# UDP Sockets
 
 UDP is the most simple application protocol on top of the IP stack. It only add the notion of source port number and destination port number above IP. There is nothing that is preventing packet loss and if your payload is too large for the network MTU, it is silently dropped. Dumb simple, isn’t it ?
 
@@ -33,7 +33,7 @@ And now, your socket is ready to receive and send messages. This is done with:
 * `sendto(fd, payload, len, flags, dest_addr, addr_len)`: Send a packet to the specified address.
 * `recvfrom(fd, payload, len, flags, src_addr, addr_len)`: Fetch the received packet along with the address it comes from.
 
-## TCP Sockets
+# TCP Sockets
 
 TCP sockets are a bit more complicated as they have the notion of a continued connection between two computers. They each have to keep track of the previous packets of that connection and assemble them into a stream, especially
   
@@ -43,7 +43,7 @@ We thus have one file descriptor for each running connection. There is also a s
 
 For UDP, incoming packets are sorted using the destination address and port number only. Using just this, the kernel knows in which file descriptor to put the packet. In TCP, the kernel has to also keep track of the source IP address and source port of the TCP packet in addition to the destination IP and port.
 
-## Simple TCP connections
+# Simple TCP connections
 
 Let’s see the system calls required to create a simple TCP connecton:
 
@@ -58,7 +58,7 @@ As we can see, there is now a new system call, `connect`, that is used to tell 
 
 Note that contrary to UDP, the `send` and `recv` system calls don’t take an address as it has already been given during `connect`.
 
-## Multiple sockets on the same port
+# Multiple sockets on the same port
 
 What if you want to have multiple connections on the same port of your computer ? You’ll first have to add the option `SO_REUSEADDR` to the existing TCP sockets on the same port to tell them they are not exclusive. Then, any number of sockets can be bound on the same port. The system call is:
 
@@ -69,7 +69,7 @@ setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &so_reuseaddr, sizeof so_reuseaddr);
 
 Also, to have multiple sockets, they must be bound on a specific local address, and not on the default address `0.0.0.0` (which will receive packets from any interface).
 
-## The listening socket
+# The listening socket
 
 Now, using TCP you can also set up the special _listening_ socket. This is how it is done:
 
@@ -85,7 +85,7 @@ accept(fd, src_addr, addr_len, flags)
 
 When a packet comes in and it is not put into any existing connection, the `accept` system call will create a new connection for that sender and return a connected socket as return value of `accept`. Then, `send` and `recv` can be used on that new socket.
 
-## Network Address Translator
+# Network Address Translator
 
 Now that we talked about sockets in general, let’s talk about the dreaded address translator. The address translator is a special gateway that will make an entire network look like only a single or a few hosts. Behind the translator, you have hosts that can only have a one way connection.
 
@@ -101,7 +101,7 @@ Consequences:
 * It doesn’t work if all the hosts of the private network make use of all of their 65536 ports. The translator just won’t have enough ports to keep track of all the connections.
 * And of course, the hosts on the private network are not directly reachable.
 
-## UDP Hole Punching
+# UDP Hole Punching
 
 UDP hole punching is a simple algorithm to get through NATs. And this is where the STUN server might be of some help. The idea is as follows:
 
@@ -114,7 +114,7 @@ For this reason, the STUN server can check if the NAT allows that by changing t
 
 You will also need to keep some traffic running on that port, else the NAT might stop the redirection, thinking your buisness is finished.
 
-## The same on TCP, please
+# The same on TCP, please
 
 On TCP, the idea is quite the same with the additional difficulty that you must keep the connection open to the STUN server, and listen on the same port for incoming connections. As we saw, this is possible using `SO_REUSEADDR`. However, the connection to the STUN server must be initiated first before setting up the listening socket. This is how it works:
 
@@ -125,7 +125,7 @@ On TCP, the idea is quite the same with the additional difficulty that you must�
 
 The success rate is somewhat lower with this method because NAT generally track more things about the TCP connections than UDP.
 
-## Node.js implementation
+# Node.js implementation
 
 You have to find a STUN server that talk TCP. There are not many out there. I could find ((stun.stunprotocol.org))[http://stunprotocol.org] that does it, but unfortunately, it closes the connection after the first exchange. I believe this is in contradiction with RFC 5389 §7.2.2:
 
@@ -205,13 +205,13 @@ tcp.on('refresh', function(data){
 tcp.start("stun.stunprotocol.org");
 {{< /highlight >}}
 
-## Conclusion
+# Conclusion
 
 If you want to use TCP, you’ll probably need to host your own server. Then you no longer need to keep to the STUN protocol. For this project I decided to come up with something similar to STUN in principle, without the diagnosis techniques, and using WebSockets. This will make it possible to add further functionnality in the protocol. Such as a virtual builtin-board so each client can access the address of other clients. Useful to get seeds in a P2P protocol.
 
 If you want to host this kind of server in web providers, beware that they might themselves be hosting the servers behind a NAT. This kind of server must have a public IP to have access to the untranslated packet headers.
 
-## References
+# References
 
 * [Peer-to-Peer Communication Across Network Address Translators](http://www.brynosaurus.com/pub/net/p2pnat/)
 * [RFC 5389](https://tools.ietf.org/html/rfc5389) [and the obsolete (RFC 3489](https://tools.ietf.org/html/rfc3489))

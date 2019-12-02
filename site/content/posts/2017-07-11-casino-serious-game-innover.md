@@ -26,7 +26,7 @@ Pour mener ces 3 actions, le financement est au coeur de la problématique : Com
 
 Adopter une stratégie d’innovation va plus loin que simplement distribuer un nouveau produit ou intégrer une nouvelle brique technologique : cela nécessite avant tout une organisation pour identifier rapidement si on va dans le bon sens (et alors investir pour aller plus loin), ou bien rapidement pivoter pour tenter une nouvelle innovation. Quoi qu’il en soit, il faut s’organiser pour aller VITE, et bien.
 
-## Centrer l'organisation sur l’innovation
+# Centrer l'organisation sur l’innovation
 
 Le Casino Game est un serious game inventé par [@agilex](http://www.agilex.fr/jeu-casino-game/) qui permet aux joueurs de découvrir quelques concepts d’organisation basés sur le Lean :
 
@@ -42,7 +42,7 @@ Le jeu représente un “flux de production” : il y a 7 étapes à “construi
 
 Après plusieurs tentatives, les joueurs finissent par comprendre quelle est l’organisation la plus efficace : avoir un stock très faible, qui passe très rapidement les 7 étapes de production, permettant ainsi d’arriver vite sur le marché. L’équipe (et donc l’entreprise) se sent plus agile, plus efficace, capable de s’adapter au changement.
 
-## Lean, serious game et Innovation : quel rapport ?
+# Lean, serious game et Innovation : quel rapport ?
 
 ![Casino Game : Les apprentissages](/img/2017/07/CasinoGame-1024x533.jpg)
 

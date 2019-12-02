@@ -14,9 +14,9 @@ tags:
 ---
 Petit aperçu commenté de notre veille de ces derniers jours. Le principe n'est pas de vous fournir une suite de lien mais plutôt que ces liens racontent une histoire, ce qui nous intéresse ou nous interpelle. Mais tout de même, pour les plus pressés, la liste de l'ensemble des liens est dispo à la fin de l'article.
 
-## Un peu de contenu
+# Un peu de contenu
 
-### Méthodes, langages et bonnes pratiques
+## Méthodes, langages et bonnes pratiques
 
 S'il est un point qui nous tient vraiment à cœur, c'est celui d'écrire du code maintenable et qui tende à comporter le moins (zéro si possible) de bugs.
 
@@ -44,7 +44,7 @@ Histoire de rester dans des sujets connexes, connaissez-vous la règle numéro 1
 
 David Heinemeier Hansson (créateur de Ruby on Rails, Basecamp, etc.) n'est quant à lui pas d'accord. Et il vous explique pourquoi (et comment ils ont réécrit plusieurs fois Basecamp) [dans cette vidéo](http://businessofsoftware.org/2015/10/david-heinemeier-hansson-rewrite-basecamp-business-of-software-conference-video-dhh-bos2015/).
 
-### JavaScript
+## JavaScript
 
 Si vous avez déjà fait du javaScript (_What else?_), vous avez nécessairement été confronté à la problématique de _bind_ et au fait que _this_ n'a pas le même comportement que dans la plupart des langages habituels. Après pas mal de bricolages, on est arrivé à avoir une solution correcte en _ES5_ :
 
@@ -64,7 +64,7 @@ Toujours du côté des nouveautés Javascript, si vous avez un peu suivi ce qui 
 
 Sur le même segment est aussi apparu [AVA](https://github.com/sindresorhus/ava) de [Sindre Sorhus](https://github.com/sindresorhus). Plus rapide, adaptée à toutes les nouveautés du langage mais aussi avec le point particulier d'exécuter les tests en isolation pour éviter tout effet de bord et s'adapter au matériel actuel pour de meilleurs performances.
 
-### Clojure
+## Clojure
 
 Chez Sogilis, nous utilisons de nombreux langages différents. Et s'il en est un qui sort un peu du lot par son style c'est bien Clojure. Fonctionnel, bourré de parenthèse (Lisp signifie bien _Lots of Irritating Single Parentheses_, non ?) mais tellement expressif et concis qu'il est difficile de ne pas tomber sous le charme 🙂
 
@@ -74,7 +74,7 @@ Toujours à propos de Clojure, voici un petit tutoriel très bien amené qui pr�
 
 S'il est une notion centrale à clojure et l'ensemble des langages fonctionnels, c'est bien l'immutabilité. Néanmoins, savoir l'expliquer simplement n'est pas toujours aisé. Voici un article qui se propose d’[expliquer l'immutabilité à partir d'un post de blog](https://medium.com/@roman01la/explaining-immutability-2aedc221b4c0#.973tcxnmt). Plutôt réussi, il devrait vous permettre de comprendre la base ou de la faire comprendre facilement.
 
-### Go
+## Go
 
 Un autre des langages plutôt en vogue par chez nous est Go. Un point qui peut être déroutant au début lorsqu'on vient de Ruby, Node.js ou autre est l'absence d'un gestionnaire de paquet dédié au langage. Et lorsque je lis [So you want to write a package manager](https://medium.com/@sdboyer/so-you-want-to-write-a-package-manager-4ae9c17d9527) je me dis que finalement c'est très (très) loin d'être trivial. Mais cela permet aussi de mettre en exergue les problèmes que d'autres gestionnaires peuvent avoir (bien que parlant de Go, cet article est très généraliste). Par exemple, `bower` n'avait pas d'équivalent aux fichiers de lock permettant de reproduire une installation d'un poste à l'autre.
 
@@ -82,11 +82,11 @@ A l'autre bout de la chaine, il y a l'exécution et la mise à jour des programm
 
 Je ne sais pas si on vous l'a déjà dit, mais à Sogilis on aime bien Git. A tel point d'ailleurs qu'on donne des formations sur le sujet depuis des années. Et à tel point aussi qu'on l'utilise dans nos applications, y compris en tant que base de données. Sur le marché, en général la solution est d'utiliser un binding au dessus de la [libgit2](https://libgit2.github.com/). La plupart des langages en ont, Go y compris. Néanmoins, une nouvelle bibliothèque a vu le jour récemment, et elle ne se base justement pas sur libgit2. Attention tout de même, elle n'est faite que pour de la lecture, il n'y a pas d'écriture possible avec. Il s'agit de [go-git](https://github.com/src-d/go-git) et elle est utilisée par _source{d}_ qui entre autre analyse l'ensemble des dépôts de github ! A tester plus en avant et voir ce que ça apporte réellement de plus (ou de moins) que le binding Go qui existait déjà.
 
-### Sécurité
+## Sécurité
 
 Un point toujours central dans la sécurité de nos applications est la manière dont on stocke et compare les mots de passe. Hors de question ici de les garder en clair dans une base ! Par contre, régulièrement les bonnes pratiques changent ou, simplement, de nouvelles bibliothèques apparaissent pour nous faciliter la vie (et hors de question ici de réinventer la roue). Voici donc un article qui vous présente [les bonnes manières de stocker un mot de passe en 2016](https://paragonie.com/blog/2016/02/how-safely-store-password-in-2016) et ceci dans 6 langages différents.
 
-### Divers
+## Divers
 
 En tant que développeur, nous avons souvent tendance à nous cacher derrière la technique, derrière la création d'outils et non leur usage. Pourtant, il est nécessaire d'avoir conscience que l'usage fait de nos développements peut avoir des impacts non négligeables, autant dans des bons que des mauvais côtés. C'est (une partie au moins) du [message que Stéphane Bortzmeyer](http://www.infoq.com/fr/presentations/come-to-dark-side) a tenté de faire passer lors du Mix-IT 2015.
 
@@ -94,39 +94,39 @@ Dans un tout autre registre, regardez comment un réseau de neurones entraîné 
 
 Et comme on [apprécie les Lego](https://twitter.com/_crev_/status/643708426841915392), on ne peut que rester admiratif devant cette machine tout en Lego qui [plie et lance un avion en papier](https://www.youtube.com/watch?v=jU7dFrxvPKA) !
 
-## Liste des liens
+# Liste des liens
 
-### Méthodes, langages, etc.
+## Méthodes, langages, etc.
 
 * [Write code that is easy to delete, not easy to extend](http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)
 * [Tests vs Types](http://kevinmahoney.co.uk/articles/tests-vs-types/)
 * [Spark tutorial](http://docs.adacore.com/spark2014-docs/html/ug/tutorial.html)
 
-### Javascript
+## Javascript
 
 * [Funcion Bind Syntax](https://babeljs.io/blog/2015/05/14/function-bind)
 * [Painless Javascript Testing](https://taylorhakes.com/posts/introducing-painless-testing-library/)
 * [AVA Futuristic test runner](https://github.com/sindresorhus/ava)
 
-### Clojure
+## Clojure
 
 * [Clojure Compilation: Parenthetical Prose to Bewildering Bytecode](http://blog.ndk.io/clojure-compilation.html)
 * [Om](https://github.com/omcljs/om)
 * [ClojureScript: Real world app](http://dimafeng.com/2015/11/16/clojurescript-om/)
 * [Explaining immutability](https://medium.com/@roman01la/explaining-immutability-2aedc221b4c0#.973tcxnmt)
 
-### Go
+## Go
 
 * [So you want to write a package manager](https://medium.com/@sdboyer/so-you-want-to-write-a-package-manager-4ae9c17d9527#.31qplbih0)
 * [overseer](https://github.com/jpillora/overseer)
 * [libgit2](https://libgit2.github.com/)
 * [go-git A low level and highly extensible git client library](https://github.com/src-d/go-git)
 
-### Sécurité
+## Sécurité
 
 * [How to safely store password in 2016](https://paragonie.com/blog/2016/02/how-safely-store-password-in-2016)
 
-### Divers
+## Divers
 
 * [[Mix-IT 2015] Come to the dark side de Stéphane Bortzmeyer](http://www.infoq.com/fr/presentations/come-to-dark-side)
 * [Re-pigmentation de photographies](http://tinyclouds.org/colorize/)

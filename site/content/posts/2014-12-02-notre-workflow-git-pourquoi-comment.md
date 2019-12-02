@@ -16,7 +16,7 @@ Depuis l'avènement d'outils de gestion de code source de bonne qualité ([Git](
 
 Plutôt que de simplement vous présenter notre workflow, vous trouverez ici le _pourquoi_ et le _comment_, c'est au final ce qui est le plus important.
 
-- Un workflow c'est quoi, et ça sert à quoi ? 
+- Un workflow c'est quoi, et ça sert à quoi ?
   - Et tu as des exemples ?
 - Un workflow doit répondre à nos besoins
   - Les objectifs
@@ -28,7 +28,7 @@ Plutôt que de simplement vous présenter notre workflow, vous trouverez ici le 
 - À suivre
 - Pour aller plus loin
 
-## Un workflow c'est quoi, et ça sert à quoi ?
+# Un workflow c'est quoi, et ça sert à quoi ?
 
 Lorsque vous développez un logiciel, au début tout est facile. Ça ressemble à un historique linéaire, c'est simple, c'est clair. Et c'est facile à utiliser. Voici par exemple la séquence de commandes que vous pouvez utiliser.
 
@@ -81,7 +81,7 @@ Et si on en revenait à la question : _« un workflow c'est quoi, et ça sert à
 
 Un workflow — dans notre cas pour Git — c'est surtout la définition de comment on travaille en collaboration avec notre outil de gestion de sources et avec les autres personnes. Quelles sont les règles, mais surtout dans quel but. Il ne s'agit surtout pas de contraindre inutilement les possibilités. Mais pour ce faire, la première chose à se demander c'est justement quelles sont nos contraintes.
 
-### Et tu as des exemples ?
+## Et tu as des exemples ?
 
 En fait, il y en a plein.
 
@@ -99,7 +99,7 @@ L'autre workflow très courant aujourd'hui c'est le [Github Flow](https://guides
 
 Il est très pratique si vous êtes dans le cadre de déploiement continu et si vous utilisez des systèmes comme [Github](https://github.com/) / [bitbucket](https://bitbucket.org) / [stash](https://www.atlassian.com/software/stash) / autre solution d'hébergement avec code review et pull request.
 
-## Un workflow doit répondre à nos besoins
+# Un workflow doit répondre à nos besoins
 
 Alors, s'il existe déjà des workflow, pourquoi ne pas en utiliser un déjà décrit ?
 
@@ -107,7 +107,7 @@ Déjà avant de savoir si on peut utiliser un workflow existant, il convient de 
 
 Mais dans tous les cas un workflow se doit de nous aider, jamais de nous limiter ni nous empêcher de travailler.
 
-### Les objectifs
+## Les objectifs
 
 Nous voulons pouvoir :
 
@@ -116,7 +116,7 @@ Nous voulons pouvoir :
 * pouvoir désactiver une fonctionnalité très facilement
 * avoir le détail (les étapes) de chaque fonctionnalité
 
-### Les contraintes
+## Les contraintes
 
 Certains points à prendre en compte :
 
@@ -126,7 +126,7 @@ Certains points à prendre en compte :
 * sprints de 2 semaines
 * développement de logiciel mobile et de logiciel embarqué sur un drone (et là ça change tout…)
 
-## Le résultat
+# Le résultat
 
 Je vais reprendre les objectifs et essayer de placer en face de chacun une “règle” Git, en prenant en compte si besoin nos contraintes.
 
@@ -150,7 +150,7 @@ Par contre, souvenez-vous, on parlait un peu plus haut d'historique propre. Dans
 
 Le rebase va obliger à réécrire l'historique et donc probablement à forcer les `push` mais ce n'est pas grave, c'est une bonne chose d'avoir un historique propre.
 
-### En résumé
+## En résumé
 
 * une branche par fonctionnalité
 * une branche d'intégration par itération
@@ -159,7 +159,7 @@ Le rebase va obliger à réécrire l'historique et donc probablement à forcer l
 * fusion sans _fast forward_ obligatoire
 * nettoyage des branches avec du _rebase_ interactif
 
-## La mise en œuvre
+# La mise en œuvre
 
 Vous vous souvenez de l'historique horrible du début de l'article ? Maintenant voici ce que cela donne :
 
@@ -176,7 +176,7 @@ Ceci est une capture du vrai résultat, sur le même projet. Bon ok vous n'avez 
 * comme chaque branche a subit un `rebase` avant d'être fusionnée, il n'y a pas de croisements de branches, ce qui améliore la lisibilité
 * une branche d'intégration par itération est créée, puis si tout est ok, fusionnée dans `master`. Vous le voyez avec `origin/integ` qui a été fusionné (en _fast forward_, c'est le seul cas) dans `origin/master` et tout ce qui est au-dessus est dans `origin/integ-it2.7` et non dans `master` car l'itération est en cours. Evidemment il pourrait y avoir des branches non fusionnées dans `integ-it2.7`.
 
-### Et en pratique ?
+## Et en pratique ?
 
 Voici les quelques commandes / principes que nous utilisons pour mettre en œuvre ce workflow.
 
@@ -259,7 +259,7 @@ Voici les quelques commandes / principes que nous utilisons pour mettre en œuvr
   git push origin --delete feature/my-super-cool-feature
   {{< /highlight >}}
         
-## À suivre
+# À suivre
 
 Aujourd'hui le workflow tel que défini est une aide précieuse dans notre développement. Il reste des points toujours délicats autour de la branche d'intégration. L'idéal serait de pouvoir valider nos modifications plus facilement, et donc de fusionner directement dans `master` et ne plus avoir cette branche intermédiaire. Mais cela est directement lié au métier et non une simple contrainte d'outillage.
 
@@ -267,13 +267,13 @@ Si nous voulions aller plus loin, il serait possible d'utiliser des _pull reques
 
 Que pensez-vous de ce workflow ? Lequel utilisez-vous de votre côté, et surtout pourquoi ?
 
-## Pour aller plus loin
+# Pour aller plus loin
 
 Si vous souhaitez aller plus loin, ou juste apprendre Git, nous [donnons des formations Git](http://sogilis.com/formations).
 
 Et si vous n'êtes pas rassasiés, voici une petite collection de liens à suivre :
 
-* Git Flow 
+* Git Flow
   * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
   * [GitFlow](https://github.com/nvie/gitflow)
   * [GitFlow by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)

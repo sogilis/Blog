@@ -16,13 +16,13 @@ tags:
   - tuleap
 
 ---
-## Did you ever wonder how GitHub-like code review works? Fear no more, and discover the intricacies of developing a system for inline comments !
+# Did you ever wonder how GitHub-like code review works? Fear no more, and discover the intricacies of developing a system for inline comments !
 
 Thanks to GitHub and the like, the practice of code review have become widespread. Even for small projects, one can feel the benefits: catching errors, loopholes, or artificial complexity, sharing the knowledge of how code fulfills its function, enforcing or teaching common guidelines and patterns... Last year, we were asked to develop a Pull Request plugin for the [Tuleap](https://www.tuleap.org/) platform (an open-source forge to track project development). This plugin was designed as an alternative to [Gerrit](https://www.gerritcodereview.com/) (which ships by default), in order to support different team workflows. This project gave us a wonderful opportunity to dive into the intricacies of a web-based code review system: how do you manage the workflow of a pull request, from creation to updates and final merge ? How do you detect conflicts ? What's the best way to display diffs ? And most of all, **how do you implement an inline comments system for code review** ?
 
 In this article, we will focus on this last problem as this is the hallmark of any code review system. As we will see, this is not so obvious and requires some conceptualization and computation. But it will serve as a good illustration of the power of [changesets](http://sogilis.com/blog/demystifying-git-concepts-to-understand/) for any capable VCS (namely Git), as it is an important cornerstone of our solution.
 
-### What Problem Are We Talking about?
+## What Problem Are We Talking about?
 
 In the general picture, the whole process goes something like this:
 
@@ -48,7 +48,7 @@ Wait! What just happens when we talked about outdated comments? How does GitHub 
 
 _(1) The real complexity lies in the diff algorithm, but we won't dive into it in this article._
 
-### First Approach: High-Level Requirements
+## First Approach: High-Level Requirements
 
 More often than not, inline comments are linked to changes. So they are attached to a representation of changes. In this post we will focus on a Unidiff representation (because it will be simpler to visualize and reason about than the side-by-side diff). This leads us to a first definition:
 
@@ -101,7 +101,7 @@ As a side note, we can wonder what happens for an inline comment on line A4, whi
 
 These rules imply that inline comments system are able to track lines between changesets and identify which one has been removed and which one have moved. Notice we said nothing of lines which were already deleted in the original diff. We will save that for later!
 
-### An Intuition of Solution
+## An Intuition of Solution
 
 The first thing to recognize is that we do not deal with a single diff (a.k.a changeset) but at least two:
 
@@ -181,7 +181,7 @@ We can detail the procedure to update inline comments on an added or kept line:
 
 - _b) otherwise, move the comment to the new offset given by the update diff_
 
-### When the Intuition Falls Down (but is a Good First Start Anyway)
+## When the Intuition Falls Down (but is a Good First Start Anyway)
 
 Right now we just talked about added and untouched lines in the diff. Let's make things a bit more complicated by having both added and deleted lines in the original pull request. What happens if we put inline comments on deleted lines?
 
@@ -221,7 +221,7 @@ The update diff would look like this (with offsets):
 
 Oups! Line A3 has disappeared from the diff (since it is already deleted) so we can no longer get its coordinates - the hint is that we no longer have the complete suite of offsets from the original diff in the leftmost column.
 
-### A Systematic Computation for Translation: Basic Case
+## A Systematic Computation for Translation: Basic Case
 
 Still, it looks like we were onto something when using our systems of offset coordinates and translations. Let's find a systematic way to do that.
 
@@ -304,7 +304,7 @@ It the rules seem a bit complicated, the visualization plays nicely to understan
 
 ![Matching_update](/img/2017/02/Matching_update.png)
 
-### The General Problem and its Solution
+## The General Problem and its Solution
 
 Did we really solve the full problem? Actually, we made a strong hidden hypothesis: the pull request base, against which the original diff is computed, never changes with update. In other words, the update is always a fast forward. But this is not necessarily the case. It is pretty common in a pull request to ask the developer to **rebase** changes against the latest source. Suddenly, the original diff against which inline comments were made does not reflect the state of the pull request before update. In other words, some comments may be outdated because the base itself has changed. Also, the updated (or 'final') pull request should now be computed against the new base to reflect the changes.
 
@@ -347,7 +347,7 @@ We have a complete coverage of offsets, which allows us to always translate betw
 
 Notice that rules are now a bit more complicated for removed lines. In particular, there are two cases which mark comments as outdated. Rule (a) invalidates comments on lines which are already deleted in the base (as for the A3 line in the example) and rule (b) invalidates comments on lines which are reestablished in the final diff.
 
-### Conclusion
+## Conclusion
 
 As it happens, defining the algorithmic rules for updating inline comments was not so trivial. Cases like rebase long baffled us and we were not sure we understood how it impacted inline comments. Actually, it took us a few iterations to set things straight. Yet, once we found the gist of it, it looked surprisingly natural: we just describe the space of each changeset with some coordinates, identify how those spaces connect to each other, and apply rules to translate coordinates between connected spaces.
 

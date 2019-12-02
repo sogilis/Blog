@@ -19,7 +19,7 @@ To begin with your apprenticeship of the Git model, you just need the concepts o
 
 > If you have already used other revision tools but think Git is too hard to learn for your needs, this article is for you! However, if you have never used a revision tool before, why not [try Git](https://try.Github.io/levels/1/challenges/1) first? Come back when you have played with the basic commands but want a better grasp about what is going on.
 
-## Git Stores Snapshots (aka Commits) of your Project
+# Git Stores Snapshots (aka Commits) of your Project
 
 We start with an easy one. A commit is snapshot of all files in your project, starting from the root. In other words, it is a copy of all tracked files at the time of creating the commit.
 
@@ -31,7 +31,7 @@ _Commit A points to a snapshot of all project files (files bar, foo, and zorg). 
 
 ![](/img/2015/05/snapshot.png)
 
-## Git Represents Relationships between Commits (aka History) as a Graph
+# Git Represents Relationships between Commits (aka History) as a Graph
 
 In any revision control system, commits do not exist in isolation but are linked through a parent-child relationship, which remembers where a commit comes from (what was the previous state before the commit).
 
@@ -51,7 +51,7 @@ The concept of graph to represent the history of a project seems like pretty int
 
 But more importantly, the history graph allows us to compute the difference between two states - which leads us to the next concept: changeset.
 
-## Git Can Compute Changes between any Two Commits of your Project
+# Git Can Compute Changes between any Two Commits of your Project
 
 When you create a commit B from commit A, you create a new snapshot. But you can also see it as an incremental evolution upon the previous commit. This contribution brought by the commit makes a group of indivisible changes, which is called a changeset.
 
@@ -59,7 +59,7 @@ _A snapshot stores the full state, independent of history: B commit points to fi
 
 ![](/img/2015/05/changeset.png)
 
-### What Is in a Changeset? And What to Do With It?
+## What Is in a Changeset? And What to Do With It?
 
 The interesting bit about changesets is that they can be used as blueprint to copy the changes brought by B elsewhere. This is possible because a changeset contain just enough information about the transformation.
 
@@ -110,7 +110,7 @@ _Changeset can update bar file, even if there is already a change in another pla
 
 ![](/img/2015/05/changeset_conflict.png)
 
-### Changesets Anytime Anywhere
+## Changesets Anytime Anywhere
 
 Things start to become interesting when you know that Git can compute changesets (and patch files) on the fly between any two commits of your project. That means not only how to transform commit A into its child commit B, but also:
 
@@ -124,6 +124,6 @@ _You can read the `git diff` form as `git diff [from] X [to] Y`._
 
 In other words, Git is super effective in computing state transformations and applying such transformations elsewhere (well, most RCS can do the same, but some are more effective than others).
 
-## A Conceptual Model to Understand Git in Action
+# A Conceptual Model to Understand Git in Action
 
 This brief introduction to three concepts of revision tools is enough to understand the essentials of Git. In the [next article](http://sogilis.com/blog/demystifying-git-concepts/) we will put this knowledge in action to explain how some Git commands operate on your project.

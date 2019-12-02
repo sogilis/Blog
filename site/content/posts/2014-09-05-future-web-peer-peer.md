@@ -10,7 +10,7 @@ tags:
   - peertopeer
 
 ---
-## A little bit of History
+# A little bit of History
 
 We got far away from the original ideas that founded the Internet. At first, it was a network of computers. Each computer on the network was given an IP address, and all computers were connected freely and were all equal in rights. Computers were not personal computers then. They were in places like universities and were online most of the time. They were always available for communication.
 
@@ -35,7 +35,7 @@ Then we got the DSL. bandwidth was much more important, and more importantly, c
 
 The personal computer did not fight back. After all, this as all for very good reasons.
 
-## Empowering the personal computer
+# Empowering the personal computer
 
 It is time to restore the personal computer’s constitutional rights: “all computers are connected freely and are all equal in rights”. We can do that by finding ways for computers to communicate with each other that bypass the restrictions that might be imposed on personal computers. Personal computers will then have an equal position on the community than any other computer.
 
@@ -44,7 +44,7 @@ It is time to restore the personal computer’s constitutional rights: “all c
 * It shouldn’t consume too much bandwidth so it stays accessible to slow links
 * It should use many tricks to bypass the nasty device called NAT
 
-## Empowering the human society
+# Empowering the human society
 
 As humans, we also need empowering. There are constant threats on our free speech, and many entities would like to censor us. There are also many threats on out privacy. CIA and great companies known a lot more than we want to think. They can track us on the Internet in real time, and they often do.
 
@@ -56,7 +56,7 @@ What should we be able to do with the web?
 * Be able to view content produced by anyone.
 * Be relatively anonymous (complete anonymity is quite impossible). Have no easy central place that can track what you are doing.
 
-## Introducing BitWeb
+# Introducing BitWeb
 
 There is already an interesting protocol out there that provides many of the things we need. It’s called BitTorrent. Can we use it to run the web?
 
@@ -71,23 +71,23 @@ That solves the personal computer problems. What about empowering us, humans ?
 * it is possible to download any content. None is in the power to decide that you cannot download a torrent. You always can, and if it’s illegal, you might be tracked for it (but that’s just normal police work, or it should)
 * there is no central place when using trackerless torrents. None knows exactly what you did.
 
-## How can we replace the web with it
+# How can we replace the web with it
 
 The short answer is: no we can’t completely replace the web by that. We can only replace most of it. As it was designed, the web allowed applications to run on top of it. Those will have to stay with the old protocols. We can only replace websites and webpages.
 
-### What is the difference between web applications and websites?
+## What is the difference between web applications and websites?
 
 **Web Applications**: are applications that run on a server. If we remove the server, the application stops working. For example, this includes Google, GMail, the editor in Wikipedia, …
 
 **Websites**: A website is a collection of pages, each containing some content that was put there by the author. This includes YouTube, News sites, Blogs, the public pages of Wikipedia, …
 
-### But, in websites, not everything is static, and a server software is needed…
+## But, in websites, not everything is static, and a server software is needed…
 
 A server software is needed only because a software is needed to generate content, and the software that does that is generally made to work on a server, and nowhere else. It is completely possible to have software that generates a website that do not run on a server. These are generally called _HTML editors_ or _static website generators_. But it can be anything, really.
 
 There is one exception to that: the user comments. When you read an article or view a video, you can generally add a comment. This is provided as a form of web application embedded within your web page. There are ways to do that that do not involve creating a different web application on each website. It can be integrated as part of the web directly.
 
-### Ok, so how would you do that?
+## Ok, so how would you do that?
 
 If you don’t know what is BitTorrent, I suggest you use it a little before continuing reading. If you can look at how it works (including how a Distributed Hash Table (DHT) works), it’s even better.
 
@@ -95,7 +95,7 @@ Let’s agree on one thing: a website is a collection of files that do not chang
 
 So we can say that a website can be represented as a torrent. **We just need a way to update the files in a torrent.** The problem is that BitTorrent software is not generally equipped to view webpages, so **let’s have a BitTorrent client that can serve websites/torrents to web browsers.** We’ll just have to **find a way to add comments to webpages** then. We might also want to ensure that **until we decided so, no one knows what website we promote.**
 
-#### Make torrents viewable in a web browser
+### Make torrents viewable in a web browser
 
 That’s quite easy. Torrents can be identified by their _info hash_, wich is a 20 bytes binary string that can be encoded in human readable format. Giving them domain name would be possible with th current DNS system. Although centralized, in the event of censorship, we can always fall back to the cryptic identifier.
 
@@ -103,13 +103,13 @@ There is also alternatives to the DNS system such as namecoin or djdns. This art
 
 Once identified, we need a software that can produce a webpage for an url like [http://9420241a7fbf98730abfbfe26a6289eeca732aa2.bitweb/page.html](http://9420241a7fbf98730abfbfe26a6289eeca732aa2.bitweb/page.html). It’s relatively easy to create a HTTP proxy software, or a HTTP server, that would return the content of the torrent.
 
-#### Update files in a torrent
+### Update files in a torrent
 
 If you want to modify your website, just create a new torrent. You then need to link the new one to the old one. The problem is that once created, a torrent cannot be modified. You need a mechanism to tell everyone that a specific torrent has a new version. There are many ways to do that.
 
 One includes using a protocol extension [DHT Store](http://www.rasterbar.com/products/libtorrent/dht_store.html) that is being created at the moment. You then have to use cryptography to ensure that only the author can update its torrent.
 
-#### Find a way to add comments to a webpage
+### Find a way to add comments to a webpage
 
 The comments problem can be generalized. Instead of adding a comment to a webpage, you have to think in terms of linking a resource (the content) to the web page. To display comments on the page, the page will just have to display linked content.
 
@@ -119,7 +119,7 @@ The solution can be found with the DHT as well. The distributed hash table can s
 
 The solution is not obvious, but it is not impossible either.
 
-#### Make sure no one knows which page we are visiting
+### Make sure no one knows which page we are visiting
 
 Unfortunately, this is impossible. Even the anonymity networks such as Tor or I2P can’t ensure that none will ever know. You have just good chances no one does.
 
@@ -130,7 +130,7 @@ What we can easily do is ensure there is no central point that knows what you ar
 
 If you want increased anonymity, you’ll have to use the same strategy as the anonymity networks: ask a neighbor to ask a neighbor to download the piece for you.
 
-## So, what do we get then
+# So, what do we get then
 
 We get a protocol that:
 

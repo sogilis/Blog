@@ -32,7 +32,7 @@ La solution de Clotoo permet de lancer des impressions simultanées et parallè
 
 Durant quatre mois, trois membres de l’équipe Sogilis ont travaillé pour le logiciel permettant de monitorer les imprimantes et le système central de gestion du service. Notre objectif a été de tester rapidement la faisabilité et la fiabilité du service à travers notre approche itérative et incrémentale. Bilan en vidéo.
 
-## Clotoo, l’imprimante 3D collaborative
+# Clotoo, l’imprimante 3D collaborative
 
 Chaque entreprise ou particulier qui possède une imprimante [Clotoo](http://www.clotoo.com/) fait partie de son réseau et peut imprimer des séries d'objets en utilisant des imprimantes de ce réseau.
 
@@ -40,7 +40,7 @@ Chaque impression faite par quelqu'un d'autre sur son imprimante donnera lieu à
 
 Disons que, par exemple, je souhaite imprimer 100 porte-clefs. Une interface me permet de décider sur quelle imprimante je vais produire ces porte-clefs. Je sais à chaque instant où chaque imprimante est située et dans quel délai ma commande pourra être prise en compte par l'imprimante. Enfin, je pourrai choisir de me faire livrer ou d'aller moi-même chercher ma commande dans le réseau le plus proche. Lorsque je passe commande, j’ai donc une facture avec un délai de réception, qui comprend le délai de fabrication et de livraison.
 
-## Le rôle de Sogilis
+# Le rôle de Sogilis
 
 Notre objectif a été de paralléliser et d’ordonnancer avec fiabilité les impressions sur toutes les imprimantes du réseau. En favorisant le réseau de proximité géographique, Clotoo souhaite limiter la problématique du transport : pouvoir aller chercher l'objet soi-même. 
 

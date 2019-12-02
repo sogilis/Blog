@@ -25,13 +25,13 @@ DevOps, livraison continue, open innovation, agilité, quand deux start-up arriv
 
 [**Enalean**][1], éditeur du logiciel open source Tuleap, basé à Grenoble et Savoie Technolac, et [**Sogilis**][2], société d'ingénierie informatique basée à Grenoble et Lyon, collaborent depuis plus de 3 ans. Ensemble, les deux sociétés du sillon alpin fournissent des applications logicielles de haute qualité, de véritables avantages concurrentiels pour les industriels. Car si l’avenir d’une start-up peut être lié à un grand compte, le contraire est tout aussi vrai !
 
-## Pourquoi ça marche ?
+# Pourquoi ça marche ?
 
 **Côté start-up** : Enalean et Sogilis partagent les mêmes valeurs : mise en place des dernières méthodologies d'ingénierie, exigence envers eux-même, implication des équipes internes. Ces pépites innovent constamment. En matière de business model -avec l'[Open Roadmap™ de Enalean](https://blog.enalean.com/open-roadmap-enalean-comment-ca-marche/) ou l’accompagnement [Market Driven Development de Sogilis](http://sogilis.com/competences/) par exemple-, en Ressources Humaines -les équipes sont auto-organisées-, en R&D -Hackathons- .
 
 **Côté grand compte** : En travaillant avec de petites entreprises, les grands comptes développent et profitent d'idées neuves et d'une inventivité qui change la donne. À l’heure où des nouveautés émergent chaque jour, il est capital pour les industriels de suivre la cadence. Être la première à lancer et à adopter une innovation est un atout concurrentiel qui n’a pas de prix.
   
-## TuleapCon 2017, la journée des innovations en ingénierie logicielle
+# TuleapCon 2017, la journée des innovations en ingénierie logicielle
   
 Enalean et Sogilis partageront le résultat de leur collaboration le 29 juin 2017, à Aix les Bains lors de la [TuleapCon2017](https://tuleapcon.tuleap.org/). Cette journée réunira la communauté Tuleap et présentera notamment les dernières fonctionnalités, développées conjointement.
 
@@ -43,7 +43,7 @@ Sogilis présentera concrètement son expertise technique. Son équipe démontre
 
 **_« L'agilité et les pratiques de développements associées sont une force pour Sogilis. Travailler avec Enalean pour apporter à Tuleap des outils permettant de faciliter ces pratiques apporte du sens à notre travail. »_** souligne Luc Jeanniard de chez Sogilis.
 
-## A propos de Enalean
+# A propos de Enalean
 
 Enalean est éditeur du logiciel [Tuleap](https://www.enalean.com/fr/tuleap), première suite de Gestion du Cycle de Vie des Applications (ALM) entièrement Open-Source.
 
@@ -56,7 +56,7 @@ Tuleap organise et automatise les développements : backlog, tâches, bugs, co
 [@TuleapOpenALM](https://twitter.com/TuleapOpenALM)
 [@EnaleanTeam](https://twitter.com/EnaleanTeam)
 
-## A propos de Sogilis
+# A propos de Sogilis
 
 Booster d’innovation depuis 2008, Sogilis est une entreprise d’ingénierie informatique qui construit des applications dans des domaines variés. Son équipe pluridisciplinaire se positionne sur un haut niveau de qualité pour créer des logiciels utiles, utilisables et durables, de l’embarqué critique aux applications web cloud native.
 

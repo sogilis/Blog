@@ -13,7 +13,7 @@ tags:
 
 Arrivant au terme d'une partie de l'accompagnement avec la mise en place de Scrum et de Kanban, j'ai eu l'envie de faire un jeu pour illustrer l'importance de la communication dans les équipes et la puissance des méthodes itératives. J'ai choisi d'organiser le célèbre Marshmallow Challenge !
 
-## Préparation
+# Préparation
 
 J'avoue que je ne savais pas trop comment le management et les équipes allaient réagir à l'idée de faire un jeu alors j'ai tâté le terrain vers le responsable des équipes. L'idée est acceptée alors c'est parti ! Tout le monde était convié, le management, le marketing et les équipes de développement.
 
@@ -37,7 +37,7 @@ J'avais prévu un peu de musique pour l'ambiance. J'avais choisi Toto, c'est roc
 
 Tout le monde était convié mais ne savait pas pourquoi :). Le secret a été bien gardé pour une surprise maximale.
 
-## Jour J
+# Jour J
 
 Après les sprint reviews, j'annonce la couleur, nous allons faire un jeu. Je vois le regard de certaines personnes … que va t-il nous sortir ? 🙂
 
@@ -71,7 +71,7 @@ Verdict :
 
 Nous prenons le temps de débriefer. Les observateurs font leurs retours. Les équipes qui ont voulu faire une tour très haute dès le début ont eu des difficultés à obtenir quelque chose de stable ! Les essais moins ambitieux mais successifs - des itérations - ont permis de s'appuyer sur des premiers résultats concluants pour infine obtenir un meilleur résultat. On a aussi pu remarquer l'importance de la communication; les équipes ayant pris le temps de débattre d'une stratégie avant de commencer s'en sont mieux sorties !
 
-## Conclusion
+# Conclusion
 
 Nous avons passé un très bon moment. Les équipes, tirées au sort, ont permis à des personnes ne travaillant pas nécessairement ensemble au quotidien d'échanger, de bâtir quelque chose. Les membres de la direction ont pris part au jeu, au milieu des équipes, et j'ai trouvé ça très sympa ! Tout cela remet une bonne dose de convivialité dans les équipes !
 

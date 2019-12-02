@@ -19,7 +19,7 @@ Récemment, nous avions à créer un environnement de développement pour un pro
 On utilisait `Vagrant` pour faire tourner l'application avec une debian afin de coller à la configuration du serveur de production. Et puis, les install sur une machine Windows, ce n'est pas ma tasse de thé.
 
 Après avoir testé et retesté les scripts de déploiement de `Vagrant` sur nos machines, nous avons lancé `vagrant up` sur la machine Windows suivi de `vagrant provision`.
-  
+
 Ce dernier, appelle un script shell, permettant de déployer la base de données MySQL associée au projet.
 
 Et là, horreur, les scripts shells n'arrivent pas à se lancer. L'erreur est même bizarre puisque :

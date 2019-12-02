@@ -14,7 +14,7 @@ tags:
 
 Suite de la découverte de la programmation desktop et mobile avec Qt.
 
-## Sommaire
+# Sommaire
 
 - [L'application de base]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#base-app" >}})
   - [Qt et application Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#qt" >}})
@@ -37,11 +37,11 @@ Suite de la découverte de la programmation desktop et mobile avec Qt.
   - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
 - [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-### 2048 <a id="2048"></a>
+## 2048 <a id="2048"></a>
 
 Maintenant que notre application QtQuick fonctionne intéressons nous à notre 2048.
 
-#### 2048.c <a id="c"></a>
+### 2048.c <a id="c"></a>
 
 Le but étant d'explorer des technologies, pas de développer un jeu, je me suis donc basé sur une implémentation du 2048 en `c` que vous pouvez [trouver ici](https://github.com/mevdschee/2048.c).
 
@@ -51,7 +51,7 @@ Le code est relativement simple, il y a une matrice 4*4 qui représente le plate
 
 J'ai gardé les principes de base, juste quelques petites modifications mineurs entre autre au niveau de ces déplacements.
 
-#### 2048 en Qt <a id="qt"></a>
+### 2048 en Qt <a id="qt"></a>
 
 J'ai donc ajouté une classe `Board` qui hérite de `QObject`. Il est bienvenue d'hériter de `QObject` car ça apporte plein de choses, comme les signaux et slots.
 

@@ -10,8 +10,8 @@ tags:
   - mobile app
 
 ---
-## How we ran iterations
-  
+# How we ran iterations
+
 310+ sketches | 25+ Marvel prototypes | 2 public releases**
 
 [Now that we set the project environment up](http://sogilis.com/blog/designing-hexo-mobile-app/), it was time to roll up our sleeves and start running design sprints.

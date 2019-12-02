@@ -15,7 +15,7 @@ tags:
 ---
 # Découvrez la méthode du deep learning avec Sogilis.
 
-## Notre expertise historique  dans les problématiques de vision assistée par ordinateur, couplée aux nouvelles techniques de deep learning représente un avantage dans le contrôle, à différents niveaux, des étapes-clés de la chaîne de production.
+Notre expertise historique  dans les problématiques de vision assistée par ordinateur, couplée aux nouvelles techniques de deep learning représente un avantage dans le contrôle, à différents niveaux, des étapes-clés de la chaîne de production.
 
 Vous êtes confrontés à des défauts récurrents dans votre chaîne de production ? Vous souhaitez trier des produits selon certains critères visuels ? (aliments, pièces manufacturées, composants, ...).
 

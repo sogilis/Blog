@@ -11,7 +11,7 @@ tags:
   - "modèle d'organisation"
 
 ---
-## Ceci n'est pas une SSII / ESN / Société de service / Boîte de consulting...
+# Ceci n'est pas une SSII / ESN / Société de service / Boîte de consulting...
 
 Nous n'aimons pas nous appeler [SSII](http://t.umblr.com/redirect?z=https%3A%2F%2Flmddgtfy.net%2F%3Fq%3DSSII+%21wfr&t=MTMyNWEwN2I5Y2YyYWMzNmM2MDAxMTIzMDEyZTEzYzM1ZjI4ZmUyZSw0UHNZSXdhMw%3D%3D). Vous allez dire que c'est le cas de toutes les SSII, et vous avez raison.
 
@@ -25,7 +25,7 @@ Parmi ces décisions importantes, les projets potentiels entrants sont tous tran
 
 Un autre aspect important de la vie de l’entreprise auquel les développeurs participent est le recrutement. Nous n'avons pas de service de ressources humaines pour cela, ce qui permet de faire du recrutement une préoccupation collective. Nous allons étudier plus en détails cet exemple.
 
-## L’ouverture du recrutement
+# L’ouverture du recrutement
 
 **L'exemple de Marie, candidate développeuse logiciel embarqué**
 
@@ -51,11 +51,11 @@ Jean est un jeune designer qui cherche à effectuer un projet de fin d'études (
 
 Dans la dernière colonne se trouve le profil de Michel. Il doit rencontrer les dirigeants car il a déjà convaincu les développeurs qu'il apporterait un plus aux équipes. Pendant cet entretien, Christophe et Laurent donneront aussi leur avis sur la candidature de Michel et régleront avec lui les détails administratifs du contrat. En général, c'est une formalité ! Une date sera retenue pour son arrivée, pour que nous ayons notamment suffisamment de charge de travail pour l'accueillir. Sa candidature entrera ensuite dans l'ultime case avec cette date : Michel est un nouvel arrivant. **Il va lui falloir un référent à son arrivée afin de faciliter son intégration.**
 
-## Les objectifs de recrutement à Sogilis
+# Les objectifs de recrutement à Sogilis
 
 Sogilis n'a pas vocation à grossir démesurément. L’organisation de l’entreprise que nous défendons n'est, selon nous, pas compatible avec une taille trop importante. Nous nous limitons à une trentaine d'employés par entité, toutes fonctions confondues, pour garantir le respect de nos valeurs et de notre fonctionnement actuel. Christophe, le gérant, préfère dupliquer le modèle de réussite qu'est Sogilis Grenoble à travers le monde. Cette démarche est d'ailleurs déjà entamée avec les entités Sogilis Lyon et Sogilis Australie. Toutes proviennent de l’initiative d’anciens de Sogilis Grenoble qui ont voulu se lancer dans de nouvelles aventures.
 
-## L'ouverture à d'autres processus
+# L'ouverture à d'autres processus
 
 L'objectif est donc de responsabiliser l'équipe sur l'ensemble des aspects de l'entreprise. Donner le plus de libertés possibles à l'équipe est un pari éprouvé. En étant plus écoutés et responsabilisés, nous sommes plus impliqués.
 

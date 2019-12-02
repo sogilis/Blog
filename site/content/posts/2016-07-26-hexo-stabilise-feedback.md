@@ -14,7 +14,7 @@ A few weeks after interviewing _[one of our expert user](https://www.facebook.co
 
 ![xavproto_1-min](/img/2016/07/xavproto_1-min.jpg)
 
-## Fixes
+# Fixes
 
 At design crit we discussed the merits of being able to reposition the drone exactly where you want to avoid obstacles and prevent risk. We paired with the dev team and suggested that having a ‘settings’ menu displayed on screen was superfluous. If you wanted to reposition the drone on the fly you could just wave your phone or use gesture. This would remove the need for a second screen with complex settings.
 
@@ -24,7 +24,7 @@ It was going to be risky to have the team start building this unproven UI. The e
 
 This new feature is not released yet. Will be next September. Can’t show you anything but it’s gonna be awesome!
 
-## Go fast and never go cheap
+# Go fast and never go cheap
 
 We went fast, tested and validated often, reckoned that if necessary, we could question decisions, cut scope and re-prioritise agendas. But we all shared the same vision: never sacrifice quality to meet deadlines.
 

@@ -15,7 +15,7 @@ tags:
 
 ![YES](/img/yes.gif)
 
-## Contexte
+# Contexte
 
 Le but étant d'étudier git et de l'utiliser autrement qu'à l'habitude. Par contre, histoire de ne pas travailler dans le vent, il fallait bien développer un petit quelque chose. Nous sommes donc partis sur un grand classique des tutos web : la _todo list_ !
 
@@ -30,7 +30,7 @@ Le code de base provient d'un petit tuto sinatra disponible [ici](http://www.cre
 
 Je ne vais pas plus rentrer dans le sujet, l'application est vraiment simple et ce n'est pas l'objectif de cet article.
 
-## Et si on sortait un peu de notre coquillage ?
+# Et si on sortait un peu de notre coquillage ?
 
 Tout ce qu'on a vu pour le moment c'est comment utiliser des couches basses de git depuis notre `shell`. C'est cool mais si le but était de ne pas trop se prendre la tête avec les fichiers c'est pas encore gagné.
 
@@ -44,7 +44,7 @@ En particulier, il existe [rugged](https://github.com/libgit2/rugged), un bindin
 
 Voici donc la _traduction_ de toutes ces commandes en ruby afin de les inclures dans notre superbe, notre magnifique, notre exceptionnelle application sinatra de TodoList !
 
-## Et voici la version raboteuse !
+# Et voici la version raboteuse !
 
 Pour l'installation, comme vous utilisez [gem](http://rubygems.org/) et [bundler](http://bundler.io/) (what else?) c'est super simple. Ajoutez
 
@@ -115,7 +115,7 @@ Rugged::Commit.create(repo, options)
 
 Et voilà ! La même chose, en ruby !
 
-## Un dex
+# Un dex
 
 Bon, ce que vous ne voyez pas ici c'est que la gestion de l'index est par contre assez lourde. En effet, si vous désirez faire un deuxième commit qui rajoute une entrée sur un autre chemin… il vous faudra préalablement rajouter le premier à l'index. En clair il faut que l'index contienne tous les fichiers correspondant à la copie de travail courante. Si une entrée n'existe pas, elle sera alors simplement supprimée.
 
@@ -154,7 +154,7 @@ end
 
 `read_tree` s'occupe justement pour nous de lire tous les blobs correspondant à un arbre et les ajoute à l'index.
 
-## Et si on lisait ?
+# Et si on lisait ?
 
 Petit aparté sur l'index terminé (enfin presque…), il est maintenant intéressant de lire une donnée basée sur sa clé.
 
@@ -251,7 +251,7 @@ end
 
 A vous de choisir celle qui vous semble la plus intéressante 🙂
 
-## Résultat
+# Résultat
 
 On a donc vu comment écrire et lire des données dans git sous forme de couple clé/valeur.
 
@@ -259,7 +259,7 @@ Vous conviendrez que la lecture (surtout) est pas génialissime, un peu lourde. 
 
 Néanmoins cela fonctionne !
 
-## Extra
+# Extra
 
 Si on veut aller plus loin, on peut commencer par naviguer dans l'historique.
 
@@ -280,7 +280,7 @@ oid = prev['1.json'][:oid]
 
 On vient alors de naviguer dans l'historique afin de récupérer les données telles qu'elles étaient présentes dans le passé.
 
-## Gungnir
+# Gungnir
 
 Vous pouvez trouver le code de l'application de TodoList avec stockage dans git sur notre github, dans le projet [gungnir](https://github.com/sogilis/gungnir).
 
@@ -295,7 +295,7 @@ et rendez-vous sur `http://localhost:9292`. Vous pouvez alors ajouter des items,
 
 Et pour une petite démo en live rendez-vous sur [gungnir.herokuapp.com/](http://gungnir.herokuapp.com/)
 
-## Conclusion
+# Conclusion
 
 Ainsi s'achève notre petite découverte de git comme moteur de stockage.
 
@@ -305,7 +305,7 @@ Il y a encore beaucoup de choses à découvrir comme par exemple les possibilit�
 
 Ha oui, un dernier rappel sur git avant de se quitter. Sogilis dispense toujours des formations Git !
 
-## Ressources
+# Ressources
 
 - [Git: the NoSQL database](http://opensoul.org/2011/09/01/git-the-nosql-database/) par Brandon Keepers
 - [Vidéo Git: the NoSQL database](http://vimeo.com/44458223) par Brandon Keepers

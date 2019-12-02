@@ -20,7 +20,7 @@ Face à un porteur de projet en phase de démarrage, nous avons besoin d'outils 
 
 Dans notre expérience, l'approche story map demande une certaine maturité des process agiles et du domaine pour être pleinement efficace. Nous explorons dans cet article une approche plus terre-à-terre et pragmatique, identifiant avant tout la valeur et le risque dans un projet pour obtenir un démarrage efficace.
 
-## Qu'attend-on de nous ?
+# Qu'attend-on de nous ?
 
 Dans [l'article précédent](http://sogilis.com/blog/decouverte-amorcage-projet-storymap/), nous avons expliqué pourquoi la story map n'était pas l'outil le plus adapté pour découvrir et planifier un nouveau projet. Bien que favorisant la discussion, le focus sur les activités des utilisateurs et les lots de fonctionnalité ne permet pas d'aborder les questions fondamentales du porteur de projet à ce stade :
 
@@ -36,21 +36,21 @@ A l'issue d'une story map, ceci se traduit malheureusement souvent par les quest
 
 Ce qui amène immanquablement à des incompréhensions et des discussions commerciales sur le forfait de développement. **Ces questions ne rendent pas service à un projet en phase de démarrage, car elles figent trop les attentes.** Ce n'est pas le genre de collaboration que nous souhaitons mettre en place avec les porteurs de projet. Pour autant, par le passé, nous faisions avec et arrivions à fournir les réponses demandées.
 
-## Petite histoire qui n'a pas marché et nous a poussé à changer
+# Petite histoire qui n'a pas marché et nous a poussé à changer
 
 Jusqu'au jour où nous avons accompagné un projet industriel de recherche et développement. Ce projet était au stade du démarrage, avec des partenaires expérimentés chacun dans leur domaine (industrie lourde, start-up, laboratoire de recherche publique) et bien évidemment des méthodes de travail différentes. Etant sollicités sur la planification de ce projet en mode agile, nous sommes partis de façon classique sur une story map. Mais il s'est vite révélé que celle-ci ne servirait à rien car elle était inadaptée à la taille du projet, à la maturité des partenaires, à leur mode d'organisation, et n'apportait pas de réponses pertinentes aux questions posées par les participants.
 
 Imaginez passer la journée à recadrer les participants, expliquer une approche centrée sur les utilisateurs, quand certains ont des problématiques de recherche en tête, d'autres des problèmes de développement industriel, le tout dérivant en une sorte de « comité de pilotage » qui ne dit pas son nom. Vous comprendrez vite que vous faites fausse route.
 
-## La solution qui sauve la vie
+# La solution qui sauve la vie
 
 Par hasard, c'est peu après cet échec que j'ai (re)découvert le blog de Liz Keogh et en particulier son article intitulé [Capability-based Planning and Lightweight Analysis](http://lizkeogh.com/2013/09/05/capability-based-planning-and-lightweight-analysis/). Et cet article fut une bouée de secours, nous apportant des idées et des méthodes pour aborder ce projet et de nombreux autres. Les sessions suivantes de notre projet d'accompagnement furent nettement plus positives et productives juste en s'essayant à quelques principes.
 
 Le but de cet article n'est pas de présenter toutes les idées de Liz, rassemblées dans sa thématique [Embracing Uncertainty](http://lizkeogh.com/embracing-uncertainty/) ainsi que celles exposées par Dan North dans sa série sur [Deliberate Discovery](http://dannorth.net/2010/08/30/introducing-deliberate-discovery/). Ces lectures sont cependant vivement recommandées pour leur richesse, leur aspect didactique et pour comprendre d'où viennent ces idées (attention, il y en a pour quelques heures si vous plongez dedans !). Nous allons plutôt présenter comment nous exploitons ces idées dans notre approche de découverte d'un projet.
 
-## Découverte de projet : comment démarrer ?
+# Découverte de projet : comment démarrer ?
 
-### Vision des acteurs
+## Vision des acteurs
 
 Comme pour la story map, nous commençons par une vision globale. Le but est ici de faire un tour rapide de toutes les personnes impactées par le projet et de noter comment ou pourquoi elles seraient impactées.
 
@@ -59,7 +59,7 @@ Comme pour la story map, nous commençons par une vision globale. Le but est ici
 
 Les acteurs secondaires regroupent de nombreux profils. La majorité des futurs utilisateurs du système sont en fait des acteurs secondaires. On peut trouver aussi les intervenants financiers, des acteurs en amont ou en aval, ou encore les concurrents. On s'intéressera en particulier aux acteurs pour lesquels négliger les besoins ou buts conduiraient à l'échec du projet.
 
-### Découverte et cartographie des capacités
+## Découverte et cartographie des capacités
 
 La vision nous sert à identifier les acteurs les plus importants pour la réussite du projet. Pour chacun, nous pouvons explorer comment il travaille, quels artefacts il produit ou utilise, comment il interagit avec les autres acteurs. Ce travail esquisse les contours du système et de ses utilisateurs à travers les besoins, les interactions, les problèmes de chacun.
 
@@ -84,7 +84,7 @@ En fonction de la taille et du type du projet, **il est facile d'adapter l'appro
 
 Avec ces règles, il est fréquent que la carte initiale du système tienne en une dizaine de capacités. Un tableau blanc et des feutres, ou bien quelques post-it sont donc largement suffisants pour réaliser l'analyse.
 
-### Identification de la valeur et du risque des capacités
+## Identification de la valeur et du risque des capacités
 
 Nous pouvons rentrer dans le vif du sujet, là où la méthode de Liz Keogh prend tout son sens. Suite à cette cartographie, nous avons un ensemble de capacités représentant notre projet : parmi celles-ci, certaines sont des _commodités_, c'est-à-dire qu'elles sont attendues pour le fonctionnement du système sans être innovantes. D'autres sont classées comme _différenciateurs_. Ce sont celles qui vont faire la différence du projet par rapport à d'autres solutions. Vous pouvez aussi identifier des _spoilers_ : cette fonctionnalité innovante du concurrent qui a tellement bien marché et qui est en passe de devenir obligatoire (si vous suivez, un spoiler est un différenciateur en train de devenir une commodité).
 
@@ -110,7 +110,7 @@ Quand un client pose une question, il est parfois difficile de formuler une rép
 
 Quelques mots-clés pour décrire les capacités, des flèches pour indiquer les dépendances principales, des chiffres pour indiquer le risque… La discussion peut commencer ! Cette commodité risquée à 4 peut-elle être simplifiée ou remplacée ? Quelle priorité donnée au spoiler ? Quelle relation entre ces deux différentiateurs qui semblent indépendants ? Peut-on en choisir celui qui a le plus de valeur ?
 
-### Passer de la carte aux étapes de réalisation
+## Passer de la carte aux étapes de réalisation
 
 Comme noté par [Dan North](http://dannorth.net/2010/08/30/introducing-deliberate-discovery/), si vous réfléchissez à des projets passés et notez tout ce qui a pu gêner leur réalisation, le frein principal aura été tout ce que vous ignoriez au début et n'avez pu prévoir : ces technologies que vous avez apprises en cours de route, ces fausses pistes qui semblaient prometteuses, ces changements d'objectifs liés de à nouvelles opportunités, et tous les accidents de parcours qui ont affecté la vie du projet. Suivant son principe de _découverte délibérée_, plus vite on détecte et attaque les points incertains d'un projet, plus l'équipe sera capable de se projeter sur la réalisation, plus les risques de dérive diminuent.
 
@@ -125,7 +125,7 @@ Croiser la valeur différenciante et les risques des capacités nous permet donc
 
 En répétant cette analyse sur les capacités, leur valeur et leur risque, les étapes de votre projet se dessinent peu à peu : **chaque étape vise à éliminer un risque tout en apportant une nouvelle valeur.** Vous concentrez votre effort sur l'essentiel. Les commodités et les fonctionnalités accessoires sont limités au strict minimum, tant que les risques essentiels ne sont pas cernés et maîtrisés.
 
-## Place à l'action…
+# Place à l'action…
 
 Un autre principe pour préparer votre plan d'attaque est de fixer des rendez-vous réguliers pour démontrer la valeur du projet. Quelle est la prochaine étape ? Quelle valeur pensez-vous pouvoir démontrer la prochaine fois ? Cela vaut-il le coup ? **Quand vous pouvez décrire de quoi sera capable la prochaine version du système et que vous êtes confiants dans votre capacité de le réaliser, alors vous êtes prêts pour démarrer le projet !**
 

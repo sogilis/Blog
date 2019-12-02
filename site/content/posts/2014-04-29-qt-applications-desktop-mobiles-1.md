@@ -43,7 +43,7 @@ Et c'est donc tout cela que nous allons voir dans cette série d'articles :
 - avoir une interface en QML et voir la liaison entre ces deux parties (initialement l'objectif portait surtout sur ce point mais ça a un peu dérivé ;-))
 - l'exécuter partout !
 
-## Sommaire
+# Sommaire
 
 - [L'application de base]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#base-app" >}})
   - [Qt et application Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#qt" >}})
@@ -66,15 +66,15 @@ Et c'est donc tout cela que nous allons voir dans cette série d'articles :
   - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
 - [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-## L'application de base <a id="base-app"></a>
+# L'application de base <a id="base-app"></a>
 
 Pour explorer ces technologies, il fallait un exemple simple (le but n'est pas d'avoir une grande complexité métier) pour lequel on peut découpler interface et métier, qui soit intéressant aussi bien sur desktop que mobile. Ha oui, et fun aussi !
 
 D'où l'intérêt de partir sur un 2048 (il parait que c'est à la mode…).
 
-### Qt et application Qt Quick <a id="qt"></a>
+## Qt et application Qt Quick <a id="qt"></a>
 
-#### Prérequis <a id="req"></a>
+### Prérequis <a id="req"></a>
 
 Pour commencer, si ce n'est pas déjà fait allez récupérer un Qt. Pour ma part j'ai utilisé un [Qt 5.3.0 beta](http://download.qt-project.org/development_releases/qt/5.3/5.3.0-beta/).
 
@@ -90,7 +90,7 @@ Et d'ailleurs pour en rajouter, si vous êtes sous mac il vous faut xcode…
 
 Bon je présupose dans la suite que vous avez réussi à l'installer, que vous savez lancer QtCreator et que vous avez des bases (pas besoin de choses très complexes) de `C++` voir si possible de `Qt`.
 
-#### Créer un projet Qt Quick <a id="quick"></a>
+### Créer un projet Qt Quick <a id="quick"></a>
 
 Allez c'est parti, comme un tuto classique : création du projet :
 
@@ -116,7 +116,7 @@ Vous trouverez d'ailleurs l'ensemble des sources liées à ces articles dans le 
 
 > _Astuce :_ ajoutez tout de suite un fichier `.gitignore` contenant `*.pro.user` pour ne pas versionner ce fichier.
 
-#### Découverte rapide <a id="discover"></a>
+### Découverte rapide <a id="discover"></a>
 
 Voici donc les fichiers que vous devriez avoir :
 

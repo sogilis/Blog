@@ -10,7 +10,7 @@ tags:
   - businessmodel
 
 ---
-## Money, Money, Money
+# Money, Money, Money
 
 Comme le disait Clint Eastwood : _« Tu vois, le monde se divise en deux catégories : ceux qui ont un pistolet chargé et ceux qui creusent. Toi, tu creuses. »_
   
@@ -20,7 +20,7 @@ Aujourd’hui, quand je rencontre des porteurs de projets, ce qu’ils souhaite
 
 **Conseil n° 1 : garder à l’esprit qu’il est important d’aller rapidement vers les premiers revenus, en économisant vos ressources financières et humaines, sans nécessairement développer l’ensemble de votre produit. L’argent est important, l’accès à votre marché davantage.**
 
-## Business plan sur la comète
+# Business plan sur la comète
 
 Ne soyons pas dupe : oui, il y a toujours besoin d’argent pour accroître son business, mais il existe des techniques pour optimiser le remplissage de la caisse, sans avoir à développer l’ensemble de son produit ou de son offre.
 
@@ -35,7 +35,7 @@ L’élaboration de ces canvas doit impérativement se réaliser en mode itéra
 
 **Conseil n°2 : Faites vous aider. Disposer d’un regard externe peut vous faire gagner du temps, encore faut-il qu’il soit critique et puisse vous faire pivoter si besoin. Si possible, excluez les _« bons amis »_ et les _« meilleurs potes de 20 ans »_ qui auront globalement des avis tranchés, dans un sens comme dans l’autre.**
 
-## Catégoriser votre business, vous dormirez mieux
+# Catégoriser votre business, vous dormirez mieux
 
 Beaucoup de porteurs de projets sont convaincus de l’Utilité de leur produit (avec un grand U). Ils vont alors axer leur stratégie marché en fonction d’utilisations et d’usages qui vont changer le monde, certes. Cette stratégie est tout à leur honneur : _« change the world »_, aider les gens, leur simplifier la tâche, etc. Il existe beaucoup de raisons de penser que ce que l’on crée va aider à améliorer le quotidien de chacun de nous, sauf que…
 
@@ -50,7 +50,7 @@ Autre catégorie qui heureusement existe, l’utile qui est cool – le cool qu
 
 **Conseil n°3 : Ayez une stratégie, mais n’hésitez pas à la remettre en cause. N’éliminez pas le côté fun de ce que vous développez, n’omettez pas le côté utile de votre produit.**
 
-## Un syndrome : la peur du client
+# Un syndrome : la peur du client
 
 Le client est une sorte de lame en céramique qui serait capable d’anéantir votre business en moins de deux. En plus, au départ il ne sait pas ce qu’il veut : autant lui imposer.
 
@@ -62,7 +62,7 @@ Le client est une sorte de lame en céramique qui serait capable d’anéantir 
 
 **Conseil n°4 : n’oubliez pas que vous n’êtes pas forcément le client de ce que vous produisez. Se confronter au marché n’est pas une chose simple. Il existe pourtant des techniques éprouvées à mettre en oeuvre pour casser cette barrière. Elles doivent être réalisées au cas par cas en fonction des hypothèses marché que l’on peut émettre.**
 
-## Des conseils pour mon business, non, pas pour moi
+# Des conseils pour mon business, non, pas pour moi
 
 Se faire accompagner a un coût, je ne le cache pas, et beaucoup de porteurs de projets économisent de manière naturelle sur ce poste de dépenses. J’ai forcément un avis biaisé, j’en conviens. Cet accompagnement a d’autant plus un coût que la plupart des startupers sont persuadés d’avoir en leurs mains l’idée du siècle, qu’ils vont mener à terme sans =embûche. Au passage, ils en profiteront pour tenir secret leur bébé, jusqu’à terme – si terme il y a –, en évitant le syndrome de la _« fausse couche »_.
 

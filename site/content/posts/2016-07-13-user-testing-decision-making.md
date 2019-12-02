@@ -10,19 +10,19 @@ tags:
   - mobile app
 
 ---
-## How we iterated on feedback
+# How we iterated on feedback
 
 _[After running each workshop](http://sogilis.com/blog/designing-hexo-mobile-app-design-sprints/)_, we got a lot of ideas down on paper. It’s good to have ideas but you can’t test and build ‘em all. You have to make decisions. In the previous article, we talked about how we agreed on one or a few solutions and resisted the temptation to introduce any new ideas. Well, we did. Most of the time. But stabilising a design approval can be tricky. In the final two parts of the article series, we’ll talk about our decision-making process and how feedback can be both extremely valuable and hard to manage.
 
  ![testing](/img/2016/07/testing.gif)
 
-## Set the rules of the game
+# Set the rules of the game
 
 Decision-making is easier when you stick to rules. But no need for too much documentation! Documents are hard to keep up-to-date and become less relevant as the team moves forward.
 
 For designing the Hexo+ mobile app our team decided to prototype early and replace abstract documents with concrete customer feedback. But we also created a few game rules that have proven really helpful along the way. We used them anytime we had different approaches to solving a problem, or a doubt regarding what direction to take for the next sprint or release.
 
-### Standards, it’s all about standards!
+## Standards, it’s all about standards!
 
 **IOS and Android guidelines**
 
@@ -48,7 +48,7 @@ We also shared **visual and usability guidelines** in order to maintain design c
 - Streamline user experience but make room for ‘ha-ha’ moments;
 - Provide immediate feedback (visual, sonor, haptic). 
 
-## Iterate, iterate again and remember your product’s story
+# Iterate, iterate again and remember your product’s story
 
 As we were designing and building the Hexo+ apps we were always talking about the original mission: helping people capture aerial footage of themselves, ‘hands-free’. The conversation started with ‘Let’s have a ton of custom movements so that people can have a rich interaction with the product’. We tossed around the idea of potentially allowing people to set manually camera angles, distance and altitude.
 

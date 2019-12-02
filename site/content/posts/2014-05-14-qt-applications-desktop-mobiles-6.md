@@ -14,7 +14,7 @@ tags:
 
 Suite de la découverte de la programmation desktop et mobile avec Qt.
 
-## Sommaire
+# Sommaire
 
 - [L'application de base]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#base-app" >}})
   - [Qt et application Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#qt" >}})
@@ -37,7 +37,7 @@ Suite de la découverte de la programmation desktop et mobile avec Qt.
   - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
 - [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-### Responsive design
+## Responsive design
 
 Maintenant que nous avons une application fonctionnelle, on peut imaginer aller un peu plus loin et exploiter les possibilités de QML.
 

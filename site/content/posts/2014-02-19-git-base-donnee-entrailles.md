@@ -20,7 +20,7 @@ Lors du dernier [Sogiday]({{< ref "posts/2013-12-18-sogiday.md" >}}), nous avon
 
 Voici donc la première partie relatant cette exploration : les entrailles deGit !
 
-## Et si on commençait en parlant un peu de Git quand même ?
+# Et si on commençait en parlant un peu de Git quand même ?
 
 Pourquoi vouloir utiliser Git pour stocker des données (autre que du code) ? C'est pas faute d'avoir un grand nombre de bases de données disponibles.
 
@@ -38,7 +38,7 @@ Et puis ça semble fun aussi !
 
 ![Fun Yeah](/img/fuck_yeah.gif)
 
-## Enregistrer une donnée dans Git
+# Enregistrer une donnée dans Git
 
 La première étape est de pouvoir enregistrer une donnée dans Git.
 
@@ -54,7 +54,7 @@ Le problème, c'est qu'on n'est pas tellement au niveau du stockage des données
 
 Git permet de créer des `blobs` de données, sans manipuler des fichiers. Et ça c'est cool.
 
-## Git, clés et valeurs
+# Git, clés et valeurs
 
 Allez, un petit exemple :
 
@@ -83,7 +83,7 @@ Enfin presque.
 
 Le problème est que si nous changeons la valeur… la clé va changer. Et là nous sommes face à un sérieux problème. Comment accéder correctement à une valeur si la clé change tout le temps ?
 
-## Promenons-nous dans les bois, pendant que…
+# Promenons-nous dans les bois, pendant que…
 
 En effet, la solution se trouve derrière un arbre.
 
@@ -146,7 +146,7 @@ $ git show master:1.json
 {"hello":"world!"}
 {{< /highlight >}}
 
-## Tree et blobs en chaine
+# Tree et blobs en chaine
 
 Alors, plutôt simple, non ? Maintenant, pour bien comprendre comment cela fonctionne, faisons la même chose avec une clé plus complexe.
 
@@ -210,7 +210,7 @@ $ git show master:items/json/1.json
 {"hello":"world!"}
 {{< /highlight >}}
 
-## Conclusion
+# Conclusion
 
 Cette première partie à la découverte (succinte) de Git est terminée. Vous avez pu voir que git nous offre réellement la possibilité d'utiliser ses couches internes et nous expose son modèle de stockage. Ceci permet d'imaginer de nouvelles utilisations de git et surtout autrement qu'en wrappant les commandes Git de haut niveau ce qui serait ni agréable, ni fiable, ni amusant.
 
@@ -218,7 +218,7 @@ Cette première partie à la découverte (succinte) de Git est terminée. Vous a
 
 Un dernier point sur git avant de se quitter. Sogilis dispense aussi des formations Git !
 
-## Ressources
+# Ressources
 
 - [Git: the NoSQL database](http://opensoul.org/2011/09/01/git-the-nosql-database/) par Brandon Keepers
 - [Vidéo Git : the NoSQL database](http://vimeo.com/44458223) par Brandon Keepers

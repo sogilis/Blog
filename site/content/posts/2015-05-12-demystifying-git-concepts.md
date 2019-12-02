@@ -13,7 +13,7 @@ tags:
 ---
 **In the [previous article](http://sogilis.com/blog/demystifying-git-concepts-to-understand/), we saw three essential concepts of revision tools: snapshot, graph, and changeset. In the following, we can apply these concepts to understand how Git commands operate on your project. This will teach us how to think like Git.**
 
-## Updating the Working Copy (Switching between Branches, Pulling)
+# Updating the Working Copy (Switching between Branches, Pulling)
 
 When you switch to another branch, or update your current branch, you change your local working copy. But the working copy actually mirrors your latest commit in HEAD (minus local modifications). Which means that Git can compute the difference between your HEAD and any given commit, then apply the transformation to update your working copy.
 
@@ -27,7 +27,7 @@ There is an added benefit with this strategy. Have you noticed that you can swit
 
 But what happens if Git must patch a file section which already has local changes? It will just forbid the action, otherwise you would lose your changes before you have a chance to commit them.
 
-## Cherry-picking
+# Cherry-picking
 
 You make a cherry-pick when you want to retrieve some commits and changes from another branch, but do all changes. It is typically used for bug fix or small chores, when you really need this one change but can not afford to merge the whole branch.
 
@@ -43,7 +43,7 @@ Cherry-picking really embodies the whole changeset everywhere principle.
 4. If it succeeds, it will create a new commit with the content and the metadata of the source commit (author, message, original timestamp).
 5. It if fails because the context has changed, it will produce a conflict, which you can resolve.
 
-## Rebasing
+# Rebasing
 
 Rebasing (be it a batch one or an interactive one) is not much more complicated once you understand cherry-pick. With cherry-pick, you copy commits from another branch onto your current head. With rebase, you copy commits from your current head onto another branch (then you move your current branch to the rebased commits).
 
@@ -59,7 +59,7 @@ Here is the course of action when you launch a rebase:
 
 With this workflow in mind, it is easy to understand two fringe cases which deter some people to use rebase: orphan commits coming back (for example, after a merge) and recurring conflicts during rebase.
 
-### Advanced Git: Orphan Commits
+## Advanced Git: Orphan Commits
 
 Although rebasing is often explained as moving commits around, it is best to understand it as copying commits. In the figure below, commits C’ and D’ carries the data of C and D, but have a different ancestry: following Git rules, they are not strictly the same as C and D. If no other reference (branch, tag) points to C and D commits, they become orphan and can be garbage collected by Git later. Otherwise, they stay around and can come back to haunt you later if people are unaware of how rebase works (for example, if they merge the old branch with C and D into the new branch).
 
@@ -67,7 +67,7 @@ _Rebasing creates new commits C’ and D’ from the source C and D, changing th
 
 ![](/img/2015/05/rebase_orphan.png)
 
-### Advanced Git: Recurring Conflicts
+## Advanced Git: Recurring Conflicts
 
 Take the three commits above B, C, and D. That means the C changeset expects a context as in B and D changeset expects a context as in C. Now start a rebase with commits C and D on another branch:
 
@@ -79,7 +79,7 @@ Take the three commits above B, C, and D. That means the C changeset expects a c
 
 For someone who is just learning the rebase process, resolving a conflict at each step can be irritating, cumbersome (because you have to resolve similar conflicts), or even unnerving. When it gets too clumsy, people often cancel the rebase and tries a different solution, such as a branch merge (where you resolve conflicts once and for all), a squash and rebase, or for some workflows using Git [rerere](http://git-scm.com/blog/2010/03/08/rerere.html).
 
-## Merging
+# Merging
 
 Merging is conceptually a bit more complex as we need a fourth concept to explain it: the merge base or latest common ancestor. The latest common ancestor is the point where both branches have diverged for the last time. To merge, we need to bring back changes which have appeared in the divergent branch since the split.
 
@@ -97,7 +97,7 @@ With the above concepts, we have a simple plan for the merge operation.
 
 ![](/img/2015/05/merge_step2.png)
 
-### Advanced Git: More Than One Ancestor?
+## Advanced Git: More Than One Ancestor?
 
 The example above represents the most basic scenario. But as merges can be performed multiple times in the history of two branches, you can stumble upon less intuitive cases. Then the notion of **latest** common ancestor becomes important.
 
@@ -115,7 +115,7 @@ Most revision tools fail to handle such cases correctly (Subversion cancels the 
 
 For a detailed example and explanation of how this strategy works better than others, I highly recommend this [blog post and the reference links](http://codicesoftware.blogspot.com/2011/09/merge-recursive-strategy.html) by the guys from Plastic SCM. You can also see the discussion in the man page of [git-merge-base](http://git-scm.com/docs/git-merge-base) for the difference between common ancestors in a 3-way merge and in an octopus merge.
 
-## Go Practice!
+# Go Practice!
 
 These three concepts - snapshot, graph, and changeset - are enough to start understanding how Git works on a daily basis. Of course, this is not intended as a full lesson of Git internals - for example, we only skimmed over how Git manages HEAD, branches or tags as references in the graph. But just the above explanations for basic and not-so-basic commands should give you an idea of how to reason with Git.
 

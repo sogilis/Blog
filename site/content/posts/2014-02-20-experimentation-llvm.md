@@ -27,7 +27,7 @@ Les sujets sont presque inépuisables…
 
 Au lieu d’écrire le compilateur en entier, la partie front-end (le parseur) et la partie back-end (génération de code machine) ont été réutilisées. Le parseur choisi est [miniexp](http://leon.bottou.org/projects/minilisp) et la génération de code s’est faite directement en C++ avec LLVM. Maintenant, voyons comment s’est déroulée la journée.
 
-## Infrastructure de compilation
+# Infrastructure de compilation
 
 La compilation a été un peu laborieuse en début de journée, surtout en considérant le temps relativement court pour réaliser un prototype viable. La [documentation LLVM sur CMake](http://llvm.org/releases/3.3/docs/CMake.html) n’est pas au point. Au lieu de cela, un fichier [FindLLVM.cmake](http://lists.cs.uiuc.edu/pipermail/llvmdev/2010-June/032412.html) trouvé sur les listes de diffusion et utilisant directement `llvm-config` a été de la plus grande aide.
 
@@ -60,7 +60,7 @@ Le fichier `handleLLVMOptions.cmake` dans `/usr/share/llvm/cmake` est utile pour
 
 Finalement, une fois les détails réglés, CMake a su se faire oublier.
 
-## Quel langage ?
+# Quel langage ?
 
 Le fichier `test.sx` suivant a été utile tout au long de la journée pour tester le compilateur. Les instructions étaient ajoutées au fur et à mesure dans la fonction main :
 
@@ -118,7 +118,7 @@ On peut aussi directement interpréter le bytecode avec une machine virtuelle :
 lli test.bc
 {{< /highlight >}}
 
-## L’implémentation
+# L’implémentation
 
 L’implémentation est relativement simple et tient en quelques classes. L’architecture du code est relativement peu intéressante. Trouver la bonne représentation bytecode pour un code donné est facile. En effet, il existe sur Internet [une démo LLVM](http://ellcc.org/demo/index.cgi) qui permet de compiler n’importe quel code C et d’en voir la représentation bytecode LLVM, ou encore mieux, les appels d’API LLVM pour générer le bytecode.
 

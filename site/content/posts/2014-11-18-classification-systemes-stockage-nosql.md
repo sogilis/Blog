@@ -21,7 +21,7 @@ Dans un [billet précédent](http://sogilis.com/blog/mouvement-nosql/), nous avo
 
 La famille des systèmes NoSQL compte des systèmes très hétérogènes qui répondent chacun à des besoins très spécifiques. De façon générale, on arrive à les classer en quatre grands ensembles : les bases **clé-valeur**, **les bases documents**, **les bases orientées colonnes** et **les bases de type graphe**.
 
-## Les bases de données clé-valeur
+# Les bases de données clé-valeur
 
 Une base de données clé-valeur est assimilée à une collection (un dictionnaire) de paires (clé, valeur) où la clé et la valeur sont des chaînes de caractères quelconques. Le système de stockage ne connait pas la structure de l'information qu'il manipule (s'agit-il d'une date ? d'un numéro de téléphone ? d'un article de blog ?) et l'information ne peut être retrouvée que par l'intermédiaire de la clé qui lui est associée.
 
@@ -33,7 +33,7 @@ Exemples : Riak, Redis, Amazon DynamoDB, MemCached…
 
 ![](/img/2014/11/tumblr_inline_ncppxsqeBr1sc5im4.png)
 
-## Les bases de données documents
+# Les bases de données documents
 
 Les bases de données orientées document consistent en une collection de paires (clé, document) où le document lui-même une collection de paires (clé, valeur). En ce sens, on peut voir dans ces bases de données une version raffinée et généralisée des bases clé-valeur. Le document est l'unité d'information stockée, et la scalabilité de tels systèmes est en général très bonne. Le partitionnement de l'information se fait sur la clé principale, tout comme dans le cas des bases de données clé-valeur.
 
@@ -43,7 +43,7 @@ Exemples : MongoDB, RethinkDB, CouchDB, Terrastore…
 
 ![](/img/2014/11/tumblr_inline_ncppyebVo51sc5im4.png)
 
-## Les bases de données orientées colonnes
+# Les bases de données orientées colonnes
 
 Dans les bases orientées colonnes, les tables dans lesquelles les données sont stockées traditionnellement en SQL sont partitionnées verticalement (suivant les colonnes). L'information est représentée sous forme de colonnes indexées par une même clé. Au sein de ce type de système, une même donnée peut être fragmentée sur plusieurs machines distinctes.
 
@@ -55,7 +55,7 @@ Exemples : Apache HBase, Apache Cassandra, Hypertable, Apache Accumulo…
 
 ![](/img/2014/11/tumblr_inline_ncppyr3M7h1sc5im4.png)
 
-## Les bases de données de type graphe
+# Les bases de données de type graphe
 
 Une base de données orientée graphe est une base de données orientée objet utilisant la théorie des graphes, donc avec des nœuds et des arcs, permettant de représenter et stocker les données. Par définition, une base de données orientée graphe correspond à un système de stockage qui respecte des relations d'adjacence entre éléments dits “voisins” : chaque voisin d'une entité est accessible grâce à un pointeur physique. Ces systèmes tirent parti des algorithmes standards issus de la théorie des graphes pour manipuler les données. Il n’y a pas besoin de calculer un index sur les données, puisque la base peut être entièrement parcourue efficacement (plus court chemin - _Dijkstra_, parcours en profondeur, en largeur…). Ces algorithmes sont optimisés, revus et corrigés depuis de nombreuses années. Ces bases de données sont ainsi plutôt adaptées lorsqu’il s’agit de traiter des informations présentant un haut degré de corrélation.
 
@@ -69,7 +69,7 @@ Exemples : Neo4J, Infinite Graph, DEX…
 
 ![](/img/2014/11/tumblr_inline_ncppz4EuZo1sc5im4.png)
 
-## Cohérence, disponibilité et partitionnement
+# Cohérence, disponibilité et partitionnement
 
 A la suite de cette description, on comprend que le mouvement des bases de données NoSQL contient plusieurs approches qui ont une architecture qui leur est propre et qui traitent des cas d’utilisation bien définis. Il convient donc de choisir l'outil qui répond le mieux au problème posé, à la fois en termes de modélisation mais aussi de répartition des données. En parallèle de cette classification, il existe trois caractéristiques très importantes à prendre en compte lors du choix d'un moteur de stockage : la **cohérence** des données, la **disponibilité** des données et le **partitionnement physique** des données.
 
@@ -83,7 +83,7 @@ Un résultat connu sous le nom de (lemme de Brewer _(en)_)[http://en.wikipedia.o
 
 ![](/img/2014/11/tumblr_inline_ncpr1fhc5T1sc5im4.png)
 
-## Références
+# Références
 
 1. Un catalogue à jour des systèmes de stockage NoSQL existants.
   [nosql-database.org](http://nosql-database.org/)

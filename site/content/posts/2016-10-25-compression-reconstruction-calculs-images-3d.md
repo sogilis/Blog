@@ -11,13 +11,13 @@ tags:
 ---
 Ce billet présente l'algorithme PCA (Principal Component Analysis, ou encore analyse en composantes principales). Il s’agit d’une technique mathématique qui identifie et explique la corrélation d'un ensemble de données discrètes. Cet article pose les bases de cet algorithme et détaille une de ses applications pour la reconstruction d’image.
 
-## Le PCA : une méthode, plein d'applications !
+# Le PCA : une méthode, plein d'applications !
 
 L'analyse en composantes principales est **une technique d'analyse et de visualisation de données qui est populaire dans un très grand nombre de domaines** qui n'ont, _a priori,_ pas grand chose à voir entre eux. En effet, on retrouve l'algorithme PCA en économie, en biologie, mais aussi en physique, en mathématiques (évidemment), en apprentissage automatique (machine learning), sans oublier les sciences sociales ou encore la finance. Pour être bref, le PCA est utilisé dans à peu près tous les domaines qui manipulent des données quantifiables et qui ont besoin de faire des statistiques pour trouver une structure, un modèle dans la donnée, afin d'être en mesure d'expliquer leur provenance et leurs fluctuations.
 
 D'autre part, il s'agit d'**une technique qui est relativement simple à appréhender**, pourvu qu'on soit à l'aise avec certains fondamentaux mathématiques (notions de matrices, d'espaces vectoriels et de statistiques). C'est ce qui explique d’ailleurs pourquoi le PCA a été utilisé dans des domaines si différents.
 
-## Principal Component Analysis
+# Principal Component Analysis
 
 L'analyse en composantes principales (PCA) est une technique statistique qui se charge d'expliciter la covariance d'un ensemble de données. La représentation de la donnée en amont est laissée à la discrétion de l'utilisateur, et nous reviendrons dessus dans un cas d'utilisation concret plus loin dans ce billet. En particulier, **le PCA permet de déterminer les axes** (_ie_ les directions) **selon lesquels le jeu de données varie le plus**. Il s'agit d'une méthode qui permet d'éliminer la corrélation des données et de trouver une représentation moins redondante, plus compacte, de la même information.
 
@@ -47,7 +47,7 @@ Supposons que notre jeu de données compte 1 000 points (de deux coordonnées ch
 
 On a donc réduit de moitié l'espace nécessaire pour stocker les données. Le gain est d'autant plus intéressant si les données ont beaucoup de composantes principales qui ne contribuent pas à leur dispersion. Cette technique est souvent nommée « **réduction de complexité** » dans la littérature.
 
-## Une application : compression et reconstruction d'images
+# Une application : compression et reconstruction d'images
 
 La compression et la reconnaissance d'images forment un pan de l'apprentissage automatique (_machine learning_) dans lequel **le** **PCA est largement utilisé**, notamment **pour réduire le nombre de variables nécessaires à la représentation - et donc au stockage, en mémoire vive ou sur disque - d'une image**.
 
@@ -88,7 +88,7 @@ Avec PCA, on a besoin de stocker 58 904 octets :
 
 Ce qui réalise un taux de compression de 16,63% sans pour autant perdre le contenu de l'image. La qualité est dégradée évidemment, mais cela a en pratique peu d'impact (en apprentissage automatique notamment) car **l'essence même de l'image est préservée**.
 
-## En résumé
+# En résumé
 
 Nous avons vu que la matrice de covariance issue du jeu de données initial est diagonalisable. L'algorithme permet de récupérer une base de vecteurs propres de cette matrice de covariance ainsi que les valeurs propres associées. **Plus grande est la valeur propre, plus le vecteur propre correspondant décrit l'axe selon lequel les données sont le plus dispersées** (et par conséquent décrit mieux le jeu de données).
 
@@ -98,7 +98,7 @@ C'est tout pour aujourd'hui !
 
 [Alexandre Dumont](https://twitter.com/_dumontal)
 
-## Références
+# Références
 
 - (Visualisation en 3D du PCA (en, html))[http://setosa.io/ev/principal-component-analysis/]
 - (Analyse du bruit d'un jeu de données et décomposition par valeurs singulières (en, pdf))[https://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf]

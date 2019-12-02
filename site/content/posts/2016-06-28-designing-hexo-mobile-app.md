@@ -10,7 +10,7 @@ tags:
   - mobile app
 
 ---
-## A look into the design process for a connected product
+# A look into the design process for a connected product
 
 **In 2014, [Hexo+](https://hexoplus.com/) developed a working prototype and within six months of the initial idea had raised more than $1.3M on Kickstarter. Now more than 2600 Hexo+ intelligent drones and apps have just shipped all over the world.**
 
@@ -24,9 +24,9 @@ We’ll be honest and upfront about some blunders made, and in the comments we�
 
 ![](/img/2016/06/Designing-Hexo-Mobile-App-2.png)
 
-## Setting the stage (part #1)
+# Setting the stage (part #1)
 
-### Building the design team
+## Building the design team
 
 After Hexo+ success during [CES 2015](https://hexoplus.com/blog/ces), both software and hardware developers at [Squadrone System](https://www.linkedin.com/company/hexo-) expressed their needs to have a design team that would help them prototype quickly and get real customer inputs on what works and what doesn't.
 
@@ -38,7 +38,7 @@ So at the end of January we started setting the stage with [Yves](https://fr.lin
 
 We were looking for talented people with complementary skills, individuals who push themselves and inspire those around them. We ended up with an amazing team with Damien, 20+ years of experience as an ergonomist at [Idenea](http://www.idenea.fr/index_en.php?langue=us) with a passion for crushing problems and rock-climbing, Olivier, sharp-eyed content strategist at Squadrone with a background in extreme sports, and Léa, super fun creative graphic designer at [La Société Secrète](http://lasocietesecrete.com/). Later on the team was completed with Vincent and Maxime, two inspired branding designers at [Silence](http://www.silence-design.fr/).
 
-### Quick decisions guide the process
+## Quick decisions guide the process
 
 Once we had our team all set, we needed to make sure that we had access to the folks who can say ‘yes’ or ‘no’ to our design propositions. In a project as fast and furious as Hexo+, you’ve got to have someone inside the client’s organisation who makes decisions and makes them quickly. (The Product Owner (PO))[https://en.wikipedia.org/wiki/Scrum_(software_development)#Product_owner] role is crucial.
 

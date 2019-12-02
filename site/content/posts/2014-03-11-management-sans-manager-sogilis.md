@@ -14,7 +14,7 @@ tags:
 
 Des salariés qui gèrent leur travail comme ils le veulent, des équipes sans supérieur hiérarchique. C’est le cas chez Sogilis. L’entreprise prône le management sans manager, et voici comment cela fonctionne.
 
-## Et si l’on prenait du plaisir au travail ?
+# Et si l’on prenait du plaisir au travail ?
 
 ![Plaisir au travail](https://65.media.tumblr.com/8717f94c566c3a1906647968bb9daea9/tumblr_inline_n20v6dcJf11szbtlw.gif)
 
@@ -29,15 +29,15 @@ Les employés doivent répondre à trois missions uniquement :
 3. **Être rentable**
    Les salariés ont pour objectif de gagner de l'argent pour payer les salaires et contribuer aux frais fixes de l'entreprise.
 
-## Autonomie et autogestion
+# Autonomie et autogestion
 
 Les salariés choisissent la manière dont ils vont réussir à accomplir ces trois missions. Ils sont libres de leurs horaires et de leur mode de fonctionnement. Ils choisissent également les nouveaux venus dans l’équipe.
 
-## Mettre la communication au cœur des relations…
+# Mettre la communication au cœur des relations…
 
 En complément d'une communication en face-à-face, et pour faciliter la communication avec les salariés en télétravail, Sogilis a mis en place des plates-formes de communication interne. Les salariés de Sogilis partagent sur HipChat leurs avis, idées et découvertes. Ils utilisent aussi Basecamp pour gérer des projets et suivre leur avancement.
 
-## Et favoriser l'interaction entre les cellules
+# Et favoriser l'interaction entre les cellules
 
 Le risque du management cellulaire pourrait être la micro-optimisation, c'est à dire que les salariés se focalisent sur la performance de leur propre cellule au détriment des autres. Pour garantir une progression de la société dans son ensemble les salariés doivent réaliser un objectif global, plutôt que par cellule.
 

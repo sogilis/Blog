@@ -20,11 +20,11 @@ Le principe de responsabilité unique (**Single Responsibility Principle** ou SR
 
 Ayant déjà lu et entendu ce principe un peu partout, j'ai voulu creuser pour voir si j'avais bien compris l'idée sous-jacente et ainsi pouvoir l'appliquer correctement. Je vous partage donc ici le résultat de mes recherches et réflexions.
 
-## Intuitivement ou naïvement
+# Intuitivement ou naïvement
 
 Partons du nom de principe : « responsabilité unique ». Naïvement, on peut comprendre que le principe nous dicte de n'avoir qu'une seule responsabilité par... **par quoi ?** Par Méthode ? Classe ? Package / module ? Librairie ?
 
-### ⇒ Première supposition
+## ⇒ Première supposition
 
 Nous sommes en programmation orientée objet, on peut donc supposer que le principe s'applique pour chaque objet, donc pour chaque classe.  
 
@@ -32,7 +32,7 @@ Nous sommes en programmation orientée objet, on peut donc supposer que le princ
 
 Ensuite, **qu'est-ce qu'une responsabilité ?**
 
-### ⇒ Deuxième supposition
+## ⇒ Deuxième supposition
 
 Encore une fois, naïvement, on peut se dire que c'est une fonctionnalité, une tâche ou un rôle comme calculer une moyenne, générer un fichier PDF, gérer des utilisateurs... Mais alors, comment savoir si on est en face d'une responsabilité unique ou de plusieurs responsabilités ?  Je m'explique : « calculer une moyenne » peut être vu comme plusieurs responsabilités : « sommer », « compter le nombre de valeurs » et « diviser ». On pourrait alors aller très loin jusqu'à ne trouver que des **responsabilités unitaires**.  
 
@@ -71,7 +71,7 @@ public int compare(double amount1, double amount2) {
 
 Il y a donc quelque chose qui cloche avec cette interprétation naïve.
 
-## Que dit Internet ?
+# Que dit Internet ?
 
 Une recherche rapide sur _[Grogeule](http://www.grogueule.fr)_ nous donne les éléments suivants :
 
@@ -86,7 +86,7 @@ Une recherche rapide sur _[Grogeule](http://www.grogueule.fr)_ nous donne les é
 
 Bref, tout ça reste encore un peu flou, revenons à l'origine du principe.
 
-## Origines
+# Origines
 
 Le SRP est défini pour la première fois par **Robert C. Martin** dans le livre « Agile Software Development, Principles, Patterns, and Practices » ([_extrait et résumé ainsi par l'auteur : A class should have only one reason to change_](https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view)). Le niveau d'abstraction défini est la **classe** et on a la définition d'une responsabilité : **une raison de changer**. Ça commence à s'éclaircir.
 
@@ -108,7 +108,7 @@ Note : des bugs ne sont pas des _raisons de changer_. Sinon, chaque appel de mé
 
 Pour résumer, Robert nous dit ceci : _An axis of change is only an axis of change if the changes actually occur_. En gros, **tout dépend des futures évolutions de l'application** ! Ça va être facile à appliquer...
 
-## Exemples concrets
+# Exemples concrets
 
 Robert nous donne quelques exemples dans son article :
 
@@ -130,7 +130,7 @@ Robert nous donne quelques exemples dans son article :
 
 Robert est clair sur ce point : **c'est presque toujours à** **éviter** puisque les évolutions de ces 2 responsabilités ont des fréquences et des raisons différentes de changer.
 
-## Application
+# Application
 
 À la lumière de l'article de Robert, voici une démarche possible permettant d'appliquer le SRP : pour chaque classe, je me demande quelles sont les raisons possibles des futures évolutions.
  On ne parle pas de bug fix, mais d'évolutions « naturelles » et plausibles de l'application, fonctionnelles ou techniques. 
@@ -161,7 +161,7 @@ Ensuite, il y a des exceptions, notamment les cas suivants présentés par Rober
 
 On peut facilement voir que ce principe reste difficile à appliquer.
 
-## Pourquoi appliquer ce principe ?
+# Pourquoi appliquer ce principe ?
 
 Ce sont avant tout les prochaines évolutions qui bénéficieront de ce principe, **si elles ont été anticipées**. Le code concerné est alors :
 
@@ -172,21 +172,21 @@ Ce sont avant tout les prochaines évolutions qui bénéficieront de ce principe
 
 Au-delà des prochaines évolutions, l'application du SRP peut aussi aider à la compréhension du contexte fonctionnel et technique, notamment à destination des développeurs qui arrivent sur l'application. En effet, cela rend plus lisible les futures évolutions attendues.
 
-## Limitations
+# Limitations
 
 En soit, ce principe semble plutôt sain. Le plus gros défaut que l'on peut identifier est le côté anticipation qu'il requiert :
 
 - Les futures évolutions que l'on identifie aujourd'hui ne vont peut-être jamais se réaliser. On a alors perdu du temps à découper des responsabilités et rendue la maintenance plus difficile en compliquant l'architecture.
 - Il est plus que difficile d'identifier toutes les évolutions futures possibles.
 
-## Conclusion
+# Conclusion
 
 Nous avons vu dans cet article à quel point le principe de responsabilité unique est difficile à appliquer, notamment à cause de cette notion d’anticipation. Mal appliqué, notamment en anticipant trop, il peut nous amener à perdre du temps sur la tâche en cours, mais aussi sur la maintenance du code :
 _An axis of change is only an axis of change if the changes actually occur. It is not wise to apply the SRP, or any other principle for that matter, if there is no symptom_.
 
 Il ne faut pas oublier que ce n'est qu'un principe parmi d'autres. Et cette séparation des responsabilités peut aussi être provoquée par l'application d'autres pratiques.
 
-## Pour aller plus loin
+# Pour aller plus loin
 
 Voici d’autres méthodes ou pratiques, complémentaires ou non, qui donnent d’autres orientations pour découper le code :
 

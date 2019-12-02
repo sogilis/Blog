@@ -13,7 +13,7 @@ tags:
 ---
 Dans notre précédent article, nous avons vu comment installer l'application [ipfs](https://github.com/jbenet/go-ipfs) sur notre serveur. Nous avons fait le tout de manière très simple, avec un playbook global. Cela est peu élégant si nous souhaitons déployer plusieurs services sur la même machine. Et comment faire pour découper une suite de tâches simples que nous voudrions pouvoir réutiliser ? La réponse à ces deux questions se trouve dans les rôles Ansible. Les rôles sont une manière un peu plus élégante d'inclure des tâches Ansible au sein d'autres tâches en déclarant des dépendances.
 
-## Transformer notre playbook en rôle
+# Transformer notre playbook en rôle
 
 Commençons par créer un rôle simple correspondant exactement au playbook que nous avions la dernière fois :
 
@@ -43,7 +43,7 @@ Notre nouveau playbook va maintenant contenir une dépendance envers ce rôle :
     - ipfs
 {{< /highlight >}}
 
-## Un second rôle : cjdns-docker
+# Un second rôle : cjdns-docker
 
 Ce qui est intéressant, c'est d'avoir plusieurs rôles. Nous allons donc voir comment déployer cjdns en utilisant docker avec un rôle.
 
@@ -219,7 +219,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   exit $res_code
   {{< /highlight >}}
 
-## Un dernier rôle pour accéder par ssh à notre container
+# Un dernier rôle pour accéder par ssh à notre container
 
 Nous voudrions pouvoir accéder au container docker en utilisant SSH avec un utilisateur particulier. Ceci peut se faire de manière générique pour tout container Docker, et c'est comme cela que nous l'implémenterons. Nous définirons un rôle pour ajouter un accès ssh, et l'utiliseront pour le docker cjdns.
 

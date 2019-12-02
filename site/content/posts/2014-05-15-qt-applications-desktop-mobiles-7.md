@@ -14,7 +14,7 @@ tags:
 
 Suite et fin de la découverte de la programmation desktop et mobile avec Qt.
 
-## Sommaire
+# Sommaire
 
 - [L'application de base]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#base-app" >}})
   - [Qt et application Qt Quick]({{< relref "posts/2014-04-29-qt-applications-desktop-mobiles-1.md#qt" >}})
@@ -37,13 +37,13 @@ Suite et fin de la découverte de la programmation desktop et mobile avec Qt.
   - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
 - [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-## Et pour les mobiles ? <a id="mobile"></a>
+# Et pour les mobiles ? <a id="mobile"></a>
 
 L'application est désormais pleinement fonctionnelle. Ok on pourrait rajouter des choses, comme un menu lorsqu'on gagne / perd. Mais le but n'est pas de partir dans l'exploration de tout ce qui est possible en QML. Rappelez vous, on devait parler de mobile non ?
 
 Voici donc comment transformer votre application _desktop_ en une application mobile.
 
-### Gestures <a id="gestures"></a>
+## Gestures <a id="gestures"></a>
 
 L'un des premiers points si on parle de mobile est de se poser des questions (en tout cas sur une application du genre) sur la joueabilité. Pour le moment nous utilisons le clavier. Mais sur mobile ? Nous allons simplement utiliser les évênements de _souris_. Pour cette application pas besoin de multi-touch, gérer les glissement est suffisant. Et comme Qt c'est cool, on va faire tout ça uniquement dans le QML. C'est plutôt un bon point car il est possible d'utiliser du JavaScript et non du C++ mais aussi car on garde notre code métier indépendant le plus possible de l'implémentation de l'interface.
 
@@ -136,7 +136,7 @@ Et tout ceci est à ajouter à la fin de l'objet `Window`. Alors, plutôt simple
 
 Ce qui est plutôt intéressant également est que vous noterez qu'il n'y a aucun code spécifique à une plateforme mobile… Vous pouvez donc le tester tout de suite sans déployer sur un mobile.
 
-### iOS <a id="ios"></a>
+## iOS <a id="ios"></a>
 
 La première chose à faire pour pouvoir tester sous iOS est d'installer le kit correspondant.
 
@@ -160,7 +160,7 @@ Alors, ce n'était pas si compliqué, non ?
 
 Vous noterez donc qu'il n'y a eu absolument aucune modification au niveau des sources, juste une recompliation. Et là vous pouvez vraiment commencer à profiter de Qt et QML sachant que cela va fonctionner quelque soit la destination !
 
-### Android <a id="android"></a>
+## Android <a id="android"></a>
 
 Sous Android ? En fait c'est quasiment comme sous iOS.
 
@@ -194,7 +194,7 @@ Il ne vous reste plus qu'à sélectionné le matériel/simulateur que vous voule
 
 ![](/img/tumblr/tumblr_inline_n48gegRF0Y1sv6muh.png)
 
-## Fin ? <a id="end"></a>
+# Fin ? <a id="end"></a>
 
 Voici, avec un petit exemple assez simple, comment développer une application vraiment multi plateforme, que ce soit pour Windows, Mac et Linux (même si ça n'a pas vraiment été évoqué ici) mais surtout iOS et Android.
 

@@ -18,13 +18,13 @@ Docker is a container solution. You manage your services as binary images (built
 
 Docker has also the advantage of being reproducible. You can easily take your container disk image and put it on another server for backups, or migration to another host. Application are separated from each other and security is improved. You can now install PHP applications on your server without fear.
 
-## Docker service example: a mail server and its webmail
+# Docker service example: a mail server and its webmail
 
 An example of service could be a mail server and its webmail. I decided to split this in two containers: docker-mail containing the SMTP (exim) and IMAP (dovecot) server, and the PHP webmail on another container. The advantage to split there is security. The SMTP and IMAP server are on the same container for simplicity because these two are interdependent and talk with each other using file sockets.
 
 When you run these services you need both static configuration that will never change and be common to all instances of these services, and dynamic configuration that can change between instances.
 
-### Static configuration
+## Static configuration
 
 Static configuration is bundled within the docker image, and is specified in the `Dockerfile`, the recipe that builds the images. It includes:
 
@@ -33,7 +33,7 @@ Static configuration is bundled within the docker image, and is specified in the
 * default configuration for both SMTP and IMAP
 * virtual host configuration for the webmail
 
-### Dynamic configuration
+## Dynamic configuration
 
 Dynamic configuration is a little more complicated. I believe it should be minimal and most of the choices should be bundled within the disk image itself. What you are likely to find here is:
 
@@ -56,13 +56,13 @@ The code:
 * [docker-mail on github](https://github.com/mildred/docker-mail)
 * [docker-roundcube on github](https://github.com/mildred/docker-roundcube)
 
-## How to have docker containers always running
+# How to have docker containers always running
 
 Docker by default is restarting containers at startup that were running at shutdown. This is a good feature but isn’t really a good solution when you want to ensure the container is always running. There are many ways the docker container could not be restarted.
 
 You’ll have to configure [host integration](https://docs.docker.com/articles/host_integration/). This is the only reliable way to do it. It requires writing a service file (for either systemd, upstart or sysvinit) and installing it. This is not strainghtfoward either.
 
-### Gear from OpenShift
+## Gear from OpenShift
 
 There is a tool called [geard](https://openshift.github.io/geard/) from the OpenShift project. It seems perfect for the task we have. It is a daemon that ensures that the docker services you want are always running and managed by systemd. It provides a JSON file format to describe how to provision a few docker containers running together. It manages docker volumes in separate images so you can keep backups or change the system image and keep your data.
 
@@ -108,7 +108,7 @@ Unfortunately, it is not really supposed to be run on its own on a debian host (
 
 On top of this, the deployment JSON file is not documented anywhere.
 
-### Deploy Manually
+## Deploy Manually
 
 Gear has a great way to do this, we could always do the same things manually, in a declarative format. To simplify things the most, I came up with a shell script that I run on the server and that does the same provisioning as the JSON file above:
 
@@ -151,7 +151,7 @@ How is that implemented? Following [host integration](https://docs.docker.com/ar
   docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
   {{< /highlight >}}
 
-#### Instantiate a container
+### Instantiate a container
 
 Once you have all that, let’s see how these shell functions are implemented. The function `docker-unit NAME ARGS` is there to declare a new instance of a container. It takes the instance name (`NAME`) and the docker arguments (`ARGS`) given to `docker run`. Its job is to create a systemd unit file, and that’s what it does literally:
 
@@ -196,7 +196,7 @@ This could actually be inserted within the unit file (and that'w what gear does)
 
 The reason why you don’t want to have a persistent container is because at some point you’ll have to update your container. You don’t run `apt-get update` within the container, rather you build a new image and use it instead. At that time, you’ll be forced to drop all your changes. Better do it early and not rely on persistent storage.
 
-#### Install ssh access
+### Install ssh access
 
 Using gear, ssh access is managed by configuring the ssh daemon using `AuthorizedKeysCommand /usr/sbin/gear-auth-keys-command` and `AuthorizedKeysCommandUser nobody`. When a ssh connection is made, `gear-auth-keys-command` is executed and can grant access. The problem is that the user id will be `nobody` and won’t have the permission to execute `nsenter` (because the container is running a root user).
 
