@@ -79,15 +79,15 @@ blob_oid = repo.write '{"hello":"world!"}'
 {{< /highlight >}}
 
 > Une solution sympa plutôt que de gérer le `hello world!` en chaîne de caractères est, par exemple, de passer par [yaml](http://www.yaml.org/) :
-> 
+>
 > {{< highlight ruby >}}
 require 'YAML'
- 
+
 hello = {"hello": "world!"}
- 
+
 blob_oid = repo.write hello.to_yaml
 {{< /highlight >}}
-> 
+>
 > L'avantage est que c'est dispo en standard en ruby, que la sortie est claire et lisible, qu'on peut facilement mapper des `struct` ruby et que c'est un format qui semble plutôt aisé à fusionner si besoin.
 
 La deuxième étape consiste à créer le `tree` correspondant. Pour ce faire nous allons avoir besoin d'un `index` qui va pouvoir faire le lien entre le blob et le chemin (la clé) que nous souhaitons.

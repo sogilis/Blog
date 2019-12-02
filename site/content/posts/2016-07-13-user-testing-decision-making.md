@@ -46,7 +46,7 @@ We also shared **visual and usability guidelines** in order to maintain design c
 - Break standards when needed, especially for an action-oriented product (meaning as less interaction with a screen as possible, larger buttons, readable typography, etc.);
 - Organise information and clearly separate sequences;
 - Streamline user experience but make room for ‘ha-ha’ moments;
-- Provide immediate feedback (visual, sonor, haptic). 
+- Provide immediate feedback (visual, sonor, haptic).
 
 ## Iterate, iterate again and remember your product’s story
 

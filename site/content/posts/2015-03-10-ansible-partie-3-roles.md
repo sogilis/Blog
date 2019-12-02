@@ -27,7 +27,7 @@ Commençons par créer un rôle simple correspondant exactement au playbook que 
 
 Le rôle que nous allons créer va nécessiter de créer une arborescence dans un dossier `roles/` qui va contenir notre role nommé `ipfs` :
 
-* `roles/ipfs/tasks/main.yml` : 
+* `roles/ipfs/tasks/main.yml` :
   {{< highlight yml >}}
   ---
   - go-install: name=go-ipfs package=github.com/jbenet/go-ipfs/cmd/ipfs
@@ -53,7 +53,7 @@ Ce qui est intéressant, c'est d'avoir plusieurs rôles. Nous allons donc voir c
   name: cjdns
   {{< /highlight >}}
 
-* et se compose de tâches définies dans un fichier `roles/cjdns-docker/tasks/main.yml` : 
+* et se compose de tâches définies dans un fichier `roles/cjdns-docker/tasks/main.yml` :
   {{< highlight yml >}}
   ---
   - shell: docker pull mildred/cjdns
@@ -173,7 +173,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   exit $res_code
   {{< /highlight >}}
 
-* `library/docker-datadir` : 
+* `library/docker-datadir` :
   {{< highlight ini >}}
   #!/bin/bash
 
@@ -182,7 +182,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   res_code=0
   msg=Success
   {{< /highlight >}}
-      
+
   {{< highlight yml >}}
   ---
   - shell: docker pull mildred/cjdns
@@ -192,7 +192,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
     register: cjdroute_conf
   - file: src='{{cjdroute_conf.file}}' dest='/etc/docker-{{name}}.conf' state=link
   {{< /highlight >}}
-    
+
   {{< highlight bash >}}
   exec 3>&1 >/dev/null 2>&1
   trap 'failed=true res_code=1 msg="Failed at line $LINENO"' ERR
@@ -232,7 +232,7 @@ Nous aurons besoin de `nsenter`, donc nous [l'installons avec docker](http://jpe
   shell: /bin/bash
   {{< /highlight >}}
 
-* `roles/docker-ssh/tasks/main.yml` : 
+* `roles/docker-ssh/tasks/main.yml` :
   {{< highlight yml >}}
   ---
   - command: docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter

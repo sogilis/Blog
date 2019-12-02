@@ -24,7 +24,7 @@ Comment nous organiser de façon à ce que les actions soient non seulement fait
 
 # 1ère itération - partager l’information
 
-Tout d’abord, nous avons souhaité que toutes les actions soient visibles de tous, à chaque instant. Nous avons donc réquisitionné une vitre de notre salle de réunion et y affichons les actions liées à la gestion de l’entreprise. Peu de temps auparavant nous avions pris l’habitude de faire un petit tour à l’oral, chaque matin, pour communiquer aux autres notre humeur de l’instant, nos problèmes pour avancer dans notre travail, nos succès de la veille etc… Nous communiquions en terme de “points positifs et négatifs”. 
+Tout d’abord, nous avons souhaité que toutes les actions soient visibles de tous, à chaque instant. Nous avons donc réquisitionné une vitre de notre salle de réunion et y affichons les actions liées à la gestion de l’entreprise. Peu de temps auparavant nous avions pris l’habitude de faire un petit tour à l’oral, chaque matin, pour communiquer aux autres notre humeur de l’instant, nos problèmes pour avancer dans notre travail, nos succès de la veille etc… Nous communiquions en terme de “points positifs et négatifs”.
 
 C’est assez naturellement que l’organisation de l’affichage s’est articulée en deux colonnes principales : la colonne des points positifs et celle des points négatifs. Au centre, une troisième colonne dans laquelle mettre en regard des actions permettant de renforcer les points positifs et celles permettant d’éliminer les négatifs. Un point ou une action par post-it, écrit en gros. En plus de l’action, une date et un responsable.
 
@@ -40,7 +40,7 @@ Nous en avons conclu qu’il était temps d’itérer et de s’organiser autour
 
 # 2ème itération - organisation agile et gamification
 
-Nous nous sommes inspiré d'une méthode agile et avons réorganisé les actions dans un Kanban de 3 colonnes : 
+Nous nous sommes inspiré d'une méthode agile et avons réorganisé les actions dans un Kanban de 3 colonnes :
 - à faire
 - en cours
 - fait
@@ -55,7 +55,7 @@ En complément, Augustin nous a proposé de stimuler notre motivation et accél�
 
 Le principe était simple : pour chaque action réalisée, on coloriait un segment d’une étoile. Une étoile comprenait 10 segments. Une fois toutes les étoiles coloriées, on s’organisait un restaurant payé par la boite.
 
-Cette gamification était trop simpliste et la carotte trop éloignée : 100 actions avant la récompense. Nous avons donc rajouté un peu de hasard avec le système des cadenas. Chaque cadenas cachait une récompense et était déverrouillable par la réalisation de 10 actions. On choisissait de s’attaquer à tel ou tel cadenas au hasard. Ce système était plus motivant car il comprenait plus de petites récompenses atteignables plus rapidement. 
+Cette gamification était trop simpliste et la carotte trop éloignée : 100 actions avant la récompense. Nous avons donc rajouté un peu de hasard avec le système des cadenas. Chaque cadenas cachait une récompense et était déverrouillable par la réalisation de 10 actions. On choisissait de s’attaquer à tel ou tel cadenas au hasard. Ce système était plus motivant car il comprenait plus de petites récompenses atteignables plus rapidement.
 
 ![Gamification de l'avancement des tâches de l'entreprise : débloquer des cadenas pour obtenir une récompense.](/img/2018/06/Recompense-cadenas-300x172.png)
 
@@ -83,9 +83,9 @@ Toutes les récompenses ne seront pas obtenues, ce qui crée de la tension et de
 
 # Conclusion
 
-Le système actuel nous plait pour le moment mais ce ne sera peut-être plus le cas demain. Parce que nous allons accueillir d’autres collègues avec leur vision et leurs idées, parce que de nouveaux problèmes surviendront surement et que notre système ne permettra pas de les résoudre, etc… L’atout principal de ce système et de ses prédécesseurs est sa souplesse. Il n’existe pas pour nous dicter quoi faire et comment le faire. Il est là pour répondre à nos problèmes du moment. 
+Le système actuel nous plait pour le moment mais ce ne sera peut-être plus le cas demain. Parce que nous allons accueillir d’autres collègues avec leur vision et leurs idées, parce que de nouveaux problèmes surviendront surement et que notre système ne permettra pas de les résoudre, etc… L’atout principal de ce système et de ses prédécesseurs est sa souplesse. Il n’existe pas pour nous dicter quoi faire et comment le faire. Il est là pour répondre à nos problèmes du moment.
 
-Nous pouvons ajouter ou retirer n’importe quelle règle à n’importe quel moment tant que cela participe à l’amélioration continue de notre fonctionnement. 
+Nous pouvons ajouter ou retirer n’importe quelle règle à n’importe quel moment tant que cela participe à l’amélioration continue de notre fonctionnement.
 
 Dans cet article nous nous sommes focalisés sur le partage d’information et l’organisation des tâches quotidiennes de l’entreprise.
 

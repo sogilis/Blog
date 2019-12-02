@@ -36,7 +36,7 @@ And now, your socket is ready to receive and send messages. This is done with:
 ## TCP Sockets
 
 TCP sockets are a bit more complicated as they have the notion of a continued connection between two computers. They each have to keep track of the previous packets of that connection and assemble them into a stream, especially
-  
+
 considering that multiple connections are often running on the same port.
 
 We thus have one file descriptor for each running connection. There is also a special _listening_ file descriptor that can be set up to accept packets that do not fit in any existing connection. This is used to set up new connections.
@@ -196,7 +196,7 @@ tcp.on('refresh', function(data){
   console.log(sock.address());
   setTimeout(function(){
     console.log("timeout");
-    tcp.close(); 
+    tcp.close();
   }, 5000);
   tcp.on('close', function(){
     sock.close();

@@ -13,7 +13,7 @@ tags:
 ## Money, Money, Money
 
 Comme le disait Clint Eastwood : _« Tu vois, le monde se divise en deux catégories : ceux qui ont un pistolet chargé et ceux qui creusent. Toi, tu creuses. »_
-  
+
 Pour les start-up, c’est globalement du pareil au même et elles se définissent facilement de la manière suivante. On pourrait dire : _« Tu vois, les start-up se divisent en deux catégories : celles qui ont de l’argent et celles qui creusent. Toi, tu creuses. »_
 
 Aujourd’hui, quand je rencontre des porteurs de projets, ce qu’ils souhaitent en premier lieu, c’est de l’argent, beaucoup d’argent : celui de l’état, des investisseurs, des Business Angels, et aujourd’hui celui des Kickstarter et consors. Tout cela avant même d’avoir vendu le moindre produit ou le moindre service, et surtout d’avoir rencontré un futur client, s’être confronté au marché. Vous l’aurez compris : sans argent pas de projet, sans projet pas d’argent, tout cela se mord facilement la queue au risque de voir son business plan _« émasculé »_ avant même d’avoir engrangé le premier €uro ! Souvent, demander de l’argent, des aides financières trop tôt n’est qu’un moyen pour repousser le moment où l’on se prend le mur…
@@ -79,8 +79,8 @@ Fort de nombreuses expertises techniques et d’immersions de nos experts dans 
 La partie business est la pierre angulaire de notre accompagnement, elle va déterminer l’activation d’une potentielle aide technique, mais va aussi permettre aux porteurs de projets de profiter de notre expertise concernant la recherche de financements.
 
 **Conseil n°5 : Se faire accompagner n’est pas un signe de faiblesse. Se faire réellement accompagner – cf. l’analogie au sucre glace – ne doit pas être considéré comme un luxe, destiné à ceux auront trouvé la solution de qui de l’oeuf ou de la poule est arrivé le premier. Votre temps est précieux, et malheureusement votre temps c’est de l’argent : Money, Money, Money… CQFD.**
-    
-    
+
+
 **_A propos de l’auteur_**
 
 _**Xavier Spengler** développe l’activité lyonnaise de Sogilis, il est spécialisé dans l'accompagnement business. Il accompagne les porteurs de projets (numérique, électronique, web…), leur permettant d’accéder le plus rapidement possible aux premiers revenus et rendre leurs projets pérennes._

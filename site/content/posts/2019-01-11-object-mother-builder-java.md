@@ -83,22 +83,22 @@ void with_mother_object() {
 }
 {{< /highlight >}}
 
-L’exemple ici est plutôt trivial, mais imaginez cela dans une vraie application avec des classes ayant de nombreux attributs et/ou de nombreuses compositions.  
+L’exemple ici est plutôt trivial, mais imaginez cela dans une vraie application avec des classes ayant de nombreux attributs et/ou de nombreuses compositions.
 
 
-**(2)** Lors d’une évolution future, si un nouvel attribut obligatoire est ajouté à une classe, alors il suffit de modifier la factory de base pour que tous les tests passent. En effet, la grande majorité des tests n’instancient plus d’objet eux-même, mais passent par une factory. La maintenance est ainsi facilitée (il devient inutile de modifier tous les tests, dans le scénario décrit ci-avant).  
+**(2)** Lors d’une évolution future, si un nouvel attribut obligatoire est ajouté à une classe, alors il suffit de modifier la factory de base pour que tous les tests passent. En effet, la grande majorité des tests n’instancient plus d’objet eux-même, mais passent par une factory. La maintenance est ainsi facilitée (il devient inutile de modifier tous les tests, dans le scénario décrit ci-avant).
 
 
 **(3)** L’utilisation de builders permet de customiser les objets générés par les Object Mother pour le besoin du test (`HeroMother.one().dateOfBirth(...).build()`). Sans cela, il faudrait multiplier les factories pour chaque besoin avec une méthode prenant en paramètre toutes les informations nécessaires au cas testé. On peut imaginer que cela nécessiterait une factory par test.
 
 ## Inconvénients et difficultés
 
-**(1)** Il y a plus de code, essentiellement à cause des builders, et du code pas intéressant à produire qui plus est. 
+**(1)** Il y a plus de code, essentiellement à cause des builders, et du code pas intéressant à produire qui plus est.
 
-[Lombok][3] peut potentiellement résoudre ce problème puisqu’il permet de générer automatiquement ces builders.  
+[Lombok][3] peut potentiellement résoudre ce problème puisqu’il permet de générer automatiquement ces builders.
 
 
-**(2)** La frontière entre méthode de factory et méthode de builder n’est pas toujours facile à identifier. Exemple avec trois possibilités pour créer une même configuration : 
+**(2)** La frontière entre méthode de factory et méthode de builder n’est pas toujours facile à identifier. Exemple avec trois possibilités pour créer une même configuration :
 
 {{< highlight java >}}
 HeroMother.king().build()
@@ -106,7 +106,7 @@ HeroMother.one().king().build()
 HeroMother.one().caste(KING).build()
 {{< /highlight >}}
 
-**(3)** `.build()` est nécessaire partout pour générer l'objet final (pollution cognitive).  
+**(3)** `.build()` est nécessaire partout pour générer l'objet final (pollution cognitive).
 
 
 ## Ce qu’il faut retenir

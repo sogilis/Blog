@@ -14,7 +14,7 @@ La particularité de ce service réside dans sa compatibilité avec **différent
 
 Le défi consiste à implémenter ces deux couches de persistance en minimisant la duplication de code.
 
-Nous avons créé une application de démo afin d’illustrer l’architecture mise en place. 
+Nous avons créé une application de démo afin d’illustrer l’architecture mise en place.
 
 Les sources de cette application sont disponible sur notre github : [https://github.com/sogilis/spring-boot-jpa-mongodb-example][1].
 
@@ -104,7 +104,7 @@ Afin de pouvoir sélectionner le type de persistence (JPA ou MongoDB) au lanceme
 
 Ceci peut être réalisé avec des [profils][8]. Un profil JPA et un profile MongoDB.
 
-Voici les différents paramètres à modifier appliquer à chaque profil. 
+Voici les différents paramètres à modifier appliquer à chaque profil.
 
 ## Auto-configuration
 
@@ -275,7 +275,7 @@ Il est très probablement possible de simplifier cela avec [_JUnit 5_][10] ou [
 Grâce à l’**abstraction Spring Data** Commons, nous avons vu qu’il était possible de changer de type de persistance relativement facilement sans pour autant dupliquer _Repositories_ et _Entities_. Cependant, cela requiert de **contrôler finement les mécanismes d’auto-configuration** de Spring, ce qui n’est pas trivial et assez peu couvert dans les documentations officielles.
 
 D’ailleurs, en parlant de documentation, un [court paragraphe de la doc Spring Boot][12] mentionne l’utilisation de Spring Data JPA et Mongo **dans la même application**. Cependant, il faut comprendre dans ce passage que les 2 types de repositories sont actifs simultanément, contrairement au cas présent où nous voulons activé soit l’un, soit l’autre.
-  
+
 Reste à savoir si cette stratégie peut être appliquée à d’autres modules de Spring Data, comme le module Cassandra ([http://projects.spring.io/spring-data-cassandra/][13]).
 
 [Alexandre][14] & [Jean-Baptiste][15]

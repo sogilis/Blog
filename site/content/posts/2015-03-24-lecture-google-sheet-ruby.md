@@ -27,10 +27,10 @@ require 'rubygems'
 require 'google/api_client'
 require 'google_drive'
 
-# Get following info from Service Account created at 
+# Get following info from Service Account created at
 # [https://code.google.com/apis/console](https://code.google.com/apis/console)
-account_email = 'xxxxxx@developer.gserviceaccount.com' 
-key_file = 'private-key-for-xxxxxx.p12' 
+account_email = 'xxxxxx@developer.gserviceaccount.com'
+key_file = 'private-key-for-xxxxxx.p12'
 key_secret = 'notasecret'
 
 key = Google::APIClient::KeyUtils.load_from_pkcs12(key_file, key_secret)
@@ -39,7 +39,7 @@ client = Google::APIClient.new(
    :application_name => 'my_application_name',
    :application_version => '0.0.1')
 
-client.authorization = Signet::OAuth2::Client.new(   
+client.authorization = Signet::OAuth2::Client.new(
    :token_credential_uri => 'https://accounts.google.com/o/oauth2/token',
    :audience => 'https://accounts.google.com/o/oauth2/token',
    # Following scope defines which services you will be authorized to access
@@ -62,7 +62,7 @@ puts ws[1,2] # Write content of cell A2
 Mais passons à la première étape : l’authentification.
 
 ## Authentification avec OAuth
-  
+
 ![Lecture d'un un fichier Google Sheet en Ruby - OAuth2](/img/2015/03/Securirty-with-OAuth2.png)
 
 La première difficulté est de comprendre les mécanismes du protocole OAuth 2.0 utilisé par Google, Facebook… Pour schématiser – beaucoup –, le principe consiste à **récupérer un jeton** (représenté par une chaîne de caractères) qui permettra ensuite d’interroger les services google **sous une certaine identité** pendant une durée définie.
@@ -72,11 +72,11 @@ De nombreux articles expliquent cette techno en détail, notamment celui-ci : «
 A noter : Google propose aussi une authentification par OAuth 1.0, mais la déconseille, même si elle est encore largement utilisée.
 
 Histoire de ne pas réinventer la roue, nous allons utiliser la gem ruby [gem google drive](https://github.com/gimite/google-drive-ruby) pour l'authentification. Elle permet d’accéder aux documents Google Drive par la même occasion.
-  
+
 En revanche, l’exemple donné par cette gem passe par une étape où **l’utilisateur doit rentrer un code d’activation**.
 
 En effet, il faut bien comprendre que le protocole OAuth 2.0 est principalement employé lorsqu’un utilisateur souhaite qu’**un site web tierce puisse utiliser son compte** pour accéder à ses données. Dans ce cas de figure, lorsque l’utilisateur réalise l’action concernée sur le site web A, une **page de connexion** s’affiche demandant login et mot de passe du site web B.
-  
+
 Ces informations permettront au site web A d’utiliser les services du site B **sous l’identité de l’utilisateur**.
 
 ![](https://66.media.tumblr.com/0fdd94bc61cdd22489b72e57b6e36d01/tumblr_inline_nl1mtk2rGO1totr0l.png)
@@ -86,9 +86,9 @@ Bien souvent, vous remarquerez qu’une liste de services est affichée sur cett
 Tout ceci est bien joli, mais nous cherchons une authentification « serveur à serveur », donc sans interaction de l’utilisateur, comme pendant l’exécution d’un batch par exemple.
 
 Il n’y a pas 36 solutions, il faut utiliser un **compte de service**, et Google propose justement ce type de comptes [cf. (documentation google](https://developers.google.com/accounts/docs/OAuth2ServiceAccount)).
-  
+
 Ces comptes, destinés à être utilisés uniquement par des services, correspondent à des traitements serveurs. Ils sont rattachés à de vrais comptes utilisateurs, sachant que chaque utilisateur peut en créer plusieurs.
-  
+
 Pour **en créer un**, il faut passer par la [Google Developers Console](https://console.developers.google.com/) comme ceci :
 
 * _Créer projet_
@@ -115,7 +115,7 @@ Ensuite, il ne reste plus qu’à coder avec tous ces éléments :
 
 * Création de la clé d’activation avec le fichier .p12 et le mot de passe récupéré lors de la création du compte de service
   {{< highlight ruby >}}
-  key_file = 'private-key-for-xxxxxx.p12' 
+  key_file = 'private-key-for-xxxxxx.p12'
   key_password = 'notasecret'
   key = Google::APIClient::KeyUtils.load_from_pkcs12(key_file, key_password)
   {{< /highlight >}}
@@ -137,9 +137,9 @@ Ensuite, il ne reste plus qu’à coder avec tous ces éléments :
   {{< /highlight >}}
 
 L’attribut « scope » contient les noms de domaine associés aux services Google auxquels on pourra accéder ensuite.
-  
+
 Vous pouvez trouver la liste des scopes avec l’[OAuth 2.0 Playground](https://developers.google.com/oauthplayground/).
-  
+
 Les autres attributs sont des valeurs fixes fournies par Google.
 
 * Récupération du jeton
@@ -160,9 +160,9 @@ Il est temps de passer à la seconde étape, la juridiction.
 ![](https://66.media.tumblr.com/554141290c7b7613945641b9f490a5d8/tumblr_inline_nl01x4nlU11totr0l.png)
 
 Pour que notre compte de service puisse accéder à un fichier Google, il faut lui **donner accès**.
-  
+
 Cette autorisation se fait de la même manière qu’avec n’importe quel autre utilisateur : action _Partage_.
-  
+
 Par contre, il faut utiliser l’**adresse email associée au compte** : celle qu’on a noté lors de la création du compte de service.
 
 Troisième étape : lecture du contenu.
@@ -172,13 +172,13 @@ Troisième étape : lecture du contenu.
 ![Lecture d'un un fichier Google Sheet en Ruby - Google Spreadsheet + Ruby](/img/2015/03/Google-Spreadsheet-Ruby.png)
 
 Enfin, pour lire un document, on peut vouloir le faire à partir de l’**identifiant** du document.
-  
+
 On peut trouver cet identifiant dans l’url lorsqu’on édite le document dans son navigateur. Il correspond à l’attribut _key_.
-  
+
 [Prenons par exemple l’url suivante.][1]
 
 Dans ce cas, l’identifiant est :
-  
+
 _0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE_
 
 Grâce à la [gem google drive](https://github.com/gimite/google-drive-ruby), nous pouvons lire le contenu de la Google Sheet relativement facilement :
@@ -214,9 +214,9 @@ ws.reload
 ## Conclusion
 
 Avec ce petit exemple, on a maintenant toutes les bases pour piloter des Google Sheets, mais pas seulement.
-  
+
 On peut aller explorer l’API Google et essayer de piloter d’autres services comme Google Drive, Calendar… le tout en Ruby.
-  
+
 De même, l'authentification avec un compte Google standard est identique.
 
 [1]: https://docs.google.com/a/sogilis.com/spreadsheet/ccc?key=0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE&usp=sharing#gid=0

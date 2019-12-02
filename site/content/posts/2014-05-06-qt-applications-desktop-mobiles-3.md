@@ -214,7 +214,7 @@ Voici une petite liste d'améliorations possibles :
 3. avoir une couleur différente de tuile selon la valeur
 4. ajouter une couleur de fond
 
-Pour réaliser tout cela on va découper l'interface en plusieurs composants QML. Il faut savoir que si vous créez un fichier `Tile.qml` (notez bien la majuscule au début du fichier…) vous pouvez alors utiliser un nouveau composant `Tile` comme si vous utilisiez un `Rectangle` ou `Text`. 
+Pour réaliser tout cela on va découper l'interface en plusieurs composants QML. Il faut savoir que si vous créez un fichier `Tile.qml` (notez bien la majuscule au début du fichier…) vous pouvez alors utiliser un nouveau composant `Tile` comme si vous utilisiez un `Rectangle` ou `Text`.
 
 On va donc justement extraire l'affichage d'une tuile et s'occuper des points `1.`, `2.` et `3.`.
 

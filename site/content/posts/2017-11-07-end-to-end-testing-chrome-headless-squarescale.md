@@ -208,7 +208,7 @@ pipeline {
 ## The final word {#the-final-word}
 
 The road to our final framework was a bit long but the result is quite simple. The fact that it is performed inside Docker allows us to run it from everywhere, on every platform, even in dev mode. I hope this can help you to set your own tests. We are also interested about your experience. Feel free to tell us how it works in your company. We plan to do a blog post titled « mplement the Page Object pattern in your Puppeteer e2e test ».
-  
+
 Stay tuned!
 
 [Adrien Hamraoui][7]

@@ -16,7 +16,7 @@ Depuis l'avènement d'outils de gestion de code source de bonne qualité ([Git](
 
 Plutôt que de simplement vous présenter notre workflow, vous trouverez ici le _pourquoi_ et le _comment_, c'est au final ce qui est le plus important.
 
-- Un workflow c'est quoi, et ça sert à quoi ? 
+- Un workflow c'est quoi, et ça sert à quoi ?
   - Et tu as des exemples ?
 - Un workflow doit répondre à nos besoins
   - Les objectifs
@@ -28,7 +28,7 @@ Plutôt que de simplement vous présenter notre workflow, vous trouverez ici le 
 - À suivre
 - Pour aller plus loin
 
-## Un workflow c'est quoi, et ça sert à quoi ?
+# Un workflow c'est quoi, et ça sert à quoi ?
 
 Lorsque vous développez un logiciel, au début tout est facile. Ça ressemble à un historique linéaire, c'est simple, c'est clair. Et c'est facile à utiliser. Voici par exemple la séquence de commandes que vous pouvez utiliser.
 
@@ -168,7 +168,7 @@ Vous vous souvenez de l'historique horrible du début de l'article ? Maintenant 
 Ceci est une capture du vrai résultat, sur le même projet. Bon ok vous n'avez pas les commentaires des commits, mais voici ce qu'on peut en tirer :
 
 * l'historique est clair et lisible, il est tout à fait possible de le comprendre et de se déplacer dedans sans craintes
-* l'historique nous offre deux niveaux de détails : 
+* l'historique nous offre deux niveaux de détails :
   * l'intégration de chaque fonctionnalité / bug / …
   * le détail de chaque fonctionnalité / bug / …
 * étant donné qu'il est facile d'identifier le commit d'intégration d'une fonctionnalité, il est aussi facile de l'annuler
@@ -191,7 +191,7 @@ Voici les quelques commandes / principes que nous utilisons pour mettre en œuvr
   git checkout master
   git checkout -b feature/my-super-cool-feature
   {{< /highlight >}}
-  
+
   Nos branches sont préfixées pour améliorer la lisibilité :
   * `feature/` pour les fonctionnalités
   * `bug/` pour les anomalies
@@ -223,9 +223,9 @@ Voici les quelques commandes / principes que nous utilisons pour mettre en œuvr
   git checkout -
   git rebase -
   {{< /highlight >}}
-    
+
   A ce moment, pour pousser mes modifications sur le serveur il faut que j'écrase la branche distante. Comme ce n'est qu'une branche de fonctionnalité et qu'il n'y a pas plusieurs personnes — hors binome — qui travaille dessus, c'est permis.
-    
+
   {{< highlight bash >}}
   git push -f
   {{< /highlight >}}
@@ -239,27 +239,28 @@ Voici les quelques commandes / principes que nous utilisons pour mettre en œuvr
 
   git merge --no-ff integ
   {{< /highlight >}}
-    
+
   Concernant le message de commit il y a deux choix. Soit le nom de la branche est déjà explicite et ok, soit on met un beau message bien propre qui indique la fonctionnalité qu'on vient d'intégrer (à préférer).
-    
+
   Evidemment on pousse la branche d'intégration sur le serveur.
-    
+
 6. Si les tests automatiques et non ont montré que la fonctionnalité ainsi que la branche integ sont ok, on peut fusionner integ dans master.
   {{< highlight bash >}}
   git checkout master
   git merge --ff
   git push
   {{< /highlight >}}
-    
+
   Etant donné qu'on vient de faire une fusion _fast forward_ de `integ`, il n'est pas nécessaire de faire un `rebase` ou autre de cette dernière.
-        
+
 7. On nettoie un peu nos branches, c'est-à-dire qu'on ne garde pas sur le serveur de branches fusionnées et terminées, histoire de garder un ensemble lisible.
   {{< highlight bash >}}
   git branch -d feature/my-super-cool-feature
   git push origin --delete feature/my-super-cool-feature
   {{< /highlight >}}
-        
+
 ## À suivre
+=======
 
 Aujourd'hui le workflow tel que défini est une aide précieuse dans notre développement. Il reste des points toujours délicats autour de la branche d'intégration. L'idéal serait de pouvoir valider nos modifications plus facilement, et donc de fusionner directement dans `master` et ne plus avoir cette branche intermédiaire. Mais cela est directement lié au métier et non une simple contrainte d'outillage.
 
@@ -273,23 +274,23 @@ Si vous souhaitez aller plus loin, ou juste apprendre Git, nous [donnons des for
 
 Et si vous n'êtes pas rassasiés, voici une petite collection de liens à suivre :
 
-* Git Flow 
+* Git Flow
   * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
   * [GitFlow](https://github.com/nvie/gitflow)
   * [GitFlow by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 * [Hg Flow](https://bitbucket.org/yujiewu/hgflow/wiki/Home)
 * [Github flow](https://guides.github.com/introduction/flow/index.html)
 * [Git revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/)
-* Git rebase 
+* Git rebase
   * [chez Atlassian](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
   * [doc Git](http://git-scm.com/book/fr/Les-branches-avec-Git-Rebaser)
-* Git rebase -i 
+* Git rebase -i
   * [chez Atlassian](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase-i)
   * [doc Git](http://git-scm.com/book/en/Git-Tools-Rewriting-History)
-* Git rebase -i –autosquash 
+* Git rebase -i –autosquash
   * [protip Coderwall](https://coderwall.com/p/hh-4ea)
   * [keep your branch clean with fixup and autosquash](http://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html)
-* Git rerere 
+* Git rerere
   * [doc Git](http://git-scm.com/blog/2010/03/08/rerere.html)
   * [Git rerere ma commande préférée](http://hypedrivendev.wordpress.com/2013/08/30/git-rerere-ma-commande-preferee/)
 * Si vous voulez comprendre pourquoi et comment utiliser rebase et avoir un historique propre, je vous conseille vivement [ce post de Linus Torvalds sur la lkml](http://www.mail-archive.com/dri-devel@lists.sourceforge.net/msg39091.html). C'est plein de bons conseils pour bien utiliser Git.

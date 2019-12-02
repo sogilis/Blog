@@ -65,7 +65,7 @@ Cette organisation passe par une allocation supplémentaire de temps collectifs.
 
 ![Diagramme de nos réunions](https://67.media.tumblr.com/a3cafae54229767107ed696c6076d2b4/tumblr_inline_o2ll8bnCVU1tqsd8s_540.png)
 
-- Basecamp / _quotidien, irrégulier_ 
+- Basecamp / _quotidien, irrégulier_
   - un support de discussion permanent, cloisonné par projet
 - [point activité](https://twitter.com/_crev_/status/643708426841915392) / _hebdomadaire, régulier_
   - donne une vision d'ensemble des projets en cours et à venir

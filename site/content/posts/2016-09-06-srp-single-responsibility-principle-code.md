@@ -26,7 +26,7 @@ Partons du nom de principe : « responsabilité unique ». Naïvement, on peut
 
 ### ⇒ Première supposition
 
-Nous sommes en programmation orientée objet, on peut donc supposer que le principe s'applique pour chaque objet, donc pour chaque classe.  
+Nous sommes en programmation orientée objet, on peut donc supposer que le principe s'applique pour chaque objet, donc pour chaque classe.
 
 !(niveau d'application (1))[/img/2016/02/niveau-dapplication-1.png]
 
@@ -34,11 +34,11 @@ Ensuite, **qu'est-ce qu'une responsabilité ?**
 
 ### ⇒ Deuxième supposition
 
-Encore une fois, naïvement, on peut se dire que c'est une fonctionnalité, une tâche ou un rôle comme calculer une moyenne, générer un fichier PDF, gérer des utilisateurs... Mais alors, comment savoir si on est en face d'une responsabilité unique ou de plusieurs responsabilités ?  Je m'explique : « calculer une moyenne » peut être vu comme plusieurs responsabilités : « sommer », « compter le nombre de valeurs » et « diviser ». On pourrait alors aller très loin jusqu'à ne trouver que des **responsabilités unitaires**.  
+Encore une fois, naïvement, on peut se dire que c'est une fonctionnalité, une tâche ou un rôle comme calculer une moyenne, générer un fichier PDF, gérer des utilisateurs... Mais alors, comment savoir si on est en face d'une responsabilité unique ou de plusieurs responsabilités ?  Je m'explique : « calculer une moyenne » peut être vu comme plusieurs responsabilités : « sommer », « compter le nombre de valeurs » et « diviser ». On pourrait alors aller très loin jusqu'à ne trouver que des **responsabilités unitaires**.
 
 ![composition de responsabilités](/img/2016/02/composition-de-responsabilités.png)
 
-En appliquant cela sur une base de code, on arriverait alors à des classes minimalistes qui ne contiendraient qu'une seule méthode d'une seule ligne... **absurde**.  
+En appliquant cela sur une base de code, on arriverait alors à des classes minimalistes qui ne contiendraient qu'une seule méthode d'une seule ligne... **absurde**.
 
 {{< highlight ruby >}}
 public int compareArticlePriceToAverage(Article article, Collection<Article> allArticles) {
@@ -54,7 +54,7 @@ public double sumPrices(Collection<Article> articles) {
                      .mapToDouble(Article::getPrice)
                      .average()
                      .getAsDouble();
-} 
+}
 
 public int count(Collection<Article> articles) {
       return articles.size();
@@ -133,7 +133,7 @@ Robert est clair sur ce point : **c'est presque toujours à** **éviter** puisqu
 ## Application
 
 À la lumière de l'article de Robert, voici une démarche possible permettant d'appliquer le SRP : pour chaque classe, je me demande quelles sont les raisons possibles des futures évolutions.
- On ne parle pas de bug fix, mais d'évolutions « naturelles » et plausibles de l'application, fonctionnelles ou techniques. 
+ On ne parle pas de bug fix, mais d'évolutions « naturelles » et plausibles de l'application, fonctionnelles ou techniques.
 
 - Difficulté : **comment savoir ce qui va changer dans le futur ?** On peut imaginer beaucoup de choses, mais qu'est-ce qui sera vraiment appliqué ? Il y a toujours le risque d'anticiper des évolutions qui n'arriverons jamais... L'article de Robert ne nous aide pas vraiment (voire pas du tout).
 
@@ -143,7 +143,7 @@ Personnellement, je fais une étude de risque rapide dont voici les détails. S
 
 **[probabilité de survenue] * [coût et difficulté à implémenter si la ségrégation n'est pas faite aujourd'hui]**
 
-Et je ne garde alors que les évolutions dont le coefficient est le plus grand.  
+Et je ne garde alors que les évolutions dont le coefficient est le plus grand.
 
 Ça, c'est la théorie. En pratique, pour pouvoir espérer faire ça plus ou moins correctement, j'ai besoin de 2 choses :
 

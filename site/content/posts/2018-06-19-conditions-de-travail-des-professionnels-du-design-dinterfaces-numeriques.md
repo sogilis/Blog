@@ -31,7 +31,7 @@ Nous avons été étonnées que les 3/4 des répondants aient moins de 10 ans d�
 # Prestations
 
 Sans surprise, le terme UX est très utilisé lorsque l’on demande comment se présente les professionnels d’interfaces numériques.
- 
+
 ![](/img/2018/06/Auprès-des-clients-vous-vous-présentez-comment-1.png)
 
 Les 3 termes les plus utilisés pour se présenter aux clients sont dans l'ordre : UX-designer, d'UI/UX deisgner et Ergonome (50 réponses).
@@ -42,7 +42,7 @@ Le type de prestations est également assez classique : du maquettage, des analy
 
 Les prestations les plus vendues par les répondants sont les maquettes, l’analyse experte et la gestion de projet, suivi de près par les tests utilisateurs (40 réponses).
 
-Même si les maquettes sont globalement ce qui se vend le plus, ce ne sont pas les seules prestations vendues régulièrement. Contrairement à ce que l’on pourrait craindre, le temps de gestion de projet est souvent facturé par les professionnels du design. 
+Même si les maquettes sont globalement ce qui se vend le plus, ce ne sont pas les seules prestations vendues régulièrement. Contrairement à ce que l’on pourrait craindre, le temps de gestion de projet est souvent facturé par les professionnels du design.
 
 En particulier les analyses expertes et les tests utilisateurs semblent vendus très régulièrement par 4 répondants sur 5. En revanche, seulement 1/5 vend régulièrement des focus group. Dans notre quotidien, c’est plutôt l’inverse que nous observons : nos clients sont plus enclins à acheter un atelier focus group qu’une analyse experte, car ils y voient plus de valeur et un livrable plus concret.
 
@@ -86,7 +86,7 @@ Nous avons ensuite essayé de croiser plusieurs paramètres afin d’identifier 
 
 Quoi qu’il en soit, le marché semble conscient de la valeur de l’UX-design puisque les clients sont prêts à payer autour de 600€/jour HT.
 
-Étude dans l’étude, nous observons sans grande surprise que beaucoup de personnes refusent de communiquer sur leurs tarifs. En effet, la question du TJM pratiqué a été celle recueillant le moins de réponses : seulement 46 réponses sur 104, soit moins d’une personne sur deux. Est-ce que tout ce qui se rapporte à l’argent reste encore très tabou en France ?  
+Étude dans l’étude, nous observons sans grande surprise que beaucoup de personnes refusent de communiquer sur leurs tarifs. En effet, la question du TJM pratiqué a été celle recueillant le moins de réponses : seulement 46 réponses sur 104, soit moins d’une personne sur deux. Est-ce que tout ce qui se rapporte à l’argent reste encore très tabou en France ?
 
 ![](/img/2018/06/Tarifs.jpg)
 

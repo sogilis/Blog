@@ -64,7 +64,7 @@ Le besoin d'ergonomie, au regard de la taille de l'entreprise, est cyclique et m
 * création d’un kakémono pour une conférence
 * cocréation de supports de communication pour des évènements organisés par Sogilis
 * mise à jour du livret d’accueil
-* mise en place d’une dynamique de partage entre Sogilis Lyon et Sogilis Grenoble : 
+* mise en place d’une dynamique de partage entre Sogilis Lyon et Sogilis Grenoble :
     * avec Marion, ergonome à Lyon, nous avons organisé des _Ergogames_ [petits jeux pour sensibiliser aux pratiques d’ergonomie, (on en parle ici](http://sogilis.com/blog/lergogame-jeu-decouvrir-principes-de-conception-dergonomie-cognitive/)) ;
     * avec Kevin, développeur à Lyon, nous avons mis en place un challenge photo (une photo par mois sur un thème donné avec photo gagnante publiée sur Twitter, permettant également de renouveler le stock de photos pour la communication externe)
 * organisation des premières rétrospectives de l’équipe “Cloud Native”
