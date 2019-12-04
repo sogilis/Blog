@@ -1,5 +1,5 @@
 <div class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-    <div class="blog_index_article">
+    <article class="blog_index_article">
         <a href="{{ .Permalink }}">
             {{ with .Params.image }}
                 <img alt="Illustration de l'article" src="{{ . | relURL }}">
@@ -9,5 +9,5 @@
             <h1 class="title_name">{{ .Title }}</h1>
             <p>{{ i18n "readMore" }}…</p>
         </a>
-    </div>
+    </article>
 </div>

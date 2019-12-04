@@ -1,10 +1,13 @@
 {{ define "main" }}
     <div class="container blog_index">
         <div class="row">
+            <h1>Sogilis Blog</h1>
+        </div>
+        <main class="row">
             {{ range (where .Site.AllPages.ByDate "Kind" "page").Reverse }}
                 {{ .Render "summary" }}
             {{ end }}
-        </div>
+        </main>
     </div>
 {{ end }}
 

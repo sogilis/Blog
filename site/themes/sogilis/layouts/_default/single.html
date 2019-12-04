@@ -1,17 +1,16 @@
 {{ define "main" }}
-
-<main>
+<div>
     <div class="container blog_article">
 
-        <div class="row header">
-            <div class="col-12 offset-1 col-sm-6 offset-sm-0 col-md-6 col-lg-6">
+        <header class="row header">
+            <section class="col-12 offset-1 col-sm-6 offset-sm-0 col-md-6 col-lg-6">
                 {{ with .Params.image }}
                     <img alt="Illustration de l'article" src="{{ . | relURL }}">
                 {{ else }}
                     <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
                 {{ end }}
-            </div>
-            <div class="col-11 offset-2 col-sm-6 offset-sm-0 col-md-5 col-lg-4 article_title">
+            </section>
+            <section class="col-11 offset-2 col-sm-6 offset-sm-0 col-md-5 col-lg-4 article_title">
                 <h1>{{ .Title }}</h1>
                 <p>
                     {{ i18n "writtenBy" }}
@@ -25,25 +24,27 @@
                         {{ i18n "publishdate" . }}
                     </time>
                 </p>
-            </div>
-        </div>
+            </section>
+        </header>
 
 
-        <div class="row content">
-             <div class="col-12">
+        <main class="row content">
+            <article class="col-12">
                 {{ .Content }}
-            </div>
-        </div>
+            </article>
+        </main>
 
-        {{ with .Params.image }}
-            <img alt="Illustration de l'article" src="{{ . | relURL }}">
-        {{ else }}
-            <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
-        {{ end }}
+        <footer>
+            {{ with .Params.image }}
+                <img alt="Illustration de l'article" src="{{ . | relURL }}">
+            {{ else }}
+                <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
+            {{ end }}
 
-        <div class="comments">
-            {{ template "_internal/disqus.html" . }}
-        </div>
+            <aside class="comments">
+                {{ template "_internal/disqus.html" . }}
+            </aside>
+        </footer>
     </div>
-</main>
+</div>
 {{ end }}
