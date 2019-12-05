@@ -1,0 +1,78 @@
+footer > #sogilisFooter {
+    padding: 0px;
+
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-areas:
+    'sogilisFooterLogo       .                       sogilisFooterContactgrid  sogilisFooterContactgrid'
+    '.                       .                       sogilisFooterServices     sogilisFooterCompany'
+    'sogilisFooterHr         sogilisFooterHr         sogilisFooterHr           sogilisFooterHr'
+    'sogilisFooterSubfooter  sogilisFooterSubfooter  sogilisFooterSubfooter    sogilisFooterSubfooter';
+    /* Should be after */
+    grid-template-columns: [sogilisFooterLogo] calc(100% / 12) [sogilisFooterServices] calc(100% / 12);
+}
+
+footer > #sogilisFooter > div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer > #sogilisFooter > #sogilisFooterLogo {
+    grid-area: sogilisFooterLogo;
+
+    /* The logo become very small */
+    /* width: calc(100%/12) !important; */
+
+    /* 14px, why?, should be around 95 px */
+    /* margin-right: 8.3333%;  */
+}
+
+footer > #sogilisFooter > #sogilisFooterContactgrid {
+    grid-area: sogilisFooterContactgrid;
+
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-gap: 0;
+    grid-template-areas:
+    'sogilisFooterContactgridTitle      sogilisFooterContactgridTitle    sogilisFooterContactgridTitle     sogilisFooterContactgridTitle'
+    'sogilisFooterContactgridContactus  sogilisFooterContactgridTwitter  sogilisFooterContactgridGrenoble  sogilisFooterContactgridLyon'
+}
+
+footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridTitle {
+    grid-area: sogilisFooterContactgridTitle;
+}
+
+footer > #sogilisFooter > #sogilisFooterContactgrid >  #sogilisFooterContactgridContactus {
+    grid-area: sogilisFooterContactgridContactus;
+}
+
+footer > #sogilisFooter > #sogilisFooterContactgrid >  #sogilisFooterContactgridTwitter {
+    grid-area: sogilisFooterContactgridTwitter;
+}
+
+footer > #sogilisFooter > #sogilisFooterContactgrid >  #sogilisFooterContactgridGrenoble {
+    grid-area: sogilisFooterContactgridGrenoble;
+}
+
+footer > #sogilisFooter > #sogilisFooterContactgrid >  #sogilisFooterContactgridLyon {
+    grid-area: sogilisFooterContactgridLyon;
+}
+
+footer > #sogilisFooter > #sogilisFooterServices {
+    grid-area: sogilisFooterServices;
+    /* margin-left: calc(2 * (100%/12)); */
+}
+
+footer > #sogilisFooter > #sogilisFooterCompany {
+    grid-area: sogilisFooterCompany;
+}
+
+footer > #sogilisFooter > #sogilisFooterHr {
+    grid-area: sogilisFooterHr;
+}
+
+footer > #sogilisFooter > #sogilisFooterSubfooter {
+    grid-area: sogilisFooterSubfooter;
+}
