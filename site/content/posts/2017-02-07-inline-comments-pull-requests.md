@@ -351,4 +351,4 @@ Notice that rules are now a bit more complicated for removed lines. In particula
 
 As it happens, defining the algorithmic rules for updating inline comments was not so trivial. Cases like rebase long baffled us and we were not sure we understood how it impacted inline comments. Actually, it took us a few iterations to set things straight. Yet, once we found the gist of it, it looked surprisingly natural: we just describe the space of each changeset with some coordinates, identify how those spaces connect to each other, and apply rules to translate coordinates between connected spaces.
 
-_[Simon Denier](https://twitter.com/simondenier)_
+[Simon Denier](https://twitter.com/simondenier)

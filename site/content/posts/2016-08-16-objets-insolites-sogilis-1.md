@@ -20,7 +20,7 @@ Un jour, il a fallu créer un indicateur d’occupation, autrement dit un calend
 
 ## 2. Le plan de domination du monde
 
-Vous connaissez le _[Google Master Plan](https://www.flickr.com/photos/jurvetson/21470089/sizes/o/)_ ? Et bien nous avons aussi le notre. C’est surtout un moyen pour rêver et imaginer… ce qui peut se révéler réalisable !
+Vous connaissez le [Google Master Plan](https://www.flickr.com/photos/jurvetson/21470089/sizes/o/) ? Et bien nous avons aussi le notre. C’est surtout un moyen pour rêver et imaginer… ce qui peut se révéler réalisable !
 
 ![](https://67.media.tumblr.com/28e8d307e5e68720089afdbf4c9bf75e/tumblr_inline_nv6ov1L66X1t2p7ex_540.jpg)
 

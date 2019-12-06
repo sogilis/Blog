@@ -10,7 +10,7 @@ tags:
   - mobile app
 
 ---
-A few weeks after interviewing _[one of our expert user](https://www.facebook.com/xvdelerue/)_, we questioned that _[decision](http://sogilis.com/blog/user-testing-decision-making/)_ again. ‘The app is never really adapted to the field, there’s always a tree, some obstacle.’ When you are in the middle of nowhere with your drone, you probably want to understand what it’s going to do, what footage you’ll get, and where you stand in the landscape. You need to have a mental model of what’s gonna happen and create an imaginary link between you and your drone. This matter soon became our first concern. It addressed critical things such as anticipation, risk reduction and human error prevention.
+A few weeks after interviewing [one of our expert user](https://www.facebook.com/xvdelerue/), we questioned that [decision](http://sogilis.com/blog/user-testing-decision-making/) again. ‘The app is never really adapted to the field, there’s always a tree, some obstacle.’ When you are in the middle of nowhere with your drone, you probably want to understand what it’s going to do, what footage you’ll get, and where you stand in the landscape. You need to have a mental model of what’s gonna happen and create an imaginary link between you and your drone. This matter soon became our first concern. It addressed critical things such as anticipation, risk reduction and human error prevention.
 
 ![xavproto_1-min](/img/2016/07/xavproto_1-min.jpg)
 

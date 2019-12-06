@@ -10,7 +10,7 @@ tags:
   - SRP
 
 ---
-Le principe de responsabilité unique (**Single Responsibility Principle** ou SRP) fait partie d'un ensemble de 5 principes de la programmation orientée objet : _[SOLID](https://fr.wikipedia.org/wiki/SOLID_(informatique))_.
+Le principe de responsabilité unique (**Single Responsibility Principle** ou SRP) fait partie d'un ensemble de 5 principes de la programmation orientée objet : [SOLID](https://fr.wikipedia.org/wiki/SOLID_(informatique)).
 
 - **S** : Single Responsibility Principle
 - **O** : Open/Closed Principle
@@ -73,7 +73,7 @@ Il y a donc quelque chose qui cloche avec cette interprétation naïve.
 
 ## Que dit Internet ?
 
-Une recherche rapide sur _[Grogeule](http://www.grogueule.fr)_ nous donne les éléments suivants :
+Une recherche rapide sur [Grogeule](http://www.grogueule.fr) nous donne les éléments suivants :
 
 * _Every class should have a single responsibility, and that responsibility should be entirely encapsulated by the class_
   Le niveau d'abstraction est la **classe**. **De plus, on va ici plus loin que notre interprétation naïve : il y a **bijection** entre classe et responsabilité.
@@ -137,7 +137,7 @@ Robert est clair sur ce point : **c'est presque toujours à** **éviter** puisqu
 
 - Difficulté : **comment savoir ce qui va changer dans le futur ?** On peut imaginer beaucoup de choses, mais qu'est-ce qui sera vraiment appliqué ? Il y a toujours le risque d'anticiper des évolutions qui n'arriverons jamais... L'article de Robert ne nous aide pas vraiment (voire pas du tout).
 
-- De plus, cette anticipation est en contradiction avec le principe _[YAGNI](https://fr.wikipedia.org/wiki/YAGNI)_ ou _[KISS](https://fr.wikipedia.org/wiki/Principe_KISS)_ !
+- De plus, cette anticipation est en contradiction avec le principe [YAGNI](https://fr.wikipedia.org/wiki/YAGNI) ou [KISS](https://fr.wikipedia.org/wiki/Principe_KISS) !
 
 Personnellement, je fais une étude de risque rapide dont voici les détails. Sur une classe donnée, pour chaque évolution que je peux imaginer (généralement entre 2 et 5), je calcule le coefficient suivant :
 
@@ -190,7 +190,7 @@ Il ne faut pas oublier que ce n'est qu'un principe parmi d'autres. Et cette sép
 
 Voici d’autres méthodes ou pratiques, complémentaires ou non, qui donnent d’autres orientations pour découper le code :
 
-- _[Composed Method](http://c2.com/ppr/wiki/WikiPagesAboutRefactoring/ComposedMethod.html)_
-- _[DDD](https://en.wikipedia.org/wiki/Domain-driven_design)_
+- [Composed Method](http://c2.com/ppr/wiki/WikiPagesAboutRefactoring/ComposedMethod.html)
+- [DDD](https://en.wikipedia.org/wiki/Domain-driven_design)
 
-_[Jean-Baptiste](https://fr.linkedin.com/in/jean-baptiste-mille-0383b81/fr)_
+[Jean-Baptiste](https://fr.linkedin.com/in/jean-baptiste-mille-0383b81/fr)
