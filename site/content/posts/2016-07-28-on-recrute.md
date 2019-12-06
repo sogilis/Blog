@@ -19,11 +19,11 @@ tags:
 
 **On a le droit de se tromper.** Plutôt que de se résigner, on va chercher à analyser ensemble comment résoudre les problèmes et essayer de s’améliorer. On préfère sortir de notre zone de confort et se poser de nouvelles questions, plutôt que de rester dans la routine. 
 
-**Si tu veux en savoir plus sur Sogilis, nous t’invitons à lire _[notre histoire sur le blog](http://sogilis.com/blog/sogilis-histoire/)_.** 
+**Si tu veux en savoir plus sur Sogilis, nous t’invitons à lire [notre histoire sur le blog](http://sogilis.com/blog/sogilis-histoire/).** 
 
 **En pratique ? On fait de tout : du web, du back-end, de l’embarqué, du mobile.**
 
-À notre actif, nous avons développé un logiciel embarqué critique sur un gros avion de ligne, le soft embarqué du drone de loisir _[Hexo+](https://hexoplus.com/)_, des applications mobiles Android/iOS, une solution d’implantologie dentaire, un logiciel pour gérer un réseau d’imprimantes 3D. 
+À notre actif, nous avons développé un logiciel embarqué critique sur un gros avion de ligne, le soft embarqué du drone de loisir [Hexo+](https://hexoplus.com/), des applications mobiles Android/iOS, une solution d’implantologie dentaire, un logiciel pour gérer un réseau d’imprimantes 3D. 
 
 À côté de nos clients, **on a aussi une activité de R&D**. Nous sommes en train de développer un autopilote certifié pour drones, afin de rendre ces derniers aussi sûrs que les avions. 
 

@@ -18,7 +18,7 @@ tags:
 
 L’arrivée au sein d’une nouvelle entreprise est significative de changements : on doit retenir de nombreuses informations. Alors par où commencer ? **Le livret nous a semblé être un outil “facilitateur” lors de l’intégration.** Attention, il ne doit en rien changer le partage d’informations à l’oral, mais doit être complémentaire. C’est un repère écrit, ce qui signifie que les informations sont toujours disponibles.
 
-C’est d’autant plus important qu’au sein de Sogilis, _[nous n’avons pas de manager](https://blogbewhy.wordpress.com/2015/11/16/3-raisons-qui-font-de-lentreprise-liberee-un-veritable-avantage-concurrentiel/)_ : en effet, chacun est responsable et autonome. Quand un nouveau membre arrive dans l’équipe, il a donc beaucoup de questions.
+C’est d’autant plus important qu’au sein de Sogilis, [nous n’avons pas de manager](https://blogbewhy.wordpress.com/2015/11/16/3-raisons-qui-font-de-lentreprise-liberee-un-veritable-avantage-concurrentiel/) : en effet, chacun est responsable et autonome. Quand un nouveau membre arrive dans l’équipe, il a donc beaucoup de questions.
 
 ## Avoir toutes les informations importantes… en un livret court
 
@@ -50,7 +50,7 @@ Finalement, **être précis, drôle et informatif à la fois**.
 
 **Vie interne** : toutes les informations pratiques.
   
-- les rendez-vous internes : _[rétrospective mensuelle](http://sogilis.com/blog/retrospective-mensuelle/)_, entretien individuel, update financier, Sogiday, etc.
+- les rendez-vous internes : [rétrospective mensuelle](http://sogilis.com/blog/retrospective-mensuelle/), entretien individuel, update financier, Sogiday, etc.
   
 - l’organisation : télétravail, mutuelle, etc.
   
@@ -58,7 +58,7 @@ Finalement, **être précis, drôle et informatif à la fois**.
   
 - les budgets par personne (participation à des conférences, ordinateur, déplacements…)
   
-- l’essentiel : _[le tournoi Sogipong](https://twitter.com/sogilis/status/586215615117062144)_, les activités diverses, le café, etc.
+- l’essentiel : [le tournoi Sogipong](https://twitter.com/sogilis/status/586215615117062144), les activités diverses, le café, etc.
 
 **Mise en place d’un projet** : les développeurs choisissent les projets sur lesquels ils souhaitent participer. Oui mais, en détail, avoir un rappel du fonctionnement, ça peut toujours aider quand on est nouveau. D’autant plus sachant que c’est l’équipe fait elle-même les avant-ventes.
 
@@ -84,7 +84,7 @@ _[Myriam][1]_
 
 **A lire également :**
 
-- _[Mon intégration au sein de Sogilis : bilan après un mois](http://sogilis.com/blog/integration-sogilis-bilan/)_
-- _[Victor se lance dans l'entrepreneuriat](http://sogilis.com/blog/victor-entrepreneuriat/)_
+- [Mon intégration au sein de Sogilis : bilan après un mois](http://sogilis.com/blog/integration-sogilis-bilan/)
+- [Victor se lance dans l'entrepreneuriat](http://sogilis.com/blog/victor-entrepreneuriat/)
 
 [1]: https://fr.linkedin.com/in/myriammenneteau
