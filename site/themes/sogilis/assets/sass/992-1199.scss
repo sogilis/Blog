@@ -559,10 +559,6 @@ $light-electric-blue:#A7E4EA;
 
 footer{
 
-	img{
-		margin-top:30px;
-	}
-
 	padding-top:80px;
 	padding-bottom:25px;
 	box-shadow:0 0 19px 0px rgba(0, 0, 0, 0.1);
@@ -574,7 +570,6 @@ footer{
 	.title_level_1{
 		font-size:1.4em;
 		color:$medium_grey;
-		margin-bottom:40px;
 	}
 
 	.title_level_1::after{
@@ -585,10 +580,6 @@ footer{
 	    background-color: #A7E4EA;
 	    margin-top: -10px;
 	    margin-left: 29px;
-	}
-
-	.btn_dark_grey{
-		margin-left:30px;
 	}
 
 	.liens_sociaux{
@@ -608,9 +599,6 @@ footer{
 			}
 		}
 
-		.twitter{
-			margin-top:42px;
-		}
 	}
 
 	.liens_sociaux:hover svg path{
@@ -621,7 +609,6 @@ footer{
 		.title_name{
 			color:$medium-grey;
 			font-size:0.9em;
-			margin-top:35px;
 			margin-bottom:0px!important;
 		}
 
@@ -2488,6 +2475,7 @@ textarea:focus{
     			color:$medium-grey;
     			font-weight: 400;
     			font-style: italic;
+    			margin-left: 60px;
     		}
 
     		strong{
@@ -2495,6 +2483,7 @@ textarea:focus{
     			font-size: 1rem;
     			color:$medium-grey;
     			font-weight: 600;
+    			margin-left: 60px;
     		}
 
     		a{

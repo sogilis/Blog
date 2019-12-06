@@ -4,52 +4,126 @@ footer > #sogilisFooter {
     display: grid;
     align-items: center;
     align-content: center;
-    grid-template-areas:
-    'sogilisFooterLogo       .                       sogilisFooterContactgrid  sogilisFooterContactgrid'
-    '.                       .                       sogilisFooterServices     sogilisFooterCompany'
-    'sogilisFooterHr         sogilisFooterHr         sogilisFooterHr           sogilisFooterHr'
-    'sogilisFooterSubfooter  sogilisFooterSubfooter  sogilisFooterSubfooter    sogilisFooterSubfooter';
-    /* Should be after */
-    grid-template-columns: [sogilisFooterLogo] calc(100% / 12) [sogilisFooterServices] calc(100% / 12);
 }
 
-footer > #sogilisFooter > div {
-    padding-left: 15px;
-    padding-right: 15px;
+@media (min-width: 0) {
+    #sogilisFooterLogo {
+        display: none;
+    }
+
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridContactus,
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridSocialnetwork,
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridGrenoble,
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridLyon {
+        margin-left: 30px;
+    }
+
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridContactus {
+        margin: 2rem 0 2rem 30px;
+    }
+
+    footer > #sogilisFooter {
+        grid-template-areas:
+            'sogilisFooterContactgrid'
+            'sogilisFooterServices'
+            'sogilisFooterCompany'
+            'sogilisFooterHr'
+            'sogilisFooterSubfooter';
+        justify-content: center;
+    }
+
+
+    footer > #sogilisFooter > #sogilisFooterContactgrid {
+        grid-template-areas:
+            'sogilisFooterContactgridTitle'
+            'sogilisFooterContactgridContactus'
+            'sogilisFooterContactgridSocialnetwork'
+            'sogilisFooterContactgridGrenoble'
+            'sogilisFooterContactgridLyon';
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    footer > #sogilisFooter {
+        grid-template-areas:
+            'sogilisFooterContactgrid  sogilisFooterContactgrid'
+            'sogilisFooterServices     sogilisFooterCompany'
+            'sogilisFooterHr           sogilisFooterHr'
+            'sogilisFooterSubfooter    sogilisFooterSubfooter';
+        grid-template-columns: 50% 50%;
+        justify-content: initial;
+    }
+
+    footer > #sogilisFooter > #sogilisFooterContactgrid {
+        grid-template-areas:
+        'sogilisFooterContactgridTitle      sogilisFooterContactgridTitle'
+        'sogilisFooterContactgridContactus  sogilisFooterContactgridSocialnetwork'
+        'sogilisFooterContactgridGrenoble   sogilisFooterContactgridLyon';
+        grid-template-columns: 50% 50%;
+    }
+
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridContactus {
+        margin: 2rem 0 30px 2rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    #sogilisFooterLogo {
+        display: block;
+    }
+
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridSocialnetwork,
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridGrenoble,
+    footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridLyon {
+        margin-left: 0;
+    }
+
+    footer > #sogilisFooter {
+        grid-template-areas:
+            'sogilisFooterLogo       .                       sogilisFooterContactgrid  sogilisFooterContactgrid'
+            '.                       .                       sogilisFooterServices     sogilisFooterCompany'
+            'sogilisFooterHr         sogilisFooterHr         sogilisFooterHr           sogilisFooterHr'
+            'sogilisFooterSubfooter  sogilisFooterSubfooter  sogilisFooterSubfooter    sogilisFooterSubfooter';
+        /* Should be after */
+        grid-template-columns: [sogilisFooterLogo] calc(100% / 12) [sogilisFooterServices] calc(100% / 12);
+    }
+
+    footer > #sogilisFooter > #sogilisFooterContactgrid {
+        grid-template-areas:
+            'sogilisFooterContactgridTitle      sogilisFooterContactgridTitle          sogilisFooterContactgridTitle     sogilisFooterContactgridTitle'
+            'sogilisFooterContactgridContactus  sogilisFooterContactgridSocialnetwork  sogilisFooterContactgridGrenoble  sogilisFooterContactgridLyon';
+        grid-template-columns: initial;
+    }
+
 }
 
 footer > #sogilisFooter > #sogilisFooterLogo {
     grid-area: sogilisFooterLogo;
-
-    /* The logo become very small */
-    /* width: calc(100%/12) !important; */
-
-    /* 14px, why?, should be around 95 px */
-    /* margin-right: 8.3333%;  */
 }
 
 footer > #sogilisFooter > #sogilisFooterContactgrid {
     grid-area: sogilisFooterContactgrid;
-
     display: grid;
     align-items: center;
     align-content: center;
     grid-gap: 0;
-    grid-template-areas:
-    'sogilisFooterContactgridTitle      sogilisFooterContactgridTitle    sogilisFooterContactgridTitle     sogilisFooterContactgridTitle'
-    'sogilisFooterContactgridContactus  sogilisFooterContactgridTwitter  sogilisFooterContactgridGrenoble  sogilisFooterContactgridLyon'
 }
 
 footer > #sogilisFooter > #sogilisFooterContactgrid > #sogilisFooterContactgridTitle {
     grid-area: sogilisFooterContactgridTitle;
+    margin-bottom: 0;
 }
 
 footer > #sogilisFooter > #sogilisFooterContactgrid >  #sogilisFooterContactgridContactus {
     grid-area: sogilisFooterContactgridContactus;
 }
 
-footer > #sogilisFooter > #sogilisFooterContactgrid >  #sogilisFooterContactgridTwitter {
-    grid-area: sogilisFooterContactgridTwitter;
+footer > #sogilisFooter > #sogilisFooterContactgrid >  #sogilisFooterContactgridSocialnetwork {
+    grid-area: sogilisFooterContactgridSocialnetwork;
 }
 
 footer > #sogilisFooter > #sogilisFooterContactgrid >  #sogilisFooterContactgridGrenoble {
