@@ -1,22 +1,22 @@
-<div class="content_header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-2 offset-md-1 col-lg-2 offset-lg-2 col-xl-2 offset-xl-2">
-                <a href="index.html"><img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}"></a>
-            </div>
+<header class="content_header">
+    <div class="container">
 
-            <nav class="col-md-6 offset-md-3 col-lg-4 offset-lg-3 col-xl-5 offset-xl-2 ">
-                <div class="dropdown">
-                    <button class="dropbtn">{{ i18n "services"}}</button>
-                    <div class="dropdown-content">
-                        <a href="https://sogilis.fr/services-applications-cloud-native.html">{{ i18n "cloudNativeApplications" }}</a>
-                        <a href="https://sogilis.fr/services-embarques-et-iot.html">{{ i18n "embeddedSoftwares" }}</a>
-                        <a href="https://sogilis.fr/services-logiciels-critiques.html">{{ i18n "criticalSoftwares" }}</a>
-                    </div>
-                </div>
-                <a href="https://sogilis.fr/vision.html" class="menu_link_1">{{ i18n "ourVision" }}</a>
-                <a href="https://sogilis.fr/contact.html" class="menu_link_2">{{ i18n "contact" }}</a>
-            </nav>
+        <div id="soheaderLogo">
+            <a href="index.html"><img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}"></a>
         </div>
+
+        <nav id="soheaderNav">
+            <div class="dropdown">
+                <button class="dropbtn">{{ i18n "services"}}</button>
+                <div class="dropdown-content">
+                    <a href="https://sogilis.fr/services-applications-cloud-native.html">{{ i18n "cloudNativeApplications" }}</a>
+                    <a href="https://sogilis.fr/services-embarques-et-iot.html">{{ i18n "embeddedSoftwares" }}</a>
+                    <a href="https://sogilis.fr/services-logiciels-critiques.html">{{ i18n "criticalSoftwares" }}</a>
+                </div>
+            </div>
+            <a href="https://sogilis.fr/vision.html" class="menu_link_1">{{ i18n "ourVision" }}</a>
+            <a href="https://sogilis.fr/contact.html" class="menu_link_2">{{ i18n "contact" }}</a>
+        </nav>
+
     </div>
-</div>
+</header>

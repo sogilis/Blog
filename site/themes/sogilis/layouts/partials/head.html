@@ -12,8 +12,12 @@
 
         <link rel="stylesheet" href="{{ "css/bootstrap-4.0.0.min.css" | relURL }}">
         <link rel="stylesheet" href="{{ "css/aos.css" | relURL }}" />
+
         {{ $footer := resources.Get "css/footer.css" | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $footer.Permalink }}" type="text/css" />
+
+        {{ $head := resources.Get "css/header.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $head.Permalink }}" type="text/css" />
 
         <script src="{{ "js/jquery-3.3.1.min.js" | relURL }}" type="text/javascript"></script>
         <script src="{{ "js/aos.js" | relURL }}" charset="utf-8" type="text/javascript"></script>
