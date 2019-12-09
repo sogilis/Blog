@@ -13,13 +13,13 @@ Les objets connectés sont de plus en plus présents autour de nous et font part
 # Le choix du matériel
 
 Etant donné que l’expérience n’est pas destinée à être vendue mais représente juste une preuve de concept nous avons décidé de mettre en place une solution à faible coût.
-  
+
 L’idée initiale est d’équiper 5 bureaux de capteurs de température et de luminosité, de surveiller l’arrosage des plantes ainsi que la température de l’aquarium. Le budget avoisine les 120€.
-  
+
 Pour centraliser les données remontées nous avons choisi un Raspberry Pi 3. Les capteurs quant à eux sont reliés pour chaque zone de mesure à un arduino. La transmission se fait sans fil à l’aide des modules NRF24.
 
 ![node_open](/img/2017/06/node_open-217x300.jpg)
-  
+
 ![node_closed](/img/2017/06/node_closed-300x200.jpg)
 
 _Un noeud arduino qui transmet la luminosité et la température_
@@ -30,10 +30,10 @@ _Le Raspberry Pi relié à un arduino permettant la réception des données capt
 
 ## La librairie NRF24
 
-Pour communiquer entre les différents modules NRF24 nous utilisons la librairie suivante : [http://tmrh20.github.io/RF24/][1] 
-  
+Pour communiquer entre les différents modules NRF24 nous utilisons la librairie suivante : [http://tmrh20.github.io/RF24/][1]
+
 Cette librairie permet d’organiser le réseau de capteurs. Ainsi, certains capteurs peuvent servir de relais pour la communication jusqu’au Raspberry Pi. La librairie permet de faire aussi bien de la remontée de données depuis les capteurs que de la descente d’informations depuis le raspberry.
-  
+
 L’utilisation de la librairie est intuitive et assigne à chaque nœud un identifiant unique en plus de son adresse définie par l’utilisateur. Le Raspberry Pi a ainsi la possibilité de contacter chacun des nœuds de manière individuelle. Cela permet par exemple d’activer l’arrosage des plantes selon certaines conditions d'hygrométrie ou de température.
 
 ## L’architecture

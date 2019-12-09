@@ -30,9 +30,9 @@ DevOps, livraison continue, open innovation, agilité, quand deux start-up arriv
 **Côté start-up** : Enalean et Sogilis partagent les mêmes valeurs : mise en place des dernières méthodologies d'ingénierie, exigence envers eux-même, implication des équipes internes. Ces pépites innovent constamment. En matière de business model -avec l'[Open Roadmap™ de Enalean](https://blog.enalean.com/open-roadmap-enalean-comment-ca-marche/) ou l’accompagnement [Market Driven Development de Sogilis](http://sogilis.com/competences/) par exemple-, en Ressources Humaines -les équipes sont auto-organisées-, en R&D -Hackathons- .
 
 **Côté grand compte** : En travaillant avec de petites entreprises, les grands comptes développent et profitent d'idées neuves et d'une inventivité qui change la donne. À l’heure où des nouveautés émergent chaque jour, il est capital pour les industriels de suivre la cadence. Être la première à lancer et à adopter une innovation est un atout concurrentiel qui n’a pas de prix.
-  
+
 ## TuleapCon 2017, la journée des innovations en ingénierie logicielle
-  
+
 Enalean et Sogilis partageront le résultat de leur collaboration le 29 juin 2017, à Aix les Bains lors de la [TuleapCon2017](https://tuleapcon.tuleap.org/). Cette journée réunira la communauté Tuleap et présentera notamment les dernières fonctionnalités, développées conjointement.
 
 Airbus, Orange, STMicroelectronics, Jtekt-Toyota ainsi que des PME, témoigneront de leurs enjeux actuels en matière de développement logiciel. Elles expliqueront comment l'outil Tuleap les aide à y répondre.
@@ -63,9 +63,9 @@ Booster d’innovation depuis 2008, Sogilis est une entreprise d’ingénierie i
 L’ADN de Sogilis : Accélération de start-up, accompagnement de PME industrielles dans leur transformation numérique et stratégie d’Open Innovation auprès de grands groupes.
 
 Siège à Grenoble, bureaux à Lyon, Paris et Melbourne
-  
+
 CA 2016 : 2 millions consolidés
-  
+
 35 collaborateurs.
 
 [@sogilis](https://twitter.com/Sogilis)

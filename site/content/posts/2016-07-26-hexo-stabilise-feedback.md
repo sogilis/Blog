@@ -28,6 +28,6 @@ This new feature is not released yet. Will be next September. Can’t show you a
 
 We went fast, tested and validated often, reckoned that if necessary, we could question decisions, cut scope and re-prioritise agendas. But we all shared the same vision: never sacrifice quality to meet deadlines.
 
-Thanks for reading through this series! I keep experimenting and learning stuff about design. I’ll continue to share what I learn. 
+Thanks for reading through this series! I keep experimenting and learning stuff about design. I’ll continue to share what I learn.
 
 If you have experiences about product design it would be great to hear your own stories! What’s your process? How do you pair with engineering teams? What’s working? What still keeps you up at night?

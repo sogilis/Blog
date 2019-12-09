@@ -29,11 +29,11 @@ Utile, le livret pose les informations d’ordre pratique. Mais bien au-delà, i
 Alors comment créer un livret ? À trois, deux développeurs et moi-même (chargée de com), nous avons conçu les grandes lignes du livret d’accueil et l’avons soumis à l’équipe. Un bon test pour n’oublier aucun élément important. **Le postulat de base : qu’ai-je envie de savoir en arrivant au sein de Sogilis ?**
 
 Les règles que l’on se donne afin que cela fonctionne :
-  
+
 - être concis : des phrases courtes, des informations faciles d’accès
-  
+
 - donner envie
-  
+
 - être une bible interne… pour l’interne ! Un livret qui nous ressemble, un ton adéquat à notre état d’esprit
 
 Finalement, **être précis, drôle et informatif à la fois**.
@@ -49,16 +49,16 @@ Finalement, **être précis, drôle et informatif à la fois**.
 **Trombi** : des mini bio de chacun, de ce qu’on aime et ce qu’on n’aime pas.
 
 **Vie interne** : toutes les informations pratiques.
-  
-- les rendez-vous internes : [rétrospective mensuelle](http://sogilis.com/blog/retrospective-mensuelle/), entretien individuel, update financier, Sogiday, etc.
-  
+
+- les rendez-vous internes : _[rétrospective mensuelle](http://sogilis.com/blog/retrospective-mensuelle/)_, entretien individuel, update financier, Sogiday, etc.
+
 - l’organisation : télétravail, mutuelle, etc.
-  
+
 - le processus de recrutement : ici, c’est l’équipe qui recrute
-  
+
 - les budgets par personne (participation à des conférences, ordinateur, déplacements…)
-  
-- l’essentiel : [le tournoi Sogipong](https://twitter.com/sogilis/status/586215615117062144), les activités diverses, le café, etc.
+
+- l’essentiel : _[le tournoi Sogipong](https://twitter.com/sogilis/status/586215615117062144)_, les activités diverses, le café, etc.
 
 **Mise en place d’un projet** : les développeurs choisissent les projets sur lesquels ils souhaitent participer. Oui mais, en détail, avoir un rappel du fonctionnement, ça peut toujours aider quand on est nouveau. D’autant plus sachant que c’est l’équipe fait elle-même les avant-ventes.
 

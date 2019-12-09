@@ -23,7 +23,7 @@ J’analyse cette expérience afin d’essayer de confirmer ou non l’hypothès
 
 Le sujet de travail portait sur une boîte de dialogue, faisant partie d’un logiciel de gestion automatique de tâches. Cette boîte de dialogue était prioritaire dans le plan global d’amélioration du logiciel, car elle permet de définir les règles de gestion via différents champs de saisie. Elle est donc fréquemment utilisée et malheureusement non comprise par les utilisateurs.
 
-La demande de mon client portait sur deux points particulièrement bloquants :  
+La demande de mon client portait sur deux points particulièrement bloquants :
 
 
   l’agencement des informations ne suivait pas la logique métier contraignant les utilisateurs à dessiner le process sur une feuille pour être sûrs de leur paramétrage,
@@ -99,6 +99,6 @@ L’exercice de l’entretien n’est pas facile. Il demande une préparation af
 
 
 
-Finalement, j’ai accepté de revoir l’utilisabilité d’une interface sans m’appuyer sur les utilisateurs. Je me suis donc projetée dans des usages que je ne connais pas,. J’ai tâtonné, en me basant sur son expérience, mes propres usages. Je savais que ce serait difficile de prendre du recul sur l’interface que j’aurais conçue. Ca l’a été. Comment se rendre compte que cette formulation m’appartient et n’est pas forcément comprise par le grand nombre ? Pour pallier cela, j’ai effectué deux fois plus d’aller-et-retours avec mon client qu’habituellement. 
+Finalement, j’ai accepté de revoir l’utilisabilité d’une interface sans m’appuyer sur les utilisateurs. Je me suis donc projetée dans des usages que je ne connais pas,. J’ai tâtonné, en me basant sur son expérience, mes propres usages. Je savais que ce serait difficile de prendre du recul sur l’interface que j’aurais conçue. Ca l’a été. Comment se rendre compte que cette formulation m’appartient et n’est pas forcément comprise par le grand nombre ? Pour pallier cela, j’ai effectué deux fois plus d’aller-et-retours avec mon client qu’habituellement.
 
 Nous ne sommes pas les utilisateurs de cette interface. Il est donc sécurisant de les intégrer dès le début de la conception afin de comprendre dès le départ les usages et anticiper les problèmes.

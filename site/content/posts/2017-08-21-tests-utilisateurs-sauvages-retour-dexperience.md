@@ -33,7 +33,7 @@ Le test à distance utilise un outil web qui est paramétré par l’ergonome. T
 - d’enregistrer les parcours de la souris et de clic sur l’interface
 - de récolter les réponses de l’utilisateur aux différents questionnaires.
 
-Je n’ai jamais utilisé cette méthode, car pour moi le contact avec l’utilisateur est important. L’étude des gestes et expressions permet de récolter d’autres types d’informations que le nombre de clics, le nombre de retours en arrière etc. D’une part, les informations verbales comme les gestes ou expressions. D’autre part, les verbatims des utilisateurs. Les commentaires sont très importants pour comprendre le cheminement des utilisateurs. Par exemple, une interjection “ah!” traduit une surprise, quelque chose auquel ne s’attendait pas l’utilisateur. 
+Je n’ai jamais utilisé cette méthode, car pour moi le contact avec l’utilisateur est important. L’étude des gestes et expressions permet de récolter d’autres types d’informations que le nombre de clics, le nombre de retours en arrière etc. D’une part, les informations verbales comme les gestes ou expressions. D’autre part, les verbatims des utilisateurs. Les commentaires sont très importants pour comprendre le cheminement des utilisateurs. Par exemple, une interjection “ah!” traduit une surprise, quelque chose auquel ne s’attendait pas l’utilisateur.
 
 À distance, même si la prise de son et vidéo est possible, il est impossible de rebondir sur un soupir ou une interjection, pour encourager la verbalisation de l’utilisateur. Capter ces informations n’est pas suffisant, il faut également pouvoir les développer pour les interpréter correctement et ne pas passer à côté d’un problème.
 
@@ -41,15 +41,15 @@ C’est donc naturellement que j’ai choisi d’utiliser les tests sauvages en 
 
 # Retour d’expérience sur les tests sauvages
 
-Au début d’un projet, nous avions deux pistes de navigation possible. La navigation est l’élément clé pour une application, surtout mobile. Elle donne les bases de l’interaction avec l’interface : quels gestes faire pour passer d’un menu à un autre par exemple. Nous avions donc deux navigations bien différentes, et ne savions pas quel choix faire. Nous nous sommes donc tournées naturellement vers les utilisateurs pour effectuer ce choix. 
+Au début d’un projet, nous avions deux pistes de navigation possible. La navigation est l’élément clé pour une application, surtout mobile. Elle donne les bases de l’interaction avec l’interface : quels gestes faire pour passer d’un menu à un autre par exemple. Nous avions donc deux navigations bien différentes, et ne savions pas quel choix faire. Nous nous sommes donc tournées naturellement vers les utilisateurs pour effectuer ce choix.
 
 Nous avons défini un scénario type qui permettait de naviguer au maximum dans la maquette. Puis, nous sommes parties à la rencontre de nos utilisateurs avec nos tablettes sous le bras. Avant de débuter les tests, nous nous présentions comme travaillant sur un projet et demandions s’ils avaient 10 minutes pour tester l’application et nous donner leur avis. Puis nous mettions en route l’enregistrement et c’était parti ! Nous étions deux, l’une guidait l’utilisateur pour réaliser le scénario, poser des questions, faisait verbaliser l’utilisateur. L’autre, prenait des notes, observait les gestes, notait les difficultés.
 
 # Et alors ?
 
-Je vois plusieurs avantages aux tests sauvages, surtout pour des porteurs de projets ou des start-up en création. 
+Je vois plusieurs avantages aux tests sauvages, surtout pour des porteurs de projets ou des start-up en création.
 
-D’abord, cette méthode permet de tester rapidement son marché. Dès qu’une question est formulée, qu’une hypothèse est posée, des maquettes confrontées aux utilisateurs permettent de prendre la décision. 
+D’abord, cette méthode permet de tester rapidement son marché. Dès qu’une question est formulée, qu’une hypothèse est posée, des maquettes confrontées aux utilisateurs permettent de prendre la décision.
 
 Ensuite, cette méthode est peu coûteuse. Au début de la vie d’une start-up, le financement n’est pas toujours aisé et les porteurs de projets travaillent souvent de chez eux ou dans un espace de coworking. Cette solution les dispense d’une salle tout équipée et d’une équipe de plusieurs experts.
 

@@ -36,20 +36,20 @@ Durant quatre mois, trois membres de l’équipe Sogilis ont travaillé pour le 
 
 Chaque entreprise ou particulier qui possède une imprimante [Clotoo](http://www.clotoo.com/) fait partie de son réseau et peut imprimer des séries d'objets en utilisant des imprimantes de ce réseau.
 
-Chaque impression faite par quelqu'un d'autre sur son imprimante donnera lieu à une rémunération. Les transferts de données sont sécurisés et les machines supportent la colorisation d’objets. 
+Chaque impression faite par quelqu'un d'autre sur son imprimante donnera lieu à une rémunération. Les transferts de données sont sécurisés et les machines supportent la colorisation d’objets.
 
 Disons que, par exemple, je souhaite imprimer 100 porte-clefs. Une interface me permet de décider sur quelle imprimante je vais produire ces porte-clefs. Je sais à chaque instant où chaque imprimante est située et dans quel délai ma commande pourra être prise en compte par l'imprimante. Enfin, je pourrai choisir de me faire livrer ou d'aller moi-même chercher ma commande dans le réseau le plus proche. Lorsque je passe commande, j’ai donc une facture avec un délai de réception, qui comprend le délai de fabrication et de livraison.
 
 ## Le rôle de Sogilis
 
-Notre objectif a été de paralléliser et d’ordonnancer avec fiabilité les impressions sur toutes les imprimantes du réseau. En favorisant le réseau de proximité géographique, Clotoo souhaite limiter la problématique du transport : pouvoir aller chercher l'objet soi-même. 
+Notre objectif a été de paralléliser et d’ordonnancer avec fiabilité les impressions sur toutes les imprimantes du réseau. En favorisant le réseau de proximité géographique, Clotoo souhaite limiter la problématique du transport : pouvoir aller chercher l'objet soi-même.
 
-En plus des entreprises, Clotoo souhaite mettre en relation des particuliers avec des designers, grâce à une boutique d’objets proposés par ces designers - validés par la charte Clotoo. Un particulier peut alors acheter une impression de son objet sur une imprimante du réseau. 
+En plus des entreprises, Clotoo souhaite mettre en relation des particuliers avec des designers, grâce à une boutique d’objets proposés par ces designers - validés par la charte Clotoo. Un particulier peut alors acheter une impression de son objet sur une imprimante du réseau.
 
-Nous avons travaillé autour de 3 besoins : 
+Nous avons travaillé autour de 3 besoins :
 
-- gérer les impressions sur le réseau d'imprimantes, permettant d’avoir un état précis des imprimantes 
-- participer au développement de l’interface entre le réseau d’imprimantes et la boutique pour les particuliers et designers  
+- gérer les impressions sur le réseau d'imprimantes, permettant d’avoir un état précis des imprimantes
+- participer au développement de l’interface entre le réseau d’imprimantes et la boutique pour les particuliers et designers
 
 Pendant ces quatre mois, nous avons conçu un système distribué avec des contraintes fortes de résilience, de tolérance aux pannes. Nous avons aussi su concilier notre expertise sur le domaine du Web avec du développement plus proche du matériel, notamment sur la réalisation du logiciel qui tourne sur les imprimantes.
 

@@ -25,11 +25,11 @@ First, and as I said in [my previous blog post][2], we give a lot of importance 
 Second, new features can break things. What about having a feature flag for new features? It would allow us to disable them without having to rollback our docker image, database, and such, in production. Moreover, it would be instant.
 
 A couple of weeks ago, we decided to introduce them into our ruby on rails backend application. We had a look at what existed, and two gems caught our attention.
-  
+
 [Rollout][3]: It is the highest ranking gem to deal with feature toggles, however, it relies on Redis,
-  
+
 but it gives us a lot of interesting features such is incremental rollout, specific user enabling etc.
-  
+
 [Flipper][4]: It has various adapters, and doesn't rely specifically on Redis. It's simple to use and seems to do what we need it to. We decided to go with Flipper. Mainly because it had an active record adapter, and a UI to manage the feature flags.
 
 I will not dig into what Flipper offers because you can read everything on their Github (or because RTFM!). As a very quick sumary you can name flags and then choose several options to enable them. You can enable them for users, group of users, choose a percentage of actors, or a percentage of time. In our case, the group of users feature interested us the most, as we will mainly use feature flags to test new features first.
@@ -83,9 +83,9 @@ end
 {{< /highlight >}}
 
 Here, an actor is anything having a `flipper_id` method.
-  
+
 In our case our actors will be instances of `User`.
-  
+
 We simply had to add
 
 {{< highlight ruby >}}
@@ -98,7 +98,7 @@ end
 (I know we use contracts in Ruby, stay tuned for more information)
 
 The thing in that example is that you have to introduce a boolean into your actor class for every group you want to create.
-  
+
 We don't want to pollute our user class with a lot of booleans. We chose to create a `FlipperMembership` class containing all those booleans for a `User` with a `:has_one` relation.
 
 {{< highlight ruby >}}
@@ -150,7 +150,7 @@ end
 And that's all for now folks. It is really new for us at the moment, that's why we have no feedback to give yet (except it is really easy to set up). We will certainly write an other blog post about that in the coming months, stay tuned!
 
 Cheers,
-  
+
 [Adrien][6]
 
 Special thanks to Haze for his feedback.

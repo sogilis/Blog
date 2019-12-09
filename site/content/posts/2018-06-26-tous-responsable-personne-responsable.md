@@ -34,7 +34,7 @@ Le casino game permet de prendre conscience que quelques règles extrêmement si
 ![](/img/2018/06/Casino-game.png "Casino Game")
 Courbe bleue : nos bénéfices au cours des trois itérations. Courbe rouge : notre en-cours en fonction des itérations.
 
-À la fin du jeu, nous avons identifié deux règles à intégrer dans notre entreprise : 
+À la fin du jeu, nous avons identifié deux règles à intégrer dans notre entreprise :
 
 - prendre au maximum deux actions par personne pour lisser la charge de travail et se protéger individuellement de la surcharge, soit limiter l’en-cours individuel;
 - prendre plus d’initiatives sans attendre l’aval des uns et des autres, pour fluidifier la réalisation des actions et éviter un embouteillage pouvant paralyser l’entreprise.
@@ -96,7 +96,7 @@ Pour résoudre ces questions nous avons identifié et créé 5 rôles au sein de
 
 Les fiches décrivant les buts des responsables de chaque rôle
 
-Ils suffisent pour l'instant à couvrir l’ensemble des actions auxquelles nous pensons pour faire tourner l’entreprise. On peut toujours rattacher une action simple du Kanban à l’un de ces rôles. Ces derniers sont, dans les entreprises classiques, bien souvent occupés par des personnes dont c’est le métier exclusif. Nous avons dû apprendre, dans un premier temps, à occuper ces rôles, et certaines des compétences qu’ils demandent. 
+Ils suffisent pour l'instant à couvrir l’ensemble des actions auxquelles nous pensons pour faire tourner l’entreprise. On peut toujours rattacher une action simple du Kanban à l’un de ces rôles. Ces derniers sont, dans les entreprises classiques, bien souvent occupés par des personnes dont c’est le métier exclusif. Nous avons dû apprendre, dans un premier temps, à occuper ces rôles, et certaines des compétences qu’ils demandent.
 
 C’est le moment de faire un petit retour en arrière, en septembre 2016. Notre gérant d’alors était seul en charge de la partie business. Il alimentait notre pipe business en prospects qualifiés, menait les avant-ventes etc… C’est quand il a décidé de quitter l’entreprise que nous avons entendu parler de la notion de Bus Factor. Le Bus Factor est le nombre de personnes, dans votre structure, devant se faire écraser en même temps par un bus pour que votre organisation se trouve en péril. Dans notre cas, le bus factor était de un. Il suffisait que notre gérant parte avec son réseau pour que la société soit en danger.
 

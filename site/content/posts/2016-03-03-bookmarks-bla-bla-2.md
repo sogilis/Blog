@@ -55,7 +55,7 @@ Object.entries(obj);
 {{< /highlight >}}
 
 > I believe JavaScript is usually not a good choice for server side applications.
-> 
+>
 > – [The Node.js Event Loop is A Damn Mess](http://sheldonkreger.com/the-nodejs-event-loop-is-a-damn-mess.html)
 
 Un point de vue un peu contraire à l'avis ambiant, mais j'ai trouvé l'article réellement intéressant et assez en phase avec l'impression que j'en ai.

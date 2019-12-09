@@ -18,8 +18,8 @@ Arrivant au terme d'une partie de l'accompagnement avec la mise en place de Scru
 J'avoue que je ne savais pas trop comment le management et les équipes allaient réagir à l'idée de faire un jeu alors j'ai tâté le terrain vers le responsable des équipes. L'idée est acceptée alors c'est parti ! Tout le monde était convié, le management, le marketing et les équipes de développement.
 
 Les règles sont simples :
-  
-- construire la plus haute tour autoportée  
+
+- construire la plus haute tour autoportée
 - timebox de 18 minutes
 - utilisation d'un kit avec 18 spaghettis, 1 mètre de ficelle + ciseaux, 1 mètre de ruban adhésif et un marshmallow.
 - l'équipe gagnante est l'équipe qui place le marshmallow en un seul morceau le plus haut.
@@ -62,7 +62,7 @@ Le temps passe … vite. J'annonce 15 minutes, 10 minutes, 5 minutes, 2 minutes,
 ![](https://67.media.tumblr.com/dc5cf6fd2ac676d682488945e203d92c/tumblr_inline_n5gmcdKzjA1sy619z.jpg)
 
 Verdict :
-  
+
 - Une tour à 61 cm
 - Une tour à 40 cm
 - 2 échecs à 0 cm 🙂
@@ -78,6 +78,6 @@ Nous avons passé un très bon moment. Les équipes, tirées au sort, ont permis
 ![](https://67.media.tumblr.com/fc0f81678d5e6d53138da5fb6accce27/tumblr_inline_n5gmf3McHI1sy619z.jpg)
 
 Le jeu permet d'observer les points suivants :
-  
+
 - Le prototypage par étapes successives est la meilleure des stratégies par opposition à la planification / exécution
 - Un équipe variée a un taux de réussite supérieur
