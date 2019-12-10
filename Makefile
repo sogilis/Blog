@@ -9,7 +9,7 @@ start:
 		--mount type=bind,src=$(CURDIR)/site,dst=/blog/site,consistency=cached \
 		--mount type=bind,src=$(CURDIR)/src,dst=/blog/src,consistency=cached \
 		--rm --name $(CONTAINER_NAME) $(IMAGE_NAME)
-	@echo "Blog will be available at http://localhot:3000 in a view seconds..."
+	@echo "Blog will be available at http://localhost:3000 in a few seconds..."
 	@echo "(run 'make logs' to show logs)"
 
 logs:
