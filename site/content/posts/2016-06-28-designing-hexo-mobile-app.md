@@ -56,7 +56,7 @@ These ‘character sheets’ helped us keeping users in mind all along the proje
 
 **Mapping the project**
 
-A lot of work defining and prioritising the project was already done when we entered the game, so mapping the perimeter was easy. We read the [Product Requirements Document (PRD))[https://en.wikipedia.org/wiki/Product_requirements_document] and built a [Story Map](https://en.wikipedia.org/wiki/User_story#Story_map) with the team, extracting a (Minimum Valuable Product (MVP)](https://en.wikipedia.org/wiki/Minimum_viable_product) focused on an outdoor usage scenario. The first outcome was shipping DIY kits to our 70+ backers and early adopters in June 2015.
+A lot of work defining and prioritising the project was already done when we entered the game, so mapping the perimeter was easy. We read the [Product Requirements Document (PRD)](https://en.wikipedia.org/wiki/Product_requirements_document) and built a [Story Map](https://en.wikipedia.org/wiki/User_story#Story_map) with the team, extracting a [Minimum Valuable Product (MVP)](https://en.wikipedia.org/wiki/Minimum_viable_product) focused on an outdoor usage scenario. The first outcome was shipping DIY kits to our 70+ backers and early adopters in June 2015.
 
 ![](/img/2016/06/Designing-Hexo-Mobile-App-5.jpg)
 
