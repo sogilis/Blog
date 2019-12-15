@@ -1,13 +1,9 @@
-<div class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-    <div class="blog_index_article">
-        <a href="{{ .Permalink }}">
-            {{ with .Params.image }}
-                <img alt="Illustration de l'article" src="{{ . | relURL }}">
-            {{ else }}
-                <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
-            {{ end }}
-            <h1 class="title_name">{{ .Title }}</h1>
-            <p>{{ i18n "readMore" }}…</p>
-        </a>
-    </div>
-</div>
+<a href="{{ .Permalink }}" class="blog_index_article">
+    {{ with .Params.image }}
+    <img alt="Illustration de l'article" src="{{ . | relURL }}">
+    {{ else }}
+    <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
+    {{ end }}
+    <h1 class="title_name">{{ .Title }}</h1>
+    <p>{{ i18n "readMore" }}…</p>
+</a>

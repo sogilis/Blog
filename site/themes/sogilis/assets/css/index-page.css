@@ -1,0 +1,91 @@
+main > #blog_index {
+    display: grid;
+    grid-gap: 2rem;
+    grid-auto-rows: 25rem;
+    padding-top:12rem;
+    padding-bottom:6rem;
+}
+
+                          /* Each cell of the grid */
+                          /* ===================== */
+
+main > #blog_index > a.blog_index_article {
+    display: grid;
+    grid-template-rows: 55% 25% 5%;
+    grid-gap: 5%;
+    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+
+    /* This declaration is mandatory here */
+    /* Simply declare it in #blog_index is not enough */
+    text-decoration: none;
+}
+
+                                  /* Image */
+                                  /* ===== */
+
+main > #blog_index > a.blog_index_article > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.8s;
+}
+
+main > #blog_index > a.blog_index_article:hover > img {
+    filter: grayscale(100%);
+}
+                       /* The title and 'Lire la suite */
+                       /* ============================ */
+
+
+main > #blog_index > a.blog_index_article > p,
+main > #blog_index > a.blog_index_article > h1 {
+    margin: 1rem;
+    transition: all 0.3s;
+}
+                                /* The title */
+                                /* ========= */
+
+main > #blog_index > a.blog_index_article > h1 {
+    font-family: 'EB Garamond', serif;
+    /* TODO $medium-grey when transform this file to SCSS */
+    color: #707070;
+    font-size: 1.1rem;
+}
+
+main > #blog_index > a.blog_index_article:hover > h1 {
+    /* TODO $dark_grey when transform this file to SCSS */
+    color: #282E36;
+}
+
+                      /* p is "Lire la suite" in French */
+                      /* ============================== */
+
+main > #blog_index > a.blog_index_article > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    /* TODO $wolf-blue when transform this file to SCSS */
+    color: #016099;
+    text-align: right;
+}
+
+main > #blog_index > a.blog_index_article:hover > p {
+    /* TODO $light-electric-blue when transform this file to SCSS */
+    color: #A7E4EA;
+    text-decoration: underline;
+}
+
+                              /* Media queries */
+                              /* ============= */
+
+@media (min-width: 576px) {
+    main > #blog_index {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    main > #blog_index {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

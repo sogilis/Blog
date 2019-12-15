@@ -4,20 +4,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{{ .Summary | default .Site.Params.SiteDescription }}">
 
+        <!-- boostrap should be before header.css, otherwise the header display bug -->
+        <link rel="stylesheet" href="{{ "css/bootstrap-4.0.0.min.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/aos.css" | relURL }}" />
+
         {{ $styles := dict "(min-width: 1200px)" "sass/sup1200.scss" "(min-width: 992px) and (max-width: 1199px)" "sass/992-1199.scss" "(min-width: 768px) and (max-width: 991px)" "sass/768-991.scss" "(min-width: 576px) and (max-width: 767px)" "sass/576-767.scss" "(max-width: 575px)" "sass/inf576.scss" }}
         {{ range $media_query, $sass_style := $styles }}
             {{ $style := resources.Get $sass_style | toCSS | minify | fingerprint }}
             <link rel="stylesheet" media="screen and {{ $media_query }}" href="{{ $style.Permalink }}" type="text/css" />
         {{ end }}
 
-        <link rel="stylesheet" href="{{ "css/bootstrap-4.0.0.min.css" | relURL }}">
-        <link rel="stylesheet" href="{{ "css/aos.css" | relURL }}" />
+        {{ $head := resources.Get "css/header.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $head.Permalink }}" type="text/css" />
+
+        {{ $index_page := resources.Get "css/index-page.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $index_page.Permalink }}" type="text/css" />
 
         {{ $footer := resources.Get "css/footer.css" | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $footer.Permalink }}" type="text/css" />
 
-        {{ $head := resources.Get "css/header.css" | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $head.Permalink }}" type="text/css" />
 
         <script src="{{ "js/jquery-3.3.1.min.js" | relURL }}"></script>
         <script src="{{ "js/aos.js" | relURL }}"></script>
