@@ -28,7 +28,7 @@ Partons du nom de principe : « responsabilité unique ». Naïvement, on peut
 
 Nous sommes en programmation orientée objet, on peut donc supposer que le principe s'applique pour chaque objet, donc pour chaque classe.
 
-!(niveau d'application (1))[/img/2016/02/niveau-dapplication-1.png]
+![niveau d'application (1)](/img/2016/02/niveau-dapplication-1.png)
 
 Ensuite, **qu'est-ce qu'une responsabilité ?**
 

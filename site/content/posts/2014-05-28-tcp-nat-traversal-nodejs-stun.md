@@ -127,7 +127,7 @@ The success rate is somewhat lower with this method because NAT generally track�
 
 ## Node.js implementation
 
-You have to find a STUN server that talk TCP. There are not many out there. I could find ((stun.stunprotocol.org))[http://stunprotocol.org] that does it, but unfortunately, it closes the connection after the first exchange. I believe this is in contradiction with RFC 5389 §7.2.2:
+You have to find a STUN server that talk TCP. There are not many out there. I could find [(stun.stunprotocol.org)](http://stunprotocol.org) that does it, but unfortunately, it closes the connection after the first exchange. I believe this is in contradiction with RFC 5389 §7.2.2:
 
 ```
 At the server end, the server SHOULD keep the connection open, and let the client close it, unless the server has determined that the connection has timed out (for example, due to the client disconnecting from the network).  Bindings learned by the client will remain valid in intervening NATs only while the connection remains open.  Only the client knows how long it needs the binding.

@@ -40,7 +40,7 @@ We were looking for talented people with complementary skills, individuals who p
 
 ### Quick decisions guide the process
 
-Once we had our team all set, we needed to make sure that we had access to the folks who can say ‘yes’ or ‘no’ to our design propositions. In a project as fast and furious as Hexo+, you’ve got to have someone inside the client’s organisation who makes decisions and makes them quickly. (The Product Owner (PO))[https://en.wikipedia.org/wiki/Scrum_(software_development)#Product_owner] role is crucial.
+Once we had our team all set, we needed to make sure that we had access to the folks who can say ‘yes’ or ‘no’ to our design propositions. In a project as fast and furious as Hexo+, you’ve got to have someone inside the client’s organisation who makes decisions and makes them quickly. [The Product Owner (PO)](https://en.wikipedia.org/wiki/Scrum_(software_development)#Product_owner) role is crucial.
 
 [Eva](https://fr.linkedin.com/in/eva-pagneux-266a04b) was our ever-smiling and ever-demanding PO, the key interface between teams throughout Squadrone. She helped us understand the vision of what was to be built. At the end of each design sprint, she reviewed our propositions, narrowed down and made tough decisions, always keeping in mind big outcomes like user testing sessions, Hexo+ DIY kits or Hexo+ first shipping to our 2600+ Kickstarter backers all over the world.
 
@@ -56,7 +56,7 @@ These ‘character sheets’ helped us keeping users in mind all along the proje
 
 **Mapping the project**
 
-A lot of work defining and prioritising the project was already done when we entered the game, so mapping the perimeter was easy. We read the (Product Requirements Document (PRD))[https://en.wikipedia.org/wiki/Product_requirements_document] and built a [Story Map](https://en.wikipedia.org/wiki/User_story#Story_map) with the team, extracting a (Minimum Valuable Product (MVP))[https://en.wikipedia.org/wiki/Minimum_viable_product] focused on an outdoor usage scenario. The first outcome was shipping DIY kits to our 70+ backers and early adopters in June 2015.
+A lot of work defining and prioritising the project was already done when we entered the game, so mapping the perimeter was easy. We read the [Product Requirements Document (PRD)](https://en.wikipedia.org/wiki/Product_requirements_document) and built a [Story Map](https://en.wikipedia.org/wiki/User_story#Story_map) with the team, extracting a [Minimum Valuable Product (MVP)](https://en.wikipedia.org/wiki/Minimum_viable_product) focused on an outdoor usage scenario. The first outcome was shipping DIY kits to our 70+ backers and early adopters in June 2015.
 
 ![](/img/2016/06/Designing-Hexo-Mobile-App-5.jpg)
 

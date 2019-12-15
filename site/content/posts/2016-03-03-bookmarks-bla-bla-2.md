@@ -142,7 +142,7 @@ Et pour finir cet veille, voici un article basé sur des interviews de certains 
 
 ### Javascript
 
-* (Object.values(), Object.entries() and Object.getOwnPropertyDescriptors() landed in Chrome.)[https://twitter.com/malyw/status/704972953029623808]
+* [Object.values(), Object.entries() and Object.getOwnPropertyDescriptors() landed in Chrome.](https://twitter.com/malyw/status/704972953029623808)
 * [The Node.js Event Loop is a Damn Mess](http://sheldonkreger.com/the-nodejs-event-loop-is-a-damn-mess.html)
 * [Et si JavaScript allait droit dans le mur ?](https://linuxfr.org/users/nono/journaux/et-si-javascript-allait-droit-dans-le-mur)
 * [JS/Alt](http://rahulsom.github.io/jsalt/)

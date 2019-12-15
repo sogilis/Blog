@@ -100,6 +100,6 @@ C'est tout pour aujourd'hui !
 
 ## Références
 
-- (Visualisation en 3D du PCA (en, html))[http://setosa.io/ev/principal-component-analysis/]
-- (Analyse du bruit d'un jeu de données et décomposition par valeurs singulières (en, pdf))[https://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf]
-- (Article détaillé sur Wikipedia (en, html))[https://en.wikipedia.org/wiki/Principal_component_analysis]
+- [Visualisation en 3D du PCA (en, html)](http://setosa.io/ev/principal-component-analysis/)
+- [Analyse du bruit d'un jeu de données et décomposition par valeurs singulières (en, pdf)](https://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf)
+- [Article détaillé sur Wikipedia (en, html)](https://en.wikipedia.org/wiki/Principal_component_analysis)

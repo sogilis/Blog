@@ -79,7 +79,7 @@ La **disponibilité** des données signifie que chaque client doit pouvoir lire 
 
 Enfin, un système de stockage distribué est dit tolérant au **partitionnement physique** lorsqu'il supporte la distribution de la charge de stockage sur des machines physiques distinctes, interconnectées par un réseau. Un tel système est entre autres capable de contourner une panne d'un de ses nœuds en redirigeant automatiquement les requêtes sur d'autres nœuds disponibles.
 
-Un résultat connu sous le nom de (lemme de Brewer _(en)_)[http://en.wikipedia.org/wiki/CAP_theorem] prouve que seulement deux de ces caractéristiques sur trois peuvent être présentes simultanément au sein d'un système de gestion de bases de données (qu'il soit NoSQL ou non). Les systèmes relationnels, par exemple, supportent très bien la disponibilité et la cohérence des données mais sont relativement pas (ou peu) adaptés au partitionnement physique - bien que certains travaux aillent dans ce sens, notamment sur _PostgreSQL_. Les systèmes NoSQL, quant à eux, sont conçus pour être distribués sur un réseau de machines physiques, ce qui implique un compromis entre la cohérence des données et la disponibilité des serveurs. Souvent, ces systèmes implémentent une notion de **cohérence finale** (_ie_ les modifications sur les données sont propagées sur toutes les machines au bout d'un certain temps) afin de garantir une haute disponibilité des données.
+Un résultat connu sous le nom de [lemme de Brewer _(en)_](http://en.wikipedia.org/wiki/CAP_theorem) prouve que seulement deux de ces caractéristiques sur trois peuvent être présentes simultanément au sein d'un système de gestion de bases de données (qu'il soit NoSQL ou non). Les systèmes relationnels, par exemple, supportent très bien la disponibilité et la cohérence des données mais sont relativement pas (ou peu) adaptés au partitionnement physique - bien que certains travaux aillent dans ce sens, notamment sur _PostgreSQL_. Les systèmes NoSQL, quant à eux, sont conçus pour être distribués sur un réseau de machines physiques, ce qui implique un compromis entre la cohérence des données et la disponibilité des serveurs. Souvent, ces systèmes implémentent une notion de **cohérence finale** (_ie_ les modifications sur les données sont propagées sur toutes les machines au bout d'un certain temps) afin de garantir une haute disponibilité des données.
 
 ![](/img/2014/11/tumblr_inline_ncpr1fhc5T1sc5im4.png)
 
@@ -88,4 +88,4 @@ Un résultat connu sous le nom de (lemme de Brewer _(en)_)[http://en.wikipedia.o
 1. Un catalogue à jour des systèmes de stockage NoSQL existants.
   [nosql-database.org](http://nosql-database.org/)
 2. Une vue approfondie de plusieurs catégories de systèmes NoSQL.
-  (Not Only SQL _(en)_)[https://en.wikipedia.org/wiki/NoSQL]
+  [Not Only SQL _(en)_](https://en.wikipedia.org/wiki/NoSQL)
