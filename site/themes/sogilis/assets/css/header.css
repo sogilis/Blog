@@ -1,0 +1,11 @@
+header > div {
+    display: flex;
+}
+
+header > div > #soheaderLogo {
+    width: calc(2 * 100% / 12);
+}
+
+header > div > #soheaderNav {
+    margin-left: auto;
+}
