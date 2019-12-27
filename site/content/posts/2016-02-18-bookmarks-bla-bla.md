@@ -98,7 +98,7 @@ Et comme on [apprécie les Lego](https://twitter.com/_crev_/status/6437084268419
 
 * [Write code that is easy to delete, not easy to extend](http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)
 * [Tests vs Types](http://kevinmahoney.co.uk/articles/tests-vs-types/)
-* [Spark tutorial](http://docs.adacore.com/spark2014-docs/html/ug/tutorial.html)
+* [Spark tutorial](https://docs.adacore.com/spark2014-docs/html/ug/en/tutorial.html)
 
 ### Javascript
 
@@ -111,7 +111,6 @@ Et comme on [apprécie les Lego](https://twitter.com/_crev_/status/6437084268419
 * [Clojure Compilation: Parenthetical Prose to Bewildering Bytecode](http://blog.ndk.io/clojure-compilation.html)
 * [Om](https://github.com/omcljs/om)
 * [ClojureScript: Real world app](http://dimafeng.com/2015/11/16/clojurescript-om/)
-* [Explaining immutability](https://medium.com/@roman01la/explaining-immutability-2aedc221b4c0#.973tcxnmt)
 
 ### Go
 

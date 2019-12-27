@@ -221,4 +221,3 @@ On peut aller explorer l’API Google et essayer de piloter d’autres services 
 
 De même, l'authentification avec un compte Google standard est identique.
 
-[1]: https://docs.google.com/a/sogilis.com/spreadsheet/ccc?key=0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE&usp=sharing#gid=0

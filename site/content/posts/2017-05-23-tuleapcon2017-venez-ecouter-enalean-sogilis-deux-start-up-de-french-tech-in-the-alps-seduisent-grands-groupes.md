@@ -49,7 +49,7 @@ Tuleap  permet aux équipes de développement de fournir des applications logic
 
 Tuleap organise et automatise les développements : backlog, tâches, bugs, code source, intégration continue, livraisons, documents. La suite est intégrée avec des outils leaders : Git, Jenkins, Eclipse.
 
-[Enalean](https://www.enalean.com/) fournit des services professionnels basés sur Tuleap : support SLA, formations  hébergement, mais aussi un service innovant : [l'Open Roadmap](https://www.enalean.com/fr/services#open-roadmap)™, un Club de financement collaboratif pour la R&D de Tuleap.
+[Enalean](https://www.enalean.com/) fournit des services professionnels basés sur Tuleap : support SLA, formations  hébergement, mais aussi un service innovant : [l'Open Roadmap](https://www.tuleap.org/pricing/other-services/open-roadmap/)™, un Club de financement collaboratif pour la R&D de Tuleap.
 
 [@TuleapOpenALM](https://twitter.com/TuleapOpenALM)
 [@EnaleanTeam](https://twitter.com/EnaleanTeam)

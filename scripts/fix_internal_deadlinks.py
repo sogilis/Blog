@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # This script needs to be run inside this directory with
 # python3 fix_internal_deadlinks.py
 

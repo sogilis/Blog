@@ -221,7 +221,6 @@ Un dernier point sur git avant de se quitter. Sogilis dispense aussi des formati
 ## Ressources
 
 - [Git: the NoSQL database](http://opensoul.org/2011/09/01/git-the-nosql-database/) par Brandon Keepers
-- [Vidéo Git : the NoSQL database](http://vimeo.com/44458223) par Brandon Keepers
 - [Git Internals : Chapitre 9 de Pro Git](http://git-scm.com/book/en/Git-Internals)
 
 [1]: https://66.media.tumblr.com/3db4a26ac339ea068f96de5ecea2f176/tumblr_inline_n0vyfg5SJf1sv6muh.png

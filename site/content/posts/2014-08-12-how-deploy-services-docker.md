@@ -134,7 +134,7 @@ systemctl start $name-roundcube
 
 There is however a few things to execute first and some shell functions to define. However I like this solution the most because the configuration (the three variables at the top) is separated from the code that run the deployment.
 
-How is that implemented? Following [host integration](https://docs.docker.com/articles/host_integration/) you have to ensure a few things on your host system:
+How is that implemented? Following [host integration](https://docs.docker.com/config/containers/start-containers-automatically/) you have to ensure a few things on your host system:
 
 * that you are running systemd:
   {{< highlight systemd >}}
