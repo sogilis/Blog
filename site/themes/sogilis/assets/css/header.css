@@ -7,5 +7,6 @@ header > div > #soheaderLogo {
 }
 
 header > div > #soheaderNav {
-    margin-left: auto;
+    flex: 1;
+    text-align: right;
 }
