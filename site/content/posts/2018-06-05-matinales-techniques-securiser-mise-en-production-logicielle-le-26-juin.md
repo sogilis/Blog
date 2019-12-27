@@ -33,7 +33,7 @@ Rejoignez-nous !
 
 **Intervenants :**
 
-![](/img/2018/06/jérome-doucet.jpg)
+![](/img/2018/06/jérome-doucet.jpg)
 [Jerome Doucet](https://www.linkedin.com/in/j%C3%A9r%C3%B4me-doucet-4b1a5450/) : Développeur initialement spécialisé sur les technologies Java, j'ai progressivement acquis des compétences de développement front-end, cloud et sur d'autres technologies de développement back-end.
 
 ![](/img/2018/06/simon-denier.jpeg)

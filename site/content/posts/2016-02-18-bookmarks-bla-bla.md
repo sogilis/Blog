@@ -36,7 +36,7 @@ Prenons un exemple qui d'apparence est trivial :
 
 Je suis certain que vous avez déjà réalisé un code du genre. Et que ça n'a pris que quelques lignes. Facile. Maintenant, que vous indique votre code en terme de documentation, de robustesse aux cas limites, de spécifications, de garanties d'exécution normale, etc. ? Vous pensez que votre code est bon ? Je vous suggère dans ce cas d'aller tout de suite lire cet article sur les [Tests vs Types](http://kevinmahoney.co.uk/articles/tests-vs-types/) et vous devriez voir qu'en réalité c'est loin d'être trivial. Et lorsqu'on voit l'effort qui peut être nécessaire pour un code d'apparence si simple, que penser d'un code plus complexe ?
 
-Si vous voulez d'ailleurs aller un peu plus loin, vous pouvez aller lire ce [tutoriel à propos de SPARK 2014](http://docs.adacore.com/spark2014-docs/html/ug/tutorial.html) qui tente de répondre à exactement la même spécification, cette fois ci en allant jusqu'à la preuve. Très instructif encore une fois du travail nécessaire pour garantir qu'une si petite portion de code fera bien ce qui a été demandé.
+Si vous voulez d'ailleurs aller un peu plus loin, vous pouvez aller lire ce [tutoriel à propos de SPARK 2014](http://docs.adacore.com/live/wave/spark2014/html/spark2014_rm/index.html) qui tente de répondre à exactement la même spécification, cette fois ci en allant jusqu'à la preuve. Très instructif encore une fois du travail nécessaire pour garantir qu'une si petite portion de code fera bien ce qui a été demandé.
 
 Histoire de rester dans des sujets connexes, connaissez-vous la règle numéro 1 des choses à ne pas faire de Joel Spolsky ?
 
@@ -71,8 +71,6 @@ Chez Sogilis, nous utilisons de nombreux langages différents. Et s'il en est un
 Et justement, si vous vouliez savoir comment il est possible de passer d'un magnifique amas de ces parenthèses à un bytecode pour JVM (et que vous avez quelques heures devant vous…), voici un magnifique article sur le sujet : [Clojure Compilation: Parenthetical Prose to Bewildering Bytecode](http://blog.ndk.io/clojure-compilation.html).
 
 Toujours à propos de Clojure, voici un petit tutoriel très bien amené qui présente comment [réaliser une interface d'administration de blog](http://dimafeng.com/2015/11/16/clojurescript-om/) à base de [Om](https://github.com/omcljs/om) et de ClojureScript. [Om](https://github.com/omcljs/om) est un binding ClojureScript pour react. Le code présenté est plutôt intéressant, ce que j'ai apprécié est la concision et la facilité de traitement des requêtes asynchrones, un peu comme on ferait avec [async/await en ES7](https://jakearchibald.com/2014/es7-async-functions/), mais ici au travers de channels et, surtout, sans _promises_. Finalement comme si on utilisais des [goroutines](https://tour.golang.org/concurrency/1).
-
-S'il est une notion centrale à clojure et l'ensemble des langages fonctionnels, c'est bien l'immutabilité. Néanmoins, savoir l'expliquer simplement n'est pas toujours aisé. Voici un article qui se propose d’[expliquer l'immutabilité à partir d'un post de blog](https://medium.com/@roman01la/explaining-immutability-2aedc221b4c0#.973tcxnmt). Plutôt réussi, il devrait vous permettre de comprendre la base ou de la faire comprendre facilement.
 
 ### Go
 

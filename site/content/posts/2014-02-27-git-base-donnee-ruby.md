@@ -308,7 +308,6 @@ Ha oui, un dernier rappel sur git avant de se quitter. Sogilis dispense toujours
 ## Ressources
 
 - [Git: the NoSQL database](http://opensoul.org/2011/09/01/git-the-nosql-database/) par Brandon Keepers
-- [Vidéo Git: the NoSQL database](http://vimeo.com/44458223) par Brandon Keepers
 - [Git Internals : Chapitre 9 de Pro Git](http://git-scm.com/book/en/Git-Internals)
 - [rugged](https://github.com/libgit2/rugged)
 

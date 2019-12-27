@@ -16,7 +16,7 @@ tags:
 ---
 Once upon a time, we were tasked with designing a distributed system for 3D printers across the internet - something like a pool of workers for processing jobs in parallel. At the time we knew little of the customaries of 3D printing: how it works, how it fails, what kind of communication to expect. After the initial probe & discovery stage, it became obvious we had to design a distributed system in a not so common way. Because 3D printers are dealing with a physical process, taking some time to complete and requiring manual operation, we went back to basics and focused on two properties: keeping things consistent locally and making the overall system resilient in the face of inconsistency. This is the story of how we designed our system to handle such properties.
 
-## [][1]{#user-content-challenges-of-3d-printing---in-a-distributed-context.anchor}Challenges of 3D Printing - in a Distributed Context
+## 1
 
 From a faraway point of view, distributed 3D printing is not different from the job parallelisation we often stumble upon in the cloud. Given one model and some quantities, create some jobs and dispatch them on available workers.
 
@@ -36,7 +36,7 @@ We had to design a system for long-running jobs, which would closely mirror what
 * ensuring we had -eventually- an accurate status of whether the job has succeeded or not;
 * ensuring the printer would not take another job while the previous item was still in its enclosure (obviously, a full-speed encounter between the printer head and a previous piece of hard plastic could result in some catastrophic damage).
 
-## [][2]{#user-content-how-not-to-think-and-design-a-distributed-system.anchor}How (not) to Think and Design a Distributed System
+## 2
 
 When thinking about distributed systems, developers love to throw together a bunch of servers, load balancers, job queues, storage nodes to build a highly-available, highly-resilient, highly-scalable system. With modern days conception, there are bonus points for splitting the tasks across multiple micro-services, each micro-service customarily holding a single responsibility, easier to implement, easier to deploy.
 
@@ -48,7 +48,7 @@ There have been many warnings over the last years, even « horror stories », 
 
 Since we were wandering into unknown territories, the most sensible thing to do was to simplify the system, make it easier to reason about. To this end, we removed intermediaries (such as message queues), starting with just the core nodes required to perform the task: a server/supervisor and some workers.
 
-## [][3]{#user-content-a-thought-framework-for-resiliency-the-distributed-reactive-loop.anchor}A Thought Framework for Resiliency: the Distributed Reactive Loop
+## 3
 
 We consider two primary nodes in our system: a supervisor in charge of dispatching and monitoring jobs overall, and a worker in charge of monitoring a printer. Both nodes communicate directly through a full-duplex channel. By removing intermediaries, we also take care of limiting data redundancy between nodes, so that state is easier to reconcile in case of inconsistencies.
 
@@ -64,7 +64,7 @@ We called this protocol a **reactive loop** because it always starts with a re
 
 Together, those design decisions make it easier to reason about the system by having a simple **thought framework**, with basically distributed decisions being made in one place - the supervisor. It also imposed a clear separation of concerns between worker and supervisor, with the worker focusing on keeping its own state consistent (with regards to job processing in the printer), while the supervisor focused on worker commands and state reconciliation whenever it could communicate with workers. Overall, it makes it easier to reason about failure and recovery modes.
 
-## [][4]{#user-content-printer-automata.anchor}Printer Automata
+## 4
 
 Before illustrating the reactive loop with use cases, we should describe how the worker represents the printer state. The printer is easily modelled as a finite-state machine. Each state indicates what the printer is currently doing, which action to take or monitor, and which messages sent by the supervisor are valid. The figure below shows a simplified version of the FSM: there are three normal states, which models the regular process; one special state catches errors to allow the worker to recover.
 
@@ -76,27 +76,27 @@ Whenever the worker detects an issue with the printer, it goes into the **error
 
 This automata represents the internal workings of the printer. But from the point of view of the supervisor, the worker can also be in an **offline state**, meaning communication is impossible. The worker may simply be turned off, or it may have lost the connection. The loss of server connection does not prevent the printer from performing some task. For example it might continue to print an item. This case has implications about what happens when a printer is offline but also when it comes back online.
 
-## [][5]{#user-content-the-reactive-loop-illustrated.anchor}The Reactive Loop, Illustrated
+## 5
 
 Thinking with the reactive loop is as simple as imagining a use case and playing it through the loop. The below examples will illustrate most of what can happen in the system.
 
-### [][6]{#user-content-prerequisite-print-job-creation.anchor}Prerequisite: Print Job Creation
+## 6
 
 To set things into motion, a customer should of course issue a print order. The server takes care of creating and dispatching print jobs on a subset of 3D printers to fulfill the print order. Each print job is first registered as **to do**, regardless of the printer state. This way, the job becomes part of the printer queue. It will be consumed when the printer is ready, depending on one of the following use cases.
 
-### [][7]{#user-content-nominal-case-start-a-job-immediately.anchor}Nominal Case: Start a Job Immediately
+## 7
 
 When a job request is created on the server, the server checks whether the printer is connected and sends a request for state. The printer answers « ready to print » so the supervisor looks up one job to do in the current printer queue and sends it to the printer.
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/nominal_path.png)
 
-### [][8]{#user-content-postponing-a-job.anchor}Postponing a Job
+## 8
 
 When the server requests the state, the printer might be processing another job. In this case, the roundtrip stops immediately with a no-op. Since the job is already in the queue, it will be processed later.
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/postponing.png)
 
-### [][9]{#user-content-consuming-a-job-queue.anchor}Consuming a Job Queue
+## 9
 
 Because a manual operation is required to retrieve the item from the box, the printer can not automatically take another job once finished printing. Instead it follows a two-step process through the supervisor to ensure that the current item status is finally done before taking another job.
 
@@ -104,19 +104,19 @@ Once finished printing, the printer goes into the waiting state. When receiving 
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/consuming_queue.png)
 
-### [][10]{#user-content-starting-after-wakeupreconnection.anchor}Starting after Wakeup/Reconnection
+## 10
 
 When the printer comes back online in the ready state, how does it get deferred jobs? A simple roundtrip to the supervisor indicates the printer is ready and can trigger a job command if one is available in the queue.
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/deferred_start.png)
 
-### [][11]{#user-content-state-reconciliation.anchor}State Reconciliation
+## 11
 
 Update messages may be lost when the connection is down. But an interrupted connection should not alter the printing process. For example, the printer might finish its job and go to the « waiting retrieval » state. Meanwhile the job is still marked in progress in the supervisor. Next steps can not happen until state has been reconciled. After reconnection, a status exchange is enough so that the supervisor updates the job state. Only then can the process proceed normally with the retrieval stage before going back to ready.
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/reconciliation.png)
 
-### [][12]{#user-content-error-detection-and-recovery.anchor}Error Detection and Recovery
+## 12
 
 Failure can happen anytime during a printing process: the model might be faulty, the mechanism can derail, or the printer could simply be powered off because someone pulls the plug. In most cases, it is impossible to resume a failed job, because of the physical properties of the material. When this happens, the worker simply goes into an error state. This can happen whether the printer is online or offline with the supervisor. Once the printer is online again, a roundtrip is enough for the supervisor to detect the error state and notify the job as failed.
 
@@ -124,13 +124,12 @@ Failure can happen anytime during a printing process: the model might be faulty,
 
 The process is then similar to the « waiting retrieval » state. The operator cleans up the mess, checks the printer is operational, then signals the job as « recovering » for the supervisor. At the next roundtrip, when the printer sends the error state and the supervisor sees the job as recovering, it can send the recover signal to the printer. This signal puts the printer back in ready state, which can then start over.
 
-![][13]
 
-## [][14]{#user-content-discussion-some-properties-of-the-reactive-loop.anchor}Discussion: Some Properties of the Reactive Loop
+## 13
 
 Distributed systems are full of loopholes and it is easy to make mistakes. This article primarily focus on the foundations of the reactive loop, driven by simplicity and ease of reasoning. However, other thoughts were in our mind when developing this project. This section intends to offer complementary points of view about the properties and limitations of the reactive loop design.
 
-### [][15]{#user-content-liveness-versus-reduced-inconsistenciesresiliency.anchor}Liveness versus Reduced Inconsistencies/Resiliency
+## 14
 
 We could have made the obvious choice to use an independent job queue system. Many of them have been created, for different usage. Some are available as SAAS, which removes partly the maintenance burden. Given their high reliability and availability, it is interesting to use them as the backbone for the system communication. In particular, they enable a better tolerance for network partitioning. For example, the supervisor and the worker may not need to be online at the same time to make some progress. On the contrary, the reactive loop implies that both nodes be connected at the same time to eventually make progress - even if they can work independently of each other most of the time. This is of course a reasonable assumption if the supervisor is designed to be available - the worker just needs some communication window from time to time to make progress.
 
@@ -138,7 +137,7 @@ One disadvantage of the independent queue system is that it involves an intermed
 
 Resiliency is often achieved through automatic job retry or visibility timeout with queue systems. However, given the cost of 3D printing, we hardly want the system to start an apparently failed job on another printer, if we are not sure it has been cancelled on the first one. So while an independent queue system would offer better liveness, we favor the simple resiliency offered by the reactive loop.
 
-### [][16]{#user-content-how-do-we-handle-communication-issues-delivery-issue-inconsistent-messages-and-a-note-on-state-design.anchor}How Do We Handle Communication Issues (Delivery Issue, Inconsistent Messages)? And a Note on State Design
+### 15
 
 Basically, the reactive loop framework favors some functional mindset/command-query separation (state updates happening independently of commands). Nodes process messages they receive but do not care if a sent message is processed on the other side. This implies that undelivered messages are simply lost. They are not stored in a queue for later delivery. Simply the loop will retry the next time it has an opportunity to run. In the same spirit, if a message would be delivered a bit late and become « stale » with respect to the printer status, the printer would simply reject it. Again, the message would be lost but it does not matter. The supervisor takes a new message as an opportunity to reconcile its internal state.
 
@@ -157,7 +156,7 @@ This also impacts the design of item status on the supervisor/database side, whi
 
 Here, an event-driven approach works best to model the status through which an item goes. It prevents the model from becoming inconsistent, by having micro-steps which have a single source of transition.
 
-### [][17]{#user-content-discovery-and-scalability.anchor}Discovery and Scalability
+### 16
 
 A typical concern for distributed systems is how « dynamic » they can be. Can we add new nodes to the system easily? How does it scale?
 
@@ -167,13 +166,13 @@ The supervisor model presented here is a bit of a simplification with respect to
 
 Second, to support resiliency and scalability, supervisor reactions should be « stateless », in the same sense as a REST server. A handler only stores the state of the connection, no data about the printer status or job. Whenever a loop run implies some state, the supervisor will look up the data in the database - as for any web system, state synchronization ultimately relies on the database. A practical limit for a supervisor node would be the number of simultaneous websocket connections it can handle. Then, stateless supervisors can be easily duplicated as a service and moved behind a load balancer to scale up.
 
-### [][18]{#user-content-extensibility-of-the-reactive-loop.anchor}Extensibility of the Reactive Loop
+## 17
 
 An important property of any framework is how easy it is to extend. Especially in the course of incremental development, new use cases arise and involve changes in the communication protocol. We had the opportunity to test extensibility during some further evolution and the process is rather easy.
 
 The first step to consider is whether a new state is involved in the printer automata, how it connects with other states, and what are its failure modes. Once the FSM is clarified, we can think of the communication protocol: we specify the status update and the commands to be exchanged. Finally, the supervisor needs to define proper behaviors in reaction to this state. Such behaviors often depend on inspecting the database content to determine the right path: are we in the nominal case, what is the next command, do we need to update or reconcile state, can we detect or recover a fault?
 
-## [][19]{#user-content-final-thoughts-before-we-part.anchor}Final Thoughts before We Part
+## 18
 
 Most often we rely on existing solutions because they are proven and most problems follow the same path. However, it is also easy to take everything as a nail when all you have is a hammer. It is good to recognize such cases and be able to go back to the design board. With the reactive loop, we focused on resiliency and ease of reasoning because we were discovering a new domain.
 

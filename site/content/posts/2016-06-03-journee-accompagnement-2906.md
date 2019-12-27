@@ -11,7 +11,7 @@ tags:
   - businessmodel
 
 ---
-**Alors que l'équipe de Sogilis Lyon travaille sur le drone sous-marin [iBubble](http://ibubble.camera/) et les lunettes connectées [Tikaway](http://www.tikaway.com/fr/), elle propose aux porteurs de projets lyonnais une demi-journée d’accompagnement au design de leur Business Model.**
+**Alors que l'équipe de Sogilis Lyon travaille sur le drone sous-marin [iBubble](http://ibubble.camera/) et les lunettes connectées [Tikaway](https://www.tikaway.com/), elle propose aux porteurs de projets lyonnais une demi-journée d’accompagnement au design de leur Business Model.**
 
 
 ![](/img/2016/06/20162906_Accompagnement_BMD-300x300.jpg)

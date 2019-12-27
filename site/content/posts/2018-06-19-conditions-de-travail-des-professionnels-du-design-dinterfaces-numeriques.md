@@ -96,6 +96,5 @@ De notre côté, nous nous retrouvons dans la majorité des groupes. Nous venons
 
 Néanmoins, nous divergeons sur deux points avec les répondants. Le titre que l’on se donne et la facturation : ergonomes plutôt qu’UX-designer, et la facturation car nous travaillons souvent au forfait alors que la plupart facture au jour réellement travaillé. Cette étude nous permet d’enrichir notre réflexion et nous encourage en particulier à davantage essayer de facturer au jours réellement travaillés.
 
-Pour plus de résultats, vous pouvez [consulter le rapport entier ici](/img/2018/06/Conditions-de-travail-des-professionnels-du-design-dinterfaces-numériques-Résultats-du-questionnaire.pdf)
 
 ¹ Tests statistiques : Mann & Whitney (𝛂 = 0,05)

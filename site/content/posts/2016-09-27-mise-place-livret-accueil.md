@@ -18,7 +18,7 @@ tags:
 
 L’arrivée au sein d’une nouvelle entreprise est significative de changements : on doit retenir de nombreuses informations. Alors par où commencer ? **Le livret nous a semblé être un outil “facilitateur” lors de l’intégration.** Attention, il ne doit en rien changer le partage d’informations à l’oral, mais doit être complémentaire. C’est un repère écrit, ce qui signifie que les informations sont toujours disponibles.
 
-C’est d’autant plus important qu’au sein de Sogilis, [nous n’avons pas de manager](https://blogbewhy.wordpress.com/2015/11/16/3-raisons-qui-font-de-lentreprise-liberee-un-veritable-avantage-concurrentiel/) : en effet, chacun est responsable et autonome. Quand un nouveau membre arrive dans l’équipe, il a donc beaucoup de questions.
+C’est d’autant plus important qu’au sein de Sogilis, nous n’avons pas de manager : en effet, chacun est responsable et autonome. Quand un nouveau membre arrive dans l’équipe, il a donc beaucoup de questions.
 
 ## Avoir toutes les informations importantes… en un livret court
 

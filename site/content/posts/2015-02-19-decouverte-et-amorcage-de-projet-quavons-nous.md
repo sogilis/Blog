@@ -14,7 +14,7 @@ tags:
   - storymap
 
 ---
-Dans ce dernier article, nous allons revoir les [problèmes rencontrés avec les story maps](https://blog.sogilis.com/posts/2015-02-03-decouverte-amorcage-projet-storymap/) et expliquer comment la planification par capacités apporte des réponses plus pertinentes dans notre contexte. Cette rétrospective nous montrera que l'essentiel n'est pas dans la méthode de Liz, mais bien dans sa façon d'approcher et de prioriser les problèmes - favoriser [« les individus et leurs interactions plus que les processus et les outils »](http://www.agilemanifesto.org/iso/fr/). Ceci nous mènera naturellement à une petite réflexion sur notre approche de l'agilité avec nos porteurs de projet.
+Dans ce dernier article, nous allons revoir les [problèmes rencontrés avec les story maps](https://blog.sogilis.com/posts/2015-02-03-decouverte-amorcage-projet-storymap/) et expliquer comment la planification par capacités apporte des réponses plus pertinentes dans notre contexte. Cette rétrospective nous montrera que l'essentiel n'est pas dans la méthode de Liz, mais bien dans sa façon d'approcher et de prioriser les problèmes - favoriser [« les individus et leurs interactions plus que les processus et les outils »](http://agilemanifesto.org/iso/fr/manifesto.html). Ceci nous mènera naturellement à une petite réflexion sur notre approche de l'agilité avec nos porteurs de projet.
 
 
 ## Quelques leçons tirées de la cartographie par capacité
