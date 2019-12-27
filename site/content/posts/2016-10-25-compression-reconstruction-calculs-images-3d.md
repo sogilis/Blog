@@ -96,7 +96,7 @@ Dans ce billet, nous avons introduit les concepts sur lesquels repose le PCA. Ce
 
 C'est tout pour aujourd'hui !
 
-[Alexandre Dumont](https://twitter.com/_dumontal)
+Alexandre Dumont
 
 ## Références
 
