@@ -60,7 +60,7 @@ The code:
 
 Docker by default is restarting containers at startup that were running at shutdown. This is a good feature but isn’t really a good solution when you want to ensure the container is always running. There are many ways the docker container could not be restarted.
 
-You’ll have to configure [host integration](https://docs.docker.com/articles/host_integration/). This is the only reliable way to do it. It requires writing a service file (for either systemd, upstart or sysvinit) and installing it. This is not strainghtfoward either.
+You’ll have to configure [host integration](https://docs.docker.com/config/containers/start-containers-automatically/). This is the only reliable way to do it. It requires writing a service file (for either systemd, upstart or sysvinit) and installing it. This is not strainghtfoward either.
 
 ### Gear from OpenShift
 
@@ -134,7 +134,7 @@ systemctl start $name-roundcube
 
 There is however a few things to execute first and some shell functions to define. However I like this solution the most because the configuration (the three variables at the top) is separated from the code that run the deployment.
 
-How is that implemented? Following [host integration](https://docs.docker.com/articles/host_integration/) you have to ensure a few things on your host system:
+How is that implemented? Following [host integration](https://docs.docker.com/config/containers/start-containers-automatically/) you have to ensure a few things on your host system:
 
 * that you are running systemd:
   {{< highlight systemd >}}

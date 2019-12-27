@@ -97,7 +97,7 @@ L'autre workflow très courant aujourd'hui c'est le [Github Flow](https://guides
 
 ![](/img/2014/12/tumblr_inline_nez8l9PRWV1sv6muh.png)
 
-Il est très pratique si vous êtes dans le cadre de déploiement continu et si vous utilisez des systèmes comme [Github](https://github.com/) / [bitbucket](https://bitbucket.org) / [stash](https://www.atlassian.com/software/stash) / autre solution d'hébergement avec code review et pull request.
+Il est très pratique si vous êtes dans le cadre de déploiement continu et si vous utilisez des systèmes comme [Github](https://github.com/) / [bitbucket](https://bitbucket.org) / autre solution d'hébergement avec code review et pull request.
 
 ## Un workflow doit répondre à nos besoins
 
@@ -270,7 +270,7 @@ Que pensez-vous de ce workflow ? Lequel utilisez-vous de votre côté, et surtou
 
 ## Pour aller plus loin
 
-Si vous souhaitez aller plus loin, ou juste apprendre Git, nous [donnons des formations Git](http://sogilis.com/formations).
+Si vous souhaitez aller plus loin, ou juste apprendre Git, nous [donnons des formations Git](https://sogilis.com/contact.html).
 
 Et si vous n'êtes pas rassasiés, voici une petite collection de liens à suivre :
 

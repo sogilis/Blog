@@ -171,4 +171,3 @@ C'est normal, j'utilise `auto` qui vient de `C++11`. Il faut donc l'activer dans
 CONFIG+=c++11
 {{< /highlight >}}
 
-> git: tag [02_2048](https://github.com/sogilis/qt2048/tree/O2_2048)

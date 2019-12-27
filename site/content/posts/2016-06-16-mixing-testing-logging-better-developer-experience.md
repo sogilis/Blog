@@ -12,7 +12,7 @@ tags:
 ---
 People love a great article about a new programming paradigm/vision/motto which change the way you architect/develop/maintain your system. This is not one of those articles. **I am gonna talk about the stupid daily life of a programmer - and the problems you don't hear so much about because they seem so dull and obvious: getting the right feedback through logs and tests.**
 
-## [Getting the Right Feedback with Logging][1]
+## Getting the Right Feedback with Logging
 
 What to do with [logging](https://en.wikipedia.org/wiki/Logfile)? A log is a trace of events, which allows one to reconstruct what has happened. Good practices tell you to have events at different levels of granularity. I especially like the ones from [bunyan](https://github.com/trentm/node-bunyan#levels) on this topic. Shameless copy-paste from the doc:
 
@@ -98,7 +98,7 @@ restApp GET /printers
 
 That was rather down-to-earth. Notice I did not discuss where to put the log, how to rotate files etc. This is [not your app concern](http://12factor.net/logs): it should just dump events on standard output and let the infrastructure manages it. This, however, can have some impact on our next practice - testing.
 
-## [Getting the Right Feedback with Automated Tests?][2]
+## Getting the Right Feedback with Automated Tests?
 
 This is actually quite a hard topic. I will not discuss here the way to design your tests, how they should be independent (or not), how to have good failure messages... I will simply focus on how I use the test report in my console, and how it interacts with log output.
 
@@ -156,7 +156,7 @@ const nullLogger = bunyan.createLogger({
   // inject nullLogger in your modules while testing
 {{< /highlight >}}
 
-## [Customizing the Log Level for Tests][4]
+## Customizing the Log Level for Tests
 
 However, there may be good reasons to not discard all outputs while running your tests. Sometimes the stack trace is not enough and you want more data about the current run from, guess what, the log.
 
@@ -204,7 +204,7 @@ npm ERR! Test failed.  See above for more details.
 
 In the above example, my test fails on its assertion. But the root cause can easily be inferred from the error log screaming « Syntax Error ».
 
-## [A Last Small Refinement][5]
+## A Last Small Refinement
 
 To cover our codebase, we could have a test case for error handling, checking that the error is recovered. Let's take the following sample and its accompanying test.
 
@@ -238,7 +238,7 @@ it('ignores non-json message', () => {
   })
 {{< /highlight >}}
 
-## [Final Guidelines][6]
+## Final Guidelines
 
 What to keep of this stuff? Just follow those basic principles next time.
 
@@ -249,10 +249,4 @@ What to keep of this stuff? Just follow those basic principles next time.
 
 **[Simon Denier][7]**
 
-[1]: https://github.com/sdenier/Articles-Sogilis/blob/testing_logging/testing_logging/testing_logging.md#getting-the-right-feedback-with-logging
-[2]: https://github.com/sdenier/Articles-Sogilis/blob/testing_logging/testing_logging/testing_logging.md#getting-the-right-feedback-with-automated-tests
-[3]: https://pragprog.com/magazines/2012-01/unit-tests-are-first
-[4]: https://github.com/sdenier/Articles-Sogilis/blob/testing_logging/testing_logging/testing_logging.md#customizing-the-log-level-for-tests
-[5]: https://github.com/sdenier/Articles-Sogilis/blob/testing_logging/testing_logging/testing_logging.md#a-last-small-refinement
-[6]: https://github.com/sdenier/Articles-Sogilis/blob/testing_logging/testing_logging/testing_logging.md#final-guidelines
 [7]: https://twitter.com/simondenier

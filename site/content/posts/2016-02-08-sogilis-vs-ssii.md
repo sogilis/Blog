@@ -13,11 +13,11 @@ tags:
 ---
 ## Ceci n'est pas une SSII / ESN / Société de service / Boîte de consulting...
 
-Nous n'aimons pas nous appeler [SSII](http://t.umblr.com/redirect?z=https%3A%2F%2Flmddgtfy.net%2F%3Fq%3DSSII+%21wfr&t=MTMyNWEwN2I5Y2YyYWMzNmM2MDAxMTIzMDEyZTEzYzM1ZjI4ZmUyZSw0UHNZSXdhMw%3D%3D). Vous allez dire que c'est le cas de toutes les SSII, et vous avez raison.
+Nous n'aimons pas nous appeler SSII. Vous allez dire que c'est le cas de toutes les SSII, et vous avez raison.
 
 ![](/img/2016/02/PasSSII.jpg)
 
-Sogilis est une société de service. C'est indéniable. Cependant, cette affirmation nous égratigne, tant l'image collective des SSII est mauvaise. On peut d'ailleurs trouver en ligne de [nombreux avis négatifs](http://t.umblr.com/redirect?z=http%3A%2F%2Fgeneral.developpez.com%2Farticles%2Fle-monde-informatique%2Fssii%2F%3Fpage%3Dpage_1&t=Nzg3OTgzM2FlZjg1YzQ4YTFmN2ViMGRkN2Q3YzM1MzE5MjBmYWExOSw0UHNZSXdhMw%3D%3D). Nous avons l'impression que quelque chose dans l'organisation de Sogilis l'éloigne du modèle général des SSII.
+Sogilis est une société de service. C'est indéniable. Cependant, cette affirmation nous égratigne, tant l'image collective des SSII est mauvaise. On peut d'ailleurs trouver en ligne de nombreux avis négatifs. Nous avons l'impression que quelque chose dans l'organisation de Sogilis l'éloigne du modèle général des SSII.
 
 Dans les SSII, il existe généralement une séparation entre les différents métiers. Les développeurs n'ont jamais à s'occuper de trouver des projets ou d’organiser des équipes. Chez nous, c'est le contraire. **Le développeur n'est pas un exécutant. Il s'implique dans la vie et les décisions importantes de l'entreprise.**
 

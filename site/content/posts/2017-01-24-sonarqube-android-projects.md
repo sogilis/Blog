@@ -241,7 +241,6 @@ Here are some useful links to go further:
 
 - [SonarQube gradle plugin documentation](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle)
 - [Using SonarQube with Jenkins Continuous Integration and GitHub to Improve Code Review](http://macoscope.com/blog/using-sonarqube-with-jenkins-continuous-integration-and-github-to-improve-code-review/)
-- [Android continuous integration using Gradle, Android Studio and Jenkins](https://www.coshx.com/blog/2015/03/31/android-continuous-integration-using-gradle-android-studio-and-jenkins/)
 - [SonarQube GitHub Plugin](http://docs.sonarqube.org/display/PLUG/GitHub+Plugin)
 - [GitHub pull request analysis](http://www.sonarqube.org/github-pull-request-analysis-helps-fix-the-leak/)
 - [jenkins + sonar + github integration](http://stackoverflow.com/questions/32047585/jenkins-sonar-github-integration)

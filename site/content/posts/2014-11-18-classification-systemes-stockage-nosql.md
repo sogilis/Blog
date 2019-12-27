@@ -17,7 +17,8 @@ tags:
   - riak
 
 ---
-Dans un [billet précédent](http://sogilis.com/blog/mouvement-nosql/), nous avons établi une brève description des systèmes de stockage NoSQL (“_Not Only SQL_”) en partant des cas d'utilisation qu'ils visent à résoudre. Après avoir dégagé des points de comparaison entre ces technologies et les bases de données relationnelles, plus traditionnelles, nous en avons conclu que les moteurs de stockage NoSQL ne sont pas destinés aux mêmes usages que les bases relationnelles classiques. Par conséquent, ces deux technologies peuvent très bien cohabiter au sein d'un même logiciel sans interférer entre elles ; l'idée étant de toujours utiliser un outil adapté au problème qu'on souhaite résoudre.
+Dans un [billet précédent](https://blog.sogilis.com/posts/2014-04-01-mouvement-nosql/), nous avons établi une brève description des systèmes de stockage NoSQL (“_Not Only SQL_”) en partant des cas d'utilisation qu'ils visent à résoudre. Après avoir dégagé des points de comparaison entre ces technologies et les bases de données relationnelles, plus traditionnelles, nous en avons conclu que les moteurs de stockage NoSQL ne sont pas destinés aux mêmes usages que les bases relationnelles classiques. Par conséquent, ces deux technologies peuvent très bien cohabiter au sein d'un même logiciel sans interférer entre elles ; l'idée étant de toujours utiliser un outil adapté au problème qu'on souhaite résoudre.
+
 
 La famille des systèmes NoSQL compte des systèmes très hétérogènes qui répondent chacun à des besoins très spécifiques. De façon générale, on arrive à les classer en quatre grands ensembles : les bases **clé-valeur**, **les bases documents**, **les bases orientées colonnes** et **les bases de type graphe**.
 

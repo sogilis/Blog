@@ -12,7 +12,8 @@ tags:
   - veille
 
 ---
-Voici un aperçu de notre veille de ces deux dernières semaines. Cet article fait suite [au précédent](http://sogilis.com/blog/bookmarks-bla-bla/) et que j'espère être le début d'une série régulière.
+Voici un aperçu de notre veille de ces deux dernières semaines. Cet article fait suite [au précédent](https://blog.sogilis.com/posts/2016-02-18-bookmarks-bla-bla/) et que j'espère être le début d'une série régulière.
+
 
 Comme le nom l'indique, vous trouverez de tout et de rien, principalement autour du développement (langages, infrastructure) mais aussi design (CSS, SVG), méthodes (Story Map, _capabilities_). Plus qu'une suite de liens, vous trouverez ici une histoire. Cette histoire raconte, de manière subjective, les éléments qui nous ont conduit à s'intéresser à ces différents sujets. Et pour ceux qui s'intéressent plus aux liens qu'au voyage, l'ensemble des liens est présenté en liste à la fin de l'article.
 
@@ -111,9 +112,12 @@ Voici un très intéressant article sur la façon dont sont gérées [les invent
 
 Si le sujet vous intéresse, je vous conseille également d'aller jeter un oeil sur la série d'articles écrits par [Simon](https://twitter.com/simondenier) sur nos réflexions quant à la découverte et l'amorçage de projet :
 
-* [Le problème avec les story maps](http://sogilis.com/blog/decouverte-amorcage-projet-storymap/)
-* [Planifier des capacités et des risques](http://sogilis.com/blog/decouverte-amorcage-projet-planifier/)
-* [Qu'avons-nous appris de la planification par capacités](http://sogilis.com/blog/decouverte-et-amorcage-de-projet-quavons-nous/)
+* [Le problème avec les story maps](https://blog.sogilis.com/posts/2015-02-03-decouverte-amorcage-projet-storymap/)
+
+* [Planifier des capacités et des risques](https://blog.sogilis.com/posts/2015-02-10-decouverte-amorcage-projet-planifier/)
+
+* [Qu'avons-nous appris de la planification par capacités](https://blog.sogilis.com/posts/2015-02-19-decouverte-et-amorcage-de-projet-quavons-nous/)
+
 
 Voici un extrait tout à fait en lien avec les méthodes appliquées chez _X_ :
 

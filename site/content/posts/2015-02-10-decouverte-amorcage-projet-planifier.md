@@ -22,7 +22,8 @@ Dans notre expérience, l'approche story map demande une certaine maturité des 
 
 ## Qu'attend-on de nous ?
 
-Dans [l'article précédent](http://sogilis.com/blog/decouverte-amorcage-projet-storymap/), nous avons expliqué pourquoi la story map n'était pas l'outil le plus adapté pour découvrir et planifier un nouveau projet. Bien que favorisant la discussion, le focus sur les activités des utilisateurs et les lots de fonctionnalité ne permet pas d'aborder les questions fondamentales du porteur de projet à ce stade :
+Dans [l'article précédent](https://blog.sogilis.com/posts/2015-02-03-decouverte-amorcage-projet-storymap/), nous avons expliqué pourquoi la story map n'était pas l'outil le plus adapté pour découvrir et planifier un nouveau projet. Bien que favorisant la discussion, le focus sur les activités des utilisateurs et les lots de fonctionnalité ne permet pas d'aborder les questions fondamentales du porteur de projet à ce stade :
+
 
 * la valeur proposée par le projet est-elle bien identifiée ?
 * est-ce qu'on a repéré les problèmes clés ?
@@ -129,4 +130,5 @@ En répétant cette analyse sur les capacités, leur valeur et leur risque, les 
 
 Un autre principe pour préparer votre plan d'attaque est de fixer des rendez-vous réguliers pour démontrer la valeur du projet. Quelle est la prochaine étape ? Quelle valeur pensez-vous pouvoir démontrer la prochaine fois ? Cela vaut-il le coup ? **Quand vous pouvez décrire de quoi sera capable la prochaine version du système et que vous êtes confiants dans votre capacité de le réaliser, alors vous êtes prêts pour démarrer le projet !**
 
-Après cette présentation générale de la méthode, nous verrons dans le prochain article quelques leçons issues de notre expérience. Nous pourrons les comparer avec [l'approche story map](http://sogilis.com/blog/decouverte-amorcage-projet-storymap/) et voir comment cela affecte notre vision de l'accompagnement agile.
+Après cette présentation générale de la méthode, nous verrons dans le prochain article quelques leçons issues de notre expérience. Nous pourrons les comparer avec [l'approche story map](https://blog.sogilis.com/posts/2015-02-03-decouverte-amorcage-projet-storymap/) et voir comment cela affecte notre vision de l'accompagnement agile.
+

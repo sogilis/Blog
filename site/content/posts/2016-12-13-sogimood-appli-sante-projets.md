@@ -27,7 +27,7 @@ Comme je sais que la meilleure façon de ne jamais commencer un logiciel est de 
 
 _La v0.1-alpha, extrêmement basique. Afin de ne pas dévoiler les clients avec lesquels nous travaillons, les noms de projets ont été remplacés par des titres de dessins animés Pixar._
 
-En deux mois de travail en pointillé sur cet outil et rejoint par [Alexandre](https://twitter.com/_dumontal) qui a développé le backend (écrit en Go), je suis arrivé à une version qui me satisfaisait en termes de fonctionnalités.
+En deux mois de travail en pointillé sur cet outil et rejoint par Alexandre qui a développé le backend (écrit en Go), je suis arrivé à une version qui me satisfaisait en termes de fonctionnalités.
 
 ![sogimood 0.6](/img/2016/12/Capture-d’écran-2016-12-02-à-18.21.39-1024x592.png)
 

@@ -84,7 +84,7 @@ Attention il y a plusieurs versions différentes. Entre autre, si vous souhaitez
 
 Ah oui, prenez votre temps, la version Android + iOS ça fait presque 1GB…
 
-J'ai aussi utilisé [Qt Creator 3.1.0](https://qt-project.org/downloads#qt-creator).
+J'ai aussi utilisé Qt Creator 3.1.0.
 
 Et d'ailleurs pour en rajouter, si vous êtes sous mac il vous faut xcode…
 

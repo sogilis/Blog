@@ -29,7 +29,7 @@ Au lieu d’écrire le compilateur en entier, la partie front-end (le parseur) e
 
 ## Infrastructure de compilation
 
-La compilation a été un peu laborieuse en début de journée, surtout en considérant le temps relativement court pour réaliser un prototype viable. La [documentation LLVM sur CMake](http://llvm.org/releases/3.3/docs/CMake.html) n’est pas au point. Au lieu de cela, un fichier [FindLLVM.cmake](http://lists.cs.uiuc.edu/pipermail/llvmdev/2010-June/032412.html) trouvé sur les listes de diffusion et utilisant directement `llvm-config` a été de la plus grande aide.
+La compilation a été un peu laborieuse en début de journée, surtout en considérant le temps relativement court pour réaliser un prototype viable. La [documentation LLVM sur CMake](http://llvm.org/releases/3.3/docs/CMake.html) n’est pas au point. Au lieu de cela, un fichier FindLLVM.cmake trouvé sur les listes de diffusion et utilisant directement `llvm-config` a été de la plus grande aide.
 
 Au final, le `CMakeLists.txt` ressemble à :
 

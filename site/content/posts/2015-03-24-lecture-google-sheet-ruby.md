@@ -175,7 +175,9 @@ Enfin, pour lire un document, on peut vouloir le faire à partir de l’**identi
 
 On peut trouver cet identifiant dans l’url lorsqu’on édite le document dans son navigateur. Il correspond à l’attribut _key_.
 
-[Prenons par exemple l’url suivante.][1]
+Prenons par exemple l’url suivante : 
+
+_https://docs.google.com/a/sogilis.com/spreadsheet/ccc?key=0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE&usp=sharing#gid=0_
 
 Dans ce cas, l’identifiant est :
 
@@ -219,4 +221,3 @@ On peut aller explorer l’API Google et essayer de piloter d’autres services 
 
 De même, l'authentification avec un compte Google standard est identique.
 
-[1]: https://docs.google.com/a/sogilis.com/spreadsheet/ccc?key=0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE&usp=sharing#gid=0

@@ -10,7 +10,8 @@ tags:
   - viedebureau
 
 ---
-Un piano, une Wii, un plan de domination du monde… voici les objets qui nous entourent, parmi tant d’autres ! [Suite à une première liste](http://sogilis.com/blog/objets-insolites-sogilis-1/), on continue sur notre lancée.
+Un piano, une Wii, un plan de domination du monde… voici les objets qui nous entourent, parmi tant d’autres ! [Suite à une première liste](https://blog.sogilis.com/posts/2016-08-16-objets-insolites-sogilis-1/), on continue sur notre lancée.
+
 
 ## 1. Le pomodoro
 

@@ -114,4 +114,5 @@ Un des doutes que nous avons le plus souvent entendu à propos de l’entreprise
 Nous sommes de fait tous responsables. Responsables, identifiés individuellement, de petites actions quotidiennes et de rôles importants mensuellement. Responsables collectivement de veiller à ce qu’une hiérarchie implicite ne se mette pas en place, de veiller à ce que chacun puisse prendre des initiatives sans se sentir coupable en cas d’échec. Cela demande un effort, quotidien, mais nous pensons que les retombées en valent largement la peine.
 
 
-[1]: http://sogilis.com/blog/les-methodes-agiles-au-service-de-la-gestion-dentreprise/
+[1]: https://blog.sogilis.com/posts/2018-06-12-les-methodes-agiles-au-service-de-la-gestion-dentreprise/
+

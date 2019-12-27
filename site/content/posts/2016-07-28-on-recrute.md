@@ -19,7 +19,8 @@ tags:
 
 **On a le droit de se tromper.** Plutôt que de se résigner, on va chercher à analyser ensemble comment résoudre les problèmes et essayer de s’améliorer. On préfère sortir de notre zone de confort et se poser de nouvelles questions, plutôt que de rester dans la routine.
 
-**Si tu veux en savoir plus sur Sogilis, nous t’invitons à lire _[notre histoire sur le blog](http://sogilis.com/blog/sogilis-histoire/)_.**
+**Si tu veux en savoir plus sur Sogilis, nous t’invitons à lire _[notre histoire sur le blog](https://blog.sogilis.com/posts/2016-05-31-sogilis-histoire/)_.**
+
 
 **En pratique ? On fait de tout : du web, du back-end, de l’embarqué, du mobile.**
 
@@ -40,4 +41,5 @@ La diversité des projets implique des technos variées et qu’on adapte nos m�
 - [lyon.job@sogilis.com](mailto:lyon@sogilis.com)
 - [grenoble.job@sogilis.com](mailto:grenoble.job@sogilis.com)
 
-[1]: http://sogilis.com/blog/sogilis-vs-ssii/
+[1]: https://blog.sogilis.com/posts/2016-02-08-sogilis-vs-ssii/
+
