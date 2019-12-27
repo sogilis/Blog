@@ -96,7 +96,7 @@ footer > #sofooter {
         grid-template-areas:
             'sofooterContactgridTitle      sofooterContactgridTitle          sofooterContactgridTitle     sofooterContactgridTitle'
             'sofooterContactgridContactus  sofooterContactgridSocialnetwork  sofooterContactgridGrenoble  sofooterContactgridLyon';
-        grid-template-columns: initial;
+        grid-template-columns: auto;
     }
 
 }
