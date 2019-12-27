@@ -50,7 +50,8 @@ Finalement, **être précis, drôle et informatif à la fois**.
 
 **Vie interne** : toutes les informations pratiques.
 
-- les rendez-vous internes : _[rétrospective mensuelle](http://sogilis.com/blog/retrospective-mensuelle/)_, entretien individuel, update financier, Sogiday, etc.
+- les rendez-vous internes : _[rétrospective mensuelle](https://blog.sogilis.com/posts/2014-04-10-retrospective-mensuelle/)_, entretien individuel, update financier, Sogiday, etc.
+
 
 - l’organisation : télétravail, mutuelle, etc.
 
@@ -84,7 +85,9 @@ _[Myriam][1]_
 
 **A lire également :**
 
-- [Mon intégration au sein de Sogilis : bilan après un mois](http://sogilis.com/blog/integration-sogilis-bilan/)
-- [Victor se lance dans l'entrepreneuriat](http://sogilis.com/blog/victor-entrepreneuriat/)
+- [Mon intégration au sein de Sogilis : bilan après un mois](https://blog.sogilis.com/posts/2015-03-31-integration-sogilis-bilan/)
+
+- [Victor se lance dans l'entrepreneuriat](https://blog.sogilis.com/posts/2015-07-16-victor-entrepreneuriat/)
+
 
 [1]: https://fr.linkedin.com/in/myriammenneteau

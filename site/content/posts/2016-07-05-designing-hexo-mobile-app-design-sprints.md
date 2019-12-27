@@ -14,7 +14,8 @@ tags:
   
 310+ sketches | 25+ Marvel prototypes | 2 public releases**
 
-[Now that we set the project environment up](http://sogilis.com/blog/designing-hexo-mobile-app/), it was time to roll up our sleeves and start running design sprints.
+[Now that we set the project environment up](https://blog.sogilis.com/posts/2016-06-28-designing-hexo-mobile-app/), it was time to roll up our sleeves and start running design sprints.
+
 
 Working in fast-paced iterations, we ran a one-day workshop every week for taking a problem or feature from design through prototyping and testing. In this second part, we’ll provide a sneak peek into our design process for running a workshop and prototype Hexo+ user experience.
 

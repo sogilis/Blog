@@ -156,7 +156,8 @@ Cheers,
 Special thanks to Haze for his feedback.
 
 [1]: https://martinfowler.com/articles/feature-toggles.html
-[2]: http://sogilis.com/blog/end-to-end-testing-chrome-headless-squarescale/
+[2]: https://blog.sogilis.com/posts/2017-11-07-end-to-end-testing-chrome-headless-squarescale/
+
 [3]: https://github.com/fetlife/rollout
 [4]: https://github.com/jnunemaker/flipper
 [5]: https://stackoverflow.com/questions/25712621/cant-get-flipper-feature-to-enable-for-a-group

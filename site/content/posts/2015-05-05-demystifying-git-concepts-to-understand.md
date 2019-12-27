@@ -126,4 +126,5 @@ In other words, Git is super effective in computing state transformations and ap
 
 ## A Conceptual Model to Understand Git in Action
 
-This brief introduction to three concepts of revision tools is enough to understand the essentials of Git. In the [next article](http://sogilis.com/blog/demystifying-git-concepts/) we will put this knowledge in action to explain how some Git commands operate on your project.
+This brief introduction to three concepts of revision tools is enough to understand the essentials of Git. In the [next article](https://blog.sogilis.com/posts/2015-05-12-demystifying-git-concepts/) we will put this knowledge in action to explain how some Git commands operate on your project.
+

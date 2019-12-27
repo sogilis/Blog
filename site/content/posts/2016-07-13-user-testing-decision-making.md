@@ -12,7 +12,8 @@ tags:
 ---
 ## How we iterated on feedback
 
-[After running each workshop](http://sogilis.com/blog/designing-hexo-mobile-app-design-sprints/), we got a lot of ideas down on paper. It’s good to have ideas but you can’t test and build ‘em all. You have to make decisions. In the previous article, we talked about how we agreed on one or a few solutions and resisted the temptation to introduce any new ideas. Well, we did. Most of the time. But stabilising a design approval can be tricky. In the final two parts of the article series, we’ll talk about our decision-making process and how feedback can be both extremely valuable and hard to manage.
+[After running each workshop](https://blog.sogilis.com/posts/2016-07-05-designing-hexo-mobile-app-design-sprints/), we got a lot of ideas down on paper. It’s good to have ideas but you can’t test and build ‘em all. You have to make decisions. In the previous article, we talked about how we agreed on one or a few solutions and resisted the temptation to introduce any new ideas. Well, we did. Most of the time. But stabilising a design approval can be tricky. In the final two parts of the article series, we’ll talk about our decision-making process and how feedback can be both extremely valuable and hard to manage.
+
 
  ![testing](/img/2016/07/testing.gif)
 

@@ -11,7 +11,8 @@ tags:
   - git
 
 ---
-**In the [previous article](http://sogilis.com/blog/demystifying-git-concepts-to-understand/), we saw three essential concepts of revision tools: snapshot, graph, and changeset. In the following, we can apply these concepts to understand how Git commands operate on your project. This will teach us how to think like Git.**
+**In the [previous article](https://blog.sogilis.com/posts/2015-05-05-demystifying-git-concepts-to-understand/), we saw three essential concepts of revision tools: snapshot, graph, and changeset. In the following, we can apply these concepts to understand how Git commands operate on your project. This will teach us how to think like Git.**
+
 
 ## Updating the Working Copy (Switching between Branches, Pulling)
 
