@@ -12,14 +12,16 @@ header {
     margin-top: 2rem;
     left: 50%;
     transform: translateX(-50%);
+    box-sizing: content-box;
 }
 
 /* When we scroll */
-header.content_header_scroll{
+header.content_header_scroll {
     margin-top: 0px;
-  	transition: all 0.5s;
-	box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-	background-color:white;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    background-color:white;
+    padding: 1rem 2rem;
 }
 
 
