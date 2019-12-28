@@ -169,14 +169,14 @@
 <script>
     $(function() {
         //caches a jQuery object containing the header element
-        var header = $(".content_header");
+        var header = $("header");
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 100) {
-                header.removeClass('content_header').addClass("content_header_scroll");
+                header.addClass("content_header_scroll");
             } else {
-                header.removeClass("content_header_scroll").addClass('content_header');
+                header.removeClass("content_header_scroll");
             }
         });
     });

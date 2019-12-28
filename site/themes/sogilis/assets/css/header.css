@@ -1,12 +1,125 @@
-header > div {
+@media(max-width: 767px) {
+    header {
+        display: none !important;
+    }
+}
+
+header {
     display: flex;
+    position: fixed;
+    z-index: 200;
+    height: 4rem;
+    margin-top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-header > div > #soheaderLogo {
-    width: calc(2 * 100% / 12);
+/* When we scroll */
+header.content_header_scroll{
+    margin-top: 0px;
+  	transition: all 0.5s;
+	box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+	background-color:white;
 }
 
-header > div > #soheaderNav {
-    flex: 1;
-    text-align: right;
+
+/* Logo sogilis on the left */
+/* ======================== */
+
+header > a#soheaderLogo {
+    width: 15%;
+}
+
+/* Navigation links, on the right */
+/* ============================== */
+
+header >  nav {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+header > nav a[href],
+header > nav button {
+    position: relative;
+    border: unset;
+    padding: 0;
+    padding-right: 1.5rem;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header > nav > a {
+    margin-left: 4rem;
+}
+
+header > nav > a,
+header > nav > div.dropdown > button {
+    /* TODO $wolf-blue when transform this file to SCSS */
+    color: #016099;
+}
+
+/* Dropdown Content (Hidden by Default) */
+header > nav > div.dropdown > div.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    padding: 1rem 3rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+
+    transform: translateX(-50%);
+    max-height: 0;
+    overflow-y: hidden;
+    transition: visibility 0s, opacity 0.3s linear, max-height 1s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Show the dropdown menu on hover */
+header > nav > div.dropdown:hover > div.dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    max-height: 15rem;
+}
+
+/* Links inside the dropdown */
+header > nav > div.dropdown > div.dropdown-content > a {
+    color: black;
+    margin: 1rem auto;
+}
+
+header > nav a::before,
+header > nav button::before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: -1;
+
+    /* istead of using rule `right: 0`, because otherwise
+     transition start from the right to the left
+     */
+    left: calc(100% - 2.5rem);
+
+    height: 0.75rem;
+    top: 0.6rem;
+    width: 0;
+    background-color: #A7E4EA;
+    transition: width 0.3s;
+}
+
+header > nav a:hover::before,
+header > nav button:hover::before {
+    width: 2.5rem;
 }
