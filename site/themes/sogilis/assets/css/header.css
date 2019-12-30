@@ -95,7 +95,7 @@ header > div.container > nav > div.dropdown > div.dropdown-content {
     transform: translateX(-50%);
     max-height: 0;
     overflow-y: hidden;
-    transition: visibility 0s, opacity 0.3s linear, max-height 1s linear;
+    transition: visibility 0s, opacity 0.3s linear, max-height 0.5s linear;
     visibility: hidden;
     opacity: 0;
 }
