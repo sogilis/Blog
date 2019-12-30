@@ -12,6 +12,7 @@ header {
     margin-top: 2rem;
     left: 50%;
     transform: translateX(-50%);
+    /* TODO Following could be deleted when Bootstrap will be deleted */
     box-sizing: content-box;
 }
 

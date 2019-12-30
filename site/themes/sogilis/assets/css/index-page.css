@@ -23,14 +23,14 @@ main > #blog_index > a.blog_index_article {
                                   /* Image */
                                   /* ===== */
 
-main > #blog_index > a.blog_index_article > img {
+main > #blog_index > a.blog_index_article > div > img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: all 0.8s;
 }
 
-main > #blog_index > a.blog_index_article:hover > img {
+main > #blog_index > a.blog_index_article:hover > div > img {
     filter: grayscale(100%);
 }
                        /* The title and 'Lire la suite */
