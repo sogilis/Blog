@@ -43,7 +43,7 @@ header > a > img {
 header >  nav {
     flex: 1 1 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-content: center;
     align-items: center;
     font-size: 0.9rem;
