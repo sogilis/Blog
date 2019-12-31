@@ -1,9 +1,30 @@
+                    /* The grid element on the index page */
+                    /* ================================== */
+
 main > #blog_index {
     display: grid;
     grid-gap: 2rem;
     grid-auto-rows: 25rem;
     padding-top:12rem;
     padding-bottom:6rem;
+}
+
+@media (min-width: 576px) {
+    main > #blog_index {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    main > #blog_index {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767px) {
+    main > #blog_index {
+        grid-auto-rows: 35rem;
+    }
 }
 
                           /* Each cell of the grid */
@@ -18,6 +39,20 @@ main > #blog_index > a.blog_index_article {
     /* This declaration is mandatory here */
     /* Simply declare it in #blog_index is not enough */
     text-decoration: none;
+}
+
+@media(min-width: 576px) and (max-width: 767px) {
+    main > #blog_index > a.blog_index_article {
+        grid-template-rows: 55% 37% 1%;
+        grid-gap: 1%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1199px) {
+    main > #blog_index > a.blog_index_article {
+        grid-template-rows: 55% 28% 1%;
+        grid-gap: 5%;
+    }
 }
 
                                   /* Image */
@@ -39,7 +74,7 @@ main > #blog_index > a.blog_index_article:hover > div > img {
 
 main > #blog_index > a.blog_index_article > p,
 main > #blog_index > a.blog_index_article > h1 {
-    margin: 1rem;
+    margin: 0 1rem;
     transition: all 0.3s;
 }
                                 /* The title */
@@ -49,7 +84,8 @@ main > #blog_index > a.blog_index_article > h1 {
     font-family: 'EB Garamond', serif;
     /* TODO $medium-grey when transform this file to SCSS */
     color: #707070;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    align-self: center;
 }
 
 main > #blog_index > a.blog_index_article:hover > h1 {
@@ -73,19 +109,4 @@ main > #blog_index > a.blog_index_article:hover > p {
     /* TODO $light-electric-blue when transform this file to SCSS */
     color: #A7E4EA;
     text-decoration: underline;
-}
-
-                              /* Media queries */
-                              /* ============= */
-
-@media (min-width: 576px) {
-    main > #blog_index {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 992px) {
-    main > #blog_index {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
