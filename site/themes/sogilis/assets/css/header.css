@@ -1,9 +1,3 @@
-@media(max-width: 767px) {
-    header {
-        display: none !important;
-    }
-}
-
 header {
     display: flex;
     justify-content: center;
@@ -14,6 +8,13 @@ header {
     margin-top: 2rem;
     box-sizing: border-box;
 }
+
+@media(max-width: 767px) {
+    header {
+        display: none !important;
+    }
+}
+
 
 /* When we scroll */
 header.content_header_scroll {
@@ -29,11 +30,20 @@ header > div.container {
     margin: 0;
     padding: 0;
     height: 100%;
+
+    /* The goal is to align the last child `nav a[href]`
+     * with the `<main>`.
+     * It's because this child has `padding-right: 1.5em`, and
+     * on hover of this link a bar is displayed on this padding-right
+     * TODO when we convert to scss, maybe replace `1.5` by a variable.
+     * or in CSS
+     */
     margin-right: -1.5rem;
 }
 
-/* Logo sogilis on the left */
-/* ======================== */
+/* ========================================================================== */
+                         /* Logo sogilis on the left */
+/* ========================================================================== */
 
 header > div.container > a#soheaderLogo {
     width: 15%;
@@ -43,8 +53,9 @@ header > div.container > a > img {
     height: 100%;
 }
 
-/* Navigation links, on the right */
-/* ============================== */
+/* ========================================================================== */
+                      /* Navigation links, on the right */
+/* ========================================================================== */
 
 header > div.container >  nav {
     flex: 1 1 0;
@@ -78,13 +89,16 @@ header > div.container > nav > div.dropdown > button {
     color: #016099;
 }
 
-/* Dropdown Content (Hidden by Default) */
+                    /* Dropdown links (hidden by default) */
+                    /* ================================== */
+
 header > div.container > nav > div.dropdown > div.dropdown-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     position: absolute;
+    margin-top: 2rem;
     padding: 1rem 3rem;
     background-color: #f9f9f9;
     text-align: center;
@@ -112,6 +126,9 @@ header > div.container > nav > div.dropdown > div.dropdown-content > a {
     color: black;
     margin: 1rem auto;
 }
+
+                   /* The small bar that appears on hover */
+                   /* =================================== */
 
 header > div.container > nav a::before,
 header > div.container > nav button::before {
