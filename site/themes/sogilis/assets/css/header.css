@@ -89,46 +89,8 @@ header > div.container > nav > div.dropdown > button {
     color: #016099;
 }
 
-                    /* Dropdown links (hidden by default) */
-                    /* ================================== */
-
-header > div.container > nav > div.dropdown > div.dropdown-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    position: absolute;
-    margin-top: 2rem;
-    padding: 1rem 3rem;
-    background-color: #f9f9f9;
-    text-align: center;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    white-space: nowrap;
-
-    transform: translateX(-50%);
-    max-height: 0;
-    overflow-y: hidden;
-    transition: visibility 0s, opacity 0.3s linear, max-height 0.5s linear;
-    visibility: hidden;
-    opacity: 0;
-}
-
-/* Show the dropdown menu on hover */
-header > div.container > nav > div.dropdown:hover > div.dropdown-content {
-    visibility: visible;
-    opacity: 1;
-    max-height: 15rem;
-}
-
-/* Links inside the dropdown */
-header > div.container > nav > div.dropdown > div.dropdown-content > a {
-    color: black;
-    margin: 1rem auto;
-}
-
-                   /* The small bar that appears on hover */
-                   /* =================================== */
+            /* The small blue bar that appears on hover of links */
+            /* ================================================= */
 
 header > div.container > nav a::before,
 header > div.container > nav button::before {
@@ -143,7 +105,7 @@ header > div.container > nav button::before {
     left: calc(100% - 2.5rem);
 
     height: 0.75rem;
-    top: 0.6rem;
+    top: 0.4rem;
     width: 0;
     background-color: #A7E4EA;
     transition: width 0.3s;
@@ -152,4 +114,50 @@ header > div.container > nav button::before {
 header > div.container > nav a:hover::before,
 header > div.container > nav button:hover::before {
     width: 2.5rem;
+}
+
+                    /* Dropdown links (hidden by default) */
+                    /* ================================== */
+header > div.container > nav > div.dropdown {
+    height: 100%;
+    display: flex;
+}
+
+header > div.container > nav > div.dropdown > button {
+    align-self: center;
+}
+
+header > div.container > nav > div.dropdown > div.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    margin-top: 5rem;
+    padding: 1rem 3rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+
+    transform: translateX(-50%);
+    max-height: 15rem;
+    overflow-y: hidden;
+    transition: visibility 0s, opacity 0.3s linear, max-height 0.5s linear;
+    visibility: visible;
+    opacity: 0;
+}
+
+/* Show the dropdown menu on hover */
+header > div.container > nav > div.dropdown:hover > div.dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    max-height: 15rem;
+}
+
+/* Links inside the dropdown */
+header > div.container > nav > div.dropdown > div.dropdown-content > a {
+    color: black;
+    margin: 1rem auto;
 }
