@@ -1,26 +1,225 @@
-footer > #sofooter {
-    padding: 0px;
+/* ========================================================================== */
+                   /* Defimitions of elements and classes */
+/* ========================================================================== */
 
+
+footer {
+    width: 100%;
+
+    /* TODO corresponding to scss super-light-grey2 */
+    background-color: #FCFCFC;
+
+    padding-top:5rem;
+    padding-bottom: 2rem;
+    box-shadow:0 0 19px 0 rgba(0, 0, 0, 0.1);
+
+    font-family: 'Montserrat', sans-serif;
+    /* TODO we could use a variable $medium-grey */
+    color: #707070;
+}
+
+                                  /* Title */
+                                  /* ===== */
+
+footer > #sofooter .title_level_1{
+    position: relative;
+    font-size: 1.4rem;
+
+    /* For "Contact" */
+    justify-self: start;
+
+    /* For "Services" and "L'entreprise" */
+    display: inline-block;
+
+    padding-right: 1.5rem;
+    z-index: 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* The small blue bar */
+/* TODO should be factorize with header.css */
+footer > #sofooter .title_level_1::after{
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: -1;
+
+    /* should be em */
+    /* Otherwise with rem not cool value (as the line-height: of h1 in boostrap is bigger */
+    top: 0.65em;
+    right: 0;
+
+    width: 2.5em;
+    height: 0.5em;
+    /* TODO we could use a variable */
+    background-color: #A7E4EA;
+}
+
+                             /* Addresses titles */
+                             /* ================ */
+footer > #sofooter > #sofooterContactgrid .adresses > p.title_name {
+    font-size:0.9em;
+    margin-bottom: 0;
+    /* TODO: replace by variable $medium_grey */
+    color: #707070;
+}
+footer > #sofooter > #sofooterContactgrid .adresses > p.title_name::before {
+    content: '';
+    display: block;
+    width: 0.8em;
+    position: absolute;
+    /* TODO we could use a variable */
+    background-color: #A7E4EA;
+    margin-left: -1.5em;
+
+    /* On boostrap, for body line-height: 1.5 */
+    /* We have 1.3 + 0.2 = 1.5 */
+    /* As it, the bar is on the baseline */
+    /* But as the font have a height, so strange to be on the baseline */
+    height: 0.2em;
+    margin-top: 0.9em;
+}
+
+                                  /* List */
+                                  /* ===== */
+footer > #sofooter .liens_pages > ul {
+    /* TODO replace by variable :margin-left-foot */
+    padding-left: 2rem;
+}
+footer > #sofooter .liens_pages > ul > li {
+    margin-bottom: 1rem;
+}
+
+/* ========================================================================== */
+                       /* Defnition of the Footer grid */
+/* ========================================================================== */
+
+footer > #sofooter {
     display: grid;
     align-items: center;
     align-content: center;
 }
 
-@media (min-width: 0) {
-    #sofooterLogo {
-        display: none;
-    }
+                                   /* Logo */
+                                   /* ==== */
+footer > #sofooter > #sofooterLogo {
+    grid-area: sofooterLogo;
+}
 
-    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridContactus,
-    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridSocialnetwork,
-    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridGrenoble,
-    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridLyon {
-        margin-left: 30px;
-    }
+                                 /* Services */
+                                 /* ======== */
+footer > #sofooter > #sofooterServices {
+    grid-area: sofooterServices;
+}
 
-    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridContactus {
-        margin: 2rem 0 2rem 30px;
+                                 /* company */
+                                 /* ======= */
+footer > #sofooter > #sofooterCompany {
+    grid-area: sofooterCompany;
+}
+
+                                    /* hr */
+                                    /* == */
+footer > #sofooter > hr#sofooterHr {
+    grid-area: sofooterHr;
+    /* TODO replace by variable $light-grey */
+    background-color: #F9F9F9;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+                                /* Subfooter */
+                                /* ========= */
+footer > #sofooter > #sofooterSubfooter {
+    grid-area: sofooterSubfooter;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+footer > #sofooter > #sofooterSubfooter > a:nth-child(2) {
+    /* TODO we could use a variable $medium-grey */
+    color: #707070;
+}
+@media(max-width: 575px) {
+    footer > #sofooter > #sofooterSubfooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+}
+@media(min-width: 576px) {
+    footer > #sofooter > #sofooterSubfooter > a:nth-child(2) {
+        float: right;
+    }
+}
+
+/* ========================================================================== */
+                /* Definition of the inner grid of 'Contact' */
+/* ========================================================================== */
+
+footer > #sofooter > #sofooterContactgrid {
+    grid-area: sofooterContactgrid;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-gap: 0;
+}
+
+                            /* Title « contact » */
+                            /* ================= */
+footer > #sofooter > #sofooterContactgrid > #sofooterContactgridTitle {
+    grid-area: sofooterContactgridTitle;
+    margin-bottom: 0;
+}
+
+                       /* Contact us link, with border*/
+                       /* =========================== */
+footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridContactus {
+    grid-area: sofooterContactgridContactus;
+}
+
+               /* Social networks icônes (twitter + linkedin) */
+               /* =========================================== */
+footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridSocialnetwork {
+    grid-area: sofooterContactgridSocialnetwork;
+}
+footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridSocialnetwork svg {
+    width: 2rem;
+    margin-bottom: 1rem;
+}
+footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridSocialnetwork svg > path{
+    /* TODO: replace by variable $light-electric-blue; */
+    fill: #A7E4EA;
+    transition: fill 0.3s;
+}
+footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridSocialnetwork svg:hover > path{
+    /* TODO: replace by variable $wolf-blue; */
+    fill: #016099;
+}
+
+                             /* Grenoble address */
+                             /* ================ */
+footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridGrenoble {
+    grid-area: sofooterContactgridGrenoble;
+}
+
+
+                               /* Lyon address */
+                             /* ================ */
+footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridLyon {
+    grid-area: sofooterContactgridLyon;
+}
+
+/* ========================================================================== */
+                         /* Positions of "grid-area' */
+                       /* depends of the screen size  */
+/* ========================================================================== */
+
+@media (max-width: 575px) {
+
+                               /* Footer grid */
+                               /* =========== */
 
     footer > #sofooter {
         grid-template-areas:
@@ -32,6 +231,12 @@ footer > #sofooter {
         justify-content: center;
     }
 
+    #sofooterLogo {
+        display: none;
+    }
+
+                         /* Inner grid of 'Contact' */
+                         /* ======================= */
 
     footer > #sofooter > #sofooterContactgrid {
         grid-template-areas:
@@ -42,9 +247,25 @@ footer > #sofooter {
             'sofooterContactgridLyon';
     }
 
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridContactus,
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridSocialnetwork,
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridGrenoble,
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridLyon {
+        /* TODO replace by variable :margin-left-foot */
+        margin-left: 2rem;
+    }
+
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridContactus {
+        /* TODO replace by variable :margin-left-foot */
+        margin: 2rem 0 2rem 2rem;
+    }
+
 }
 
 @media (min-width: 576px) {
+
+                               /* Footer grid */
+                               /* =========== */
 
     footer > #sofooter {
         grid-template-areas:
@@ -56,6 +277,9 @@ footer > #sofooter {
         justify-content: initial;
     }
 
+                         /* Inner grid of 'Contact' */
+                         /* ======================= */
+
     footer > #sofooter > #sofooterContactgrid {
         grid-template-areas:
         'sofooterContactgridTitle      sofooterContactgridTitle'
@@ -64,23 +288,18 @@ footer > #sofooter {
         grid-template-columns: 50% 50%;
     }
 
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridGrenoble,
     footer > #sofooter > #sofooterContactgrid > #sofooterContactgridContactus {
-        margin: 2rem 0 30px 2rem;
+        /* TODO replace by variable :margin-left-foot */
+        margin: 2rem 0 2rem 2rem;
     }
 
 }
 
 @media (min-width: 992px) {
 
-    #sofooterLogo {
-        display: block;
-    }
-
-    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridSocialnetwork,
-    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridGrenoble,
-    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridLyon {
-        margin-left: 0;
-    }
+                               /* Footer grid */
+                               /* =========== */
 
     footer > #sofooter {
         grid-template-areas:
@@ -92,6 +311,19 @@ footer > #sofooter {
         grid-template-columns: [sofooterLogo] calc(100% / 12) [sofooterServices] calc(100% / 12);
     }
 
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridSocialnetwork,
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridGrenoble,
+    footer > #sofooter > #sofooterContactgrid > #sofooterContactgridLyon {
+        margin-left: 0;
+    }
+
+    #sofooterLogo {
+        display: block;
+    }
+
+                         /* Inner grid of 'Contact' */
+                         /* ======================= */
+
     footer > #sofooter > #sofooterContactgrid {
         grid-template-areas:
             'sofooterContactgridTitle      sofooterContactgridTitle          sofooterContactgridTitle     sofooterContactgridTitle'
@@ -99,54 +331,4 @@ footer > #sofooter {
         grid-template-columns: auto;
     }
 
-}
-
-footer > #sofooter > #sofooterLogo {
-    grid-area: sofooterLogo;
-}
-
-footer > #sofooter > #sofooterContactgrid {
-    grid-area: sofooterContactgrid;
-    display: grid;
-    align-items: center;
-    align-content: center;
-    grid-gap: 0;
-}
-
-footer > #sofooter > #sofooterContactgrid > #sofooterContactgridTitle {
-    grid-area: sofooterContactgridTitle;
-    margin-bottom: 0;
-}
-
-footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridContactus {
-    grid-area: sofooterContactgridContactus;
-}
-
-footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridSocialnetwork {
-    grid-area: sofooterContactgridSocialnetwork;
-}
-
-footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridGrenoble {
-    grid-area: sofooterContactgridGrenoble;
-}
-
-footer > #sofooter > #sofooterContactgrid >  #sofooterContactgridLyon {
-    grid-area: sofooterContactgridLyon;
-}
-
-footer > #sofooter > #sofooterServices {
-    grid-area: sofooterServices;
-    /* margin-left: calc(2 * (100%/12)); */
-}
-
-footer > #sofooter > #sofooterCompany {
-    grid-area: sofooterCompany;
-}
-
-footer > #sofooter > #sofooterHr {
-    grid-area: sofooterHr;
-}
-
-footer > #sofooter > #sofooterSubfooter {
-    grid-area: sofooterSubfooter;
 }

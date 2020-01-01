@@ -75,6 +75,7 @@
         position: relative;
         border: unset;
         padding: 0;
+        /* TODO use a variable for 1.5 */
         padding-right: 1.5rem;
         background-color: transparent;
         font-family: 'Montserrat', sans-serif;
@@ -93,30 +94,42 @@
         color: #016099;
     }
 
-                /* The small blue bar that appears on hover of links */
-                /* ================================================= */
+            /* The small blue bar that appears on hover of links */
+            /* ================================================= */
 
-    header > div.content_menu_desktop > nav a::before,
-    header > div.content_menu_desktop > nav button::before {
+    /* We must have too:  */
+    /* header > div.content_menu_desktop > nav a[href], */
+    /* header > div.content_menu_desktop > nav button { */
+        /* position: relative; */
+        /* padding-right: 1.5rem; */
+    /* } */
+    /* A parent element should have a z-index heigher, otherwise not displayed */
+
+    /* TODO should be factorize with footer.css */
+    header > div.content_menu_desktop > nav a::after,
+    header > div.content_menu_desktop > nav button::after {
         content: '';
         position: absolute;
         display: block;
+
+        /* A parent element should have a z-index heigher, otherwise not displayed */
         z-index: -1;
 
+        top: 0.65em;
         /* istead of using rule `right: 0`, because otherwise
         transition start from the right to the left
         */
-        left: calc(100% - 2.5rem);
+        left: calc(100% - 2.5em);
 
-        height: 0.75rem;
-        top: 0.4rem;
         width: 0;
+        height: 0.5em;
+        /* TODO we could use a variable */
         background-color: #A7E4EA;
         transition: width 0.3s;
     }
 
-    header > div.content_menu_desktop > nav a:hover::before,
-    header > div.content_menu_desktop > nav button:hover::before {
+    header > div.content_menu_desktop > nav a:hover::after,
+    header > div.content_menu_desktop > nav button:hover::after {
         width: 2.5rem;
     }
 
@@ -133,7 +146,7 @@
     }
 
     header > div.content_menu_desktop > nav > div.dropdown > div.dropdown-content {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
 
@@ -156,6 +169,7 @@
 
     /* Show the dropdown menu on hover */
     header > div.content_menu_desktop > nav > div.dropdown:hover > div.dropdown-content {
+        display: flex;
         visibility: visible;
         opacity: 1;
         max-height: 15rem;
