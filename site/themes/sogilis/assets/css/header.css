@@ -1,163 +1,169 @@
-header {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    z-index: 200;
-    width: 100%;
-    height: 5rem;
-    margin-top: 2rem;
-    box-sizing: border-box;
-}
-
 @media(max-width: 767px) {
-    header {
-        display: none !important;
+    header > div.content_menu_desktop {
+        display: none;
     }
 }
 
+@media(min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        z-index: 200;
+        width: 100%;
+        height: 5rem;
+        margin-top: 2rem;
+        box-sizing: border-box;
+    }
+    header > div.content-menu-mobile,
+    header > div.content-menu-mobile_scroll {
+        display: none;
+    }
 
-/* When we scroll */
-header.content_header_scroll {
-    margin-top: 0px;
-    transition: all 0.5s;
-    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
-    background-color:white;
-    padding: 1rem 2rem;
-}
+    /* When we scroll */
+    header.content_header_scroll {
+        margin-top: 0px;
+        transition: all 0.5s;
+        box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+        background-color:white;
+        padding: 1rem 2rem;
+    }
 
-header > div.container {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    header > div.content_menu_desktop {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 100%;
 
-    /* The goal is to align the last child `nav a[href]`
-     * with the `<main>`.
-     * It's because this child has `padding-right: 1.5em`, and
-     * on hover of this link a bar is displayed on this padding-right
-     * TODO when we convert to scss, maybe replace `1.5` by a variable.
-     * or in CSS
-     */
-    margin-right: -1.5rem;
-}
+        /* The goal is to align the last child `nav a[href]`
+        * with the `<main>`.
+        * It's because this child has `padding-right: 1.5em`, and
+        * on hover of this link a bar is displayed on this padding-right
+        * TODO when we convert to scss, maybe replace `1.5` by a variable.
+        * or in CSS
+        */
+        margin-right: -1.5rem;
+    }
 
-/* ========================================================================== */
-                         /* Logo sogilis on the left */
-/* ========================================================================== */
+    /* ========================================================================== */
+                            /* Logo sogilis on the left */
+    /* ========================================================================== */
 
-header > div.container > a#soheaderLogo {
-    width: 15%;
-}
+    header > div.content_menu_desktop > a#soheaderLogo {
+        width: 15%;
+    }
 
-header > div.container > a > img {
-    height: 100%;
-}
+    header > div.content_menu_desktop > a > img {
+        height: 100%;
+    }
 
-/* ========================================================================== */
-                      /* Navigation links, on the right */
-/* ========================================================================== */
+    /* ========================================================================== */
+                        /* Navigation links, on the right */
+    /* ========================================================================== */
 
-header > div.container >  nav {
-    flex: 1 1 0;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-}
+    header > div.content_menu_desktop >  nav {
+        flex: 1 1 0;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+    }
 
-header > div.container > nav a[href],
-header > div.container > nav button {
-    position: relative;
-    border: unset;
-    padding: 0;
-    padding-right: 1.5rem;
-    background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-}
+    header > div.content_menu_desktop > nav a[href],
+    header > div.content_menu_desktop > nav button {
+        position: relative;
+        border: unset;
+        padding: 0;
+        padding-right: 1.5rem;
+        background-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
 
-header > div.container > nav > a {
-    margin-left: 4rem;
-}
+    header > div.content_menu_desktop > nav > a {
+        margin-left: 4rem;
+    }
 
-header > div.container > nav > a,
-header > div.container > nav > div.dropdown > button {
-    /* TODO $wolf-blue when transform this file to SCSS */
-    color: #016099;
-}
+    header > div.content_menu_desktop > nav > a,
+    header > div.content_menu_desktop > nav > div.dropdown > button {
+        /* TODO $wolf-blue when transform this file to SCSS */
+        color: #016099;
+    }
 
-            /* The small blue bar that appears on hover of links */
-            /* ================================================= */
+                /* The small blue bar that appears on hover of links */
+                /* ================================================= */
 
-header > div.container > nav a::before,
-header > div.container > nav button::before {
-    content: '';
-    position: absolute;
-    display: block;
-    z-index: -1;
+    header > div.content_menu_desktop > nav a::before,
+    header > div.content_menu_desktop > nav button::before {
+        content: '';
+        position: absolute;
+        display: block;
+        z-index: -1;
 
-    /* istead of using rule `right: 0`, because otherwise
-     transition start from the right to the left
-     */
-    left: calc(100% - 2.5rem);
+        /* istead of using rule `right: 0`, because otherwise
+        transition start from the right to the left
+        */
+        left: calc(100% - 2.5rem);
 
-    height: 0.75rem;
-    top: 0.4rem;
-    width: 0;
-    background-color: #A7E4EA;
-    transition: width 0.3s;
-}
+        height: 0.75rem;
+        top: 0.4rem;
+        width: 0;
+        background-color: #A7E4EA;
+        transition: width 0.3s;
+    }
 
-header > div.container > nav a:hover::before,
-header > div.container > nav button:hover::before {
-    width: 2.5rem;
-}
+    header > div.content_menu_desktop > nav a:hover::before,
+    header > div.content_menu_desktop > nav button:hover::before {
+        width: 2.5rem;
+    }
 
-                    /* Dropdown links (hidden by default) */
-                    /* ================================== */
-header > div.container > nav > div.dropdown {
-    height: 100%;
-    display: flex;
-}
+                        /* Dropdown links (hidden by default) */
+                        /* ================================== */
 
-header > div.container > nav > div.dropdown > button {
-    align-self: center;
-}
+    header > div.content_menu_desktop > nav > div.dropdown {
+        height: 100%;
+        display: flex;
+    }
 
-header > div.container > nav > div.dropdown > div.dropdown-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    header > div.content_menu_desktop > nav > div.dropdown > button {
+        align-self: center;
+    }
 
-    position: absolute;
-    margin-top: 5rem;
-    padding: 1rem 3rem;
-    background-color: #f9f9f9;
-    text-align: center;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    white-space: nowrap;
+    header > div.content_menu_desktop > nav > div.dropdown > div.dropdown-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    transform: translateX(-50%);
-    max-height: 15rem;
-    overflow-y: hidden;
-    transition: visibility 0s, opacity 0.3s linear, max-height 0.5s linear;
-    visibility: visible;
-    opacity: 0;
-}
+        position: absolute;
+        margin-top: 5rem;
+        padding: 1rem 3rem;
+        background-color: #f9f9f9;
+        text-align: center;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        white-space: nowrap;
 
-/* Show the dropdown menu on hover */
-header > div.container > nav > div.dropdown:hover > div.dropdown-content {
-    visibility: visible;
-    opacity: 1;
-    max-height: 15rem;
-}
+        transform: translateX(-50%);
+        max-height: 15rem;
+        overflow-y: hidden;
+        transition: visibility 0s, opacity 0.3s linear, max-height 0.5s linear;
+        visibility: visible;
+        opacity: 0;
+    }
 
-/* Links inside the dropdown */
-header > div.container > nav > div.dropdown > div.dropdown-content > a {
-    color: black;
-    margin: 1rem auto;
+    /* Show the dropdown menu on hover */
+    header > div.content_menu_desktop > nav > div.dropdown:hover > div.dropdown-content {
+        visibility: visible;
+        opacity: 1;
+        max-height: 15rem;
+    }
+
+    /* Links inside the dropdown */
+    header > div.content_menu_desktop > nav > div.dropdown > div.dropdown-content > a {
+        color: black;
+        margin: 1rem auto;
+    }
 }

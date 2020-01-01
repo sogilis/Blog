@@ -1,20 +1,77 @@
 <header>
-    <div class="container">
+
+<!-- ======================================================================= -->
+                   <!-- Menu Desktop (display >= 576 px) -->
+<!-- ======================================================================= -->
+    <div class="container content_menu_desktop">
         <a id="soheaderLogo" href="index.html">
             <img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}">
         </a>
-
         <nav>
             <div class="dropdown">
                 <button class="dropbtn">{{ i18n "services"}}</button>
                 <div class="dropdown-content">
-                    <a href="https://sogilis.fr/services-applications-cloud-native.html">{{ i18n "cloudNativeApplications" }}</a>
-                    <a href="https://sogilis.fr/services-embarques-et-iot.html">{{ i18n "embeddedSoftwares" }}</a>
-                    <a href="https://sogilis.fr/services-logiciels-critiques.html">{{ i18n "criticalSoftwares" }}</a>
+                    <a href="https://sogilis.fr/services-applications-cloud-native.html">
+                        {{ i18n "cloudNativeApplications" }}
+                    </a>
+                    <a href="https://sogilis.fr/services-embarques-et-iot.html">
+                        {{ i18n "embeddedSoftwares" }}
+                    </a>
+                    <a href="https://sogilis.fr/services-logiciels-critiques.html">
+                        {{ i18n "criticalSoftwares" }}
+                    </a>
                 </div>
             </div>
             <a href="https://sogilis.fr/vision.html">{{ i18n "ourVision" }}</a>
             <a href="https://sogilis.fr/contact.html">{{ i18n "contact" }}</a>
         </nav>
     </div>
+
+<!-- ======================================================================= -->
+                        <!-- Menu Mobile (dispaly < 576 px) -->
+<!-- ======================================================================= -->
+    <div class="content-menu-mobile" id="content-menu">
+        <div class="container">
+            <div class="col-xs-3">
+                <a href="https://sogilis.fr/index.html">
+                    <img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}">
+                </a>
+            </div>
+            <div class="col-xs-2 col-xs-offset-7">
+                <a id="headerMenuButtonMobile" href="#">
+                    <span class="lines"></span>
+                </a>
+                <nav id="headerMainMenuMobile">
+                    <ul>
+                        <li>
+                            <a href="https://sogilis.fr/services-applications-cloud-native.html">
+                                {{i18n "cloudNativeApplications" }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sogilis.fr/services-embarques-et-iot.html">
+                                {{ i18n "embeddedSoftwares" }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sogilis.fr/services-logiciels-critiques.html">
+                                {{ i18n "criticalSoftwares" }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sogilis.fr/vision.html">
+                                {{ i18n "ourVision" }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sogilis.fr/contact.html">
+                                {{ i18n "contact" }}
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
 </header>

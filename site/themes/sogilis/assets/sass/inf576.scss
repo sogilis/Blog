@@ -138,7 +138,8 @@ $light-electric-blue:#A7E4EA;
 		margin-top: 18px;
 		fill:#2384c4;
 	}
-	.menuBtn {
+
+	#headerMenuButtonMobile {
 		height: 30px;
 	    width: 30px;
 	    position: absolute;
@@ -195,7 +196,7 @@ $light-electric-blue:#A7E4EA;
 		}
 	}
 
-	.mainMenuMobile {
+	#headerMainMenuMobile {
 		background-color: #fff;
 		position: fixed;
 		left: 0;
@@ -259,7 +260,7 @@ $light-electric-blue:#A7E4EA;
 		}
 	}
 
-	.mainMenuMobile::before {
+	#headerMainMenuMobile::before {
 		content: '';
 	    display: block;
 	    height: 2px;
@@ -304,7 +305,7 @@ $light-electric-blue:#A7E4EA;
 		fill:#2384c4;
 	}
 
-	.menuBtn {
+	#headerMenuButtonMobile {
 		height: 30px;
 		width: 30px;
 
@@ -361,7 +362,7 @@ $light-electric-blue:#A7E4EA;
 			}
 		}
 	}
-.mainMenuMobile {
+#headerMainMenuMobile {
 		background-color: #fff;
 		position: fixed;
 		left: 0;
@@ -425,7 +426,7 @@ $light-electric-blue:#A7E4EA;
 		}
 	}
 
-	.mainMenuMobile::before {
+	#headerMainMenuMobile::before {
 		content: '';
 	    display: block;
 	    height: 2px;
