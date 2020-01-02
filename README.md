@@ -58,7 +58,7 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 
 ### Write a new article
 
-:warning: __The branch `master` is automatically pushed on the production server, you need to work on a new branch and use the Pull Requests mechanism.__ :warning:
+:warning: __The branch `master` is automatically pushed on the production server, you need to work on a new branch and use the Pull Request mechanism.__ :warning:
 
 1. Create a new branch
 
@@ -79,7 +79,7 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 
    :information_source: Netlify provides a preview environment. 
 
-   So when you open your Pull Requests Netlify builds the new website and you can check the result of your Pull Request in [Netlifly](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys). See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
+   So when you open your Pull Request Netlify builds the new website and you can check the result of your Pull Request in [Netlifly](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys). See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
 
 
 2. If you're satisfied with the result in the preview you can merge the Pull Request into `master` branch.
