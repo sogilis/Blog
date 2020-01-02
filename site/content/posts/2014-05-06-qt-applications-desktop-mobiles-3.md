@@ -105,14 +105,14 @@ private:
 
 Maintenant, implémentez l'accès au compteur d'éléments.
 
-Dans le `.h` :
+Dans le `.h` :
 
 {{< highlight cpp >}}
 public:
   int rowCount(const QModelIndex &parent = QModelIndex()) const;
 {{< /highlight >}}
 
-Dans le `.cpp` :
+Dans le `.cpp` :
 
 {{< highlight cpp >}}
 int BoardModel::rowCount(const QModelIndex &parent) const {
@@ -135,7 +135,7 @@ public:
 
 Vous noterez qu'il est question de _role_. Il s'agit d'un mécanisme permettant de demander différents types de valeurs pour une même donnée. Par exemple demander la valeur, la couleur et le libellé d'une donnée. Pour cet exemple je ne vais pas l'utiliser et demande donc simplement la valeur à afficher.
 
-Voici l'implémentation :
+Voici l'implémentation :
 
 {{< highlight cpp >}}
 QVariant BoardModel::data(const QModelIndex &index, int role) const {
@@ -157,7 +157,7 @@ Le fonctionnement est très simple, si l'index est hors des bornes ou que le rô
 
 Ceci permet d'obtenir l'ensemble des valeurs à afficher. Il ne reste plus qu'à fournir une instance de ce `BoardModel` au fichier QML. Pour ça on va simplement passer une instance en tant que propriété de contexte de notre viewer de QML.
 
-Rajouter dans le `main.cpp` (par exemple avant le `load`) :
+Rajouter dans le `main.cpp` (par exemple avant le `load`) :
 
 {{< highlight cpp >}}
 BoardModel board;
@@ -166,7 +166,7 @@ engine.rootContext()->setContextProperty("board", &board);
 
 > Il faudra évidemment inclure `boardmodel.h` mais aussi `<QtQml>` dans le `main.cpp`.
 
-De cette façon nous pouvons accéder à notre objet via la variable `board` dans le QML. `board` devient donc le `model` de notre `Repeater` et la valeur à afficher devient `display` :
+De cette façon nous pouvons accéder à notre objet via la variable `board` dans le QML. `board` devient donc le `model` de notre `Repeater` et la valeur à afficher devient `display` :
 
 {{< highlight cpp >}}
 import QtQuick 2.2
@@ -207,7 +207,7 @@ Et voilà, votre plateau de jeu est affiché. Vous avez les 16 cases avec normal
 
 Bon par contre c'est pas super sexy pour le moment… on va donc y remédier rapidement.
 
-Voici une petite liste d'améliorations possibles :
+Voici une petite liste d'améliorations possibles :
 
 1. ne pas afficher les zéros dans les cases (dans le jeux 0 signifie qu'il n'y a pas de tuile)
 2. centrer les nombres, grossir, etc
@@ -307,14 +307,14 @@ Rectangle {
 }
 {{< /highlight >}}
 
-Vous noterez aussi deux petites choses :
+Vous noterez aussi deux petites choses :
 
 - la taille de la police est fonction de la valeur
 - la taille de la tuile est paramétrée (pour pouvoir, dans la suite, s'adapter à la taille de la zone affichée…)
 
 Pour visualiser le rendu, vous pouvez passer par le menu `Outils/Externe/Qt Quick/Prévisualisation Qt Quick 2`ce qui ouvrira une fenêtre avec votre QML. Et vous pouvez aussi modifier les propriétés `tileWidth` et `value` pour voir les différents rendus.
 
-Maintenant que nous avons notre tuile, il faut l'afficher dans le plateau. Rien de plus simple, remplacez juste l'élément `delegate` par votre tuile tout en affectant la propriété `value` :
+Maintenant que nous avons notre tuile, il faut l'afficher dans le plateau. Rien de plus simple, remplacez juste l'élément `delegate` par votre tuile tout en affectant la propriété `value` :
 
 {{< highlight cpp >}}
 Repeater {
@@ -327,10 +327,10 @@ Repeater {
 
 Pour ce qui est du point `4.`, je vous laisse définir la couleur de fond à `#baaa9e`.
 
-Vous devriez alors avoir un résultat similaire au suivant :
+Vous devriez alors avoir un résultat similaire au suivant :
 
 ![](/img/tumblr/tumblr_inline_n48gbdabr71sv6muh.png)
 
-Plutôt simple, non ?
+Plutôt simple, non ?
 
 > git: tag [03_board_with_tiles](https://github.com/sogilis/qt2048/tree/03_board_with_tiles)

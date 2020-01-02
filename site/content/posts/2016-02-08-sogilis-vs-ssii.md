@@ -1,5 +1,5 @@
 ---
-title: "SSII : Attends chérie… C’est pas c’que tu crois !"
+title: "SSII : Attends chérie… C’est pas c’que tu crois !"
 author: Jérémy et Corentin
 date: 2016-02-08T16:12:25+00:00
 image: /img/2016/04/2.On-simplique.jpg
@@ -37,7 +37,7 @@ De notre côté, la candidature de Marie est directement ajoutée sur Basecamp, 
 
 Dès le premier jeudi suivant sa candidature, à 11h40 précises, nous nous rassemblons en petit comité autour du tableau de recrutement. Les objectifs de recrutement sont définis et visibles, tant sur le nombre que sur les profils recherchés. Aucune annonce n'est publiée pour alimenter ce tableau concernant les postes de développeurs, afin de privilégier les candidatures spontanées.
 
-Un animateur est chargé de faciliter ce point sur les candidatures en cours de traitement. Chacune est dans un des quatre états suivants : nouvelles, entretiens techniques, entretiens avec les dirigeants, va nous rejoindre. La candidature de Marie vient d'arriver, elle entre donc dans le début du tableau, en tant que nouvelle candidature.
+Un animateur est chargé de faciliter ce point sur les candidatures en cours de traitement. Chacune est dans un des quatre états suivants : nouvelles, entretiens techniques, entretiens avec les dirigeants, va nous rejoindre. La candidature de Marie vient d'arriver, elle entre donc dans le début du tableau, en tant que nouvelle candidature.
 
 ![Notre kanban de recrutement](https://66.media.tumblr.com/8374fda731d44a42741f42d786f1f5a0/tumblr_inline_o2ll7ePiuS1tqsd8s_540.png)
 
@@ -49,7 +49,7 @@ Marie passe dans la deuxième colonne de notre tableau. Dans cette colonne se tr
 
 Jean est un jeune designer qui cherche à effectuer un projet de fin d'études (PFE) au sein de Sogilis. Il a passé ses entretiens techniques au début de la semaine. Malheureusement, nous nous sommes rendus compte qu'il n'était pas autonome et qu'il cherchait à apprendre auprès d'une personne expérimentée. Nous n'avons personne de disponible pour cet encadrement, mais aurions apprécié l'aider dans cette formation. Le partage de connaissances, d’habitude, c'est notre dada. Personne ne trouve de solution miracle pour Jean. **Pour le bien de son PFE et des deux parties, nous n'irons pas plus loin avec sa candidature**. Le binôme en charge de son recrutement le tiendra au courant de cette décision.
 
-Dans la dernière colonne se trouve le profil de Michel. Il doit rencontrer les dirigeants car il a déjà convaincu les développeurs qu'il apporterait un plus aux équipes. Pendant cet entretien, Christophe et Laurent donneront aussi leur avis sur la candidature de Michel et régleront avec lui les détails administratifs du contrat. En général, c'est une formalité ! Une date sera retenue pour son arrivée, pour que nous ayons notamment suffisamment de charge de travail pour l'accueillir. Sa candidature entrera ensuite dans l'ultime case avec cette date : Michel est un nouvel arrivant. **Il va lui falloir un référent à son arrivée afin de faciliter son intégration.**
+Dans la dernière colonne se trouve le profil de Michel. Il doit rencontrer les dirigeants car il a déjà convaincu les développeurs qu'il apporterait un plus aux équipes. Pendant cet entretien, Christophe et Laurent donneront aussi leur avis sur la candidature de Michel et régleront avec lui les détails administratifs du contrat. En général, c'est une formalité ! Une date sera retenue pour son arrivée, pour que nous ayons notamment suffisamment de charge de travail pour l'accueillir. Sa candidature entrera ensuite dans l'ultime case avec cette date : Michel est un nouvel arrivant. **Il va lui falloir un référent à son arrivée afin de faciliter son intégration.**
 
 ## Les objectifs de recrutement à Sogilis
 
@@ -59,7 +59,7 @@ Sogilis n'a pas vocation à grossir démesurément. L’organisation de l’entr
 
 L'objectif est donc de responsabiliser l'équipe sur l'ensemble des aspects de l'entreprise. Donner le plus de libertés possibles à l'équipe est un pari éprouvé. En étant plus écoutés et responsabilisés, nous sommes plus impliqués.
 
-Cette organisation passe par une allocation supplémentaire de temps collectifs. Ces différentes réunions sont listées et brièvement décrites ci-après ; la participation est libre.
+Cette organisation passe par une allocation supplémentaire de temps collectifs. Ces différentes réunions sont listées et brièvement décrites ci-après ; la participation est libre.
 
 **Réunion de solution + réunion d'information dans un but d'aide à la décision**
 

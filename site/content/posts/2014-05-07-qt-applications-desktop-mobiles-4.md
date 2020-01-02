@@ -39,11 +39,11 @@ Suite de la découverte de la programmation desktop et mobile avec Qt.
 
 #### Déplacement et jeu
 
-Bon, c'est bien joli mais par contre ça serait plutôt cool de pouvoir jouer, non ?
+Bon, c'est bien joli mais par contre ça serait plutôt cool de pouvoir jouer, non ?
 
 Le fonctionnement est très simple. Il faut écouter le clavier et sur les touches correspondantes aux flèches exécuter les déplacements demandés.
 
-Il faut définir un _handler_ sur l'évènement d'appuis de touche et tester la touche :
+Il faut définir un _handler_ sur l'évènement d'appuis de touche et tester la touche :
 
 {{< highlight cpp >}}
 Window {
@@ -69,9 +69,9 @@ Window {
 
 La propriété `focus` permet de donner le focus à l'item et donc d'écouter les entrées. Et comme il n'est pas possible de le faire au niveau de l'objet `Window`un `Rectangle` a été introduit en lui spécifiant de remplir tout le parent via `anchors.fill: parent`.
 
-Jusque là c'était la partie la plus évidente. Par contre, comment appeler les méthodes `move{Up,Right,Down,Left}` de notre objet `C++` `Board` ?
+Jusque là c'était la partie la plus évidente. Par contre, comment appeler les méthodes `move{Up,Right,Down,Left}` de notre objet `C++` `Board` ?
 
-Nous allons utiliser l'objet `BoardModel` qui existe déjà (oui c'est pas forcément la meilleure architecture mais pour comprendre les concepts c'est pas mal) et lui ajouter les méthodes correspondantes. Mais ça ne suffit pas pour les appeler depuis le QML. Pour ce faire il faut les rendre invocables, via la macro `Q_INVOKABLE` :
+Nous allons utiliser l'objet `BoardModel` qui existe déjà (oui c'est pas forcément la meilleure architecture mais pour comprendre les concepts c'est pas mal) et lui ajouter les méthodes correspondantes. Mais ça ne suffit pas pour les appeler depuis le QML. Pour ce faire il faut les rendre invocables, via la macro `Q_INVOKABLE` :
 
 {{< highlight cpp >}}
 // BoardModel.h
@@ -101,11 +101,11 @@ void BoardModel::moveLeft() {
 
 Dans ce cas, vous pouvez remplir le `switch` avec les appels, par exemple `board.moveLeft();`
 
-Si vous exécutez le programme, vous verrez… qu'il ne se passe rien. Et pourtant, pas de bugs à l'horizon. Si vous tracez le code vous verrez même que le déplacement est bien effectué dans la classe `Board`. Mais alors on aurait oublié quelque chose ?
+Si vous exécutez le programme, vous verrez… qu'il ne se passe rien. Et pourtant, pas de bugs à l'horizon. Si vous tracez le code vous verrez même que le déplacement est bien effectué dans la classe `Board`. Mais alors on aurait oublié quelque chose ?
 
-Et oui, car le principe de QML est entre autre de reposer sur l'excellent système des signaux/slots de Qt. Si rien ne se passe c'est en réalité juste que vous ne voyez rien, que la vue n'est pas rafraichie. Et pour la rafraichir il suffit de notifier que la donnée a changée en utilisant un signal, logique non ?
+Et oui, car le principe de QML est entre autre de reposer sur l'excellent système des signaux/slots de Qt. Si rien ne se passe c'est en réalité juste que vous ne voyez rien, que la vue n'est pas rafraichie. Et pour la rafraichir il suffit de notifier que la donnée a changée en utilisant un signal, logique non ?
 
-Bon, la première implémentation naïve est d'émettre le signal `dataChanged` depuis les méthodes `move*` de `BoardModel`. Par exemple pour `moveUp` :
+Bon, la première implémentation naïve est d'émettre le signal `dataChanged` depuis les méthodes `move*` de `BoardModel`. Par exemple pour `moveUp` :
 
 {{< highlight cpp >}}
 void BoardModel::moveUp() {
@@ -114,13 +114,13 @@ void BoardModel::moveUp() {
 }
 {{< /highlight >}}
 
-Et voilà, cela fonctionne ! Votre 2048 est utilisable !
+Et voilà, cela fonctionne ! Votre 2048 est utilisable !
 
 ![](/img/tumblr/tumblr_inline_n48gbsuxvD1sv6muh.png)
 
-Par contre je sais pas vous, mais je trouve que c'est pas si génial. L'un des points négatifs est qu'on demande à rafraichir la vue même si le déplacement n'a pas été possible. Bon ok, on pourrait regarder le retour de `board_.moveUp()`mais on peut faire autrement. Qui sait mieux que `Board` si les données ont changées ou non ? Dans ce cas on peut laisser `Board` émettre un signal lorsque les données changent, et `BoardModel` va venir s'enregistrer sur ce signal. Ainsi cela devient de plus en plus une sorte de proxy dédié à présenter notre modèle à l'interface et on supprime au maximum la logique qu'il contient.
+Par contre je sais pas vous, mais je trouve que c'est pas si génial. L'un des points négatifs est qu'on demande à rafraichir la vue même si le déplacement n'a pas été possible. Bon ok, on pourrait regarder le retour de `board_.moveUp()`mais on peut faire autrement. Qui sait mieux que `Board` si les données ont changées ou non ? Dans ce cas on peut laisser `Board` émettre un signal lorsque les données changent, et `BoardModel` va venir s'enregistrer sur ce signal. Ainsi cela devient de plus en plus une sorte de proxy dédié à présenter notre modèle à l'interface et on supprime au maximum la logique qu'il contient.
 
-On va donc créer un signal dans `Board` et l'émettre lorsque le déplacement a été effectué :
+On va donc créer un signal dans `Board` et l'émettre lorsque le déplacement a été effectué :
 
 {{< highlight cpp >}}
 // board.h
@@ -146,7 +146,7 @@ public slots:
   void onDataChanged();
 
 // boardmodel.cpp
-BoardModel::BoardModel(QObject *parent) :
+BoardModel::BoardModel(QObject *parent) :
   QAbstractListModel(parent) {
   connect(&board_, &Board::boardChangedAfterMovement, this, &BoardModel::onDataChanged);
 }

@@ -16,19 +16,19 @@ Depuis l'avènement d'outils de gestion de code source de bonne qualité ([Git](
 
 Plutôt que de simplement vous présenter notre workflow, vous trouverez ici le _pourquoi_ et le _comment_, c'est au final ce qui est le plus important.
 
-- Un workflow c'est quoi, et ça sert à quoi ?
-  - Et tu as des exemples ?
+- Un workflow c'est quoi, et ça sert à quoi ?
+  - Et tu as des exemples ?
 - Un workflow doit répondre à nos besoins
   - Les objectifs
   - Les contraintes
 - Le résultat
   - En résumé
 - La mise en œuvre
-- Et en pratique ?
+- Et en pratique ?
 - À suivre
 - Pour aller plus loin
 
-# Un workflow c'est quoi, et ça sert à quoi ?
+# Un workflow c'est quoi, et ça sert à quoi ?
 
 Lorsque vous développez un logiciel, au début tout est facile. Ça ressemble à un historique linéaire, c'est simple, c'est clair. Et c'est facile à utiliser. Voici par exemple la séquence de commandes que vous pouvez utiliser.
 
@@ -36,7 +36,7 @@ Lorsque vous développez un logiciel, au début tout est facile. Ça ressemble �
 hack
 hack
 ...
-git add -p # vous utilisez -p, non ?
+git add -p # vous utilisez -p, non ?
 git commit
 ...
 hack
@@ -75,17 +75,17 @@ Le problème, c'est que le résultat devient quelque peu… différent de ce qui
 
 Pour info c'est un vrai historique hein 😉
 
-Vous pouvez tout de suite voir les problèmes. L'historique devient très difficile à lire. Tentez par exemple de suivre une branche et les commits associés. C'est loin d'être évident. Imaginez alors lorsque vous devez faire du debug pour trouver dans tout ceci _le_ commit qui a entrainé une régression. Et si vous regardez bien précisément vous pouvez y voir émerger une cause : le nombre de commit de fusion par rapport au nombre total de commit. Il y a des fusions dans tous les sens, pour se synchroniser, pour fusionner des fonctionnalités en cours de développement. Et il est facile d'imaginer que derrière ces commits se cachent quelques conflits.
+Vous pouvez tout de suite voir les problèmes. L'historique devient très difficile à lire. Tentez par exemple de suivre une branche et les commits associés. C'est loin d'être évident. Imaginez alors lorsque vous devez faire du debug pour trouver dans tout ceci _le_ commit qui a entrainé une régression. Et si vous regardez bien précisément vous pouvez y voir émerger une cause : le nombre de commit de fusion par rapport au nombre total de commit. Il y a des fusions dans tous les sens, pour se synchroniser, pour fusionner des fonctionnalités en cours de développement. Et il est facile d'imaginer que derrière ces commits se cachent quelques conflits.
 
-Et si on en revenait à la question : _« un workflow c'est quoi, et ça sert à quoi ? »_
+Et si on en revenait à la question : _« un workflow c'est quoi, et ça sert à quoi ? »_
 
 Un workflow — dans notre cas pour Git — c'est surtout la définition de comment on travaille en collaboration avec notre outil de gestion de sources et avec les autres personnes. Quelles sont les règles, mais surtout dans quel but. Il ne s'agit surtout pas de contraindre inutilement les possibilités. Mais pour ce faire, la première chose à se demander c'est justement quelles sont nos contraintes.
 
-### Et tu as des exemples ?
+### Et tu as des exemples ?
 
 En fait, il y en a plein.
 
-Dans les plus connus, si vous avez des développements en production avec branche de maintenance et autres, que vous faites du [SemVer](http://semver.org/) par exemple, il y a [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/) :
+Dans les plus connus, si vous avez des développements en production avec branche de maintenance et autres, que vous faites du [SemVer](http://semver.org/) par exemple, il y a [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/) :
 
 ![](/img/2014/12/tumblr_inline_nez8ktrbKd1sv6muh.png)
 
@@ -101,7 +101,7 @@ Il est très pratique si vous êtes dans le cadre de déploiement continu et si 
 
 ## Un workflow doit répondre à nos besoins
 
-Alors, s'il existe déjà des workflow, pourquoi ne pas en utiliser un déjà décrit ?
+Alors, s'il existe déjà des workflow, pourquoi ne pas en utiliser un déjà décrit ?
 
 Déjà avant de savoir si on peut utiliser un workflow existant, il convient de savoir quels sont les objectifs visés et quelles sont nos contraintes. Ensuite, par l'étude de ceux-ci il devient possible de déterminer un workflow, soit un nouveau soit un existant.
 
@@ -109,7 +109,7 @@ Mais dans tous les cas un workflow se doit de nous aider, jamais de nous limiter
 
 ### Les objectifs
 
-Nous voulons pouvoir :
+Nous voulons pouvoir :
 
 * tester facilement chaque fonctionnalité “unitairement” (vous verrez un peu plus tard que c'est un point beaucoup plus complexe qu'il n'y parait…)
 * avoir un historique très lisible pour pouvoir naviguer facilement dedans lors de la découverte de mauvais comportements
@@ -118,7 +118,7 @@ Nous voulons pouvoir :
 
 ### Les contraintes
 
-Certains points à prendre en compte :
+Certains points à prendre en compte :
 
 * pour le moment il n'y a pas de branches de production, maintenance, etc., mais ça pourra arriver un jour
 * le corollaire c'est que pour le moment la branch principale doit toujours être stable
@@ -130,23 +130,23 @@ Certains points à prendre en compte :
 
 Je vais reprendre les objectifs et essayer de placer en face de chacun une “règle” Git, en prenant en compte si besoin nos contraintes.
 
-1. **Tester unitairement chaque fonctionnalité** :
-  Bon là c'est simple, tout le monde me dira _« chaque fonctionnalité dans une branche dédiée »_. Oui. Mais je vous répondrai _« mais le code est dédié à un drone »_.La branche pour une fonctionnalité (_feature branch_ ou _topic branch_) c'est bien, à une condition importante, c'est qu'il existe un moyen de valider si cette branche est ok ou non avant de pouvoir l'intégrer dans le tronc commun. En général là on va parler de tests unitaires, d'intégration continue, etc. On a tout ça. Mais ça ne suffit pas. En effet, dans notre cas les tests unitaires, les tests de plus haut niveau, les simulations, l'intégration continue, tout ceci ne remplace pas — en tout cas pour le moment — des essais en vol, en extérieur. Le succès ou l'échec de notre code dépend aussi de différents matériels, de conditions extérieures — que se passe-t-il lorsque le GPS ou la communication est dégradé en plein vol parce qu'il y a des nuages ? — et pire, de ressentis visuels. Et plus que tout ceci, nous ne pouvons pas réaliser les tests en continu. Il faut se déplacer à l'extérieur pour réaliser les tests et dépendre alors de la météo. Donc nous souhaitons pouvoir tester plusieurs fonctionnalités d'un coup si c'est possible.Le résultat pour nous c'est tout de même une branche par fonctionnalité — what else? — plus une branche d'intégration spécifique à chaque itération. Lorsque nous partons en essais, la branche d'intégration comporte l'ensemble des fonctionnalités à jour ce qui permet, si tout se passe bien, de valider l'ensemble. Les fonctionnalités qui sont ok sont ensuite intégrées dans la branche principale `master`. Si jamais cela se passe mal, il est possible de générer très facilement des versions pour chaque fonctionnalité et tester, valider ou invalider chacune.
+1. **Tester unitairement chaque fonctionnalité** :
+  Bon là c'est simple, tout le monde me dira _« chaque fonctionnalité dans une branche dédiée »_. Oui. Mais je vous répondrai _« mais le code est dédié à un drone »_.La branche pour une fonctionnalité (_feature branch_ ou _topic branch_) c'est bien, à une condition importante, c'est qu'il existe un moyen de valider si cette branche est ok ou non avant de pouvoir l'intégrer dans le tronc commun. En général là on va parler de tests unitaires, d'intégration continue, etc. On a tout ça. Mais ça ne suffit pas. En effet, dans notre cas les tests unitaires, les tests de plus haut niveau, les simulations, l'intégration continue, tout ceci ne remplace pas — en tout cas pour le moment — des essais en vol, en extérieur. Le succès ou l'échec de notre code dépend aussi de différents matériels, de conditions extérieures — que se passe-t-il lorsque le GPS ou la communication est dégradé en plein vol parce qu'il y a des nuages ? — et pire, de ressentis visuels. Et plus que tout ceci, nous ne pouvons pas réaliser les tests en continu. Il faut se déplacer à l'extérieur pour réaliser les tests et dépendre alors de la météo. Donc nous souhaitons pouvoir tester plusieurs fonctionnalités d'un coup si c'est possible.Le résultat pour nous c'est tout de même une branche par fonctionnalité — what else? — plus une branche d'intégration spécifique à chaque itération. Lorsque nous partons en essais, la branche d'intégration comporte l'ensemble des fonctionnalités à jour ce qui permet, si tout se passe bien, de valider l'ensemble. Les fonctionnalités qui sont ok sont ensuite intégrées dans la branche principale `master`. Si jamais cela se passe mal, il est possible de générer très facilement des versions pour chaque fonctionnalité et tester, valider ou invalider chacune.
 
-2. **Avoir un historique lisible** :
+2. **Avoir un historique lisible** :
   L'objectif est vraiment de pouvoir naviguer facilement dans l'historique, essentiellement pour y rechercher la cause d'un mauvais comportement qui n'aurait pas été mis en évidence par les tests automatisés.La première solution à mettre en place c'est de limiter au maximum les commits “sans valeur”, par exemple les commits de synchronisation avec l’_upstream_, et garantir le meilleur rapport signal/bruit possible. Pour ça c'est assez facile, il suffit d'interdir les `pull/merge` de synchronisation. Si on souhaite tout de même bénéficier d'améliorations qui sont dans le tronc commun, il faut utiliser `rebase` ce qui linéarise l'historique.La deuxième chose c'est d'éviter au maximum les croisements de branches. La solution passe également par l'utilisation systématique de `rebase` avant d'intégrer les changements.Ceci doit permettre de ne pas avoir de commits inutiles et donc de pouvoir lire facilement l'historique car plus linéaire, moins plat de spaghettis.
 
-3. **Pouvoir désactiver une fonctionnalité** :
-  Le scénario est le suivant : on détecte après coup une fonctionnalité qui pose problème (ou simplement on veut supprimer une fonctionnalité).Il faut alors pouvoir visualiser très rapidement la fonctionnalité et l'ensemble de ses modifications. La pire chose qui existerait c'est de faire du merge en _fast forward_, c'est-à-dire une linéarisation des commits de la branche. On les rajoute simplement au-dessus du tronc commun. Si on fait ça — et ceux qui ont fait du `svn` (pouah !) connaissent très bien — il devient très compliqué d'identifier l'ensemble des modifications liées à une fonctionnalité. Et donc il devient très compliqué de les annuler.La solution est donc d'avoir tant que possible un unique commit pour chaque intégration de fonctionnalité dans le tronc commun. Si cela est fait, on peut annuler facilement par la réalisation d'un commit inversé. Vous pouvez utiliser directement la commande [`git revert`](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/) pour le faire. A ce moment de décision, vous avez deux choix :
-  * faire des merges systématiquement sans _fast forward_ : `git merge --no-ff`
-  * faire des merges avec fusion de tous les commits en un seul : `<code>git merge --squash`
+3. **Pouvoir désactiver une fonctionnalité** :
+  Le scénario est le suivant : on détecte après coup une fonctionnalité qui pose problème (ou simplement on veut supprimer une fonctionnalité).Il faut alors pouvoir visualiser très rapidement la fonctionnalité et l'ensemble de ses modifications. La pire chose qui existerait c'est de faire du merge en _fast forward_, c'est-à-dire une linéarisation des commits de la branche. On les rajoute simplement au-dessus du tronc commun. Si on fait ça — et ceux qui ont fait du `svn` (pouah !) connaissent très bien — il devient très compliqué d'identifier l'ensemble des modifications liées à une fonctionnalité. Et donc il devient très compliqué de les annuler.La solution est donc d'avoir tant que possible un unique commit pour chaque intégration de fonctionnalité dans le tronc commun. Si cela est fait, on peut annuler facilement par la réalisation d'un commit inversé. Vous pouvez utiliser directement la commande [`git revert`](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/) pour le faire. A ce moment de décision, vous avez deux choix :
+  * faire des merges systématiquement sans _fast forward_ : `git merge --no-ff`
+  * faire des merges avec fusion de tous les commits en un seul : `<code>git merge --squash`
 
-4. **Avoir le détail de chaque fonctionnalité** :
+4. **Avoir le détail de chaque fonctionnalité** :
   Pour pouvoir débugger plus facilement mais aussi simplement relire et comprendre les modifications, il est intéressant de garder présentes les étapes de développement.
 
 Ceci interdit donc l'utilisation de `merge --squash` au profit de `merge --no-ff`. En effet, dans ce cas nous avons un commit de merge mais la branche et donc le détail des opérations restent visibles.
 
-Par contre, souvenez-vous, on parlait un peu plus haut d'historique propre. Dans ce cas la bonne pratique, avant de réaliser la fusion, est de nettoyer l'historique de la branche. Je vous encourage donc vivement l'utilisation de [`rebase --interactive`](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase-i) voir même de [`rebase -i --autosquash`](https://coderwall.com/p/hh-4ea/git-rebase-autosquash) — ça c'est une pratique qu'elle est bien ! Le but est d'améliorer les messages, fusionner certains commits entre eux voir même les réordonner ou les supprimer.
+Par contre, souvenez-vous, on parlait un peu plus haut d'historique propre. Dans ce cas la bonne pratique, avant de réaliser la fusion, est de nettoyer l'historique de la branche. Je vous encourage donc vivement l'utilisation de [`rebase --interactive`](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase-i) voir même de [`rebase -i --autosquash`](https://coderwall.com/p/hh-4ea/git-rebase-autosquash) — ça c'est une pratique qu'elle est bien ! Le but est d'améliorer les messages, fusionner certains commits entre eux voir même les réordonner ou les supprimer.
 
 Le rebase va obliger à réécrire l'historique et donc probablement à forcer les `push` mais ce n'est pas grave, c'est une bonne chose d'avoir un historique propre.
 
@@ -161,14 +161,14 @@ Le rebase va obliger à réécrire l'historique et donc probablement à forcer l
 
 ## La mise en œuvre
 
-Vous vous souvenez de l'historique horrible du début de l'article ? Maintenant voici ce que cela donne :
+Vous vous souvenez de l'historique horrible du début de l'article ? Maintenant voici ce que cela donne :
 
 ![](/img/2014/12/tumblr_inline_nez8lrqrff1sv6muh.png)
 
-Ceci est une capture du vrai résultat, sur le même projet. Bon ok vous n'avez pas les commentaires des commits, mais voici ce qu'on peut en tirer :
+Ceci est une capture du vrai résultat, sur le même projet. Bon ok vous n'avez pas les commentaires des commits, mais voici ce qu'on peut en tirer :
 
 * l'historique est clair et lisible, il est tout à fait possible de le comprendre et de se déplacer dedans sans craintes
-* l'historique nous offre deux niveaux de détails :
+* l'historique nous offre deux niveaux de détails :
   * l'intégration de chaque fonctionnalité / bug / …
   * le détail de chaque fonctionnalité / bug / …
 * étant donné qu'il est facile d'identifier le commit d'intégration d'une fonctionnalité, il est aussi facile de l'annuler
@@ -176,7 +176,7 @@ Ceci est une capture du vrai résultat, sur le même projet. Bon ok vous n'avez 
 * comme chaque branche a subit un `rebase` avant d'être fusionnée, il n'y a pas de croisements de branches, ce qui améliore la lisibilité
 * une branche d'intégration par itération est créée, puis si tout est ok, fusionnée dans `master`. Vous le voyez avec `origin/integ` qui a été fusionné (en _fast forward_, c'est le seul cas) dans `origin/master` et tout ce qui est au-dessus est dans `origin/integ-it2.7` et non dans `master` car l'itération est en cours. Evidemment il pourrait y avoir des branches non fusionnées dans `integ-it2.7`.
 
-### Et en pratique ?
+### Et en pratique ?
 
 Voici les quelques commandes / principes que nous utilisons pour mettre en œuvre ce workflow.
 
@@ -192,7 +192,7 @@ Voici les quelques commandes / principes que nous utilisons pour mettre en œuvr
   git checkout -b feature/my-super-cool-feature
   {{< /highlight >}}
 
-  Nos branches sont préfixées pour améliorer la lisibilité :
+  Nos branches sont préfixées pour améliorer la lisibilité :
   * `feature/` pour les fonctionnalités
   * `bug/` pour les anomalies
   * `refactor/` pour ce qui est lié à du pur refactoring (on en a beaucoup puisqu'on se base sur un existant pas toujours propre…)
@@ -266,13 +266,13 @@ Aujourd'hui le workflow tel que défini est une aide précieuse dans notre déve
 
 Si nous voulions aller plus loin, il serait possible d'utiliser des _pull requests_ entre les branches de fonctionnalité et la branche d'intégration, voir entre la branche d'intégration et `master`. Actuellement nous ne faisons pas de revue systématique mais travaillons beaucoup par binômage et en tournant sur tous les aspects du code. Le problème des _pull requests_ est que la fusion depuis [Github](https://github.com/) ne permet pas de facilement faire un rebase avant. Il faudrait le faire en dehors de l'outil, ce qui n'est pas terrible. Il existe par contre des forges qui permettent de réaliser ce type d'opérations.
 
-Que pensez-vous de ce workflow ? Lequel utilisez-vous de votre côté, et surtout pourquoi ?
+Que pensez-vous de ce workflow ? Lequel utilisez-vous de votre côté, et surtout pourquoi ?
 
 ## Pour aller plus loin
 
 Si vous souhaitez aller plus loin, ou juste apprendre Git, nous [donnons des formations Git](https://sogilis.com/contact.html).
 
-Et si vous n'êtes pas rassasiés, voici une petite collection de liens à suivre :
+Et si vous n'êtes pas rassasiés, voici une petite collection de liens à suivre :
 
 * Git Flow
   * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)

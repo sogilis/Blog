@@ -1,5 +1,5 @@
 ---
-title: "Retour d’expérience : collaboration autour de l’imprimante 3D de Clotoo, « la manufacture particulière »"
+title: "Retour d’expérience : collaboration autour de l’imprimante 3D de Clotoo, « la manufacture particulière »"
 author: Tiphaine
 date: 2017-03-02T09:46:27+00:00
 image: /img/2017/03/article_clotoo3.jpg
@@ -42,11 +42,11 @@ Disons que, par exemple, je souhaite imprimer 100 porte-clefs. Une interface me 
 
 ## Le rôle de Sogilis
 
-Notre objectif a été de paralléliser et d’ordonnancer avec fiabilité les impressions sur toutes les imprimantes du réseau. En favorisant le réseau de proximité géographique, Clotoo souhaite limiter la problématique du transport : pouvoir aller chercher l'objet soi-même.
+Notre objectif a été de paralléliser et d’ordonnancer avec fiabilité les impressions sur toutes les imprimantes du réseau. En favorisant le réseau de proximité géographique, Clotoo souhaite limiter la problématique du transport : pouvoir aller chercher l'objet soi-même.
 
 En plus des entreprises, Clotoo souhaite mettre en relation des particuliers avec des designers, grâce à une boutique d’objets proposés par ces designers - validés par la charte Clotoo. Un particulier peut alors acheter une impression de son objet sur une imprimante du réseau.
 
-Nous avons travaillé autour de 3 besoins :
+Nous avons travaillé autour de 3 besoins :
 
 - gérer les impressions sur le réseau d'imprimantes, permettant d’avoir un état précis des imprimantes
 - participer au développement de l’interface entre le réseau d’imprimantes et la boutique pour les particuliers et designers
@@ -57,6 +57,6 @@ Pendant ces quatre mois, nous avons conçu un système distribué avec des contr
 
 [![Capture d’écran 2017-03-02 à 09.45.32](/img/2017/03/Capture-2017-03-02-09.45.32.png)][1]
 
-Source : [FrenchWeb, interview du 20 mai 2016](http://www.dailymotion.com/video/x4bh0ji_le-debrief-de-la-semaine-avec-remy-oliel-clotoo-et-antoine-martin-zenly_tech)
+Source : [FrenchWeb, interview du 20 mai 2016](http://www.dailymotion.com/video/x4bh0ji_le-debrief-de-la-semaine-avec-remy-oliel-clotoo-et-antoine-martin-zenly_tech)
 
 [1]: https://drive.google.com/file/d/0B9DiUUwC4ObVOF82WTRyZkcySG8/view?usp=sharing

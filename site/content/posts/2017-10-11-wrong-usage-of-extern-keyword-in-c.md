@@ -1,5 +1,5 @@
 ---
-title: "Compiling & Dangerous : wrong usage of extern keyword in C"
+title: "Compiling & Dangerous : wrong usage of extern keyword in C"
 author: Victor Lambret
 date: 2017-10-11T13:27:23+00:00
 image: /img/2017/10/first_image.png
@@ -72,8 +72,8 @@ victor@sogilis$ sh gcc -c main2.c
 victor@sogilis$ sh gcc -c version3.c
 victor@sogilis$ readelf -s main2.o version3.o
 File: main2.o
-Num   :    Value          Size Type    Bind   Vis      Ndx Name
-10    : 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND version
+Num   :    Value          Size Type    Bind   Vis      Ndx Name
+10    : 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND version
 
 File: version3.o
 Num:    Value          Size Type    Bind   Vis      Ndx Name

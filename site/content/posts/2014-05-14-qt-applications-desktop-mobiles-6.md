@@ -63,7 +63,7 @@ Et pour que cela fonctionne, il faut rajouter `main` comme `id` à notre `Window
 
 Ainsi, lorsque la hauteur ou largeur de la fenêtre changera, la taille du texte sera modifiée en conséquence.
 
-Pour le plateau, nous allons faire quasiment la même chose :
+Pour le plateau, nous allons faire quasiment la même chose :
 
 {{< highlight cpp >}}
 Rectangle {

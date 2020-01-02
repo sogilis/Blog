@@ -1,5 +1,5 @@
 ---
-title: "Mon intégration au sein de Sogilis : bilan après un mois"
+title: "Mon intégration au sein de Sogilis : bilan après un mois"
 author: Jérémy
 date: 2015-03-31T12:11:33+00:00
 image: /img/2015/03/Jérémy-1.jpg

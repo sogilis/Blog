@@ -16,15 +16,15 @@ People love a great article about a new programming paradigm/vision/motto which 
 
 What to do with [logging](https://en.wikipedia.org/wiki/Logfile)? A log is a trace of events, which allows one to reconstruct what has happened. Good practices tell you to have events at different levels of granularity. I especially like the ones from [bunyan](https://github.com/trentm/node-bunyan#levels) on this topic. Shameless copy-paste from the doc:
 
-> « fatal »: The service/app is going to stop or become unusable now. An operator should definitely look into this soon.
+> « fatal »: The service/app is going to stop or become unusable now. An operator should definitely look into this soon.
 >
-> « error »: Fatal for a particular request, but the service/app continues servicing other requests. An operator should look at this soon(ish). « warn »: A note on something that should probably be looked at by an operator eventually.
+> « error »: Fatal for a particular request, but the service/app continues servicing other requests. An operator should look at this soon(ish). « warn »: A note on something that should probably be looked at by an operator eventually.
 >
-> « info »: Detail on regular operation.
+> « info »: Detail on regular operation.
 >
-> « debug »: Anything else, i.e. too verbose to be included in « info » level.
+> « debug »: Anything else, i.e. too verbose to be included in « info » level.
 >
-> « trace »: Logging from external libraries used by your app or very detailed application logging.
+> « trace »: Logging from external libraries used by your app or very detailed application logging.
 
 While developing my system, I might use log events to:
 
@@ -32,7 +32,7 @@ While developing my system, I might use log events to:
 * explore how it behaves when running an edge case
 * diagnose what leads to an unexpected behavior
 
-But depending on the case, I want different levels of details about the behavior of my system. The default one is « info », since it traces all regular operations. It should be good enough when validating or exploring the system - with the occasional look at debug level when one wants to check finer details. Meanwhile, when debugging, I might run anywhere between the error level (because there is too much noise otherwise) and the debug or trace level (because I want maximum details about what led to this bad behavior).
+But depending on the case, I want different levels of details about the behavior of my system. The default one is « info », since it traces all regular operations. It should be good enough when validating or exploring the system - with the occasional look at debug level when one wants to check finer details. Meanwhile, when debugging, I might run anywhere between the error level (because there is too much noise otherwise) and the debug or trace level (because I want maximum details about what led to this bad behavior).
 
 The important ability here is filtering events, either through a predefined level (all events below being discarded) or, even more interestingly, through a post-mortem filter which takes the full trace but only outputs the chosen events.
 
@@ -169,7 +169,7 @@ try {
     // something may throw an Error
   } catch(e) {
     // log the error and recover
-    log.error(e) // error redirected to /dev/null !
+    log.error(e) // error redirected to /dev/null !
   }
 {{< /highlight >}}
 
@@ -202,7 +202,7 @@ Finished in 0.267 seconds
 npm ERR! Test failed.  See above for more details.
 {{< /highlight >}}
 
-In the above example, my test fails on its assertion. But the root cause can easily be inferred from the error log screaming « Syntax Error ».
+In the above example, my test fails on its assertion. But the root cause can easily be inferred from the error log screaming « Syntax Error ».
 
 ## A Last Small Refinement
 

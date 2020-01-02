@@ -19,7 +19,7 @@ Voici le processus que nous avons mis en place pour limiter le phénomène de r�
 
 ## Catégoriser les connaissances
 
-Nous avons tout d'abord catégorisé les différents types d'apprentissages. Cela nous a permis de mieux identifier les tâches sur lesquels l'apprentissage est le plus susceptible d'arriver. Cette liste va très probablement évoluer dans le temps, mais voici celle dont nous disposons pour l'instant :
+Nous avons tout d'abord catégorisé les différents types d'apprentissages. Cela nous a permis de mieux identifier les tâches sur lesquels l'apprentissage est le plus susceptible d'arriver. Cette liste va très probablement évoluer dans le temps, mais voici celle dont nous disposons pour l'instant :
 
 - Les **Procédures** (installation d'un poste, modifier tel paramètre sur le drone…)
 - Les **Études** (comment fonctionne un protocole, reverse engineering sur certains logiciels…)

@@ -12,18 +12,18 @@ tags:
   - ergonomie
   - ux-design
 ---
-La base du métier d’ergonome est de prendre en compte le besoin utilisateur et donc de les interroger. Récemment, j’ai dû travailler sur une problématique d’un client sans utilisateur. Le budget et le temps défini par mon client n’était pas extensible. Le client jugeait également le sujet peu complexe pour inclure des utilisateurs. J’ai ainsi eu l’occasion de travailler avec cette contrainte : ne pas échanger avec les utilisateurs de l’interface.
+La base du métier d’ergonome est de prendre en compte le besoin utilisateur et donc de les interroger. Récemment, j’ai dû travailler sur une problématique d’un client sans utilisateur. Le budget et le temps défini par mon client n’était pas extensible. Le client jugeait également le sujet peu complexe pour inclure des utilisateurs. J’ai ainsi eu l’occasion de travailler avec cette contrainte : ne pas échanger avec les utilisateurs de l’interface.
 
 J’analyse cette expérience afin d’essayer de confirmer ou non l’hypothèse selon laquelle la conception sans utilisateur est difficile et est un non-sens.
 
 
 # On déroule quand même la démarche centrée utilisateur.
 
-## Exploration : comprendre la demande et reformuler une problématique.
+## Exploration : comprendre la demande et reformuler une problématique.
 
 Le sujet de travail portait sur une boîte de dialogue, faisant partie d’un logiciel de gestion automatique de tâches. Cette boîte de dialogue était prioritaire dans le plan global d’amélioration du logiciel, car elle permet de définir les règles de gestion via différents champs de saisie. Elle est donc fréquemment utilisée et malheureusement non comprise par les utilisateurs.
 
-La demande de mon client portait sur deux points particulièrement bloquants :
+La demande de mon client portait sur deux points particulièrement bloquants :
 
 
   l’agencement des informations ne suivait pas la logique métier contraignant les utilisateurs à dessiner le process sur une feuille pour être sûrs de leur paramétrage,
@@ -33,22 +33,22 @@ La demande de mon client portait sur deux points particulièrement bloquants :
 
 
 
-J’ai proposé au client de commencer par un atelier de partage d’information, afin de prendre connaissance du sujet et de comprendre ce qui n’allait pas avec cette interface. Ce premier atelier permet d’explorer le sujet métier. Habituellement, cette phase inclut les utilisateurs afin d’identifier et de hiérarchiser les scénarios d’utilisation. Différents outils peuvent être utilisés pour récolter ces informations, comme des entretiens, des tests utilisateurs, des évaluations etc. A la fin, nous sommes capables d’avoir une vision globale et priorisée sur les axes à retravailler et à valoriser. Dans le cas présent, j’ai réalisé un entretien semi-directif avec le client. Cela m’a permi de récolter des informations sur ces trois sujets :
+J’ai proposé au client de commencer par un atelier de partage d’information, afin de prendre connaissance du sujet et de comprendre ce qui n’allait pas avec cette interface. Ce premier atelier permet d’explorer le sujet métier. Habituellement, cette phase inclut les utilisateurs afin d’identifier et de hiérarchiser les scénarios d’utilisation. Différents outils peuvent être utilisés pour récolter ces informations, comme des entretiens, des tests utilisateurs, des évaluations etc. A la fin, nous sommes capables d’avoir une vision globale et priorisée sur les axes à retravailler et à valoriser. Dans le cas présent, j’ai réalisé un entretien semi-directif avec le client. Cela m’a permi de récolter des informations sur ces trois sujets :
 
 
-  Le contexte métier de l’utilisation de cette interface : qui l’utilise ? dans quel but ? de quoi l’utilisateur a-t-il besoin pour remplir les champs ? Est-ce que cette interface fait partie d’une chaîne (besoin de mémoriser des informations pour l’écran suivant) ?
+  Le contexte métier de l’utilisation de cette interface : qui l’utilise ? dans quel but ? de quoi l’utilisateur a-t-il besoin pour remplir les champs ? Est-ce que cette interface fait partie d’une chaîne (besoin de mémoriser des informations pour l’écran suivant) ?
 
 
-  Le fonctionnement existant : sans cette interface comment les utilisateurs réalisent cette action ? que doit-elle faciliter ?
+  Le fonctionnement existant : sans cette interface comment les utilisateurs réalisent cette action ? que doit-elle faciliter ?
 
 
-  La problématique : quelles sont les difficultés d’utilisation, de compréhension, de visualisation exprimées par les utilisateurs ?
+  La problématique : quelles sont les difficultés d’utilisation, de compréhension, de visualisation exprimées par les utilisateurs ?
 
 
 A l’issu de l’entretien, j’ai pu identifier des axes d’améliorations à travailler, que j’ai validé avec le client.
 
 
-## Idéation et conception : recherche des solutions possibles.
+## Idéation et conception : recherche des solutions possibles.
 
 Je lui ai ensuite proposé de poursuivre par une phase d’idéation. Cette phase permet de rechercher différentes solutions. Pendant une heure, le client et moi avons utilisé un tableau blanc pour dessiner les solutions qui nous paraissaient répondre aux problèmes. Nous avons pris les problèmes un par un.
 
@@ -68,14 +68,14 @@ J’ai finalement réussi à finaliser ma proposition sous forme de maquette cli
 
 ## C'est difficile de se mettre à la place de l'utilisateur et d'y rester.
 
-Lors de ce travail, je me suis basée uniquement sur le point de vue de mon client. J’ai pu constater trois problèmes à cela : la déperdition d’information d’un intermédiaire, la vision technique du client et un avis unique qui n’est pas utilisateur.
+Lors de ce travail, je me suis basée uniquement sur le point de vue de mon client. J’ai pu constater trois problèmes à cela : la déperdition d’information d’un intermédiaire, la vision technique du client et un avis unique qui n’est pas utilisateur.
 
 
   Lors de nos premiers échanges nous avons discuté des problèmes rencontrés par les utilisateurs. J’étais frustrée, car je n’avais aucun contrôle de la manière dont ont été récoltées ces informations. Le plus difficile lorsque l’on récolte ce genre d’informations c’est d’éviter les biais et obtenir une réponse exploitable. Ces biais peuvent apparaître dans la formulation des questions, dans le contexte d’utilisation ou par rapport aux liens existants entre le client et l’utilisateur par exemple. D’autre part, j’ai conscience qu’il y a une dégradation de l’information entre ce que dit un utilisateur, ce que le client a compris, ce qu’il a retenu et comment il me le restitue.
 
 Cette restitution est le second point qui coince quand l’interlocuteur unique est le client. Quand je lui parlais besoin utilisateur il me répondait solutiontechnique, quand je lui parlais scénario métier, il me répondait composant. La difficulté pour moi dans ce type d’échange est de discerner ce qui relève dubesoin métier, de ce qui relève de la solution technique mise en place par le client. C’est notamment pour éviter ce risque que la rencontre d’utilisateursest un besoin fort de notre métier. Pouvoir échanger avec au moins une personne qui utilise l’interface tous les jours pour ses besoins métier. Cela nouspermet de revenir à la base du besoin et d’identifier le pourquoi, socle de toute notre réflexion de conception.
 
-“Je me demande pourquoi on en est arrivé à cette complexité ? Je ne sais plus pourquoi on a choisi d’ajouter cette étape”
+“Je me demande pourquoi on en est arrivé à cette complexité ? Je ne sais plus pourquoi on a choisi d’ajouter cette étape”
 
 Enfin, le troisième point concerne le fait que j’avais un seul interlocuteur. Multiplier les interlocuteurs permet d’enrichir notre compréhension des choses.Le risque de discuter avec un interlocuteur unique, c’est d’avoir une seule version du problème, des besoins et des attentes. Pendant la phase de conception,j’ai ressenti que je tournais en rond dans ma réflexion. C’est en expliquant à ma collègue ergonome mes interrogations à propos de la maquette, que j’airéussi à débloquer ma réflexion. J’ai été chercher un autre point de vu, plus neuf pour m’aider à déceler ce qui bloquait ma réflexion et identifier leséléments que je n’avais pas anticipés.
 
@@ -99,6 +99,6 @@ L’exercice de l’entretien n’est pas facile. Il demande une préparation af
 
 
 
-Finalement, j’ai accepté de revoir l’utilisabilité d’une interface sans m’appuyer sur les utilisateurs. Je me suis donc projetée dans des usages que je ne connais pas,. J’ai tâtonné, en me basant sur son expérience, mes propres usages. Je savais que ce serait difficile de prendre du recul sur l’interface que j’aurais conçue. Ca l’a été. Comment se rendre compte que cette formulation m’appartient et n’est pas forcément comprise par le grand nombre ? Pour pallier cela, j’ai effectué deux fois plus d’aller-et-retours avec mon client qu’habituellement.
+Finalement, j’ai accepté de revoir l’utilisabilité d’une interface sans m’appuyer sur les utilisateurs. Je me suis donc projetée dans des usages que je ne connais pas,. J’ai tâtonné, en me basant sur son expérience, mes propres usages. Je savais que ce serait difficile de prendre du recul sur l’interface que j’aurais conçue. Ca l’a été. Comment se rendre compte que cette formulation m’appartient et n’est pas forcément comprise par le grand nombre ? Pour pallier cela, j’ai effectué deux fois plus d’aller-et-retours avec mon client qu’habituellement.
 
 Nous ne sommes pas les utilisateurs de cette interface. Il est donc sécurisant de les intégrer dès le début de la conception afin de comprendre dès le départ les usages et anticiper les problèmes.

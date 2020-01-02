@@ -19,7 +19,7 @@ But let’s dive in the subject at hand. How to do NAT traversal. Let’s first�
 
 ## UDP Sockets
 
-UDP is the most simple application protocol on top of the IP stack. It only add the notion of source port number and destination port number above IP. There is nothing that is preventing packet loss and if your payload is too large for the network MTU, it is silently dropped. Dumb simple, isn’t it ?
+UDP is the most simple application protocol on top of the IP stack. It only add the notion of source port number and destination port number above IP. There is nothing that is preventing packet loss and if your payload is too large for the network MTU, it is silently dropped. Dumb simple, isn’t it ?
 
 A UDP socket is a file descriptor that is bound locally on your computer to a local IP address (most probably the address of your computer in your local area network) and a local port. Any UDP packet that comes through this interface for the port you are listening on, will be put on that file descriptor. It might come from anywhere as there is no idea of a continuous connection between to computers in UDP
 
@@ -60,7 +60,7 @@ Note that contrary to UDP, the `send` and `recv` system calls don’t take an a
 
 ## Multiple sockets on the same port
 
-What if you want to have multiple connections on the same port of your computer ? You’ll first have to add the option `SO_REUSEADDR` to the existing TCP sockets on the same port to tell them they are not exclusive. Then, any number of sockets can be bound on the same port. The system call is:
+What if you want to have multiple connections on the same port of your computer ? You’ll first have to add the option `SO_REUSEADDR` to the existing TCP sockets on the same port to tell them they are not exclusive. Then, any number of sockets can be bound on the same port. The system call is:
 
 {{< highlight js >}}
 int so_reuseaddr = TRUE;

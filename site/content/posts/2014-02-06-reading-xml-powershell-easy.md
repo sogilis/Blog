@@ -49,6 +49,6 @@ $CoveragePercent2Decimals = "{0:N2}" -f $CoveragePercent
 Write-Host "Coverage is $CoveragePercent2Decimals %"
 {{< /highlight >}}
 
-**Output is : Coverage is 48.62 %**
+**Output is : Coverage is 48.62 %**
 
 More exemples [here](http://www.codeproject.com/Articles/61900/PowerShell-and-XML).

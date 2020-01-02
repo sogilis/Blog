@@ -21,7 +21,7 @@ tags:
   - SonarQube
 
 ---
-# How to monitor code quality of your Android application with SonarQube ?
+# How to monitor code quality of your Android application with SonarQube ?
 
 [SonarQube.org](http://www.sonarqube.org) is a powerful tool to monitor and analyze code quality, and especially technical debt on Java projects (and more). As Android projects are based on Java sources, it is possible to analyze such projects with SonarQube. But if you already tried this, you probably noticed how difficult it is to find right and complete documentation.
 
@@ -80,7 +80,7 @@ sonarqube {
 
 Add the same configuration in **build.gradle** for an **android library** module (i.e. with **com.android.library** plugin) with following modifications:
 
-- Remove « build/intermediates/exploded-aar/**/classes.jar » from library variable as follow:
+- Remove « build/intermediates/exploded-aar/**/classes.jar » from library variable as follow:
   {{< highlight gradle >}}
   def libraries = project.android.sdkDirectory.getPath() + "/platforms/android-23/android.jar"
   {{< /highlight >}}
@@ -167,7 +167,7 @@ jacoco {
 
 ## Result
 
-Here is what you can get :
+Here is what you can get :
 
 ![SonarQube](/img/2017/01/SonarQube.jpg)
 
@@ -221,19 +221,19 @@ If you want all modules in a single project in SonarQube, you can move SonarQube
 ## Possible issues
 
 - Follow gradle constraints (**buildscript** before **plugins** before else)
-- StackOverflowError : remove involved rule or source file
-- Exception while applying a rule : remove rule
+- StackOverflowError : remove involved rule or source file
+- Exception while applying a rule : remove rule
 
 {{< highlight bash >}}
 Exception applying rule CommentDefaultAccessModifier on file /Users/Jibidus/Development/Sogilis/Repos/sonarqube-for-android-example/android-app/src/main/java/com/sogilis/example/android/app/MainActivity.java, continuing with next rule
 java.lang.NullPointerException
 {{< /highlight >}}
 
-- **StackOverflowError** with **sonar-gradle-plugin 2.1** : downgrade to **2.0.1**
+- **StackOverflowError** with **sonar-gradle-plugin 2.1** : downgrade to **2.0.1**
 - Jenkins does not find XML test report. Check Jenkins does look after */build/test-results/**/*.xml.
 - My workspace:module-name is not a valid project or module key. Allowed characters are alphanumeric, `-`, `_`, `.` and `:`, with at least one non-digit. The Default SonarQube project name is the project folder. So if this folder contains invalid character, this could be the explanation. You can set project name and key (see tips above).
 - :jacocoTestReport SKIPPED: run **test** task before **jacocoTestReport**
-- org.gradle.internal.jvm.Jvm.getRuntimeJar()Ljava/io/File : incompatible gradle version. Downgrade from gradle 3 to 2.
+- org.gradle.internal.jvm.Jvm.getRuntimeJar()Ljava/io/File : incompatible gradle version. Downgrade from gradle 3 to 2.
 
 ## Appendix
 

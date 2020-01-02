@@ -43,13 +43,13 @@ Le plateau est là, le jeu fonctionne. Il serait sympa désormais d'afficher le�
 
 On va commencer par afficher deux composants textes qui vont contenir le résultat pour le premier et le score pour le deuxième. L'ensemble va être placé au dessus du plateau et les deux champs sur la même ligne. On va donc utiliser un `ColumnLayout` et un `RowLayout`.
 
-Pour ça, commencez par ajouter `QtQuick.Layouts` à votre `qml` :
+Pour ça, commencez par ajouter `QtQuick.Layouts` à votre `qml` :
 
 {{< highlight cpp >}}
 import QtQtuick.Layouts 1.1
 {{< /highlight >}}
 
-Puis les layouts et les champs textes :
+Puis les layouts et les champs textes :
 
 {{< highlight cpp >}}
 Rectangle {
@@ -97,7 +97,7 @@ int BoardModel::score() const {
 }
 {{< /highlight >}}
 
-Si vous vous souvenez bien de l'étape précédente, les méthodes de déplacement avaient été préfixées de `Q_INVOKABLE`. Ici pas besoin, nous allons faire autrement et transformer le tout en une _propriété_. Une propriété va être accessible par le QML comme une variable (et non une méthode), et nous allons définir 4 choses :
+Si vous vous souvenez bien de l'étape précédente, les méthodes de déplacement avaient été préfixées de `Q_INVOKABLE`. Ici pas besoin, nous allons faire autrement et transformer le tout en une _propriété_. Une propriété va être accessible par le QML comme une variable (et non une méthode), et nous allons définir 4 choses :
 
 - le nom de la variable avec son type
 - la méthode à appeler pour lire la variable
@@ -110,7 +110,7 @@ On va donc appeler la variable `score`, son type est `int`, la méthode à appel
 
 {{< highlight cpp >}}
 // boardmodel.h
-class BoardModel : public QAbstractListModel
+class BoardModel : public QAbstractListModel
 {
   Q_OBJECT
   Q_PROPERTY(int score READ score NOTIFY scoreChanged)
@@ -124,7 +124,7 @@ signals:
 }
 {{< /highlight >}}
 
-Et voilà, vous pouvez maintenant remplacer `"score"` dans votre fichier `qml`par `board.score`. Trop facile, non ?
+Et voilà, vous pouvez maintenant remplacer `"score"` dans votre fichier `qml`par `board.score`. Trop facile, non ?
 
 Par contre, vous pouvez constater que la valeur ne change pas… en effet, comme avant, il faut émettre le signal lorsque la valeur change pour demander son rafraichissement. De la même manière, un signal va être émit par la classe `Board`lorsque le score change, et nous allons juste propager ce signal vers le signal `scoreChanged` que nous venons de créer.
 
@@ -142,7 +142,7 @@ bool Board::slide(t_value array[kSize]) {
 }
 
 // boardmodel.cpp
-BoardModel::BoardModel(QObject *parent) :
+BoardModel::BoardModel(QObject *parent) :
   QAbstractListModel(parent)
 {
   connect(&board_, &Board::boardChangedAfterMovement, this, &BoardModel::onDataChanged);
@@ -150,7 +150,7 @@ BoardModel::BoardModel(QObject *parent) :
 }
 {{< /highlight >}}
 
-Et voilà, rien de plus à faire, ça fonctionne déjà ! Agréable, non ?
+Et voilà, rien de plus à faire, ça fonctionne déjà ! Agréable, non ?
 
 Je vous laisse faire la suite pour les états de jeux (gagné / perdu).
 

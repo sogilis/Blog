@@ -16,9 +16,9 @@ tags:
   - tuleap
 
 ---
-## Did you ever wonder how GitHub-like code review works? Fear no more, and discover the intricacies of developing a system for inline comments !
+## Did you ever wonder how GitHub-like code review works? Fear no more, and discover the intricacies of developing a system for inline comments !
 
-Thanks to GitHub and the like, the practice of code review have become widespread. Even for small projects, one can feel the benefits: catching errors, loopholes, or artificial complexity, sharing the knowledge of how code fulfills its function, enforcing or teaching common guidelines and patterns... Last year, we were asked to develop a Pull Request plugin for the [Tuleap](https://www.tuleap.org/) platform (an open-source forge to track project development). This plugin was designed as an alternative to [Gerrit](https://www.gerritcodereview.com/) (which ships by default), in order to support different team workflows. This project gave us a wonderful opportunity to dive into the intricacies of a web-based code review system: how do you manage the workflow of a pull request, from creation to updates and final merge ? How do you detect conflicts ? What's the best way to display diffs ? And most of all, **how do you implement an inline comments system for code review** ?
+Thanks to GitHub and the like, the practice of code review have become widespread. Even for small projects, one can feel the benefits: catching errors, loopholes, or artificial complexity, sharing the knowledge of how code fulfills its function, enforcing or teaching common guidelines and patterns... Last year, we were asked to develop a Pull Request plugin for the [Tuleap](https://www.tuleap.org/) platform (an open-source forge to track project development). This plugin was designed as an alternative to [Gerrit](https://www.gerritcodereview.com/) (which ships by default), in order to support different team workflows. This project gave us a wonderful opportunity to dive into the intricacies of a web-based code review system: how do you manage the workflow of a pull request, from creation to updates and final merge ? How do you detect conflicts ? What's the best way to display diffs ? And most of all, **how do you implement an inline comments system for code review** ?
 
 In this article, we will focus on this last problem as this is the hallmark of any code review system. As we will see, this is not so obvious and requires some conceptualization and computation. But it will serve as a good illustration of the power of [changesets](https://blog.sogilis.com/posts/2015-05-05-demystifying-git-concepts-to-understand/) for any capable VCS (namely Git), as it is an important cornerstone of our solution.
 
@@ -35,9 +35,9 @@ In the general picture, the whole process goes something like this:
 
 In the past, code review was mainly patch-based. But now many code review systems are web-based. The cornerstone of such online systems is the inline comments mechanism. Anybody knows the thrill of picking your first line to comment. It goes something like this:
 
-- « this line does not take into account case XXX - better add a proper error check »
-- « I find this part is complicated and not sure I understand all the details - can we rewrite it? »
-- « Cool! That's a neat way to solve this issue. I will be sure to apply it next time I have the same problem. »
+- « this line does not take into account case XXX - better add a proper error check »
+- « I find this part is complicated and not sure I understand all the details - can we rewrite it? »
+- « Cool! That's a neat way to solve this issue. I will be sure to apply it next time I have the same problem. »
 
 ![Github_inline_comment](/img/2017/02/Github_inline_comment.png)
 
@@ -90,7 +90,7 @@ A1
   A5
 {{< /highlight >}}
 
-Rather than changing the A3 line, the update provides two new lines B1 and B2 (which become parts of the global pull request, including A3). The system can not decide whether the change resolves or even affects the inline comment. Thus, it should still display the comment to let the reviewer decided whether it is relevant or not. Of course, it should still appear next to the A3 line, which means in this case the comment has « moved down » from the third line in the original unidiff to the fifth line in the new unidiff.
+Rather than changing the A3 line, the update provides two new lines B1 and B2 (which become parts of the global pull request, including A3). The system can not decide whether the change resolves or even affects the inline comment. Thus, it should still display the comment to let the reviewer decided whether it is relevant or not. Of course, it should still appear next to the A3 line, which means in this case the comment has « moved down » from the third line in the original unidiff to the fifth line in the new unidiff.
 
 _If the inline comment is still relevant w.r.t to the last update, it should follow the diff line to which it is attached._
 

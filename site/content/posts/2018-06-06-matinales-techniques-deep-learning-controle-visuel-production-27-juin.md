@@ -1,5 +1,5 @@
 ---
-title: "[Matinales techniques] Le deep learning au service du contrôle visuel en production : découverte des cas d'usages et démonstration le 27 juin"
+title: "[Matinales techniques] Le deep learning au service du contrôle visuel en production : découverte des cas d'usages et démonstration le 27 juin"
 author: Tiphaine
 date: 2018-06-06T10:26:26+00:00
 image: /img/2018/06/CNN.jpg
@@ -17,11 +17,11 @@ tags:
 
 ## Notre expertise historique  dans les problématiques de vision assistée par ordinateur, couplée aux nouvelles techniques de deep learning représente un avantage dans le contrôle, à différents niveaux, des étapes-clés de la chaîne de production.
 
-Vous êtes confrontés à des défauts récurrents dans votre chaîne de production ? Vous souhaitez trier des produits selon certains critères visuels ? (aliments, pièces manufacturées, composants, ...).
+Vous êtes confrontés à des défauts récurrents dans votre chaîne de production ? Vous souhaitez trier des produits selon certains critères visuels ? (aliments, pièces manufacturées, composants, ...).
 
 La mise en place de contrôles visuels par ordinateur permet d'éviter les erreurs, souvent humaines, ou tout simplement de remplacer des contrôles déjà présents mais souvent manuels et fastidieux.
 
-Les avantages de cette méthode sont nombreux :
+Les avantages de cette méthode sont nombreux :
 
 - Le coût récurrent est quasi nul,
 
@@ -35,7 +35,7 @@ Les avantages de cette méthode sont nombreux :
 
 Sogilis vous propose un atelier mêlant présentation des concepts, démonstrations et cas d’usages illustrés pour que vous puissiez saisir les avantages du contrôle visuel adapté à votre métier.
 
-Rejoignez-nous !
+Rejoignez-nous !
 
 **Cible :** CTO, lead tech, responsables de production et managers techniques de PME industrielles
 

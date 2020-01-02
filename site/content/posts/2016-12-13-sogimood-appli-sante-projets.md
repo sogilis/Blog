@@ -1,5 +1,5 @@
 ---
-title: "SogiMood : l’appli qui surveille la santé de l'ensemble de nos projets"
+title: "SogiMood : l’appli qui surveille la santé de l'ensemble de nos projets"
 author: Marien Fressinaud
 date: 2016-12-13T10:15:45+00:00
 image: /img/2016/05/Sogilis-Christophe-Levet-Photographe-8218.jpg
@@ -17,7 +17,7 @@ Nous publions aujourd’hui, sous licence libre, une application utilisée en in
 
 Au sein de Sogilis, nous surveillons notre activité à travers un point hebdomadaire qui nous permet de nous assurer que les projets sur lesquels nous travaillons s'enchaînent correctement et se portent bien. Lorsque j'ai pris en charge la gestion de ce point à la fin du mois de juillet, j'ai ressenti le besoin d’un outil permettant de synthétiser son contenu tout en offrant une alternative visuelle à nos comptes-rendus, écrits jusqu’à présent.
 
-Je voulais être capable de voir d'un coup d'œil sur quelle période s'étalait chaque projet, indiquer quelques informations utiles (qui bosse dessus ? en quoi consiste le projet ? quel est le prochain jalon important ?), ainsi que surveiller la santé du projet.
+Je voulais être capable de voir d'un coup d'œil sur quelle période s'étalait chaque projet, indiquer quelques informations utiles (qui bosse dessus ? en quoi consiste le projet ? quel est le prochain jalon important ?), ainsi que surveiller la santé du projet.
 
 ## SogiMood, pour mieux piloter les projets
 
@@ -43,7 +43,7 @@ La santé se mesure ainsi sur les trois objectifs que nous devons atteindre en t
 
 ## Le principe de sollicitation d'avis en action : le choix de la licence
 
-Dernièrement, Christophe nous a présenté le principe de sollicitation d'avis qu'il souhaitait appliquer à Sogilis. Ce principe part du constat que le consensus est impossible à atteindre au sein d'une société et pose le principe du « c'est celui qui fait qui décide »… à condition de prendre l'avis des collègues spécialistes dans le domaine concerné et celui de ceux que la décision concerne.
+Dernièrement, Christophe nous a présenté le principe de sollicitation d'avis qu'il souhaitait appliquer à Sogilis. Ce principe part du constat que le consensus est impossible à atteindre au sein d'une société et pose le principe du « c'est celui qui fait qui décide »… à condition de prendre l'avis des collègues spécialistes dans le domaine concerné et celui de ceux que la décision concerne.
 
 Comme SogiMood est avant tout un projet personnel développé pour m’amuser (bien qu'utilisé au sein de Sogilis), j'étais parti du principe que le choix de la licence n'intéresserait pas forcément les foules. Développant moi-même [quelques logiciels libres](https://github.com/marienfressinaud) sur mon temps libre, je partais sur une licence MIT… lorsqu'on me suggéra une licence Apache vis-à-vis des brevets… puis une licence type GPL car non-permissive. D'un choix unilatéral, on est donc passé à une sollicitation d'avis. J'ai donc pris le temps d'étudier le pour et le contre et le choix s'est révélé plus compliqué que prévu. Les licences considérées étaient les suivantes :
 
@@ -51,7 +51,7 @@ Comme SogiMood est avant tout un projet personnel développé pour m’amuser (b
 * Apache (licence permissive) : similaire à la MIT dans les faits, elle est toutefois conseillée par la FSF pour sa clause sur les brevets ;
 * AGPL (licence non-permissive) : plus contraignante que les deux précédentes car elle oblige à redistribuer les modifications faites au logiciel sous licence libre, y compris si l’accès au logiciel est fait via un serveur (ce qui fait sa différence avec la licence GPL).
 
-Je suis toutefois resté sur le choix de la MIT qui est, selon moi, parfaitement adaptée à une lib ou une petite application qui n'a pas vocation à grossir. Il y a peu de chances que nous soyons confronté à des problèmes de brevet et je trouve que l'AGPL est moins « accueillante » vis-à-vis des contributions. J'utiliserais par contre volontiers cette dernière dans un contexte de société éditrice d'un logiciel open source. En revanche, SogiMood est un outil simple utilisé en interne et qui n'a pas la vocation de nous nourrir. C’est pourquoi j’ai préféré le libérer autant que possible !
+Je suis toutefois resté sur le choix de la MIT qui est, selon moi, parfaitement adaptée à une lib ou une petite application qui n'a pas vocation à grossir. Il y a peu de chances que nous soyons confronté à des problèmes de brevet et je trouve que l'AGPL est moins « accueillante » vis-à-vis des contributions. J'utiliserais par contre volontiers cette dernière dans un contexte de société éditrice d'un logiciel open source. En revanche, SogiMood est un outil simple utilisé en interne et qui n'a pas la vocation de nous nourrir. C’est pourquoi j’ai préféré le libérer autant que possible !
 
 ## Les évolutions prévues
 

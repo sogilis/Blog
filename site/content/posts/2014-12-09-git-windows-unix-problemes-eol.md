@@ -22,7 +22,7 @@ Après avoir testé et retesté les scripts de déploiement de `Vagrant` sur nos
   
 Ce dernier, appelle un script shell, permettant de déployer la base de données MySQL associée au projet.
 
-Et là, horreur, les scripts shells n'arrivent pas à se lancer. L'erreur est même bizarre puisque :
+Et là, horreur, les scripts shells n'arrivent pas à se lancer. L'erreur est même bizarre puisque :
 
 {{< highlight bash >}}
 ./scripts/mon_script.sh could not be found
@@ -30,7 +30,7 @@ Et là, horreur, les scripts shells n'arrivent pas à se lancer. L'erreur est m�
 
 Je fais donc un `vagrant ssh` pour me connecter à la machine.
 
-Et un simple `vim scripts/mon_script.sh` me donne un code :
+Et un simple `vim scripts/mon_script.sh` me donne un code :
 
 {{< highlight bash >}}
 # /bin/sh^M
@@ -38,7 +38,7 @@ Et un simple `vim scripts/mon_script.sh` me donne un code :
 echo "blabla"^M
 {{< /highlight >}}
 
-Bref, le constat est clair : il y a des fins de lignes qui ne sont pas compatibles avec Unix et donc il produit une erreur.
+Bref, le constat est clair : il y a des fins de lignes qui ne sont pas compatibles avec Unix et donc il produit une erreur.
 
 ## Rappel sur les différences de fin de lignes entre Unix et Windows
 
@@ -52,7 +52,7 @@ En ASCII, c'est le caractère 13 suivi du caractère 10. En C et autres, il sera
 
 Le CRLF est surtout utilisé sous Windows.
 
-**Un peu d'histoire** : Le saut de ligne était à l'origine une commande d'imprimante utilisée conjointement avec le retour chariot (CR). Après l'exécution d'un CRLF, la tête d'impression revient complètement à gauche et saute une ligne, prête à commencer une nouvelle ligne de texte.
+**Un peu d'histoire** : Le saut de ligne était à l'origine une commande d'imprimante utilisée conjointement avec le retour chariot (CR). Après l'exécution d'un CRLF, la tête d'impression revient complètement à gauche et saute une ligne, prête à commencer une nouvelle ligne de texte.
 
 ### Line Feed
 
@@ -66,14 +66,14 @@ Le LF est utilisé sur les systèmes Unix/Linux et est représenté par `n`
 
 **Remarque :** un simple “Find and Replace” ne fonctionnera pas sur le long terme, car à chaque opération modifiant la copie locale, Git va remettre des CRLF.
 
-Pour cela on a plusieurs possibilités :
+Pour cela on a plusieurs possibilités :
 
-* utiliser la config `core.autocrlf` de Git avec éventuellement une option `--global` pour l'avoir sur tous ses repos. Mais la config n'est pas partagée et un nouvel utilisateur devra la spécifier au moment de démarrer sur le projet : pas idéal.
+* utiliser la config `core.autocrlf` de Git avec éventuellement une option `--global` pour l'avoir sur tous ses repos. Mais la config n'est pas partagée et un nouvel utilisateur devra la spécifier au moment de démarrer sur le projet : pas idéal.
 * utiliser les attributes de Git, c'est-à-dire créer un fichier `.gitattributes` à la racine du départ et y ajouter la ligne suivante `* text=auto eol=lf`. Ajouter le fichier .gitattributes en le committant ou en l'ajoutant à la staging area.
 
 ### Réinitialiser le repo
 
-Pour cela, il suffit de :
+Pour cela, il suffit de :
 
 {{< highlight bash >}}
 git add . -u

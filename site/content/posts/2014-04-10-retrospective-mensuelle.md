@@ -12,7 +12,7 @@ tags:
 
 Comme nous l’avons évoqué précédemment sur le blog, nous organisons une rétrospective générale chaque mois chez Sogilis dans un but d’amélioration continue. Elle permet de prendre du recul sur le fonctionnement passé de l’entreprise en interne et de faire évoluer l'équipe dans le même sens.
 
-En amont de la rétro, **nous écrivons chacun sur un Post-it les points positifs et ceux à améliorer** et les mettons dans une boite à idées. Les Post-it sont ensuite triés et affichés dans la salle de réunion : les points positifs sont placés d’un côté, les points négatifs de l’autre. Ceux qui traitent du même sujet sont également rassemblés.
+En amont de la rétro, **nous écrivons chacun sur un Post-it les points positifs et ceux à améliorer** et les mettons dans une boite à idées. Les Post-it sont ensuite triés et affichés dans la salle de réunion : les points positifs sont placés d’un côté, les points négatifs de l’autre. Ceux qui traitent du même sujet sont également rassemblés.
 
 ![](/img/tumblr/tumblr_inline_n3cvtoCAHW1szbtlw.jpg)
 
@@ -26,9 +26,9 @@ Les règles ont étés rappelées par le facilitateur lors de la dernière rétr
 
 ![](/img/tumblr/tumblr_inline_n3b23pOjeJ1szbtlw.jpg)
 
-Les **5 Why** (5 Pourquoi) permettent de trouver la cause principale du problème rencontré. Avec 5 questions commençant par « pourquoi », on essaie de trouver les raisons les plus importantes ayant provoqué le problème pour aboutir à la cause principale.
+Les **5 Why** (5 Pourquoi) permettent de trouver la cause principale du problème rencontré. Avec 5 questions commençant par « pourquoi », on essaie de trouver les raisons les plus importantes ayant provoqué le problème pour aboutir à la cause principale.
 
-Voici quelques-uns des **risques qui peuvent découler du non respect des règles** :
+Voici quelques-uns des **risques qui peuvent découler du non respect des règles** :
 
 - Ne pas passer revue l’ensemble des éléments évoqués
 - Se détacher des faits et mettre en cause les personnes

@@ -30,7 +30,7 @@ _Le Raspberry Pi relié à un arduino permettant la réception des données capt
 
 ## La librairie NRF24
 
-Pour communiquer entre les différents modules NRF24 nous utilisons la librairie suivante : [http://tmrh20.github.io/RF24/][1]
+Pour communiquer entre les différents modules NRF24 nous utilisons la librairie suivante : [http://tmrh20.github.io/RF24/][1]
 
 Cette librairie permet d’organiser le réseau de capteurs. Ainsi, certains capteurs peuvent servir de relais pour la communication jusqu’au Raspberry Pi. La librairie permet de faire aussi bien de la remontée de données depuis les capteurs que de la descente d’informations depuis le raspberry.
 
@@ -48,10 +48,10 @@ Afin de stocker un grand nombre de données et de permettre à notre architectur
 
 Cela fait plusieurs semaines que les données des capteurs sont récoltées et stockées dans une base de donnée Postgres fournie par l’architecture mise en place sur [SquareScale](http://www.squarescale.com).
 
-Les points à retenir :
+Les points à retenir :
 
-- le coût d’un ensemble “capteurs - arduino - NRF24” reste en dessous des 10€, ce qui en fait une solution à très bas coût qui reste pour autant robuste et précise ;
-- l’utilisation du module NRF24 facilite grandement la communication sans fil entre les différents nœuds ;
+- le coût d’un ensemble “capteurs - arduino - NRF24” reste en dessous des 10€, ce qui en fait une solution à très bas coût qui reste pour autant robuste et précise ;
+- l’utilisation du module NRF24 facilite grandement la communication sans fil entre les différents nœuds ;
 - SquareScale nous a permis de déployer très facilement la partie qui récolte les données envoyées par le Raspberry Pi.
 
 La modularité d’un tel système en fait une solution très adaptée à l’instrumentation de zones plus ou moins grande. Il suffit en effet de rajouter un capteur dans la pièce pour que son identifiant unique soit ajouté en base de données et que les données qu’ils remontent soient consultables en ligne sans avoir à modifier la configuration du projet. La scalabilité d’un tel système le rend facile à mettre en place et nous souhaiterions à l’avenir mettre à l’épreuve cette facette du projet.
