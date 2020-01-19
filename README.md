@@ -15,6 +15,8 @@ The backlog is available in [Github project](https://github.com/sogilis/Blog/pro
 
 # How to write a new article?
 
+***Do not hesitate to ask help.*** . We answer with enjoy :-) !
+
 ## Online
 
 1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in with your Google account.
@@ -24,37 +26,98 @@ The backlog is available in [Github project](https://github.com/sogilis/Blog/pro
 
 ## Offline
 
-These instructions will get you a copy of the project up and running on your local machine.
+These instructions will get you a copy of the project up and running on your
+local machine.
+
 So you will be able to write a new article offline.
 
 ### Prerequisites
 
 You will need to install the following software:
 
-* [Docker](https://docs.docker.com/install/)
-* [Git](https://git-scm.com)
-* `make`
+* To download and push changes: [Git](https://git-scm.com)
+* To start the blog and see your changes on live, at each save:
+    * Without the Docker method:
+        1. Node:
+            * [for Linux](https://nodejs.org/en/download/package-manager/)
+            * [for Windows / Mac](https://nodejs.org/en/download/)
+        2. Yarn: [instructions](https://yarnpkg.com/lang/en/docs/install/)
+        * Note: npm is not needed in dev environment.
+            It's advise to not use it.
+            But should work, if you don't want use yarn.
+    * With the Docker method see [instructions](https://docs.docker.com/install/)
+        * Disclaimer:
+            * On Windows or Mac, installation of Docker could be
+                complicated.
+            * Use more disc space
+            * Takes more resources
+            * Build the website is incredibly more long especially if you want
+                simply update `node_modules` when package.json is changed.
+                With the method without docker, the upgrade with simply
+                `yarn install` is very quick.
+        * But if you won't install node and yarn in your environment because you
+            hate this web tools, and if you have already Docker, it could be a
+            solution interesting.
 
-### Installation
-
-1. Get sources:
+### Download blog
 ```bash
-git clone --recursive git@github.com:sogilis/Blog.git
+git clone git@github.com:sogilis/Blog.git
 cd Blog
-```
-
-2. Create the docker image.
-```bash
-make build
 ```
 
 ### Start the blog
 
+With the both methods, each time you save a change on an article, the local
+website is updated (live reload).
+
+#### Without Docker
+
+1. Installation
+    * Not needed at each start, but at each **update** of package.json
+    * Run:
+        ```bash
+        yarn install
+        ```
+    * Each time you run `git pull` to update the website, if you don't
+        know if this files are changed, you could run this command.
+        For an upgrade, this command is very quick.
+
+2. Start the blog and the watcher:
+
 ```bash
-make start
+yarn start
 ```
 
 Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
+
+#### With Docker
+
+1. Do not forget to start the Docker service (see documentation online)
+
+2. Create the docker image
+    * Not needed at each start, but at each **update** of
+        1. Dockerfile
+        2. package.json:
+        * Each time you run `git pull` to update the website, if you don't
+            know if this files are changed, you could run this command.
+            This command is always very long, even for an upgrade.
+    * Run:
+        ```bash
+        make build
+        ```
+    * Note: with Docker, **contrary to the old doc said** no need
+        to trigger ~~`yarn install`~~.
+
+3. Start the blog and the watcher:
+```bash
+make start
+```
+Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
+
+4. Eventually, see logs (especially if there is a problem):
+```bash
+make start
+```
 
 ### Write a new article
 
@@ -77,7 +140,7 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 
 1. Create a new Pull Request to get feedbacks from other team members.
 
-   :information_source: Netlify provides a preview environment. 
+   :information_source: Netlify provides a preview environment.
 
    So when you open your Pull Request Netlify builds the new website and you can check the result of your Pull Request in [Netlifly](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys). See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
 
@@ -86,10 +149,37 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 
 6. It's done, the deployment is automated.
 
-### How to stop blog locally?
+# Upgrade the CMS (only for Developers)
 
-```Bash
-make stop
-make remove
+Run the following command:
+```sh
+bash ./scripts/update-cms.sh
 ```
+After the installation, you could remove the created folder /tmp/one-click-hugo-cms/
 
+## Note about this template
+
+Note that this template seems not te be very updated.
+
+Updated mainly by renovate-bot .
+
+https://github.com/netlify-templates/one-click-hugo-cms
+is based on
+https://github.com/netlify-templates/victor-hugo
+
+Actually, this templates seems to be a little bit abandoned
+* All issues not correctly answered
+* PR no answered
+* Dependencies not upgraded
+
+# TODO
+
+Remove some non useful declarations on package.json .
+It seems there are several no useful declarations.
+
+# Credits
+
+* This blog uses https://github.com/netlify-templates/one-click-hugo-cms
+    (see also https://www.netlifycms.org/docs/start-with-a-template/ Hugo Site Starter)
+
+* Articles are created by Sogilis collaborators

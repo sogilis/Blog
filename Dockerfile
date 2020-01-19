@@ -1,7 +1,8 @@
-FROM node:10.6-alpine
+# Actually (01/25/2020), the node version used on netlify is the following.
+# (just for information)
+FROM node:10-alpine
 
-# Warning: should match netlify.oml
-ENV HUGO_VERSION='0.59.1'
+ENV HUGO_VERSION='0.63.1'
 ENV HUGO_NAME="hugo_extended_${HUGO_VERSION}_Linux-64bit"
 ENV HUGO_BASE_URL="https://github.com/gohugoio/hugo/releases/download"
 ENV HUGO_URL="${HUGO_BASE_URL}/v${HUGO_VERSION}/${HUGO_NAME}.tar.gz"
