@@ -29,30 +29,23 @@ So you will be able to write a new article offline.
 
 ### Prerequisites
 
-You will need to install the following software:
+* Should work with `npm`, but no tested. It seems that in package.json there is
+    a feature natively only supported by yarn.
 
-* [Docker](https://docs.docker.com/install/)
-* [Git](https://git-scm.com)
-* `make`
+`yarn install`
+
 
 ### Installation
 
 1. Get sources:
 ```bash
-git clone --recursive git@github.com:sogilis/Blog.git
+git clone git@github.com:sogilis/Blog.git
 cd Blog
-```
-
-2. Create the docker image.
-```bash
-make build
 ```
 
 ### Start the blog
 
-```bash
-make start
-```
+`yarn start`
 
 Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 
@@ -77,7 +70,7 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 
 1. Create a new Pull Request to get feedbacks from other team members.
 
-   :information_source: Netlify provides a preview environment. 
+   :information_source: Netlify provides a preview environment.
 
    So when you open your Pull Request Netlify builds the new website and you can check the result of your Pull Request in [Netlifly](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys). See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
 
@@ -86,10 +79,76 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 
 6. It's done, the deployment is automated.
 
-### How to stop blog locally?
+# Upgrade
 
-```Bash
-make stop
-make remove
+
+**Assume you are in the working directory**
+You could copy and past following script in zsh.
+```sh
+
+set -k
+# Above: allow comments in zsh interactive shell
+
+set -e
+
+# we can check for unstaged changes with:
+git diff --exit-code 1> /dev/null
+
+# not committed changes with:
+git diff --cached --exit-code 1> /dev/null
+
+git clone https://github.com/netlify-templates/one-click-hugo-cms /tmp/one-click-hugo-cms
+
+# I) Do not upgrade all from the sample
+# II) Do not upgrade .git folder
+# III)Do not delete folders created by us
+rsync -rv --delete --exclude={\
+".github/",\
+"bin/",\
+"site/",\
+".gitignore",\
+".nvmrc",\
+"CODE_OF_CONDUCT.md",\
+"CONTRIBUTING.md",\
+"LICENSE",\
+"README.md",\
+"src/fonts/",\
+\
+".git/",\
+\
+"node_modules/",\
+"dist/",\
+"scripts/"\
+} \
+/tmp/one-click-hugo-cms/ "$(pwd)"
+
+yarn install
 ```
+
+Note that this template seems not te be very updated.
+
+Updated mainly by renovate-bot .
+
+
+https://github.com/netlify-templates/one-click-hugo-cms
+is based on
+https://github.com/netlify-templates/victor-hugo
+
+Actually, this templates seems to be a little bit abandoned
+* All issues not correctly answered
+* PR no answered
+* Dependencies not upgraded
+
+# TODO
+
+Remove some non useful declarations on package.json .
+It seems there are several no useful declarations.
+
+# Credits
+
+* This blog uses https://github.com/netlify-templates/one-click-hugo-cms
+    (see also https://www.netlifycms.org/docs/start-with-a-template/ Hugo Site Starter)
+
+* Articles are created by Sogilis collaborators
+
 
