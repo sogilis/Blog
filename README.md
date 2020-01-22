@@ -2,6 +2,7 @@
 
 # Sogilis Blog
 
+test
 Welcome to the open source Blog of Sogilis !
 It is alive with following urls:
 
