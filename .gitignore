@@ -1,17 +1,23 @@
-node_modules/
-dist/
-export/
+# !!!!!!!!!!!!!!!!!! Warning !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# .dockerignore is a simlink of .gitiignore
+# THEREFORE:
+# THE FOLLOWING SYNTAX SHOULD BE COMPATIBLE BETWEEN .DOCKERIGNORE AND .GITIIGNORE
+# See https://zzz.buzz/2018/05/23/differences-of-rules-between-gitignore-and-dockerignore/
+
+/node_modules/
+/dist/
+/export/
 /npm-debug.log
-yarn-error.log
+/yarn-error.log
 
 # You can download manually Hugo binaries here
-bin/
+/bin/
 
 # Generated resources (like css from scss)
-site/resources/_gen
+/site/resources/_gen
 
 # Idea IntelliJ
-.idea/
+/.idea/
 
 # Only yarn is advise.
-package-lock.json
+/package-lock.json

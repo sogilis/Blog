@@ -49,7 +49,10 @@ You will need to install the following software:
         * Disclaimer:
             * On Windows or Mac, installation of Docker could be
                 complicated.
-            * Use more disc space
+            * Use more disc space. It's not a fake affirmation.
+                I've taken fill my free 50Go of disk space simply when I've tested
+                several times to adapt the configuration of the current ./Dockerfile
+                (you could run `docker system prune`).
             * Takes more resources
             * Build the website is incredibly more long especially if you want
                 simply update `node_modules` when package.json is changed.
@@ -101,6 +104,8 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
         * Each time you run `git pull` to update the website, if you don't
             know if this files are changed, you could run this command.
             This command is always very long, even for an upgrade.
+        * Don't forget to run `docker system prune` if you don't want
+            fill your disk.
     * Run:
         ```bash
         make build
