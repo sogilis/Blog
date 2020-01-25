@@ -41,6 +41,9 @@ You will need to install the following software:
         1. Node:
             * [for Linux](https://nodejs.org/en/download/package-manager/)
             * [for Windows / Mac](https://nodejs.org/en/download/)
+            * Note: actually (01/26/2020), you
+                must have node >= 12 (some versions of node 10.x seems to work,
+                but not all)
         2. Yarn: [instructions](https://yarnpkg.com/lang/en/docs/install/)
         * Note: npm is not needed in dev environment.
             It's advise to not use it.
@@ -49,7 +52,10 @@ You will need to install the following software:
         * Disclaimer:
             * On Windows or Mac, installation of Docker could be
                 complicated.
-            * Use more disc space
+            * Use more disc space. It's not a fake affirmation.
+                I've taken fill my free 50Go of disk space simply when I've tested
+                several times to adapt the configuration of the current ./Dockerfile
+                (you could run `docker system prune`).
             * Takes more resources
             * Build the website is incredibly more long especially if you want
                 simply update `node_modules` when package.json is changed.
@@ -58,6 +64,13 @@ You will need to install the following software:
         * But if you won't install node and yarn in your environment because you
             hate this web tools, and if you have already Docker, it could be a
             solution interesting.
+        * During the build, some files are created
+            ( ./site/data/webpack.json , ./site/resources/_gen/ ).
+            There owner are root. Could cause some problems when you use
+            commands as not root user (rm, git, yarn).
+            You must delete this file before with `sudo`. It's not cool.
+            * Note: with the add of a dockerignore file, this issue should be
+                solved.
 
 ### Download blog
 ```bash
@@ -101,6 +114,8 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
         * Each time you run `git pull` to update the website, if you don't
             know if this files are changed, you could run this command.
             This command is always very long, even for an upgrade.
+        * Don't forget to run `docker system prune` if you don't want
+            fill your disk.
     * Run:
         ```bash
         make build
@@ -116,8 +131,20 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 
 4. Eventually, see logs (especially if there is a problem):
 ```bash
-make start
+make logs
 ```
+
+5. Stop the container with:
+```
+make stop
+```
+
+6. Eventually, free disc space with
+    (docker could easy eat several tens of Go of disc space)
+```
+docker system prune
+```
+
 
 ### Write a new article
 
