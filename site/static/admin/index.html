@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Content Manager</title>
+
+  <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <script src="./netlify-cms.js"></script>
+  <script>
+      // JS Goes here - ES6 supported
+      if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+              if (!user) {
+                  window.netlifyIdentity.on("login", () => {
+                      document.location.href = "/admin/";
+                  });
+              }
+          });
+      }
+  </script>
+</body>
+</html>

@@ -101,7 +101,7 @@ website is updated (live reload).
 yarn start
 ```
 
-Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
+Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
 
 #### With Docker
 
@@ -127,7 +127,7 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 ```bash
 make start
 ```
-Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
+Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
 
 4. Eventually, see logs (especially if there is a problem):
 ```bash
@@ -159,7 +159,7 @@ docker system prune
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
 
-3. See the result at [http://localhost:3000](http://localhost:3000)
+3. See the result at [http://localhost:1313](http://localhost:1313)
 
 4. Finalize your article, and see the output in real time.
 
@@ -180,33 +180,9 @@ docker system prune
 
 Run the following command:
 ```sh
-bash ./scripts/update-cms.sh
+$ yarn upgrade --latest
 ```
-After the installation, you could remove the created folder /tmp/one-click-hugo-cms/
-
-## Note about this template
-
-Note that this template seems not te be very updated.
-
-Updated mainly by renovate-bot .
-
-https://github.com/netlify-templates/one-click-hugo-cms
-is based on
-https://github.com/netlify-templates/victor-hugo
-
-Actually, this templates seems to be a little bit abandoned
-* All issues not correctly answered
-* PR no answered
-* Dependencies not upgraded
-
-# TODO
-
-Remove some non useful declarations on package.json .
-It seems there are several no useful declarations.
 
 # Credits
-
-* This blog uses https://github.com/netlify-templates/one-click-hugo-cms
-    (see also https://www.netlifycms.org/docs/start-with-a-template/ Hugo Site Starter)
 
 * Articles are created by Sogilis collaborators
