@@ -101,7 +101,7 @@ website is updated (live reload).
 yarn start
 ```
 
-Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
+Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
 
 #### With Docker
 
@@ -127,7 +127,7 @@ Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
 ```bash
 make start
 ```
-Wait a few seconds then, go to [http://localhost:3000](http://localhost:3000).
+Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
 
 4. Eventually, see logs (especially if there is a problem):
 ```bash
@@ -159,7 +159,7 @@ docker system prune
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
 
-3. See the result at [http://localhost:3000](http://localhost:3000)
+3. See the result at [http://localhost:1313](http://localhost:1313)
 
 4. Finalize your article, and see the output in real time.
 

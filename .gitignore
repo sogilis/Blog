@@ -24,3 +24,5 @@
 
 # Only yarn is advise.
 /package-lock.json
+
+site/static/admin/netlify-cms.js
