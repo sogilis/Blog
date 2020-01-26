@@ -13,8 +13,8 @@ COPY . ./
 
 RUN yarn install
 
-EXPOSE 3000
+EXPOSE 1313
 
 # We should add `--host 0.0.0.0` cause of the webpack sever
 # See https://github.com/webpack/webpack-dev-server/issues/547
-CMD yarn run-p "start:webpack --host 0.0.0.0" "start:hugo"
+CMD yarn start --bind 0.0.0.0
