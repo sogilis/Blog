@@ -73,15 +73,13 @@ git diff --cached --exit-code 1> /dev/null
 
 git clone https://github.com/netlify-templates/one-click-hugo-cms "${DIR_TMP_CLONE_GIT}"
 
-# I) do not upgrade all from the sample.
-#   Lot of files from sample are not needed, or we have changed their content.
-# II) site folder (warning, do not erase our work!)
-# III) do not upgrade .git folder
-# IV) do not delete folders created by us
+# i) do not upgrade all from the sample
+# ii) do not upgrade .git folder
+# iii)do not delete folders created by us
 rsync -rv --delete --exclude={\
-".dependabot/",\
 ".github/",\
 "bin/",\
+"site/",\
 ".gitignore",\
 ".nvmrc",\
 "CODE_OF_CONDUCT.md",\
@@ -90,22 +88,13 @@ rsync -rv --delete --exclude={\
 "README.md",\
 "config.toml",\
 "netlify.toml",\
-"renovate.json",\
 "src/fonts/",\
-\
-"site/content/",\
-"site/data/",\
-"site/layouts/",\
-"site/static/img/",\
-"site/themes/",\
-"site/config.toml",\
 \
 ".git/",\
 \
 "node_modules/",\
 "dist/",\
 "scripts/",\
-".dockerignore",\
 ".npmrc",\
 "Dockerfile",\
 "Makefile",\
