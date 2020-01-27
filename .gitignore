@@ -12,6 +12,3 @@ site/resources/_gen
 
 # Idea IntelliJ
 .idea/
-
-# Only yarn is advise.
-package-lock.json

@@ -1,3 +1,16 @@
 {
-  "extends": ["github>netlify/renovate-config:netlify-cms-starter"]
+  "extends": [
+    "config:base"
+  ],
+  "rangeStrategy": "replace",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": "schedule:weekly"
+  },
+  "packageRules": [
+    {
+      "packageNames": ["netlify-cms"],
+      "rangeStrategy": "bump"
+    }
+  ]
 }

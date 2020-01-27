@@ -1,0 +1,6 @@
+[submodule "blog_sogilis/themes/ananke"]
+	path = blog_sogilis/themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/hamburg"]
+	path = themes/hamburg
+	url = https://github.com/hauke96/hugo-theme-hamburg.git

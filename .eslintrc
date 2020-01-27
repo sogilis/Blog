@@ -3,10 +3,25 @@ env:
 
 parser: babel-eslint
 
-parserOptions:
-  ecmaVersion: 6
-
 plugins: [ "import" ]
+
+# enable ECMAScript features
+ecmaFeatures:
+  arrowFunctions: true
+  binaryLiterals: true
+  blockBindings: true
+  classes: true
+  defaultParams: true
+  destructuring: true
+  forOf: true
+  generators: true
+  jsx: true
+  modules: true
+  objectLiteralShorthandMethods: true
+  objectLiteralShorthandProperties: true
+  octalLiterals: true
+  spread: true
+  templateStrings: true
 
 rules:
   # Possible Errors
