@@ -116,7 +116,7 @@ Combiné à des assertions custom [AssertJ][4], on arrive, avec cette technique,
 ## Notes
 
 * Ce principe est très largement inspiré par un [article de Rafał Borowiec][6].
-* Le projet dont sont issus les extraits de code est disponible [sur Github][7].
+* Le projet dont sont issus les extraits les extraits de code est disponible [sur Github][7].
 
 [1]: https://martinfowler.com/bliki/ObjectMother.html
 [2]: https://en.wikipedia.org/wiki/Builder_pattern
