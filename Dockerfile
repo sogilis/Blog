@@ -1,20 +1,38 @@
-FROM node:12-alpine
+# Actually (01/25/2020), the node version used on netlify is the following.
+# (just for information)
+FROM node:10-alpine
+
+ENV HUGO_VERSION='0.63.1'
+ENV HUGO_NAME="hugo_extended_${HUGO_VERSION}_Linux-64bit"
+ENV HUGO_BASE_URL="https://github.com/gohugoio/hugo/releases/download"
+ENV HUGO_URL="${HUGO_BASE_URL}/v${HUGO_VERSION}/${HUGO_NAME}.tar.gz"
 
 WORKDIR /blog
 
 # libxxx are required by extended edition of Hugo
 RUN apk add --no-cache \
+    asciidoctor \
+    wget \
     libc6-compat \
     libstdc++
 
-# Some file are ignored
-# See ./.dockerignore
-COPY . ./
+RUN mkdir ./bin/ && \
+    wget -qO- "${HUGO_URL}" | tar xvz -C ./bin/ && \
+    mv ./bin/hugo bin/hugo.linux && \
+    chmod a+x ./bin/hugo.linux && \
+    ln /blog/bin/hugo.linux /usr/local/bin/hugo
+
+COPY site site
+COPY src src
+COPY .*rc ./
+COPY netlify.toml netlify.toml
+COPY renovate.json renovate.json
+COPY package*.json  ./
+COPY gulpfile.babel.js gulpfile.babel.js
+COPY webpack.conf.js webpack.conf.js
+COPY yarn.lock yarn.lock
 
 RUN yarn install
 
 EXPOSE 3000
-
-# We should add `--host 0.0.0.0` cause of the webpack sever
-# See https://github.com/webpack/webpack-dev-server/issues/547
-CMD yarn run-p "start:webpack --host 0.0.0.0" "start:hugo"
+CMD yarn start
