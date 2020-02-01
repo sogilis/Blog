@@ -184,7 +184,7 @@ You can see that the `ExecStart` command is running `/usr/local/bin/docker-start
 name="$1"
 shift
 
-if ! /usr/bin/docker inspect --format="Reusing {{.ID}}" "$name-data" 2>/dev/null; then
+if ! /usr/bin/docker inspect --format="Reusing {{.ID}}" "$name-data" 2>/dev/null; then
   docker run --name "$name-data" --volumes-from "$name-data" --entrypoint /bin/true "$@"
 fi
 

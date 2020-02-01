@@ -17,20 +17,20 @@ tags:
   - riak
 
 ---
-Dans un [billet précédent](https://blog.sogilis.com/posts/2014-04-01-mouvement-nosql/), nous avons établi une brève description des systèmes de stockage NoSQL (“_Not Only SQL_”) en partant des cas d'utilisation qu'ils visent à résoudre. Après avoir dégagé des points de comparaison entre ces technologies et les bases de données relationnelles, plus traditionnelles, nous en avons conclu que les moteurs de stockage NoSQL ne sont pas destinés aux mêmes usages que les bases relationnelles classiques. Par conséquent, ces deux technologies peuvent très bien cohabiter au sein d'un même logiciel sans interférer entre elles ; l'idée étant de toujours utiliser un outil adapté au problème qu'on souhaite résoudre.
+Dans un [billet précédent](https://blog.sogilis.com/posts/2014-04-01-mouvement-nosql/), nous avons établi une brève description des systèmes de stockage NoSQL (“_Not Only SQL_”) en partant des cas d'utilisation qu'ils visent à résoudre. Après avoir dégagé des points de comparaison entre ces technologies et les bases de données relationnelles, plus traditionnelles, nous en avons conclu que les moteurs de stockage NoSQL ne sont pas destinés aux mêmes usages que les bases relationnelles classiques. Par conséquent, ces deux technologies peuvent très bien cohabiter au sein d'un même logiciel sans interférer entre elles ; l'idée étant de toujours utiliser un outil adapté au problème qu'on souhaite résoudre.
 
 
-La famille des systèmes NoSQL compte des systèmes très hétérogènes qui répondent chacun à des besoins très spécifiques. De façon générale, on arrive à les classer en quatre grands ensembles : les bases **clé-valeur**, **les bases documents**, **les bases orientées colonnes** et **les bases de type graphe**.
+La famille des systèmes NoSQL compte des systèmes très hétérogènes qui répondent chacun à des besoins très spécifiques. De façon générale, on arrive à les classer en quatre grands ensembles : les bases **clé-valeur**, **les bases documents**, **les bases orientées colonnes** et **les bases de type graphe**.
 
 ## Les bases de données clé-valeur
 
-Une base de données clé-valeur est assimilée à une collection (un dictionnaire) de paires (clé, valeur) où la clé et la valeur sont des chaînes de caractères quelconques. Le système de stockage ne connait pas la structure de l'information qu'il manipule (s'agit-il d'une date ? d'un numéro de téléphone ? d'un article de blog ?) et l'information ne peut être retrouvée que par l'intermédiaire de la clé qui lui est associée.
+Une base de données clé-valeur est assimilée à une collection (un dictionnaire) de paires (clé, valeur) où la clé et la valeur sont des chaînes de caractères quelconques. Le système de stockage ne connait pas la structure de l'information qu'il manipule (s'agit-il d'une date ? d'un numéro de téléphone ? d'un article de blog ?) et l'information ne peut être retrouvée que par l'intermédiaire de la clé qui lui est associée.
 
 Puisque les requêtes se font uniquement sur les clés, les bases clé-valeur sont très peu expressives en termes de langage d'interrogation de la base. De plus, le système n'ayant pas d'indice sur la structure de l'information qu'il stocke, tous les traitements (extraction du contenu, application de filtres…) doivent être effectués en dehors du système par l'utilisateur. En particulier, il est très difficile pour de tels systèmes de ne mettre à jour (ou de ne lire) qu'une seule partie de la valeur associée à une clé. Il est en effet plus aisé de lire et de réécrire complètement la donnée.
 
-De par leur simplicité de fonctionnement, **les bases de données clé-valeur sont très facilement scalables** : des systèmes comme Redis ou Riak sont capables de gérer des millions - voire des milliards - d'entrées et garantissent des temps de réponse en lecture et en écriture très bas. Ils sont majoritairement utilisés pour cacher du contenu en temps réel et ainsi décharger des bases de données plus structurées mais aussi plus lente à traiter l'information.
+De par leur simplicité de fonctionnement, **les bases de données clé-valeur sont très facilement scalables** : des systèmes comme Redis ou Riak sont capables de gérer des millions - voire des milliards - d'entrées et garantissent des temps de réponse en lecture et en écriture très bas. Ils sont majoritairement utilisés pour cacher du contenu en temps réel et ainsi décharger des bases de données plus structurées mais aussi plus lente à traiter l'information.
 
-Exemples : Riak, Redis, Amazon DynamoDB, MemCached…
+Exemples : Riak, Redis, Amazon DynamoDB, MemCached…
 
 ![](/img/2014/11/tumblr_inline_ncppxsqeBr1sc5im4.png)
 
@@ -40,7 +40,7 @@ Les bases de données orientées document consistent en une collection de paires
 
 L'unité d'information stockée est ici le document qui encode et encapsule la donnée dans un format semi-structuré (comme le XML ou le JSON). L'information dispose de ce fait d'une structure interne, ce qui permet un langage de requête bien plus expressif que pour les ensembles clé-valeur. En effet, le système est capable de **filtrer un document selon les attributs demandés**, et même de les classer entre eux (par ordre alphabétique, par exemple). L'adoption d'un format semi-structuré pour modéliser l'information laisse une grande flexibilité quant à la structure du document, facilitant ainsi son **évolutivité au cours du temps**.
 
-Exemples : MongoDB, RethinkDB, CouchDB, Terrastore…
+Exemples : MongoDB, RethinkDB, CouchDB, Terrastore…
 
 ![](/img/2014/11/tumblr_inline_ncppyebVo51sc5im4.png)
 
@@ -52,13 +52,13 @@ Ces systèmes favorisent les opérations sur des attributs isolés de l'informat
 
 De par leur structure, ces systèmes supportent bien le partitionnement sur plusieurs machines. Puisque l'unité de stockage est la colonne, l'information est plus facilement accessible - dans certains cas d'utilisation - puisqu'il n'est pas nécessaire de verrouiller l'accès à toute la ligne le temps de la lecture/écriture. Les moteurs de stockage orientés colonnes peuvent être utilisés pour implémenter des systèmes de fichiers distribués fiables, assurant une redondance des données automatique.
 
-Exemples : Apache HBase, Apache Cassandra, Hypertable, Apache Accumulo…
+Exemples : Apache HBase, Apache Cassandra, Hypertable, Apache Accumulo…
 
 ![](/img/2014/11/tumblr_inline_ncppyr3M7h1sc5im4.png)
 
 ## Les bases de données de type graphe
 
-Une base de données orientée graphe est une base de données orientée objet utilisant la théorie des graphes, donc avec des nœuds et des arcs, permettant de représenter et stocker les données. Par définition, une base de données orientée graphe correspond à un système de stockage qui respecte des relations d'adjacence entre éléments dits “voisins” : chaque voisin d'une entité est accessible grâce à un pointeur physique. Ces systèmes tirent parti des algorithmes standards issus de la théorie des graphes pour manipuler les données. Il n’y a pas besoin de calculer un index sur les données, puisque la base peut être entièrement parcourue efficacement (plus court chemin - _Dijkstra_, parcours en profondeur, en largeur…). Ces algorithmes sont optimisés, revus et corrigés depuis de nombreuses années. Ces bases de données sont ainsi plutôt adaptées lorsqu’il s’agit de traiter des informations présentant un haut degré de corrélation.
+Une base de données orientée graphe est une base de données orientée objet utilisant la théorie des graphes, donc avec des nœuds et des arcs, permettant de représenter et stocker les données. Par définition, une base de données orientée graphe correspond à un système de stockage qui respecte des relations d'adjacence entre éléments dits “voisins” : chaque voisin d'une entité est accessible grâce à un pointeur physique. Ces systèmes tirent parti des algorithmes standards issus de la théorie des graphes pour manipuler les données. Il n’y a pas besoin de calculer un index sur les données, puisque la base peut être entièrement parcourue efficacement (plus court chemin - _Dijkstra_, parcours en profondeur, en largeur…). Ces algorithmes sont optimisés, revus et corrigés depuis de nombreuses années. Ces bases de données sont ainsi plutôt adaptées lorsqu’il s’agit de traiter des informations présentant un haut degré de corrélation.
 
 Un tel type de structure se révèle ainsi pertinent dans le cas de données complexes. En effet, les bases graphes sont idéales pour des recherches du type “partir d'un nœud et parcourir le graphe” plutôt que “trouver toutes les entités du type X”, plus adaptées aux bases de données relationnelles traditionnelles. Il est cependant possible dans cette catégorie de bases d'effectuer des recherches de ce dernier type, en couplant le système de stockage à un système d'indexation tel que Apache Lucene (ou ses dérivés Apache SolR/ElasticSearch).
 
@@ -66,13 +66,13 @@ Les moteurs de stockage de type graphes sont particulièrement appropriés lorsq
 
 Par construction, ces bases de données **n'offrent pas une bonne scalabilité horizontale** (_ie_ par accroissement du nombre de serveurs) car les mécanismes de synchronisation des écritures sur des graphes nécessite des opérations complexes. Ces systèmes sont donc fragiles au partitionnement des données sur des supports physiques distincts. Dans ce cas, la mise à l'échelle peut être compensée par une augmentation de la puissance de calcul/stockage/mémoire vive du serveur.
 
-Exemples : Neo4J, Infinite Graph, DEX…
+Exemples : Neo4J, Infinite Graph, DEX…
 
 ![](/img/2014/11/tumblr_inline_ncppz4EuZo1sc5im4.png)
 
 ## Cohérence, disponibilité et partitionnement
 
-A la suite de cette description, on comprend que le mouvement des bases de données NoSQL contient plusieurs approches qui ont une architecture qui leur est propre et qui traitent des cas d’utilisation bien définis. Il convient donc de choisir l'outil qui répond le mieux au problème posé, à la fois en termes de modélisation mais aussi de répartition des données. En parallèle de cette classification, il existe trois caractéristiques très importantes à prendre en compte lors du choix d'un moteur de stockage : la **cohérence** des données, la **disponibilité** des données et le **partitionnement physique** des données.
+A la suite de cette description, on comprend que le mouvement des bases de données NoSQL contient plusieurs approches qui ont une architecture qui leur est propre et qui traitent des cas d’utilisation bien définis. Il convient donc de choisir l'outil qui répond le mieux au problème posé, à la fois en termes de modélisation mais aussi de répartition des données. En parallèle de cette classification, il existe trois caractéristiques très importantes à prendre en compte lors du choix d'un moteur de stockage : la **cohérence** des données, la **disponibilité** des données et le **partitionnement physique** des données.
 
 Un système est dit **cohérent** lorsque chacun de ses clients dispose de la même vue d'ensemble des données qu'il détient à un instant précis. Lorsqu'une modification sur les données a lieu, les changements sont soit visibles par tous, soit invisibles de tous.
 

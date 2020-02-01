@@ -29,7 +29,7 @@ But when tackling the customaries of 3D printing, we quickly had to face the fol
 * Job failures can and will happen, and they can be costly: you lose hours of printer time, and you have to clean up the mess before taking a new job.
 * Even after a successful job, a human operator is required to extract the item before the next job can be taken.
 
-This is different from what we often expect when it comes to job processing in a distributed context: fast jobs, cheap processing, « cost-free » mistakes, automatic retry, and a pool of standard, virtual workers, running without manual intervention.
+This is different from what we often expect when it comes to job processing in a distributed context: fast jobs, cheap processing, « cost-free » mistakes, automatic retry, and a pool of standard, virtual workers, running without manual intervention.
 
 We had to design a system for long-running jobs, which would closely mirror what was going on, so that no precious processing time is lost because of inaccurate reporting and nothing harmful could happen. This means, for example:
 
@@ -42,7 +42,7 @@ When thinking about distributed systems, developers love to throw together a bun
 
 But given the above reasons, it was obvious that our main challenge would not be availability or scalability, but rather resiliency to fault in the system: job failure, but also communication failure, could happen any time, for example when a connection would be lost and a printer could not receive or send messages to the system.
 
-There have been many warnings over the last years, even « horror stories », that micro-services systems are not _easier_ to design and understand, because you have to handle the cost of communication. From a graph point of view, you have to think about the _n_ nodes of your system, but also about the _m_ ways nodes communicate between them (with _m_ somewhere between _n-1_ and _n*(n-1)/2_). In other words, the more you add micro-services, the more you multiply how they can interact and fail with each other.
+There have been many warnings over the last years, even « horror stories », that micro-services systems are not _easier_ to design and understand, because you have to handle the cost of communication. From a graph point of view, you have to think about the _n_ nodes of your system, but also about the _m_ ways nodes communicate between them (with _m_ somewhere between _n-1_ and _n*(n-1)/2_). In other words, the more you add micro-services, the more you multiply how they can interact and fail with each other.
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/nodes_connections.png)
 
@@ -86,7 +86,7 @@ To set things into motion, a customer should of course issue a print order. The 
 
 ## 7
 
-When a job request is created on the server, the server checks whether the printer is connected and sends a request for state. The printer answers « ready to print » so the supervisor looks up one job to do in the current printer queue and sends it to the printer.
+When a job request is created on the server, the server checks whether the printer is connected and sends a request for state. The printer answers « ready to print » so the supervisor looks up one job to do in the current printer queue and sends it to the printer.
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/nominal_path.png)
 
@@ -112,7 +112,7 @@ When the printer comes back online in the ready state, how does it get deferred 
 
 ## 11
 
-Update messages may be lost when the connection is down. But an interrupted connection should not alter the printing process. For example, the printer might finish its job and go to the « waiting retrieval » state. Meanwhile the job is still marked in progress in the supervisor. Next steps can not happen until state has been reconciled. After reconnection, a status exchange is enough so that the supervisor updates the job state. Only then can the process proceed normally with the retrieval stage before going back to ready.
+Update messages may be lost when the connection is down. But an interrupted connection should not alter the printing process. For example, the printer might finish its job and go to the « waiting retrieval » state. Meanwhile the job is still marked in progress in the supervisor. Next steps can not happen until state has been reconciled. After reconnection, a status exchange is enough so that the supervisor updates the job state. Only then can the process proceed normally with the retrieval stage before going back to ready.
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/reconciliation.png)
 
@@ -122,7 +122,7 @@ Failure can happen anytime during a printing process: the model might be faulty,
 
 ![](https://github.com/sdenier/Articles-Sogilis/raw/master/distributed_reactive_loop/figures/error_notification.png)
 
-The process is then similar to the « waiting retrieval » state. The operator cleans up the mess, checks the printer is operational, then signals the job as « recovering » for the supervisor. At the next roundtrip, when the printer sends the error state and the supervisor sees the job as recovering, it can send the recover signal to the printer. This signal puts the printer back in ready state, which can then start over.
+The process is then similar to the « waiting retrieval » state. The operator cleans up the mess, checks the printer is operational, then signals the job as « recovering » for the supervisor. At the next roundtrip, when the printer sends the error state and the supervisor sees the job as recovering, it can send the recover signal to the printer. This signal puts the printer back in ready state, which can then start over.
 
 
 ## 13
@@ -139,32 +139,32 @@ Resiliency is often achieved through automatic job retry or visibility timeout w
 
 ### 15
 
-Basically, the reactive loop framework favors some functional mindset/command-query separation (state updates happening independently of commands). Nodes process messages they receive but do not care if a sent message is processed on the other side. This implies that undelivered messages are simply lost. They are not stored in a queue for later delivery. Simply the loop will retry the next time it has an opportunity to run. In the same spirit, if a message would be delivered a bit late and become « stale » with respect to the printer status, the printer would simply reject it. Again, the message would be lost but it does not matter. The supervisor takes a new message as an opportunity to reconcile its internal state.
+Basically, the reactive loop framework favors some functional mindset/command-query separation (state updates happening independently of commands). Nodes process messages they receive but do not care if a sent message is processed on the other side. This implies that undelivered messages are simply lost. They are not stored in a queue for later delivery. Simply the loop will retry the next time it has an opportunity to run. In the same spirit, if a message would be delivered a bit late and become « stale » with respect to the printer status, the printer would simply reject it. Again, the message would be lost but it does not matter. The supervisor takes a new message as an opportunity to reconcile its internal state.
 
 Care must be taken when designing printer FSM and transitions. Basically, we have two classes of printer state:
 
-* either an « active » state (for example, printing), from which the printer will transition automatically when need be (and during which it does not accept supervisor commands).
-* or a « blocking » state (for example, « waiting for retrieval »), from which the printer can not transition until the right supervisor command is received.
+* either an « active » state (for example, printing), from which the printer will transition automatically when need be (and during which it does not accept supervisor commands).
+* or a « blocking » state (for example, « waiting for retrieval »), from which the printer can not transition until the right supervisor command is received.
 
-In other words, in the current design, the supervisor only sends a command when the printer is in a blocking state. There is no nominal case where an « active » state change happens while the supervisor sends a command related to the previous state. It could still happen for example if the printer would go into error state (then, see the description for the error case). Overall, this mindset greatly reduces cases where printer could receive inconsistent messages.
+In other words, in the current design, the supervisor only sends a command when the printer is in a blocking state. There is no nominal case where an « active » state change happens while the supervisor sends a command related to the previous state. It could still happen for example if the printer would go into error state (then, see the description for the error case). Overall, this mindset greatly reduces cases where printer could receive inconsistent messages.
 
-This also impacts the design of item status on the supervisor/database side, which should represent just what happened with « micro-statuses ». A good example of this is the « waiting for retrieval » state:
+This also impacts the design of item status on the supervisor/database side, which should represent just what happened with « micro-statuses ». A good example of this is the « waiting for retrieval » state:
 
 * when the supervisor receives the update for this state, it flags the item as being ready for retrieval. In this case, the supervisor can do nothing more and does not send any command to the printer.
 * once an operator has effectively notified the supervisor that the item is retrieved, the item status is flagged as done.
-* next time the supervisor and the printer perform a loop run (which happens immediately after the above action if they are connected), the combination of « item done » + « waiting for retrieval » status triggers the supervisor to send the command « done », which enables the transition back to the ready state.
+* next time the supervisor and the printer perform a loop run (which happens immediately after the above action if they are connected), the combination of « item done » + « waiting for retrieval » status triggers the supervisor to send the command « done », which enables the transition back to the ready state.
 
 Here, an event-driven approach works best to model the status through which an item goes. It prevents the model from becoming inconsistent, by having micro-steps which have a single source of transition.
 
 ### 16
 
-A typical concern for distributed systems is how « dynamic » they can be. Can we add new nodes to the system easily? How does it scale?
+A typical concern for distributed systems is how « dynamic » they can be. Can we add new nodes to the system easily? How does it scale?
 
 When printers come online (after power up or reconnection), they registered themselves dynamically on the supervisor. However, service discovery is not the primary purpose of the reactive loop and could be delegated to a dedicated service if need be.
 
 The supervisor model presented here is a bit of a simplification with respect to the current implementation. The supervisor node creates a websocket handler for each printer, which enables full duplex communication. So in reality, the reactive loop is implemented at the level of the websocket handler and the printer client. There are as many reactive loops on a supervisor node as there are connected printers. While this article focus on the reactive loop implemented by the handler-printer relationship, the supervisor node has other responsibilities, like dispatching some actions on target handler(s), and answering client requests through a regular REST API.
 
-Second, to support resiliency and scalability, supervisor reactions should be « stateless », in the same sense as a REST server. A handler only stores the state of the connection, no data about the printer status or job. Whenever a loop run implies some state, the supervisor will look up the data in the database - as for any web system, state synchronization ultimately relies on the database. A practical limit for a supervisor node would be the number of simultaneous websocket connections it can handle. Then, stateless supervisors can be easily duplicated as a service and moved behind a load balancer to scale up.
+Second, to support resiliency and scalability, supervisor reactions should be « stateless », in the same sense as a REST server. A handler only stores the state of the connection, no data about the printer status or job. Whenever a loop run implies some state, the supervisor will look up the data in the database - as for any web system, state synchronization ultimately relies on the database. A practical limit for a supervisor node would be the number of simultaneous websocket connections it can handle. Then, stateless supervisors can be easily duplicated as a service and moved behind a load balancer to scale up.
 
 ## 17
 

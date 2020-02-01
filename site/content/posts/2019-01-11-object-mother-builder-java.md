@@ -22,7 +22,7 @@ Si vous n’êtes pas familiers avec les patterns [Object Mother][1] et [Builder
 
 ## Le principe
 
-Object Mother permet de fournir des objets pré-configurés pour nos tests :
+Object Mother permet de fournir des objets pré-configurés pour nos tests :
 
 {{< highlight java >}}
 public static HeroBuilder one() {
@@ -46,15 +46,15 @@ public static HeroBuilder merlin() {
 }
 {{< /highlight >}}
 
-Le principe est le suivant :
+Le principe est le suivant :
 
-* Chaque Object Mother fournit une factory de base avec une configuration par défaut : c’est la méthode `one()`.
+* Chaque Object Mother fournit une factory de base avec une configuration par défaut : c’est la méthode `one()`.
 * Toutes les autres factories utilisent cette factory de base.
 * Dans cette versions, les Object Mother retournent des builders et non des instances.
 
 ## Avantages
 
-**(1)** Le pattern Object Mother permet d’améliorer la lisibilité des tests en retirant les constantes inutiles à la compréhension du test. Exemple :
+**(1)** Le pattern Object Mother permet d’améliorer la lisibilité des tests en retirant les constantes inutiles à la compréhension du test. Exemple :
 
 {{< highlight java >}}
 @Test
@@ -98,7 +98,7 @@ L’exemple ici est plutôt trivial, mais imaginez cela dans une vraie applicati
 [Lombok][3] peut potentiellement résoudre ce problème puisqu’il permet de générer automatiquement ces builders.
 
 
-**(2)** La frontière entre méthode de factory et méthode de builder n’est pas toujours facile à identifier. Exemple avec trois possibilités pour créer une même configuration :
+**(2)** La frontière entre méthode de factory et méthode de builder n’est pas toujours facile à identifier. Exemple avec trois possibilités pour créer une même configuration :
 
 {{< highlight java >}}
 HeroMother.king().build()

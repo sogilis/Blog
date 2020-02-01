@@ -10,21 +10,21 @@ Dans le cadre d’un projet sur lequel nous travaillons actuellement, nous avons
 
 ![Support du stockage JPA et MongoDB dans une application Spring-boot - header](/img/2017/07/blog-header-2-1024x309.png)
 
-La particularité de ce service réside dans sa compatibilité avec **différents moteurs de stockage** : relationnelle (ex: Oracle, Postgres...) et NoSQL orienté document (principalement MongoDB). Cette exigence vient directement des contraintes du client qui distribue sa solution logicielle avec différentes bases de données. L’environnement technique est bien évidemment lié aux contraintes du client, et comprend le framework [Spring Boot](https://projects.spring.io/spring-boot/) pour le développement de microservices avec des couches de persistance type **JPA** (Java Persistence API) et **MongoDB**.
+La particularité de ce service réside dans sa compatibilité avec **différents moteurs de stockage** : relationnelle (ex: Oracle, Postgres...) et NoSQL orienté document (principalement MongoDB). Cette exigence vient directement des contraintes du client qui distribue sa solution logicielle avec différentes bases de données. L’environnement technique est bien évidemment lié aux contraintes du client, et comprend le framework [Spring Boot](https://projects.spring.io/spring-boot/) pour le développement de microservices avec des couches de persistance type **JPA** (Java Persistence API) et **MongoDB**.
 
 Le défi consiste à implémenter ces deux couches de persistance en minimisant la duplication de code.
 
 Nous avons créé une application de démo afin d’illustrer l’architecture mise en place.
 
-Les sources de cette application sont disponible sur notre github : [https://github.com/sogilis/spring-boot-jpa-mongodb-example][1].
+Les sources de cette application sont disponible sur notre github : [https://github.com/sogilis/spring-boot-jpa-mongodb-example][1].
 
-Version de Spring Boot utilisée : 1.5.4.RELEASE.
+Version de Spring Boot utilisée : 1.5.4.RELEASE.
 
 Dans le but de simplifier la compréhension, notre application de démo persiste des entités de type _Person_ en base. Une telle entité est composée d’un identifiant unique (String), et d’un nom (String).
 
 # Deux bases de données à supporter
 
-Les deux moteurs de stockage à supporter dans notre application sont assez hétérogènes : ces bases de données sont directement dictées par l’environnement en production chez les clients finaux.
+Les deux moteurs de stockage à supporter dans notre application sont assez hétérogènes : ces bases de données sont directement dictées par l’environnement en production chez les clients finaux.
 
 Etant donné que Spring fournit un bon support des différents moteurs relationnels via sa couche de persistence JPA ([Spring Data ][2]JPA), nous avons décidé d’intégrer cette couche. Par conséquent, notre service peut interagir avec un driver Postgres mais aussi avec **n’importe quel driver qui satisfait à la spécification JPA**. Cela permet d’être compatible avec beaucoup de bases de données relationnelles.
 
@@ -34,7 +34,7 @@ MongoDB est une base de données NoSQL orientée document, pleinement supportée
 
 L’idée derrière le développement de ce service est de laisser à l’administrateur la configuration du moteur de stockage qu’il souhaite utiliser lorsque l’application démarre (JPA ou MongoDB). Le défi posé par ce projet peut se ramener à trouver une solution autorisant **la mutualisation d’un maximum de code du modèle à persister** tout en étant testable facilement.
 
-Nous souhaitons donc éviter ceci :
+Nous souhaitons donc éviter ceci :
 
 ![Support du stockage JPA et MongoDB dans une application Spring-boot - solution avec duplications](/img/2017/07/blog-solution-avec-duplications.png)
 
@@ -44,9 +44,9 @@ Cette solution n’a pas été retenue car la priorité a été mise sur la faci
 
 ## Spring et la notion de Repository
 
-Premier constat : les modules [Spring Data JPA][2] et [Spring Data MongoDB][3] de [Spring Data][4] partagent un module commun appelé [Spring Data Commons][5].
+Premier constat : les modules [Spring Data JPA][2] et [Spring Data MongoDB][3] de [Spring Data][4] partagent un module commun appelé [Spring Data Commons][5].
 
-Nous pouvons donc nous baser sur ce module pour écrire le code commun aux 2 types de persistances, et en particulier le Repository, ce qui donne ceci :
+Nous pouvons donc nous baser sur ce module pour écrire le code commun aux 2 types de persistances, et en particulier le Repository, ce qui donne ceci :
 
 ![Support du stockage JPA et MongoDB dans une application Spring-boot - class diagramm](/img/2017/07/blog-class-diagramm.png)
 
@@ -58,17 +58,17 @@ En revanche, sans plus de configuration, Spring Boot va chercher à activer les 
 
 Ainsi, comme le documente [Spring Data Commons][6], il est possible d’ajouter des méthodes de requête dans à ce “repository” (ex: findByName) qui seront utilisables quelque soit le type de persistance.
 
-En plus du Repository, il est nécessaire de déclarer les entités à persister. Ici, c’est plus simple car tout se fait par annotation :
+En plus du Repository, il est nécessaire de déclarer les entités à persister. Ici, c’est plus simple car tout se fait par annotation :
 
-- JPA : _@Entity_
-- MongoDB : _@Document_
+- JPA : _@Entity_
+- MongoDB : _@Document_
 
 Il suffit alors d’annoter une même classe avec ces 2 annotations, ce qui évite de dupliquer cette classe entité.
 
-Toute entité doit pouvoir être identifiée de manière unique. Pour cela, il existe aussi 2 annotations distinctes, mais qui ont le même nom (_@Id_) :
+Toute entité doit pouvoir être identifiée de manière unique. Pour cela, il existe aussi 2 annotations distinctes, mais qui ont le même nom (_@Id_) :
 
-- JPA : _javax.persistence.Id_
-- MongoDB : _org.springframework.data.annotation.Id_ ([permet de mapper la colonne sur l’identifiant natif MongoDB : _id](http://docs.spring.io/spring-data/data-mongo/docs/1.10.4.RELEASE/reference/html/#mongo-template.id-handling))
+- JPA : _javax.persistence.Id_
+- MongoDB : _org.springframework.data.annotation.Id_ ([permet de mapper la colonne sur l’identifiant natif MongoDB : _id](http://docs.spring.io/spring-data/data-mongo/docs/1.10.4.RELEASE/reference/html/#mongo-template.id-handling))
 
 Attention au type de cet identifiant et comment il sera défini, il doit être à la fois compatible avec JPA et MongoDB.
 
@@ -110,18 +110,18 @@ Voici les différents paramètres à modifier appliquer à chaque profil.
 
 Habituellement, le mécanisme d’auto-configuration Spring Boot fonctionne tout seul en inspectant les classes présentes dans le classpath (ex: s’il y a Spring Data JPA, la configuration JPA est mise en place). Or ici, nous souhaitons à la fois **Spring Data JPA **et** Spring Data MongoDB dans notre classpath**. Il est donc nécessaire de désactiver précisément l’auto-configuration adéquat en fonction du profil.
 
-En pratique, voici les classes concernées par JPA :
+En pratique, voici les classes concernées par JPA :
 
 - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
 - org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration
 - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
-Voici celles concernées par MongoDB :
+Voici celles concernées par MongoDB :
 
 - org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
 - org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
 
-Pour la désactivation d’auto-configurations, une première solution consiste à utiliser l’annotation _@SpringBootApplication_ avec le paramètre exclude :
+Pour la désactivation d’auto-configurations, une première solution consiste à utiliser l’annotation _@SpringBootApplication_ avec le paramètre exclude :
 
 {{< highlight java >}}
 @SpringBootApplication(exclude = {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
@@ -152,7 +152,7 @@ org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
 Un autre mécanisme à piloter est celui qui crée des instances de repository à partir de notre interface _PersonRepository_. En effet, par défaut, Spring détecte un modèle (_Person_) à la fois dédié à la persistence JPA (avec _@Entity_) et MongoDB (_@Document_). Un repository de chaque sera donc créé systématiquement.
 
-Pour empêcher cela, des propriétés Spring peuvent être utilisées :
+Pour empêcher cela, des propriétés Spring peuvent être utilisées :
 
 application-jpa.properties
 
@@ -168,7 +168,7 @@ spring.data.mongodb.repositories.enabled=false
 
 ## Configuration
 
-Il suffit alors de spécifier les propriétés de configuration relatives à chaque profil. Par exemple, dans le cas d’une connexion à Postgres, on peut ajouter au profil _jpa_ les propriétés suivantes :
+Il suffit alors de spécifier les propriétés de configuration relatives à chaque profil. Par exemple, dans le cas d’une connexion à Postgres, on peut ajouter au profil _jpa_ les propriétés suivantes :
 
 {{< highlight java >}}
 spring.datasource.url=jdbc:postgresql://localhost:5432/spring-boot-jpa-mongo-exemple
@@ -179,7 +179,7 @@ spring.jpa.hibernate.ddl-auto=create
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 {{< /highlight >}}
 
-Pour une connexion à mongodb (sans sécurité), on peut utiliser ceci dans le profil _mongodb_ :
+Pour une connexion à mongodb (sans sécurité), on peut utiliser ceci dans le profil _mongodb_ :
 
 {{< highlight java >}}
 spring.data.mongodb.uri=mongodb://localhost:27017/spring-boot-jpa-mongo-exemple
@@ -227,7 +227,7 @@ public class PersonRepositoryTester {
 }
 {{< /highlight >}}
 
-Pour les tests, il est possible d’utiliser une base de donnée embarquée, sans aucune configuration spécifique, il suffit d’ajouter les dépendances de test nécessaires :
+Pour les tests, il est possible d’utiliser une base de donnée embarquée, sans aucune configuration spécifique, il suffit d’ajouter les dépendances de test nécessaires :
 
 {{< highlight java >}}
 testCompile 'com.h2database:h2' 				// JPA

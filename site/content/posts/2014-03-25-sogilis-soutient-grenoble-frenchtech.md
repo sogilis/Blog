@@ -17,7 +17,7 @@ tags:
 
 Grenoble est candidate au label “Metropole French Tech” sous la signature [Digital Grenoble](http://digital-grenoble.com/). Le label sera attribué à quelques collectivités particulièrement actives dans le numérique, et notamment au niveau international. Ensemble, elles formeront la [French Tech](http://www.lafrenchtech.com).
 
-> _“La French Tech, c’est d’abord une ambition : construire un grand mouvement de mobilisation collective pour la croissance et le rayonnement international des startups numériques françaises.“_
+> _“La French Tech, c’est d’abord une ambition : construire un grand mouvement de mobilisation collective pour la croissance et le rayonnement international des startups numériques françaises.“_
 >
 > Fleur Pellerin
 

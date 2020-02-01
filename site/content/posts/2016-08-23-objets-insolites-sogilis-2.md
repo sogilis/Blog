@@ -10,12 +10,12 @@ tags:
   - viedebureau
 
 ---
-Un piano, une Wii, un plan de domination du monde… voici les objets qui nous entourent, parmi tant d’autres ! [Suite à une première liste](https://blog.sogilis.com/posts/2016-08-16-objets-insolites-sogilis-1/), on continue sur notre lancée.
+Un piano, une Wii, un plan de domination du monde… voici les objets qui nous entourent, parmi tant d’autres ! [Suite à une première liste](https://blog.sogilis.com/posts/2016-08-16-objets-insolites-sogilis-1/), on continue sur notre lancée.
 
 
 ## 1. Le pomodoro
 
-Vous connaissez la méthode du pomodoro ? 5 minutes de pause entre des périodes de fortes concentration de 25 minutes. Histoire de ne pas faire comme tout le monde et d’avoir quelque chose de très visuel, indépendant d’un ordinateur, voici un pomodoro tout en LED !
+Vous connaissez la méthode du pomodoro ? 5 minutes de pause entre des périodes de fortes concentration de 25 minutes. Histoire de ne pas faire comme tout le monde et d’avoir quelque chose de très visuel, indépendant d’un ordinateur, voici un pomodoro tout en LED !
 
 ![](https://67.media.tumblr.com/b7341dd041b9c1ffcaf2bc9266b42837/tumblr_inline_nv6p4tFq021t2p7ex_540.jpg)
 
@@ -27,13 +27,13 @@ Délaissé durant les heures de bureau, on se bat souvent pour lui après manger
 
 ## 3. L’objet non identifié
 
-Praticité pour bien travailler, on aime les supports à pc !
+Praticité pour bien travailler, on aime les supports à pc !
 
 ![](https://67.media.tumblr.com/702ca07254aefc9c6eefaa7f334d83f3/tumblr_inline_nv83trc2tU1t2p7ex_540.jpg)
 
 ## 4. Le ballon de basket
 
-Cette boule orange et noire a débarqué avant l’été. Impossible de s’en défaire depuis. L’appel du basket sonne les lundis et mercredis, et même parfois par surprise : c’est selon l’envie.
+Cette boule orange et noire a débarqué avant l’été. Impossible de s’en défaire depuis. L’appel du basket sonne les lundis et mercredis, et même parfois par surprise : c’est selon l’envie.
 
 ![](https://67.media.tumblr.com/9bad82415ca804caef28f091c25e7ae4/tumblr_inline_nv6p7cvJ461t2p7ex_540.jpg)
 
@@ -51,7 +51,7 @@ On ne sait pas vraiment comment il est arrivé, mais il est là. Avoir la possib
 
 ## 7. Les ustensiles de cuisine
 
-Ils apparaissent et disparaissent au gré des envies. On doit l’avouer, on a un coup de cœur pour la crépière : quand on a découvert que Lucas avait une compétence cachée, on s’est empressés de se régaler !
+Ils apparaissent et disparaissent au gré des envies. On doit l’avouer, on a un coup de cœur pour la crépière : quand on a découvert que Lucas avait une compétence cachée, on s’est empressés de se régaler !
 
 ![](https://66.media.tumblr.com/a39156c9112464313ae093796ebcdbaf/tumblr_inline_nv6pkpx7hO1t2p7ex_540.jpg)
 
@@ -65,7 +65,7 @@ A 22 ans, Christophe découvre [Maple Leaf Rag de Scoot Joplin](https://www.yout
 
 ![](https://66.media.tumblr.com/f2a049d82c323b3c86177bb9f403d0f3/tumblr_inline_nv84wf9j9M1t2p7ex_540.jpg)
 
-Envie de nous suggérer quelque chose ? N’hésitez pas !
+Envie de nous suggérer quelque chose ? N’hésitez pas !
 
 **On prend parfois des pauses café sur [Twitter](https://twitter.com/Sogilis). On est aussi sur [LinkedIn](https://www.linkedin.com/company/2283605?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2283605%2Cidx%3A1-1-1%2CtarId%3A1438942579286%2Ctas%3Asogilis) !**
 

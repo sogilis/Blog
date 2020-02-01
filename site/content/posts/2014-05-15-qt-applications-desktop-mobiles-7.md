@@ -37,21 +37,21 @@ Suite et fin de la découverte de la programmation desktop et mobile avec Qt.
   - [Android]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#android" >}})
 - [Fin ?]({{< relref "posts/2014-05-15-qt-applications-desktop-mobiles-7.md#end" >}})
 
-## Et pour les mobiles ? <a id="mobile"></a>
+## Et pour les mobiles ? <a id="mobile"></a>
 
-L'application est désormais pleinement fonctionnelle. Ok on pourrait rajouter des choses, comme un menu lorsqu'on gagne / perd. Mais le but n'est pas de partir dans l'exploration de tout ce qui est possible en QML. Rappelez vous, on devait parler de mobile non ?
+L'application est désormais pleinement fonctionnelle. Ok on pourrait rajouter des choses, comme un menu lorsqu'on gagne / perd. Mais le but n'est pas de partir dans l'exploration de tout ce qui est possible en QML. Rappelez vous, on devait parler de mobile non ?
 
 Voici donc comment transformer votre application _desktop_ en une application mobile.
 
 ### Gestures <a id="gestures"></a>
 
-L'un des premiers points si on parle de mobile est de se poser des questions (en tout cas sur une application du genre) sur la joueabilité. Pour le moment nous utilisons le clavier. Mais sur mobile ? Nous allons simplement utiliser les évênements de _souris_. Pour cette application pas besoin de multi-touch, gérer les glissement est suffisant. Et comme Qt c'est cool, on va faire tout ça uniquement dans le QML. C'est plutôt un bon point car il est possible d'utiliser du JavaScript et non du C++ mais aussi car on garde notre code métier indépendant le plus possible de l'implémentation de l'interface.
+L'un des premiers points si on parle de mobile est de se poser des questions (en tout cas sur une application du genre) sur la joueabilité. Pour le moment nous utilisons le clavier. Mais sur mobile ? Nous allons simplement utiliser les évênements de _souris_. Pour cette application pas besoin de multi-touch, gérer les glissement est suffisant. Et comme Qt c'est cool, on va faire tout ça uniquement dans le QML. C'est plutôt un bon point car il est possible d'utiliser du JavaScript et non du C++ mais aussi car on garde notre code métier indépendant le plus possible de l'implémentation de l'interface.
 
 Pour pouvoir récupérer les évênements nous allons rajouter un objet `MouseArea`. C'est un objet transparent destiné à recevoir les actions de la souris (ou de votre doigt, finalement les actions d'un pointeur).
 
 On va donc faire que cet objet recouvre toute notre application et traque les glissements suivant les quatres directions souhaitées. Et une fois un glissement détecté, nous allons appeler, comme pour le clavier, `board.moveUp();`, `board.moveRight();` etc.
 
-Voici le code qui a été ajouté à la vue :
+Voici le code qui a été ajouté à la vue :
 
 {{< highlight cpp >}}
 property int gesture_swipeLeft: 0;
@@ -130,7 +130,7 @@ Petite explication de texte. Lors de l'appui sur la zone je garde en mémoire le
 
 Ce calcul est extrait dans une méthode dédié pour plus de lisibilité. Enfin, en fonction du type de déplacement je commande le plateau de jeu comme réalisé au clavier.
 
-Et tout ceci est à ajouter à la fin de l'objet `Window`. Alors, plutôt simple non ?
+Et tout ceci est à ajouter à la fin de l'objet `Window`. Alors, plutôt simple non ?
 
 > git: [tag 07_gestures](https://github.com/sogilis/qt2048/tree/07_gestures)
 
@@ -148,27 +148,27 @@ Rendez-vous dans la vue _Projets_ de QtCreator et ajoutez le kit correspondant.�
 
 Si vous le souhaitez, vous pouvez (dans la partie _Exécuter_) sélectionner le type de machine que vous souhaitez émuler, j'ai pris un iPad pour voir.
 
-Et ensuite ?
+Et ensuite ?
 
 Il vous reste juste à exécuter votre application en choisissant la bonne cible.
 
 ![](/img/tumblr/tumblr_inline_n48gdd2NyQ1sv6muh.png)
 
-Alors, ce n'était pas si compliqué, non ?
+Alors, ce n'était pas si compliqué, non ?
 
 ![](/img/tumblr/tumblr_inline_n48gdo5kkP1sv6muh.png)
 
-Vous noterez donc qu'il n'y a eu absolument aucune modification au niveau des sources, juste une recompliation. Et là vous pouvez vraiment commencer à profiter de Qt et QML sachant que cela va fonctionner quelque soit la destination !
+Vous noterez donc qu'il n'y a eu absolument aucune modification au niveau des sources, juste une recompliation. Et là vous pouvez vraiment commencer à profiter de Qt et QML sachant que cela va fonctionner quelque soit la destination !
 
 ### Android <a id="android"></a>
 
-Sous Android ? En fait c'est quasiment comme sous iOS.
+Sous Android ? En fait c'est quasiment comme sous iOS.
 
 Mais il va falloir installer / configurer vos SDK et NDK android. Allez dans les préférences et pointez votre SDK et NDK. Et commez Qt est sympa il vous aide même à les télécharger si besoin.
 
 Il vous faut aussi un JDK.
 
-> Tip : Sous Mac le chemin par défaut est faux, il faut mettre `/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home`
+> Tip : Sous Mac le chemin par défaut est faux, il faut mettre `/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home`
 
 Ainsi que ant.
 
@@ -176,13 +176,13 @@ Ainsi que ant.
 
 Vous pouvez directement lancer _AVD Manager_ et gérer vos simulateurs ou le faire lors de l'exécution de votre projet.
 
-Sélectionnez ensuite le kit correspondant dans votre projet : `Android pour armeabi-v7a`et exécutez-le.
+Sélectionnez ensuite le kit correspondant dans votre projet : `Android pour armeabi-v7a`et exécutez-le.
 
-Il va vous proposer les simulateurs ou matériels android connectés correspondant à votre version d'ABI :
+Il va vous proposer les simulateurs ou matériels android connectés correspondant à votre version d'ABI :
 
 ![](/img/tumblr/tumblr_inline_n48ges1Zyn1sv6muh.png)
 
-Si jamais les devices que vous voyez sont tous en non compatible c'est probablement que vous n'êtes pas en Qt Creator 3.1.0. Dans ce cas, dans l’_environnement de compilation_ du kit rajoutez la variable d'environnement suivante :
+Si jamais les devices que vous voyez sont tous en non compatible c'est probablement que vous n'êtes pas en Qt Creator 3.1.0. Dans ce cas, dans l’_environnement de compilation_ du kit rajoutez la variable d'environnement suivante :
 
 {{< highlight cpp >}}
 ANDROID_TARGET_ARCH=default/armeabi-v7a
@@ -194,7 +194,7 @@ Il ne vous reste plus qu'à sélectionné le matériel/simulateur que vous voule
 
 ![](/img/tumblr/tumblr_inline_n48gegRF0Y1sv6muh.png)
 
-## Fin ? <a id="end"></a>
+## Fin ? <a id="end"></a>
 
 Voici, avec un petit exemple assez simple, comment développer une application vraiment multi plateforme, que ce soit pour Windows, Mac et Linux (même si ça n'a pas vraiment été évoqué ici) mais surtout iOS et Android.
 

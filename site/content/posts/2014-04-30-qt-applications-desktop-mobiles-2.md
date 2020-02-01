@@ -70,7 +70,7 @@ typedef uint32_t t_score;
 static const t_index kSize = 4;
 static const t_value kValueOfLastTile = 2048;
 
-class Board : public QObject {
+class Board : public QObject {
     Q_OBJECT
 
 public:
@@ -123,7 +123,7 @@ private:
 #endif // BOARD_H
 {{< /highlight >}}
 
-Au niveau des méthodes publiques rien de très complexe :
+Au niveau des méthodes publiques rien de très complexe :
 
 - une méthode qui affiche dans la console le contenu du plateau
 - quatre méthodes de déplacement
@@ -134,7 +134,7 @@ Au niveau des méthodes publiques rien de très complexe :
 
 Je ne détaille pas vraiment les méthodes privées ni l'implémentation, ce n'est pas tellement le sujet et github est là.
 
-Juste histoire de voir que tout fonctionne bien j'ai changé le `main` comme suit :
+Juste histoire de voir que tout fonctionne bien j'ai changé le `main` comme suit :
 
 {{< highlight cpp >}}
 int main(int argc, char *argv[])
@@ -161,11 +161,11 @@ C'est pas super beau mais ça permet de se rendre compte que oui ça fonctionne.
 
 **Apparté C++11**
 
-Petit apparté rapide. Normalement vous devriez avoir un warning du genre :
+Petit apparté rapide. Normalement vous devriez avoir un warning du genre :
 
-> /Users/yves/Projects/Qt/qt2048/board.cpp:93: avertissement : ‘auto’ type specifier is a C++11 extension [-Wc++11-extensions] auto time = QTime::currentTime(); ^
+> /Users/yves/Projects/Qt/qt2048/board.cpp:93: avertissement : ‘auto’ type specifier is a C++11 extension [-Wc++11-extensions] auto time = QTime::currentTime(); ^
 
-C'est normal, j'utilise `auto` qui vient de `C++11`. Il faut donc l'activer dans le fichier `qt2048.pro` :
+C'est normal, j'utilise `auto` qui vient de `C++11`. Il faut donc l'activer dans le fichier `qt2048.pro` :
 
 {{< highlight cpp >}}
 CONFIG+=c++11

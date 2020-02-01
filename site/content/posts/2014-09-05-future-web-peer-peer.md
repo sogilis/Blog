@@ -65,7 +65,7 @@ There is already an interesting protocol out there that provides many of the thi
 * If a computer stops working, the content is always available in many other places
 * It can share content at great speeds because content comes from many different places
 
-That solves the personal computer problems. What about empowering us, humans ?
+That solves the personal computer problems. What about empowering us, humans ?
 
 * anyone can publish content. Using trackerless (or DHT) torrents, it is not necessary to have an intermediate to share the content for us
 * it is possible to download any content. None is in the power to decide that you cannot download a torrent. You always can, and if it’s illegal, you might be tracked for it (but that’s just normal police work, or it should)

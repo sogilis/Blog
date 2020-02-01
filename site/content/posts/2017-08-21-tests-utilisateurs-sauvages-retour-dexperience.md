@@ -1,5 +1,5 @@
 ---
-title: "Tests utilisateurs 'sauvages' : retour d’expérience"
+title: "Tests utilisateurs 'sauvages' : retour d’expérience"
 author: Sogilis
 date: -001-11-30T00:00:00+00:00
 draft: true
@@ -7,9 +7,9 @@ categories:
   - ERGONOMIE
 
 ---
-# Qu’est-ce qu’un test utilisateur ?
+# Qu’est-ce qu’un test utilisateur ?
 
-Le test utilisateur est un outil d’analyse permettant de vérifier que l’interface imaginée est adaptée aux utilisateurs cibles. Concrètement, ces utilisateurs vont utiliser l’interface comme un vrai site web, ou une vraie application. Ils seront guidés par un ou plusieurs scénarios préparés par l’ergonome. Celui-ci va pouvoir répondre à plusieurs hypothèses au cours du test utilisateur :
+Le test utilisateur est un outil d’analyse permettant de vérifier que l’interface imaginée est adaptée aux utilisateurs cibles. Concrètement, ces utilisateurs vont utiliser l’interface comme un vrai site web, ou une vraie application. Ils seront guidés par un ou plusieurs scénarios préparés par l’ergonome. Celui-ci va pouvoir répondre à plusieurs hypothèses au cours du test utilisateur :
 
 - le vocabulaire utilisé est compréhensible
 - les boutons cliquables sont visibles
@@ -17,7 +17,7 @@ Le test utilisateur est un outil d’analyse permettant de vérifier que l’int
 
 ![Deux personnes sont devant des ordinateurs et un bloc de feuille, ils prennent des notes](/img/2017/06/test-utilisateur-basseresolutionjpg-1024x683.jpg)
 
-# Ces tests utilisateurs sont réalisables de 3 manières : en labo, à distance, en sauvage.
+# Ces tests utilisateurs sont réalisables de 3 manières : en labo, à distance, en sauvage.
 
 En labo, le test se passe dans une pièce avec une vitre sans teint. L’utilisateur est dans la pièce, parfois accompagné d’une personne qui peut l’aider en cas de blocage. L'ergonome se place derrière la vitre teintée. Celui-ci va observer les réactions et les gestes de la personne pendant qu’elle effectue les différents scénarios.
 
@@ -27,7 +27,7 @@ Ensuite, c'est coûteux, car il faut l’espace suffisant pour aménager deux sa
 
 Enfin, par conviction personnelle, car l’environnement d’utilisation ne reflète pas la réalité.
 
-Le test à distance utilise un outil web qui est paramétré par l’ergonome. Tout comme le test en labo, l’ergonome doit préparer des scénarios, qu’il paramètre ensuite sur l’outil. Cet outil permet à la fois :
+Le test à distance utilise un outil web qui est paramétré par l’ergonome. Tout comme le test en labo, l’ergonome doit préparer des scénarios, qu’il paramètre ensuite sur l’outil. Cet outil permet à la fois :
 
 - de donner les consignes à l’utilisateur
 - d’enregistrer les parcours de la souris et de clic sur l’interface
@@ -41,11 +41,11 @@ C’est donc naturellement que j’ai choisi d’utiliser les tests sauvages en 
 
 # Retour d’expérience sur les tests sauvages
 
-Au début d’un projet, nous avions deux pistes de navigation possible. La navigation est l’élément clé pour une application, surtout mobile. Elle donne les bases de l’interaction avec l’interface : quels gestes faire pour passer d’un menu à un autre par exemple. Nous avions donc deux navigations bien différentes, et ne savions pas quel choix faire. Nous nous sommes donc tournées naturellement vers les utilisateurs pour effectuer ce choix.
+Au début d’un projet, nous avions deux pistes de navigation possible. La navigation est l’élément clé pour une application, surtout mobile. Elle donne les bases de l’interaction avec l’interface : quels gestes faire pour passer d’un menu à un autre par exemple. Nous avions donc deux navigations bien différentes, et ne savions pas quel choix faire. Nous nous sommes donc tournées naturellement vers les utilisateurs pour effectuer ce choix.
 
-Nous avons défini un scénario type qui permettait de naviguer au maximum dans la maquette. Puis, nous sommes parties à la rencontre de nos utilisateurs avec nos tablettes sous le bras. Avant de débuter les tests, nous nous présentions comme travaillant sur un projet et demandions s’ils avaient 10 minutes pour tester l’application et nous donner leur avis. Puis nous mettions en route l’enregistrement et c’était parti ! Nous étions deux, l’une guidait l’utilisateur pour réaliser le scénario, poser des questions, faisait verbaliser l’utilisateur. L’autre, prenait des notes, observait les gestes, notait les difficultés.
+Nous avons défini un scénario type qui permettait de naviguer au maximum dans la maquette. Puis, nous sommes parties à la rencontre de nos utilisateurs avec nos tablettes sous le bras. Avant de débuter les tests, nous nous présentions comme travaillant sur un projet et demandions s’ils avaient 10 minutes pour tester l’application et nous donner leur avis. Puis nous mettions en route l’enregistrement et c’était parti ! Nous étions deux, l’une guidait l’utilisateur pour réaliser le scénario, poser des questions, faisait verbaliser l’utilisateur. L’autre, prenait des notes, observait les gestes, notait les difficultés.
 
-# Et alors ?
+# Et alors ?
 
 Je vois plusieurs avantages aux tests sauvages, surtout pour des porteurs de projets ou des start-up en création.
 

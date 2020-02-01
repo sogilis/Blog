@@ -1,5 +1,5 @@
 ---
-title: "Création d'un backlog centré utilisateurs : l'utilisation des UX Cards"
+title: "Création d'un backlog centré utilisateurs : l'utilisation des UX Cards"
 author: Marion Georges
 date: 2018-01-08T15:59:03+00:00
 categories:
@@ -10,7 +10,7 @@ tags:
   - méthodologie
 
 ---
-# Comment l'utilisation des UX cards lors d'un focus group, nous a permis de créer un backlog ?
+# Comment l'utilisation des UX cards lors d'un focus group, nous a permis de créer un backlog ?
 
 ## Introduction
 
@@ -30,9 +30,9 @@ Le troisième objectif était de **créer un bakclog**. Nous ne devions pas part
 
 ## Matériel
 
-Notre séance de co-design devait donc répondre à la question suivante : quel serait l’outil de pilotage d’équipe idéal pour un manager ?
+Notre séance de co-design devait donc répondre à la question suivante : quel serait l’outil de pilotage d’équipe idéal pour un manager ?
 
-7 participants étaient présents :
+7 participants étaient présents :
 
 * 6 utilisateurs d’entreprises de professions et secteurs d’activité différents
 * moi-même, ergonome, qui animait la séance
@@ -47,21 +47,21 @@ La séance s’est déroulée classiquement.
 
 **1.** **Présentation et rappel des objectifs** de la séance.
 
-**2.** **Jeu brise-glace** : présentez votre métier en 2040.
+**2.** **Jeu brise-glace** : présentez votre métier en 2040.
 
 Le but était d’éveiller les cerveaux, de se projeter dans le futur pour faciliter l’activité d’idéation qui allait suivre. Les sujets que nous avions abordés étaient intéressants, car ils ouvraient sur les usages de notre dashboard.
 
-**3.** **Activité d’idéation** : UX Cards.
+**3.** **Activité d’idéation** : UX Cards.
 
-Nous avons utilisé l’outil UX Cards, en technique de combinaison. Par groupe de deux personnes, les participants ont essayé de répondre à ces trois questions :
+Nous avons utilisé l’outil UX Cards, en technique de combinaison. Par groupe de deux personnes, les participants ont essayé de répondre à ces trois questions :
 
-- Comment le design visuel pourrait favoriser la stimulation et le plaisir d’utilisation ?
-- Quels contenus, informations, pourraient renforcer le sentiment de compétence et d’efficacité ?
-- Comment les fonctionnalités pourraient contribuer à l’autonomie et l’indépendance ?
+- Comment le design visuel pourrait favoriser la stimulation et le plaisir d’utilisation ?
+- Quels contenus, informations, pourraient renforcer le sentiment de compétence et d’efficacité ?
+- Comment les fonctionnalités pourraient contribuer à l’autonomie et l’indépendance ?
 
 Toutes les idées ont été partagées à l’ensemble du groupe et discutées. Elles ont constitué notre base pour le maquettage.
 
-**4.** **Activité de génération** : papier/crayon.
+**4.** **Activité de génération** : papier/crayon.
 
 Les participants, toujours en groupe de deux personnes, ont ensuite essayé de concrétiser les idées qu'ils avaient eu en dessinant sur une feuille de papier en niveau de gris. Les maquettes ont ensuite été partagé à l’ensemble du groupe et discutées.
 
@@ -77,7 +77,7 @@ Finalement, nous avons atteint nos objectifs. En effet, les 26 idées concernant
 
 Les utilisateurs ont tous joué le jeu en échangeant leur vision de leur métier, de leurs problématiques quotidiennes.
 
-De mon côté, un point est à améliorer concernant l’animation : l’enregistrement des moments de partage au groupe. J’ai perdu de l’information en oubliant d'enregistrer les restitutions des petits groupes à l’ensemble.
+De mon côté, un point est à améliorer concernant l’animation : l’enregistrement des moments de partage au groupe. J’ai perdu de l’information en oubliant d'enregistrer les restitutions des petits groupes à l’ensemble.
 
 Par contre, cette séance m’a permis de proposer une maquette plus aboutie à mon client, avec des données réelles. Par conséquent, le client n'a demandé pratiquement aucune correction, ce que je trouve satisfaisant.
 

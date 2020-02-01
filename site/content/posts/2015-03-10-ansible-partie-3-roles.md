@@ -1,5 +1,5 @@
 ---
-title: "Ansible partie 3 : Les rôles"
+title: "Ansible partie 3 : Les rôles"
 author: Sogilis
 date: 2015-03-10T13:03:36+00:00
 image: /img/2015/03/Sogilis-Christophe-Levet-Photographe-7503.jpg
@@ -11,11 +11,11 @@ tags:
   - roles
 
 ---
-Dans notre précédent article, nous avons vu comment installer l'application [ipfs](https://github.com/jbenet/go-ipfs) sur notre serveur. Nous avons fait le tout de manière très simple, avec un playbook global. Cela est peu élégant si nous souhaitons déployer plusieurs services sur la même machine. Et comment faire pour découper une suite de tâches simples que nous voudrions pouvoir réutiliser ? La réponse à ces deux questions se trouve dans les rôles Ansible. Les rôles sont une manière un peu plus élégante d'inclure des tâches Ansible au sein d'autres tâches en déclarant des dépendances.
+Dans notre précédent article, nous avons vu comment installer l'application [ipfs](https://github.com/jbenet/go-ipfs) sur notre serveur. Nous avons fait le tout de manière très simple, avec un playbook global. Cela est peu élégant si nous souhaitons déployer plusieurs services sur la même machine. Et comment faire pour découper une suite de tâches simples que nous voudrions pouvoir réutiliser ? La réponse à ces deux questions se trouve dans les rôles Ansible. Les rôles sont une manière un peu plus élégante d'inclure des tâches Ansible au sein d'autres tâches en déclarant des dépendances.
 
 ## Transformer notre playbook en rôle
 
-Commençons par créer un rôle simple correspondant exactement au playbook que nous avions la dernière fois :
+Commençons par créer un rôle simple correspondant exactement au playbook que nous avions la dernière fois :
 
 {{< highlight yml >}}
 ---
@@ -25,15 +25,15 @@ Commençons par créer un rôle simple correspondant exactement au playbook que 
     - go-install: name=go-ipfs package=github.com/jbenet/go-ipfs/cmd/ipfs
 {{< /highlight >}}
 
-Le rôle que nous allons créer va nécessiter de créer une arborescence dans un dossier `roles/` qui va contenir notre role nommé `ipfs` :
+Le rôle que nous allons créer va nécessiter de créer une arborescence dans un dossier `roles/` qui va contenir notre role nommé `ipfs` :
 
-* `roles/ipfs/tasks/main.yml` :
+* `roles/ipfs/tasks/main.yml` :
   {{< highlight yml >}}
   ---
   - go-install: name=go-ipfs package=github.com/jbenet/go-ipfs/cmd/ipfs
   {{< /highlight >}}
 
-Notre nouveau playbook va maintenant contenir une dépendance envers ce rôle :
+Notre nouveau playbook va maintenant contenir une dépendance envers ce rôle :
 
 {{< highlight yml >}}
 ---
@@ -43,17 +43,17 @@ Notre nouveau playbook va maintenant contenir une dépendance envers ce rôle :
     - ipfs
 {{< /highlight >}}
 
-## Un second rôle : cjdns-docker
+## Un second rôle : cjdns-docker
 
 Ce qui est intéressant, c'est d'avoir plusieurs rôles. Nous allons donc voir comment déployer cjdns en utilisant docker avec un rôle.
 
-* Ce rôle définit des variables dans `roles/cjdns-docker/vars/main.yml` :
+* Ce rôle définit des variables dans `roles/cjdns-docker/vars/main.yml` :
   {{< highlight yml >}}
   ---
   name: cjdns
   {{< /highlight >}}
 
-* et se compose de tâches définies dans un fichier `roles/cjdns-docker/tasks/main.yml` :
+* et se compose de tâches définies dans un fichier `roles/cjdns-docker/tasks/main.yml` :
   {{< highlight yml >}}
   ---
   - shell: docker pull mildred/cjdns
@@ -64,7 +64,7 @@ Ce qui est intéressant, c'est d'avoir plusieurs rôles. Nous allons donc voir c
   - file: src='{{cjdroute_conf.file}}' dest='/etc/docker-{{name}}.conf' state=link
   {{< /highlight >}}
 
-La variable `name` permet de nommer différents éléments du système correspondant au rôle. Elle a une valeur par défaut, mais pourra se redéfinir au niveau du playbook principal. Pour provisionner le container cjdns, il nous faut :
+La variable `name` permet de nommer différents éléments du système correspondant au rôle. Elle a une valeur par défaut, mais pourra se redéfinir au niveau du playbook principal. Pour provisionner le container cjdns, il nous faut :
 
 * récupérer le container avec un `docker pull`
 * déclarer un service systemd pour démarrer le container comme un service système
@@ -76,7 +76,7 @@ Nous voyons avec cela comment utiliser les variables. Pour utiliser une variable
 
 Les modules peuvent définir des variables de leur propre chef, mais il est également possible d'enregistrer le résultat d'un module dans une variable avec la syntaxe `register: *variable_name* `. Pour visualiser les champs disponibles, il faut utiliser l'option `-v` sur la ligne de commande lorsqu'on exécute le playbook. Dans notre exemple, un champ `file` est disponible, et sera utilisé avec la syntaxe `{{cjdroute_conf.file}}`.
 
-L'utilisation de ce rôle dans le playbook principal nécessite de définir une variable au moment de l'inclusion du rôle :
+L'utilisation de ce rôle dans le playbook principal nécessite de définir une variable au moment de l'inclusion du rôle :
 
 {{< highlight yml >}}
 ---
@@ -90,9 +90,9 @@ L'utilisation de ce rôle dans le playbook principal nécessite de définir une 
       name: '{{name}}-cjdroute'
 {{< /highlight >}}
 
-Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker-service` et `docker-datadir`. Leur conception n'implique rien de nouveau et voici leur code :
+Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker-service` et `docker-datadir`. Leur conception n'implique rien de nouveau et voici leur code :
 
-* `library/systemd-docker-service` :
+* `library/systemd-docker-service` :
   {{< highlight ini >}}
   #!/bin/bash
 
@@ -133,7 +133,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   name="$1"
   shift
 
-  if ! id="$(/usr/bin/docker inspect --format="{{.ID}}" "$name-data" 2>/dev/null)"; then
+  if ! id="$(/usr/bin/docker inspect --format="{{.ID}}" "$name-data" 2>/dev/null)"; then
     echo "Reusing $id"
     docker run --name "$name-data" --volumes-from "$name-data" --entrypoint /bin/true "$@"
   fi
@@ -149,13 +149,13 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   fi
   EOF
 
-  if ! cmp /tmp/$$.2 /usr/local/bin/docker-start-run; then
+  if ! cmp /tmp/$$.2 /usr/local/bin/docker-start-run; then
       mv /tmp/$$.2 /usr/local/bin/docker-start-run
       chmod +x /usr/local/bin/docker-start-run
       changed=true
   fi
 
-  if ! cmp /tmp/$$.1 /etc/systemd/system/$name.service; then
+  if ! cmp /tmp/$$.1 /etc/systemd/system/$name.service; then
       mv /tmp/$$.1 /etc/systemd/system/$name.service
       systemctl daemon-reload
       changed=true
@@ -173,7 +173,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   exit $res_code
   {{< /highlight >}}
 
-* `library/docker-datadir` :
+* `library/docker-datadir` :
   {{< highlight ini >}}
   #!/bin/bash
 
@@ -203,7 +203,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   file=
   variable=file
   . "$1"
-  : ${image_name:="$name-data"}
+  : ${image_name:="$name-data"}
 
   changed=false
   res="$(docker inspect -f "{{(index .Volumes "$volume")}}" "$image_name")$file"
@@ -223,16 +223,16 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
 
 Nous voudrions pouvoir accéder au container docker en utilisant SSH avec un utilisateur particulier. Ceci peut se faire de manière générique pour tout container Docker, et c'est comme cela que nous l'implémenterons. Nous définirons un rôle pour ajouter un accès ssh, et l'utiliseront pour le docker cjdns.
 
-Nous aurons besoin de `nsenter`, donc nous [l'installons avec docker](http://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/). Ensuite, nous créons un utilisateur avec l'UID 0 (afin qu'il ait les permissions d'exécuter `nsenter`), et nous spécifions une clef ssh de login, avec la commande `nsenter` qui nous permettra d'entrer dans le container :
+Nous aurons besoin de `nsenter`, donc nous [l'installons avec docker](http://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/). Ensuite, nous créons un utilisateur avec l'UID 0 (afin qu'il ait les permissions d'exécuter `nsenter`), et nous spécifions une clef ssh de login, avec la commande `nsenter` qui nous permettra d'entrer dans le container :
 
-* `roles/docker-ssh/vars/main.yml` :
+* `roles/docker-ssh/vars/main.yml` :
   {{< highlight yml >}}
   ---
   user: '{{name}}'
   shell: /bin/bash
   {{< /highlight >}}
 
-* `roles/docker-ssh/tasks/main.yml` :
+* `roles/docker-ssh/tasks/main.yml` :
   {{< highlight yml >}}
   ---
   - command: docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
@@ -240,7 +240,7 @@ Nous aurons besoin de `nsenter`, donc nous [l'installons avec docker](http://jpe
   - authorized_key: key="{{ssh_key}}" user='{{user}}' key_options='command="nsenter --target $(docker inspect --format {{ "{{.State.Pid}}" }} {{name}}) --mount --uts --ipc --net --pid {{shell}}"'
   {{< /highlight >}}
 
-Pour utiliser ce nouveau rôle, nous allons le déclarer comme dépendance dans `roles/cjdns-docker/meta/main.yml` :
+Pour utiliser ce nouveau rôle, nous allons le déclarer comme dépendance dans `roles/cjdns-docker/meta/main.yml` :
 
 {{< highlight yml >}}
 ---
@@ -249,7 +249,7 @@ dependencies:
     when: "'{{ssh_key}}' != ''"
 {{< /highlight >}}
 
-Et notre playbook principal va être augmenté afin de définir la variable `ssh_key` pour le rôle docker-cjdns (qui sera ensuite héritée par le rôle docker-ssh instancié par dépendance) :
+Et notre playbook principal va être augmenté afin de définir la variable `ssh_key` pour le rôle docker-cjdns (qui sera ensuite héritée par le rôle docker-ssh instancié par dépendance) :
 
 {{< highlight yml >}}
 ---
