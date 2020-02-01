@@ -2,7 +2,7 @@
 title: Le management sans manager chez Sogilis
 author: Tiphaine
 date: 2014-03-11T08:47:00+00:00
-image: /img/2013/12/Sogilis-Christophe-Levet-Photographe-7326.jpg
+image: /img/2013-12-Sogilis-Christophe-Levet-Photographe-7326.jpg
 categories:
   - NOTRE VISION
 tags:

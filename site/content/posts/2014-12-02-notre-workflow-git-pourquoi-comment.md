@@ -2,7 +2,7 @@
 title: Notre workflow Git, pourquoi, comment
 author: Yves Brissaud
 date: 2014-12-02T09:03:45+00:00
-image: /img/2016/04/1.Produits.jpg
+image: /img/2016-04-1.Produits.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -12,7 +12,7 @@ tags:
 ---
 Depuis l'avènement d'outils de gestion de code source de bonne qualité ([Git](http://git-scm.com/) et [mercurial](http://mercurial.selenic.com/) principalement) et surtout qui ne vous brident — presque — plus, vous pouvez enfin laisser libre court à votre imagination concernant votre flux de travail. Branches, rebase, merge…. Oui mais pour que le tout reste utilisable, surtout lorsque vous travaillez à plusieurs, il convient de régir tout ceci mais aussi de tenter de le conformer le plus possible à vos contraintes réelles — développement, production, tests…. Bref, il convient de définir un flux de travail — un _workflow_.
 
-![](/img/2014/12/tumblr_inline_nflo1khSyE1sv6muh.png)
+![](/img/2014-12-tumblr_inline_nflo1khSyE1sv6muh.png)
 
 Plutôt que de simplement vous présenter notre workflow, vous trouverez ici le _pourquoi_ et le _comment_, c'est au final ce qui est le plus important.
 
@@ -71,7 +71,7 @@ git commit
 
 Le problème, c'est que le résultat devient quelque peu… différent de ce qui était escompté. Pourtant, vous utilisez Git, on vous a toujours dit que les branches c'étaient bien, qu'il ne faut pas avoir peur des fusions, etc. L'un des difficultés provient du fait que, lorsqu'on utilise des [DVCS](http://en.wikipedia.org/wiki/Distributed_revision_control) à plusieurs — ou pas d'ailleurs — on crée automatiquement des branches divergentes même si il est d'usage d'avoir toujours une référence nommée et partagée (_master_ soug Git). Et forcément, s'il y a branches divergentes et qu'on utilise Git de base, il y a forcément une prolifération du nombre de fusion puisqu'on tente, naturellement, de se maintenir à jour par rapport à la base de code commune. Voici par exemple le résultat qu'on peut obtenir.
 
-![](/img/2014/12/tumblr_inline_nez8kcKWWl1sv6muh.png)
+![](/img/2014-12-tumblr_inline_nez8kcKWWl1sv6muh.png)
 
 Pour info c'est un vrai historique hein 😉
 
@@ -87,7 +87,7 @@ En fait, il y en a plein.
 
 Dans les plus connus, si vous avez des développements en production avec branche de maintenance et autres, que vous faites du [SemVer](http://semver.org/) par exemple, il y a [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/) :
 
-![](/img/2014/12/tumblr_inline_nez8ktrbKd1sv6muh.png)
+![](/img/2014-12-tumblr_inline_nez8ktrbKd1sv6muh.png)
 
 Vous pouvez trouver plus d'infos sur le lien précédent, sur le [projet Github](https://github.com/nvie/gitflow) ou chez [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
 
@@ -95,7 +95,7 @@ A noter qu'il existe une variante pour [mercurial](http://mercurial.selenic.com/
 
 L'autre workflow très courant aujourd'hui c'est le [Github Flow](https://guides.github.com/introduction/flow/index.html).
 
-![](/img/2014/12/tumblr_inline_nez8l9PRWV1sv6muh.png)
+![](/img/2014-12-tumblr_inline_nez8l9PRWV1sv6muh.png)
 
 Il est très pratique si vous êtes dans le cadre de déploiement continu et si vous utilisez des systèmes comme [Github](https://github.com/) / [bitbucket](https://bitbucket.org) / autre solution d'hébergement avec code review et pull request.
 
@@ -163,7 +163,7 @@ Le rebase va obliger à réécrire l'historique et donc probablement à forcer l
 
 Vous vous souvenez de l'historique horrible du début de l'article ? Maintenant voici ce que cela donne :
 
-![](/img/2014/12/tumblr_inline_nez8lrqrff1sv6muh.png)
+![](/img/2014-12-tumblr_inline_nez8lrqrff1sv6muh.png)
 
 Ceci est une capture du vrai résultat, sur le même projet. Bon ok vous n'avez pas les commentaires des commits, mais voici ce qu'on peut en tirer :
 

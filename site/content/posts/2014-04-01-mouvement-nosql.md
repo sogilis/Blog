@@ -2,7 +2,7 @@
 title: Le mouvement NoSQL
 author: Alexandre Dumont
 date: 2014-04-01T08:28:00+00:00
-image: /img/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
+image: /img/2015-03-Sogilis-Christophe-Levet-Photographe-7461.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -15,7 +15,7 @@ tags:
 
 Ces dernières années témoignent d’un engouement certain autour des technologies permettant l’accumulation, l’analyse et la transformation de données très volumineuses (réseaux sociaux notamment). Dans l’optique de supporter des volumes de données grandissants, il est nécessaire de délocaliser les procédures de traitement sur différentes machines et de mutualiser les ressources de façon transparente pour l’utilisateur final.
 
-![](/img/2014/04/tumblr_inline_n3b2avvoZ21sc5im4.png "NoSql")
+![](/img/2014-04-tumblr_inline_n3b2avvoZ21sc5im4.png "NoSql")
 
 ## Le NoSQL, c’est quoi ?
 

@@ -2,7 +2,7 @@
 title: Et si vous regardiez Git comme une base de donnée ? – Version Ruby
 author: Yves
 date: 2014-02-27T12:26:00+00:00
-image: /img/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
+image: /img/2015-03-Sogilis-Christophe-Levet-Photographe-7461.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

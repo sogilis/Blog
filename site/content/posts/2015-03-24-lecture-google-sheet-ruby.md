@@ -2,7 +2,7 @@
 title: Lecture d’un fichier Google Sheet en Ruby avec OAuth2
 author: Sogilis
 date: 2015-03-24T12:54:22+00:00
-image: /img/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
+image: /img/2015-03-Sogilis-Christophe-Levet-Photographe-7461.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -18,7 +18,7 @@ tags:
 ---
 Pour un développeur, piloter des Google Docs depuis son application est une fonctionnalité relativement puissante. Les API Google permettent beaucoup de choses en ce sens. En revanche, ce n'est pas toujours facile de s'y retrouver dans les méandres des différentes technologies, API et documentations que l'on peut trouver sur la toile. Suite aux difficultés que j'ai pu rencontrer en cherchant une documentation claire, je vais essayer ici de synthétiser les différentes étapes permettant de réaliser une opération assez fondamentale : **lire le contenu d’un document Google Sheet en utilisant une connexion authentifiée avec OAuth 2 en mode server to server**.
 
-!(Lecture d'un un fichier Google Sheet en Ruby[/img/2015/03/Oauth2GoogleDocs.png]
+!(Lecture d'un un fichier Google Sheet en Ruby[/img/2015-03-Oauth2GoogleDocs.png]
 
 Pour les pressés, voici le code Ruby qui fait le boulot :
 
@@ -63,7 +63,7 @@ Mais passons à la première étape : l’authentification.
 
 ## Authentification avec OAuth
 
-![Lecture d'un un fichier Google Sheet en Ruby - OAuth2](/img/2015/03/Securirty-with-OAuth2.png)
+![Lecture d'un un fichier Google Sheet en Ruby - OAuth2](/img/2015-03-Securirty-with-OAuth2.png)
 
 La première difficulté est de comprendre les mécanismes du protocole OAuth 2.0 utilisé par Google, Facebook… Pour schématiser – beaucoup –, le principe consiste à **récupérer un jeton** (représenté par une chaîne de caractères) qui permettra ensuite d’interroger les services google **sous une certaine identité** pendant une durée définie.
 
@@ -169,7 +169,7 @@ Troisième étape : lecture du contenu.
 
 ## Lecture de fichier Google Sheet
 
-![Lecture d'un un fichier Google Sheet en Ruby - Google Spreadsheet + Ruby](/img/2015/03/Google-Spreadsheet-Ruby.png)
+![Lecture d'un un fichier Google Sheet en Ruby - Google Spreadsheet + Ruby](/img/2015-03-Google-Spreadsheet-Ruby.png)
 
 Enfin, pour lire un document, on peut vouloir le faire à partir de l’**identifiant** du document.
 

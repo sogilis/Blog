@@ -2,7 +2,7 @@
 title: "Compression, reconstruction d'images et calculs au-delà de la troisième dimension"
 author: Alexandre Dumont
 date: 2016-10-25T08:00:22+00:00
-image: /img/2015/03/Sogilis-Christophe-Levet-Photographe-7461.jpg
+image: /img/2015-03-Sogilis-Christophe-Levet-Photographe-7461.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -29,7 +29,7 @@ Il faut garder en tête que le PCA repose sur des calculs d'algèbre linéaire v
 
 Intuitivement, la technique du PCA permet de **trouver un repère** (de l'espace dans lequel on travaille) **qui minimise le degré de corrélation des données**. Dans la figure suivante, cela revient à trouver le repère (u,v) centré sur le point moyen du jeu de données alors qu'on ne connaît que les points dans le repère initial (i,j).
 
-![data-representation](/img/2016/10/data-representation.png)
+![data-representation](/img/2016-10-data-representation.png)
 
 Le principe du PCA est plutôt simple, puisqu'**on travaille sur un objet en particulier : la matrice de covariance du jeu de données**. Cette matrice décrit le degré de corrélation de chaque coordonnée des points du jeu de données, c'est-à-dire que les coefficients de cette matrice sont des mesures représentant à quel point telle coordonnée est couplée à telle autre coordonnée pour les échantillons observés. La méthode usuelle pour construire la matrice de covariance consiste à créer une matrice qui a pour chaque ligne un point du jeu de données. On recentre le jeu de données autour de la moyenne, et on multiplie la transposée de la matrice par elle-même pour en déduire la matrice de covariance (à un facteur de normalisation près).
 
@@ -37,7 +37,7 @@ Des théorèmes mathématiques bien connus - dont un de mes favoris, le [théor�
 
 On est donc capable, en sortie de PCA, de connaître les principaux axes de dispersion des données, mais aussi de savoir quels axes décrivent le mieux cette dispersion. **Ces informations ouvrent la voie à des représentations plus compactes, et moins redondantes des données**. Souvent, les données observées disposent d'une structure cachée que le PCA fait ressortir. On se rend alors compte que les données peuvent être représentées différemment tout en conservant un degré de précision raisonnable. Par exemple, dans la figure suivante, on se rend compte qu'on a tout intérêt à représenter les données uniquement selon l'axe u, puisque l'axe v décrit très peu la dispersion du jeu de données.
 
-![dimensionality-reduction](/img/2016/10/dimensionality-reduction.png)
+![dimensionality-reduction](/img/2016-10-dimensionality-reduction.png)
 
 Supposons que notre jeu de données compte 1 000 points (de deux coordonnées chacun). Il faut donc 2 000 valeurs dans le repère (i,j) pour décrire totalement le jeu de données. Après le PCA, il faut 1 004 valeurs distinctes :
 
@@ -58,7 +58,7 @@ Avant d'aller plus loin, il est nécessaire de poser certains prérequis qui von
 
 Afin de prendre en compte les suppositions précédentes, **nous travaillerons avec le trombinoscope ci-dessous**. Chaque image est à la résolution 92 x 128 et est en nuances de gris (pour chaque pixel, il y a une seule valeur sur 8 bits qui décrit la nuance de gris). Ce jeu d'images est disponible sur le web, il s'agit d'ailleurs d'un échantillon d'une base d'images bien plus importante utilisée dans un bon nombre d'articles de recherche.
 
-![tetes-one](/img/2016/10/Têtes-one.png)
+![tetes-one](/img/2016-10-Têtes-one.png)
 
 En terme de représentation, chaque image est une matrice de taille 92 x 128, qui contient des entiers entre 0 et 255 (les nuances de gris de chaque pixel). On peut aussi voir chaque image sous un autre angle : au lieu de la représenter par une matrice, on peut la modéliser par une seule ligne (en mettant toutes les lignes qui composent l'image bout à bout). Chaque point (ou _vecteur_, en algèbre linéaire ce sont les mêmes notions) obtenu a alors 92 x 128 = 11 776 coordonnées. Nous allons donc lancer le PCA dans un espace à 11 776 dimensions !
 
@@ -66,7 +66,7 @@ En terme de représentation, chaque image est une matrice de taille 92 x 128, qu
 
 Une fois la diagonalisation terminée, le PCA nous retourne une liste de six vecteurs propres (car il y a six images distinctes dans le jeu de données) avec les valeurs propres associées. Ces vecteurs propres sont nécessairement de taille 11 776 = 92 x 128, la même taille que les images initiales. Et si on les imprimait, pour voir à quoi elles ressemblent ? Ci-dessous sont présentées les images par ordre décroissant de valeur propre.
 
-![tetes-two](/img/2016/10/Têtes-two.png)
+![tetes-two](/img/2016-10-Têtes-two.png)
 
 Intéressant, n'est-ce pas ? **Ces images** **montrent les directions dans lesquelles les images initiales varient le plus.** Plusieurs caractéristiques sont remarquables :
 
@@ -77,7 +77,7 @@ Rien qu'avec ces images, le PCA permet de classer les images initiales par rappo
 
 **La reconstruction de la troisième image du jeu de données est montrée ci-dessous**, en appliquant successivement chaque composante principale à la précédente image. Il y a 7 images en tout, parce qu'on part de l'_image moyenne_ (calculée en faisant la moyenne des nuances de gris des images initiales) et en appliquant successivement chacune des 6 composantes principales.
 
-![tetes-three](/img/2016/10/Têtes-three.png)
+![tetes-three](/img/2016-10-Têtes-three.png)
 
 La reconstruction fonctionne, donc les mathématiques ne mentent pas ! Plus sérieusement, on remarque que les deux dernières reconstructions n'apportent pas énormément de valeur à l'image. On peut donc encoder l'image avec seulement ses quatre principales composantes et conserver ses caractéristiques. Quel est **le gain en terme d'espace de stockage**, pour toutes les images, en ne gardant que les quatre principales composantes ? Sans PCA, on a besoin de 6 x 11 776 = 70 656 octets (valeurs de 8 bits).
 

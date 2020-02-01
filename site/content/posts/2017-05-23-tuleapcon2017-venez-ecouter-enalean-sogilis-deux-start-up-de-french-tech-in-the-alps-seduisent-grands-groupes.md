@@ -2,7 +2,7 @@
 title: "TuleapCon2017 : Venez écouter Enalean et Sogilis, deux start-up de la «French Tech in the Alps» qui séduisent les grands groupes"
 author: Tiphaine
 date: 2017-05-23T10:08:42+00:00
-image: /img/2017/05/tuleapcon2017.png
+image: /img/2017-05-tuleapcon2017.png
 categories:
   - LA VIE À SOGILIS
   - Non classé
@@ -69,7 +69,7 @@ CA 2016 : 2 millions consolidés
 [@sogilis](https://twitter.com/Sogilis)
 [https://sogilis.fr](https://sogilis.fr)
 
-![sogilis](/img/2017/05/Sogilis-Christophe-Levet-Photographe-7461-1024x615.jpg)
+![sogilis](/img/2017-05-Sogilis-Christophe-Levet-Photographe-7461-1024x615.jpg)
 
 [1]: https://www.enalean.com/
 [2]: http://sogilis.com/

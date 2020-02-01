@@ -2,7 +2,7 @@
 title: "9 mois à Sogilis : bilan d'une salariée"
 author: Margaux
 date: 2017-08-17T11:45:28+00:00
-image: /img/2017/08/margaux-au-bureau.jpg
+image: /img/2017-08-margaux-au-bureau.jpg
 categories:
   - LA VIE À SOGILIS
 tags:
@@ -17,7 +17,7 @@ Moi, aujourd’hui, je travaille (pourquoi ? J’y reviendrai), et comme la pér
 
 # D'où je viens ?
 
-![Margaux_1200x800](/img/2017/08/Margaux_1200x800-150x150.jpg)
+![Margaux_1200x800](/img/2017-08-Margaux_1200x800-150x150.jpg)
 
 Margaux, 31 ans, je suis ergonome ou UX-designer depuis 3 ans. Avant ça, j’ai fait des études en biologie à Lyon, plus précisément en neurosciences, et une thèse sur les interfaces cerveau-ordinateur (comment contrôler un ordinateur par la “pensée”, plutôt classe comme sujet). En fin de thèse, je ne souhaitais pas continuer dans le domaine de la recherche académique, et j’ai trouvé un poste de chargée de recherche dans une start-up à Paris. Ça s’est mal passé et je suis rentrée à Lyon après les 6 mois de ma période d’essai. J’ai alors commencé à chercher du boulot dans le domaine de l’ergonomie numérique qui m’intéressait, et j’ai trouvé un poste à Grenoble chez un éditeur de logiciel.
 
@@ -57,7 +57,7 @@ J’ai également participé à une douzaine d’avant-ventes, dans des secteurs
 Le besoin d'ergonomie, au regard de la taille de l'entreprise, est cyclique et me laisse du temps pour d'autres activités. En particulier, je m’implique dans les questions de communication interne et externe :
 
 * mise en place d’une landing page pour Sogilis Australie
-  ![licorne-sticker](/img/2017/08/licorne-sticker.png)
+  ![licorne-sticker](/img/2017-08-licorne-sticker.png)
 * (co-)écriture d’articles de blog
 * participation à des conférences en tant qu’oratrice ou visiteuse (live-tweet, sketchnotes, networking…)
 * mise en place d’un workshop interne pour réfléchir à des supports de communication
@@ -72,7 +72,7 @@ Le besoin d'ergonomie, au regard de la taille de l'entreprise, est cyclique et m
 
 Enfin, de manière ponctuelle, je participe au recrutement et je fais un peu de business development.
 
-![Retrospective](/img/2017/08/IMG_5087-1200x800-1024x683.jpg)
+![Retrospective](/img/2017-08-IMG_5087-1200x800-1024x683.jpg)
 
 # Bilan de ces 9 mois
 

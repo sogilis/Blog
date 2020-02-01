@@ -2,7 +2,7 @@
 title: "Les objets insolites au sein de Sogilis #2"
 author: Sogilis
 date: 2016-08-23T08:00:15+00:00
-image: /img/2015/09/Basket.jpg
+image: /img/2015-09-Basket.jpg
 categories:
   - LA VIE À SOGILIS
 tags:
