@@ -2,7 +2,7 @@
 title: Et si vous regardiez Git comme une base de donnée ? – Les entrailles
 author: Yves
 date: 2014-02-19T14:58:00+00:00
-image: /img/2016/04/Sogilis-Christophe-Levet-Photographe-7898.jpg
+image: /img/2016-04-Sogilis-Christophe-Levet-Photographe-7898.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

@@ -8,7 +8,7 @@ categories:
 ---
 Dans le cadre d’un projet sur lequel nous travaillons actuellement, nous avons été amenés à implémenter un service web spring-boot capable de stocker des objets relativement simples dans une base de données.
 
-![Support du stockage JPA et MongoDB dans une application Spring-boot - header](/img/2017/07/blog-header-2-1024x309.png)
+![Support du stockage JPA et MongoDB dans une application Spring-boot - header](/img/2017-07-blog-header-2-1024x309.png)
 
 La particularité de ce service réside dans sa compatibilité avec **différents moteurs de stockage** : relationnelle (ex: Oracle, Postgres...) et NoSQL orienté document (principalement MongoDB). Cette exigence vient directement des contraintes du client qui distribue sa solution logicielle avec différentes bases de données. L’environnement technique est bien évidemment lié aux contraintes du client, et comprend le framework [Spring Boot](https://projects.spring.io/spring-boot/) pour le développement de microservices avec des couches de persistance type **JPA** (Java Persistence API) et **MongoDB**.
 
@@ -36,7 +36,7 @@ L’idée derrière le développement de ce service est de laisser à l’admini
 
 Nous souhaitons donc éviter ceci :
 
-![Support du stockage JPA et MongoDB dans une application Spring-boot - solution avec duplications](/img/2017/07/blog-solution-avec-duplications.png)
+![Support du stockage JPA et MongoDB dans une application Spring-boot - solution avec duplications](/img/2017-07-blog-solution-avec-duplications.png)
 
 Une autre solution à cette problématique pourrait être de créer plusieurs artefacts, l’un dédiée à l’application utilisant une couche d’abstraction (Spring Data Commons par exemple), et les autres implémentant chacun un type de persistance donné. C’est alors la constitution du classpath qui déterminerait quelle persistance utiliser (grâce au système d’auto-configuration de Spring Boot).
 
@@ -48,7 +48,7 @@ Premier constat : les modules [Spring Data JPA][2] et [Spring Data MongoDB][3] d
 
 Nous pouvons donc nous baser sur ce module pour écrire le code commun aux 2 types de persistances, et en particulier le Repository, ce qui donne ceci :
 
-![Support du stockage JPA et MongoDB dans une application Spring-boot - class diagramm](/img/2017/07/blog-class-diagramm.png)
+![Support du stockage JPA et MongoDB dans une application Spring-boot - class diagramm](/img/2017-07-blog-class-diagramm.png)
 
 Ainsi, il n’est nécessaire de déclarer dans notre application que l’interface _PersonRepository_, les implémentations pour JPA ou Mongo étant générées automatiquement par Spring.
 

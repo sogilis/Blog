@@ -2,7 +2,7 @@
 title: "Designing Hexo+ Mobile App: Design Sprints (part #2)"
 author: Laurie
 date: 2016-07-05T15:06:09+00:00
-image: /img/2016/06/Hexo-article-1.jpg
+image: /img/2016-06-Hexo-article-1.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -19,7 +19,7 @@ tags:
 
 Working in fast-paced iterations, we ran a one-day workshop every week for taking a problem or feature from design through prototyping and testing. In this second part, we’ll provide a sneak peek into our design process for running a workshop and prototype Hexo+ user experience.
 
-![Designing Hexo+ Mobile App 6](/img/2016/06/Designing-Hexo-Mobile-App-6.png)
+![Designing Hexo+ Mobile App 6](/img/2016-06-Designing-Hexo-Mobile-App-6.png)
 
 At the end of each workshop, we took at least 30 minutes with Eva (our Product Owner), Seb (CTO) and sometime a software developer to share and validate solutions together. Then we all cleared our calendars and planned for the next iteration, listing problems we wanted to tackle when possible.
 
@@ -30,7 +30,7 @@ Once design solutions were validated by the PO and the team, it was time to prod
 - transform our lousy sketches into awesome interface mockups using Photoshop and Marvel app, and pass it on to the development team to implement design solutions in the prototype (Nico’s job);
 - provide a new version of the storyboards with high-res mockups and keep them visible on a wall so that everyone can give feedback.
 
-![Designing Hexo+ Mobile App 7](/img/2016/06/Designing-Hexo-Mobile-App-7.jpg)
+![Designing Hexo+ Mobile App 7](/img/2016-06-Designing-Hexo-Mobile-App-7.jpg)
 
 This collaboration process worked well all along the project and we had a great dynamic within the group. We all had different backgrounds and skills but we played as a team and knew our role was not to push our concepts through. We were here to ensure that everything was happening in the way it needed to for the project to move to the next stage. And in the meantime, we always had a good time and the laughs were endless.
 
@@ -50,15 +50,15 @@ The thing is, we realized timing the sequence was absolutely impossible. There w
 
 **Designing the PreFlight Check**
 
-![Designing Hexo+ Mobile App 8](/img/2016/06/Designing-Hexo-Mobile-App-8.jpg)
+![Designing Hexo+ Mobile App 8](/img/2016-06-Designing-Hexo-Mobile-App-8.jpg)
 
 1. We needed to improve the PreFlight Check (PFC) displaying a modal dialog with a troubleshooting list.
 
-![Designing Hexo+ Mobile App 9](/img/2016/06/Designing-Hexo-Mobile-App-9.jpg)
+![Designing Hexo+ Mobile App 9](/img/2016-06-Designing-Hexo-Mobile-App-9.jpg)
 
 2. We sketched as many different directions as we could, picking the best ones and then test them out in a prototype. We tried to clarify things by grouping items and splitting screens, checking one group at a time. The solution was approved, and we moved on to the next design problem only to realise a few weeks later that the PFC specs had changed while developing the app.
 
-![Designing Hexo+ Mobile App 10](/img/2016/06/Designing-Hexo-Mobile-App-10.jpg)
+![Designing Hexo+ Mobile App 10](/img/2016-06-Designing-Hexo-Mobile-App-10.jpg)
 
 3. With both dev and design teams we agreed on displaying an overview with a list of 3 items (Communication, Hardware, Position) showing a status (good / bad) and a detailed view for each group.
 

@@ -2,7 +2,7 @@
 title: "Demystifying Git: 3 Concepts to Do Everything with Git"
 author: Simon Denier
 date: 2015-05-12T13:05:31+00:00
-image: /img/2016/05/Sogilis-Christophe-Levet-Photographe-8824-e1462795824232.jpg
+image: /img/2016-05-Sogilis-Christophe-Levet-Photographe-8824-e1462795824232.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -20,7 +20,7 @@ When you switch to another branch, or update your current branch, you change you
 
 _When you update your working copy, you move the HEAD in the graph. Git computes the changeset between the current HEAD and the chosen one to just update files which need to change._
 
-![](/img/2015/05/working_copy_update.png)
+![](/img/2015-05-working_copy_update.png)
 
 Think about it: to change your working copy, Git could simply wipe out previous files and dump fresh new files. But for big projects with thousands of files, this would be way too costly. Instead it patches local files, which implies it only changes what needs to be updated to mirror the new state.
 
@@ -34,7 +34,7 @@ You make a cherry-pick when you want to retrieve some commits and changes from a
 
 _With `git cherry-pick B D`, you can copy changes from commits B and D into your current branch, without the change introduced by C. Notice that B’ and D’ are new commits: they just have the same data as their source but are independent otherwise._
 
-![](/img/2015/05/cherrypick.gif)
+![](/img/2015-05-cherrypick.gif)
 
 Cherry-picking really embodies the whole changeset everywhere principle.
 
@@ -56,7 +56,7 @@ Here is the course of action when you launch a rebase:
 4. When performing an interactive rebase, Git will also apply the action you selected for the commit (pick, edit, squash…).
 5. If a conflict appears when applying a changeset, Git stops and asks you to resolve the conflict before continuing or cancelling the rebase.
 
-![](/img/2015/05/rebase.gif)
+![](/img/2015-05-rebase.gif)
 
 With this workflow in mind, it is easy to understand two fringe cases which deter some people to use rebase: orphan commits coming back (for example, after a merge) and recurring conflicts during rebase.
 
@@ -66,7 +66,7 @@ Although rebasing is often explained as moving commits around, it is best to und
 
 _Rebasing creates new commits C’ and D’ from the source C and D, changing the ancestry from B to E. But source commits stay around and can come back as duplicates if someone keeps a reference on them._
 
-![](/img/2015/05/rebase_orphan.png)
+![](/img/2015-05-rebase_orphan.png)
 
 ### Advanced Git: Recurring Conflicts
 
@@ -86,7 +86,7 @@ Merging is conceptually a bit more complex as we need a fourth concept to explai
 
 _Since commit E is a snapshot and already contains changes brought by D, we just need to compute the difference (changeset) between the common ancestor B and commit E. Contrary to rebase which copies commit history, merge only takes into account consolidated changes from the latest commit/snapshot._
 
-![](/img/2015/05/merge_step1.png)
+![](/img/2015-05-merge_step1.png)
 
 With the above concepts, we have a simple plan for the merge operation.
 
@@ -96,7 +96,7 @@ With the above concepts, we have a simple plan for the merge operation.
 4. Let user resolve conflicts if need be.
 5. Create a merge commit with the two merge heads as parents.
 
-![](/img/2015/05/merge_step2.png)
+![](/img/2015-05-merge_step2.png)
 
 ### Advanced Git: More Than One Ancestor?
 
@@ -104,13 +104,13 @@ The example above represents the most basic scenario. But as merges can be perfo
 
 _If we take the changeset from common ancestor B to G, it contains changes from D and G, but also from C through the previous merge E. But we do not want C changes since they are already in F. Instead, if we take the changeset from **latest** common ancestor C to G, it only contains changes from D, E, and G, consolidated in G snapshot._
 
-![](/img/2015/05/merge_ancestors.png)
+![](/img/2015-05-merge_ancestors.png)
 
 More complex scenarios arise when merged branches start to cross each other, as in the demonstrative criss-cross merge. Then you can have multiple latest common ancestors.
 
 _Both C and D commits can be considered as latest common ancestors of G and H. If you take the diff from D to H, you get changes from C (through E) and H, but C is already in G. If you take the diff from C to H, you get changes from D and H, but D is already in G through F. The solution is to create a virtual merge of C+D and to compute changes against it, which yields changes from E and H only. On the long run, this strategy produces more intuitive merges and less conflicts._
 
-![](/img/2015/05/merge_crisscross.png)
+![](/img/2015-05-merge_crisscross.png)
 
 Most revision tools fail to handle such cases correctly (Subversion cancels the merge by screaming “missing revisions” and let you handle the case manually; Mercurial makes an arbitrary choice among common ancestors). Git resolves this case with the so-called _recursive merge strategy_, which computes a virtual common ancestor (a virtual merge of common ancestors).
 
@@ -124,4 +124,4 @@ Now you should just go practice with your project. One good advice is to have a 
 
 _This gitk screenshot shows a before/after state of a repository following a rebase. The two MIN/MAX commits above `tp7-start` tag have been rebased on top of `functions-and-more` in the `tp7` branch. In this view, you can still see the old commits, which are now orphaned, and the two new commits, which are just copies of the old ones._
 
-![](/img/2015/05/gitk_rebase.png)
+![](/img/2015-05-gitk_rebase.png)

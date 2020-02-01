@@ -2,7 +2,7 @@
 title: On recrute !
 author: Tiphaine
 date: 2016-07-28T10:37:41+00:00
-image: /img/2016/07/Sogilis-Christophe-Levet-Photographe-7971.jpg
+image: /img/2016-07-Sogilis-Christophe-Levet-Photographe-7971.jpg
 categories:
   - LA VIE À SOGILIS
 tags:
@@ -11,7 +11,7 @@ tags:
 ---
 **Au sein de Sogilis, on a les oreilles ouvertes pour recruter des profils de passionnés passionnants à Grenoble et Lyon.**
 
-![Recrutement4](/img/2016/07/Recrutement4.png)
+![Recrutement4](/img/2016-07-Recrutement4.png)
 
 **Sogilis est une société de services. Pourtant, on a du mal à se considérer comme une SSII.** _[Jérémy et Corentin en parlent d’ailleurs très bien dans un article dédié.][1]_ Au sein de notre entreprise, on ne se contente pas de développer des logiciels fiables et sur mesure qui tendent vers du zéro défaut. Nous nous assurons que le périmètre développé soit en adéquation avec les besoins de ses utilisateurs et mettons tout en œuvre pour rendre notre client autonome. Cela se traduit par **un accompagnement global des projets de nos clients** : au-delà du logiciel, nous les aidons à se concentrer sur leur business et les guider dans leur recherche de financement.
 

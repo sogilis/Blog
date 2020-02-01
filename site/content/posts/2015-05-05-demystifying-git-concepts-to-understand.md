@@ -2,7 +2,7 @@
 title: "Demystifying Git: 3 Concepts to Understand the Git Model"
 author: Simon Denier
 date: 2015-05-05T13:44:00+00:00
-image: /img/2016/04/Sogilis-Christophe-Levet-Photographe-7898.jpg
+image: /img/2016-04-Sogilis-Christophe-Levet-Photographe-7898.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -29,21 +29,21 @@ With this guarantee, we can be sure that checking out a commit will give us that
 
 _Commit A points to a snapshot of all project files (files bar, foo, and zorg). Even if you only change the foo file (in yellow) to create a version v3 in commit A, Git will remember that you want zorg file in version 1 and bar file in version 2 for this snapshot._
 
-![](/img/2015/05/snapshot.png)
+![](/img/2015-05-snapshot.png)
 
 ## Git Represents Relationships between Commits (aka History) as a Graph
 
 In any revision control system, commits do not exist in isolation but are linked through a parent-child relationship, which remembers where a commit comes from (what was the previous state before the commit).
 
-![](/img/2015/05/graph.png)
+![](/img/2015-05-graph.png)
 
 So you can start to view the history of your project as a line of successive states. The above figure presents a common representation of history in a Git repository, where the arrow indicates that commit B **knows** that its parent is commit A (in Git, parent commits do not know about their children, so the arrow points “backward”). In the same manner, commit C knows its parent B, and by transitivity its grandparent A…
 
-![](/img/2015/05/graph_branch.png)
+![](/img/2015-05-graph_branch.png)
 
 When two commits share the same parent, you start to have divergent branches. Each line can continue to grow in concurrent ways.
 
-![](/img/2015/05/graph_merge.png)
+![](/img/2015-05-graph_merge.png)
 
 When time has come to merge two branches together, Git creates a commit with two parents. The result is that the history is now a directed graph of commits.
 
@@ -57,7 +57,7 @@ When you create a commit B from commit A, you create a new snapshot. But you can
 
 _A snapshot stores the full state, independent of history: B commit points to files bar, foo, and zorg. A changeset only records what has changed: B changeset describes local patches (in yellow) in bar and zorg files. Both concepts are actually interchangeable and can be used to model the history graph._
 
-![](/img/2015/05/changeset.png)
+![](/img/2015-05-changeset.png)
 
 ### What Is in a Changeset? And What to Do With It?
 
@@ -65,7 +65,7 @@ The interesting bit about changesets is that they can be used as blueprint to co
 
 _Applying the B changeset onto commit F will only modify files bar and zorg. It does not care that unmodified foo file from B is absent in F or that there is a yyy file in F._
 
-![](/img/2015/05/changeset_applied.png)
+![](/img/2015-05-changeset_applied.png)
 
 Git, for example, see changes at the level of lines in text files. When you view a patch in Git (which is the textual representation of a changeset), you see something like that:
 
@@ -108,7 +108,7 @@ Git needs only to match the target files, line positions and textual context to 
 
 _Changeset can update bar file, even if there is already a change in another place. But it can not update zorg file automatically, as the local context for the patch has changed. It will let you resolve the conflict._
 
-![](/img/2015/05/changeset_conflict.png)
+![](/img/2015-05-changeset_conflict.png)
 
 ### Changesets Anytime Anywhere
 
@@ -120,7 +120,7 @@ Things start to become interesting when you know that Git can compute changesets
 
 _You can read the `git diff` form as `git diff [from] X [to] Y`._
 
-![](/img/2015/05/graph_diff.png)
+![](/img/2015-05-graph_diff.png)
 
 In other words, Git is super effective in computing state transformations and applying such transformations elsewhere (well, most RCS can do the same, but some are more effective than others).
 

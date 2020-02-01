@@ -2,7 +2,7 @@
 title: End-to-end testing with chrome headless at SquareScale
 author: Adrien Hamraoui
 date: 2017-11-07T12:32:09+00:00
-image: /img/2017/11/preview-full-s_600ppi.png
+image: /img/2017-11-preview-full-s_600ppi.png
 categories:
   - DÉVELOPPEMENT
 tags:
