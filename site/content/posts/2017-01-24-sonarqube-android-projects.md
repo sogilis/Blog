@@ -2,7 +2,7 @@
 title: SonarQube for Android Projects
 author: Jean-Baptiste
 date: 2017-01-24T09:26:44+00:00
-image: /img/2016/04/2.Notre-vision.jpg
+image: /img/2016-04-2.Notre-vision.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -169,7 +169,7 @@ jacoco {
 
 Here is what you can get :
 
-![SonarQube](/img/2017/01/SonarQube.jpg)
+![SonarQube](/img/2017-01-SonarQube.jpg)
 
 ## Android Studio plugin
 
@@ -212,11 +212,11 @@ Android flavors are not managed natively with SonarQube gradle plugin. You have 
 
 The given configuration here allow you to analyze a single module without others. But each module will appear as a stand alone project in SonarQube like this:
 
-![SonarQube Projects](/img/2017/01/SonarQube-Projects-1024x225.jpg)
+![SonarQube Projects](/img/2017-01-SonarQube-Projects-1024x225.jpg)
 
 If you want all modules in a single project in SonarQube, you can move SonarQube plugins from modules to parent **build.gradle** (see branch [merge_modules_in_single_sonarqube_project](https://github.com/sogilis/sonarqube-for-android-example/tree/merge_modules_in_single_sonarqube_project) in example project):
 
-![SonarQube Projects2](/img/2017/01/SonarQube-Projects2-1024x165.jpg)
+![SonarQube Projects2](/img/2017-01-SonarQube-Projects2-1024x165.jpg)
 
 ## Possible issues
 

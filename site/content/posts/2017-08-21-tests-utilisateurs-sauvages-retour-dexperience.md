@@ -15,7 +15,7 @@ Le test utilisateur est un outil d’analyse permettant de vérifier que l’int
 - les boutons cliquables sont visibles
 - l’enchaînement des écrans est cohérent
 
-![Deux personnes sont devant des ordinateurs et un bloc de feuille, ils prennent des notes](/img/2017/06/test-utilisateur-basseresolutionjpg-1024x683.jpg)
+![Deux personnes sont devant des ordinateurs et un bloc de feuille, ils prennent des notes](/img/2017-06-test-utilisateur-basseresolutionjpg-1024x683.jpg)
 
 # Ces tests utilisateurs sont réalisables de 3 manières : en labo, à distance, en sauvage.
 

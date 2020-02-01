@@ -2,7 +2,7 @@
 title: "Les Ergogames : découvrir les principes de conception d'ergonomie cognitive en jouant"
 author: Marion et Margaux
 date: 2017-05-31T15:30:46+00:00
-image: /img/2017/05/ergogame.jpeg
+image: /img/2017-05-ergogame.jpeg
 categories:
   - ERGONOMIE
   - LA VIE À SOGILIS
@@ -17,7 +17,7 @@ tags:
 ---
 Les Ergonomes à Sogilis depuis quelques mois, nous avons mis en place les Ergogames : un rendez-vous régulier ouvert à tous les membres de l’entreprise pour découvrir des notions d’ ergonomie cognitive par le jeu. À chaque séance, des profils aussi variés que développeurs, DAF, assistante de direction ou chargée de projets innovants se retrouvent pour partager ensemble un moment de détente et d’apprentissage. Retour d’expérience sur la mise en place de ces Ergogames.
 
-![Photo lors d'un ergogame à Lyon](/img/2017/05/ergogame-1024x576.jpeg)
+![Photo lors d'un ergogame à Lyon](/img/2017-05-ergogame-1024x576.jpeg)
 
 # Pourquoi avons-nous lancé Les Ergogames ?
 
@@ -35,7 +35,7 @@ Nous avons cherché dans nos expériences passées ce qui pourrait correspondre 
 
 > _En passant devant la partie enfant du musée des civilisations d’Ottawa, je les ai vus tellement contents d’être au musée, il y avait de la vie, ils étaient curieux, touchaient à tout, posaient pleins de questions. Je suis donc entrée dans cette partie, pour tester l’expérience. Il y avait un parcours avec des boxes, pour découvrir une dizaine de pays du monde. Dans chaque box, les enfants pouvaient résoudre des énigmes, jouer avec des instruments de musique, dessiner des motifs ethniques etc. La gamification était très intéressante, car dans chaque box se trouvait une poinçonneuse et l’enfant avait un passeport dans lequel il pouvait prendre des notes et surtout reporter son poinçon. Les enfants passaient par tous les boxes pour remplir leur carnet et ne pas manquer de poinçons._
 
-![Photo d'un passeport ergo rempli et tamponné](/img/2017/05/IMG_3938-2-300x203.jpg)
+![Photo d'un passeport ergo rempli et tamponné](/img/2017-05-IMG_3938-2-300x203.jpg)
 
 Nous nous sommes donc lancées dans la réalisation d’un passeport ergo, faisant office de carnet de notes, gribouillages, compteur de points. Le passeport est composé d’une page par principe, à annoter et tamponner en fin de chaque séance d’Ergogame. Pour encore plus de fun, nous avons choisi des tampons avec des animaux mignons. Rien de mieux pour fidéliser un auditoire que de lui faire collectionner des animaux mignons ! 😀
 
@@ -73,7 +73,7 @@ Les Ergogames se déroulent environ une fois par mois entre midi et deux, dure e
 4. Puis on enchaine sur le jeu suivant.
 5. En fin d’Ergogame, les pages remplies des passeports sont tamponnées !
 
-![Photo d'un participant heureux d'avoir validé son passeport ergo](/img/2017/05/IMG_3942-4b-203x300.jpg)
+![Photo d'un participant heureux d'avoir validé son passeport ergo](/img/2017-05-IMG_3942-4b-203x300.jpg)
 
 # Difficultés rencontrées
 
@@ -93,7 +93,7 @@ Pour ancrer davantage les principes ergos dans la tête des collègues avec qui 
 
 Une critique d’un développement réalisé passe toujours mieux si elle se réfère à des notions connues et objectives, plutôt qu’au simple avis de l’ergonome.
 
-![Capture d'écran d'un quizz ergogame via slack](/img/2017/05/PrtScr-capture.png)
+![Capture d'écran d'un quizz ergogame via slack](/img/2017-05-PrtScr-capture.png)
 
 Il y a forcément des imperfections et des pistes d’amélioration dans Les Ergogames. Toutefois, nous voulions pouvoir les partager avec quiconque serait intéressé, afin de capitaliser sur ce travail existant. Nous avons décidé de développer un site web en définissant une licence d'utilisation et en modifiant les images utilisées dans les jeux. Vous pouvez voir le résultat en visant ce site : [https://www.ergogames.fr/](https://www.ergogames.fr/). A vous de jouer maintenant !
 

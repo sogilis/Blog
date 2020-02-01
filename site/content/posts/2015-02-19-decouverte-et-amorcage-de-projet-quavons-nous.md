@@ -2,7 +2,7 @@
 title: "Découverte et amorçage de projet : qu'avons-nous appris de la planification par capacités ?"
 author: Simon Denier
 date: 2015-02-19T15:46:00+00:00
-image: /img/2016/04/2.Produits.jpg
+image: /img/2016-04-2.Produits.jpg
 categories:
   - DÉVELOPPEMENT
 tags:

@@ -2,7 +2,7 @@
 title: "Recruter un salarié étranger pour travailler en France : Le visa, ce parcours du combattant ?!"
 author: Tiphaine Guittat
 date: 2017-11-20T15:20:54+00:00
-image: /img/2017/11/ofii-min.jpg
+image: /img/2017-11-ofii-min.jpg
 categories:
   - LA VIE À SOGILIS
 tags:
@@ -28,15 +28,15 @@ Je vais tenter de vous décrire de manière synthétique et détaillée l'ensemb
 
   _« Le visa de long séjour valant titre de séjour (VLS-TS) permet d'entrer en France et d'y séjourner de 4 mois à 1 an sans avoir à demander tout de suite un titre de séjour. Il s'agit d'une vignette apposée sur votre passeport par l'administration. »_
 
-  ![](/img/2017/10/Capture-2017-10-30-16.06.45.png)
+  ![](/img/2017-10-Capture-2017-10-30-16.06.45.png)
 
 * Avril 2017 : La première étape est de prouver la **« non-opposabilité » de l'offre d'emploi sur le marché français**. Il est important que l'entreprise puisse justifier que si elle va chercher à l'étranger les compétences, c'est parce qu'elle n'a pas pu les trouver en France. Il nous a donc fallu publier une offre d'emploi sur Pôle Emploi. **(Attention, les annonces sur d'autres sites d'emploi ne fonctionnent pas, il faut publier sur PE)**, sur une durée d'au moins 3 semaines. N'ayant reçu qu'une seule réponse à cette annonce, non pertinente, nous avons ainsi pu justifier de notre besoin de compétences étrangères.
 
-  ![](/img/2017/10/Capture-2017-10-30-16.20.18.png)
+  ![](/img/2017-10-Capture-2017-10-30-16.20.18.png)
 
 * Mai 2017 : Nous avons ensuite complété le **formulaire CERFA 15187*02**, permettant d'enclencher la procédure au niveau de la DIRECCTE (Direction régionale des entreprises, de la concurrence, de la consommation, du travail et de l'emploi) de notre département.
 
-  ![](/img/2017/10/Capture-2017-10-30-16.26.58.png)
+  ![](/img/2017-10-Capture-2017-10-30-16.26.58.png)
 
 Ce document, qui comporte 5 pages, est fondamental pour l'instruction du dossier du futur salarié. Pour nous, seules les 2 premières pages étaient pertinentes. [https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15187.do](https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15187.do) et sa notice n°51883#02 : [https://www.formulaires.modernisation.gouv.fr/gf/getNotice.do?cerfaNotice=51883&cerfaFormulaire=15187](https://www.formulaires.modernisation.gouv.fr/gf/getNotice.do?cerfaNotice=51883&cerfaFormulaire=15187)
 
@@ -72,7 +72,7 @@ le détail des points 4.0 sur papier libre, à savoir :
 
  Dix jours plus tard, il obtenait son accord d'entrée sur le territoire français, moyennant 99€ au service immigration/visa de l'aéroport et démarrait son contrat de travail le **4 septembre 2017 !**
 
- ![](/img/2017/11/20171031_144322-min-300x225.jpg)
+ ![](/img/2017-11-20171031_144322-min-300x225.jpg)
 
  Mais la procédure n'est pas terminée 🙂
 
@@ -88,11 +88,11 @@ le détail des points 4.0 sur papier libre, à savoir :
 
  - Signer un « contrat d'intégration républicaine »
 
- ![](/img/2017/11/cir-min-768x1024.jpg)
+ ![](/img/2017-11-cir-min-768x1024.jpg)
 
  Il obtient alors le visa « OFII » qui vaut titre de long séjour.
 
- ![](/img/2017/11/20171031_144455-min-300x225.jpg)
+ ![](/img/2017-11-20171031_144455-min-300x225.jpg)
 
  Avec sa bonne note de 19/25, Haze devra suivre 100 heures de cours de français, ce qui est le minimum requis pour valider le visa. Ce nombre d'heures peut être porté à 400h.
 

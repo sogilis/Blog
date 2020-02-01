@@ -2,7 +2,7 @@
 title: "Casino Game : Un serious game pour Innover"
 author: Arnaud BENISTANT
 date: 2017-07-11T08:37:13+00:00
-image: /img/2017/07/Be-Ready-CasinoGame.jpg
+image: /img/2017-07-Be-Ready-CasinoGame.jpg
 categories:
   - NOTRE VISION
 tags:
@@ -14,7 +14,7 @@ tags:
   - serious game
 
 ---
-![Innovation et Serious Game](/img/2017/07/Be-Ready-1024x442.jpg)
+![Innovation et Serious Game](/img/2017-07-Be-Ready-1024x442.jpg)
 
 Toutes les entreprises ont besoin d’innover pour exister et prendre de nouvelles part de marché : une position un peu trop “conservatrice” sur un marché traditionnel et c’est le risque de l’uberisation dans les prochains mois. Mais pour ces entreprises, PME, ETI ou Grands Groupes, l’innovation est parfois perçue comme une prise de risque. C’est vrai, innover c’est accepter de prendre un risque. Comme tous les risques, ceux-ci peuvent être maîtrisés si l’on comprend quels sont les bons leviers. Regardons en détail les challenges à franchir :
 
@@ -44,7 +44,7 @@ Après plusieurs tentatives, les joueurs finissent par comprendre quelle est l�
 
 ## Lean, serious game et Innovation : quel rapport ?
 
-![Casino Game : Les apprentissages](/img/2017/07/CasinoGame-1024x533.jpg)
+![Casino Game : Les apprentissages](/img/2017-07-CasinoGame-1024x533.jpg)
 
 Le Casino Game est un serious game particulièrement ludique. Que ce soit dans [un espace de coworking](https://twitter.com/cascrum/status/846456150774177792), dans [une pépinière de startup](http://www.inovallee.com/casino-game-au-tarmac-travailler-moins-individuellement-pour-performer-plus-collectivement-grace-au-kanban/) ou en entreprise : tous les participants prennent un plaisir sincère à jouer. Mais c’est souvent la discussion à l’issue du jeu qui se révèle être la plus importante.
 

@@ -2,7 +2,7 @@
 title: "SSII : Attends chérie… C’est pas c’que tu crois !"
 author: Jérémy et Corentin
 date: 2016-02-08T16:12:25+00:00
-image: /img/2016/04/2.On-simplique.jpg
+image: /img/2016-04-2.On-simplique.jpg
 categories:
   - NOTRE VISION
 tags:
@@ -15,7 +15,7 @@ tags:
 
 Nous n'aimons pas nous appeler SSII. Vous allez dire que c'est le cas de toutes les SSII, et vous avez raison.
 
-![](/img/2016/02/PasSSII.jpg)
+![](/img/2016-02-PasSSII.jpg)
 
 Sogilis est une société de service. C'est indéniable. Cependant, cette affirmation nous égratigne, tant l'image collective des SSII est mauvaise. On peut d'ailleurs trouver en ligne de nombreux avis négatifs. Nous avons l'impression que quelque chose dans l'organisation de Sogilis l'éloigne du modèle général des SSII.
 

@@ -2,7 +2,7 @@
 title: "SogiMood : l’appli qui surveille la santé de l'ensemble de nos projets"
 author: Marien Fressinaud
 date: 2016-12-13T10:15:45+00:00
-image: /img/2016/05/Sogilis-Christophe-Levet-Photographe-8218.jpg
+image: /img/2016-05-Sogilis-Christophe-Levet-Photographe-8218.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -23,13 +23,13 @@ Je voulais être capable de voir d'un coup d'œil sur quelle période s'étalait
 
 Comme je sais que la meilleure façon de ne jamais commencer un logiciel est de passer **_trop_** _de temps_ à le _penser_, j'ai développé un premier prototype en à peine 4h à l'aide de la techno que j'utilise aujourd'hui le plus : [ReactJS](https://facebook.github.io/react/). Ce fut l'occasion de tester [create-react-app](https://github.com/facebookincubator/create-react-app) qui venait tout juste d'être publié et qui m'a permis de démarrer très rapidement sans me soucier de la mise en place de l'environnement de développement. Est ainsi né [SogiMood](https://github.com/sogilis/SogiMood).
 
-![sogimood 0.1-alpha](/img/2016/12/Capture-d’écran-2016-12-02-à-18.07.05-1024x560.png)
+![sogimood 0.1-alpha](/img/2016-12-Capture-d’écran-2016-12-02-à-18.07.05-1024x560.png)
 
 _La v0.1-alpha, extrêmement basique. Afin de ne pas dévoiler les clients avec lesquels nous travaillons, les noms de projets ont été remplacés par des titres de dessins animés Pixar._
 
 En deux mois de travail en pointillé sur cet outil et rejoint par Alexandre qui a développé le backend (écrit en Go), je suis arrivé à une version qui me satisfaisait en termes de fonctionnalités.
 
-![sogimood 0.6](/img/2016/12/Capture-d’écran-2016-12-02-à-18.21.39-1024x592.png)
+![sogimood 0.6](/img/2016-12-Capture-d’écran-2016-12-02-à-18.21.39-1024x592.png)
 
 _La 0.6 qui devient aujourd'hui la 1.0._
 

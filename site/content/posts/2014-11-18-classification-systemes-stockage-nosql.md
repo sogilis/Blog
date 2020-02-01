@@ -2,7 +2,7 @@
 title: Classification des systèmes de stockage NoSQL
 author: Alexandre
 date: 2014-11-18T14:03:33+00:00
-image: /img/2014/11/Sogilis-Christophe-Levet-Photographe-8877.jpg
+image: /img/2014-11-Sogilis-Christophe-Levet-Photographe-8877.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -32,7 +32,7 @@ De par leur simplicité de fonctionnement, **les bases de données clé-valeur s
 
 Exemples : Riak, Redis, Amazon DynamoDB, MemCached…
 
-![](/img/2014/11/tumblr_inline_ncppxsqeBr1sc5im4.png)
+![](/img/2014-11-tumblr_inline_ncppxsqeBr1sc5im4.png)
 
 ## Les bases de données documents
 
@@ -42,7 +42,7 @@ L'unité d'information stockée est ici le document qui encode et encapsule la d
 
 Exemples : MongoDB, RethinkDB, CouchDB, Terrastore…
 
-![](/img/2014/11/tumblr_inline_ncppyebVo51sc5im4.png)
+![](/img/2014-11-tumblr_inline_ncppyebVo51sc5im4.png)
 
 ## Les bases de données orientées colonnes
 
@@ -54,7 +54,7 @@ De par leur structure, ces systèmes supportent bien le partitionnement sur plus
 
 Exemples : Apache HBase, Apache Cassandra, Hypertable, Apache Accumulo…
 
-![](/img/2014/11/tumblr_inline_ncppyr3M7h1sc5im4.png)
+![](/img/2014-11-tumblr_inline_ncppyr3M7h1sc5im4.png)
 
 ## Les bases de données de type graphe
 
@@ -68,7 +68,7 @@ Par construction, ces bases de données **n'offrent pas une bonne scalabilité h
 
 Exemples : Neo4J, Infinite Graph, DEX…
 
-![](/img/2014/11/tumblr_inline_ncppz4EuZo1sc5im4.png)
+![](/img/2014-11-tumblr_inline_ncppz4EuZo1sc5im4.png)
 
 ## Cohérence, disponibilité et partitionnement
 
@@ -82,7 +82,7 @@ Enfin, un système de stockage distribué est dit tolérant au **partitionnement
 
 Un résultat connu sous le nom de [lemme de Brewer _(en)_](http://en.wikipedia.org/wiki/CAP_theorem) prouve que seulement deux de ces caractéristiques sur trois peuvent être présentes simultanément au sein d'un système de gestion de bases de données (qu'il soit NoSQL ou non). Les systèmes relationnels, par exemple, supportent très bien la disponibilité et la cohérence des données mais sont relativement pas (ou peu) adaptés au partitionnement physique - bien que certains travaux aillent dans ce sens, notamment sur _PostgreSQL_. Les systèmes NoSQL, quant à eux, sont conçus pour être distribués sur un réseau de machines physiques, ce qui implique un compromis entre la cohérence des données et la disponibilité des serveurs. Souvent, ces systèmes implémentent une notion de **cohérence finale** (_ie_ les modifications sur les données sont propagées sur toutes les machines au bout d'un certain temps) afin de garantir une haute disponibilité des données.
 
-![](/img/2014/11/tumblr_inline_ncpr1fhc5T1sc5im4.png)
+![](/img/2014-11-tumblr_inline_ncpr1fhc5T1sc5im4.png)
 
 ## Références
 

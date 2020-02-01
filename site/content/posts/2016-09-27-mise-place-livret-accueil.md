@@ -2,7 +2,7 @@
 title: "La mise en place du livret d'accueil"
 author: Myriam
 date: 2016-09-27T07:00:22+00:00
-image: /img/2015/12/Sogilis-Christophe-Levet-Photographe-7811.jpg
+image: /img/2015-12-Sogilis-Christophe-Levet-Photographe-7811.jpg
 categories:
   - LA VIE À SOGILIS
 tags:
@@ -12,7 +12,7 @@ tags:
 ---
 **Lors d’une rétrospective mensuelle, nous avons eu l’idée de créer un livret d’accueil. Le problème rencontré : au moment de l’intégration, certains d’entre nous avaient la sensation de manquer d’informations. Si, à chaque nouvel arrivant dans l’équipe, une personne se propose pour l’accompagner, le livret d’accueil est apparu complémentaire. Décryptage.**
 
-![Livret](/img/2015/12/Livret.jpg)
+![Livret](/img/2015-12-Livret.jpg)
 
 ## Créer un livret d’accueil : pourquoi ?
 

@@ -2,7 +2,7 @@
 title: "Conditions de travail des professionnels du design d'interfaces numériques travaillant pour les clients externes"
 author: Sogilis
 date: 2018-06-19T15:33:22+00:00
-image: /img/2018/06/banière_questionnaire.png
+image: /img/2018-06-banière_questionnaire.png
 categories:
   - DESIGN
   - ERGONOMIE
@@ -24,7 +24,7 @@ La majorité des répondants sont des salariés d’ESN (Entreprises de Services
 
 Nous avons été étonnées que les 3/4 des répondants aient moins de 10 ans d’expérience. Est-ce qu’ils sont sur-représentés sur les canaux de communication utilisés pour partager l’étude (Twitter, la liste ergo-IHM et le Slack Flupa) ? Est-ce dû à l’engouement pour ce domaine ces dernières années ?
 
-![](/img/2018/06/combien-dannées-dexpérience-avez-vous-3.png)
+![](/img/2018-06-combien-dannées-dexpérience-avez-vous-3.png)
 
 À la question, “Combien d’années d’expérience avez-vous”, 1/4 des répondants déclare avoir plus de 10 ans d'expérience (101 réponses).
 
@@ -32,13 +32,13 @@ Nous avons été étonnées que les 3/4 des répondants aient moins de 10 ans d�
 
 Sans surprise, le terme UX est très utilisé lorsque l’on demande comment se présente les professionnels d’interfaces numériques.
 
-![](/img/2018/06/Auprès-des-clients-vous-vous-présentez-comment-1.png)
+![](/img/2018-06-Auprès-des-clients-vous-vous-présentez-comment-1.png)
 
 Les 3 termes les plus utilisés pour se présenter aux clients sont dans l'ordre : UX-designer, d'UI/UX deisgner et Ergonome (50 réponses).
 
 Le type de prestations est également assez classique : du maquettage, des analyses expertes et des tests utilisateurs. En revanche, les résultats concernant la fréquence de facturation des différents types de prestations étaient plus informatifs. Une échelle à 5 points (jamais, rarement, de temps en temps, souvent et systématiquement ou presque) nous a permis d’évaluer cette fréquence, en précisant que la réponse devait porter sur le nombre de clients plutôt que sur le nombre de jours passés (l’observation prend du temps, mais est-elle souvent réalisée ?). Pour simplifier le graphique, nous avons choisi d’exclure la note intermédiaire “De temps en temps” et de fusionner les deux réponses de chaque côté de l’échelle.
 
-![](/img/2018/06/A-quelle-fréquence-facturez-vous-ces-différentes-prestations.png)
+![](/img/2018-06-A-quelle-fréquence-facturez-vous-ces-différentes-prestations.png)
 
 Les prestations les plus vendues par les répondants sont les maquettes, l’analyse experte et la gestion de projet, suivi de près par les tests utilisateurs (40 réponses).
 
@@ -52,13 +52,13 @@ Cette partie du questionnaire nous a permis de valider une intuition : ces méti
 
 Par ailleurs, nous ne nous attendions pas à ce que les salariés des ESN travaillent majoritairement dans leur entreprise et non chez le client.
 
-![](/img/2018/06/Travaillez-vous-seuls.png)
+![](/img/2018-06-Travaillez-vous-seuls.png)
 
 Lieu de travail selon le statut (restreint aux 6 combinaisons courantes : 38 réponses).
 
 De même, nous avons pu observer que 40% des répondants déclarent travailler seuls (47 réponses). C’est intéressant de percevoir l’écart entre cette réalité et le prescrit. Dans notre représentation du métier, l’UX-designer travaille toujours en collaboration avec les autres métiers de la chaîne de conception. Nous nous interrogeons donc : comment intégrer les UX-designer dans les process de conception ?
 
-![](/img/2018/06/Avec-qui-travaillez-vous-majoritairement.png)
+![](/img/2018-06-Avec-qui-travaillez-vous-majoritairement.png)
 
 40% des répondants déclarent travailler seuls (47 réponses).
 
@@ -66,7 +66,7 @@ De même, nous avons pu observer que 40% des répondants déclarent travailler s
 
 Cette quatrième partie aborde le sujet de la facturation. Les répondants ont déclaré facturer principalement aux jours réellement travaillés.
 
-![](/img/2018/06/Comment-facturez-vous-vos-prestations-majoritairement..png)
+![](/img/2018-06-Comment-facturez-vous-vos-prestations-majoritairement..png)
 
 Type de contrat : La moitié facture systématiquement aux jours réellement travaillés (51 réponses).
 
@@ -74,7 +74,7 @@ Nous avons mesuré précédemment dans l’étude que les prestations les plus v
 
 Par ailleurs, la majorité des répondants facturent moins de 4 jours par semaine, peut-être parce que les missions sont généralement courtes, ce qui génère beaucoup d’inter-contrat et de temps non facturé passé en avant-vente.
 
-![](/img/2018/06/quel-pourcentage-de-temps-facturez-vous-aux-clients.png)
+![](/img/2018-06-quel-pourcentage-de-temps-facturez-vous-aux-clients.png)
 
 La moitié des répondants facture moins de 4 jours par semaine (44 réponses).
 
@@ -88,7 +88,7 @@ Quoi qu’il en soit, le marché semble conscient de la valeur de l’UX-design 
 
 Étude dans l’étude, nous observons sans grande surprise que beaucoup de personnes refusent de communiquer sur leurs tarifs. En effet, la question du TJM pratiqué a été celle recueillant le moins de réponses : seulement 46 réponses sur 104, soit moins d’une personne sur deux. Est-ce que tout ce qui se rapporte à l’argent reste encore très tabou en France ?
 
-![](/img/2018/06/Tarifs.jpg)
+![](/img/2018-06-Tarifs.jpg)
 
 Résultat du croisement des TJM selon le titre que les répondants se donnent (42 réponses, * différence significative entre UX-designer et UI/UX-designer). Le nombre de données par groupe est indiqué entre parenthèses après le nom de chaque groupe.
 

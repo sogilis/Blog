@@ -2,7 +2,7 @@
 title: "Designing Hexo+ Mobile App (part #1)"
 author: Laurie
 date: 2016-06-28T13:39:43+00:00
-image: /img/2016/06/Hexo-NB.jpg
+image: /img/2016-06-Hexo-NB.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -14,7 +14,7 @@ tags:
 
 **In 2014, [Hexo+](https://hexoplus.com/) developed a working prototype and within six months of the initial idea had raised more than $1.3M on Kickstarter. Now more than 2600 Hexo+ intelligent drones and apps have just shipped all over the world.**
 
-![](/img/2016/06/Designing-Hexo-Mobile-App-1-1.jpg)
+![](/img/2016-06-Designing-Hexo-Mobile-App-1-1.jpg)
 
 In this article, we’ll provide a sneak peek into our design process for an iconic French startup. We’ll talk about the challenges we faced while designing for a connected product and how it can be difficult to show evolutions or stabilise recommendations.
 
@@ -22,7 +22,7 @@ We’ll highlight how we set the project stage and truly embraced prototyping an
 
 We’ll be honest and upfront about some blunders made, and in the comments we’d like you to share some war stories as well.
 
-![](/img/2016/06/Designing-Hexo-Mobile-App-2.png)
+![](/img/2016-06-Designing-Hexo-Mobile-App-2.png)
 
 ## Setting the stage (part #1)
 
@@ -32,7 +32,7 @@ After Hexo+ success during [CES 2015](https://hexoplus.com/blog/ces), both softw
 
 Developers received a good looking UI, first version of the IOS mobile app which even won an award at CES. After this event, no designers were there to define the workflow and behavior screen after screen, describing the best case scenario and challenging edge cases with the team.
 
-![](/img/2016/06/Designing-Hexo-Mobile-App-3.jpg)
+![](/img/2016-06-Designing-Hexo-Mobile-App-3.jpg)
 
 So at the end of January we started setting the stage with [Yves](https://fr.linkedin.com/in/yvesbrissaud/en), developer at [Sogilis](https://www.linkedin.com/company/sogilis), and [Nicolas](https://fr.linkedin.com/in/nicolas-serré-518a6840/en), Squadrone’s own talented visual designer. Excited that we were taking the steps toward Hexo+’s next adventure, we started out the project by interviewing freelancers and agencies with the help of at least one software and hardware developer until we found the perfect match.
 
@@ -50,7 +50,7 @@ After gathering our design team and knowing who was the key-decision maker, we n
 
 We started our very first sprint by clarifying the vision of the project, gathering information about end users as well as key actors and stakeholders. We created and prioritised user profiles or ‘[personas](http://www.uxbooth.com/articles/creating-personas/)’ to summarise representation of Hexo+ intended users, each profile representing a different kind of audience for the system.
 
-![](/img/2016/06/Designing-Hexo-Mobile-App-4.jpg)
+![](/img/2016-06-Designing-Hexo-Mobile-App-4.jpg)
 
 These ‘character sheets’ helped us keeping users in mind all along the project while prioritising a long wish list of design solutions and system features.
 
@@ -58,7 +58,7 @@ These ‘character sheets’ helped us keeping users in mind all along the proje
 
 A lot of work defining and prioritising the project was already done when we entered the game, so mapping the perimeter was easy. We read the [Product Requirements Document (PRD)](https://en.wikipedia.org/wiki/Product_requirements_document) and built a [Story Map](https://en.wikipedia.org/wiki/User_story#Story_map) with the team, extracting a [Minimum Valuable Product (MVP)](https://en.wikipedia.org/wiki/Minimum_viable_product) focused on an outdoor usage scenario. The first outcome was shipping DIY kits to our 70+ backers and early adopters in June 2015.
 
-![](/img/2016/06/Designing-Hexo-Mobile-App-5.jpg)
+![](/img/2016-06-Designing-Hexo-Mobile-App-5.jpg)
 
 At this stage, we knew that our big challenges would be designing an action oriented interface for an innovative mobile app, respecting both IOS and Android standards while trying to design new ones.
 
