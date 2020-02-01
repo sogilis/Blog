@@ -2,7 +2,7 @@
 title: "Retour d’expérience : collaboration autour de l’imprimante 3D de Clotoo, « la manufacture particulière »"
 author: Tiphaine
 date: 2017-03-02T09:46:27+00:00
-image: /img/2017/03/article_clotoo3.jpg
+image: /img/2017-03-article_clotoo3.jpg
 categories:
   - NOTRE VISION
   - TÉMOIGNAGES CLIENTS
@@ -24,9 +24,9 @@ tags:
 
 **Retour sur cette expérience avec Luc.**
 
-![clotoo imprimante 3d](/img/2017/02/logo-clotoo.png)
+![clotoo imprimante 3d](/img/2017-02-logo-clotoo.png)
 
-![Logo_Sogilis_ecran](/img/2017/02/Logo_Sogilis_ecran.jpg)
+![Logo_Sogilis_ecran](/img/2017-02-Logo_Sogilis_ecran.jpg)
 
 La solution de Clotoo permet de lancer des impressions simultanées et parallèles d’un même objet en mettant à disposition les imprimantes disponibles sur le réseau. Pratique pour les designers désirant prototyper rapidement un objet, tout comme pour un particulier souhaitant produire des objets à des coûts acceptables.
 
@@ -55,7 +55,7 @@ Pendant ces quatre mois, nous avons conçu un système distribué avec des contr
 
 **Rémy Oliel, le co-fondateur de Clotoo, a répondu aux questions de FrenchWeb. Il présente les spécificités du marché grenoblois avec ses entreprises de haute technologie, la place du Scrum Master ou facilitateur et le rôle des itérations. C’est très intéressant !**
 
-[![Capture d’écran 2017-03-02 à 09.45.32](/img/2017/03/Capture-2017-03-02-09.45.32.png)][1]
+[![Capture d’écran 2017-03-02 à 09.45.32](/img/2017-03-Capture-2017-03-02-09.45.32.png)][1]
 
 Source : [FrenchWeb, interview du 20 mai 2016](http://www.dailymotion.com/video/x4bh0ji_le-debrief-de-la-semaine-avec-remy-oliel-clotoo-et-antoine-martin-zenly_tech)
 

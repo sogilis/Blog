@@ -2,7 +2,7 @@
 title: "[Matinales techniques] PME du numérique : (re) découvrez les bonnes pratiques pour sécuriser votre mise en production logicielle le 26 juin"
 author: Tiphaine
 date: 2018-06-05T14:35:58+00:00
-image: /img/2018/06/illustration-prod.jpg
+image: /img/2018-06-illustration-prod.jpg
 categories:
   - NOTRE VISION
 tags:
@@ -33,10 +33,10 @@ Rejoignez-nous !
 
 **Intervenants :**
 
-![](/img/2018/06/jérome-doucet.jpg)
+![](/img/2018-06-jérome-doucet.jpg)
 [Jerome Doucet](https://www.linkedin.com/in/j%C3%A9r%C3%B4me-doucet-4b1a5450/) : Développeur initialement spécialisé sur les technologies Java, j'ai progressivement acquis des compétences de développement front-end, cloud et sur d'autres technologies de développement back-end.
 
-![](/img/2018/06/simon-denier.jpeg)
+![](/img/2018-06-simon-denier.jpeg)
 [Simon Denier][1], Développeur full stack, formateur, et lead projet pour le développement d’applications Cloud Native de A à Z.
 
 **Modalités pratiques :** de 9h30 à 11h30, le mardi 26 juin 2018 dans les locaux de Sogilis, 4 avenue Doyen Louis Weil (Immeuble Le Pulsar, 6e étage)

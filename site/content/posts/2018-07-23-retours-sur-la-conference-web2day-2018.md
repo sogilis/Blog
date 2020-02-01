@@ -2,7 +2,7 @@
 title: Retours sur la conférence Web2Day 2018
 author: willy@sogilis.com
 date: 2018-07-23T13:47:51+00:00
-image: /img/2018/07/Web2Day-featured.jpg
+image: /img/2018-07-Web2Day-featured.jpg
 categories:
   - NOTRE VISION
   - Web

@@ -2,7 +2,7 @@
 title: Sogilis soutient la candidature de Grenoble au label French Tech
 author: Tiphaine
 date: 2014-03-25T09:18:00+00:00
-image: /img/2016/04/1.GRENOBLE.jpg
+image: /img/2016-04-1.GRENOBLE.jpg
 categories:
   - LA VIE À SOGILIS
 tags:

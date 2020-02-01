@@ -2,7 +2,7 @@
 title: "Compiling & Dangerous : wrong usage of extern keyword in C"
 author: Victor Lambret
 date: 2017-10-11T13:27:23+00:00
-image: /img/2017/10/first_image.png
+image: /img/2017-10-first_image.png
 categories:
   - DÉVELOPPEMENT
 
@@ -17,9 +17,9 @@ It's uncommon but maybe it's not that bad? Let's see...
 
 ## Test program {#test-program}
 
-![](/img/2017/10/text.md_.1.png)
+![](/img/2017-10-text.md_.1.png)
 
-![](/img/2017/10/text.md_.2.png)
+![](/img/2017-10-text.md_.2.png)
 
 We start from here, a simple program printing his version number. `version` is declared in main file and defined in version file.
 
@@ -27,17 +27,17 @@ I ensure that both declaration and definition are of the same type. Anyway, if s
 
 ## I can't C any problem here {#i-cant-c-any-problem-here}
 
-![](/img/2017/10/text.md_.3.png)
+![](/img/2017-10-text.md_.3.png)
 
-![](/img/2017/10/text.md_.4.png)
+![](/img/2017-10-text.md_.4.png)
 
 To test this I modified version to pass version type from `int` to `char`. There is no complaint from compiler and the version number is correct so obsiously my code is not broken (1)
 
 ## A charity problem {#a-charity-problem}
 
-![](/img/2017/10/text.md_.5.png)
+![](/img/2017-10-text.md_.5.png)
 
-![](/img/2017/10/text.md_.6.png)
+![](/img/2017-10-text.md_.6.png)
 
 As the previous program is not bugged I can continue my work, let's add a simple `char ET` in version. Wait, what happened with my version number?
 
@@ -47,17 +47,17 @@ We have to fix that. A good practice is to hide implementation with a function c
 
 ## Is half a good practice still a good practice? {#is-half-a-good-practice-still-a-good-practice}
 
-![](/img/2017/10/text.md_.7.png)
+![](/img/2017-10-text.md_.7.png)
 
-![](/img/2017/10/text.md_.8.png)
+![](/img/2017-10-text.md_.8.png)
 
 Though I refactored with a function exactly like this stackoverflow thread said, I still get a version number that is complete non-sense.
 
 Well there is a tiny problem: I forgot to update the `main` so the extern declaration is still an int. The version number printed here is the address of the `version` function.
 
-![](/img/2017/10/text.md_.9.png)
+![](/img/2017-10-text.md_.9.png)
 
-![](/img/2017/10/text.md_.10.png)
+![](/img/2017-10-text.md_.10.png)
 
 For curiosity's sake let's make the mirror mistake. Here the program is segfaulting because we're calling the function at adress 42. As 42 is near 0 it's in a non valid memory range and OS raised a segfault. With a different value it might call a valid function, possibly doing something really wrong.
 
@@ -88,15 +88,15 @@ What I would consider a fix is any mechanism that allows type mismatch detection
 
 ## Clean fix {#clean-fix}
 
-![](/img/2017/10/text.md_.11.png)
+![](/img/2017-10-text.md_.11.png)
 
-![](/img/2017/10/text.md_.12.png)
+![](/img/2017-10-text.md_.12.png)
 
 This fix is so obvious I'm sure it's a reflex for almost every C developer. If a module defines an extern variable then this variable is part of the module public interface and should be declared in the header.
 
-![](/img/2017/10/text.md_.13.png)
+![](/img/2017-10-text.md_.13.png)
 
-![](/img/2017/10/text.md_.14.png)
+![](/img/2017-10-text.md_.14.png)
 
 Important note: sometimes you can encounter some C code where a module does not include its own header. As we can see with this example, the type conflict is not detected.
 
@@ -110,13 +110,13 @@ It's possible thanks to the `-ftlo` option (for link-time optimizer). With this 
 
 > if LTO encounters objects with C linkage declared with incompatible types in separate translation units to be linked together (undefined behavior according to ISO C99 6.2.7), a non-fatal diagnostic may be issued.
 
-![](/img/2017/10/text.md_.15.png)
+![](/img/2017-10-text.md_.15.png)
 
 ## Use an extern tool to detect extern issues, it's logical! {#use-an-extern-tool-to-detect-extern-issues-its-logical}
 
 With a static code analyzer like `splint` you can detect this kind of problem:
 
-![](/img/2017/10/text.md_.16.png)
+![](/img/2017-10-text.md_.16.png)
 
 # Conclusion {#conclusion}
 

@@ -2,7 +2,7 @@
 title: "Hexo+: Stabilise feedback (part #4)"
 author: Laurie
 date: 2016-07-26T09:30:32+00:00
-image: /img/2016/07/xavproto_1-min-BW-min.jpg
+image: /img/2016-07-xavproto_1-min-BW-min.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -13,13 +13,13 @@ tags:
 A few weeks after interviewing [one of our expert user](https://www.facebook.com/xvdelerue/), we questioned that [decision](https://blog.sogilis.com/posts/2016-07-13-user-testing-decision-making/) again. ‘The app is never really adapted to the field, there’s always a tree, some obstacle.’ When you are in the middle of nowhere with your drone, you probably want to understand what it’s going to do, what footage you’ll get, and where you stand in the landscape. You need to have a mental model of what’s gonna happen and create an imaginary link between you and your drone. This matter soon became our first concern. It addressed critical things such as anticipation, risk reduction and human error prevention.
 
 
-![xavproto_1-min](/img/2016/07/xavproto_1-min.jpg)
+![xavproto_1-min](/img/2016-07-xavproto_1-min.jpg)
 
 ## Fixes
 
 At design crit we discussed the merits of being able to reposition the drone exactly where you want to avoid obstacles and prevent risk. We paired with the dev team and suggested that having a ‘settings’ menu displayed on screen was superfluous. If you wanted to reposition the drone on the fly you could just wave your phone or use gesture. This would remove the need for a second screen with complex settings.
 
-![test-chamrousse-min](/img/2016/07/test-chamrousse-min.jpg)
+![test-chamrousse-min](/img/2016-07-test-chamrousse-min.jpg)
 
 It was going to be risky to have the team start building this unproven UI. The end cost could be pretty high. With the dev team help, a ‘what if’ on one day turned into a working prototype within a week. Then the design team would come to them with some ideas about how we were approaching this new interaction problem, they would explore on their own and rapidly try many approaches in builds.
 

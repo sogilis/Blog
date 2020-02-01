@@ -2,7 +2,7 @@
 title: Retour sur la Vitrine d'Excellence du Numérique Isérois
 author: Tiphaine
 date: 2014-04-15T10:03:00+00:00
-image: /img/2016/04/gre.png
+image: /img/2016-04-gre.png
 categories:
   - LA VIE À SOGILIS
 tags:

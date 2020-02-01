@@ -2,7 +2,7 @@
 title: "Sogilis : notre histoire"
 author: Myriam, avec l'aide de l'équipe
 date: 2016-05-31T14:36:55+00:00
-image: /img/2016/04/0.Haut_page.png
+image: /img/2016-04-0.Haut_page.png
 categories:
   - NOTRE VISION
 tags:
@@ -22,13 +22,13 @@ Sogilis, aujourd’hui, c’est une trentaine de personnes. Ce sont des période
 
 **“Et si on développait pour nos clients des logiciels fiables et robustes dans la durée ?”** L’histoire de Sogilis commence. Le premier leitmotiv ? Créer des logiciels fiables et sur mesure qui tendent vers du zéro défaut, dont on réduit les coûts de maintenance sur le long terme. Le focus est porté sur les usages et les contraintes des clients, afin de créer des produits qui touchent leur marché et permettre aux clients d’être rentables.
 
-![](/img/2016/05/Sogilis-Christophe-Levet-Photographe-7991-300x141.jpg)
+![](/img/2016-05-Sogilis-Christophe-Levet-Photographe-7991-300x141.jpg)
 
 ### La croyance : devenir acteur pour proposer des solutions adaptables de qualité
 
 Faire ensemble, main dans la main avec nos clients. Viser l’excellence technique de façon non négociable : voici notre recette afin de [générer leur enthousiasme](https://www.youtube.com/watch?v=qaMI7SlFnoQ). En parallèle, ce qui fait vibrer l’équipe, ce sont des valeurs partagées, une vision commune du développement logiciel, l’ambiance et la liberté d’initiative donnée à chacun. Depuis le début, et assez naturellement, nous travaillons principalement avec des start-up, notamment sur des applications web. La passion pour l’innovation et le code anime les membres de l’équipe, quels que soient leurs diplômes : seules les compétences sont importantes. L’équipe fait partie intégrante de celle du client lors d’un projet, avec l’envie de transmettre bonnes pratiques et rendre ainsi le client autonome. À chaque problème rencontré, une juste solution. Co-construire, proposer, innover, apprendre. “Un terreau fertile à l’innovation”, selon [Christophe](https://www.linkedin.com/in/christophebaillon).
 
-![](/img/2016/05/Sogilis-Christophe-Levet-Photographe-7749-300x200.jpg)
+![](/img/2016-05-Sogilis-Christophe-Levet-Photographe-7749-300x200.jpg)
 
 ## Une rencontre qui va nous propulser
 
@@ -46,7 +46,7 @@ Ce qui est essentiel, c’est de travailler avec des clients qui ont conscience 
 
 La remise en question, le partage des bonnes pratiques, nous ont également amené à choisir un positionnement différent. Il faut savoir que vendre du développement à un prix plus élevé que la moyenne entraîne une forte sélection pour les clients qui restent figés sur des coûts bas. Être rentable est pourtant essentiel pour Sogilis. Si nous avons une belle histoire qui se poursuit dans la durée avec un groupe leader dans l’aéronautique, la réalité est qu’il est difficile de rencontrer de grandes structures en tant que petite entreprise. C’est pour la qualité du travail, nos croyances et notre travail d’équipe que des entreprises souhaitent travailler avec nous. C’est pour cela que, naturellement, nous avons pris l’habitude de travailler avec de jeunes entreprises.
 
-![](/img/2016/05/Sogilis-Christophe-Levet-Photographe-8212-300x168.jpg)
+![](/img/2016-05-Sogilis-Christophe-Levet-Photographe-8212-300x168.jpg)
 
 ## Concilier technique et business pour accompagner les start-up
 
@@ -55,7 +55,7 @@ La remise en question, le partage des bonnes pratiques, nous ont également amen
 Confrontés à des problématiques et ayant su s’adapter au regard de l’intelligence de l’équipe, nous sommes allés au-delà du développement logiciel. La capacité à innover est d’autant plus forte avec de jeunes sociétés, qui ont besoin d’être accompagnées de l’idée au marché. Alors que les porteurs de projets sont souvent victimes du syndrome du garage (développer un produit en allouant toutes ses ressources sans se confronter au marché, et être en décalage avec la réalité), et dans une entreprise où l’innovation est favorisée, nous avons décidé de proposer une offre d’accompagnement inédite. L’approche start-up étant une réalité vécue par notre expérience, nous commençons à accompagner [les porteurs de projet autour de leur business model](https://blog.sogilis.com/posts/2015-01-15-vision-business/) grâce à la connaissance de [Xavier](https://www.linkedin.com/in/xavier-spengler-9aa4423) et [Laurent](https://www.linkedin.com/in/laurent-mangue-885a6a29?authType=NAME_SEARCH&authToken=Upl-&locale=fr_FR&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A101168741%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1459846582046%2Ctas%3Alaurent%20mang"). **Profiter du développement itératif que nous pratiquons pour tester, avoir un retour sur le marché et générer rapidement des revenus.** Du prototypage et du test marché, jusqu’aux logiciels sur mesure de qualité. Comme les porteurs de projet ont des difficultés à se financer, nous recrutons [Théo](https://www.linkedin.com/in/th%C3%A9o-schwartz-b7163358), un spécialiste de l’accompagnement sur les problématiques de financements publics, privés ou bancaires. Cerise sur le gâteau avec un renfort côté communication si nécessaire, avec [Myriam](https://www.linkedin.com/in/myriammenneteau?trk=hp-identity-name) à nos côtés.
 
 
-![](/img/2016/04/3.CS_BUSINESS_BasPage-300x200.jpg)
+![](/img/2016-04-3.CS_BUSINESS_BasPage-300x200.jpg)
 
 ### Commercer autrement, ou comment renverser le modèle des sociétés de service
 
@@ -71,7 +71,7 @@ Dans la continuité de l’offre d’accompagnement de start-up, qui est une pre
 
 **Innover, essayer, se tromper donne naissance à beaucoup de choses.** À la machine à café, [Etienne](https://www.linkedin.com/in/ezwiebel/), [Amin](https://www.linkedin.com/in/aminelmrabti/) et Mouss, spécialistes des systèmes embarqués critiques en aéronautique, aimeraient bien utiliser leurs compétences dans le monde du drone, où le marché est encore peu structuré. **Développer un drone robuste, avec les mêmes pratiques que dans l’aéronautique, et pourquoi pas ?** L’idée suit son cours. Le rôle du dirigeant pour mettre en musique les idées des salariés repart de plus belle. Christophe va ainsi échanger avec l’équipe de Startup Maker, qui décidera de faire une expérience avec l’accélérateur : créer sa propre start-up en faisant les premiers tests marché, et en recrutant les dirigeants.
 
-![](/img/2016/04/1.Developpement-300x200.jpg)
+![](/img/2016-04-1.Developpement-300x200.jpg)
 
 Suite au pitch du projet au [_Startup Weekend Grenoble_](http://www.numerama.com/magazine/29708-hexo-un-drone-made-in-france-qui-suit-tout-seul-ce-qu-il-filme.html), **Sogilis co-fonde Squadrone System**, avec Startup Maker et d’autres actionnaires. La jeune pousse développe [Hexo+](https://hexoplus.com/), **un drone autonome, capable de suivre et filmer les sportifs pour produire des vidéos aériennes de qualité professionnelle**. Plusieurs mois de travail plus tard, une campagne de crowdfunding sur Kickstarter est lancée… et fait un carton : 1.3 million de dollars de pré-ventes. La collaboration entre Squadrone System et l’équipe de Sogilis est renforcée pour l’industrialisation du drone, tandis qu’en parrallèle, la société lève 3 millions d’euros. Nous avons même hébergé l’équipe de Squadrone System plusieurs mois dans nos locaux. Aujourd’hui, les drones de la campagne ont été livrés.
 
@@ -94,7 +94,7 @@ Lorsqu’on parle de qualité, il y a 3 lectures dans notre vision. Les produits
 
 Les compétences sont donc aujourd’hui multiples : **développement, design et ergonomie, business model design, finance, communication…** A côté de cela, le rôle du dirigeant est de partager sa vision en permanence, s’assurer que cette dernière soit partagée, et donner les conditions d’autonomie. Il permet de rendre concrètes les propositions des équipes, et leur en donner les moyens. Parce que nous choisissons nos clients, nous allons au bout de la démarche. Et ce qui ravit notre équipe, c’est de voir les [retours de ces clients](https://www.youtube.com/user/SogilisFR) : leur enthousiasme est garant de la réussite d’un projet.
 
-![](/img/2016/05/Sogilis-Christophe-Levet-Photographe-9104-300x200.jpg)
+![](/img/2016-05-Sogilis-Christophe-Levet-Photographe-9104-300x200.jpg)
 
 ### Conserver nos valeurs durablement tout en maîtrisant la croissance
 
@@ -108,7 +108,7 @@ Nous construisons ainsi notre modèle, inspiré de différentes expériences et 
 
 Libérer la capacité d’entreprendre et créer des vocations suscite l’intérêt. Et même un modèle de société ? C’est ce que nous remarquons en 2014, où les initiatives innovantes d’entreprises sont particulièrement mises en avant. Nous découvrons que **ce que nous avons mis en place s’inscrit dans le mouvement de l’entreprise libérée**. Les échanges avec d’autres sociétés sont toujours une source d’inspiration, c’est pourquoi nous prenons plaisir à faire connaître nos expérimentations.
 
-![](/img/2016/05/Sogilis-Christophe-Levet-Photographe-8314-300x210.jpg)
+![](/img/2016-05-Sogilis-Christophe-Levet-Photographe-8314-300x210.jpg)
 
 ## Nos perspectives : de la tour Eiffel au pays des kangourous
   
@@ -120,7 +120,7 @@ Que retenir de Sogilis aujourd’hui ? Des projets, encore et toujours ! Des jeu
 
 Ça dépend de l’équipe. Il faut d'abord mettre les personnes dans le bus avant de choisir sa destination, comme le dit Christophe !
 
-![](/img/2016/04/1equipe-300x163.png)
+![](/img/2016-04-1equipe-300x163.png)
 
 **Myriam, avec l'aide de l'équipe**
 

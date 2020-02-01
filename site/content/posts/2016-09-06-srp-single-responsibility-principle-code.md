@@ -2,7 +2,7 @@
 title: Single Responsibility Principle dans mon code
 author: Jean-Baptiste
 date: 2016-09-06T07:00:21+00:00
-image: /img/2016/02/Sogilis-Christophe-Levet-Photographe-7803.jpg
+image: /img/2016-02-Sogilis-Christophe-Levet-Photographe-7803.jpg
 categories:
   - DÉVELOPPEMENT
 tags:
@@ -28,7 +28,7 @@ Partons du nom de principe : « responsabilité unique ». Naïvement, on peut
 
 Nous sommes en programmation orientée objet, on peut donc supposer que le principe s'applique pour chaque objet, donc pour chaque classe.
 
-![niveau d'application (1)](/img/2016/02/niveau-dapplication-1.png)
+![niveau d'application (1)](/img/2016-02-niveau-dapplication-1.png)
 
 Ensuite, **qu'est-ce qu'une responsabilité ?**
 
@@ -36,7 +36,7 @@ Ensuite, **qu'est-ce qu'une responsabilité ?**
 
 Encore une fois, naïvement, on peut se dire que c'est une fonctionnalité, une tâche ou un rôle comme calculer une moyenne, générer un fichier PDF, gérer des utilisateurs... Mais alors, comment savoir si on est en face d'une responsabilité unique ou de plusieurs responsabilités ?  Je m'explique : « calculer une moyenne » peut être vu comme plusieurs responsabilités : « sommer », « compter le nombre de valeurs » et « diviser ». On pourrait alors aller très loin jusqu'à ne trouver que des **responsabilités unitaires**.
 
-![composition de responsabilités](/img/2016/02/composition-de-responsabilités.png)
+![composition de responsabilités](/img/2016-02-composition-de-responsabilités.png)
 
 En appliquant cela sur une base de code, on arriverait alors à des classes minimalistes qui ne contiendraient qu'une seule méthode d'une seule ligne... **absurde**.
 
@@ -150,7 +150,7 @@ Et je ne garde alors que les évolutions dont le coefficient est le plus grand.
 - la connaissance de l'environnement fonctionnel et technique de l'application, des contraintes et difficultés actuelles, bref une idée du futur de l'application, fonctionnelle et technique ;
 - mon expérience dans le contexte actuel (fonctionnel et technique).
 
-![calcul de risque](/img/2016/02/calcul-de-risque.png)
+![calcul de risque](/img/2016-02-calcul-de-risque.png)
 
 Si je trouve plusieurs raisons, je scinde la classe en autant de raisons. Si j'en trouve une seule, et si d'autres classes sont aussi concernées par la même raison, alors je fusionne ces classes pour n'en former qu'une seule.
 

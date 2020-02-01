@@ -2,7 +2,7 @@
 title: Tous responsables = personne responsable ?
 author: Sogilis
 date: 2018-06-26T14:20:00+00:00
-image: /img/2018/06/affiches_roles.jpg
+image: /img/2018-06-affiches_roles.jpg
 categories:
   - LA VIE À SOGILIS
 tags:
@@ -31,7 +31,7 @@ C’est un jeu permettant d'appréhender une partie de la méthodologie agile de
 Le casino game permet de prendre conscience que quelques règles extrêmement simples permettent de fluidifier formidablement une chaîne de production et ainsi de produire davantage de valeur, tout en réduisant l’en-cours. L’idée est de faire réfléchir l’équipe, à chaque itération, pour améliorer cette chaîne.
 
 
-![](/img/2018/06/Casino-game.png "Casino Game")
+![](/img/2018-06-Casino-game.png "Casino Game")
 Courbe bleue : nos bénéfices au cours des trois itérations. Courbe rouge : notre en-cours en fonction des itérations.
 
 À la fin du jeu, nous avons identifié deux règles à intégrer dans notre entreprise :
@@ -42,7 +42,7 @@ Courbe bleue : nos bénéfices au cours des trois itérations. Courbe rouge : no
 La règle des deux actions a été facile à mettre en place. Chacun a choisi un tampon encreur pour le représenter visuellement sur les post-it portant les actions. Cela permet rapidement de voir si l’un ou l’une d’entre nous a plus de deux tâches dans la colonne “En-cours”. Auquel cas on repasse une de ces tâches dans la colonne “À faire”, ou bien quelqu’un se porte volontaire pour prendre une des trois tâches. Ce genre de système visuel permet à chacun de savoir qui travaille sur quoi et de garantir la répartition de la charge de travail.
 
 
-![](/img/2018/06/avatars.jpg "avatars")
+![](/img/2018-06-avatars.jpg "avatars")
 Nos avatars
 
 
@@ -51,7 +51,7 @@ Concernant le sujet de la prise d’initiative, nous continuons de le travailler
 
 ## Initiative poker
 
-L’initiative poker (disponible [ici](/img/2018/06/initiative_poker.pdf)) est une adaptation très proche, proposée par Augustin, du [Delegation Poker](https://management30.com/product/delegation-poker/) inventé par Jurgen Appelo. Le Delegation Poker est à destination des managers d’équipes. Ces derniers n’existant pas chez nous, nous l’avons remanié pour qu’il réponde à notre problématique de prise d’initiative individuelle. En effet, si nous devons tous nous réunir avant chaque prise de décision, l’entreprise sera paralysée. En revanche certaines décisions méritent une réflexion collective. L’initiative poker a pour ambition de nous aider à discerner ces différentes situations pour gagner en efficacité.
+L’initiative poker (disponible [ici](/img/2018-06-initiative_poker.pdf)) est une adaptation très proche, proposée par Augustin, du [Delegation Poker](https://management30.com/product/delegation-poker/) inventé par Jurgen Appelo. Le Delegation Poker est à destination des managers d’équipes. Ces derniers n’existant pas chez nous, nous l’avons remanié pour qu’il réponde à notre problématique de prise d’initiative individuelle. En effet, si nous devons tous nous réunir avant chaque prise de décision, l’entreprise sera paralysée. En revanche certaines décisions méritent une réflexion collective. L’initiative poker a pour ambition de nous aider à discerner ces différentes situations pour gagner en efficacité.
 
 Au début de chaque tour de jeu, un participant évoque une situation nécessitant une prise de décision, vécue ou non. À chacun ensuite de choisir la carte représentant ce qu’il ou elle ferait dans cette situation. Les cartes sont les suivantes :
 
@@ -63,7 +63,7 @@ Au début de chaque tour de jeu, un participant évoque une situation nécessita
 - Annoncer l’action que l’on compte faire
 - Initiative : on fait l’action directement sans en parler
 
-![](/img/2018/06/initiative-poker.png "Initiative poker")
+![](/img/2018-06-initiative-poker.png "Initiative poker")
 L’échelle de valeur pour la prise de décision
 
 
@@ -92,7 +92,7 @@ Pour résoudre ces questions nous avons identifié et créé 5 rôles au sein de
 - Le Voleur, comme de juste, est en charge des finances
 - Le Scribe, qui s’occupe de tout ce qui a trait à l’administratif
 
-![](/img/2018/06/affiches_roles.jpg "Affiches roles")
+![](/img/2018-06-affiches_roles.jpg "Affiches roles")
 
 Les fiches décrivant les buts des responsables de chaque rôle
 
