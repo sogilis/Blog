@@ -10,11 +10,12 @@
   },
   "author": "",
   "license": "MIT",
-  "depedencies": {
-    "hugo-bin": "^0.47.0"
-  },
   "devDependencies": {
     "eslint": "^6.1.0",
     "rimraf": "^3.0.0"
+  },
+  "dependencies": {
+    "hugo-bin": "^0.47.0",
+    "netlify-cms": "^2.10.16"
   }
 }
