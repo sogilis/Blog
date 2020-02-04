@@ -24,7 +24,7 @@ Voici donc la première partie relatant cette exploration : les entrailles deGit
 
 Pourquoi vouloir utiliser Git pour stocker des données (autre que du code) ? C'est pas faute d'avoir un grand nombre de bases de données disponibles.
 
-![No idea](/img/no_idea.gif)
+![No idea](/img/2014-02-no_idea.gif)
 
 Oui, mais. Il y a plein de choses sympa avec Git. La première étant évidemment l'accès à l'historique. Pouvoir remonter dans le temps peut être vraiment intéressant suivant les données que l'on manipule. Et avec Git c'est en standard (c'est un peu le but…).
 
@@ -36,7 +36,7 @@ Une autre raison est de pouvoir imaginer sauvegarder des données simplement dan
 
 Et puis ça semble fun aussi !
 
-![Fun Yeah](/img/fuck_yeah.gif)
+![Fun Yeah](/img/2014-02-fuck_yeah.gif)
 
 ## Enregistrer une donnée dans Git
 
