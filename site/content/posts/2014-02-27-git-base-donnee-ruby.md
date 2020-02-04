@@ -13,7 +13,7 @@ tags:
 
 [La première partie consacrée]({{< ref "posts/2014-02-19-git-base-donnee-entrailles.md" >}}) à [Git](http://git-scm.org) vous a montré brièvement le stockage interne et surtout comment écrire une donnée, la lier à une clé et récupérer le contenu derrière cette clé. Pour cette deuxième partie, nous allons réaliser la même chose mais en utilisant un vrai langage de programmation, Ruby.
 
-![YES](/img/yes.gif)
+![YES](/img/2014-02-yes.gif)
 
 ## Contexte
 
@@ -299,7 +299,7 @@ Et pour une petite démo en live rendez-vous sur [gungnir.herokuapp.com/](http:/
 
 Ainsi s'achève notre petite découverte de git comme moteur de stockage.
 
-![Dr House](/img/sad.gif)
+![Dr House](/img/2014-02-sad.gif)
 
 Il y a encore beaucoup de choses à découvrir comme par exemple les possibilités d'utilisation concurrente, les branches, les hooks, etc. Bien que l'accès ne soit pas des plus simples, pouvoir profiter du moteur de git peut être vraiment intéressant.
 
