@@ -116,7 +116,7 @@ void BoardModel::moveUp() {
 
 Et voilà, cela fonctionne ! Votre 2048 est utilisable !
 
-![](/img/tumblr/tumblr_inline_n48gbsuxvD1sv6muh.png)
+![](/img/tumblr_inline_n48gbsuxvD1sv6muh.png)
 
 Par contre je sais pas vous, mais je trouve que c'est pas si génial. L'un des points négatifs est qu'on demande à rafraichir la vue même si le déplacement n'a pas été possible. Bon ok, on pourrait regarder le retour de `board_.moveUp()`mais on peut faire autrement. Qui sait mieux que `Board` si les données ont changées ou non ? Dans ce cas on peut laisser `Board` émettre un signal lorsque les données changent, et `BoardModel` va venir s'enregistrer sur ce signal. Ainsi cela devient de plus en plus une sorte de proxy dédié à présenter notre modèle à l'interface et on supprime au maximum la logique qu'il contient.
 

@@ -154,6 +154,6 @@ Et voilà, rien de plus à faire, ça fonctionne déjà ! Agréable, non ?
 
 Je vous laisse faire la suite pour les états de jeux (gagné / perdu).
 
-![](/img/tumblr/tumblr_inline_n48gchB3dB1sv6muh.png)
+![](/img/tumblr_inline_n48gchB3dB1sv6muh.png)
 
 > git: tag [05_score_statuses](https://github.com/sogilis/qt2048/tree/05_score_statuses)
