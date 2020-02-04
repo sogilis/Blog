@@ -28,7 +28,7 @@ Pour faire très simple c'est un framework permettant de créer des interfaces 
 
 Dit comme ça c'est très web comme techno, et c'est pas faux.
 
-![](/img/tumblr/tumblr_inline_n48g7nAIuG1sv6muh.jpg)
+![](/img/tumblr_inline_n48g7nAIuG1sv6muh.jpg)
 
 L'avantage c'est que le langage est facile, l'ajout de javascript permet de facilement gérer l'interactivité de l'interface (beaucoup plus facilement qu'en `C++`…) et pour ceux qui veulent il y a même un designer de fourni dans QtCreator. L'ensemble fait que la création d'interface peut aussi être assez facilement confiée à un designer ce qui est très sympa pour produire des applications desktop (ou mobiles) avec un bon niveau ergonomique et graphique. Disons que c'est du même niveau de complexité (peut-être même moins du fait de la richesse de certains composants) qu'une interface web et dans tous les cas c'est beaucoup plus simple que si on demandait de faire une interface à base de widgets (dès qu'on sort des composants de base ou qu'on souhaite mieux gérer le placement).
 
@@ -94,21 +94,21 @@ Bon je présupose dans la suite que vous avez réussi à l'installer, que vous s
 
 Allez c'est parti, comme un tuto classique : création du projet :
 
-![](/img/tumblr/tumblr_inline_n48ggyrfGl1sv6muh.png)
+![](/img/tumblr_inline_n48ggyrfGl1sv6muh.png)
 
 Pour ma part je l'ai appelé qt2048. Veillez juste à ne **surtout pas** l'appeler `2048`. Certains on essayé, ils ont eu mal ! Plus sérieusement, ça rend l'application inutilisable sous Android… mais l'erreur n'est pas toujours évidente à trouver.
 
-![](/img/tumblr/tumblr_inline_n48g88Z2E41sv6muh.png)
+![](/img/tumblr_inline_n48g88Z2E41sv6muh.png)
 
 Choisissez un ensemble de composant `Qt Quick 2.2` (si vous êtes sous Qt 5.2.1 utilisez un `Qt Quick 2.0` mais il y aura quelques ajustement à réaliser).
 
-![](/img/tumblr/tumblr_inline_n4flfbB8PI1sv6muh.png)
+![](/img/tumblr_inline_n4flfbB8PI1sv6muh.png)
 
 Vient ensuite le moment de la sélection des Kits. Les kits représentent les types de compilations possibles. Par exemple vous pouvez faire une application `Qt4` et `Qt5`, etc. Si vous avez bien installé un _Qt for Android and iOS_ vous devriez avoir 3 kits pour Android (`armeabi`, `armeabi-v7a`, `x86`), 1 kit desktop (`clang 64bit` sous mac) et 2 kits pour iOS (un pour un iOS réel, un pour le simulateur).
 
 Pour débuter je ne sélectionne que le kit desktop. Pourquoi ? Simplement car dans un premier temps je me concentre sur mon application et seulement à la fin je vais gérer les mobiles. Et c'est d'ailleurs un point qui est vraiment intéressant, il n'est pas nécessaire de partir dans un développement orienté mobile pour que cela fonctionne.
 
-![](/img/tumblr/tumblr_inline_n4fqp7Lh6w1sv6muh.png)
+![](/img/tumblr_inline_n4fqp7Lh6w1sv6muh.png)
 
 Si vous le souhaitez vous pouvez tout mettre dans un dépôt git (ça peut être une bonne idée mine de rien…).
 
@@ -120,7 +120,7 @@ Vous trouverez d'ailleurs l'ensemble des sources liées à ces articles dans le 
 
 Voici donc les fichiers que vous devriez avoir :
 
-![](/img/tumblr/tumblr_inline_n4fqp7Lh6w1sv6muh.png)
+![](/img/tumblr_inline_n4fqp7Lh6w1sv6muh.png)
 
 Le fichier `main.cpp` doit ressembler à cela :
 
