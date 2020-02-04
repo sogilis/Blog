@@ -25,7 +25,7 @@ Nous avons tout d'abord catégorisé les différents types d'apprentissages. Cel
 - Les **Études** (comment fonctionne un protocole, reverse engineering sur certains logiciels…)
 - Les **Notes d'architectures**
 
-![DroidPlanner Mobile Application](/img/tumblr/tumblr_inline_n2smvcq9H11szdlw2.png)
+![DroidPlanner Mobile Application](/img/tumblr_inline_n2smvcq9H11szdlw2.png)
 
 ## Repérer où se trouve la connaissance
 
@@ -39,7 +39,7 @@ Lorsque l'on sait quand et quoi rédiger, il faut encore le faire de manière à
 
 Grâce à ce format, il est facile d’insérer des images et des liens dans les documents. Cette simplicité permet d'avoir des documents de meilleure qualité (plus clairs et mieux documentés).
 
-![Installation](/img/tumblr/tumblr_inline_n2sn4plGID1szdlw2.png)
+![Installation](/img/tumblr_inline_n2sn4plGID1szdlw2.png)
 
 ## Partager la connaissance
 
@@ -49,7 +49,7 @@ GitHub nous permet ainsi de consulter, de manière agréable, notre documentatio
 
 Notre documentation est donc consultable et modifiable en ligne, et versionnée.
 
-![Adronaline doc](/img/tumblr/tumblr_inline_n2smvx5KGO1szdlw2.png)
+![Adronaline doc](/img/tumblr_inline_n2smvx5KGO1szdlw2.png)
 
 ## Tenir l'information à jour
 

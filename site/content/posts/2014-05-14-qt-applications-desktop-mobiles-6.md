@@ -100,6 +100,6 @@ Rectangle {
 
 Vous noterez juste que j'ai introduit un nouveau `Rectangle`. Celui-ci occupe toute la place disponible (via `Layout.fillWidth` et `Layout.fillHeight`) et permet surtout de très facilement centrer horizontalement le plateau.
 
-![](/img/tumblr/tumblr_inline_n48gcutXVJ1sv6muh.png)
+![](/img/tumblr_inline_n48gcutXVJ1sv6muh.png)
 
 > git: tag [06_responsive](https://github.com/sogilis/qt2048/tree/06_responsive)

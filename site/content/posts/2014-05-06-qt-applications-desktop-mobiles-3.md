@@ -82,7 +82,7 @@ Window {
 
 Ceci devrait vous donner une grille de 4 cases de côté, avec dans chacune son indice.
 
-![](/img/tumblr/tumblr_inline_n48ga47MGG1sv6muh.png)
+![](/img/tumblr_inline_n48ga47MGG1sv6muh.png)
 
 L'une des premières choses est qu'on voit qu'il va falloir linéariser les coordonnées. La grille veut un index entre 0 et 15, notre modèle veut un couple (0..3)(0..3).
 
@@ -92,7 +92,7 @@ Comme le modèle attendu est une liste de donnée nous allons dériver de `QAbst
 
 Commencez donc par ajouter une classe `BoardModel` à votre projet, faites la hériter de `QAbstractListModel`.
 
-![](/img/tumblr/tumblr_inline_n48gaeKJZ01sv6muh.png)
+![](/img/tumblr_inline_n48gaeKJZ01sv6muh.png)
 
 Pour que cela fonctionne il faut rajouter deux choses, un compteur d'éléments et un accès à la donnée, et émettre un signal lorsque les données changent.
 
@@ -201,7 +201,7 @@ Window {
 
 Et voilà, votre plateau de jeu est affiché. Vous avez les 16 cases avec normalement deux cases qui ont 2 ou 4 dedans et les autres 0.
 
-![](/img/tumblr/tumblr_inline_n48gawrFT61sv6muh.png)
+![](/img/tumblr_inline_n48gawrFT61sv6muh.png)
 
 #### Un peu de style <a id="style"></a>
 
@@ -329,7 +329,7 @@ Pour ce qui est du point `4.`, je vous laisse définir la couleur de fond à `#b
 
 Vous devriez alors avoir un résultat similaire au suivant :
 
-![](/img/tumblr/tumblr_inline_n48gbdabr71sv6muh.png)
+![](/img/tumblr_inline_n48gbdabr71sv6muh.png)
 
 Plutôt simple, non ?
 

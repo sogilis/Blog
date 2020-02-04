@@ -142,7 +142,7 @@ La première chose à faire pour pouvoir tester sous iOS est d'installer le kit�
 
 Rendez-vous dans la vue _Projets_ de QtCreator et ajoutez le kit correspondant. Si vous avez fait une installation avec une version Android + iOS vous devriez avoir au moins deux kits Android et deux kits iOS. Sélectionnez le kit `iphonesimulator-clang` qui vous permettra d'exécuter dans le simulator d'iOS fourni par XCode. Pour pouvoir faire la même chose sur un matériel Apple, il vous faudra le certificat de développeur pour signer votre code.
 
-![](/img/tumblr/tumblr_inline_n48gd62cYl1sv6muh.png)
+![](/img/tumblr_inline_n48gd62cYl1sv6muh.png)
 
 > oui j'ai des kits 5.2.1 + 5.3.0 beta
 
@@ -152,11 +152,11 @@ Et ensuite ?
 
 Il vous reste juste à exécuter votre application en choisissant la bonne cible.
 
-![](/img/tumblr/tumblr_inline_n48gdd2NyQ1sv6muh.png)
+![](/img/tumblr_inline_n48gdd2NyQ1sv6muh.png)
 
 Alors, ce n'était pas si compliqué, non ?
 
-![](/img/tumblr/tumblr_inline_n48gdo5kkP1sv6muh.png)
+![](/img/tumblr_inline_n48gdo5kkP1sv6muh.png)
 
 Vous noterez donc qu'il n'y a eu absolument aucune modification au niveau des sources, juste une recompliation. Et là vous pouvez vraiment commencer à profiter de Qt et QML sachant que cela va fonctionner quelque soit la destination !
 
@@ -172,7 +172,7 @@ Il vous faut aussi un JDK.
 
 Ainsi que ant.
 
-![](/img/tumblr/tumblr_inline_n48gdvtyai1sv6muh.png)
+![](/img/tumblr_inline_n48gdvtyai1sv6muh.png)
 
 Vous pouvez directement lancer _AVD Manager_ et gérer vos simulateurs ou le faire lors de l'exécution de votre projet.
 
@@ -180,7 +180,7 @@ Sélectionnez ensuite le kit correspondant dans votre projet : `Android pour arm
 
 Il va vous proposer les simulateurs ou matériels android connectés correspondant à votre version d'ABI :
 
-![](/img/tumblr/tumblr_inline_n48ges1Zyn1sv6muh.png)
+![](/img/tumblr_inline_n48ges1Zyn1sv6muh.png)
 
 Si jamais les devices que vous voyez sont tous en non compatible c'est probablement que vous n'êtes pas en Qt Creator 3.1.0. Dans ce cas, dans l’_environnement de compilation_ du kit rajoutez la variable d'environnement suivante :
 
@@ -192,7 +192,7 @@ En effet, dans les SDK précédents l'architecture cible était `armeabi-v7a`, 
 
 Il ne vous reste plus qu'à sélectionné le matériel/simulateur que vous voulez et cliquer sur `ok`. Et attendre que Android se lance aussi…
 
-![](/img/tumblr/tumblr_inline_n48gegRF0Y1sv6muh.png)
+![](/img/tumblr_inline_n48gegRF0Y1sv6muh.png)
 
 ## Fin ? <a id="end"></a>
 
@@ -204,4 +204,4 @@ Pour aller plus loin il serait intéressant de continuer à manipuler l'interfac
 
 Au final il est donc possible d'envisager le développement d'applications bureau et mobiles avec un surcoût relativement faible et surtout sans avoir besoin de coder trois fois (ou plus) la même application, ce qui outre la perte de temps serait aussi prendre des risques en terme de fiabilité (trois fois plus de code à maintenir par exemple).
 
-![](/img/tumblr/tumblr_inline_n48gf2wObf1sv6muh.png)
+![](/img/tumblr_inline_n48gf2wObf1sv6muh.png)
