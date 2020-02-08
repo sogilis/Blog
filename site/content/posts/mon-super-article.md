@@ -16,7 +16,7 @@ image: img/2013-12-Sogiday-post-it.jpg
 
 qsdqd
 
-![](/2013/12/Sogilis-Christophe-Levet-Photographe-7326.jpg)
+![](img/2013-12-Sogiday-post-it.jpg)
 
 qsd
 
