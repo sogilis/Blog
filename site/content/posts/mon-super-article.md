@@ -16,8 +16,6 @@ image: img/2013-12-Sogiday-post-it.jpg
 
 qsdqd
 
-![](img/2013-12-Sogiday-post-it.jpg)
-
 qsd
 
 qs
