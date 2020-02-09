@@ -5,17 +5,19 @@
   "repository": "sogilis/Blog",
   "scripts": {
     "start": "hugo server -s site -v",
+    "start:netlify": "cp ./node_modules/netlify-cms/dist/netlify-cms.js* ./site/static/admin/ && netlify-cms-proxy-server & sleep 3 ; yarn start",
     "build": "rm -Rf dist && mkdir -p ./dist/admin && cp ./node_modules/netlify-cms/dist/netlify-cms.js ./node_modules/netlify-cms/dist/netlify-cms.js.map ./dist/admin/ && hugo -d ../dist -s site -v",
     "build:preview": "yarn run build -- -D -F"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^6.1.0"
+    "eslint": "^6.1.0",
+    "netlify-cms-proxy-server": "^1.0.7"
   },
   "dependencies": {
     "hugo-bin": "^0.52.0",
-    "netlify-cms": "^2.10.16"
+    "netlify-cms": "^2.10.17"
   },
   "hugo-bin": {
     "buildTags": "extended"
