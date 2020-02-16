@@ -19,6 +19,12 @@
         {{ $head := resources.Get "css/header.css" | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $head.Permalink }}" type="text/css" />
 
+        {{ $headInf767 := resources.Get "css/header-inf767.css" | minify | fingerprint }}
+        <link rel="stylesheet" media="(max-width: 767px)" href="{{ $headInf767.Permalink }}" type="text/css" />
+
+        {{ $headSup768 := resources.Get "css/header-sup768.css" | minify | fingerprint }}
+        <link rel="stylesheet" media="(min-width: 767px)" href="{{ $headSup768.Permalink }}" type="text/css" />
+
         {{ $index_page := resources.Get "css/index-page.css" | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $index_page.Permalink }}" type="text/css" />
 
