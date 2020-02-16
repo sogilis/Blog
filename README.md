@@ -221,6 +221,34 @@ See also
 * In package.json remove Linux shell syntax and use only node modules to
     have compatibility with PowerShell or MS Batch. Use also https://www.npmjs.com/package/yarn-or-npm
 
+## Troubleshooting
+
+```
+$ yarn start
+yarn run v1.22.0
+$ hugo server -s site -v
+events.js:298
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn /home/julioprayer/Blog/node_modules/hugo-bin/vendor/hugo ENOENT
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:267:19)
+    at onErrorNT (internal/child_process.js:467:16)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+Emitted 'error' event on ChildProcess instance at:
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:273:12)
+    at onErrorNT (internal/child_process.js:467:16)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn /home/julioprayer/Blog/node_modules/hugo-bin/vendor/hugo',
+  path: '/home/julioprayer/Blog/node_modules/hugo-bin/vendor/hugo',
+  spawnargs: [ 'server', '-s', 'site', '-v' ]
+}
+```
+
+=> `$ rm -Rf ./node_modules && yarn install`
+
 # Credits
 
 * Articles are created by Sogilis collaborators
