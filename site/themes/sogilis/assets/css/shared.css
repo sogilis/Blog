@@ -1,0 +1,128 @@
+body {
+    font-family: eb garamond, serif;
+}
+
+/* Following is reset to `initial' into article.css */
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/* Following is reset to `initial' into article.css */
+ul {
+    list-style-type: none;
+}
+
+.mainColumn {
+    margin: 0 auto 0 auto;
+    display: flex;
+    box-sizing: border-box;
+}
+
+@media (max-width: 575px) {
+    .mainColumn {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .mainColumn {
+        max-width: 525px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mainColumn {
+        max-width: 705px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mainColumn {
+        max-width: 945px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mainColumn {
+        max-width: 1125px;
+    }
+}
+
+/* Button  with:
+/* * an animation on hoover, a grey slide appears from right */
+/* * small “>” on its right (svg) */
+/* * grey Border */
+/* ========================================================================== */
+.title_level_1{
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    /* TODO */
+    /* $wolf-blue:#016099; */
+    color: #016099;
+    font-size: 3rem;
+}
+
+/* Button  with:
+/* * an animation on hoover, a grey slide appears from right */
+/* * small “>” on its right (svg) */
+/* * grey Border */
+/* On the blog, currenctly (04/2020) used in the footer into "Contactez-nous" */
+/* ========================================================================== */
+
+a.btn_dark_grey {
+    position: relative;
+    display: block;
+    z-index: 0;
+
+    padding: 1rem 1.5rem;
+    border: solid #707070 3px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    /* TODO replace to $medium_grey */
+    color: #707070;
+
+    transition: color 0.3s;
+}
+a.btn_dark_grey:hover {
+    color: white;
+}
+
+a.btn_dark_grey > svg {
+    width: 0.5rem;
+    margin-left: 1.5rem;
+    /* TODO replace to $medium_grey */
+    stroke: #707070;
+    transition: stroke 0.5s;
+}
+a.btn_dark_grey:hover > svg {
+    stroke: white;
+}
+
+a.btn_dark_grey > svg > path.st0 {
+    fill: none;
+    stroke-width: 3;
+}
+
+a.btn_dark_grey::after {
+    content: '';
+    /* TODO replace to $medium_grey */
+    background-color: #707070;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+
+    width: 0;
+    transition: width 0.3s;
+}
+
+a.btn_dark_grey:hover::after {
+    width: 100%;
+}

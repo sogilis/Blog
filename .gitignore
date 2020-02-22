@@ -25,5 +25,11 @@
 # Only yarn is advise.
 /package-lock.json
 
-site/static/admin/netlify-cms.js
-site/static/admin/netlify-cms.js.map
+# External dependencies copied from ./node_modules that we won't have in our
+# repo Git
+/site/themes/sogilis/assets/css/reboot.min.css
+/site/themes/sogilis/assets/css/reboot.min.css.map
+/site/themes/sogilis/static/css/typeface-eb-garamond/
+/site/themes/sogilis/static/css/typeface-montserrat/
+/site/static/admin/netlify-cms.js
+/site/static/admin/netlify-cms.js.map
