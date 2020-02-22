@@ -4,21 +4,24 @@
   "description": "Sogilis blog",
   "repository": "sogilis/Blog",
   "scripts": {
-    "start": "hugo server -s site -v",
-    "start:netlify": "cp ./node_modules/netlify-cms/dist/netlify-cms.js* ./site/static/admin/ && netlify-cms-proxy-server & sleep 3 ; yarn start",
-    "build": "rm -Rf dist && mkdir -p ./dist/admin && cp ./node_modules/netlify-cms/dist/netlify-cms.js ./node_modules/netlify-cms/dist/netlify-cms.js.map ./dist/admin/ && hugo -d ../dist -s site -v",
-    "build:preview": "yarn run build -- -D -F"
+    "start": "make start",
+    "start:netlify": "make start_netlify",
+    "build": "make build",
+    "build:preview": "make build_preview"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "netlify-cms-proxy-server": "^1.2.1"
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "netlify-cms-proxy-server": "^1.2.6"
   },
   "dependencies": {
-    "hugo-bin": "^0.55.1",
-    "netlify-cms": "^2.10.32"
+    "bootstrap-reboot": "^4.4.1",
+    "hugo-bin": "^0.58.0",
+    "netlify-cms": "^2.10.48",
+    "typeface-eb-garamond": "^1.1.4",
+    "typeface-montserrat": "^0.0.75"
   },
   "hugo-bin": {
     "buildTags": "extended"

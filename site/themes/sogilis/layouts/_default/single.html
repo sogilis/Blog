@@ -1,17 +1,26 @@
 {{ define "main" }}
 
-<div class="blog_article">
-
-    <div class="row header">
-        <div class="col-12 offset-1 col-sm-6 offset-sm-0 col-md-6 col-lg-6">
-            {{ with .Params.image }}
-                <img alt="Illustration de l'article" src="{{ . | relURL }}">
-            {{ else }}
-                <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
-            {{ end }}
-        </div>
-        <div class="col-11 offset-2 col-sm-6 offset-sm-0 col-md-5 col-lg-4 article_title">
-            <h1>{{ .Title }}</h1>
+<article id="blog_articlepage">
+    <section id="blog_articlepage_header">
+        <!-- Illustration -->
+        {{ with .Params.image }}
+            <img
+                id="blog_articlepage_header_img"
+                class="blog_articlepage_img"
+                alt="Illustration de l'article"
+                src="{{ . | relURL }}"
+                >
+        {{ else }}
+            <!-- Default illustration -->
+            <img
+                id="blog_articlepage_header_img"
+                class="blog_articlepage_img"
+                alt="Illustration de l'article"
+                src="{{ "images/blog_preview_default.jpg" | relURL }}"
+                >
+        {{ end }}
+        <div id="blog_articlepage_header_title">
+            <h1 id="blog_articlepage_header_title_h1">{{ .Title }}</h1>
             <p>
                 {{ i18n "writtenBy" }}
                 {{- with .Params.Author }}
@@ -20,28 +29,40 @@
                     {{ .Site.Params.Author }}
                 {{- end }}
                 <br />
-                <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">
+                <time
+                    class="post-date"
+                    datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"
+                    >
                     {{ i18n "publishdate" . }}
                 </time>
             </p>
         </div>
-    </div>
+    </section>
 
-
-    <div class="row content">
-            <div class="col-12">
-            {{ .Content }}
-        </div>
-    </div>
+    <section id="blog_articlepage_content">
+        {{ .Content }}
+    </section>
 
     {{ with .Params.image }}
-        <img alt="Illustration de l'article" src="{{ . | relURL }}">
+        <img
+            id="blog_articlepage_img_bottom"
+            class="blog_articlepage_img"
+            alt="Illustration de l'article"
+            src="{{ . | relURL }}"
+            >
     {{ else }}
-        <img alt="Illustration de l'article" src="{{ "images/blog_preview_default.jpg" | relURL }}">
+        <!-- Default illustration -->
+        <img
+            id="blog_articlepage_img_bottom"
+            class="blog_articlepage_img"
+            alt="Illustration de l'article"
+            src="{{ "images/blog_preview_default.jpg" | relURL }}"
+            >
     {{ end }}
 
-    <div class="comments">
+    <section id="blog_articlepage_comments">
         {{ template "_internal/disqus.html" . }}
-    </div>
-</div>
+    </section>
+</article>
+
 {{ end }}

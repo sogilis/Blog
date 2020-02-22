@@ -3,13 +3,13 @@
 <!-- ======================================================================= -->
                    <!-- Menu Desktop (display >= 576 px) -->
 <!-- ======================================================================= -->
-    <div class="container content_menu_desktop">
+    <div id="navBarDesktop" class="mainColumn">
         <a id="soheaderLogo" href="index.html">
             <img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}">
         </a>
         <nav>
             <div class="dropdown">
-                <button class="dropbtn">{{ i18n "services"}}</button>
+                <a class="dropbtn">{{ i18n "services"}}</a>
                 <div class="dropdown-content">
                     <a href="https://sogilis.fr/services-applications-cloud-native.html">
                         {{ i18n "cloudNativeApplications" }}
@@ -30,48 +30,66 @@
 <!-- ======================================================================= -->
                         <!-- Menu Mobile (dispaly < 576 px) -->
 <!-- ======================================================================= -->
-    <div class="content-menu-mobile" id="content-menu">
-        <div class="container">
-            <div class="col-xs-3">
-                <a href="https://sogilis.fr/index.html">
-                    <img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}">
-                </a>
+
+
+    <div id="navBarMobile" class="mainColumn">
+    <!--
+    In this screen size, we have three tags child
+    On the top left, the icon of Sogilis
+    On the top right, a button with three bar. When we click on it
+         this button is transormed to a cross and the nav button appears.
+    When we click on the top right button, the tag <nav> appears smoothy.
+    -->
+        <a href="https://sogilis.fr/index.html">
+            <img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}">
+        </a>
+        <a id="headerMenuButtonMobile" href="#">
+            <div>&nbsp;</div>
+        </a>
+        <!-- Navbar is displayed when we click on `headerMenuButtonMobile -->
+        <nav id="headerMainMenuMobile">
+            <div>
+              <!--
+                In this `div`, there is the green line
+                (it's the pseudo-element `::before`)
+                This pseudo-element have `margin-top: 50%`
+              -->
             </div>
-            <div class="col-xs-2 col-xs-offset-7">
-                <a id="headerMenuButtonMobile" href="#">
-                    <span class="lines"></span>
-                </a>
-                <nav id="headerMainMenuMobile">
-                    <ul>
-                        <li>
-                            <a href="https://sogilis.fr/services-applications-cloud-native.html">
-                                {{i18n "cloudNativeApplications" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://sogilis.fr/services-embarques-et-iot.html">
-                                {{ i18n "embeddedSoftwares" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://sogilis.fr/services-logiciels-critiques.html">
-                                {{ i18n "criticalSoftwares" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://sogilis.fr/vision.html">
-                                {{ i18n "ourVision" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://sogilis.fr/contact.html">
-                                {{ i18n "contact" }}
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <ul>
+                <li>
+                    <a href="https://sogilis.fr/services-applications-cloud-native.html">
+                        {{i18n "cloudNativeApplications" }}
+                    </a>
+                </li>
+                <li>
+                    <a href="https://sogilis.fr/services-embarques-et-iot.html">
+                        {{ i18n "embeddedSoftwares" }}
+                    </a>
+                </li>
+                <li>
+                    <a href="https://sogilis.fr/services-logiciels-critiques.html">
+                        {{ i18n "criticalSoftwares" }}
+                    </a>
+                </li>
+                <li>
+                    <a href="https://sogilis.fr/vision.html">
+                        {{ i18n "ourVision" }}
+                    </a>
+                </li>
+                <li>
+                    <a href="https://sogilis.fr/contact.html">
+                        {{ i18n "contact" }}
+                    </a>
+                </li>
+            </ul>
+            <div>
+              <!--
+                The goal of this div is simply to center the `ul` element above
+                between two `div`.
+                (Into the first `div`, there is the green line).
+              -->
             </div>
-        </div>
+        </nav>
     </div>
 
 </header>
