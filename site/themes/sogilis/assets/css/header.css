@@ -1,0 +1,31 @@
+header {
+    position: fixed;
+    z-index: 200;
+    height: 5rem;
+    width: 100%;
+    margin-top: 2rem;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header > div {
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* When we scroll */
+header.content_header_scroll {
+    margin-top: 0px;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
+    background-color:white;
+    padding: 1rem;
+}

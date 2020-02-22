@@ -35,7 +35,17 @@ So you will be able to write a new article offline.
 
 You will need to install the following software:
 
-* To download and push changes: [Git](https://git-scm.com)
+* Install GNU Make. It is needed for build process with Docker or without
+    Docker.
+    * For Linux, use your distro specific instructions
+    * For Windows, see https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows
+        * Actually (at 2020-03-01) GNUWin32 is very outdated (2006), I advise
+          you to use Chocolaty (it has built GNU Make from recent sources, as
+          we can see in their "Package Source")
+    * For mac users, use Homebrew
+
+* To download and push changes install: [Git](https://git-scm.com)
+
 * To start the blog and see your changes on live, at each save:
     * Without the Docker method:
         1. Node:
@@ -45,9 +55,7 @@ You will need to install the following software:
                 must have node >= 12 (some versions of node 10.x seems to work,
                 but not all)
         2. Yarn: [instructions](https://yarnpkg.com/lang/en/docs/install/)
-        * Note: npm is not needed in dev environment.
-            It's advise to not use it.
-            But should work, if you don't want use yarn.
+        * Note: not compatible with `npm`.
     * With the Docker method see [instructions](https://docs.docker.com/install/)
         * Disclaimer:
             * On Windows or Mac, installation of Docker could be
@@ -85,16 +93,6 @@ website is updated (live reload).
 
 #### Without Docker
 
-1. Installation
-    * Not needed at each start, but at each **update** of package.json
-    * Run:
-        ```bash
-        yarn install
-        ```
-    * Each time you run `git pull` to update the website, if you don't
-        know if this files are changed, you could run this command.
-        For an upgrade, this command is very quick.
-
 2. Start the blog and the watcher:
 
 ```bash
@@ -102,6 +100,10 @@ yarn start
 ```
 
 Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
+
+Note: each time you trigger this command, `yarn install` is called. As yarn
+is a powerful Package Manager, when there are no update of dependencies,
+it should takes only some seconds.
 
 #### With Docker
 
@@ -118,25 +120,25 @@ Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
             fill your disk.
     * Run:
         ```bash
-        make build
+        make --file MakefileDocker build
         ```
     * Note: with Docker, **contrary to the old doc said** no need
         to trigger ~~`yarn install`~~.
 
 3. Start the blog and the watcher:
 ```bash
-make start
+make --file MakefileDocker start
 ```
 Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
 
 4. Eventually, see logs (especially if there is a problem):
 ```bash
-make logs
+make --file MakefileDocker logs
 ```
 
 5. Stop the container with:
 ```
-make stop
+make --file MakefileDocker stop
 ```
 
 6. Eventually, free disc space with
@@ -220,6 +222,9 @@ See also
 
 * In package.json remove Linux shell syntax and use only node modules to
     have compatibility with PowerShell or MS Batch. Use also https://www.npmjs.com/package/yarn-or-npm
+
+* For netlify-cms.js, use https://webpack.js.org/guides/caching/
+    (actually reboot.min.css is cached).
 
 ## Troubleshooting
 

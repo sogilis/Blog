@@ -32,15 +32,20 @@ rules:
     - error
     - 2
 
+  max-statements:
+    - error
+    - max: 10
+    # Does not work with IIFE
+    # https://github.com/eslint/eslint/issues/12950
+    - ignoreTopLevelFunctions: true
+
+  lines-around-comment: off
+
   no-ternary: off
 
  # enforce variables to be declared either together or separately in functions
   # [when we declare several array functions in a file, give an error]
   one-var: off
-
-  max-statements:
-    - error
-    - max: 15
 
  # Give use false-positive into ./site/themes/sogilis/static/js/scripts.js
   padded-blocks: off
@@ -48,3 +53,7 @@ rules:
   quotes:
     - error
     - single
+
+  wrap-iife:
+    - error
+    - inside

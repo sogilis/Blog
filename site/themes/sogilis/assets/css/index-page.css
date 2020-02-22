@@ -1,11 +1,13 @@
-                    /* The grid element on the index page */
-                    /* ================================== */
+main {
+    padding-top:12rem;
+}
+/* The grid element on the index page */
+/* ================================== */
 
 main > #blog_index {
     display: grid;
     grid-gap: 2rem;
     grid-auto-rows: 25rem;
-    padding-top:12rem;
     padding-bottom:6rem;
 }
 
@@ -27,8 +29,8 @@ main > #blog_index {
     }
 }
 
-                          /* Each cell of the grid */
-                          /* ===================== */
+/* Each cell of the grid */
+/* ===================== */
 
 main > #blog_index > a.blog_index_article {
     display: grid;
@@ -55,8 +57,8 @@ main > #blog_index > a.blog_index_article {
     }
 }
 
-                                  /* Image */
-                                  /* ===== */
+/* Image */
+/* ===== */
 
 main > #blog_index > a.blog_index_article > div > img {
     height: 100%;
@@ -68,8 +70,8 @@ main > #blog_index > a.blog_index_article > div > img {
 main > #blog_index > a.blog_index_article:hover > div > img {
     filter: grayscale(100%);
 }
-                       /* The title and 'Lire la suite */
-                       /* ============================ */
+/* The title and 'Lire la suite */
+/* ============================ */
 
 
 main > #blog_index > a.blog_index_article > p,
@@ -77,8 +79,8 @@ main > #blog_index > a.blog_index_article > h1 {
     margin: 0 1rem;
     transition: all 0.3s;
 }
-                                /* The title */
-                                /* ========= */
+/* The title */
+/* ========= */
 
 main > #blog_index > a.blog_index_article > h1 {
     font-family: 'EB Garamond', serif;
@@ -93,8 +95,8 @@ main > #blog_index > a.blog_index_article:hover > h1 {
     color: #282E36;
 }
 
-                      /* p is "Lire la suite" in French */
-                      /* ============================== */
+/* p is "Lire la suite" in French */
+/* ============================== */
 
 main > #blog_index > a.blog_index_article > p {
     font-family: 'Montserrat', sans-serif;

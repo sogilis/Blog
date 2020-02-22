@@ -4,33 +4,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{{ .Summary | default .Site.Params.SiteDescription }}">
 
-        <!-- boostrap should be before header.css, otherwise the header display bug -->
-        <link rel="stylesheet" href="{{ "css/bootstrap-4.0.0.min.css" | relURL }}">
-
-        <!-- TODO Seems not to be useful -->
-        <!-- <link rel="stylesheet" href="{{ "css/aos.css" | relURL }}" /> -->
-
-        {{ $styles := dict "(min-width: 1200px)" "sass/sup1200.scss" "(min-width: 992px) and (max-width: 1199px)" "sass/992-1199.scss" "(min-width: 768px) and (max-width: 991px)" "sass/768-991.scss" "(min-width: 576px) and (max-width: 767px)" "sass/576-767.scss" "(max-width: 575px)" "sass/inf576.scss" }}
-        {{ range $media_query, $sass_style := $styles }}
-            {{ $style := resources.Get $sass_style | toCSS | minify | fingerprint }}
-            <link rel="stylesheet" media="screen and {{ $media_query }}" href="{{ $style.Permalink }}" type="text/css" />
-        {{ end }}
-
-        {{ $head := resources.Get "css/header.css" | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $head.Permalink }}" type="text/css" />
-
-        {{ $headInf767 := resources.Get "css/header-inf767.css" | minify | fingerprint }}
-        <link rel="stylesheet" media="(max-width: 767px)" href="{{ $headInf767.Permalink }}" type="text/css" />
-
-        {{ $headSup768 := resources.Get "css/header-sup768.css" | minify | fingerprint }}
-        <link rel="stylesheet" media="(min-width: 767px)" href="{{ $headSup768.Permalink }}" type="text/css" />
-
-        {{ $index_page := resources.Get "css/index-page.css" | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $index_page.Permalink }}" type="text/css" />
+        <!-- Reboot builds upon Normalize, providing many HTML elements with somewhat -->
+        <!-- opinionated styles using only element selectors.  -->
+        <!-- Source code is at https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss -->
+        <!-- https://getbootstrap.com/docs/4.3/content/reboot/ -->
+        <!-- It's a very very light library!! -->
+        {{ $reboot := resources.Get "css/reboot.min.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $reboot.Permalink }}" type="text/css" />
 
         {{ $footer := resources.Get "css/footer.css" | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $footer.Permalink }}" type="text/css" />
 
+        <!-- Style for the blog footer that could be used in other pages, for the Website -->
+        {{ $footer_shared := resources.Get "css/footer_shared.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $footer_shared.Permalink }}" type="text/css" />
+
+        {{ $index_page := resources.Get "css/index-page.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $index_page.Permalink }}" type="text/css" />
+
+        {{ $headerInf767 := resources.Get "css/header-inf767.css" | minify | fingerprint }}
+        <link rel="stylesheet" media="(max-width: 767px)" href="{{ $headerInf767.Permalink }}" type="text/css" />
+
+        {{ $headerSup768 := resources.Get "css/header-sup768.css" | minify | fingerprint }}
+        <link rel="stylesheet" media="(min-width: 767px)" href="{{ $headerSup768.Permalink }}" type="text/css" />
+
+        {{ $header := resources.Get "css/header.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $header.Permalink }}" type="text/css" />
+
+        {{ $shared := resources.Get "css/shared.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $shared.Permalink }}" type="text/css" />
 
         <link rel="icon" type="image/png" href="{{ "images/favicon.png" | relURL }}"/>
     </head>

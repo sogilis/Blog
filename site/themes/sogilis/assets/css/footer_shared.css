@@ -1,0 +1,63 @@
+/**
+ * Style for the blog footer that could be used in other pages, for the Website
+ */
+
+               /* Button  with:
+               /* * an animation on hoover, a grey slide appears from right */
+               /* * small “>” on its right (svg) */
+               /* * grey Border */
+               /* =========================================== */
+
+a.btn_dark_grey {
+    position: relative;
+    z-index: 0;
+
+    padding: 1rem 1.5rem;
+    border: solid #707070 3px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    /* TODO replace to $medium_grey */
+    color: #707070;
+
+    transition: color 0.3s;
+}
+a.btn_dark_grey:hover {
+    color: white;
+}
+
+a.btn_dark_grey > svg {
+    width: 0.5rem;
+    margin-left: 1.5rem;
+    /* TODO replace to $medium_grey */
+    stroke: #707070;
+    transition: stroke 0.5s;
+}
+a.btn_dark_grey:hover > svg {
+    stroke: white;
+}
+
+a.btn_dark_grey > svg > path.st0 {
+    fill: none;
+    stroke-width: 3;
+}
+
+a.btn_dark_grey::after {
+    content: '';
+    /* TODO replace to $medium_grey */
+    background-color: #707070;
+
+    position: absolute;
+    top: 0;
+    left: -3px;
+    box-sizing: content-box;
+    z-index: -1;
+    height: 100%;
+
+    width: 0;
+    transition: width 0.3s;
+}
+
+a.btn_dark_grey:hover::after {
+    width: 100%;
+}

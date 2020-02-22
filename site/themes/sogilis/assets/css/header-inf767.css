@@ -1,3 +1,237 @@
-header > div.content_menu_desktop {
+/*
+ * In this screen size, we have three tags child
+ * On the top left, the icon of Sogilis
+ * On the top right, a button with three bar. When we click on it
+ *      this button is transormed to a cross and the nav button appears.
+ * When we click on the top right button, the tag <nav> appears smoothy..
+ */
+
+
+header {
+    padding-right: 2.7rem;
+    padding-left: 3rem;
+}
+header > div#navBarDesktop {
     display: none;
+}
+
+header > div#navBarMobile {
+    align-items: center;
+}
+
+header > div#navBarMobile > a {
+    display: block;
+    height: 2rem;
+}
+/* ========================================================================== */
+/* =========================================================================== */
+/* Logo on the top left of the screen */
+/* =========================================================================== */
+
+header > div#navBarMobile > a > img {
+    height: 100% !important;
+}
+
+/* ========================================================================== */
+/* ========= Button on the top right of the screen ========================== */
+/* Describe the three bars icon */
+/* ========================================================================== */
+
+header > div#navBarMobile > a#headerMenuButtonMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header > div#navBarMobile > a#headerMenuButtonMobile::before,
+header > div#navBarMobile > a#headerMenuButtonMobile > div,
+header > div#navBarMobile > a#headerMenuButtonMobile::after {
+    /* TODO Should be replaced by `$dark-grey;` */
+    background-color: #282e36;
+    border-radius: 1px;
+    height: 0.1875rem;
+    width: 2rem;
+    /*
+     * Animation when we click on the button: transform three bars to cross and
+     * vice versa
+     */
+transition: transform 0.3s;
+}
+
+header > div#navBarMobile > a#headerMenuButtonMobile::before,
+header > div#navBarMobile > a#headerMenuButtonMobile::after {
+    content: " ";
+}
+/* ========================================================================== */
+/* ========= Nav tag (not displayed when the page is loaded) ================ */
+/* ========================================================================== */
+
+header > div#navBarMobile > nav#headerMainMenuMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #fff;
+
+    /* Animated when `.menuMobileIsDisplayed` class is appended or removed. */
+    opacity: 0;
+    transform: scale(0);
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-delay: 0;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Center `ul` element in the page */
+/* ========================================================================== */
+
+/* The goal of this two `div` is simply to center the `ul` */
+/* between two `div`. */
+/* Only the first `div` contains elements. */
+header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(1),
+header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(3) {
+    flex: 1 1 auto;
+}
+
+header > div#navBarMobile > nav#headerMainMenuMobile > ul {
+    flex: 0 1 auto;
+}
+
+/* The small green line in the first `div` */
+/* ========================================================================== */
+
+/* In this `div`, there is the green line */
+/* (it's the pseudo-element `::before`) */
+/* This pseudo-element have `margin-top: 50%` */
+header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(1)::before {
+    content: '';
+    margin-top: 50%;
+    width: 50vw;
+    height: 2px;
+    /* TODO */
+    /* background-color:$light-electric-blue; */
+    background-color: #A7E4EA;
+}
+
+/* Styles for `ul` element, with anchors */
+/* ========================================================================== */
+
+header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
+    /* TODO replace */
+    /* color: $wolf-blue; */
+    color: #016099;
+    font-family: 'EB Garamond', serif;
+    font-weight:800;
+}
+@media (max-width: 575px) {
+    header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 576px) {
+    header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
+        font-size: 2rem;
+    }
+}
+header > div#navBarMobile > nav#headerMainMenuMobile > ul > li {
+    padding: 0.5rem 0;
+    /* Needed for animation, of `li` elements */
+    transition: transform 400ms 510ms;
+}
+header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a:active {
+    font-weight:500;
+}
+header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/*
+ * Following declarations are needed for animation of `li` when
+ * `menuMobileIsDisplayed` css class is append
+ * =====================
+ */
+header > div#navBarMobile > nav#headerMainMenuMobile > ul > li:nth-child(odd) {
+    transform: translateX(30%);
+}
+header > div#navBarMobile > nav#headerMainMenuMobile > ul > li:nth-child(even) {
+    transform: translateX(-30%);
+}
+
+/* The last `li` tag is not animated */
+/* ===================== */
+header > div#navBarMobile > nav#headerMainMenuMobile > ul > li:last-child {
+    transform: none;
+}
+
+
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ======================= With class .menuMobileIsDisplayed ================ */
+/* ========================================================================== */
+/* ========================================================================== */
+
+/*
+ * Some following declarations are animated like `transition` css attribute
+ * defined above
+ */
+
+/* ========================================================================== */
+/* ========= Button on the top right of the screen ========================== */
+/* Three lines icons are transformed to cross when menuMobileIsDisplayed */
+/* ========================================================================== */
+
+header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed {
+    /* Should be on top of all elements, even the `nav` element.. */
+    z-index: 2;
+}
+
+header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed::before {
+    /* Following declaration is animated thanks `transition:` attribute */
+    transform: rotate(45deg) translate(0.5rem, 0.5rem)
+}
+
+header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed::after {
+    /* Following declaration is animated thanks `transition:` attribute */
+    transform: rotate(-45deg) translate(0.5rem, -0.5rem)
+}
+
+header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed > div {
+    /* Following declaration is animated thanks `transition:` attribute */
+    background-color: transparent;
+}
+
+/* ========================================================================== */
+/* ========= Main screen (nav tag) (displayed) =========================== */
+/* ========================================================================== */
+
+body.menuMobileIsDisplayed {
+    overflow: hidden;
+}
+
+header > div#navBarMobile > nav#headerMainMenuMobile.menuMobileIsDisplayed {
+    /* Should be above all other elements, except the cross button. */
+    z-index: 1;
+    /* Following declaration is animated thanks `transition:` attribute */
+    opacity: 1;
+    /* Following declaration is animated thanks `transition:` attribute */
+    transform: scale(1);
+}
+
+header > div#navBarMobile > nav#headerMainMenuMobile.menuMobileIsDisplayed > ul > li:nth-child(odd),
+header > div#navBarMobile > nav#headerMainMenuMobile.menuMobileIsDisplayed > ul > li:nth-child(even) {
+    /* Following declaration is animated thanks `transition:` attribute */
+    transform: translateX(0);
 }
