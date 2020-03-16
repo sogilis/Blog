@@ -14,11 +14,11 @@
   "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-plugin-import": "^2.20.1",
-    "netlify-cms-proxy-server": "^1.0.7"
+    "netlify-cms-proxy-server": "^1.2.1"
   },
   "dependencies": {
-    "hugo-bin": "^0.52.0",
-    "netlify-cms": "^2.10.17"
+    "hugo-bin": "^0.55.1",
+    "netlify-cms": "^2.10.32"
   },
   "hugo-bin": {
     "buildTags": "extended"
