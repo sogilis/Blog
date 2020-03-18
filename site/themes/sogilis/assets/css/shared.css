@@ -1,39 +1,9 @@
 .mainColumn {
-    margin: auto;
-    display: flex;
+    max-width: calc(75em + (1em * 2));
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0 auto;
     box-sizing: border-box;
-}
-
-@media (max-width: 575px) {
-    .mainColumn {
-        width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-@media (min-width: 576px) {
-    .mainColumn {
-        max-width: 525px;
-    }
-}
-
-@media (min-width: 768px) {
-    .mainColumn {
-        max-width: 705px;
-    }
-}
-
-@media (min-width: 992px) {
-    .mainColumn {
-        max-width: 945px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .mainColumn {
-        max-width: 1125px;
-    }
 }
 
 /* Button  with:
