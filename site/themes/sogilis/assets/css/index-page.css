@@ -6,7 +6,7 @@ main > #blog_index {
     grid-gap: 2rem;
     grid-auto-rows: 25rem;
     padding-top:12rem;
-    padding-bottom:6rem;
+    padding-bottom: 4rem;
 }
 
 @media (min-width: 576px) {
@@ -26,6 +26,16 @@ main > #blog_index {
         grid-auto-rows: 35rem;
     }
 }
+
+                          /* Pagination */
+                          /* ===================== */
+
+.blog_index_pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
 
                           /* Each cell of the grid */
                           /* ===================== */
