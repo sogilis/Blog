@@ -7,7 +7,6 @@ main {
 main > #blog_index {
     display: grid;
     grid-gap: 2rem;
-    grid-auto-rows: 25rem;
     padding-top: 12rem;
     padding-bottom: 4rem;
 }
@@ -39,13 +38,11 @@ main > #blog_index {
 }
 
 
-                          /* Each cell of the grid */
-                          /* ===================== */
+/* Article component */
 
-main > #blog_index > a.blog_index_article {
-    display: grid;
-    grid-template-rows: 55% 25% 5%;
-    grid-gap: 5%;
+.blog_index_article {
+    display: flex;
+    flex-direction: column;
     box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.15);
 
     /* This declaration is mandatory here */
@@ -53,46 +50,36 @@ main > #blog_index > a.blog_index_article {
     text-decoration: none;
 }
 
-@media(min-width: 576px) and (max-width: 767px) {
-    main > #blog_index > a.blog_index_article {
-        grid-template-rows: 55% 37% 1%;
-        grid-gap: 1%;
-    }
+/* Article title and readmore link transitions */
+.blog_index_article__title,
+.blog_index_article__readmore {
+    transition: all .3s;
 }
 
-@media(min-width: 768px) and (max-width: 1199px) {
-    main > #blog_index > a.blog_index_article {
-        grid-template-rows: 55% 28% 1%;
-        grid-gap: 5%;
-    }
-}
-
-/* Image */
-/* ===== */
-
-main > #blog_index > a.blog_index_article > div > img {
-    height: 100%;
+/* Article image */
+.blog_index_article__img {
     width: 100%;
+    height: 13.75em;
     object-fit: cover;
     transition: all 0.8s;
 }
 
-main > #blog_index > a.blog_index_article:hover > div > img {
+.blog_index_article:hover .blog_index_article__img {
     filter: grayscale(100%);
 }
-/* The title and 'Lire la suite */
-/* ============================ */
 
-
-main > #blog_index > a.blog_index_article > p,
-main > #blog_index > a.blog_index_article > h1 {
-    margin: 0 1rem;
-    transition: all 0.3s;
+/* Article content */
+.blog_index_article__content {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    flex-grow: 1;
+    padding: 1em;
 }
-/* The title */
-/* ========= */
 
-main > #blog_index > a.blog_index_article > h1 {
+/* Article title */
+.blog_index_article__title {
+    transition: all 0.3s;
     font-family: 'EB Garamond', serif;
     /* TODO $medium-grey when transform this file to SCSS */
     color: #707070;
@@ -100,24 +87,24 @@ main > #blog_index > a.blog_index_article > h1 {
     align-self: center;
 }
 
-main > #blog_index > a.blog_index_article:hover > h1 {
+.blog_index_article:hover > .blog_index_article__title {
     /* TODO $dark_grey when transform this file to SCSS */
     color: #282E36;
 }
 
-/* p is "Lire la suite" in French */
-/* ============================== */
-
-main > #blog_index > a.blog_index_article > p {
+/* Article readmore link */
+.blog_index_article__readmore {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     /* TODO $wolf-blue when transform this file to SCSS */
     color: #016099;
     text-align: right;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
-main > #blog_index > a.blog_index_article:hover > p {
+.blog_index_article:hover .blog_index_article__readmore {
     /* TODO $light-electric-blue when transform this file to SCSS */
     color: #A7E4EA;
     text-decoration: underline;
