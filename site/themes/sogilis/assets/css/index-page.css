@@ -8,7 +8,8 @@ main > #blog_index {
     display: grid;
     grid-gap: 2rem;
     grid-auto-rows: 25rem;
-    padding-bottom:6rem;
+    padding-top: 12rem;
+    padding-bottom: 4rem;
 }
 
 @media (min-width: 576px) {
@@ -28,9 +29,18 @@ main > #blog_index {
         grid-auto-rows: 35rem;
     }
 }
+                          /* Pagination */
+                          /* ===================== */
 
-/* Each cell of the grid */
-/* ===================== */
+.blog_index_pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+
+                          /* Each cell of the grid */
+                          /* ===================== */
 
 main > #blog_index > a.blog_index_article {
     display: grid;
