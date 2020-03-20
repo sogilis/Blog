@@ -1,8 +1,12 @@
 {{ define "main" }}
     <div id="blog_index">
-        {{ range (where .Site.AllPages.ByDate "Kind" "page").Reverse }}
-        {{ .Render "summary" }}
+        {{ range (.Paginator 9).Pages }}
+            {{ .Render "summary" }}
         {{ end }}
+    </div>
+
+    <div class="blog_index_pagination">
+        {{ template "_internal/pagination.html" . }}
     </div>
 {{ end }}
 
