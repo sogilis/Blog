@@ -12,6 +12,8 @@ tags:
   - manager
 ---
 
+{{% disclaimer %}}
+
 Des salariés qui gèrent leur travail comme ils le veulent, des équipes sans supérieur hiérarchique. C’est le cas chez Sogilis. L’entreprise prône le management sans manager, et voici comment cela fonctionne.
 
 ## Et si l’on prenait du plaisir au travail ?

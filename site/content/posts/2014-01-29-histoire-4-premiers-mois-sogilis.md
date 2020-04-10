@@ -10,6 +10,8 @@ tags:
   - vie interne
 ---
 
+{{% disclaimer %}}
+
 Après 4 mois passés à Sogilis, j'ai décidé de dresser un premier bilan : mon histoire.
 
 ## Pourquoi quitter mon ancienne entreprise
