@@ -32,7 +32,6 @@ const throwError = (message) => {
 // See above why we disale this eslint rules
 // eslint-disable-next-line max-lines-per-function, max-statements
 (() => {
-
   const [header] = document.getElementsByTagName('header');
   if (!header) {
     const message = 'No tag element "header"';
@@ -55,12 +54,9 @@ const throwError = (message) => {
   // At initialisation
   let scrollMenuOffset = setScrollMenuOffset();
   // On resize
-  window.addEventListener(
-    'resize',
-    () => {
-      scrollMenuOffset = setScrollMenuOffset();
-    }
-  );
+  window.addEventListener('resize', () => {
+    scrollMenuOffset = setScrollMenuOffset();
+  });
 
   /*
    * Set Add or remove css class 'content_header_scroll' to header tag
@@ -76,13 +72,9 @@ const throwError = (message) => {
   // At initialisation
   testDisplayScrollMenu(scrollMenuOffset);
   // On scroll
-  window.addEventListener(
-    'scroll',
-    () => {
-      testDisplayScrollMenu(scrollMenuOffset);
-    }
-  );
-
+  window.addEventListener('scroll', () => {
+    testDisplayScrollMenu(scrollMenuOffset);
+  });
 })();
 
 /**
@@ -94,16 +86,14 @@ const throwError = (message) => {
   const menuMobile = document.getElementById('headerMainMenuMobile');
   const [body] = document.getElementsByTagName('body');
   if (menuBtn && menuMobile && body) {
-    menuBtn.addEventListener(
-      'click',
-      () => {
-        menuBtn.classList.toggle('menuMobileIsDisplayed');
-        menuMobile.classList.toggle('menuMobileIsDisplayed');
-        body.classList.toggle('menuMobileIsDisplayed');
-      }
-    );
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('menuMobileIsDisplayed');
+      menuMobile.classList.toggle('menuMobileIsDisplayed');
+      body.classList.toggle('menuMobileIsDisplayed');
+    });
   } else {
-    const message = 'No element with id "headerMenuButtonMobile" ' +
+    const message =
+      'No element with id "headerMenuButtonMobile" ' +
       ' and / or "headerMainMenuMobile"';
     throwError(message);
   }
@@ -118,18 +108,15 @@ const throwError = (message) => {
 (() => {
   const titleMaxLength = 60;
   // `blogIndexArticleTitleAll' is never null, but could be empty.
-  const blogIndexArticleTitleAll =
-    document.querySelectorAll('.blog_index_article__title');
+  const blogIndexArticleTitleAll = document.querySelectorAll(
+    '.blog_index_article__title'
+  );
   blogIndexArticleTitleAll.forEach((blogIndexArticleTitle) => {
     // `text' is never null, but could be empty string.
     const text = blogIndexArticleTitle.innerText;
     if (text.length > titleMaxLength) {
       blogIndexArticleTitle.title = text;
-      const textTruncate = text.
-        substring(
-          0,
-          titleMaxLength
-        );
+      const textTruncate = text.substring(0, titleMaxLength);
       blogIndexArticleTitle.innerHTML = `${textTruncate}…`;
     }
   });
