@@ -1,96 +1,149 @@
- <footer>
-     <div id="sofooter" class="mainColumn">
+<footer>
+  <div id="sofooter" class="mainColumn">
+    <section id="sofooterLogo">
+      <a href="https://sogilis.fr/index.html"
+        >
+        <img
+          alt="Logo Sogilis"
+          src="{{ "images/logo_sogilis_alone.svg" | relURL }}"
+        />
+      </a
+      >
+    </section>
 
-         <section id="sofooterLogo">
-             <a href="https://sogilis.fr/index.html"><img alt="Logo Sogilis" src="{{ "images/logo_sogilis_alone.svg" | relURL }}"></a>
-         </section>
+    <section id="sofooterContactgrid">
+      <div id="sofooterContactgridTitle" class="title_level_1">Contact</div>
 
-         <section id="sofooterContactgrid">
+      <div id="sofooterContactgridContactus">
+        <a class="btn_dark_grey" href="https://sogilis.fr/contact.html">
+          {{ i18n "contactUs" }}
+          <svg
+            version="1.1"
+            id="Calque_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 7.5 10.3"
+            style="enable-background: new 0 0 7.5 10.3;"
+            xml:space="preserve"
+          >
+            <path id="Tracé_16" class="st0" d="M1.2,9.2l4.1-4.1L1.1,1.2" />
+          </svg>
+        </a>
+      </div>
 
-             <div id="sofooterContactgridTitle" class="title_level_1">Contact</div>
-
-             <div id="sofooterContactgridContactus">
-                 <a class="btn_dark_grey" href="https://sogilis.fr/contact.html">
-                     {{ i18n "contactUs" }}
-                     <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7.5 10.3" style="enable-background:new 0 0 7.5 10.3;" xml:space="preserve">
-                         <path id="Tracé_16" class="st0" d="M1.2,9.2l4.1-4.1L1.1,1.2" />
-                     </svg>
-                 </a>
-             </div>
-
-             <div id="sofooterContactgridSocialnetwork">
-                 {{ with $.Site.Params.twitter }}
-                 <a href="{{ . }}">
-                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27.1px" height="22.1px" viewBox="0 0 27.1 22.1" style="enable-background:new 0 0 27.1 22.1;" xml:space="preserve">
-                         <defs>
-                         </defs>
-                         <path id="ico_twitter_1_" d="M27.1,2.6c-1,0.4-2.1,0.7-3.2,0.9c1.2-0.7,2-1.8,2.5-3.1c-1.1,0.6-2.3,1.1-3.5,1.4
+      <div id="sofooterContactgridSocialnetwork">
+        {{ with $.Site.Params.twitter }}
+        <a href="{{ . }}">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="27.1px"
+            height="22.1px"
+            viewBox="0 0 27.1 22.1"
+            style="enable-background: new 0 0 27.1 22.1;"
+            xml:space="preserve"
+          >
+            <defs></defs>
+            <path
+              id="ico_twitter_1_"
+              d="M27.1,2.6c-1,0.4-2.1,0.7-3.2,0.9c1.2-0.7,2-1.8,2.5-3.1c-1.1,0.6-2.3,1.1-3.5,1.4
                         c-2.1-2.2-5.6-2.4-7.9-0.3c-1.1,1.1-1.8,2.5-1.8,4.1c0,0.4,0,0.9,0.1,1.3C8.9,6.6,4.7,4.5,1.9,1C0.4,3.6,1.2,6.8,3.6,8.4
                         c-0.9,0-1.8-0.3-2.5-0.7v0.1c0,2.7,1.9,4.9,4.5,5.5c-0.5,0.1-1,0.2-1.5,0.2c-0.4,0-0.7,0-1-0.1c0.7,2.3,2.8,3.8,5.2,3.9
                         c-2,1.5-4.4,2.4-6.9,2.4c-0.4,0-0.9,0-1.3-0.1c2.5,1.6,5.5,2.5,8.5,2.5c8.7,0.1,15.8-6.9,15.8-15.6c0-0.1,0-0.1,0-0.2l0-0.7
-                        C25.5,4.7,26.4,3.7,27.1,2.6z" />
-                     </svg>
-                 </a>
-                 {{ end }}
-
-                 {{ if (and $.Site.Params.twitter $.Site.Params.linkedin) }}
-                 <br>
-                 {{ end }}
-
-                 {{ with $.Site.Params.linkedin }}
-                 <a href="{{ . }}">
-                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25.2px" height="24px" viewBox="0 0 25.2 24" style="enable-background:new 0 0 25.2 24;" xml:space="preserve">
-                         <path id="ico_linkedin_1_" class="st0" d="M25.2,14.7V24h-5.4v-8.7c0-2.2-0.8-3.7-2.7-3.7c-1.2,0-2.4,0.8-2.8,2
+                        C25.5,4.7,26.4,3.7,27.1,2.6z"
+            />
+          </svg>
+        </a>
+        {{ end }} {{ if (and $.Site.Params.twitter $.Site.Params.linkedin) }}
+        <br />
+        {{ end }} {{ with $.Site.Params.linkedin }}
+        <a href="{{ . }}">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="25.2px"
+            height="24px"
+            viewBox="0 0 25.2 24"
+            style="enable-background: new 0 0 25.2 24;"
+            xml:space="preserve"
+          >
+            <path
+              id="ico_linkedin_1_"
+              class="st0"
+              d="M25.2,14.7V24h-5.4v-8.7c0-2.2-0.8-3.7-2.7-3.7c-1.2,0-2.4,0.8-2.8,2
                         c-0.1,0.4-0.2,0.9-0.2,1.3V24H8.7c0,0,0.1-14.7,0-16.2h5.4v2.3l0,0.1h0v-0.1c1-1.7,2.9-2.8,4.9-2.7C22.5,7.4,25.2,9.8,25.2,14.7z
                         M3.1,0C1.5-0.1,0.2,1,0,2.6s1,2.9,2.5,3.1c0.1,0,0.3,0,0.4,0h0c1.5,0.1,2.9-1,3.1-2.5S5.1,0.2,3.5,0C3.4,0,3.2,0,3.1,0z M0.3,24
-                        h5.4V7.8H0.3V24z" />
-                     </svg>
-                 </a>
-                 {{ end }}
-             </div>
+                        h5.4V7.8H0.3V24z"
+            />
+          </svg>
+        </a>
+        {{ end }}
+      </div>
 
-             <div id="sofooterContactgridGrenoble" class="adresses">
-                 <p>Sogilis Grenoble</p>
-                 <p>
-                     4 avenue Doyen Louis Weil<br>
-                     38000 Grenoble<br>
-                     04 26 78 05 07
-                 </p>
-             </div>
+      <div id="sofooterContactgridGrenoble" class="adresses">
+        <p>Sogilis Grenoble</p>
+        <p>
+          4 avenue Doyen Louis Weil<br />
+          38000 Grenoble<br />
+          04 26 78 05 07
+        </p>
+      </div>
 
-             <div id="sofooterContactgridLyon" class="adresses">
-                 <p>Sogilis Lyon</p>
-                 <p>
-                     45 rue Sainte-Geneviève<br>
-                     69006 Lyon <br>
-                     07 68 25 60 95
-                 </p>
-             </div>
-         </section>
+      <div id="sofooterContactgridLyon" class="adresses">
+        <p>Sogilis Lyon</p>
+        <p>
+          45 rue Sainte-Geneviève<br />
+          69006 Lyon <br />
+          07 68 25 60 95
+        </p>
+      </div>
+    </section>
 
-         <section id="sofooterServices" class="liens_pages">
-             <div class="title_level_1">{{ i18n "services" }}</div>
-             <ul>
-                 <li><a href="https://sogilis.fr/services-applications-cloud-native.html">{{i18n "cloudNativeApplications" }}</a></li>
-                 <li><a href="https://sogilis.fr/services-embarques-et-iot.html">{{ i18n "embeddedSoftwares" }}</a></li>
-                 <li><a href="https://sogilis.fr/services-logiciels-critiques.html">{{ i18n "criticalSoftwares" }}</a></li>
-             </ul>
-         </section>
+    <section id="sofooterServices" class="liens_pages">
+      <div class="title_level_1">{{ i18n "services" }}</div>
+      <ul>
+        <li>
+          <a href="https://sogilis.fr/services-applications-cloud-native.html"
+            >{{i18n "cloudNativeApplications" }}</a
+          >
+        </li>
+        <li>
+          <a href="https://sogilis.fr/services-embarques-et-iot.html"
+            >{{ i18n "embeddedSoftwares" }}</a
+          >
+        </li>
+        <li>
+          <a href="https://sogilis.fr/services-logiciels-critiques.html"
+            >{{ i18n "criticalSoftwares" }}</a
+          >
+        </li>
+      </ul>
+    </section>
 
-         <section id="sofooterCompany" class="liens_pages">
-             <div class="title_level_1">{{ i18n "theCompany" }}</div>
-             <ul>
-                 <li><a href="https://sogilis.fr/vision.html">{{ i18n "ourVision" }}</a></li>
-                 <li><a href="https://sogilis.fr/emplois.html">{{ i18n "jobs" }}</a></li>
-                 <li><a href="">{{ i18n "blog" }}</a></li>
-             </ul>
-         </section>
+    <section id="sofooterCompany" class="liens_pages">
+      <div class="title_level_1">{{ i18n "theCompany" }}</div>
+      <ul>
+        <li>
+          <a href="https://sogilis.fr/vision.html">{{ i18n "ourVision" }}</a>
+        </li>
+        <li><a href="https://sogilis.fr/emplois.html">{{ i18n "jobs" }}</a></li>
+        <li><a href="">{{ i18n "blog" }}</a></li>
+      </ul>
+    </section>
 
-         <hr id="sofooterHr"/>
+    <hr id="sofooterHr" />
 
-         <section id="sofooterSubfooter">
-             <p>{{ i18n "allRightsReserved" }}</p>
-             <a href="">{{ i18n "LegalInfo" }}</a>
-         </section>
-     </div>
- </footer>
+    <section id="sofooterSubfooter">
+      <p>{{ i18n "allRightsReserved" }}</p>
+      <a href="">{{ i18n "LegalInfo" }}</a>
+    </section>
+  </div>
+</footer>
