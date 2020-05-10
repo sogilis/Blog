@@ -1,3 +1,14 @@
+:root {
+    --super-light-grey: #F9F9F9;
+    --super-light-grey2: #FCFCFC;
+    --medium-grey: #707070;
+    --dark-grey: #282E36;
+    --wolf-blue: #016099;
+    --medium-blue: #4EB2DD;
+    --dark-blue: #00446c;;
+    --light-electric-blue: #A7E4EA;
+}
+
 body {
     font-family: eb garamond, serif;
 }
@@ -56,20 +67,6 @@ ul {
 /* * an animation on hoover, a grey slide appears from right */
 /* * small “>” on its right (svg) */
 /* * grey Border */
-/* ========================================================================== */
-.title_level_1{
-    font-family: 'EB Garamond', serif;
-    font-weight: 600;
-    /* TODO */
-    /* $wolf-blue:#016099; */
-    color: #016099;
-    font-size: 3rem;
-}
-
-/* Button  with:
-/* * an animation on hoover, a grey slide appears from right */
-/* * small “>” on its right (svg) */
-/* * grey Border */
 /* On the blog, currenctly (04/2020) used in the footer into "Contactez-nous" */
 /* ========================================================================== */
 
@@ -79,12 +76,11 @@ a.btn_dark_grey {
     z-index: 0;
 
     padding: 1rem 1.5rem;
-    border: solid #707070 3px;
+    border: solid var(--medium-grey) 0.2rem;
 
     font-size: 0.9rem;
     font-weight: 600;
-    /* TODO replace to $medium_grey */
-    color: #707070;
+    color: var(--medium-grey);
 
     transition: color 0.3s;
 }
@@ -95,8 +91,7 @@ a.btn_dark_grey:hover {
 a.btn_dark_grey > svg {
     width: 0.5rem;
     margin-left: 1.5rem;
-    /* TODO replace to $medium_grey */
-    stroke: #707070;
+    stroke: var(--medium-grey);
     transition: stroke 0.5s;
 }
 a.btn_dark_grey:hover > svg {
@@ -110,8 +105,7 @@ a.btn_dark_grey > svg > path.st0 {
 
 a.btn_dark_grey::after {
     content: '';
-    /* TODO replace to $medium_grey */
-    background-color: #707070;
+    background-color: var(--medium-grey);
 
     position: absolute;
     top: 0;

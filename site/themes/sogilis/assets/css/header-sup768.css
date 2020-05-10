@@ -7,12 +7,6 @@ header > div.navBarMobile_scroll {
     display: none;
 }
 
-/* When we scroll */
-header.content_header_scroll {
-    padding: 0 1rem 0 1rem;
-    /* Others declarations into header.html */
-}
-
 /* ========================================================================== */
 /* Logo sogilis on the left */
 /* ========================================================================== */
@@ -63,8 +57,7 @@ header > div#navBarDesktop > nav > a {
 
 header > div#navBarDesktop > nav > a,
 header > div#navBarDesktop > nav > div.dropdown > a {
-    /* TODO $wolf-blue when transform this file to SCSS */
-    color: #016099;
+    color: var(--wolf-blue);
 }
 
 /* The small blue bar that appears on hover of links */
@@ -95,8 +88,7 @@ header > div#navBarDesktop > nav a::after {
 
     width: 0;
     height: 0.5em;
-    /* TODO we could use a variable */
-    background-color: #A7E4EA;
+    background-color: var(--light-electric-blue);
     transition: width 0.3s;
 }
 
@@ -124,7 +116,7 @@ header > div#navBarDesktop > nav > div.dropdown > div.dropdown-content {
     position: absolute;
     margin-top: 5rem;
     padding: 1rem 3rem;
-    background-color: #f9f9f9;
+    background-color: var(--super-light-grey);
     text-align: center;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
     z-index: 1;

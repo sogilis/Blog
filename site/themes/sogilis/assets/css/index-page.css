@@ -32,10 +32,6 @@ main > #blog_index > a.blog_index_article {
     grid-template-rows: 11.7em 6.3em 2em;
     grid-gap: 0.5em;
     box-shadow: 0 0 1em 0.2em rgba(0,0,0,0.15);
-
-    /* This declaration is mandatory here */
-    /* Simply declare it in #blog_index is not enough */
-    text-decoration: none;
 }
 
 /* Image */
@@ -57,7 +53,7 @@ main > #blog_index > a.blog_index_article:hover > div > img {
 
 main > #blog_index > a.blog_index_article > p {
     margin: 0 1.6em;
-    transition: text-decoration,color 0.3s;
+    transition: color 0.5s;
 }
 
 /* The title */
@@ -65,16 +61,13 @@ main > #blog_index > a.blog_index_article > p {
 
 main > #blog_index > a.blog_index_article > p.blog_index_article__title {
     font-family: 'EB Garamond', serif;
-    /* TODO $medium-grey when transform this file to SCSS */
-    color: #707070;
+    color: var(--medium-grey);
     font-size: 1.4em;
-    /* align-self: center; */
     font-weight: bold;
 }
 
 main > #blog_index > a.blog_index_article:hover > p.blog_index_article__title {
-    /* TODO $dark_grey when transform this file to SCSS */
-    color: #282E36;
+    color: var(--dark-grey);
 }
 
 /* p is "Lire la suite" in French */
@@ -83,13 +76,11 @@ main > #blog_index > a.blog_index_article:hover > p.blog_index_article__title {
 main > #blog_index > a.blog_index_article > p.blog_index_article__readmore {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    /* TODO $wolf-blue when transform this file to SCSS */
-    color: #016099;
+    color: var(--wolf-blue);
     text-align: right;
 }
 
 main > #blog_index > a.blog_index_article:hover > p.blog_index_article__readmore {
-    /* TODO $light-electric-blue when transform this file to SCSS */
-    color: #A7E4EA;
+    color: var(--light-electric-blue);
     text-decoration: underline;
 }

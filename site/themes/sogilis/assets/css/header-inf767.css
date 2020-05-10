@@ -52,8 +52,7 @@ header > div#navBarMobile > a#headerMenuButtonMobile {
 header > div#navBarMobile > a#headerMenuButtonMobile::before,
 header > div#navBarMobile > a#headerMenuButtonMobile > div,
 header > div#navBarMobile > a#headerMenuButtonMobile::after {
-    /* TODO Should be replaced by `$dark-grey;` */
-    background-color: #282e36;
+    background-color: var(--dark-grey);
     border-radius: 1px;
     height: 0.1875rem;
     width: 2rem;
@@ -85,7 +84,7 @@ header > div#navBarMobile > nav#headerMainMenuMobile {
     width: 100vw;
     height: 100vh;
 
-    background-color: #fff;
+    background-color: white;
 
     /* Animated when `.menuMobileIsDisplayed` class is appended or removed. */
     opacity: 0;
@@ -128,18 +127,14 @@ header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(1)::before 
     margin-top: 50%;
     width: 50vw;
     height: 2px;
-    /* TODO */
-    /* background-color:$light-electric-blue; */
-    background-color: #A7E4EA;
+    background-color: var(--light-electric-blue);
 }
 
 /* Styles for `ul` element, with anchors */
 /* ========================================================================== */
 
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
-    /* TODO replace */
-    /* color: $wolf-blue; */
-    color: #016099;
+    color: var(--wolf-blue);
     font-family: 'EB Garamond', serif;
     font-weight:800;
 }

@@ -5,15 +5,13 @@
 footer {
     width: 100%;
 
-    /* TODO corresponding to scss super-light-grey2 */
-    background-color: #FCFCFC;
+    background-color: var(--super-light-grey2);
 
     padding-top:5rem;
     padding-bottom: 2rem;
     box-shadow:0 0 19px 0 rgba(0, 0, 0, 0.1);
 
-    /* TODO we could use a variable $medium-grey */
-    color: #707070;
+    color: var(--medium-grey);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -34,8 +32,10 @@ footer > #sofooter .title_level_1{
     margin-top: 2em;
     margin-bottom: 1em;
 
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
     font-size: 1.4rem;
-    color: #707070;
+    color: var(--medium-grey);
 }
 
 /* The small blue bar */
@@ -51,30 +51,27 @@ footer > #sofooter .title_level_1::after{
 
     width: 2.5em;
     height: 0.5em;
-    /* TODO we could use a variable */
-    background-color: #A7E4EA;
+    background-color: var(--light-electric-blue);
 }
 
                              /* Addresses */
                              /* ================ */
 footer > #sofooter > #sofooterContactgrid .adresses {
-    color: #707070;
+    color: var(--medium-grey);
 }
 
 footer > #sofooter > #sofooterContactgrid .adresses > p:nth-of-type(1) {
     font-size:0.9em;
     font-weight: 700;
     margin-bottom: 0;
-    /* TODO: replace by variable $medium_grey */
-    color: #707070;
+    color: var(--medium-grey);
 }
 footer > #sofooter > #sofooterContactgrid .adresses > p:nth-of-type(1)::before {
     content: '';
     display: block;
     width: 0.8em;
     position: absolute;
-    /* TODO we could use a variable */
-    background-color: #A7E4EA;
+    background-color: var(--light-electric-blue);
     margin-left: -1.5em;
 
     /* On boostrap, for body line-height: 1.5 */
@@ -92,7 +89,6 @@ footer > #sofooter > #sofooterContactgrid .adresses > p:nth-of-type(2) {
                                   /* List */
                                   /* ===== */
 footer > #sofooter .liens_pages > ul {
-    /* TODO replace by variable :margin-left-foot */
     padding-left: 2rem;
 }
 footer > #sofooter .liens_pages > ul > li {
@@ -102,14 +98,12 @@ footer > #sofooter .liens_pages > ul > li {
 }
 
 footer > #sofooter .liens_pages > ul > li > a {
-    /* TODO replace to $medium_grey */
-    color: #707070;
+    color: var(--medium-grey);
     transition: color 0.3s;
 }
 
 footer > #sofooter .liens_pages > ul > li > a:hover {
-    /* TODO replace to $wolf-blue */
-    color: #016099;
+    color: var(--wolf-blue);
 }
 
 /* ========================================================================== */
@@ -144,8 +138,7 @@ footer > #sofooter > #sofooterCompany {
                                     /* == */
 footer > #sofooter > hr#sofooterHr {
     grid-area: sofooterHr;
-    /* TODO replace by variable $light-grey */
-    background-color: #F9F9F9;
+    background-color: var(--super-light-grey);
     margin-top: 3rem;
     margin-bottom: 2rem;
     width: 100%;
@@ -160,8 +153,7 @@ footer > #sofooter > #sofooterSubfooter {
     display: flex;
 }
 footer > #sofooter > #sofooterSubfooter > a:nth-child(2) {
-    /* TODO we could use a variable $medium-grey */
-    color: #707070;
+    color: var(--medium-grey);
 }
 @media(max-width: 575px) {
     footer > #sofooter > #sofooterSubfooter {
@@ -212,12 +204,10 @@ footer > #sofooter > #sofooterContactgrid > #sofooterContactgridSocialnetwork sv
     margin-bottom: 1rem;
 }
 footer > #sofooter > #sofooterContactgrid > #sofooterContactgridSocialnetwork svg > path{
-    /* TODO: replace by variable $light-electric-blue; */
     fill: #A7E4EA;
     transition: fill 0.3s;
 }
 footer > #sofooter > #sofooterContactgrid > #sofooterContactgridSocialnetwork svg:hover > path{
-    /* TODO: replace by variable $wolf-blue; */
     fill: #016099;
 }
 
@@ -274,12 +264,10 @@ footer > #sofooter > #sofooterContactgrid > #sofooterContactgridLyon {
     footer > #sofooter > #sofooterContactgrid > #sofooterContactgridSocialnetwork,
     footer > #sofooter > #sofooterContactgrid > #sofooterContactgridGrenoble,
     footer > #sofooter > #sofooterContactgrid > #sofooterContactgridLyon {
-        /* TODO replace by variable :margin-left-foot */
         margin-left: 2rem;
     }
 
     footer > #sofooter > #sofooterContactgrid > #sofooterContactgridContactus {
-        /* TODO replace by variable :margin-left-foot */
         margin: 2rem 0 2rem 2rem;
     }
 
@@ -312,7 +300,6 @@ footer > #sofooter > #sofooterContactgrid > #sofooterContactgridLyon {
     }
 
     footer > #sofooter > #sofooterContactgrid > div {
-        /* TODO replace by variable :margin-left-foot */
         margin: 2rem 0 2rem 2rem;
     }
 

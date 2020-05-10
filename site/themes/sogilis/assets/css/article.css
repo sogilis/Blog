@@ -8,8 +8,7 @@
     flex-direction: column;
     max-width: inherit;
     font-size: 1.2rem;
-    /* line-height: 1.5rem; */
-    color: #707070;
+    color: var(--medium-grey);
 }
 
 /* Following should be reset to `initial' into article.css */
@@ -67,7 +66,8 @@ pre code {
 
 /* Definitions for elements in the page article */
 /* ========================================================================== */
-pre, /* Line 176 into bootstrap.css 4.4.1 */
+
+pre,
 code,
 kbd,
 samp {
@@ -79,7 +79,7 @@ h2, h3, h4, h5, h6 {
 }
 
 blockquote, pre, .blog_articlepage_img {
-    box-shadow: 0 0 1rem 0.2rem rgba(0,0,0,.15);
+    box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, .15);
 }
 
 blockquote, pre {
@@ -91,22 +91,22 @@ blockquote, pre {
 
 blockquote {
     font-style: italic;
-    border-left-color: #00446c;
-    background-color: #fff;
+    border-left-color: var(--dark-blue);
+    background-color: white;
 }
 
 pre {
-    border-left-color: #4eb2dd;
+    border-left-color: var(--medium-blue);
 }
 
 
 #blog_articlepage a{
-    color: #016099;
+    color: var(--wolf-blue);
     transition: color 0.3s;
 }
 
 #blog_articlepage a:hover{
-    color: #282E36;
+    color: var(--dark-grey);
 }
 
 #blog_articlepage p {
@@ -135,7 +135,7 @@ pre {
 
 #blog_articlepage_header_title_h1 {
     font-size: 2rem;
-    color: #016099;
+    color: var(--wolf-blue);
     font-weight: 600;
 }
 
@@ -144,7 +144,7 @@ pre {
     position: absolute;
     height: 0.3rem;
     width: 1.5rem;
-    background-color: #a7e4ea;
+    background-color: var(--light-electric-blue);
     margin-top: 1.25rem;
     margin-left: -2.25rem;
 }
