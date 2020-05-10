@@ -43,6 +43,9 @@ build_preview:
 # ==============================================================================
 
 _common:
+	# We should clean the repo, because Netlify does not clean the repo
+	# Options `-f -f` is not an error. See https://github.com/sogilis/Blog/pull/160#discussion_r422919097
+	git clean -f -f -d -x
 	yarn install
 	yarn lint
 	yarn prettier:check
