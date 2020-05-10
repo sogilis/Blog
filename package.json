@@ -34,8 +34,8 @@
     "buildTags": "extended"
   },
   "husky": {
-      "hooks": {
-          "pre-commit": "yarn prettier:format"
-      }
+    "hooks": {
+      "pre-commit": "yarn prettier:format"
+    }
   }
 }

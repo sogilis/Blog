@@ -45,11 +45,11 @@ rules:
 
   no-ternary: off
 
- # enforce variables to be declared either together or separately in functions
+  # enforce variables to be declared either together or separately in functions
   # [when we declare several array functions in a file, give an error]
   one-var: off
 
- # Give use false-positive into ./site/themes/sogilis/static/js/scripts.js
+  # Give use false-positive into ./site/themes/sogilis/static/js/scripts.js
   padded-blocks: off
 
   quotes:

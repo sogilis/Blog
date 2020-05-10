@@ -1,86 +1,89 @@
 main {
-    padding-top: 12em;
+  padding-top: 12em;
 }
 
 /* The grid element on the index page */
 /* ========================================================================== */
 
 main > #blog_index {
-    display: grid;
-    grid-gap: 2em;
-    grid-auto-rows: 22em;
-    padding-bottom:6em;
+  display: grid;
+  grid-gap: 2em;
+  grid-auto-rows: 22em;
+  padding-bottom: 6em;
 }
 
 @media (min-width: 768px) {
-    main > #blog_index {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  main > #blog_index {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 992px) {
-    main > #blog_index {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  main > #blog_index {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Each cell of the grid */
 /* ========================================================================== */
 
 main > #blog_index > a.blog_index_article {
-    display: grid;
-    grid-template-rows: 11.7em 6.3em 2em;
-    grid-gap: 0.5em;
-    box-shadow: 0 0 1em 0.2em rgba(0,0,0,0.15);
+  display: grid;
+  grid-template-rows: 11.7em 6.3em 2em;
+  grid-gap: 0.5em;
+  box-shadow: 0 0 1em 0.2em rgba(0, 0, 0, 0.15);
 }
 
 /* Image */
 /* ========================================================================== */
 
 main > #blog_index > a.blog_index_article > div > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: all 0.8s;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.8s;
 }
 
 main > #blog_index > a.blog_index_article:hover > div > img {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 /* The title and 'Lire la suite */
 /* ========================================================================== */
 
 main > #blog_index > a.blog_index_article > p {
-    margin: 0 1.6em;
-    transition: color 0.5s;
+  margin: 0 1.6em;
+  transition: color 0.5s;
 }
 
 /* The title */
 /* ========================================================================== */
 
 main > #blog_index > a.blog_index_article > p.blog_index_article__title {
-    font-family: 'EB Garamond', serif;
-    color: var(--medium-grey);
-    font-size: 1.4em;
-    font-weight: bold;
+  font-family: 'EB Garamond', serif;
+  color: var(--medium-grey);
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 main > #blog_index > a.blog_index_article:hover > p.blog_index_article__title {
-    color: var(--dark-grey);
+  color: var(--dark-grey);
 }
 
 /* p is "Lire la suite" in French */
 /* ========================================================================== */
 
 main > #blog_index > a.blog_index_article > p.blog_index_article__readmore {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: var(--wolf-blue);
-    text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: var(--wolf-blue);
+  text-align: right;
 }
 
-main > #blog_index > a.blog_index_article:hover > p.blog_index_article__readmore {
-    color: var(--light-electric-blue);
-    text-decoration: underline;
+main
+  > #blog_index
+  > a.blog_index_article:hover
+  > p.blog_index_article__readmore {
+  color: var(--light-electric-blue);
+  text-decoration: underline;
 }
