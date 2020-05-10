@@ -6,8 +6,8 @@ parser: espree
 parserOptions:
   ecmaVersion: 6
 
-plugins:
-  - import
+# plugins:
+#   - import
 
 extends: eslint:all
 
