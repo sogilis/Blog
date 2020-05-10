@@ -7,26 +7,26 @@
  */
 
 header {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 header > div#navBarDesktop {
-    display: none;
+  display: none;
 }
 
 header > div#navBarMobile {
-    align-items: center;
+  align-items: center;
 }
 
 header > div#navBarMobile > a {
-    display: block;
-    height: 2rem;
+  display: block;
+  height: 2rem;
 }
 
 /* When we scroll */
 header.content_header_scroll {
-    /* Others declarations into header.html */
-    padding: 0;
+  /* Others declarations into header.html */
+  padding: 0;
 }
 
 /* ========================================================================== */
@@ -35,7 +35,7 @@ header.content_header_scroll {
 /* =========================================================================== */
 
 header > div#navBarMobile > a > img {
-    height: 122%;
+  height: 122%;
 }
 
 /* ========================================================================== */
@@ -44,55 +44,55 @@ header > div#navBarMobile > a > img {
 /* ========================================================================== */
 
 header > div#navBarMobile > a#headerMenuButtonMobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 header > div#navBarMobile > a#headerMenuButtonMobile::before,
 header > div#navBarMobile > a#headerMenuButtonMobile > div,
 header > div#navBarMobile > a#headerMenuButtonMobile::after {
-    background-color: var(--dark-grey);
-    border-radius: 1px;
-    height: 0.1875rem;
-    width: 2rem;
-    /*
+  background-color: var(--dark-grey);
+  border-radius: 1px;
+  height: 0.1875rem;
+  width: 2rem;
+  /*
      * Animation when we click on the button: transform three bars to cross and
      * vice versa
      */
-transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 header > div#navBarMobile > a#headerMenuButtonMobile::before,
 header > div#navBarMobile > a#headerMenuButtonMobile::after {
-    content: " ";
+  content: ' ';
 }
 /* ========================================================================== */
 /* ========= Nav tag (not displayed when the page is loaded) ================ */
 /* ========================================================================== */
 
 header > div#navBarMobile > nav#headerMainMenuMobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 
-    background-color: white;
+  background-color: white;
 
-    /* Animated when `.menuMobileIsDisplayed` class is appended or removed. */
-    opacity: 0;
-    transform: scale(0);
-    transition-property: transform, opacity;
-    transition-duration: 0.5s;
-    transition-delay: 0;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* Animated when `.menuMobileIsDisplayed` class is appended or removed. */
+  opacity: 0;
+  transform: scale(0);
+  transition-property: transform, opacity;
+  transition-duration: 0.5s;
+  transition-delay: 0;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /* Center `ul` element in the page */
@@ -103,13 +103,13 @@ header > div#navBarMobile > nav#headerMainMenuMobile {
 /* Only the first `div` contains elements. */
 header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(1),
 header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(3) {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 header > div#navBarMobile > nav#headerMainMenuMobile > ul {
-    flex: 0 1 auto;
-    /* Because of reboot.css */
-    padding-left: 0;
+  flex: 0 1 auto;
+  /* Because of reboot.css */
+  padding-left: 0;
 }
 
 /* The small green line in the first `div` */
@@ -119,45 +119,48 @@ header > div#navBarMobile > nav#headerMainMenuMobile > ul {
 /* (it's the pseudo-element `::before`) */
 /* This pseudo-element have `margin-top: 50%` */
 header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(1) {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-header > div#navBarMobile > nav#headerMainMenuMobile > div:nth-child(1)::before {
-    content: '';
-    margin-top: 50%;
-    width: 50vw;
-    height: 2px;
-    background-color: var(--light-electric-blue);
+header
+  > div#navBarMobile
+  > nav#headerMainMenuMobile
+  > div:nth-child(1)::before {
+  content: '';
+  margin-top: 50%;
+  width: 50vw;
+  height: 2px;
+  background-color: var(--light-electric-blue);
 }
 
 /* Styles for `ul` element, with anchors */
 /* ========================================================================== */
 
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
-    color: var(--wolf-blue);
-    font-family: 'EB Garamond', serif;
-    font-weight:800;
+  color: var(--wolf-blue);
+  font-family: 'EB Garamond', serif;
+  font-weight: 800;
 }
 @media (max-width: 575px) {
-    header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
-        font-size: 1.3rem;
-    }
+  header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
+    font-size: 1.3rem;
+  }
 }
 @media (min-width: 576px) {
-    header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
-        font-size: 2rem;
-    }
+  header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
+    font-size: 2rem;
+  }
 }
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li {
-    padding: 0.5rem 0;
-    /* Needed for animation, of `li` elements */
-    transition: transform 400ms 510ms;
+  padding: 0.5rem 0;
+  /* Needed for animation, of `li` elements */
+  transition: transform 400ms 510ms;
 }
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a:active {
-    font-weight:500;
+  font-weight: 500;
 }
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /*
@@ -166,18 +169,17 @@ header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a:hover {
  * =====================
  */
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li:nth-child(odd) {
-    transform: translateX(30%);
+  transform: translateX(30%);
 }
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li:nth-child(even) {
-    transform: translateX(-30%);
+  transform: translateX(-30%);
 }
 
 /* The last `li` tag is not animated */
 /* ===================== */
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li:last-child {
-    transform: none;
+  transform: none;
 }
-
 
 /* ========================================================================== */
 /* ========================================================================== */
@@ -197,23 +199,30 @@ header > div#navBarMobile > nav#headerMainMenuMobile > ul > li:last-child {
 /* ========================================================================== */
 
 header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed {
-    /* Should be on top of all elements, even the `nav` element.. */
-    z-index: 2;
+  /* Should be on top of all elements, even the `nav` element.. */
+  z-index: 2;
 }
 
-header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed::before {
-    /* Following declaration is animated thanks `transition:` attribute */
-    transform: rotate(45deg) translate(0.5rem, 0.5rem)
+header
+  > div#navBarMobile
+  > a#headerMenuButtonMobile.menuMobileIsDisplayed::before {
+  /* Following declaration is animated thanks `transition:` attribute */
+  transform: rotate(45deg) translate(0.5rem, 0.5rem);
 }
 
-header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed::after {
-    /* Following declaration is animated thanks `transition:` attribute */
-    transform: rotate(-45deg) translate(0.5rem, -0.5rem)
+header
+  > div#navBarMobile
+  > a#headerMenuButtonMobile.menuMobileIsDisplayed::after {
+  /* Following declaration is animated thanks `transition:` attribute */
+  transform: rotate(-45deg) translate(0.5rem, -0.5rem);
 }
 
-header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed > div {
-    /* Following declaration is animated thanks `transition:` attribute */
-    background-color: transparent;
+header
+  > div#navBarMobile
+  > a#headerMenuButtonMobile.menuMobileIsDisplayed
+  > div {
+  /* Following declaration is animated thanks `transition:` attribute */
+  background-color: transparent;
 }
 
 /* ========================================================================== */
@@ -221,20 +230,28 @@ header > div#navBarMobile > a#headerMenuButtonMobile.menuMobileIsDisplayed > div
 /* ========================================================================== */
 
 body.menuMobileIsDisplayed {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 header > div#navBarMobile > nav#headerMainMenuMobile.menuMobileIsDisplayed {
-    /* Should be above all other elements, except the cross button. */
-    z-index: 1;
-    /* Following declaration is animated thanks `transition:` attribute */
-    opacity: 1;
-    /* Following declaration is animated thanks `transition:` attribute */
-    transform: scale(1);
+  /* Should be above all other elements, except the cross button. */
+  z-index: 1;
+  /* Following declaration is animated thanks `transition:` attribute */
+  opacity: 1;
+  /* Following declaration is animated thanks `transition:` attribute */
+  transform: scale(1);
 }
 
-header > div#navBarMobile > nav#headerMainMenuMobile.menuMobileIsDisplayed > ul > li:nth-child(odd),
-header > div#navBarMobile > nav#headerMainMenuMobile.menuMobileIsDisplayed > ul > li:nth-child(even) {
-    /* Following declaration is animated thanks `transition:` attribute */
-    transform: translateX(0);
+header
+  > div#navBarMobile
+  > nav#headerMainMenuMobile.menuMobileIsDisplayed
+  > ul
+  > li:nth-child(odd),
+header
+  > div#navBarMobile
+  > nav#headerMainMenuMobile.menuMobileIsDisplayed
+  > ul
+  > li:nth-child(even) {
+  /* Following declaration is animated thanks `transition:` attribute */
+  transform: translateX(0);
 }
