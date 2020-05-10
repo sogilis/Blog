@@ -1,5 +1,24 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/be2fba7f-a8a8-44de-b957-efc6901dba61/deploy-status)](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys)
 
+* [Sogilis Blog](#sogilis-blog)
+* [How to write a new article?](#how-to-write-a-new-article)
+    * [Online](#online)
+    * [Offline](#offline)
+        * [Prerequisites](#prerequisites)
+        * [Download blog](#download-blog)
+        * [Start the blog](#start-the-blog)
+            * [Without Docker](#without-docker)
+            * [With Docker](#with-docker)
+        * [Write a new article](#write-a-new-article)
+        * [Publish your article](#publish-your-article)
+* [Notes for developers (not for writers of articles)](#notes-for-developers-not-for-writers-of-articles)
+    * [Upgrade the CMS](#upgrade-the-cms)
+    * [Test netlify-cms locally](#test-netlify-cms-locally)
+    * [API limit reach](#api-limit-reach)
+    * [TODO](#todo)
+    * [Troubleshooting](#troubleshooting)
+* [Credits](#credits)
+
 # Sogilis Blog
 
 Welcome to the open source Blog of Sogilis !
