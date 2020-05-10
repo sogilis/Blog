@@ -44,6 +44,8 @@ build_preview:
 
 _common:
 	yarn install
+	yarn lint
+	yarn prettier:check
 	# reboot.css
 	cp ./node_modules/bootstrap-reboot/dist/reboot.min.css* ./site/themes/sogilis/assets/css/
 	# netlifh-cms

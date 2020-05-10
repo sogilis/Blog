@@ -9,11 +9,13 @@ parserOptions:
 # plugins:
 #   - import
 
-extends: eslint:all
+extends:
+  - eslint:all
+  # https://prettier.io/docs/en/integrating-with-linters.html
+  - plugin:prettier/recommended
 
 # THIS RULES ARE ORGANIZED AS IN THE PAGE https://eslint.org/docs/rules/
 rules:
-
   # ============================================================================
   # Strict Mode
   # ============================================================================

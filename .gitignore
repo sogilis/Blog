@@ -1,8 +1,21 @@
+# The file ".dockerignore"     is a symbolic link to the file ".gitignore"
+# The file ".eslintignore"     is a symbolic link to the file ".gitignore"
+# The file ".prettierignore"   is a symbolic link to the file ".gitignore"
+
+# Git parse ./.gitiignore
+# Eslint parse ./.eslintignore
+# Prettier parse./.prettierignore
+# Docker parse./.dockerignore
+
+# Git, Eslint and Prettier use the syntax https://github.com/kaelzhang/node-ignore
+# when there parse the file.
+
 # !!!!!!!!!!!!!!!!!! Warning !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# .dockerignore is a simlink of .gitiignore
-# THEREFORE:
-# THE FOLLOWING SYNTAX SHOULD BE COMPATIBLE BETWEEN .DOCKERIGNORE AND .GITIIGNORE
-# See https://zzz.buzz/2018/05/23/differences-of-rules-between-gitignore-and-dockerignore/
+# !!!!!!!!!!!!!!!!!! Warning !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# But Docker use an oter syntax.
+# THEREFORE IF YOU CHANGE THE FOLLOWING FILE, YOU SHOULD CHECK THAT IS IT
+# compliant with the syntax of Docker and the synax `node-ignore` (used by Git, Eslint and Prettier)
+# Check https://zzz.buzz/2018/05/23/differences-of-rules-between-gitignore-and-dockerignore/
 
 /node_modules/
 /dist/
