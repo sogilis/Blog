@@ -14,40 +14,6 @@ footer {
   color: var(--medium-grey);
 }
 
-/* Title */
-/* ===== */
-
-.footer-title {
-  position: relative;
-
-  /* For "Contact" */
-  justify-self: start;
-
-  /* For "Services" and "L'entreprise" */
-  display: inline-block;
-
-  padding-right: 1.5rem;
-  z-index: 0;
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-/* The small blue bar */
-/* TODO should be factorize with header.css */
-.footer-title::after {
-  content: '';
-  position: absolute;
-  display: block;
-  z-index: -1;
-
-  top: 0.9em;
-  right: 0;
-
-  width: 2.5em;
-  height: 0.5em;
-  background-color: var(--light-electric-blue);
-}
-
 /* Addresses */
 /* ================ */
 footer > #sofooter > #sofooterContactgrid .adresses {
