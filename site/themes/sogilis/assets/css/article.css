@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   max-width: inherit;
-  font-size: 1.2rem;
   color: var(--medium-grey);
 }
 
@@ -72,7 +71,13 @@ pre,
 code,
 kbd,
 samp {
-  font-family: 'EB Garamond', serif;
+  font-family: var(--font-serif);
+  /*
+   * As "EB Garamond" is a small font, if we want the same height as a classic
+   * font we should set 1.2 rem. As it its hight of an lowercase letter is 8px.
+   * Compared with font "Segeo UI" used into Bootstrap website.
+   */
+  font-size: 1.2em;
 }
 
 h2,

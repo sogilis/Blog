@@ -12,13 +12,12 @@ footer {
   box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.1);
 
   color: var(--medium-grey);
-  font-family: 'Montserrat', sans-serif;
 }
 
 /* Title */
 /* ===== */
 
-footer > #sofooter .title_level_1 {
+.footer-title {
   position: relative;
 
   /* For "Contact" */
@@ -31,16 +30,11 @@ footer > #sofooter .title_level_1 {
   z-index: 0;
   margin-top: 2em;
   margin-bottom: 1em;
-
-  font-family: 'EB Garamond', serif;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: var(--medium-grey);
 }
 
 /* The small blue bar */
 /* TODO should be factorize with header.css */
-footer > #sofooter .title_level_1::after {
+.footer-title::after {
   content: '';
   position: absolute;
   display: block;

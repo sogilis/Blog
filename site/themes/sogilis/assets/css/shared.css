@@ -1,3 +1,6 @@
+/* Elements */
+/* ========================================================================== */
+
 :root {
   --super-light-grey: #f9f9f9;
   --super-light-grey2: #fcfcfc;
@@ -7,11 +10,41 @@
   --medium-blue: #4eb2dd;
   --dark-blue: #00446c;
   --light-electric-blue: #a7e4ea;
+  /*
+   * As "EB Garamond" is a small font, if we want the same height as a classic
+   * font we should set 1.2 rem. As it its hight of an lowercase letter is 8px.
+   * Compared with font "Segeo UI" used into Bootstrap website.
+   */
+  --font-serif: 'EB Garamond', serif;
 }
 
 body {
-  font-family: eb garamond, serif;
+  font-family: 'Montserrat', sans-serif;
 }
+
+/* Titles */
+/* ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.aTitle {
+  font-family: var(--font-serif);
+}
+
+.title_level_1 {
+  font-family: var(--font-serif);
+  color: var(--medium-grey);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Global declaratations */
+/* THAT SHOULD BE DELETTED TODO                                               */
+/* ========================================================================== */
 
 /* Following is reset to `initial' into article.css */
 a,
@@ -23,6 +56,10 @@ a:hover {
 ul {
   list-style-type: none;
 }
+
+/* As Bootstrap 4 Grid System                                                 */
+/* See also https://getbootstrap.com/docs/4.0/layout/grid/#grid-options       */
+/* ========================================================================== */
 
 .mainColumn {
   margin: 0 auto 0 auto;
