@@ -23,6 +23,7 @@ body {
 }
 
 /* Titles */
+/* Note: all titles should have a serif font */
 /* ========================================================================== */
 
 h1,
@@ -35,7 +36,7 @@ h6,
   font-family: var(--font-serif);
 }
 
-.title_level_1 {
+.title_1 {
   font-family: var(--font-serif);
   color: var(--medium-grey);
   font-weight: bold;
@@ -156,4 +157,53 @@ a.btn_dark_grey::after {
 
 a.btn_dark_grey:hover::after {
   width: 100%;
+}
+
+/* The small blue bar                                                         */
+/* ========================================================================== */
+
+.bar-deco {
+  position: relative;
+
+  /* For "Contact" */
+  justify-self: start;
+
+  /* For "Services" and "L'entreprise" */
+  display: inline-block;
+
+  padding-right: 1.5rem;
+  z-index: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* The small blue bar */
+.bar-deco::after {
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: -1;
+
+  top: 0.9em;
+  right: 0;
+
+  width: 2.5em;
+  height: 0.5em;
+  background-color: var(--light-electric-blue);
+}
+
+/* The small blue bar that appears on hover of links */
+/* Needs `title-bar-decoration` */
+/* ==== */
+.bar-deco-hover::after {
+  /* istead of using rule `right: 0`, because otherwise
+    transition start from the right to the left
+     */
+  left: calc(100% - 3.5em);
+  width: 0;
+  transition: width 0.3s;
+}
+
+.bar-deco-hover:hover::after {
+  width: 2.5rem;
 }

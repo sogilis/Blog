@@ -59,42 +59,6 @@ header > div#navBarDesktop > nav > div.dropdown > a {
   color: var(--wolf-blue);
 }
 
-/* The small blue bar that appears on hover of links */
-/* ================================================= */
-
-/* We must have too:  */
-/* header > div#navBarDesktop > nav a[href], */
-/* header > div#navBarDesktop > nav button { */
-/* position: relative; */
-/* padding-right: 1.5rem; */
-/* } */
-/* A parent element should have a z-index heigher, otherwise not displayed */
-
-/* TODO should be factorize with footer.css */
-header > div#navBarDesktop > nav a::after {
-  content: '';
-  position: absolute;
-  display: block;
-
-  /* A parent element should have a z-index heigher, otherwise not displayed */
-  z-index: -1;
-
-  top: 0.9em;
-  /* istead of using rule `right: 0`, because otherwise
-    transition start from the right to the left
-     */
-  left: calc(100% - 3.5em);
-
-  width: 0;
-  height: 0.5em;
-  background-color: var(--light-electric-blue);
-  transition: width 0.3s;
-}
-
-header > div#navBarDesktop > nav a:hover::after {
-  width: 2.5rem;
-}
-
 /* Dropdown links (hidden by default) */
 /* ================================== */
 
