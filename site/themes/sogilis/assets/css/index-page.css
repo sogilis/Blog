@@ -59,13 +59,6 @@ main > #blog_index > a.blog_index_article > p {
 /* The title */
 /* ========================================================================== */
 
-main > #blog_index > a.blog_index_article > p.blog_index_article__title {
-  font-family: 'EB Garamond', serif;
-  color: var(--medium-grey);
-  font-size: 1.4em;
-  font-weight: bold;
-}
-
 main > #blog_index > a.blog_index_article:hover > p.blog_index_article__title {
   color: var(--dark-grey);
 }
@@ -74,7 +67,6 @@ main > #blog_index > a.blog_index_article:hover > p.blog_index_article__title {
 /* ========================================================================== */
 
 main > #blog_index > a.blog_index_article > p.blog_index_article__readmore {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: var(--wolf-blue);
   text-align: right;

@@ -138,7 +138,7 @@ header
 
 header > div#navBarMobile > nav#headerMainMenuMobile > ul > li > a {
   color: var(--wolf-blue);
-  font-family: 'EB Garamond', serif;
+  font-family: var(--font-serif);
   font-weight: 800;
 }
 @media (max-width: 575px) {
