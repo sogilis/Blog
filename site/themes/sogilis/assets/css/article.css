@@ -10,18 +10,6 @@
   color: var(--medium-grey);
 }
 
-/* Following should be reset to `initial' into article.css */
-/* =========================================================================== */
-
-#blog_articlepage a,
-#blog_articlepage a:hover {
-  text-decoration: initial;
-}
-
-#blog_articlepage ul {
-  list-style-type: initial;
-}
-
 /* Folliwng copied from Bootstrap 4.4.1 */
 /* following is not into reboot.css */
 /* ========================================================================== */

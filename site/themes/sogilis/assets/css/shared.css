@@ -42,21 +42,6 @@ h6,
   font-size: 1.4rem;
 }
 
-/* Global declaratations */
-/* THAT SHOULD BE DELETTED TODO                                               */
-/* ========================================================================== */
-
-/* Following is reset to `initial' into article.css */
-a,
-a:hover {
-  text-decoration: none;
-}
-
-/* Following is reset to `initial' into article.css */
-ul {
-  list-style-type: none;
-}
-
 /* As Bootstrap 4 Grid System                                                 */
 /* See also https://getbootstrap.com/docs/4.0/layout/grid/#grid-options       */
 /* ========================================================================== */
@@ -98,6 +83,21 @@ ul {
   .mainColumn {
     max-width: 1125px;
   }
+}
+
+/* Shared between footer and header                               */
+/* ========================================================================== */
+
+footer a,
+footer a:hover,
+header a,
+header a:hover {
+  text-decoration: none;
+}
+
+footer ul,
+header ul {
+  list-style-type: none;
 }
 
 /* Button  with:
