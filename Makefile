@@ -38,14 +38,19 @@ build_preview:
 	# -v, --verbose                verbose output
 	yarn hugo -s site -d ../dist -D -F -v
 
+clean:
+	# We should clean the repo, because Netlify does not clean the repo
+	# Options `-f -f` is not an error. See https://github.com/sogilis/Blog/pull/160#discussion_r422919097
+	# Following is advised by GitLab CI https://docs.gitlab.com/ee/ci/yaml/#git-clean-flags
+	git clean -f -f -d -x -e node_modules
+
+
 # ==============================================================================
 # Private target (used by other targets above, but no sens to use outside)
 # ==============================================================================
 
 _common:
-	# We should clean the repo, because Netlify does not clean the repo
-	# Options `-f -f` is not an error. See https://github.com/sogilis/Blog/pull/160#discussion_r422919097
-	git clean -f -f -d -x
+	make clean
 	yarn install
 	yarn lint
 	yarn prettier:check
