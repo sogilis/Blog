@@ -2,24 +2,24 @@ header {
   height: 5rem;
   margin-top: 2rem;
 }
-#headerMobile {
+#header-mobile {
   display: none;
 }
 
 /* ========================================================================== */
 /* Logo sogilis on the left */
 /* ========================================================================== */
-#headerDesktop {
+#header-desktop {
   display: flex;
   height: 100%;
 }
 
-#headerDesktopLeft {
+#header-desktop-left {
   width: 15%;
   padding: 1rem 0 1rem 0;
 }
 
-#headerDesktopLeftLogo {
+#header-desktop-left-logo {
   height: 100%;
 }
 
@@ -27,7 +27,7 @@ header {
 /* Navigation links, on the right */
 /* ========================================================================== */
 
-#headerDesktopRight {
+#header-desktop-right {
   display: flex;
   align-items: center;
   font-size: 0.9rem;
@@ -37,7 +37,7 @@ header {
   margin-right: -1.5rem;
 }
 
-.headerDesktopRightText {
+.header-desktop-right-text {
   position: relative;
 
   /* As it, on hoover, the small bar appears */
@@ -48,7 +48,7 @@ header {
   cursor: pointer;
 }
 
-.headerDesktopRightCategory {
+.header-desktop-right-category {
   margin-left: 4rem;
   color: var(--wolf-blue);
 }
@@ -56,16 +56,16 @@ header {
 /* Dropdown links (hidden by default) */
 /* ================================== */
 
-#headerDesktopDropdown {
+#header-desktop-right-dropdown {
   height: 100%;
   display: flex;
 }
 
-#headerDesktopDropdownTitle {
+#header-desktop-right-dropdown-title {
   align-self: center;
 }
 
-#headerDesktopDropdownContent {
+#header-desktop-right-dropdown-content {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -88,19 +88,19 @@ header {
 }
 
 /* Show the dropdown menu on hover */
-#headerDesktopDropdown:hover > #headerDesktopDropdownContent {
+#header-desktop-right-dropdown:hover > #header-desktop-right-dropdown-content {
   display: flex;
   visibility: visible;
   opacity: 1;
   max-height: 15rem;
 }
 
-.headerDesktopDropdownContentLink {
+.header-desktop-right-dropdown-content-link {
   margin: 1rem auto;
 }
 
 /* Links inside the dropdown */
-.headerDesktopDropdownContentLink,
-.headerDesktopDropdownContentLink:hover {
+.header-desktop-right-dropdown-content-link,
+.header-desktop-right-dropdown-content-link:hover {
   color: black;
 }

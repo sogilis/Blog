@@ -2,34 +2,34 @@
   <!-- ======================================================================= -->
   <!-- Menu Desktop (display >= 576 px) -->
   <!-- ======================================================================= -->
-  <nav id="headerDesktop" class="mainColumn">
-    <a id="headerDesktopLeft" href="/index.html">
+  <nav id="header-desktop" class="mainColumn">
+    <a id="header-desktop-left" href="/index.html">
       <img
-        id="headerDesktopLeftLogo"
+        id="header-desktop-left-logo"
         alt="Logo Sogilis"
         src="{{ "images/logo_sogilis.svg" | relURL }}"
       />
     </a>
-    <div id="headerDesktopRight">
-      <div id="headerDesktopDropdown">
+    <div id="header-desktop-right">
+      <div id="header-desktop-right-dropdown">
         <div
-          id="headerDesktopDropdownTitle"
+          id="header-desktop-right-dropdown-title"
           class="
             bar-deco
             bar-deco-hover
-            headerDesktopRightCategory
-            headerDesktopRightText
+            header-desktop-right-category
+            header-desktop-right-text
           "
         >
           {{ i18n "services"}}
         </div>
-        <div id="headerDesktopDropdownContent">
+        <div id="header-desktop-right-dropdown-content">
           <a
             class="
               bar-deco
               bar-deco-hover
-              headerDesktopDropdownContentLink
-              headerDesktopRightText
+              header-desktop-right-dropdown-content-link
+              header-desktop-right-text
             "
             href="https://sogilis.fr/services-applications-cloud-native.html"
           >
@@ -39,8 +39,8 @@
             class="
               bar-deco
               bar-deco-hover
-              headerDesktopDropdownContentLink
-              headerDesktopRightText
+              header-desktop-right-dropdown-content-link
+              header-desktop-right-text
             "
             href="https://sogilis.fr/services-embarques-et-iot.html"
           >
@@ -50,8 +50,8 @@
             class="
               bar-deco
               bar-deco-hover
-              headerDesktopDropdownContentLink
-              headerDesktopRightText
+              header-desktop-right-dropdown-content-link
+              header-desktop-right-text
             "
             href="https://sogilis.fr/services-logiciels-critiques.html"
           >
@@ -63,8 +63,8 @@
         class="
           bar-deco
           bar-deco-hover
-          headerDesktopRightCategory
-          headerDesktopRightText
+          header-desktop-right-category
+          header-desktop-right-text
         "
         href="https://sogilis.fr/vision.html"
       >
@@ -74,8 +74,8 @@
         class="
           bar-deco
           bar-deco-hover
-          headerDesktopRightCategory
-          headerDesktopRightText
+          header-desktop-right-category
+          header-desktop-right-text
         "
         href="https://sogilis.fr/contact.html"
       >
@@ -88,7 +88,7 @@
   <!-- Menu Mobile (dispaly < 576 px) -->
   <!-- ======================================================================= -->
 
-  <div id="headerMobile" class="mainColumn">
+  <div id="header-mobile" class="mainColumn">
     <!--
     In this screen size, we have three tags child
     On the top left, the icon of Sogilis
@@ -97,59 +97,59 @@
     When we click on the top right button, the tag <nav> appears smoothy.
     -->
     <a
-      class="headerMobileLink"
+      class="header-mobile-link"
       href="/index.html"
     >
       <img
-        id="headerMobileLeftLogo"
+        id="header-mobile-logo"
         alt="Logo Sogilis"
         src="{{ "images/logo_sogilis.svg" | relURL }}"
       />
     </a>
     <a
-      id="headerMobileThreebarbutton"
-      class="headerMobileLink"
+      id="header-mobile-threebarbutton"
+      class="header-mobile-link"
       href="#"
     >
-      <div id="headerMobileThreebarbuttonCentralbar">&nbsp;</div>
+      <div id="header-mobile-threebarbutton-centralbar">&nbsp;</div>
     </a>
-    <!-- header is displayed when we click on `headerMobileThreebarbutton -->
-    <nav id="headerMobileNavmenu">
-      <div id="headerMobileNavmenuLine">
+    <!-- header is displayed when we click on `header-mobile-threebarbutton -->
+    <nav id="header-mobile-navmenu">
+      <div id="header-mobile-navmenu-coloredline">
         <!--
-          In this `div`, there is the line
+          In this `div`, there is the colored line
           (it's the pseudo-element `::before`)
           This pseudo-element have `margin-top: 50%`
         -->
       </div>
-      <ul id="headerMobileNavmenuList">
-        <li class="headerMobileNavmenuLi">
+      <ul id="header-mobile-navmenu-list">
+        <li class="header-mobile-navmenu-li">
           <a
-            class="headerMobileNavmenuLink"
+            class="header-mobile-navmenu-link"
             href="https://sogilis.fr/services-applications-cloud-native.html"
           >
             {{i18n "cloudNativeApplications" }}
           </a>
         </li>
-        <li class="headerMobileNavmenuLi">
+        <li class="header-mobile-navmenu-li">
           <a
-            class="headerMobileNavmenuLink"
+            class="header-mobile-navmenu-link"
             href="https://sogilis.fr/services-embarques-et-iot.html"
           >
             {{ i18n "embeddedSoftwares" }}
           </a>
         </li>
-        <li class="headerMobileNavmenuLi">
+        <li class="header-mobile-navmenu-li">
           <a
-            class="headerMobileNavmenuLink"
+            class="header-mobile-navmenu-link"
             href="https://sogilis.fr/services-logiciels-critiques.html"
           >
             {{ i18n "criticalSoftwares" }}
           </a>
         </li>
-        <li class="headerMobileNavmenuLi">
+        <li class="header-mobile-navmenu-li">
           <a
-            class="headerMobileNavmenuLink"
+            class="header-mobile-navmenu-link"
             href="https://sogilis.fr/vision.html"
           >
             {{ i18n "ourVision" }}
@@ -157,18 +157,18 @@
         </li>
         <li>
           <a
-            class="headerMobileNavmenuLink"
+            class="header-mobile-navmenu-link"
             href="https://sogilis.fr/contact.html"
           >
             {{ i18n "contact" }}
           </a>
         </li>
       </ul>
-      <div id="headerMobileNavmenuEmptydiv2">
+      <div id="header-mobile-navmenu-emptydiv">
         <!--
           The goal of this div is simply to center the `ul` element above
           between two `div`.
-          (Into the first `div`, there is the green line).
+          (Into the first `div`, there is the colored line).
         -->
       </div>
     </nav>

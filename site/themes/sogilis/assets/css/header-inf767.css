@@ -10,21 +10,21 @@ header {
   margin-top: 1rem;
 }
 
-#headerDesktop {
+#header-desktop {
   display: none;
 }
 
-#headerMobile {
+#header-mobile {
   display: flex;
   align-items: center;
 }
 
-.headerMobileLink {
+.header-mobile-link {
   height: 2rem;
 }
 
 /* When we scroll */
-.headerScrollstate {
+.header--scrollstate {
   /* Others declarations into header.html */
   padding: 0;
 }
@@ -34,7 +34,7 @@ header {
 /* Logo on the top left of the screen */
 /* =========================================================================== */
 
-#headerMobileLeftLogo {
+#header-mobile-logo {
   height: 122%;
 }
 
@@ -43,15 +43,15 @@ header {
 /* Describe the three bars icon */
 /* ========================================================================== */
 
-#headerMobileThreebarbutton {
+#header-mobile-threebarbutton {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-#headerMobileThreebarbutton::before,
-#headerMobileThreebarbuttonCentralbar,
-#headerMobileThreebarbutton::after {
+#header-mobile-threebarbutton::before,
+#header-mobile-threebarbutton-centralbar,
+#header-mobile-threebarbutton::after {
   background-color: var(--dark-grey);
   border-radius: 1px;
   height: 0.1875rem;
@@ -63,15 +63,15 @@ header {
   transition: transform 0.3s;
 }
 
-#headerMobileThreebarbutton::before,
-#headerMobileThreebarbutton::after {
+#header-mobile-threebarbutton::before,
+#header-mobile-threebarbutton::after {
   content: ' ';
 }
 /* ========================================================================== */
 /* ========= Nav tag (not displayed when the page is loaded) ================ */
 /* ========================================================================== */
 
-#headerMobileNavmenu {
+#header-mobile-navmenu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,12 +100,12 @@ header {
 
 /* The goal of this two `div` is to center the `ul` */
 /* between two `div`. */
-#headerMobileNavmenuLine,
-#headerMobileNavmenuEmptydiv {
+#header-mobile-navmenu-coloredline,
+#header-mobile-navmenu-emptydiv {
   flex: 1 1 auto;
 }
 
-#headerMobileNavmenuList {
+#header-mobile-navmenu-list {
   flex: 0 1 auto;
   /* Because of reboot.css */
   padding-left: 0;
@@ -117,11 +117,11 @@ header {
 /* In this `div`, there is the line */
 /* (it's the pseudo-element `::before`) */
 /* This pseudo-element have `margin-top: 50%` */
-#headerMobileNavmenuLine {
+#header-mobile-navmenu-coloredline {
   display: flex;
   align-items: center;
 }
-#headerMobileNavmenuLine::before {
+#header-mobile-navmenu-coloredline::before {
   content: '';
   margin-top: 50%;
   width: 50vw;
@@ -132,29 +132,29 @@ header {
 /* Styles for `ul` element, with anchors */
 /* ========================================================================== */
 
-.headerMobileNavmenuLink {
+.header-mobile-navmenu-link {
   color: var(--wolf-blue);
   font-family: var(--font-serif);
   font-weight: 800;
 }
 @media (max-width: 575px) {
-  .headerMobileNavmenuLink {
+  .header-mobile-navmenu-link {
     font-size: 1.3rem;
   }
 }
 @media (min-width: 576px) {
-  .headerMobileNavmenuLink {
+  .header-mobile-navmenu-link {
     font-size: 2rem;
   }
 }
-.headerMobileNavmenuLink:active {
+.header-mobile-navmenu-link:active {
   font-weight: 500;
 }
-.headerMobileNavmenuLink:hover {
+.header-mobile-navmenu-link:hover {
   text-decoration: underline;
 }
 
-.headerMobileNavmenuLi {
+.header-mobile-navmenu-li {
   padding: 0.5rem 0;
   /* Needed for animation, of `li` elements */
   transition: transform 400ms 510ms;
@@ -165,16 +165,16 @@ header {
  * `menuMobileIsDisplayed` css class is append
  * =====================
  */
-.headerMobileNavmenuLi:nth-child(odd) {
+.header-mobile-navmenu-li:nth-child(odd) {
   transform: translateX(30%);
 }
-.headerMobileNavmenuLi:nth-child(even) {
+.header-mobile-navmenu-li:nth-child(even) {
   transform: translateX(-30%);
 }
 
 /* The last `li` tag is not animated */
 /* ===================== */
-.headerMobileNavmenuLi:last-child {
+.header-mobile-navmenu-li:last-child {
   transform: none;
 }
 
@@ -195,23 +195,23 @@ header {
 /* Three lines icons are transformed to cross when menuMobileIsDisplayed */
 /* ========================================================================== */
 
-#headerMobileThreebarbutton.menuMobileIsDisplayed {
+#header-mobile-threebarbutton.menuMobileIsDisplayed {
   /* Should be on top of all elements, even the `nav` element.. */
   z-index: 2;
 }
 
-#headerMobileThreebarbutton.menuMobileIsDisplayed::before {
+#header-mobile-threebarbutton.menuMobileIsDisplayed::before {
   /* Following declaration is animated thanks `transition:` attribute */
   transform: rotate(45deg) translate(0.5rem, 0.5rem);
 }
 
-#headerMobileThreebarbutton.menuMobileIsDisplayed::after {
+#header-mobile-threebarbutton.menuMobileIsDisplayed::after {
   /* Following declaration is animated thanks `transition:` attribute */
   transform: rotate(-45deg) translate(0.5rem, -0.5rem);
 }
 
-#headerMobileThreebarbutton.menuMobileIsDisplayed
-  > #headerMobileThreebarbuttonCentralbar {
+#header-mobile-threebarbutton.menuMobileIsDisplayed
+  > #header-mobile-threebarbutton-centralbar {
   /* Following declaration is animated thanks `transition:` attribute */
   background-color: transparent;
 }
@@ -224,7 +224,7 @@ body.menuMobileIsDisplayed {
   overflow: hidden;
 }
 
-#headerMobileNavmenu.menuMobileIsDisplayed {
+#header-mobile-navmenu.menuMobileIsDisplayed {
   /* Should be above all other elements, except the cross button. */
   z-index: 1;
   /* Following declaration is animated thanks `transition:` attribute */
@@ -233,8 +233,8 @@ body.menuMobileIsDisplayed {
   transform: scale(1);
 }
 
-#headerMobileNavmenu.menuMobileIsDisplayed li:nth-child(odd),
-#headerMobileNavmenu.menuMobileIsDisplayed li:nth-child(even) {
+#header-mobile-navmenu.menuMobileIsDisplayed li:nth-child(odd),
+#header-mobile-navmenu.menuMobileIsDisplayed li:nth-child(even) {
   /* Following declaration is animated thanks `transition:` attribute */
   transform: translateX(0);
 }
