@@ -108,8 +108,7 @@ footer {
   width: 2rem;
   margin-bottom: 1rem;
 }
-.footer-subgridadress-socialnetwork-svg
-  > .footer-subgridadress-socialnetwork-svg-path {
+.footer-subgridadress-socialnetwork-svg-path {
   fill: #a7e4ea;
   transition: fill 0.3s;
 }
@@ -202,7 +201,7 @@ footer {
     grid-template-columns: 50% 50%;
   }
 
-  #footer-subgridadress > div {
+  .footer-subgridadress-largescreen2ndline {
     margin: 2rem 0 2rem 2rem;
   }
 }
