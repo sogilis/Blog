@@ -31,12 +31,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.aTitle {
+h6 {
   font-family: var(--font-serif);
 }
 
-.title_1 {
+.title-1 {
   font-family: var(--font-serif);
   color: var(--medium-grey);
   font-weight: bold;
@@ -47,14 +46,14 @@ h6,
 /* See also https://getbootstrap.com/docs/4.0/layout/grid/#grid-options       */
 /* ========================================================================== */
 
-.mainColumn {
+.maincolumn {
   margin: 0 auto 0 auto;
   display: flex;
   box-sizing: border-box;
 }
 
 @media (max-width: 575px) {
-  .mainColumn {
+  .maincolumn {
     width: 100%;
     max-width: 100%;
     padding-left: 1rem;
@@ -63,25 +62,25 @@ h6,
 }
 
 @media (min-width: 576px) {
-  .mainColumn {
+  .maincolumn {
     max-width: 525px;
   }
 }
 
 @media (min-width: 768px) {
-  .mainColumn {
+  .maincolumn {
     max-width: 705px;
   }
 }
 
 @media (min-width: 992px) {
-  .mainColumn {
+  .maincolumn {
     max-width: 945px;
   }
 }
 
 @media (min-width: 1200px) {
-  .mainColumn {
+  .maincolumn {
     max-width: 1125px;
   }
 }
@@ -108,7 +107,7 @@ header ul {
 /* On the blog, currenctly (04/2020) used in the footer into "Contactez-nous" */
 /* ========================================================================== */
 
-a.btn_dark_grey {
+.btn-dark-grey {
   position: relative;
   display: block;
   z-index: 0;
@@ -122,26 +121,26 @@ a.btn_dark_grey {
 
   transition: color 0.3s;
 }
-a.btn_dark_grey:hover {
+.btn-dark-grey:hover {
   color: white;
 }
 
-a.btn_dark_grey > svg {
+.btn-dark-grey-svg {
   width: 0.5rem;
   margin-left: 1.5rem;
   stroke: var(--medium-grey);
   transition: stroke 0.5s;
 }
-a.btn_dark_grey:hover > svg {
+.btn-dark-grey:hover > .btn-dark-grey-svg {
   stroke: white;
 }
 
-a.btn_dark_grey > svg > path.st0 {
+.btn-dark-grey-svg-path {
   fill: none;
   stroke-width: 3;
 }
 
-a.btn_dark_grey::after {
+.btn-dark-grey::after {
   content: '';
   background-color: var(--medium-grey);
 
@@ -155,7 +154,7 @@ a.btn_dark_grey::after {
   transition: width 0.3s;
 }
 
-a.btn_dark_grey:hover::after {
+.btn-dark-grey:hover::after {
   width: 100%;
 }
 
