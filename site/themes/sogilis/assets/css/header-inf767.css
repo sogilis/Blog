@@ -134,17 +134,16 @@ header {
 
 .header-mobile-navmenu-link {
   color: var(--wolf-blue);
-  font-family: var(--font-serif);
-  font-weight: 800;
+  font-weight: 600;
 }
 @media (max-width: 575px) {
   .header-mobile-navmenu-link {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 576px) {
   .header-mobile-navmenu-link {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 .header-mobile-navmenu-link:active {
