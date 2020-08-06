@@ -16,17 +16,13 @@ footer {
 
 /* Addresses */
 /* ================ */
-#sofooterContactgrid .adresses {
-  color: var(--medium-grey);
-}
 
-#sofooterContactgrid .adresses > p:nth-of-type(1) {
+.sofooterAddressName {
   font-size: 0.9em;
   font-weight: 700;
   margin-bottom: 0;
-  color: var(--medium-grey);
 }
-#sofooterContactgrid .adresses > p:nth-of-type(1)::before {
+.sofooterAddressName::before {
   content: '';
   display: block;
   width: 0.8em;
@@ -42,27 +38,28 @@ footer {
   margin-top: 0.9em;
 }
 
-#sofooterContactgrid .adresses > p:nth-of-type(2) {
+.sofooterAddressDetail {
   font-size: 0.9rem;
   font-weight: 400;
 }
+
 /* List */
 /* ===== */
-#sofooter .liens_pages > ul {
+.sofooterNav {
   padding-left: 2rem;
 }
-#sofooter .liens_pages li {
+.sofooterNavLi {
   margin-bottom: 1rem;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-#sofooter .liens_pages a {
+.sofooterNavAnchor {
   color: var(--medium-grey);
   transition: color 0.3s;
 }
 
-#sofooter .liens_pages a:hover {
+.sofooterNavAnchor:hover {
   color: var(--wolf-blue);
 }
 
@@ -112,9 +109,6 @@ footer {
   font-weight: 400;
   display: flex;
 }
-#sofooterSubfooter > a:nth-child(2) {
-  color: var(--medium-grey);
-}
 @media (max-width: 575px) {
   #sofooterSubfooter {
     flex-direction: column;
@@ -131,8 +125,8 @@ footer {
 /* Definition of the inner grid of 'Contact' */
 /* ========================================================================== */
 
-#sofooterContactgrid {
-  grid-area: sofooterContactgrid;
+#sofooterSubgridadress {
+  grid-area: sofooterSubgridadress;
   display: grid;
   align-items: center;
   align-content: center;
@@ -141,46 +135,46 @@ footer {
 
 /* Title « contact » */
 /* ================= */
-#sofooterContactgridTitle {
-  grid-area: sofooterContactgridTitle;
+#sofooterSubgridadressTitle {
+  grid-area: sofooterSubgridadressTitle;
   margin-bottom: 0;
   margin-left: 0;
 }
 
 /* Contact us link, with border*/
 /* =========================== */
-#sofooterContactgridContactus {
-  grid-area: sofooterContactgridContactus;
+#sofooterSubgridadressContactus {
+  grid-area: sofooterSubgridadressContactus;
   max-width: 13rem;
 }
 
 /* Social networks icônes (twitter + linkedin) */
 /* =========================================== */
-#sofooterContactgridSocialnetwork {
-  grid-area: sofooterContactgridSocialnetwork;
+#sofooterSubgridadressSocialnetwork {
+  grid-area: sofooterSubgridadressSocialnetwork;
 }
-#sofooterContactgridSocialnetwork svg {
+.sofooterSubgridadressSocialnetworkSvg {
   width: 2rem;
   margin-bottom: 1rem;
 }
-#sofooterContactgridSocialnetwork svg > path {
+.sofooterSubgridadressSocialnetworkSvg > path {
   fill: #a7e4ea;
   transition: fill 0.3s;
 }
-#sofooterContactgridSocialnetwork svg:hover > path {
+.sofooterSubgridadressSocialnetworkSvg:hover > path {
   fill: #016099;
 }
 
 /* Grenoble address */
 /* ================ */
-#sofooterContactgridGrenoble {
-  grid-area: sofooterContactgridGrenoble;
+#sofooterSubgridadressGrenoble {
+  grid-area: sofooterSubgridadressGrenoble;
 }
 
 /* Lyon address */
 /* ================ */
-#sofooterContactgridLyon {
-  grid-area: sofooterContactgridLyon;
+#sofooterSubgridadressLyon {
+  grid-area: sofooterSubgridadressLyon;
 }
 
 /* ========================================================================== */
@@ -194,7 +188,7 @@ footer {
 
   #sofooter {
     grid-template-areas:
-      'sofooterContactgrid'
+      'sofooterSubgridadress'
       'sofooterServices'
       'sofooterCompany'
       'sofooterHr'
@@ -209,23 +203,23 @@ footer {
   /* Inner grid of 'Contact' */
   /* ======================= */
 
-  #sofooterContactgrid {
+  #sofooterSubgridadress {
     grid-template-areas:
-      'sofooterContactgridTitle'
-      'sofooterContactgridContactus'
-      'sofooterContactgridSocialnetwork'
-      'sofooterContactgridGrenoble'
-      'sofooterContactgridLyon';
+      'sofooterSubgridadressTitle'
+      'sofooterSubgridadressContactus'
+      'sofooterSubgridadressSocialnetwork'
+      'sofooterSubgridadressGrenoble'
+      'sofooterSubgridadressLyon';
   }
 
-  #sofooterContactgridContactus,
-  #sofooterContactgridSocialnetwork,
-  #sofooterContactgridGrenoble,
-  #sofooterContactgridLyon {
+  #sofooterSubgridadressContactus,
+  #sofooterSubgridadressSocialnetwork,
+  #sofooterSubgridadressGrenoble,
+  #sofooterSubgridadressLyon {
     margin-left: 2rem;
   }
 
-  #sofooterContactgridContactus {
+  #sofooterSubgridadressContactus {
     margin: 2rem 0 2rem 2rem;
   }
 }
@@ -236,7 +230,7 @@ footer {
 
   #sofooter {
     grid-template-areas:
-      'sofooterContactgrid  sofooterContactgrid'
+      'sofooterSubgridadress  sofooterSubgridadress'
       'sofooterServices     sofooterCompany'
       'sofooterHr           sofooterHr'
       'sofooterSubfooter    sofooterSubfooter';
@@ -247,15 +241,15 @@ footer {
   /* Inner grid of 'Contact' */
   /* ======================= */
 
-  #sofooterContactgrid {
+  #sofooterSubgridadress {
     grid-template-areas:
-      'sofooterContactgridTitle      sofooterContactgridTitle'
-      'sofooterContactgridContactus  sofooterContactgridSocialnetwork'
-      'sofooterContactgridGrenoble   sofooterContactgridLyon';
+      'sofooterSubgridadressTitle      sofooterSubgridadressTitle'
+      'sofooterSubgridadressContactus  sofooterSubgridadressSocialnetwork'
+      'sofooterSubgridadressGrenoble   sofooterSubgridadressLyon';
     grid-template-columns: 50% 50%;
   }
 
-  #sofooterContactgrid > div {
+  #sofooterSubgridadress > div {
     margin: 2rem 0 2rem 2rem;
   }
 }
@@ -266,7 +260,7 @@ footer {
 
   #sofooter {
     grid-template-areas:
-      'sofooterLogo        .                   sofooterContactgrid   sofooterContactgrid'
+      'sofooterLogo        .                   sofooterSubgridadress   sofooterSubgridadress'
       '.                   .                   sofooterServices      sofooterCompany'
       'sofooterHr          sofooterHr          sofooterHr            sofooterHr'
       'sofooterSubfooter   sofooterSubfooter   sofooterSubfooter     sofooterSubfooter';
@@ -283,10 +277,10 @@ footer {
   /* Inner grid of 'Contact' */
   /* ======================= */
 
-  #sofooterContactgrid {
+  #sofooterSubgridadress {
     grid-template-areas:
-      'sofooterContactgridTitle      sofooterContactgridTitle          sofooterContactgridTitle     sofooterContactgridTitle'
-      'sofooterContactgridContactus  sofooterContactgridSocialnetwork  sofooterContactgridGrenoble  sofooterContactgridLyon';
+      'sofooterSubgridadressTitle      sofooterSubgridadressTitle          sofooterSubgridadressTitle     sofooterSubgridadressTitle'
+      'sofooterSubgridadressContactus  sofooterSubgridadressSocialnetwork  sofooterSubgridadressGrenoble  sofooterSubgridadressLyon';
     grid-template-columns: auto auto 30% 30%;
   }
 }
