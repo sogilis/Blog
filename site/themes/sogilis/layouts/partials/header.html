@@ -2,17 +2,17 @@
   <!-- ======================================================================= -->
   <!-- Menu Desktop (display >= 576 px) -->
   <!-- ======================================================================= -->
-  <div id="navBarDesktop" class="mainColumn">
-    <a id="soheaderLogo" href="index.html">
+  <nav id="navBarDesktop" class="mainColumn">
+    <a id="navBarDesktopLeft" href="/index.html">
       <img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}" />
     </a>
-    <nav>
-      <div class="dropdown">
+    <div id="navBarDesktopRight">
+      <div id="navBarDesktopDropdown">
         <a
           class="bar-deco bar-deco-hover"
         >
             {{ i18n "services"}}</a>
-        <div class="dropdown-content">
+        <div id="navBarDesktopDropdownContent">
           <a
             class="bar-deco bar-deco-hover"
             href="https://sogilis.fr/services-applications-cloud-native.html"
@@ -45,8 +45,8 @@
       >
         {{ i18n "contact" }}
       </a>
-    </nav>
-  </div>
+    </div>
+  </nav>
 
   <!-- ======================================================================= -->
   <!-- Menu Mobile (dispaly < 576 px) -->

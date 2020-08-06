@@ -2,24 +2,25 @@ header {
   height: 5rem;
   margin-top: 2rem;
 }
-header > div#navBarMobile,
-header > div.navBarMobile_scroll {
+#navBarMobile,
+.navBarMobile_scroll {
   display: none;
 }
 
 /* ========================================================================== */
 /* Logo sogilis on the left */
 /* ========================================================================== */
-header > div#navBarDesktop {
+#navBarDesktop {
+  display: flex;
   height: 100%;
 }
 
-header > div#navBarDesktop > a#soheaderLogo {
+#navBarDesktopLeft {
   width: 15%;
   padding: 1rem 0 1rem 0;
 }
 
-header > div#navBarDesktop > a > img {
+#navBarDesktopLeft > img {
   height: 100%;
 }
 
@@ -27,7 +28,7 @@ header > div#navBarDesktop > a > img {
 /* Navigation links, on the right */
 /* ========================================================================== */
 
-header > div#navBarDesktop > nav {
+#navBarDesktopRight {
   display: flex;
   align-items: center;
   font-size: 0.9rem;
@@ -37,8 +38,7 @@ header > div#navBarDesktop > nav {
   margin-right: -1.5rem;
 }
 
-header > div#navBarDesktop > nav a[href],
-header > div#navBarDesktop > nav > div.dropdown > a {
+#navBarDesktopRight a {
   position: relative;
 
   /* As it, on hoover, the small bar appears */
@@ -48,30 +48,27 @@ header > div#navBarDesktop > nav > div.dropdown > a {
   background-color: transparent;
   font-weight: 600;
   cursor: pointer;
-}
 
-header > div#navBarDesktop > nav > a {
-  margin-left: 4rem;
-}
-
-header > div#navBarDesktop > nav > a,
-header > div#navBarDesktop > nav > div.dropdown > a {
   color: var(--wolf-blue);
+}
+
+#navBarDesktopRight > a {
+  margin-left: 4rem;
 }
 
 /* Dropdown links (hidden by default) */
 /* ================================== */
 
-header > div#navBarDesktop > nav > div.dropdown {
+#navBarDesktopDropdown {
   height: 100%;
   display: flex;
 }
 
-header > div#navBarDesktop > nav > div.dropdown > a {
+#navBarDesktopDropdown > a {
   align-self: center;
 }
 
-header > div#navBarDesktop > nav > div.dropdown > div.dropdown-content {
+#navBarDesktopDropdownContent {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -94,7 +91,7 @@ header > div#navBarDesktop > nav > div.dropdown > div.dropdown-content {
 }
 
 /* Show the dropdown menu on hover */
-header > div#navBarDesktop > nav > div.dropdown:hover > div.dropdown-content {
+#navBarDesktopDropdown:hover > #navBarDesktopDropdownContent {
   display: flex;
   visibility: visible;
   opacity: 1;
@@ -102,7 +99,7 @@ header > div#navBarDesktop > nav > div.dropdown:hover > div.dropdown-content {
 }
 
 /* Links inside the dropdown */
-header > div#navBarDesktop > nav > div.dropdown > div.dropdown-content > a {
+#navBarDesktopDropdownContent > a {
   color: black;
   margin: 1rem auto;
 }
