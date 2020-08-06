@@ -7,14 +7,14 @@ header {
   background-color: white;
 }
 
-#headerDesktop,
-#headerMobile {
+#header-desktop,
+#header-mobile {
   justify-content: space-between;
   height: 100%;
 }
 
 /* When we scroll */
-.headerScrollstate {
+.header--scrollstate {
   margin-top: 0;
   box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.15);
   transition: margin-top 0.5s, box-shadow 0.5s;
