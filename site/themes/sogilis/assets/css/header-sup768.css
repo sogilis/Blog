@@ -2,25 +2,24 @@ header {
   height: 5rem;
   margin-top: 2rem;
 }
-#navBarMobile,
-.navBarMobile_scroll {
+#headerMobile {
   display: none;
 }
 
 /* ========================================================================== */
 /* Logo sogilis on the left */
 /* ========================================================================== */
-#navBarDesktop {
+#headerDesktop {
   display: flex;
   height: 100%;
 }
 
-#navBarDesktopLeft {
+#headerDesktopLeft {
   width: 15%;
   padding: 1rem 0 1rem 0;
 }
 
-#navBarDesktopLeft > img {
+#headerDesktopLeftLogo {
   height: 100%;
 }
 
@@ -28,7 +27,7 @@ header {
 /* Navigation links, on the right */
 /* ========================================================================== */
 
-#navBarDesktopRight {
+#headerDesktopRight {
   display: flex;
   align-items: center;
   font-size: 0.9rem;
@@ -38,37 +37,35 @@ header {
   margin-right: -1.5rem;
 }
 
-#navBarDesktopRight a {
+.headerDesktopRightText {
   position: relative;
 
   /* As it, on hoover, the small bar appears */
   padding-right: 1.5rem;
 
-  border: unset;
   background-color: transparent;
   font-weight: 600;
   cursor: pointer;
-
-  color: var(--wolf-blue);
 }
 
-#navBarDesktopRight > a {
+.headerDesktopRightCategory {
   margin-left: 4rem;
+  color: var(--wolf-blue);
 }
 
 /* Dropdown links (hidden by default) */
 /* ================================== */
 
-#navBarDesktopDropdown {
+#headerDesktopDropdown {
   height: 100%;
   display: flex;
 }
 
-#navBarDesktopDropdown > a {
+#headerDesktopDropdownTitle {
   align-self: center;
 }
 
-#navBarDesktopDropdownContent {
+#headerDesktopDropdownContent {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -82,7 +79,7 @@ header {
   z-index: 1;
   white-space: nowrap;
 
-  transform: translateX(calc(-50% + 3rem));
+  transform: translateX(-25%);
   max-height: 15rem;
   overflow-y: hidden;
   transition: visibility 0s, opacity 0.3s linear, max-height 0.5s linear;
@@ -91,15 +88,19 @@ header {
 }
 
 /* Show the dropdown menu on hover */
-#navBarDesktopDropdown:hover > #navBarDesktopDropdownContent {
+#headerDesktopDropdown:hover > #headerDesktopDropdownContent {
   display: flex;
   visibility: visible;
   opacity: 1;
   max-height: 15rem;
 }
 
-/* Links inside the dropdown */
-#navBarDesktopDropdownContent > a {
-  color: black;
+.headerDesktopDropdownContentLink {
   margin: 1rem auto;
+}
+
+/* Links inside the dropdown */
+.headerDesktopDropdownContentLink,
+.headerDesktopDropdownContentLink:hover {
+  color: black;
 }

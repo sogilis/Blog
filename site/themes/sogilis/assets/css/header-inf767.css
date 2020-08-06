@@ -10,21 +10,21 @@ header {
   margin-top: 1rem;
 }
 
-#navBarDesktop {
+#headerDesktop {
   display: none;
 }
 
-#navBarMobile {
+#headerMobile {
   display: flex;
   align-items: center;
 }
 
-#navBarMobile > a {
+.headerMobileLink {
   height: 2rem;
 }
 
 /* When we scroll */
-.content_header_scroll {
+.headerScrollstate {
   /* Others declarations into header.html */
   padding: 0;
 }
@@ -34,7 +34,7 @@ header {
 /* Logo on the top left of the screen */
 /* =========================================================================== */
 
-#navBarMobile > a > img {
+#headerMobileLeftLogo {
   height: 122%;
 }
 
@@ -43,15 +43,15 @@ header {
 /* Describe the three bars icon */
 /* ========================================================================== */
 
-#headerMenuButtonMobile {
+#headerMobileThreebarbutton {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-#headerMenuButtonMobile::before,
-#headerMenuButtonMobile > div,
-#headerMenuButtonMobile::after {
+#headerMobileThreebarbutton::before,
+#headerMobileThreebarbuttonCentralbar,
+#headerMobileThreebarbutton::after {
   background-color: var(--dark-grey);
   border-radius: 1px;
   height: 0.1875rem;
@@ -63,15 +63,15 @@ header {
   transition: transform 0.3s;
 }
 
-#headerMenuButtonMobile::before,
-#headerMenuButtonMobile::after {
+#headerMobileThreebarbutton::before,
+#headerMobileThreebarbutton::after {
   content: ' ';
 }
 /* ========================================================================== */
 /* ========= Nav tag (not displayed when the page is loaded) ================ */
 /* ========================================================================== */
 
-#headerMainMenuMobile {
+#headerMobileNavmenu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,31 +98,30 @@ header {
 /* Center `ul` element in the page */
 /* ========================================================================== */
 
-/* The goal of this two `div` is simply to center the `ul` */
+/* The goal of this two `div` is to center the `ul` */
 /* between two `div`. */
-/* Only the first `div` contains elements. */
-#headerMainMenuMobile > div:nth-child(1),
-#headerMainMenuMobile > div:nth-child(3) {
+#headerMobileNavmenuLine,
+#headerMobileNavmenuEmptydiv {
   flex: 1 1 auto;
 }
 
-#headerMainMenuMobile > ul {
+#headerMobileNavmenuList {
   flex: 0 1 auto;
   /* Because of reboot.css */
   padding-left: 0;
 }
 
-/* The small green line in the first `div` */
+/* The small line in the first `div` */
 /* ========================================================================== */
 
-/* In this `div`, there is the green line */
+/* In this `div`, there is the line */
 /* (it's the pseudo-element `::before`) */
 /* This pseudo-element have `margin-top: 50%` */
-#headerMainMenuMobile > div:nth-child(1) {
+#headerMobileNavmenuLine {
   display: flex;
   align-items: center;
 }
-#headerMainMenuMobile > div:nth-child(1)::before {
+#headerMobileNavmenuLine::before {
   content: '';
   margin-top: 50%;
   width: 50vw;
@@ -133,31 +132,32 @@ header {
 /* Styles for `ul` element, with anchors */
 /* ========================================================================== */
 
-#headerMainMenuMobile a {
+.headerMobileNavmenuLink {
   color: var(--wolf-blue);
   font-family: var(--font-serif);
   font-weight: 800;
 }
 @media (max-width: 575px) {
-  #headerMainMenuMobile a {
+  .headerMobileNavmenuLink {
     font-size: 1.3rem;
   }
 }
 @media (min-width: 576px) {
-  #headerMainMenuMobile a {
+  .headerMobileNavmenuLink {
     font-size: 2rem;
   }
 }
-#headerMainMenuMobile li {
+.headerMobileNavmenuLink:active {
+  font-weight: 500;
+}
+.headerMobileNavmenuLink:hover {
+  text-decoration: underline;
+}
+
+.headerMobileNavmenuLi {
   padding: 0.5rem 0;
   /* Needed for animation, of `li` elements */
   transition: transform 400ms 510ms;
-}
-#headerMainMenuMobile a:active {
-  font-weight: 500;
-}
-#headerMainMenuMobile a:hover {
-  text-decoration: underline;
 }
 
 /*
@@ -165,16 +165,16 @@ header {
  * `menuMobileIsDisplayed` css class is append
  * =====================
  */
-#headerMainMenuMobile li:nth-child(odd) {
+.headerMobileNavmenuLi:nth-child(odd) {
   transform: translateX(30%);
 }
-#headerMainMenuMobile li:nth-child(even) {
+.headerMobileNavmenuLi:nth-child(even) {
   transform: translateX(-30%);
 }
 
 /* The last `li` tag is not animated */
 /* ===================== */
-#headerMainMenuMobile li:last-child {
+.headerMobileNavmenuLi:last-child {
   transform: none;
 }
 
@@ -195,22 +195,23 @@ header {
 /* Three lines icons are transformed to cross when menuMobileIsDisplayed */
 /* ========================================================================== */
 
-#headerMenuButtonMobile.menuMobileIsDisplayed {
+#headerMobileThreebarbutton.menuMobileIsDisplayed {
   /* Should be on top of all elements, even the `nav` element.. */
   z-index: 2;
 }
 
-#headerMenuButtonMobile.menuMobileIsDisplayed::before {
+#headerMobileThreebarbutton.menuMobileIsDisplayed::before {
   /* Following declaration is animated thanks `transition:` attribute */
   transform: rotate(45deg) translate(0.5rem, 0.5rem);
 }
 
-#headerMenuButtonMobile.menuMobileIsDisplayed::after {
+#headerMobileThreebarbutton.menuMobileIsDisplayed::after {
   /* Following declaration is animated thanks `transition:` attribute */
   transform: rotate(-45deg) translate(0.5rem, -0.5rem);
 }
 
-#headerMenuButtonMobile.menuMobileIsDisplayed > div {
+#headerMobileThreebarbutton.menuMobileIsDisplayed
+  > #headerMobileThreebarbuttonCentralbar {
   /* Following declaration is animated thanks `transition:` attribute */
   background-color: transparent;
 }
@@ -223,7 +224,7 @@ body.menuMobileIsDisplayed {
   overflow: hidden;
 }
 
-#headerMainMenuMobile.menuMobileIsDisplayed {
+#headerMobileNavmenu.menuMobileIsDisplayed {
   /* Should be above all other elements, except the cross button. */
   z-index: 1;
   /* Following declaration is animated thanks `transition:` attribute */
@@ -232,8 +233,8 @@ body.menuMobileIsDisplayed {
   transform: scale(1);
 }
 
-#headerMainMenuMobile.menuMobileIsDisplayed li:nth-child(odd),
-#headerMainMenuMobile.menuMobileIsDisplayed li:nth-child(even) {
+#headerMobileNavmenu.menuMobileIsDisplayed li:nth-child(odd),
+#headerMobileNavmenu.menuMobileIsDisplayed li:nth-child(even) {
   /* Following declaration is animated thanks `transition:` attribute */
   transform: translateX(0);
 }

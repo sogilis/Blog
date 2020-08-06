@@ -2,31 +2,57 @@
   <!-- ======================================================================= -->
   <!-- Menu Desktop (display >= 576 px) -->
   <!-- ======================================================================= -->
-  <nav id="navBarDesktop" class="mainColumn">
-    <a id="navBarDesktopLeft" href="/index.html">
-      <img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}" />
+  <nav id="headerDesktop" class="mainColumn">
+    <a id="headerDesktopLeft" href="/index.html">
+      <img
+        id="headerDesktopLeftLogo"
+        alt="Logo Sogilis"
+        src="{{ "images/logo_sogilis.svg" | relURL }}"
+      />
     </a>
-    <div id="navBarDesktopRight">
-      <div id="navBarDesktopDropdown">
-        <a
-          class="bar-deco bar-deco-hover"
+    <div id="headerDesktopRight">
+      <div id="headerDesktopDropdown">
+        <div
+          id="headerDesktopDropdownTitle"
+          class="
+            bar-deco
+            bar-deco-hover
+            headerDesktopRightCategory
+            headerDesktopRightText
+          "
         >
-            {{ i18n "services"}}</a>
-        <div id="navBarDesktopDropdownContent">
+          {{ i18n "services"}}
+        </div>
+        <div id="headerDesktopDropdownContent">
           <a
-            class="bar-deco bar-deco-hover"
+            class="
+              bar-deco
+              bar-deco-hover
+              headerDesktopDropdownContentLink
+              headerDesktopRightText
+            "
             href="https://sogilis.fr/services-applications-cloud-native.html"
           >
             {{ i18n "cloudNativeApplications" }}
           </a>
           <a
-            class="bar-deco bar-deco-hover"
+            class="
+              bar-deco
+              bar-deco-hover
+              headerDesktopDropdownContentLink
+              headerDesktopRightText
+            "
             href="https://sogilis.fr/services-embarques-et-iot.html"
           >
             {{ i18n "embeddedSoftwares" }}
           </a>
           <a
-            class="bar-deco bar-deco-hover"
+            class="
+              bar-deco
+              bar-deco-hover
+              headerDesktopDropdownContentLink
+              headerDesktopRightText
+            "
             href="https://sogilis.fr/services-logiciels-critiques.html"
           >
             {{ i18n "criticalSoftwares" }}
@@ -34,13 +60,23 @@
         </div>
       </div>
       <a
-        class="bar-deco bar-deco-hover"
+        class="
+          bar-deco
+          bar-deco-hover
+          headerDesktopRightCategory
+          headerDesktopRightText
+        "
         href="https://sogilis.fr/vision.html"
       >
         {{ i18n "ourVision" }}
       </a>
       <a
-        class="bar-deco bar-deco-hover"
+        class="
+          bar-deco
+          bar-deco-hover
+          headerDesktopRightCategory
+          headerDesktopRightText
+        "
         href="https://sogilis.fr/contact.html"
       >
         {{ i18n "contact" }}
@@ -52,7 +88,7 @@
   <!-- Menu Mobile (dispaly < 576 px) -->
   <!-- ======================================================================= -->
 
-  <div id="navBarMobile" class="mainColumn">
+  <div id="headerMobile" class="mainColumn">
     <!--
     In this screen size, we have three tags child
     On the top left, the icon of Sogilis
@@ -60,54 +96,80 @@
          this button is transormed to a cross and the nav button appears.
     When we click on the top right button, the tag <nav> appears smoothy.
     -->
-    <a href="https://sogilis.fr/index.html">
-      <img alt="Logo Sogilis" src="{{ "images/logo_sogilis.svg" | relURL }}" />
+    <a
+      class="headerMobileLink"
+      href="/index.html"
+    >
+      <img
+        id="headerMobileLeftLogo"
+        alt="Logo Sogilis"
+        src="{{ "images/logo_sogilis.svg" | relURL }}"
+      />
     </a>
-    <a id="headerMenuButtonMobile" href="#">
-      <div>&nbsp;</div>
+    <a
+      id="headerMobileThreebarbutton"
+      class="headerMobileLink"
+      href="#"
+    >
+      <div id="headerMobileThreebarbuttonCentralbar">&nbsp;</div>
     </a>
-    <!-- Navbar is displayed when we click on `headerMenuButtonMobile -->
-    <nav id="headerMainMenuMobile">
-      <div>
+    <!-- header is displayed when we click on `headerMobileThreebarbutton -->
+    <nav id="headerMobileNavmenu">
+      <div id="headerMobileNavmenuLine">
         <!--
-                In this `div`, there is the green line
-                (it's the pseudo-element `::before`)
-                This pseudo-element have `margin-top: 50%`
-              -->
+          In this `div`, there is the line
+          (it's the pseudo-element `::before`)
+          This pseudo-element have `margin-top: 50%`
+        -->
       </div>
-      <ul>
-        <li>
-          <a href="https://sogilis.fr/services-applications-cloud-native.html">
+      <ul id="headerMobileNavmenuList">
+        <li class="headerMobileNavmenuLi">
+          <a
+            class="headerMobileNavmenuLink"
+            href="https://sogilis.fr/services-applications-cloud-native.html"
+          >
             {{i18n "cloudNativeApplications" }}
           </a>
         </li>
-        <li>
-          <a href="https://sogilis.fr/services-embarques-et-iot.html">
+        <li class="headerMobileNavmenuLi">
+          <a
+            class="headerMobileNavmenuLink"
+            href="https://sogilis.fr/services-embarques-et-iot.html"
+          >
             {{ i18n "embeddedSoftwares" }}
           </a>
         </li>
-        <li>
-          <a href="https://sogilis.fr/services-logiciels-critiques.html">
+        <li class="headerMobileNavmenuLi">
+          <a
+            class="headerMobileNavmenuLink"
+            href="https://sogilis.fr/services-logiciels-critiques.html"
+          >
             {{ i18n "criticalSoftwares" }}
           </a>
         </li>
-        <li>
-          <a href="https://sogilis.fr/vision.html">
+        <li class="headerMobileNavmenuLi">
+          <a
+            class="headerMobileNavmenuLink"
+            href="https://sogilis.fr/vision.html"
+          >
             {{ i18n "ourVision" }}
           </a>
         </li>
         <li>
-          <a href="https://sogilis.fr/contact.html">
+          <a
+            class="headerMobileNavmenuLink"
+            href="https://sogilis.fr/contact.html"
+          >
             {{ i18n "contact" }}
           </a>
         </li>
       </ul>
-      <div>
+      <div id="headerMobileNavmenuEmptydiv2">
         <!--
-                The goal of this div is simply to center the `ul` element above
-                between two `div`.
-                (Into the first `div`, there is the green line).
-              -->
+          The goal of this div is simply to center the `ul` element above
+          between two `div`.
+          (Into the first `div`, there is the green line).
+        -->
       </div>
     </nav>
   </div>
