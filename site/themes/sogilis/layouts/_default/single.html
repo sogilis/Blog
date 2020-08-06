@@ -1,26 +1,26 @@
 {{ define "main" }}
 
-<article id="blog_articlepage">
-  <section id="blog_articlepage_header">
+<article id="articlepage">
+  <section id="articlepage-header">
     <!-- Illustration -->
     {{ with .Params.image }}
     <img
-      id="blog_articlepage_header_img"
-      class="blog_articlepage_img"
+      id="articlepage-header-img"
+      class="articlepage-img"
       alt="Illustration de l'article"
       src="{{ . | relURL }}"
       />
       {{ else }}
       <!-- Default illustration -->
     <img
-      id="blog_articlepage_header_img"
-      class="blog_articlepage_img"
+      id="articlepage-header-img"
+      class="articlepage-img"
       alt="Illustration de l'article"
       src="{{ "images/blog_preview_default.jpg" | relURL }}"
       />
       {{ end }}
-      <div id="blog_articlepage_header_title">
-        <h1 id="blog_articlepage_header_title_h1">{{ .Title }}</h1>
+      <div id="articlepage-header-title">
+        <h1 id="articlepage-header-title-h1">{{ .Title }}</h1>
         <p>
           {{ i18n "writtenBy" }}
           {{- with .Params.Author }}
@@ -39,28 +39,28 @@
       </div>
   </section>
 
-  <section id="blog_articlepage_content">
+  <section id="articlepage-content">
     {{ .Content }}
   </section>
 
   {{ with .Params.image }}
   <img
-    id="blog_articlepage_img_bottom"
-    class="blog_articlepage_img"
+    id="articlepage-img-bottom"
+    class="articlepage-img"
     alt="Illustration de l'article"
     src="{{ . | relURL }}"
     />
     {{ else }}
     <!-- Default illustration -->
   <img
-    id="blog_articlepage_img_bottom"
-    class="blog_articlepage_img"
+    id="articlepage-img-bottom"
+    class="articlepage-img"
     alt="Illustration de l'article"
     src="{{ "images/blog_preview_default.jpg" | relURL }}"
     />
     {{ end }}
 
-    <section id="blog_articlepage_comments">
+    <section id="articlepage-comments">
       {{ template "_internal/disqus.html" . }}
     </section>
 </article>
