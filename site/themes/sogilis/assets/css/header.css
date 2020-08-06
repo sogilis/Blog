@@ -7,14 +7,14 @@ header {
   background-color: white;
 }
 
-header > div {
+#navBarDesktop,
+#navBarMobile {
   justify-content: space-between;
   height: 100%;
-  display: flex;
 }
 
 /* When we scroll */
-header.content_header_scroll {
+.content_header_scroll {
   margin-top: 0;
   box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.15);
   transition: margin-top 0.5s, box-shadow 0.5s;
