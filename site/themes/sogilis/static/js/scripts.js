@@ -59,14 +59,14 @@ const throwError = (message) => {
   });
 
   /*
-   * Set Add or remove css class 'content_header_scroll' to header tag
+   * Set Add or remove css class 'headerScrollstate' to header tag
    * if window.scrollY > scrollMenuOffset
    */
   const testDisplayScrollMenu = (scrollMenuOffsetVar) => {
     if (window.scrollY > scrollMenuOffsetVar) {
-      header.classList.add('content_header_scroll');
+      header.classList.add('headerScrollstate');
     } else {
-      header.classList.remove('content_header_scroll');
+      header.classList.remove('headerScrollstate');
     }
   };
   // At initialisation
@@ -82,8 +82,8 @@ const throwError = (message) => {
  * horizontals lines
  */
 (() => {
-  const menuBtn = document.getElementById('headerMenuButtonMobile');
-  const menuMobile = document.getElementById('headerMainMenuMobile');
+  const menuBtn = document.getElementById('headerMobileThreebarbutton');
+  const menuMobile = document.getElementById('headerMobileNavmenu');
   const [body] = document.getElementsByTagName('body');
   if (menuBtn && menuMobile && body) {
     menuBtn.addEventListener('click', () => {
@@ -93,8 +93,8 @@ const throwError = (message) => {
     });
   } else {
     const message =
-      'No element with id "headerMenuButtonMobile" ' +
-      ' and / or "headerMainMenuMobile"';
+      'No element with id "headerMobileThreebarbutton" ' +
+      ' and / or "headerMobileNavmenu"';
     throwError(message);
   }
 })();
