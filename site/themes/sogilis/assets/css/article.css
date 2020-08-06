@@ -2,7 +2,7 @@
 /* =========================================================================== */
 /* TODO remove preceding comment when we will migrate to another tool */
 
-#blog_articlepage {
+#articlepage {
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ h6 {
 
 blockquote,
 pre,
-.blog_articlepage_img {
+.articlepage-img {
   box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.15);
 }
 
@@ -100,21 +100,21 @@ pre {
   border-left-color: var(--medium-blue);
 }
 
-#blog_articlepage a {
+#articlepage a {
   color: var(--wolf-blue);
   transition: color 0.3s;
 }
 
-#blog_articlepage a:hover {
+#articlepage a:hover {
   color: var(--dark-grey);
 }
 
-#blog_articlepage p {
+#articlepage p {
   hyphens: auto;
   text-align: justify;
 }
 @media (min-width: 768px) {
-  #blog_articlepage p {
+  #articlepage p {
     margin-left: 1.5rem;
   }
 }
@@ -122,24 +122,24 @@ pre {
 /* Section header */
 /* ========================================================================== */
 
-#blog_articlepage_header {
+#articlepage-header {
   display: flex;
   max-width: inherit;
   margin-bottom: 3rem;
   word-wrap: break-word;
 }
 
-#blog_articlepage_header_title {
+#articlepage-header-title {
   margin-left: 1.9rem;
 }
 
-#blog_articlepage_header_title_h1 {
+#articlepage-header-title-h1 {
   font-size: 2rem;
   color: var(--wolf-blue);
   font-weight: 600;
 }
 
-#blog_articlepage_header_title_h1::before {
+#articlepage-header-title-h1::before {
   content: '';
   position: absolute;
   height: 0.3rem;
@@ -151,23 +151,23 @@ pre {
 
 @media (min-width: 992px) {
   /* On the left */
-  #blog_articlepage_header_img {
+  #articlepage-header-img {
     max-width: 60%;
   }
   /* On the right */
-  #blog_articlepage_header_title {
+  #articlepage-header-title {
     max-width: 40%;
   }
 }
 
 @media (max-width: 991px) {
-  #blog_articlepage_header {
+  #articlepage-header {
     flex-direction: column;
   }
-  #blog_articlepage_header_title_h1 {
+  #articlepage-header-title-h1 {
     margin-top: 3rem;
   }
-  #blog_articlepage_header_img {
+  #articlepage-header-img {
     max-width: 100%;
   }
 }
@@ -176,25 +176,25 @@ pre {
 /* ========================================================================== */
 /* Waring: Some pictures could be to small in some screens */
 /* Like into http://blog.sogilis.fr/posts/2016-09-27-mise-place-livret-accueil/# */
-#blog_articlepage_content img {
+#articlepage-content img {
   max-width: 100%;
 }
 
 @media (min-width: 1300px) {
-  #blog_articlepage_content {
+  #articlepage-content {
     margin: 0 -1rem 0 3.75rem;
   }
 }
 
 /* Image on the bottom */
 /* ========================================================================== */
-#blog_articlepage_img_bottom {
+#articlepage-img-bottom {
   max-width: 100%;
 }
 
 /* Section comment */
 /* ========================================================================== */
 
-#blog_articlepage_comments {
+#articlepage-comments {
   margin-top: 3rem;
 }
