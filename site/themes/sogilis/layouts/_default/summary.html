@@ -1,4 +1,4 @@
-<a href="{{ .Permalink }}" class="blog_index_article">
+<a href="{{ .Permalink }}" class="blogindex-article">
   <div>
     <!-- Should be inner a div tag -->
     <!-- Otherwise "CSS Grid, grid item “height: 100%” not working in Chrome" -->
@@ -6,13 +6,13 @@
     <!-- See https://stackoverflow.com/questions/50691765/css-grid-grid-item-height-100-not-working-in-chrome -->
     {{ with .Params.image }}
     <img
-      class="blog_index_article__img"
+      class="blogindex-article-img"
       alt="Illustration de l'article"
       src="{{ . | relURL }}"
     />
     {{ else }}
     <img
-      class="blog_index_article__img"
+      class="blogindex-article-img"
       alt="Illustration de l'article"
       src="{{ "images/blog_preview_default.jpg" | relURL }}"
       />
@@ -20,15 +20,15 @@
   </div>
   <p class="
       title_1
-      blog_index_article__title
-      blog_index_article__text
+      blogindex-article-title
+      blogindex-article-text
      "
   >
     {{ .Title }}
   </p>
   <p class="
-      blog_index_article__readmore
-      blog_index_article__text
+      blogindex-article-readmore
+      blogindex-article-text
      "
   >
     {{ i18n "readMore" }}…

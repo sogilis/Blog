@@ -109,7 +109,7 @@ const throwError = (message) => {
   const titleMaxLength = 60;
   // `blogIndexArticleTitleAll' is never null, but could be empty.
   const blogIndexArticleTitleAll = document.querySelectorAll(
-    '.blog_index_article__title'
+    '.blogindex-article-title'
   );
   blogIndexArticleTitleAll.forEach((blogIndexArticleTitle) => {
     // `text' is never null, but could be empty string.

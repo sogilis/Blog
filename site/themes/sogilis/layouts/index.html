@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div id="blog_index">
+<div id="blogindex">
   {{ range (where .Site.AllPages.ByDate "Kind" "page").Reverse }}
   {{ .Render "summary" }}
   {{ end }}

@@ -5,7 +5,7 @@ main {
 /* The grid element on the index page */
 /* ========================================================================== */
 
-#blog_index {
+#blogindex {
   display: grid;
   grid-gap: 2em;
   grid-auto-rows: 22em;
@@ -13,13 +13,13 @@ main {
 }
 
 @media (min-width: 768px) {
-  #blog_index {
+  #blogindex {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 992px) {
-  #blog_index {
+  #blogindex {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -27,35 +27,35 @@ main {
 /* Each cell of the grid */
 /* ========================================================================== */
 
-.blog_index_article {
+.blogindex-article {
   display: grid;
   grid-template-rows: 11.7em 6.3em 2em;
   grid-gap: 0.5em;
   box-shadow: 0 0 1em 0.2em rgba(0, 0, 0, 0.15);
   text-decoration: none;
 }
-.blog_index_article:hover {
+.blogindex-article:hover {
   text-decoration: none;
 }
 
 /* Image */
 /* ========================================================================== */
 
-.blog_index_article__img {
+.blogindex-article-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: all 0.8s;
 }
 
-.blog_index_article:hover .blog_index_article__img {
+.blogindex-article:hover .blogindex-article-img {
   filter: grayscale(100%);
 }
 
 /* The title and 'Lire la suite */
 /* ========================================================================== */
 
-.blog_index_article__text {
+.blogindex-article-text {
   margin: 0 1.6em;
   transition: color 0.5s;
 }
@@ -63,20 +63,20 @@ main {
 /* The title */
 /* ========================================================================== */
 
-.blog_index_article__title {
+.blogindex-article-title {
   color: var(--dark-grey);
 }
 
 /* p is "Lire la suite" in French */
 /* ========================================================================== */
 
-.blog_index_article__readmore {
+.blogindex-article-readmore {
   font-weight: 500;
   color: var(--wolf-blue);
   text-align: right;
 }
 
-.blog_index_article:hover > .blog_index_article__readmore {
+.blogindex-article:hover > .blogindex-article-readmore {
   color: var(--light-electric-blue);
   text-decoration: underline;
 }
