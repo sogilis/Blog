@@ -14,7 +14,10 @@
     <section id="footer-subgridadress">
       <div id="footer-subgridadress-title" class="title-1 bar-deco">Contact</div>
 
-      <div id="footer-subgridadress-contactus">
+      <div
+        id="footer-subgridadress-contactus"
+        class="footer-subgridadress-largescreen2ndline"
+      >
         <a class="btn-dark-grey" href="https://sogilis.fr/contact.html">
           {{ i18n "contactUs" }}
           <svg
@@ -36,7 +39,10 @@
         </a>
       </div>
 
-      <div id="footer-subgridadress-socialnetwork">
+      <div
+        id="footer-subgridadress-socialnetwork"
+        class="footer-subgridadress-largescreen2ndline"
+      >
         {{ with $.Site.Params.twitter }}
         <a href="{{ . }}">
           <svg
@@ -91,7 +97,10 @@
         {{ end }}
       </div>
 
-      <div id="footer-subgridadress-grenoble">
+      <div
+        id="footer-subgridadress-grenoble"
+        class="footer-subgridadress-largescreen2ndline"
+      >
         <p class="footer-address-name">Sogilis Grenoble</p>
         <p class="footer-address-detail">
           4 avenue Doyen Louis Weil<br />
@@ -100,7 +109,10 @@
         </p>
       </div>
 
-      <div id="footer-subgridadress-lyon">
+      <div
+        id="footer-subgridadress-lyon"
+        class="footer-subgridadress-largescreen2ndline"
+      >
         <p class="footer-address-name">Sogilis Lyon</p>
         <p class="footer-address-detail">
           45 rue Sainte-Geneviève<br />
@@ -176,7 +188,12 @@
 
     <section id="footer-subfooter">
       <p>{{ i18n "allRightsReserved" }}</p>
-      <a href="">{{ i18n "LegalInfo" }}</a>
+      <a
+        href=""
+        class="footer-nav-a"
+      >
+        {{ i18n "LegalInfo" }}
+      </a>
     </section>
   </div>
 </footer>
