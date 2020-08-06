@@ -5,14 +5,32 @@
     <!-- (like in Safari) -->
     <!-- See https://stackoverflow.com/questions/50691765/css-grid-grid-item-height-100-not-working-in-chrome -->
     {{ with .Params.image }}
-    <img alt="Illustration de l'article" src="{{ . | relURL }}" />
+    <img
+      class="blog_index_article__img"
+      alt="Illustration de l'article"
+      src="{{ . | relURL }}"
+    />
     {{ else }}
     <img
+      class="blog_index_article__img"
       alt="Illustration de l'article"
       src="{{ "images/blog_preview_default.jpg" | relURL }}"
       />
     {{ end }}
   </div>
-  <p class="title_1 blog_index_article__title">{{ .Title }}</p>
-  <p class="blog_index_article__readmore">{{ i18n "readMore" }}…</p>
+  <p class="
+      title_1
+      blog_index_article__title
+      blog_index_article__text
+     "
+  >
+    {{ .Title }}
+  </p>
+  <p class="
+      blog_index_article__readmore
+      blog_index_article__text
+     "
+  >
+    {{ i18n "readMore" }}…
+  </p>
 </a>

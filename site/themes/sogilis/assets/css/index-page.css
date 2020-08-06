@@ -32,26 +32,30 @@ main {
   grid-template-rows: 11.7em 6.3em 2em;
   grid-gap: 0.5em;
   box-shadow: 0 0 1em 0.2em rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+.blog_index_article:hover {
+  text-decoration: none;
 }
 
 /* Image */
 /* ========================================================================== */
 
-.blog_index_article img {
+.blog_index_article__img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: all 0.8s;
 }
 
-.blog_index_article:hover img {
+.blog_index_article:hover .blog_index_article__img {
   filter: grayscale(100%);
 }
 
 /* The title and 'Lire la suite */
 /* ========================================================================== */
 
-.blog_index_article > p {
+.blog_index_article__text {
   margin: 0 1.6em;
   transition: color 0.5s;
 }
