@@ -113,7 +113,16 @@ header ul {
   z-index: 0;
 
   padding: 1rem 1.5rem;
-  border: solid var(--medium-grey) 0.2rem;
+
+  /*
+    On Chromium (not on Firefox), don't use `rem` because otherwise
+    `.btn-dark-grey::after` (with `position: absolute`) don't fit content of
+    `.btn-dark-grey` (its parent). It's because in this case on Chromium, the
+    `border-size` should be a whole number
+    (NOT something like `.btn-dark-grey {border-size: 3.2px}`).
+    Probably on Chromium, in this case there is a bug with pixel number rounded.
+   */
+  border: 3px solid var(--medium-grey);
 
   font-size: 0.9rem;
   font-weight: 600;
