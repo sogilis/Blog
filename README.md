@@ -181,6 +181,32 @@ docker system prune
       - [Asciidoc](https://asciidoctor.org) with `.adoc` files
       - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
 
+   Here is a basic markdown template to start with:
+
+   ```markdown
+   ---
+   title: My article title
+   author: Author (author@sogilis.com)
+   date: 2020-08-20
+   image: /img/image-name.jpeg
+   categories:
+     - cat1
+     - cat2
+     - ...
+   tags:
+     - tag1
+     - tag2
+     - ...
+   ---
+
+   # A first title
+   Start writing your content here.
+   ```
+   Note that:
+   - the date should not be later than the current date, otherwise the article will not be published (and therefore not visible from the home page in the article list)
+   - you can set any values to categories and tags. Look at values that have been used in previous articles to avoid duplicates
+   - put your images under the `site/static/img/` directory
+
 3. See the result at [http://localhost:1313](http://localhost:1313)
 
 4. Finalize your article, and see the output in real time.
