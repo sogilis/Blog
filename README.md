@@ -199,9 +199,10 @@ docker system prune
      - ...
    ---
 
-   # A first title
+   ## A first subtitle
    Start writing your content here.
    ```
+
    Note that:
    - the date should not be later than the current date, otherwise the article will not be published (and therefore not visible from the home page in the article list)
    - you can set any values to categories and tags. Look at values that have been used in previous articles to avoid duplicates
