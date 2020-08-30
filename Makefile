@@ -1,5 +1,7 @@
 .DEFAULT_GOAL := start
 
+.PHONY: start start_netlify build build_preview clean _common _build_common
+
 # ==============================================================================
 # Run Netlify in watch mode
 # ==============================================================================
@@ -51,7 +53,7 @@ clean:
 
 _common:
 	make clean
-	yarn install
+	yarn install --network-timeout 3000 --prefer-offline
 	yarn lint
 	yarn prettier:check
 	# reboot.css

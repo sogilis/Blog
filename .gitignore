@@ -35,7 +35,8 @@
 # Idea IntelliJ
 /.idea/
 
-# Only yarn is advise.
+# We exclude npm lock file in case of `npm` was accidentally used by an user
+# to avoid accidental push of this file.
 /package-lock.json
 
 # External dependencies copied from ./node_modules that we won't have in our
