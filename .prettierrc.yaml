@@ -1,0 +1,43 @@
+# The configuration file will be resolved starting from the location of the file
+# being formatted, and searching up the file tree until a config file is (or
+# isn’t) found.
+# https://prettier.io/docs/en/configuration.html
+
+printWidth: 80
+
+# Specify the number of spaces per indentation-level.
+tabWidth: 2
+
+# Indent lines with tabs instead of spaces.
+useTabs: false
+
+# Print semicolons at the ends of statements.
+semi: true
+
+# Use single quotes instead of double quotes.
+singleQuote: true
+
+# Change when properties in objects are quoted.
+#     "as-needed" - Only add quotes around object properties where required.
+quoteProps: 'as-needed'
+
+# Print trailing commas wherever possible when multi-line. (A single-line array,
+# for example, never gets trailing commas.)
+# Trailing commas where valid in ES5 (objects, arrays, etc.)
+trailingComma: 'es5'
+
+# Print spaces between brackets in object literals.
+#     true - Example: { foo: bar }.
+bracketSpacing: true
+
+# Include parentheses around a sole arrow function parameter.
+#     "always" - Always include parens. Example: (x) => x
+# At first glance, avoiding parentheses may look like a better choice because of
+# less visual noise. However, when Prettier removes parentheses, it becomes
+# harder to add type annotations, extra arguments or default values as well as
+# making other changes. Consistent use of parentheses provides a better
+# developer experience when editing real codebases, which justifies the default
+# value for the option.
+arrowParens: 'always'
+
+endOfLine: 'lf'
