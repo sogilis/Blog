@@ -1,3 +1,15 @@
+---
+title: « Behavior Driven Development » : Apport en Qualité et en Efficience dans le développement logiciel
+author: Amin
+date: 2020-09-08
+image: /img/2020_09_09_bdd.png
+categories:
+  - DÉVELOPPEMENT
+tags:
+  - code
+  - dev
+
+---
 # <div align="center">« Behavior Driven Development » :  Apport en Qualité et en Efficience dans le développement logiciel</div>
 
 #### <div align="center">Amin ELMRABTI</div>
