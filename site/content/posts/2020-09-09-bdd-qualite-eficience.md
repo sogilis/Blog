@@ -22,7 +22,7 @@ tags:
 
 <div align="justify"> 
 
-Dans l’industrie logicielle, les facteurs de dépassement de coûts, et d’une manière générale de l’échec d’un projet de développement sont multiples. Parmi les principales raisons, et selon les études réalisées durant ces dernières années (Standish Group Chaos Report [ChaosReport]), on retrouve les spécifications incomplètes, non claires, ambiguës qui peuvent changer durant le cycle de vie de développement logiciel (Scope Creep) (figure 1). On retrouve également le manque de l’implication des utilisateurs dans les phases de capture de besoins et de validation.</div>
+Dans l’industrie logicielle, les facteurs de dépassement de coûts, et d’une manière générale de l’échec d’un projet de développement sont multiples. Parmi les principales raisons, et selon les études réalisées durant ces dernières années (Standish Group Chaos Report [ChaosReport]), on retrouve les spécifications incomplètes, non claires, ambiguës qui peuvent changer durant le cycle de vie de développement logiciel (Scope Creep) (figure 1). On retrouve également le manque d’implication des utilisateurs dans les phases de capture de besoins et de validation.</div>
 
 ![Figure 1. Principaux facteurs d’échec dans le développement logiciel](/img/2020_09_09_bdd_figure_1.png)
 
@@ -65,7 +65,7 @@ Le scénario de test est parfois suivi par un jeu de données qui complète l’
 
 La figure 2 illustre un exemple de scénario de test qui se déroule autant de fois que de nombre de lignes dans le jeu de données avec XReq.
 
-Des Frameworks de développement BDD existent comme Cucumber [Cucumber], XReq [Xreq], SpecFlow [Specflow], Jbehave [Jbehave] et Concordion [Concordion]. Cucumber est le Framework le plus connu, mais son utilisation est limitée aux applications Web. 
+Des Frameworks de développement BDD existent comme Cucumber [Cucumber], XReq [Xreq], SpecFlow [Specflow], Jbehave [Jbehave] et Concordion [Concordion]. Cucumber est le Framework le plus connu, qui propose différentes implémentations pour de nombreux langages de programmation (Java, Go, Javascript, etc.). 
 
 SpecFlow a été développé en s’inspirant de Cucumber et utilise le langage Gherkin dans la description des scénarios de tests. Il est dédié aux applications implémentées en .net C# et s’interface avec Visual Studio. Concordion [Concordion] est un Framework de BDD écrit en Java et intègre le Framework de tests unitaires JUnit.
 
@@ -77,7 +77,7 @@ XReq [XReq] est un Framework de test dédié au développement de logiciels emba
 
 <div align="justify">
 
-La plupart des Frameworks BDD ne se contentent pas de l’aspect documentaire dans l’écriture des scénarios de tests, mais fournissent des outils pour générer le code des squelettes des tests à partir des scénarios. Ils fournissent également des moteurs d’exécution des tests afin de faciliter l’automatisation de l’exécution des scénarios de tests avec le jeu de données correspondant. La figure 4 illustre le cycle de vie d’un scénario de test dans les Frameworks BDD avancés [Cocumber] [Xreq] [SpecFlow] depuis l’écriture des scénarios des tests jusqu’à la génération du rapport des tests, en passant par la génération du code des tests, leurs implémentations et leurs exécutions.
+La plupart des Frameworks BDD ne se contentent pas de l’aspect documentaire dans l’écriture des scénarios de tests, mais fournissent des outils pour générer le code des squelettes des tests à partir des scénarios. Ils fournissent également des moteurs d’exécution des tests afin de faciliter l’automatisation de l’exécution des scénarios de tests avec le jeu de données correspondant. La figure 4 illustre le cycle de vie d’un scénario de test dans les Frameworks BDD avancés [Cucumber] [Xreq] [SpecFlow] depuis l’écriture des scénarios des tests jusqu’à la génération du rapport des tests, en passant par la génération du code des tests, leurs implémentations et leurs exécutions.
 </div>
 
 ![Figure 4. Cycle de vie d’un scénario de Test dans un Framework BDD](/img/2020_09_09_bdd_figure_4.png)
@@ -89,19 +89,19 @@ La plupart des Frameworks BDD ne se contentent pas de l’aspect documentaire da
 
 L’utilisation des techniques BDD dans le développement logiciel pourrait contribuer à l’amélioration de la qualité logicielle et à l’efficience des équipes de développement. Cela peut se traduire à plusieurs niveaux, pour plusieurs activités techniques :
 
-**Maîtriser le niveau de la qualité logicielle et améliorer la qualité des exigences** : La perte de la maîtrise de la qualité d’un logiciel est souvent liée à l’accumulation des anomalies. Ces anomalies sont souvent découvertes tard dans le cycle de vie de développement logiciel et deviennent compliquées à corriger. Elles deviennent coûteuses car les équipes de développement ne disposent pas d’assez de moyens, en termes de tests, pour vérifier la non régression du logiciel suite à la livraison d’un correctif. Une des causes racines de la perte ou la non maîtrise d’un logiciel est l’absence de tests logiciels automatiques couvrant les principales fonctionnalités. 
+**Maîtriser le niveau de la qualité logicielle et améliorer la qualité des exigences** : la perte de la maîtrise de la qualité d’un logiciel est souvent liée à l’accumulation des anomalies. Ces anomalies sont souvent découvertes tard dans le cycle de vie de développement logiciel et deviennent compliquées à corriger. Elles deviennent coûteuses car les équipes de développement ne disposent pas de moyens suffisants, en termes de tests, pour vérifier la non régression du logiciel suite à la livraison d’un correctif. Une des causes racines de la perte ou la non maîtrise d’un logiciel est l’absence de tests logiciels automatiques couvrant les principales fonctionnalités. 
 
 L’application d’une approche BDD durant la phase de capture de besoins permet d’écrire les scénarios de tests à implémenter dans un second temps. Les scénarios de tests écrits en BDD seront les tests de non régression qui vont aider à garantir un niveau de fiabilité du logiciel et à le maintenir plus facilement.
 
 D’un autre côté, nous savons qu’une grande partie des anomalies est due à une incompréhension des exigences. Ces anomalies sont introduites tôt dans le cycle de vie du logiciel. Pour réduire le nombre d’anomalies liées à une mauvaise compréhension des exigences, il faut recourir à des techniques BDD. En effet, les scénarios de tests BDD permettent de vérifier que les exigences ont été correctement écrites et comprises par les équipes de développement avant de procéder à leurs implémentations. Cette phase de vérification, au moyen de scénarios de tests BDD, peut amener à itérer et à améliorer les exigences tant au niveau fonctionnel qu’au niveau des besoin d’utilisabilité.
 
-**Améliorer la qualité des tests logiciels** : Généralement, les tests sont écrits par les développeurs après l’implémentation des fonctionnalités. Les développeurs ont toujours tendance à écrire les tests selon leur compréhension des exigences et en fonction des développements qu’ils ont menés. De plus, il n’y a souvent pas d’activités techniques pour vérifier les tests écrits par les développeurs. Cela peut amener à disposer de tests incomplets, ou mal écrits, en face d’une implémentation incorrecte des exigences. Pourtant, les indicateurs de qualité seraient au vert puisque tous les tests passent et on peut disposer d’un taux élevé de couverture de code.
+**Améliorer la qualité des tests logiciels** : généralement, les tests sont écrits par les développeurs après l’implémentation des fonctionnalités. Les développeurs ont toujours tendance à écrire les tests selon leur compréhension des exigences et en fonction des développements qu’ils ont menés. De plus, il n’y a souvent pas d’activités techniques pour vérifier les tests écrits par les développeurs. Cela peut amener à disposer de tests incomplets, ou mal écrits, en face d’une implémentation incorrecte des exigences. Pourtant, les indicateurs de qualité seraient au vert puisque tous les tests passent et on peut disposer d’un taux élevé de couverture de code.
 
 Une approche BDD peut apporter des solutions à ce niveau en améliorant d’une manière considérable la qualité du test logiciel. En effet, l’amélioration de la qualité des tests commence déjà par la lisibilité du format du test. Il est beaucoup plus simple de vérifier un scénario de test écrit en langage naturel Gherkin et de vérifier le jeu de données associé (voir Figure 2), que de vérifier des tests écrits en code avec un jeu de données réparti sur plusieurs lignes de code. Le format d’écriture d’un scénario de test BDD favorise la vérification de la complétude des jeux de données. Les tests BDD sont encore plus simples à lire et à vérifier et sont plus rapides à écrire et à lire.
 
-Les scénarios de tests BDD permettent aux équipes de développement d’apporter plus d’expressivité dans l’écriture des scénarios de tests. En effet, quand les développeurs implémentent les tests après l’implémentation des fonctionnalités, ils sont limités par l’expressivité des composants logiciels déjà implémentés. En écrivant les scénarios de tests au même moment que les exigences, ils peuvent écrire des scénarios qui appellent à la fois des composants logiciels et matériels. L’implémentation de ces tests passent par l’implémentation de composant Stub. Ces pratiques favorisent l’implémentation de tests ayant un important taux de couverture fonctionnelle. Le taux de couverture fonctionnelle est un indicateur pertinent de qualité et pourrait être amélioré et piloté par l’utilisation des techniques de BDD.
+Les scénarios de tests BDD permettent aux équipes de développement d’apporter plus d’expressivité dans l’écriture des scénarios de tests. En effet, quand les développeurs implémentent les tests après l’implémentation des fonctionnalités, ils sont limités par l’expressivité des composants logiciels déjà implémentés. En écrivant les scénarios de tests au même moment que les exigences, ils peuvent écrire des scénarios qui appellent à la fois des composants logiciels et matériels. L’implémentation de ces tests passent par l’implémentation de composants Stub. Ces pratiques favorisent l’implémentation de tests ayant un important taux de couverture fonctionnelle. Le taux de couverture fonctionnelle est un indicateur pertinent de qualité et pourrait être amélioré et piloté par l’utilisation des techniques de BDD.
 
-**Efficience des équipes de développement** : La mise en œuvre d’une approche BDD permet aux équipes de développement d’exploiter directement des scénarios de tests validés sans passer du temps à les écrire. Nous pensons que les scénarios de tests doivent être écrits par l’équipe fonctionnelle et que l’équipe de développement doit se contenter d’implémenter ces scénarios sans les modifier. Ainsi, l’équipe de développement se contente de générer le code des tests, de les compléter, pour ensuite les exécuter et générer le rapport de tests complet. 
+**Efficience des équipes de développement** : la mise en œuvre d’une approche BDD permet aux équipes de développement d’exploiter directement des scénarios de tests validés sans passer du temps à les écrire. Nous pensons que les scénarios de tests doivent être écrits par l’équipe fonctionnelle et que l’équipe de développement doit se contenter d’implémenter ces scénarios sans les modifier. Ainsi, l’équipe de développement se contente de générer le code des tests, de les compléter, pour ensuite les exécuter et générer le rapport de tests complet. 
 
 L’utilisation des outils automatiques des Framework BDD (génération de code des tests, exécution du jeu de données entier, génération des rapports de tests (Voir figure 4)) permet à l’équipe de développement de gagner en efficience.  Le BDD n’est plus seulement une démarche pour améliorer et vérifier la capture des besoins mais un ensemble d’outils pour optimiser le cycle de vie de développement logiciel. Il permet de laisser une trace documentaire à jour aidant à maintenir l’intégrité des développements.
 </div>
@@ -110,7 +110,7 @@ L’utilisation des outils automatiques des Framework BDD (génération de code 
 
 <div align="justify">
 
-Pour certains projets, de certains acteurs industriels chez qui nous sommes intervenus, nous avons préconisé de remplacer la définition d’exigences par la description de scénarios de test. Un scénario de test complet avec un jeu de données complet peut remplacer une exigence. Cela peut être fait sous certaines conditions :
+Pour certains projets de certains acteurs industriels chez qui nous sommes intervenus, nous avons préconisé de remplacer la définition d’exigences par la description de scénarios de test. Un scénario de test complet avec un jeu de données complet peut remplacer une exigence. Cela peut être fait sous certaines conditions :
 
 -	L’équipe de développement doit maitriser les techniques BDD et être mature sur la technologie.
 -	L’équipe de développement doit mettre en place des standards d’architecture logicielle et d’écriture de scénario de tests pour maintenir l’intégrité et la cohérence des exigences. 
@@ -131,14 +131,14 @@ Dans cette section, et en partant de nos expériences de développement, nous pr
 Dans la norme DO-178C/ED12C, nous pouvons utiliser les techniques de BDD pour répondre à des objectifs de vérification des exigences de haut niveau de type HLR (High Level Requirement) et des exigences de bas niveau de type LLR (Low Level Requirement) (voir Figure 5.). Les scénarios de tests sont écrits pour produire les tests associés aux exigences (HLT : High Level Test et LLT : Low Level Test).
 </div>
 
-![Figure 5. Utilisation du BDD pour satisfaire des objectifs de vérification des HLT dans la DO-178C](/img/2020_09_09_bdd_figure_5.png)
+![Figure 5. Utilisation du BDD pour satisfaire des objectifs de vérification des HLT dans la DO-178C](/img/2020_09_09_bdd_figure_5.png){ width=50% }
 *Figure 5. Utilisation du BDD pour satisfaire des objectifs de vérification des HLT dans la DO-178C*
 
 <div align="justify">
 
-**High/Low Level requirements are accurate and consistent** : Grâce à une approche BDD où les scénarios de tests sont écrits en même temps que les exigences, nous pouvons nous assurer du niveau de précision de l’exigence en analysant les scénarios de tests associés ainsi que les jeux de données correspondants. Il s’agit de vérifier l’absence d’ambiguïté dans l’écriture des tests et de réaliser une analyse comportementale de l’exigence. L’activité de vérification consiste également à vérifier la cohérence entre l’exigence et le scénario de test en analysant la cohérence des entrées/sorties, la complétude des scénarios de tests, la couverture des classes d’équivalences et des valeurs limites. Le langage de description des scénarios de tests en BDD favorise ces vérifications grâce au format simple en lecture.
+**High/Low Level requirements are accurate and consistent** : grâce à une approche BDD où les scénarios de tests sont écrits en même temps que les exigences, nous pouvons nous assurer du niveau de précision de l’exigence en analysant les scénarios de tests associés ainsi que les jeux de données correspondants. Il s’agit de vérifier l’absence d’ambiguïté dans l’écriture des tests et de réaliser une analyse comportementale de l’exigence. L’activité de vérification consiste également à vérifier la cohérence entre l’exigence et le scénario de test en analysant la cohérence des entrées/sorties, la complétude des scénarios de tests, la couverture des classes d’équivalences et des valeurs limites. Le langage de description des scénarios de tests en BDD favorise ces vérifications grâce au format simple en lecture.
 
-**High/Low level requirements are verifiable**: L’association de scenarios de test BDD aux exigences tôt dans le cycle de vie de développement logiciel nous permet de disposer d’exigences couvertes par des tests et donc vérifiables. Pour valider qu’une exigence est vérifiable, il suffit de vérifier s’il y a des scénarios de tests BDD qui lui sont rattachés. Les scénarios de tests décrivent les cas de tests de l’exigence. Ils seront ensuite implémentés et exécutés pour valider le code des exigences. Une traçabilité de type Scénario de test / Exigence complète avec une vérification de la complétude des cas de tests peut répondre à cet objectif.
+**High/Low level requirements are verifiable**: l’association de scenarios de test BDD aux exigences tôt dans le cycle de vie de développement logiciel nous permet de disposer d’exigences couvertes par des tests et donc vérifiables. Pour valider qu’une exigence est vérifiable, il suffit de vérifier s’il y a des scénarios de tests BDD qui lui sont rattachés. Les scénarios de tests décrivent les cas de tests de l’exigence. Ils seront ensuite implémentés et exécutés pour valider le code des exigences. Une traçabilité de type Scénario de test / Exigence complète avec une vérification de la complétude des cas de tests peut répondre à cet objectif.
 
 L’utilisation d’une approche BDD facilite également la mise en œuvre des activités de vérification tout en assurant l’indépendance des rôles. L ’indépendance des rôles exige une séparation des acteurs qui développent les données et ceux qui la vérifient. Grâce au format lisible et compact des scénarios de tests BDD (voir Figure 2), l’équipe fonctionnelle peut facilement développer les cas de test, sans disposer obligatoirement de connaissances techniques. D’autres personnes de l’équipe fonctionnelle peuvent facilement analyser ces données dans le cadre des activités de vérification. Le BDD permet de fluidifier les activités de relecture et de validation de la cohérence entre les HLR et les HLT et entre les LLR et LLT.
 
@@ -217,29 +217,29 @@ En résumé, le BDD est une approche qui réinvente les stratégies de test et l
 
 ## VIII. Références
 
-<div align="left">
+**[ChaosReport]** : Standish Group: “Standish Group Chaos Report” 
 
-<b>[ChaosReport]</b> Standish Group: “Standish Group Chaos Report” 
+**[EcoImp]** : The Economic Impacts of Inadequate Infrastructure for Software Testing, Studies by the National Institute of Standards and Technology and the National Aeronautics and Space Administration,
 
-<b>[EcoImp]</b> The Economic Impacts of Inadequate Infrastructure for Software Testing, Studies by the
-National Institute of Standards and Technology and the National Aeronautics and Space Administration, https://www.nist.gov/system/files/documents/director/planning/report02-3.pdf 
+https://www.nist.gov/system/files/documents/director/planning/report02-3.pdf 
 
-<b>[Xreq]</b> https://sogilis.com/services-safety-critical.html
+**[Xreq]** : https://sogilis.com/services-safety-critical.html
 
-<b>[Gherkin]</b> https://cucumber.io/docs/gherkin/reference/
+**[Gherkin]** : https://cucumber.io/docs/gherkin/reference/
 
-<b>[Cucumber]</b> https://cucumber.io/
+**[Cucumber]** : https://cucumber.io/
 
-<b>[Specflow]</b> https://specflow.org/
+**[Specflow]** : https://specflow.org/
 
-<b>[Jbehave]</b> https://jbehave.org/
+**[Jbehave]** : https://jbehave.org/
 
-<b>[Concordion]</b> https://concordion.org/
+**[Concordion]** : https://concordion.org/
 
-<b>[iec61805]</b> International Electrotechnical Commission, “Functional Safety and IEC 61805”, https://www.iec.ch/functionalsafety/standards/
+**[iec61805]** : International Electrotechnical Commission,  “Functional Safety and IEC 61805”,
 
-<b>[Pulsar]</b> Pulsar Flight System: https://www.hionos.com/#pulsar
+https://www.iec.ch/functionalsafety/standards/
 
-<b>[Reflex]</b> https://www.artics.fr/produits
-</div>
+**[Pulsar]** : Pulsar Flight System: https://www.hionos.com/#pulsar
+
+**[Reflex]** : https://www.artics.fr/produits
 
