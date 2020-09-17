@@ -131,7 +131,7 @@ Dans cette section, et en partant de nos expériences de développement, nous pr
 Dans la norme DO-178C/ED12C, nous pouvons utiliser les techniques de BDD pour répondre à des objectifs de vérification des exigences de haut niveau de type HLR (High Level Requirement) et des exigences de bas niveau de type LLR (Low Level Requirement) (voir Figure 5.). Les scénarios de tests sont écrits pour produire les tests associés aux exigences (HLT : High Level Test et LLT : Low Level Test).
 </div>
 
-![Figure 5. Utilisation du BDD pour satisfaire des objectifs de vérification des HLT dans la DO-178C](/img/2020_09_09_bdd_figure_5.png)
+![Figure 5. Utilisation du BDD pour satisfaire des objectifs de vérification des HLT dans la DO-178C](/img/2020_09_09_bdd_figure_5.png){ width=50% }
 *Figure 5. Utilisation du BDD pour satisfaire des objectifs de vérification des HLT dans la DO-178C*
 
 <div align="justify">
