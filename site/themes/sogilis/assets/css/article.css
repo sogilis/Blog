@@ -180,12 +180,6 @@ pre {
   max-width: 100%;
 }
 
-@media (min-width: 1300px) {
-  #articlepage-content {
-    margin: 0 -1rem 0 3.75rem;
-  }
-}
-
 /* Image on the bottom */
 /* ========================================================================== */
 #articlepage-img-bottom {
