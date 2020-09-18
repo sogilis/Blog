@@ -80,6 +80,7 @@ blockquote,
 pre,
 .articlepage-img {
   box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
 
 blockquote,
@@ -150,7 +151,7 @@ pre {
 }
 
 #articlepage-header-img {
-  width: 100%
+  width: 100%;
 }
 
 @media (min-width: 992px) {
