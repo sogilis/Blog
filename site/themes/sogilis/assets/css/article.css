@@ -149,9 +149,13 @@ pre {
   margin-left: -2.25rem;
 }
 
+#articlepage-header-img {
+  width: 100%
+}
+
 @media (min-width: 992px) {
   /* On the left */
-  #articlepage-header-img {
+  #articlepage-header-img-container {
     max-width: 60%;
   }
   /* On the right */
@@ -167,7 +171,7 @@ pre {
   #articlepage-header-title-h1 {
     margin-top: 3rem;
   }
-  #articlepage-header-img {
+  #articlepage-header-img-container {
     max-width: 100%;
   }
 }

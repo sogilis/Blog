@@ -3,22 +3,25 @@
 <article id="articlepage">
   <section id="articlepage-header">
     <!-- Illustration -->
-    {{ with .Params.image }}
-    <img
-      id="articlepage-header-img"
-      class="articlepage-img"
-      alt="Illustration de l'article"
-      src="{{ . | relURL }}"
-      />
-      {{ else }}
-      <!-- Default illustration -->
-    <img
-      id="articlepage-header-img"
-      class="articlepage-img"
-      alt="Illustration de l'article"
-      src="{{ "images/blog_preview_default.jpg" | relURL }}"
-      />
-      {{ end }}
+    <span id="articlepage-header-img-container">
+      {{ with .Params.image }}
+      <img
+        id="articlepage-header-img"
+        class="articlepage-img"
+        alt="Illustration de l'article"
+        src="{{ . | relURL }}"
+        />
+        {{ else }}
+        <!-- Default illustration -->
+      <img
+        id="articlepage-header-img"
+        class="articlepage-img"
+        alt="Illustration de l'article"
+        src="{{ "images/blog_preview_default.jpg" | relURL }}"
+        />
+        {{ end }}
+    </span>
+
       <div id="articlepage-header-title">
         <h1 id="articlepage-header-title-h1">{{ .Title }}</h1>
         <p>
