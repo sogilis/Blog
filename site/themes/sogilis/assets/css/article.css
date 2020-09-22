@@ -120,6 +120,12 @@ pre {
   }
 }
 
+/* Reduce caption margin in a <figure> (instead of default h4 margin) */
+/* Generated with {{< figure …>}} in .md files */
+figcaption h4 {
+  margin-top: 0.5rem;
+}
+
 /* Section header */
 /* ========================================================================== */
 
