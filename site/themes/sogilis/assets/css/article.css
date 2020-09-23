@@ -52,6 +52,16 @@ pre code {
   word-break: normal;
 }
 
+/* block created by figures with asciidoctor */
+.imageblock {
+  margin-bottom: 1rem;
+}
+.imageblock .title {
+  margin-top: 1.5rem;
+  font-family: var(--font-serif);
+  font-weight: bold;
+}
+
 /* Definitions for elements in the page article */
 /* ========================================================================== */
 
