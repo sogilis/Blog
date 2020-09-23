@@ -74,7 +74,8 @@ You will need to install the following software:
                 must have node >= 12 (some versions of node 10.x seems to work,
                 but not all)
         2. Yarn: [instructions](https://yarnpkg.com/lang/en/docs/install/)
-        * Note: not compatible with `npm`.
+            * Note: not compatible with `npm`.
+        3. [ruby](https://www.ruby-lang.org/fr/) 2.6.2 and [Bundler](https://bundler.io)
     * With the Docker method see [instructions](https://docs.docker.com/install/)
         * Disclaimer:
             * On Windows or Mac, installation of Docker could be

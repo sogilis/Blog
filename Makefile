@@ -56,6 +56,8 @@ _common:
 	yarn install --network-timeout 3000 --prefer-offline
 	yarn lint
 	yarn prettier:check
+	# Required for asciidoctor
+	bundle
 	# reboot.css
 	cp ./node_modules/bootstrap-reboot/dist/reboot.min.css* ./site/themes/sogilis/assets/css/
 	# netlifh-cms
