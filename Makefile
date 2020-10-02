@@ -1,4 +1,4 @@
-IMAGE_NAME := blog/hugoasciidoc
+IMAGE_NAME := blog/hugo
 CONTAINER_NAME := sogilis_blog
 
 .DEFAULT_GOAL := start
