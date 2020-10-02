@@ -1,3 +1,6 @@
+IMAGE_NAME := blog/hugoasciidoc
+CONTAINER_NAME := sogilis_blog
+
 .DEFAULT_GOAL := start
 
 .PHONY: start start_netlify build build_preview clean _common _build_common
@@ -66,3 +69,30 @@ _common:
 
 _build_common:
 	make _common
+
+
+# ==============================================================================
+# Docker
+# ==============================================================================
+
+docker-build:
+	docker build -t $(IMAGE_NAME) .
+
+docker-start:
+	docker run -d -t -p 1313:1313 \
+		--mount type=bind,src=$(CURDIR)/site,dst=/blog/site,consistency=cached \
+		--rm --name $(CONTAINER_NAME) $(IMAGE_NAME)
+	@echo "Blog will be available at http://localhost:1313 in a few seconds..."
+	@echo "(run 'make docker-logs' to show logs)"
+
+docker-logs:
+	docker logs -f $(CONTAINER_NAME)
+
+docker-run-generation:
+	docker exec -it $(CONTAINER_NAME) yarn run build
+
+docker-stop:
+	docker stop $(CONTAINER_NAME)
+
+docker-remove:
+	docker rm $(IMAGE_NAME)

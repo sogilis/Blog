@@ -140,25 +140,25 @@ Note 2: you could call directly `make start` instead of `yarn start`
             fill your disk.
     * Run:
         ```bash
-        make --file MakefileDocker build
+        make docker-build
         ```
     * Note: with Docker, **contrary to the old doc said** no need
         to trigger ~~`yarn install`~~.
 
 3. Start the blog and the watcher:
 ```bash
-make --file MakefileDocker start
+make docker-start
 ```
 Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
 
 4. Eventually, see logs (especially if there is a problem):
 ```bash
-make --file MakefileDocker logs
+make docker-logs
 ```
 
 5. Stop the container with:
 ```
-make --file MakefileDocker stop
+make docker-stop
 ```
 
 6. Eventually, free disc space with
