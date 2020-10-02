@@ -2,15 +2,15 @@
 
 * [Sogilis Blog](#sogilis-blog)
 * [How to write a new article?](#how-to-write-a-new-article)
-    * [Online](#online)
-    * [Offline](#offline)
-        * [Prerequisites](#prerequisites)
-        * [Download blog](#download-blog)
-        * [Start the blog](#start-the-blog)
-            * [Without Docker](#without-docker)
-            * [With Docker](#with-docker)
-        * [Write a new article](#write-a-new-article)
-        * [Publish your article](#publish-your-article)
+    * [🌍 Online](#online)
+    * [🔌 Offline](#offline)
+        * [☑️ Prerequisites](#prerequisites)
+        * [⬇️ Download blog](#download-blog)
+        * [▶️ Start the blog](#start-the-blog)
+            * [🤘 Without Docker](#without-docker)
+            * [🐳 With Docker](#with-docker)
+        * [✏️ Write a new article](#write-a-new-article)
+        * [✉️ Publish your article](#publish-your-article)
 * [Notes for developers (not for writers of articles)](docs/dev.md)
 * [Credits](#credits)
 
@@ -31,21 +31,21 @@ The backlog is available in [Github project](https://github.com/sogilis/Blog/pro
 
 ***Do not hesitate to ask help.*** . We answer with enjoy :-) !
 
-## Online
+## 🌍 Online
 
 1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in with your Google account.
 :information_source: All members of Sogilis team have access to this admin interface.
 
 2. That's it. You can now create/modify/review/delete/publish articles.
 
-## Offline
+## 🔌 Offline
 
 These instructions will get you a copy of the project up and running on your
 local machine.
 
 So you will be able to write a new article offline.
 
-### Prerequisites
+### ☑️ Prerequisites
 
 You will need to install the following software:
 
@@ -59,19 +59,19 @@ You will need to install the following software:
 
 * Alternative 2 : [docker](https://docs.docker.com/install/) (more details [here](docs/prerequisites.md#docker)).
 
-### Download blog
+### ⬇️ Download blog
 
 ```bash
 git clone git@github.com:sogilis/Blog.git
 cd Blog
 ```
 
-### Start the blog
+### ▶️ Start the blog
 
 With the both methods, each time you save a change on an article, the local
 website is updated (**live reload**).
 
-#### Without Docker
+#### 🤘 Without Docker
 
 1. Start the blog:
 
@@ -81,7 +81,7 @@ make start
 
 Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
 
-#### With Docker
+#### 🐳 With Docker
 
 1. Create the docker image (only once. see [docker considerations](docs/docker.md)):
 
@@ -109,7 +109,7 @@ make docker-stop
 ```
 
 
-### Write a new article
+### ✏️ Write a new article
 
 :warning: __The branch `master` is automatically pushed on the production server, you need to work on a new branch and use the Pull Request mechanism.__ :warning:
 
@@ -153,7 +153,7 @@ make docker-stop
 
 4. Finalize your article, and see the output in real time.
 
-### Publish your article
+### ✉️ Publish your article
 
 1. Create a new Pull Request to get feedbacks from other team members.
 
