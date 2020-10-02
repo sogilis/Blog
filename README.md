@@ -117,10 +117,9 @@ make docker-stop
 
 2. Write your article:
 
-   Create a new text file in `site/content/posts`.
-   Following formats are supported:
-      - [Asciidoc](https://asciidoctor.org) with `.adoc` files
-      - [Markdown](https://en.wikipedia.org/wiki/Markdown) with `.md` files
+   Create a new `.md` file in `site/content/posts`.
+   Only `Markdown` is supported with following [syntax](https://commonmark.org/help/) (more details [here](docs/content-format.md)).
+
 
    Here is a basic markdown template to start with:
 
@@ -141,6 +140,7 @@ make docker-stop
    ---
 
    ## A first subtitle
+
    Start writing your content here.
    ```
 
