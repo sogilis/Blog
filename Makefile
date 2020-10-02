@@ -13,7 +13,9 @@ start:
 	make _common
 	# -s, --source string          filesystem path to read files relative from
 	# -v, --verbose                verbose output
-	yarn hugo server -s site -v
+	# We should add `--bind 0.0.0.0` because of the webpack sever in docker container
+	# See https://github.com/webpack/webpack-dev-server/issues/547
+	yarn hugo server -s site -v --bind 0.0.0.0
 
 start_netlify:
 	make _common
@@ -95,4 +97,4 @@ docker-stop:
 	docker stop $(CONTAINER_NAME)
 
 docker-remove:
-	docker rm $(IMAGE_NAME)
+	docker image rm $(IMAGE_NAME)
