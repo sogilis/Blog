@@ -54,16 +54,15 @@ So you will be able to write a new article offline.
 
 You will need to install the following software:
 
-* Install GNU Make. It is needed for build process with Docker or without
-    Docker.
+* Install GNU Make.
     * For Linux, use your distro specific instructions
     * For Windows, see https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows
         * Actually (at 2020-03-01) GNUWin32 is very outdated (2006), I advise
           you to use Chocolaty (it has built GNU Make from recent sources, as
           we can see in their "Package Source")
-    * For mac users, use Homebrew
+    * For mac users, it is installed by default
 
-* To download and push changes install: [Git](https://git-scm.com)
+* [Git](https://git-scm.com)
 
 * To start the blog and see your changes on live, at each save:
     * Without the Docker method:
@@ -127,9 +126,7 @@ Note 2: you could call directly `make start` instead of `yarn start`
 
 #### With Docker
 
-1. Do not forget to start the Docker service (see documentation online)
-
-2. Create the docker image
+1. Create the docker image
     * Not needed at each start, but at each **update** of
         1. Dockerfile
         2. package.json:
@@ -142,10 +139,8 @@ Note 2: you could call directly `make start` instead of `yarn start`
         ```bash
         make docker-build
         ```
-    * Note: with Docker, **contrary to the old doc said** no need
-        to trigger ~~`yarn install`~~.
 
-3. Start the blog and the watcher:
+2. Start the blog and the watcher:
 ```bash
 make docker-start
 ```
