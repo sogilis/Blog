@@ -92,48 +92,73 @@ function fancyAlert(arg) {
 }
 ```
 
-## Task Lists
+### Task Lists
 
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
 - [x] list syntax required (any unordered or ordered list supported)
 - [x] this is a complete item
 - [ ] this is an incomplete item
 
-## Tables
+### Tables
 
 First Header | Second Header
 ------------ | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
-## SHA references
+### SHA references
 
 16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
-## Issue references within a repository
+### Issue references within a repository
 
 #1
 mojombo#1
 mojombo/github-flavored-markdown#1
 
-## Username @mentions
+### Username @mentions
 
 @jibidus
 
-## Automatic linking for URLs
+### Automatic linking for URLs
 
 http://www.github.com/
 
-## Strikethrough
+### Strikethrough
 
 ~~this~~
 
-## Emoji
+### Emoji
 
 :smile:
 :rofl:
 :partying_face:
 :person_white_hair:
 :family_man_girl_girl:
+
+## Extented syntax
+
+### Footnotes
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+
+### Definition list
+
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
