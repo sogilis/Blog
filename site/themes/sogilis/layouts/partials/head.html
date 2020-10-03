@@ -7,6 +7,8 @@
     content="{{ .Summary | default .Site.Params.SiteDescription }}"
   />
 
+  <!-- TODO generate only one CSS file with Webpack. Use also auto-prefixer -->
+
   <link
     rel="stylesheet"
     href="{{ "css/typeface-eb-garamond/index.css" | relURL }}"

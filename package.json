@@ -11,8 +11,8 @@
   "scripts": {
     "start": "make start",
     "start:netlify": "make start_netlify",
-    "build": "make build",
-    "build:preview": "make build_preview",
+    "build": "make netlify-build",
+    "build:preview": "make netlify-build-preview",
     "prettier:format": "prettier --write \"{,site/**/}*.{json,ts,css,scss,yml}\"",
     "prettier:check": "prettier --check \"{,site/**/}*.{json,ts,css,scss,yml}\"",
     "lint": "eslint . --ext .js,.ts",
