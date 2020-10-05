@@ -1,0 +1,32 @@
+name: Scheduled
+on:
+  schedule:
+    - cron: '0 10 * * MON'
+
+jobs:
+  # See docs/infra.md for more details
+  checkDeadLinks:
+    name: Cheack dead links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      # hydra-link-checker is used behind this action.
+      # Note: by default http code 999 is OK (returned by all Linkedin URL)
+      # Note: config file is mandatory (even if empty)
+      # More details here: https://github.com/marketplace/actions/link-snitch
+      - name: Check
+        id: check
+        uses: victoriadrake/link-snitch@master
+        env:
+          URL: https://blog.sogilis.fr
+          CONFIG: hydra-link-checker.json
+
+      - name: Send Slack notification
+        uses: act10ns/slack@v1
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with: 
+          status: ${{ job.status }}
+        if: failure()
