@@ -125,4 +125,4 @@ Nous pouvons visualiser les différentes tâches qui sont exécutées. Les tâch
 * failed : une erreur est survenue lors de l'exécution
 * unreachable : une précédente erreur a empêché l'exécution de cette tâche
 
-Maintenant, vous êtes prêts à construire votre propre _playbook_. Nous n'avons pour le moment que survolé le module shell (qui nous permet d'exécuter des commandes shell), mais il existe plein d'autres modules. [La documentation de ces modules](http://docs.ansible.com/list_of_all_modules.html) est très bien faite, il faut s'y référer. Dans un prochain article, nous verrons comment construire facilement des modules personnalisés dans le cas où les modules proposés sont insuffisants.
+Maintenant, vous êtes prêts à construire votre propre _playbook_. Nous n'avons pour le moment que survolé le module shell (qui nous permet d'exécuter des commandes shell), mais il existe plein d'autres modules. La documentation de ces modules est très bien faite, il faut s'y référer. Dans un prochain article, nous verrons comment construire facilement des modules personnalisés dans le cas où les modules proposés sont insuffisants.

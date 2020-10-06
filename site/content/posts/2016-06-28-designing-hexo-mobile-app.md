@@ -28,7 +28,7 @@ Weâ€™ll be honest and upfront about some blunders made, and in the comments weâ€
 
 ### Building the design team
 
-After Hexo+ success during [CES 2015](https://hexoplus.com/blog/ces), both software and hardware developers at [Squadrone System](https://www.linkedin.com/company/hexo-) expressed their needs to have a design team that would help them prototype quickly and get real customer inputs on what works and what doesn't.
+After Hexo+ success during CES 2015, both software and hardware developers at [Squadrone System](https://www.linkedin.com/company/hexo-) expressed their needs to have a design team that would help them prototype quickly and get real customer inputs on what works and what doesn't.
 
 Developers received a good looking UI, first version of the IOS mobile app which even won an award at CES. After this event, no designers were there to define the workflow and behavior screen after screen, describing the best case scenario and challenging edge cases with the team.
 

@@ -10,7 +10,7 @@ tags:
   - workflow
 
 ---
-Depuis l'avènement d'outils de gestion de code source de bonne qualité ([Git](http://git-scm.com/) et [mercurial](http://mercurial.selenic.com/) principalement) et surtout qui ne vous brident — presque — plus, vous pouvez enfin laisser libre court à votre imagination concernant votre flux de travail. Branches, rebase, merge…. Oui mais pour que le tout reste utilisable, surtout lorsque vous travaillez à plusieurs, il convient de régir tout ceci mais aussi de tenter de le conformer le plus possible à vos contraintes réelles — développement, production, tests…. Bref, il convient de définir un flux de travail — un _workflow_.
+Depuis l'avènement d'outils de gestion de code source de bonne qualité ([Git](http://git-scm.com/) et [mercurial](https://www.mercurial.fr) principalement) et surtout qui ne vous brident — presque — plus, vous pouvez enfin laisser libre court à votre imagination concernant votre flux de travail. Branches, rebase, merge…. Oui mais pour que le tout reste utilisable, surtout lorsque vous travaillez à plusieurs, il convient de régir tout ceci mais aussi de tenter de le conformer le plus possible à vos contraintes réelles — développement, production, tests…. Bref, il convient de définir un flux de travail — un _workflow_.
 
 ![](/img/2014-12-tumblr_inline_nflo1khSyE1sv6muh.png)
 
@@ -91,7 +91,7 @@ Dans les plus connus, si vous avez des développements en production avec branch
 
 Vous pouvez trouver plus d'infos sur le lien précédent, sur le [projet Github](https://github.com/nvie/gitflow) ou chez [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
 
-A noter qu'il existe une variante pour [mercurial](http://mercurial.selenic.com/), [hgflow](https://bitbucket.org/yujiewu/hgflow/wiki/Home). Ces deux workflow sont d'ailleurs utilisables directement dans [SourceTree](http://www.sourcetreeapp.com/), le client [Git](http://git-scm.com/) et [mercurial](http://mercurial.selenic.com/) édité par [Atlassian](https://fr.atlassian.com/).
+A noter qu'il existe une variante pour [mercurial](https://www.mercurial.fr), hgflow. Ces deux workflow sont d'ailleurs utilisables directement dans [SourceTree](http://www.sourcetreeapp.com/), le client [Git](http://git-scm.com/) et [mercurial](https://www.mercurial.fr) édité par [Atlassian](https://fr.atlassian.com/).
 
 L'autre workflow très courant aujourd'hui c'est le [Github Flow](https://guides.github.com/introduction/flow/index.html).
 
@@ -278,7 +278,6 @@ Et si vous n'êtes pas rassasiés, voici une petite collection de liens à suivr
   * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
   * [GitFlow](https://github.com/nvie/gitflow)
   * [GitFlow by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-* [Hg Flow](https://bitbucket.org/yujiewu/hgflow/wiki/Home)
 * [Github flow](https://guides.github.com/introduction/flow/index.html)
 * [Git revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert/)
 * Git rebase

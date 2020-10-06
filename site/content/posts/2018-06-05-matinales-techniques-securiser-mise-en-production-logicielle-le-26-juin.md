@@ -41,8 +41,4 @@ Rejoignez-nous !
 
 **Modalités pratiques :** de 9h30 à 11h30, le mardi 26 juin 2018 dans les locaux de Sogilis, 4 avenue Doyen Louis Weil (Immeuble Le Pulsar, 6e étage)
 
-**Inscription obligatoire via [ce formulaire][2] ou sur [Meetup][3] si vous avez un compte**
-
 [1]: https://www.linkedin.com/in/simon-denier/
-[2]: https://goo.gl/forms/G0nZUXWVcliw1cad2
-[3]: http://meetu.ps/e/FnqMk/Bgx6T/f
