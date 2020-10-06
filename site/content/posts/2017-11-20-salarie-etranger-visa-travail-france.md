@@ -111,6 +111,6 @@ Et vous ? Avez-vous déjà recruté un salarié étranger ? Quelle procédure av
 
 Nous serons ravis d'en discuter, et de répondre à toutes vos questions. La procédure est longue est complexe, autant s'appuyer sur l'expérience d'une entreprise qui est déjà passée par là... et avec succès 😉
 
-De plus, nous recrutons en permanence, alors que vous soyez étranger ou non, n'hésitez pas à postuler ! [https://sogilis.com/jobs.html](https://sogilis.com/jobs.html)
+De plus, nous recrutons en permanence, alors que vous soyez étranger ou non, n'hésitez pas à postuler ! https://sogilis.fr/emplois.html
 
 [1]: https://www.service-public.fr/particuliers/vosdroits/F16922

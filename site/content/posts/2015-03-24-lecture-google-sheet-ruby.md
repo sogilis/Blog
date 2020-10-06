@@ -177,7 +177,7 @@ On peut trouver cet identifiant dans l’url lorsqu’on édite le document dans
 
 Prenons par exemple l’url suivante : 
 
-_https://docs.google.com/a/sogilis.com/spreadsheet/ccc?key=0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE&usp=sharing#gid=0_
+`https://docs.google.com/a/sogilis.com/spreadsheet/ccc?key=0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE&usp=sharing#gid=0`
 
 Dans ce cas, l’identifiant est :
 

@@ -11,7 +11,7 @@ tags:
   - viedebureau
 
 ---
-**Depuis le 4 février 2013, on a pris l’habitude de retrouver Vicky tous les matins avec plaisir. En stage de fin d'études à l'Ensimag puis en CDI au sein de la Sogiteam durant deux ans, il s'envole aujourd’hui pour monter sa boîte. Victor, c'est 26 ans de vitamines : il est co-organisateur du [Startup Weekend Grenoble](http://grenoble.startupweekend.org/) et des [HumanTalks](https://humantalks.com/cities/grenoble), ces conférences proposées par les développeurs pour les développeurs tous les mois dans les villes de France. Et comme il a plusieurs cordes à son arc, quand il ne fait pas le poisson dans l’eau, il est capable de gravir le Mont-Blanc !**
+**Depuis le 4 février 2013, on a pris l’habitude de retrouver Vicky tous les matins avec plaisir. En stage de fin d'études à l'Ensimag puis en CDI au sein de la Sogiteam durant deux ans, il s'envole aujourd’hui pour monter sa boîte. Victor, c'est 26 ans de vitamines : il est co-organisateur du [Startup Weekend Grenoble](https://fr-fr.facebook.com/StartupWeekendGrenoble/) et des [HumanTalks](https://humantalks.com/cities/grenoble), ces conférences proposées par les développeurs pour les développeurs tous les mois dans les villes de France. Et comme il a plusieurs cordes à son arc, quand il ne fait pas le poisson dans l’eau, il est capable de gravir le Mont-Blanc !**
 
 Le virus de l'entrepreneuriat l'a piqué lors de la première édition du Startup Weekend Grenoble. Depuis, il a enthousiasmé un bon nombre de clients, s'est creusé les méninges et a fortement contribué à la banane de l'équipe. Retour sur ces 2 bougies soufflées à Sogilis et mise en lumière de ses perspectives !
 

@@ -101,7 +101,7 @@ That’s quite easy. Torrents can be identified by their _info hash_, wich is a 
 
 There is also alternatives to the DNS system such as namecoin or djdns. This article is not about them though.
 
-Once identified, we need a software that can produce a webpage for an url like _http://9420241a7fbf98730abfbfe26a6289eeca732aa2.bitweb/page.html_. It’s relatively easy to create a HTTP proxy software, or a HTTP server, that would return the content of the torrent.
+Once identified, we need a software that can produce a webpage for an url like `http://9420241a7fbf98730abfbfe26a6289eeca732aa2.bitweb/page.html`. It’s relatively easy to create a HTTP proxy software, or a HTTP server, that would return the content of the torrent.
 
 #### Update files in a torrent
 

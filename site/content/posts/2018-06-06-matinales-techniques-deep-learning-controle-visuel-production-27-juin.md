@@ -55,7 +55,3 @@ Depuis 3 ans à Sogilis, il a essentiellement travaillé sur des problématiques
 
 **Modalités pratiques :** de 9h30 à 11h30, le mercredi 27 juin 2018 dans les locaux de Sogilis, 4 avenue Doyen Louis Weil (Immeuble Le Pulsar, 6e étage)
 
-**Inscription obligatoire via [ce formulaire][1] ou sur [Meetup][2] si vous avez un compte**
-
-[1]: https://goo.gl/forms/9zcF5cNqLdoncVyw2
-[2]: http://meetu.ps/e/Fnrdt/Bgx6T/f
