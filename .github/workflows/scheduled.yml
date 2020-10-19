@@ -24,9 +24,13 @@ jobs:
           CONFIG: hydra-link-checker.json
 
       - name: Send Slack notification
-        uses: act10ns/slack@v1
+        uses: rtCamp/action-slack-notify@master
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        with: 
-          status: ${{ job.status }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_USERNAME: Blog
+          SLACK_ICON_EMOJI: ":bomb:"
+          SLACK_COLOR: "#A30101"
+          SLACK_TITLE: Dead link checker
+          SLACK_MESSAGE: Blog contains dead link(s) :boom:. Please fix this quickly to prevent SEO degradation.
+          SLACK_FOOTER: Scheduled job executed by Github Actions
         if: failure()
