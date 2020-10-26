@@ -18,3 +18,6 @@ enableRobotsTXT = true
   [languages.fr.params]
     twitter = "https://twitter.com/Sogilis?lang=fr"
     linkedin = "https://www.linkedin.com/company/sogilis/"
+
+[outputs]
+    section = ["json"]
