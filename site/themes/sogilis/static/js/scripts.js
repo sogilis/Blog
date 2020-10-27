@@ -1,6 +1,5 @@
-'use strict';
-
 /* eslint no-magic-numbers: off */
+/* eslint max-classes-per-file: off */
 
 /*
  * eslint rule max-statements with option ignoreTopLevelFunctions does not work
@@ -127,7 +126,44 @@ const throwError = (message) => {
  * Search
  * ============================================================================
  */
-class Search extends HTMLElement {
+const getFilteredPosts = async (term) => {
+  const response = await fetch('posts/index.json', { method: 'GET' });
+  const contentType = response.headers.get('content-type');
+
+  if (contentType && contentType.indexOf('application/json') !== -1) {
+    return response.json().then((data) => {
+      const filteredPosts = data.filter((post) => {
+        return post.title.toLowerCase().includes(term);
+      });
+
+      return filteredPosts;
+    });
+  }
+
+  return [];
+};
+
+class SearchBarResultItem {
+  /**
+   * @param {string} value
+   * @param {string} href
+   */
+  constructor(value, href) {
+    const li = document.createElement('li');
+    li.classList.add('search-bar__results-item');
+
+    const link = document.createElement('a');
+    link.classList.add('search-bar__results-item-link');
+    link.href = href;
+    link.innerHTML = value;
+
+    li.append(link);
+
+    this.element = li;
+  }
+}
+
+class SearchBar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <form id="search" class="search-bar" role="search">
@@ -143,36 +179,7 @@ class Search extends HTMLElement {
                M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
           </g>
         </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
-        <g>
-        </g>
+        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
         </svg>
 
         </label>
@@ -209,47 +216,27 @@ class Search extends HTMLElement {
     window.removeEventListener('keydown', this.shortcutHandler);
   }
 
-  shortcutHandler(e) {
-    if (e.key === 'Escape') {
+  shortcutHandler(event) {
+    if (event.key === 'Escape') {
       this.closeSearchBarResults();
     }
   }
 
   search(term) {
-    this.getFilteredPosts(term).then((posts) => {
+    getFilteredPosts(term).then((posts) => {
       this.openSearchBarResults();
 
       this.searchResults.innerHTML = '';
 
       for (const post of posts) {
-        const li = document.createElement('li');
-        li.classList.add('search-bar__results-item');
-        const a = document.createElement('a');
-        a.classList.add('search-bar__results-item-link');
-        a.href = post.url;
-        a.innerHTML = post.title;
-        li.append(a);
-        this.searchResults.append(li);
+        const searchBarResultItem = new SearchBarResultItem(
+          post.title,
+          post.url
+        );
+        this.searchResults.append(searchBarResultItem.element);
       }
 
       document.body.style.overflow = 'hidden';
-
-      this.searchDone();
-    });
-  }
-
-  getFilteredPosts(term) {
-    return fetch('posts/index.json', { method: 'GET' }).then((response) => {
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.indexOf('application/json') !== -1) {
-        return response.json().then((response) => {
-          const filteredPosts = response.filter(post => {
-            return post.title.toLowerCase().includes(term);
-          });
-
-          return filteredPosts;
-        });
-      }
     });
   }
 
@@ -258,10 +245,10 @@ class Search extends HTMLElement {
   }
 
   closeSearchBarResults() {
-    this.searchResults.setAttribute('hidden', "");
+    this.searchResults.setAttribute('hidden', '');
     document.body.style.overflow = 'auto';
     this.input.blur();
   }
 }
 
-customElements.define('search-bar', Search);
+customElements.define('search-bar', SearchBar);

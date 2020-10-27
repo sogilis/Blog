@@ -1,7 +1,7 @@
 env:
   browser: true
 
-parser: espree
+parser: babel-eslint
 
 parserOptions:
   ecmaVersion: 6
@@ -36,7 +36,7 @@ rules:
 
   max-statements:
     - error
-    - max: 10
+    - max: 20
     # Does not work with IIFE
     # https://github.com/eslint/eslint/issues/12950
     - ignoreTopLevelFunctions: true
