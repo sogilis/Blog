@@ -51,4 +51,8 @@
 # VS Code editor
 .vscode
 
+# macOS files
 ./.DS_Store
+
+# Generated file used by search feature
+/site/themes/sogilis/layouts/_default/list.json.json
