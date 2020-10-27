@@ -127,7 +127,7 @@ const throwError = (message) => {
  * ============================================================================
  */
 const getFilteredPosts = async (term) => {
-  const response = await fetch('posts/index.json', { method: 'GET' });
+  const response = await fetch('/posts/index.json', { method: 'GET' });
   const contentType = response.headers.get('content-type');
 
   if (contentType && contentType.indexOf('application/json') !== -1) {
