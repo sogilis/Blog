@@ -24,7 +24,7 @@ To the best of our knowledge, the most common risk assessment methodology in the
 At this moment, the SORA methodology considers only risks of harms to a person’s life: “fatal injuries to third parties on ground”, “fatal injuries to third parties in air”. To illustrate the risk scenarios related to these harms (or how these harms could happen), the methodology provides a risk model as shown in Figure 1. It includes three major segments: Harms, Hazard, Threats. The direct causes of these harms is a generic hazard “UAS operation out of control” shown in the center of the model. This hazard is defined as an operation being conducted outside of the operator’s intention
 (e.g the aircraft flies outside of visual observation of the pilot in a Visual Line Of Sight operation). The hazard could be caused by several threats which are grouped into categories in the left part of the model. Because SORA methodology considers only the safety aspect but not the security aspect, only unintentional threat categories are represented in the model.
 
-{{< figure src="/img/article_uas_cybersecurity/uas_cybersecurity_001.png" title="Figure 1. Risk Model of the SORA methodology" width="700" align="center">}}
+{{< figure src="/img/article_uas_cybersecurity/uas_cybersecurity_001.png" title="Figure 1. Risk Model of the SORA methodology" width="700">}}
 
 ### B. Assessment process 
 
@@ -124,7 +124,6 @@ The risk assessment process could be resumed as:
 2) Determinatino of safety objectives corresponding to the critical level. 
 
 Based on this concept, we proposed a general approach to extend the existing methodology to support cybersecurity aspect by adding new relevant threats and harms. New harms will be taken into account to evaluate the critical level of the UAS operation. Meanwhile, new threats will be added to anticipate new causes of incidents related to cybersecurity and determine corresponding means of mitigation (or cybersecurity objectives).
-
 
 
 
