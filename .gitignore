@@ -50,3 +50,5 @@
 
 # VS Code editor
 .vscode
+
+./.DS_Store
