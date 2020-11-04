@@ -59,13 +59,8 @@ pre,
 code,
 kbd,
 samp {
-  font-family: var(--font-serif);
-  /*
-   * As "EB Garamond" is a small font, if we want the same height as a classic
-   * font we should set 1.2 rem. As it its hight of an lowercase letter is 8px.
-   * Compared with font "Segeo UI" used into Bootstrap website.
-   */
-  font-size: 1.2em;
+  font-family: 'JetBrainsMono';
+  font-size: 1rem;
 }
 
 h2,
@@ -202,4 +197,90 @@ figcaption h4 {
 
 #articlepage-comments {
   margin-top: 3rem;
+}
+
+/* Code font */
+/* ========================================================================== */
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Bold-Italic.woff2')
+      format('woff2'),
+    url('/fonts/JetBrainsMono/woff/JetBrainsMono-Bold-Italic.woff')
+      format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Bold.woff2')
+      format('woff2'),
+    url('/fonts/JetBrainsMono/woff/JetBrainsMono-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-ExtraBold-Italic.woff2')
+      format('woff2'),
+    url('/fonts/JetBrainsMono/woff/JetBrainsMono-ExtraBold-Italic.woff')
+      format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-ExtraBold.woff2')
+      format('woff2'),
+    url('/fonts/JetBrainsMono/woff/JetBrainsMono-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Italic.woff2')
+      format('woff2'),
+    url('/fonts/JetBrainsMono/woff/JetBrainsMono-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Medium-Italic.woff2')
+      format('woff2'),
+    url('/fonts/JetBrainsMono/woff/JetBrainsMono-Medium-Italic.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Medium.woff2')
+      format('woff2'),
+    url('/fonts/JetBrainsMono/woff/JetBrainsMono-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Regular.woff2')
+      format('woff2'),
+    url('/fonts/JetBrainsMono/woff/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
