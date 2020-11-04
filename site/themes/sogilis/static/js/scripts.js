@@ -126,44 +126,72 @@ const throwError = (message) => {
  * Search
  * ============================================================================
  */
-const getFilteredPosts = async (term) => {
+const getFilteredPosts = async () => {
   const response = await fetch('/posts/index.json', { method: 'GET' });
   const contentType = response.headers.get('content-type');
 
   if (contentType && contentType.indexOf('application/json') !== -1) {
-    return response.json().then((data) => {
-      const filteredPosts = data.filter((post) => {
-        return post.title.toLowerCase().includes(term);
-      });
-
-      return filteredPosts;
-    });
+    return response.json().then((posts) => posts);
   }
 
   return [];
 };
 
+/**
+ * @property {HTMLLIElement} element
+ * @property {string} postTitle
+ */
 class SearchBarResultItem {
   /**
-   * @param {string} value
-   * @param {string} href
+   * @param {string} postTitle
+   * @param {string} postUrl
    */
-  constructor(value, href) {
+  constructor(postTitle, postUrl) {
     const li = document.createElement('li');
     li.classList.add('search-bar__results-item');
 
     const link = document.createElement('a');
     link.classList.add('search-bar__results-item-link');
-    link.href = href;
-    link.innerHTML = value;
+    link.href = postUrl;
+    link.innerHTML = postTitle;
 
     li.append(link);
 
     this.element = li;
+    this.postTitle = postTitle;
+  }
+
+  /**
+   * @param {RegExp} regexp
+   */
+  getMatchedElement(regexp) {
+    const matches = this.postTitle.match(regexp);
+
+    if (matches === null) {
+      return null;
+    }
+
+    this.element.firstElementChild.innerHTML = this.element.firstElementChild.innerHTML.replace(
+      regexp,
+      (match) => `<mark>${match}</mark>`
+    );
+
+    return this.element;
   }
 }
 
+/**
+ * @property {HTMLFormElement}  form
+ * @property {HTMLInputElement} input
+ * @property {HTMLUListElement} searchResults
+ */
 class SearchBar extends HTMLElement {
+  constructor() {
+    super();
+
+    this.shortcutHandler = this.shortcutHandler.bind(this);
+  }
+
   connectedCallback() {
     this.innerHTML = `
       <form id="search" class="search-bar" role="search">
@@ -181,18 +209,18 @@ class SearchBar extends HTMLElement {
         </g>
         <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
         </svg>
-
         </label>
         <input type="search" id="search-input" class="search-bar__input" placeholder="Search...">
       </form>
-
-      <ul id="search-result" class="search-bar__results" hidden>
-      </ul>
+      <div class="search-bar__results" hidden><ul id="search-result"></ul></div>
     `;
 
     this.form = document.getElementById('search');
     this.input = document.getElementById('search-input');
     this.searchResults = document.getElementById('search-result');
+
+    this.noResultElement = document.createElement('h1');
+    this.noResultElement.innerHTML = 'No results found.';
 
     this.form.addEventListener(
       'submit',
@@ -204,12 +232,19 @@ class SearchBar extends HTMLElement {
           return;
         }
 
-        this.search(term);
+        getFilteredPosts().then((data) => {
+          this.search({
+            posts: data.map(
+              (post) => new SearchBarResultItem(post.title, post.url)
+            ),
+            regexp: new RegExp(`${term}`, 'giu'),
+          });
+        });
       },
       false
     );
 
-    window.addEventListener('keydown', this.shortcutHandler.bind(this));
+    window.addEventListener('keydown', this.shortcutHandler);
   }
 
   disconnectedCallback() {
@@ -222,32 +257,39 @@ class SearchBar extends HTMLElement {
     }
   }
 
-  search(term) {
-    getFilteredPosts(term).then((posts) => {
-      this.openSearchBarResults();
+  search({ posts, regexp }) {
+    this.openSearchBarResults();
 
-      this.searchResults.innerHTML = '';
+    this.searchResults.innerHTML = '';
 
-      for (const post of posts) {
-        const searchBarResultItem = new SearchBarResultItem(
-          post.title,
-          post.url
-        );
-        this.searchResults.append(searchBarResultItem.element);
+    if (this.searchResults.parentNode.contains(this.noResultElement)) {
+      this.searchResults.parentNode.removeChild(this.noResultElement);
+    }
+
+    posts.forEach((post) => {
+      const searchBarResultItem = post.getMatchedElement(regexp);
+
+      if (searchBarResultItem !== null) {
+        this.searchResults.append(searchBarResultItem);
       }
-
-      document.body.style.overflow = 'hidden';
     });
+
+    if (this.searchResults.childNodes.length === 0) {
+      this.searchResults.parentNode.append(this.noResultElement);
+    }
+
+    document.body.style.overflow = 'hidden';
   }
 
   openSearchBarResults() {
-    this.searchResults.removeAttribute('hidden');
+    this.searchResults.parentNode.removeAttribute('hidden');
   }
 
   closeSearchBarResults() {
-    this.searchResults.setAttribute('hidden', '');
+    this.searchResults.parentNode.setAttribute('hidden', '');
     document.body.style.overflow = 'auto';
     this.input.blur();
+    this.input.value = '';
   }
 }
 

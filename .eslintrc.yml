@@ -41,6 +41,10 @@ rules:
     # https://github.com/eslint/eslint/issues/12950
     - ignoreTopLevelFunctions: true
 
+  max-lines-per-function:
+    - error
+    - max: 60
+
   lines-around-comment: off
 
   no-ternary: off
