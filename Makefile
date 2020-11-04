@@ -29,7 +29,8 @@ start_netlify:
 
 # Target used by Netlify to build the prod version.
 build:
-	make _build_common
+	make clean
+	make _common
 	# -s, --source string          filesystem path to read files relative from
 	# -d, --destination string     filesystem path to write files to
 	# -v, --verbose                verbose output
@@ -37,7 +38,8 @@ build:
 
 # Target used by Netlify to build his preview
 build_preview:
-	make _build_common
+	make clean
+	make _common
 	# -s, --source string          filesystem path to read files relative from
 	# -d, --destination string     filesystem path to write files to
 	# -D, --buildDrafts            include content marked as draft
@@ -57,7 +59,6 @@ clean:
 # ==============================================================================
 
 _common:
-	make clean
 	yarn install --network-timeout 3000 --prefer-offline
 	yarn lint
 	yarn prettier:check
@@ -68,9 +69,6 @@ _common:
 	## fonts
 	cp -R ./node_modules/typeface-montserrat ./site/themes/sogilis/static/css/typeface-montserrat
 	cp -R ./node_modules/typeface-eb-garamond ./site/themes/sogilis/static/css/typeface-eb-garamond
-
-_build_common:
-	make _common
 
 
 # ==============================================================================
