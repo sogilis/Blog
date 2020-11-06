@@ -138,15 +138,14 @@ const fetchPosts = async () => {
 };
 
 /**
- * @property {HTMLLIElement} element
- * @property {string} postTitle
+ * @property {HTMLLIElement} getElementsByTagName
  */
 class SearchBarResultItem {
   /**
    * @param {string} postTitle
    * @param {string} postUrl
    */
-  constructor(postTitle, postUrl) {
+  constructor(postTitle, postUrl, regexp) {
     const li = document.createElement('li');
     li.classList.add('search-bar__results-item');
 
@@ -158,25 +157,10 @@ class SearchBarResultItem {
     li.append(link);
 
     this.element = li;
-    this.postTitle = postTitle;
-  }
-
-  /**
-   * @param {RegExp} regexp
-   */
-  getMatchedElement(regexp) {
-    const matches = this.postTitle.match(regexp);
-
-    if (matches === null) {
-      return null;
-    }
-
     this.element.firstElementChild.innerHTML = this.element.firstElementChild.innerHTML.replace(
       regexp,
       (match) => `<mark>${match}</mark>`
     );
-
-    return this.element;
   }
 }
 
@@ -232,14 +216,7 @@ class SearchBar extends HTMLElement {
           return;
         }
 
-        fetchPosts().then((data) => {
-          this.search({
-            posts: data.map(
-              (post) => new SearchBarResultItem(post.title, post.url)
-            ),
-            regexp: new RegExp(`${term}`, 'giu'),
-          });
-        });
+        this.search(new RegExp(term, 'giu'));
       },
       false
     );
@@ -257,7 +234,16 @@ class SearchBar extends HTMLElement {
     }
   }
 
-  search({ posts, regexp }) {
+  async search(regexp) {
+    const posts = await fetchPosts();
+    const resultItems = posts
+      .filter((post) => post.title.match(regexp) !== null)
+      .map((post) => new SearchBarResultItem(post.title, post.url, regexp));
+
+    this.displayResults(resultItems);
+  }
+
+  displayResults(resultItems) {
     this.openSearchBarResults();
 
     this.searchResults.innerHTML = '';
@@ -266,8 +252,8 @@ class SearchBar extends HTMLElement {
       this.searchResults.parentNode.removeChild(this.noResultElement);
     }
 
-    posts.forEach((post) => {
-      const searchBarResultItem = post.getMatchedElement(regexp);
+    resultItems.forEach((item) => {
+      const searchBarResultItem = item.element;
 
       if (searchBarResultItem !== null) {
         this.searchResults.append(searchBarResultItem);
