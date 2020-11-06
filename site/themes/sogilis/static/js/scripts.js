@@ -126,12 +126,12 @@ const throwError = (message) => {
  * Search
  * ============================================================================
  */
-const getFilteredPosts = async () => {
+const fetchPosts = async () => {
   const response = await fetch('/posts/index.json', { method: 'GET' });
   const contentType = response.headers.get('content-type');
 
   if (contentType && contentType.indexOf('application/json') !== -1) {
-    return response.json().then((posts) => posts);
+    return response.json();
   }
 
   return [];
@@ -232,7 +232,7 @@ class SearchBar extends HTMLElement {
           return;
         }
 
-        getFilteredPosts().then((data) => {
+        fetchPosts().then((data) => {
           this.search({
             posts: data.map(
               (post) => new SearchBarResultItem(post.title, post.url)
