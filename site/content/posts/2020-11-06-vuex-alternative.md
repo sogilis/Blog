@@ -144,7 +144,7 @@ Encore une fois, ce modèle de programmation a des avantages, mais sont-ils pert
 Toujours est-il que cela a un coût, et notamment au niveau de la navigabilité dans le code. En effet, les éditeurs et autres IDE ne permettent généralement pas de naviguer de `this.commit('increment')` vers les mutateurs associés, voir encore moins dans l'autre sens.
 Cependant, certains plugins permettent de remédier à ce problème, mais il n'est pas certain de trouver le et les plugins adaptés qui résolve tous ces problèmes, et ce pour chaque éditeur / IDE et chaque language (JavaScript, TypeScript, etc.).
 
-Sans VueX on appelle juste des fonctions JS (ex : `ArticlesRepository.removaAll()`), le problème ne se présente donc pas.
+Sans VueX on appelle juste des fonctions JS (ex : `ArticlesRepository.removeAll()`), le problème ne se présente donc pas.
 
 ### 4. Fail early
 
