@@ -75,8 +75,8 @@ In Threat Extension, we will concern the threat-side of the risk model. The pote
 
 Nowadays, the privacy violation is one of the most concerned issues for public acceptance of UAS application. However, the general privacy is a very large term and it’s difficult to define it precisely and to address it. We will focus on only three aspects of this harm: 
 
-1) Disclosure of personal information;
-2) Illegal personal surveillance; and
+1) Disclosure of personal information,
+2) Illegal personal surveillance,
 3) Intrusion into private location.
 
 We first analyze the likelihood of the privacy violation to determine the possible factors related to this harm, which could be used for the assessment. Then we propose extensions for the assessment process by adding a new step called “Privacy Risk Class (PRC) determination”. With the privacy harm taken into account, the objective of risk assessment is extended to maintain the harm likelihood to privacy under a certain acceptable level. 
@@ -124,4 +124,3 @@ The risk assessment process could be resumed as:
 2) Determinatino of safety objectives corresponding to the critical level. 
 
 Based on this concept, we proposed a general approach to extend the existing methodology to support cybersecurity aspect by adding new relevant threats and harms. New harms will be taken into account to evaluate the critical level of the UAS operation. Meanwhile, new threats will be added to anticipate new causes of incidents related to cybersecurity and determine corresponding means of mitigation (or cybersecurity objectives).
-
