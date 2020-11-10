@@ -97,7 +97,7 @@ Similar to harms introduced in the classical SORA methodology, the likelihood of
 -	 Restriction on private space: the operator avoids making a flight path across a private space
 -	 Operation-aware announcement to public: the public under observation of a UAS operation should be informed about it.
 
-the likelihood of privacy violation in the case of ”UAS operation out of control” is represented qualitatively by the Privacy Risk Class (PRC) value. The intrinsic PRC value is determined based on the intrinsic features of operation as shown in Figure 5.
+The likelihood of privacy violation in the case of “UAS operation out of control” is represented qualitatively by the Privacy Risk Class (PRC) value. The intrinsic PRC value is determined based on the intrinsic features of operation as shown in Figure 5.
 
 {{< figure src="/img/article_uas_cybersecurity/uas_cybersecurity_005.png" title="Figure 5. Intrinsic PRC Determination" width="600" align="center">}}
 
@@ -124,7 +124,6 @@ The risk assessment process could be resumed as:
 2) Determinatino of safety objectives corresponding to the critical level. 
 
 Based on this concept, we proposed a general approach to extend the existing methodology to support cybersecurity aspect by adding new relevant threats and harms. New harms will be taken into account to evaluate the critical level of the UAS operation. Meanwhile, new threats will be added to anticipate new causes of incidents related to cybersecurity and determine corresponding means of mitigation (or cybersecurity objectives).
-
 
 
 
