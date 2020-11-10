@@ -14,18 +14,26 @@ tags:
 
 ## Introduction
 
-On retrouve une quantité grandissante de données très sensibles stockées dans le cloud. Suite aux différents scandales de fuite d'informations la conscience du grand public sur les problématiques de vie privée en ligne et de sécurité des données n'a cessée de croître. Cela soulève de nombreuses questions, qui stocke mes données ? Qui d'autre peut y avoir accès ? Et pendant le transport de ces données sur le réseau ? 
-On doit donner à l'utilisateur le pouvoir de garder le contrôle sur ses données, savoir qui a accès à quoi et pendant combien de temps ?
+On retrouve une quantité grandissante de données très sensibles stockées dans le cloud (documents d'identité, bulletin de salaires en pièce jointe des mails, etc.). Aussi, la possibilité de fuite de ces données n'est plus à prouver aujourd'hui, et la conscience du grand public sur les problématiques de protection de la vie privée et des données sensibles n'a cessée de croître. Les questions suivantes gagnent alors en popularité : qui stocke mes données ? Comment ? Qui d'autre peut y avoir accès ? Sont-elles protégées pendant le transport sur le réseau ? 
+En d'autres termes, les utilisateurs veulent garder le contrôle de leur données, savoir qui a accès à quoi et pendant combien de temps.
 
-L'architecture Zero Knowledge (ou ZKA) est un principe d'architecture logicielle qui permet de donner sélectivement l'accès à des données ou de vérifier des conditions sur des données sans avoir à donner l'accès direct aux informations. 
-C'est une approche architecturale qui met la priorité sur la vie privée des utilisateurs, en integrant la sécurité profondément dans la conception du logiciel il est possible de de garantir que seul l'utilisateur peut les déchiffrer les données, les acteurs de la transmission et du stockage ne peuvent donc pas exploiter les données. Le système permet d'utiliser les informations stockées sur des services externes cependant sans divulguer plus que le strictement nécessaire.
+L'architecture Zero Knowledge (ou ZKA) est un principe d'architecture logicielle visant à assurer la protection et le contrôle des données à caractère privé. Idéalement, les services « zero knowledge » n'ont même pas accès aux données qu'ils manipulent (d'où le principe de connaissance nulle).
+Par exemple, on peut considérer qu'un service de stockage de données dit « zero knowledge », met en place un système de chiffrement qui assure que seul l'utilisateur final peut lire les dites données.
+
+À noter que le nom « Zero Knowledge Architecture » est issue du concept de « [preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance) » aka « Zero Knowledge Proof » en anglais. 
+
+**TODO: reformuler la citation Wiipedia**
+
+> Cette expression désigne un protocole sécurisé dans lequel une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans toutefois révéler d'autres informations que la véracité de la proposition
+
+Cette définition ancre le principe suivant : les services d'une architecture dite « Zero knowledge », y compris les éventuels moyen de transport de données qui la composent, ne peuvent accèder à des données utilisateurs, que si le consentement a été explicitement donné.  Nous verrons aussi un peu plus tard, que la granularité des blocs d'informations qui composent les données à caractère privé, joue un rôle essentiel dans les architectures zero knowledge.
 
 ## Quelle utilité ? 
 
-Il y a de nombreux domaines d'applications possibles et certaines entreprises utilisent déjà cette architecture ou certains de ses grands principes dans des produits, par exemple, **[Signal](https://signal.org/blog/private-contact-discovery/)**, **[NordPass](https://nordpass.com/features/zero-knowledge-architecture/)** ou **[CryptPad](https://blog.cryptpad.fr/2017/02/20/Time-to-Encrypt-the-Cloud/)** qui sont respectivement, une application de messagerie chiffrée, un gestionnaire de mots de passe et un concurrent à google suite. Le lien vers CryptPad est un article contenant une liste d'autre service zero knowledge.
-Etant donné qu'il s'agit uniquement d'un principe d'architecture il pourrait être appliqué à presque tous les domaines, pour mieux comprendre nous allons nous concentrer sur un exemple, jouer au loto en ligne.
+Il y a de nombreux domaines d'applications possibles pour la ZKA et certaines entreprises utilisent déjà ses principes dans leurs produits. Par exemple, **[Signal](https://signal.org/blog/private-contact-discovery/)**, **[NordPass](https://nordpass.com/features/zero-knowledge-architecture/)** ou **[CryptPad](https://blog.cryptpad.fr/2017/02/20/Time-to-Encrypt-the-Cloud/)** qui sont respectivement, une application de messagerie chiffrée, un gestionnaire de mots de passe et un concurrent à google suite. Le lien vers CryptPad est un article contenant une liste d'autres services zero knowledge.
+Etant donné qu'il s'agit uniquement d'un principe d'architecture il pourrait être appliqué à presque tous les domaines, pour mieux comprendre nous allons nous concentrer sur un exemple : jouer au loto en ligne.
 
-Pour prouver son âge typiquement on montre une pièce d'identité, après vérification aucune donnée n'est conservée. Cependant sur internet ce n'est pas si simple, et si on en vient à montrer une pièce d'identité, on la numérise puis la transmets. Ceci se fait généralement de manière non chiffrée ce qui représente déjà un problème, d'autant plus que la pièce d'identité contient plus d'informations que nécessaire pour prouver qu'on a le droit de jouer au loto. Mais également après vérification nous ne savons pas vraiment comment sont gérées les données, malgré les RGPD il y a toujours des doutes sur les pratiques de stockage des données. 
+Pour prouver son âge typiquement on montre une pièce d'identité, après vérification aucune donnée n'est conservée. Cependant sur Internet ce n'est pas si simple, et si on en vient à montrer une pièce d'identité, on la numérise puis la transmet. Ceci se fait généralement de manière non chiffrée, ce qui représente un premier problème, laissant les données d'identité de l'utilisateur, sensibles à des écoutes ou a des fuites sur les canaux de communucation. Un second problème s'ajoute à celà : la pièce d'identité contient plus d'informations que nécessaire. En effet, il suffit de prouver son âge afin d'obtenir le droit de jouer au loto, mais dans le cas de la pièce d'identité, ce sont bien toutes les données d'identités (prénom, nom, âge, mais aussi adresse postale et nationalité) qui sont révélées. Ce second problème est aggravé par le fait que nous ne savons pas vraiment comment sont gérées les données de la pièce d'indentité, une fois la preuve de majorité obtenue. Malgré l'application de la loi RGPD, des doutes sur les pratiques de stockage des données subsistent, en l'absence d'audit complet de l'infrastructure du service.
 
 Maintenant imaginons qu'il existe une application comme le **[Dossier Médical Partagé](https://www.dmp.fr/)** qui gère le suivi médical et l'identité en adhérant aux principes zero knowledge. Si Billy veut s'inscrire sur un site de loto en ligne il doit prouver qu'il est majeur, dans le cas où le site accepte ce mode d'identification Billy peut le faire sans dévoiler son âge exact ou son identité. Etant donné que le système contient aussi ses informations médicales le site du loto pourrait utiliser l'API pour vérifier que Billy n'a pas d'historique d'addiction aux jeux d'argent avant de lui permettre de jouer de grosses sommes. L'accès aux données sera nécessairement validé par Billy, et son historique médical exact ne sera pas révélé, l'application répondra avec un score abstrait ou un booléen. 
 
@@ -44,34 +52,34 @@ SCHEMA FONCTIONNEL
 
 **Approche non naÏve**
 
-Typiquement lorsqu'on stock des données réservées à un utilisateur on utilise un paradigme de base de données NoSQL, ce qui nous donne un document par utilisateur. Compte tenu de nos objectifs en terme de vie privée on ne va pas tout transmettre quand quelqu'un nous demande l'accès à certaines données, c'est une approche dite "non naïve". On utilie des blobs, ce sont des ensembles de données liées et les plus unitaires possibles. Des exemples de blobs peuvent être le blob "identité", qui contient uniquement votre identité, le blob "est majeur(e) ?" pour donner l'accès à cette information uniquement. Ou encore le blob "historique de rendez vous médicaux" qui lui même contient un blob "informations de facturation". Cela permet de contrôler avec une granularité extrêmement fine les données que l'on va partager avec les différents services qui ont des besoins différents. 
+Compte tenu de nos objectifs en terme de vie privée on ne va pas tout transmettre quand quelqu'un nous demande l'accès à certaines données, c'est une approche dite "non naïve". On utilie des blobs, ce sont des ensembles de données liées et concùs pour être les plus unitaires possibles. Des exemples de blobs peuvent être le blob "identité", qui contient uniquement votre identité, le blob "est majeur(e) ?" pour donner l'accès à cette information uniquement. Ou encore le blob "rendez-vous médical" qui lui même contient, entres autres, un sous-blob "informations de facturation". Cela permet de contrôler avec une granularité extrêmement fine les données que l'on va partager avec les différents services qui ont des besoins différents. 
 
 **Chiffrement de bout en bout**
 
 Toutes les opérations de chiffrement et déchiffrement sont réalisées côté client, c'est à dire sur la machine de l'utilisateur. C'est également le cas pour partager des données avec un service externe, les données ne sont jamais stockées ou transmises en clair. Lorsqu'un service requête des données c'est seulement une fois arrivées au service qui possède la clé privée que les données pourront être lues. Non seulement chaque service qui consomme vos données a une clé différente mais il est possible pour chaque service de contrôler l'accès à chaque blob individuellement. Pour les performances il est préférable de faire de l'encapsulation de clé symétrique. Le serveur central qui sert de tiers de confiance peut révoquer le certificat d'un service pour bloquer l'accès, l'utilisateur a également plein controle sur l'accès à ses données.
 
-## Points forts
+## Points forts de La ZKA
 
-Il est possible de développer des clients pour ce type d'architecture sur toutes les plateformes, en clients lourds type applications mobiles ou application desktop, mais également dans le navigateur en utilisant les APIs récents.
+L'écosystème de bibliothèque de cryptographie permet de développer tout types de clients : client lourds, mobiles ou Web, pour les services zero-knowledge.
 
-Cette architecture a pour principale sécurité elle présente très peu de risques, si les données fuitent du serveur elles sont chiffrées et donc sans valeur. Pour la même raison si quelqu'un a des privilèges sur la machine qui contient les données il n'a pas accès à nos données en clair puisque l'utilisateur est le seul à posséder la clé nécessaire au déchiffrement. 
+Cette architecture présente très peu de risques pour les données stockées, si les données fuitent du serveur elles sont chiffrées et donc sans valeur. Pour la même raison si quelqu'un a des privilèges sur la machine qui contient les données il n'a pas accès à nos données en clair puisque l'utilisateur est le seul à posséder la clé nécessaire au déchiffrement. 
 
-L'authentification zero knowledge permet de prévenir un bon nombre d'attaque qui viserait à espionner et usurper les identifiants de l'utilisateur. Le mot de passe ne transite jamais sur le réseau et le challenge émis par le serveur est différent à chaque fois.
+L'authentification zero knowledge permet de prévenir un bon nombre d'attaque qui viserait à espionner et usurper les identifiants de l'utilisateur. En effet, la systématisation du principe de défi cryptographique, implique qu'il n'y a plus d'échange de mot de passe sur le réseau, ce qui diminue le risque de fuite de données d'authentification. De plus, le challenge émis par le serveur étant différent à chaque requête, les attaques de types « man in the middle » sont aussi rendues plus difficiles à opérer.
 
 Le chiffrement de bout en bout résout le manque de confiance en le serveur et les acteurs de transmission qui ne peuvent pas accéder aux données en clair.
 
-Préservation de la vie privée en ne divulguant que les données nécessaire et ce avec l'accord de l'utilisateur, qui est révocable à tout moment.
+Préservation de la vie privée en ne divulguant que les données nécessaires, et ce, avec l'accord de l'utilisateur, qui est révocable à tout moment.
 
 
 ## Limites 
 
-Compte tenu de l'omniprésence de la cryptographie dans l'architecture elle est assez complexe ce qui la rend coûteuse à mettre en place. C'est particulièrement le cas à cause du manque de framework ou autre librairies pour faciliter le développement.
+Compte tenu de l'omniprésence de la cryptographie dans l'architecture, la ZKA est assez complexe, ce qui implique une montée en compétence sur la cryptographie et un coût de mise en place supplèmentaire.
 
 Dans les cas où il faut absolument être sur de pouvoir retrouver ses données il faut mettre en place un système de récupération de clé, mais ce n'est pas critique tout le temps.
 
 Si on veut développer le client dans les navigateurs on a besoin de nombreuses mesures de sécurités, CORS, CSP (Content security policy), SRI (verification d'assets), Referrer-Policy et File-API, et idéalement faire tourner la couche crypto en WebAssembly afin de compliquer les manipulations lors de l'exécution.
 
-Il faut avoir confiance en l'implémentation de l'application ZKA, il faut au minimum que le code soit audité et idéalement que le code soit open source afin de garantir l'absence d'erreurs ou de backdoors.
+Afin d'avoir confiance en l'implémentation de l'application ZKA, il faut au minimum que le code soit audité par un tiers de confiance, ou ouvert (licence libre ou open-source). De cette façon, on a un moyen d'étudier l'absence d'erreurs ou de backdoors.
 
 On atteint jamais le zero knowledge, le fonctionnement de l'application nécessite forcément la connaissance d'une adresse IP et la clé publique de chiffrement qui peut être l'identifiant, pas moyen d'échapper à ça. Or cela engendre des métadonnées qui peuvent déjà laisser transparaître des informations.   
 
