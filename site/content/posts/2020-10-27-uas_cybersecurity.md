@@ -71,7 +71,7 @@ In Threat Extension, we will concern the threat-side of the risk model. The pote
 
 {{< figure src="/img/article_uas_cybersecurity/uas_cybersecurity_003.png" title="Figure 3. Extended risk model" width="700" align="center">}}
 
-## IV.	CYBERSECURITY for privacy issues in UAS operations
+## IV.	Cybersecurity for privacy issues in UAS operations
 
 Nowadays, the privacy violation is one of the most concerned issues for public acceptance of UAS application. However, the general privacy is a very large term and it’s difficult to define it precisely and to address it. We will focus on only three aspects of this harm: 
 
@@ -124,6 +124,5 @@ The risk assessment process could be resumed as:
 2) Determinatino of safety objectives corresponding to the critical level. 
 
 Based on this concept, we proposed a general approach to extend the existing methodology to support cybersecurity aspect by adding new relevant threats and harms. New harms will be taken into account to evaluate the critical level of the UAS operation. Meanwhile, new threats will be added to anticipate new causes of incidents related to cybersecurity and determine corresponding means of mitigation (or cybersecurity objectives).
-
 
 
