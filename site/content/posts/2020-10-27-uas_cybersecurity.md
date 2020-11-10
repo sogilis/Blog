@@ -10,7 +10,7 @@ tags:
   - dev
 
 ---
-***Abstract—* For several years, the civil Unmanned Aircraft System (UAS) has become more and more popular with many applications such as aerial photography, goods transportation, surveillance, etc. However, the lack of human observation, communication capacities, and protection makes UAS a good target for cyber-attacks. Therefore, the risk related to the cybersecurity of UAS should be assessed and taken into account in the early phase of UAS development.**   
+***Abstract —* For several years, the civil Unmanned Aircraft System (UAS) has become more and more popular with many applications such as aerial photography, goods transportation, surveillance, etc. However, the lack of human observation, communication capacities, and protection makes UAS a good target for cyber-attacks. Therefore, the risk related to the cybersecurity of UAS should be assessed and taken into account in the early phase of UAS development.**   
 
 ## I. Introduction
 
