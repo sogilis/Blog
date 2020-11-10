@@ -37,7 +37,7 @@ However, the risks in the SORA methodology is tied to only likelihood parameters
 
 2)	Qualitative approach:
 The SORA methodology proposes a qualitative approach based on the main ideas of the quantitative approach. First, we determine two qualitative factors: 
--	Ground Risk Class (GRC)
+-	Ground Risk Class (GRC),
 -	 Air Risk Class (ARC).
 
 These factors represent qualitatively the likelihoods that the harms occur in the case of UAS operation out of control. The GRC and ARC are determined based on the intrinsic characteristics of the operation such as operational area, attitude, weight of the UAS and the availability of harm barriers.
@@ -124,5 +124,4 @@ The risk assessment process could be resumed as:
 2) Determinatino of safety objectives corresponding to the critical level. 
 
 Based on this concept, we proposed a general approach to extend the existing methodology to support cybersecurity aspect by adding new relevant threats and harms. New harms will be taken into account to evaluate the critical level of the UAS operation. Meanwhile, new threats will be added to anticipate new causes of incidents related to cybersecurity and determine corresponding means of mitigation (or cybersecurity objectives).
-
 
