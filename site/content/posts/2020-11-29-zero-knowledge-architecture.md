@@ -17,13 +17,13 @@ tags:
 On retrouve une quantité grandissante de données très sensibles stockées dans le cloud. Suite aux différents scandales de fuite d'informations la conscience du grand public sur les problématiques de vie privée en ligne et de sécurité des données n'a cessée de croître. Cela soulève de nombreuses questions, qui stocke mes données ? Qui d'autre peut y avoir accès ? Et pendant le transport de ces données sur le réseau ? 
 On doit donner à l'utilisateur le pouvoir de garder le contrôle sur ses données, savoir qui a accès à quoi et pendant combien de temps ?
 
-L'architecture Zero Knowledge (ou ZKA) est une approche de design d'applications qui permet de donner sélectivement l'accès à des données ou de vérifier des conditions sur des données sans avoir à donner l'accès direct aux informations. 
-C'est une approche architecturale qui met la priorité sur la vie privée des utilisateurs, en integrant la sécurité profondément dans le design du logiciel il est possible de de garantir que seul l'utilisateur peut les déchiffrer les données, les acteurs de la transmission et du stockage ne peuvent donc pas exploiter les données. Le système permet d'utiliser les informations stockées sur des services externes cependant sans divulguer plus que le strictement nécessaire.
+L'architecture Zero Knowledge (ou ZKA) est un principe d'architecture logicielle qui permet de donner sélectivement l'accès à des données ou de vérifier des conditions sur des données sans avoir à donner l'accès direct aux informations. 
+C'est une approche architecturale qui met la priorité sur la vie privée des utilisateurs, en integrant la sécurité profondément dans la conception du logiciel il est possible de de garantir que seul l'utilisateur peut les déchiffrer les données, les acteurs de la transmission et du stockage ne peuvent donc pas exploiter les données. Le système permet d'utiliser les informations stockées sur des services externes cependant sans divulguer plus que le strictement nécessaire.
 
 ## Quelle utilité ? 
 
 Il y a de nombreux domaines d'applications possibles et certaines entreprises utilisent déjà cette architecture ou certains de ses grands principes dans des produits, par exemple, **[Signal](https://signal.org/blog/private-contact-discovery/)**, **[NordPass](https://nordpass.com/features/zero-knowledge-architecture/)** ou **[CryptPad](https://blog.cryptpad.fr/2017/02/20/Time-to-Encrypt-the-Cloud/)** qui sont respectivement, une application de messagerie chiffrée, un gestionnaire de mots de passe et un concurrent à google suite. Le lien vers CryptPad est un article contenant une liste d'autre service zero knowledge.
-Etant donné qu'il s'agit uniquement d'un design pattern il pourrait être appliqué à presque tous les domaines, pour mieux comprendre nous allons nous concentrer sur un exemple, jouer au loto en ligne.
+Etant donné qu'il s'agit uniquement d'un principe d'architecture il pourrait être appliqué à presque tous les domaines, pour mieux comprendre nous allons nous concentrer sur un exemple, jouer au loto en ligne.
 
 Pour prouver son âge typiquement on montre une pièce d'identité, après vérification aucune donnée n'est conservée. Cependant sur internet ce n'est pas si simple, et si on en vient à montrer une pièce d'identité, on la numérise puis la transmets. Ceci se fait généralement de manière non chiffrée ce qui représente déjà un problème, d'autant plus que la pièce d'identité contient plus d'informations que nécessaire pour prouver qu'on a le droit de jouer au loto. Mais également après vérification nous ne savons pas vraiment comment sont gérées les données, malgré les RGPD il y a toujours des doutes sur les pratiques de stockage des données. 
 
@@ -77,7 +77,7 @@ On atteint jamais le zero knowledge, le fonctionnement de l'application nécessi
 
  ## Conclusion
 
-L'évolution des lois et de la mentalité des utilisateurs entraîne des design patterns radicalement nouveaux, centrés sur la vie privée et la sécurité. L'apparition de nouveaux services basés sur cette architecture va stimuler l'écosystème ce qui développera à terme les briques technologiques nécessaires pour que toute l'industrie puisse appliquer ces approches architecturales. Les utilisateurs ont beaucoup à y gagner puisqu'en plus de la sécurité accrue, ces pratiques assurent l'éthique des développeurs qui ne peuvent pas accéder aux informations afin de faire de la publicité ciblée ou d'espionner leurs utilisateurs.
+L'évolution des lois et de la mentalité des utilisateurs ammène des principes d'architecture logicielle radicalement nouveaux, centrés sur la vie privée et la sécurité. L'apparition de nouveaux services basés sur cette architecture va stimuler l'écosystème ce qui développera à terme les briques technologiques nécessaires pour que toute l'industrie puisse appliquer ces approches architecturales. Les utilisateurs ont beaucoup à y gagner puisqu'en plus de la sécurité accrue, ces pratiques assurent l'éthique des développeurs qui ne peuvent pas accéder aux informations afin de faire de la publicité ciblée ou d'espionner leurs utilisateurs.
 
 
 ## Pour approfondir 
