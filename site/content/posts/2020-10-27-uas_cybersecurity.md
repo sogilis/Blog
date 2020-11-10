@@ -87,8 +87,8 @@ Similar to the likelihood of harms to the person’s life, the one of the privac
 
 We identified three intrinsic features of a UAS operation to evaluate the likelihood of privacy violation in case of “UAS operation out of control”:
 
-- Density of operational area: urban zone vs. rural zone
-- Type of operation: BLOS vs. BVLOS (Beyond Visual Line of Sight)
+- Density of operational area: urban zone vs. rural zone,
+- Type of operation: BLOS vs. BVLOS (Beyond Visual Line of Sight),
 - Level of detail of the captured images.
 
 Similar to harms introduced in the classical SORA methodology, the likelihood of privacy harm could be reduced by applying some harm barriers. In this extension, we address three types of harm barriers to mitigate the privacy harms:
