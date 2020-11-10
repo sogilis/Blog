@@ -17,7 +17,7 @@ tags:
 To deal with the progressive increase in the number of UAS operations, the European Aviation Safety Agency (EASA) classified UAS operations into three categories according to their risk levels: Open, Specific and Certified. In the "Specific" category, we could expect the operation of large drones flying above populated areas, out of the visual line of sight of the pilot and sharing the airspace with manned aircrafts. These operations could pose significant harm to the people overflown and the manned aircraft, especially in the case of a cyber-attack. 
 To the best of our knowledge, the most common risk assessment methodology in the UAS domain is Specific Operation Risk Assessment (SORA), which is endorsed by the European Union Aviation Safety Agency (EASA) as an acceptable means to fulfill the requirements of the EU regulations related to UAS. However, at this moment, the methodology focuses on only the safety aspect and ignores the cybersecurity aspect.
  
-## II. GENERAL CONCEPT OF THE SORA METHODOLOGY 
+## II. General concept of the SORA methodology
 
 ### A. Risk Model 
 
@@ -124,7 +124,6 @@ The risk assessment process could be resumed as:
 2) Determinatino of safety objectives corresponding to the critical level. 
 
 Based on this concept, we proposed a general approach to extend the existing methodology to support cybersecurity aspect by adding new relevant threats and harms. New harms will be taken into account to evaluate the critical level of the UAS operation. Meanwhile, new threats will be added to anticipate new causes of incidents related to cybersecurity and determine corresponding means of mitigation (or cybersecurity objectives).
-
 
 
 
