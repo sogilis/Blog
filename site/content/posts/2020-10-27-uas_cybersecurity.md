@@ -121,6 +121,6 @@ is only the way that they are determined. The 2D-SAIL is a combination of GRC an
 The risk assessment process could be resumed as: 
 
 1) Evaluation of the critical level of a UAS operation based on the likelihood of harms, 
-2) Determinatino of safety objectives corresponding to the critical level. 
+2) Determination of safety objectives corresponding to the critical level. 
 
 Based on this concept, we proposed a general approach to extend the existing methodology to support cybersecurity aspect by adding new relevant threats and harms. New harms will be taken into account to evaluate the critical level of the UAS operation. Meanwhile, new threats will be added to anticipate new causes of incidents related to cybersecurity and determine corresponding means of mitigation (or cybersecurity objectives).
