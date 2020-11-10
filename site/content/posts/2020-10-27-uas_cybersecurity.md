@@ -116,7 +116,7 @@ The last step consists in new SAIL determination, the process is described as fo
 The 2D-SAIL and 3D-SAIL mentioned above are two different values. The main different point between them
 is only the way that they are determined. The 2D-SAIL is a combination of GRC and ARC without taking into account PRC (privacy harm). Meanwhile 3D-SAIL takes into account the privacy harm. But both of them represent the level of confidence that “the UAS operation will stay under control” that needs to be achieved.
 
-## IV.	Conclusions
+## V.	Conclusions
 
 The risk assessment process could be resumed as: 
 
