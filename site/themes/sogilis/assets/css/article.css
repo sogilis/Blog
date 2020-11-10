@@ -86,6 +86,20 @@ pre {
   border: solid 5px transparent;
 }
 
+@media (max-width: 991px) {
+  blockquote,
+  pre {
+    width: inherit;
+    margin: 1.9rem 0 1.9rem 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  blockquote,
+  pre {
+    margin-left: 0;
+  }
+}
+
 blockquote {
   font-style: italic;
   border-left-color: var(--dark-blue);
