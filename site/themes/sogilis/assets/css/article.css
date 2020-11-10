@@ -59,7 +59,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   font-size: 1rem;
 }
 
@@ -202,8 +202,10 @@ figcaption h4 {
 /* Code font */
 /* ========================================================================== */
 
+--font-jetbrains-mono: 'JetBrainsMono';
+
 @font-face {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Bold-Italic.woff2')
       format('woff2'),
     url('/fonts/JetBrainsMono/woff/JetBrainsMono-Bold-Italic.woff')
@@ -214,7 +216,7 @@ figcaption h4 {
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Bold.woff2')
       format('woff2'),
     url('/fonts/JetBrainsMono/woff/JetBrainsMono-Bold.woff') format('woff');
@@ -224,7 +226,7 @@ figcaption h4 {
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-ExtraBold-Italic.woff2')
       format('woff2'),
     url('/fonts/JetBrainsMono/woff/JetBrainsMono-ExtraBold-Italic.woff')
@@ -235,7 +237,7 @@ figcaption h4 {
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-ExtraBold.woff2')
       format('woff2'),
     url('/fonts/JetBrainsMono/woff/JetBrainsMono-ExtraBold.woff') format('woff');
@@ -245,7 +247,7 @@ figcaption h4 {
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Italic.woff2')
       format('woff2'),
     url('/fonts/JetBrainsMono/woff/JetBrainsMono-Italic.woff') format('woff');
@@ -255,7 +257,7 @@ figcaption h4 {
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Medium-Italic.woff2')
       format('woff2'),
     url('/fonts/JetBrainsMono/woff/JetBrainsMono-Medium-Italic.woff')
@@ -266,7 +268,7 @@ figcaption h4 {
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Medium.woff2')
       format('woff2'),
     url('/fonts/JetBrainsMono/woff/JetBrainsMono-Medium.woff') format('woff');
@@ -276,7 +278,7 @@ figcaption h4 {
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
+  font-family: var(--font-jetbrains-mono);
   src: url('/fonts/JetBrainsMono/woff2/JetBrainsMono-Regular.woff2')
       format('woff2'),
     url('/fonts/JetBrainsMono/woff/JetBrainsMono-Regular.woff') format('woff');
