@@ -110,7 +110,7 @@ According to figure 5, the intrinsic PRC is at the C level. Upon analysis of the
 The last step consists in new SAIL determination, the process is described as follows:
 
 1) Determine a SAIL corresponding to the values of ARC and GRC (see Figure. 2) (classical SORA methodology). This value is called 2D-SAIL.
-2) Determine SAIL value corresponding to PRC value
+2) Determine SAIL value corresponding to PRC value.
 3) Choose the higher SAIL value (more critical) between the two determined SAIL values as the 3D-SAIL or the final SAIL corresponding to the operation.
 
 The 2D-SAIL and 3D-SAIL mentioned above are two different values. The main different point between them
@@ -124,7 +124,6 @@ The risk assessment process could be resumed as:
 2) Determinatino of safety objectives corresponding to the critical level. 
 
 Based on this concept, we proposed a general approach to extend the existing methodology to support cybersecurity aspect by adding new relevant threats and harms. New harms will be taken into account to evaluate the critical level of the UAS operation. Meanwhile, new threats will be added to anticipate new causes of incidents related to cybersecurity and determine corresponding means of mitigation (or cybersecurity objectives).
-
 
 
 
