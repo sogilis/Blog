@@ -37,10 +37,14 @@ Etant donné qu'il s'agit uniquement d'un principe d'architecture il pourrait ê
 
 Pour prouver son âge typiquement on montre une pièce d'identité, après vérification aucune donnée n'est conservée. Cependant sur Internet ce n'est pas si simple, et si on en vient à montrer une pièce d'identité, on la numérise puis la transmet. Ceci se fait généralement de manière non chiffrée, ce qui représente un premier problème, laissant les données d'identité de l'utilisateur, sensibles à des écoutes ou a des fuites sur les canaux de communucation. Un second problème s'ajoute à celà : la pièce d'identité contient plus d'informations que nécessaire. En effet, il suffit de prouver son âge afin d'obtenir le droit de jouer au loto, mais dans le cas de la pièce d'identité, ce sont bien toutes les données d'identités (prénom, nom, âge, mais aussi adresse postale et nationalité) qui sont révélées. Ce second problème est aggravé par le fait que nous ne savons pas vraiment comment sont gérées les données de la pièce d'indentité, une fois la preuve de majorité obtenue. Malgré l'application de la loi RGPD, des doutes sur les pratiques de stockage des données subsistent, en l'absence d'audit complet de l'infrastructure du service.
 
-Imaginons maintenant un second scénario, tel qu'une application médicale ayant accès au **[Dossier Médical Partagé](https://www.dmp.fr/)**. Cette application gère le suivi médical et l'identité des patients, en adhérant aux principes zero knowledge.
+Pour répondre à ce scénario imaginons une application médicale comme le **[Dossier Médical Partagé](https://www.dmp.fr/)**. Cette application gère le suivi médical et l'identité des patients, en adhérant aux principes zero knowledge. Billy a un compte sur lequel se trouve tout son historique médical numérisé, ses rendez-vous, ses ordonnances etc... Grâce à ce compte il partage sélectivement ses informations avec les professionnels de santé, les ordonnances avec les pharmaciens, les informations de facturation avec sa mutuelle et chaque professionel ne voit que les données qui lui sont utiles. Sur le même principe, si le site du Loto peut accdeder à l'âge et l'identité de Billy il peut s'authentifier et jouer au Loto sans devoir partager de pièce d'identité.
+Il est également possible de ne pas partager l'information directement, on demande alors à un tiers de confiance de valider une condition pour nous, ce qui permet de verifier que quelqu'un est majeur sans apprendre son age exact par exemple.
 
+![Cycle itératif incrémental](/img/ZKA/zka-loto.gif)
 
 ## Axes de mise en oeuvre
+
+Cette architecture repose sur 3 grand axes de mises en oeuvre
 
   1. Authentification à preuve à divulgation nulle de connaissance
   2. Approche non naïve
@@ -48,9 +52,9 @@ Imaginons maintenant un second scénario, tel qu'une application médicale ayant
   
 **Authentification à preuve à divulgation nulle de connaissance**
 
-S'authentifier avec une comabinaison de nom d'utilisateur et de mot de passe a plusieurs inconvénients, dans ce système l'authentification est faite sans transférer de mot de passe, ce dernier protège localement un certificat et une paire de clés, une de chiffrement et une de signature dédiée à prouver son identité auprès du serveur.
+S'authentifier avec une comabinaison de nom d'utilisateur et de mot de passe a plusieurs inconvénients, dans ce système l'authentification est faite sans transférer de mot de passe.
+Pour cela on utilise une **[preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)**, c'est une brique de base utilisée en cryptologie pour prouver qu'une proposition est vraie sans révéler d'autre information que la véracité de la proposition. Généralement ce type de preuve repose sur des protocoles défi/réponse, le "vérficateur" envoie un challenge au "fournisseur de preuve" qui répond grâce à une information que seul lui connait afin de prouver son identité.
 
-SCHEMA FONCTIONNEL 
 
 **Approche non naÏve**
 
@@ -58,17 +62,16 @@ Compte tenu de nos objectifs en terme de vie privée on ne va pas tout transmett
 
 **Chiffrement de bout en bout**
 
-Toutes les opérations de chiffrement et déchiffrement sont réalisées côté client, c'est à dire sur la machine de l'utilisateur. C'est également le cas pour partager des données avec un service externe, les données ne sont jamais stockées ou transmises en clair. Lorsqu'un service requête des données c'est seulement une fois arrivées au service qui possède la clé privée que les données pourront être lues. Non seulement chaque service qui consomme vos données a une clé différente mais il est possible pour chaque service de contrôler l'accès à chaque blob individuellement. Pour les performances il est préférable de faire de l'encapsulation de clé symétrique. Le serveur central qui sert de tiers de confiance peut révoquer le certificat d'un service pour bloquer l'accès, l'utilisateur a également plein controle sur l'accès à ses données.
+Idéalement, dans une architecture zero-knowledge, toutes les opérations de chiffrement et déchiffrement sont réalisées côté client, c'est à dire sur la machine de l'utilisateur. C'est également le cas pour partager des données avec un service externe, les données ne sont jamais stockées ou transmises en clair. Lorsqu'un service demande des données à caractère privé, seul le service identifié comme destinataire possède la clef pour déchiffrer les données transmises.
+C'est une pratique qui est également connue sous le nom de **[Zero Access Encryption](https://protonmail.com/blog/zero-access-encryption/)**
 
 ## Points forts de La ZKA
 
 L'écosystème de bibliothèque de cryptographie permet de développer tout types de clients : client lourds, mobiles ou Web, pour les services zero-knowledge.
 
-Cette architecture présente très peu de risques pour les données stockées, si les données fuitent du serveur elles sont chiffrées et donc sans valeur. Pour la même raison si quelqu'un a des privilèges sur la machine qui contient les données il n'a pas accès à nos données en clair puisque l'utilisateur est le seul à posséder la clé nécessaire au déchiffrement. 
+Cette architecture généralise l'usage du chiffrement des données et de la cryptographie, ce qui apporte un  bénéfice double : premièrement un renforcement de la sécurité des données à caractères privé et deuxiemement cela éduque les utilisateurs à l'usage de la cryptographie.
 
 L'authentification zero knowledge permet de prévenir un bon nombre d'attaque qui viserait à espionner et usurper les identifiants de l'utilisateur. En effet, la systématisation du principe de défi cryptographique, implique qu'il n'y a plus d'échange de mot de passe sur le réseau, ce qui diminue le risque de fuite de données d'authentification. De plus, le challenge émis par le serveur étant différent à chaque requête, les attaques de types « man in the middle » sont aussi rendues plus difficiles à opérer.
-
-Le chiffrement de bout en bout résout le manque de confiance en le serveur et les acteurs de transmission qui ne peuvent pas accéder aux données en clair.
 
 Préservation de la vie privée en ne divulguant que les données nécessaires, et ce, avec l'accord de l'utilisateur, qui est révocable à tout moment.
 
@@ -77,13 +80,13 @@ Préservation de la vie privée en ne divulguant que les données nécessaires, 
 
 Compte tenu de l'omniprésence de la cryptographie dans l'architecture, la ZKA est assez complexe, ce qui implique une montée en compétence sur la cryptographie et un coût de mise en place supplèmentaire.
 
-Il n'y a pas moyen de réinitialier le mot de passe ou les clés, pour s'assurer de conserver l'accès il faut mettre en place un système de récupération de clé. Ce n'est pas forcément critique, un système de messagerie instantanée par exemple 
+Il n'y a pas moyen de réinitialier le mot de passe ou les clés, pour s'assurer de conserver l'accès il faut mettre en place un système de récupération de clé. Ce n'est pas forcément critique, un système de messagerie instantanée par exemple peut se permettre de perde l'historique de conversation cepedant il est inconcevable de perdre l'accès à ses données médicales. 
 
-Si on veut développer le client dans les navigateurs on a besoin de nombreuses mesures de sécurités, CORS, CSP (Content security policy), SRI (verification d'assets), Referrer-Policy et File-API, et idéalement faire tourner la couche crypto en WebAssembly afin de compliquer les manipulations lors de l'exécution.
+Pour developper un client ZKA dans les navigateurs on a besoin de nombreuses mesures de sécurités, CORS, CSP (Content security policy), SRI (verification d'assets), Referrer-Policy et File-API. Afin de complexifier les manipulations lors de l'exécution il est preferable de faire tourner la couche crypto en WebAssembly car le javascript peut être manipulé à la volée .
 
 Afin d'avoir confiance en l'implémentation de l'application ZKA, il faut au minimum que le code soit audité par un tiers de confiance, ou ouvert (licence libre ou open-source). De cette façon, on a un moyen d'étudier l'absence d'erreurs ou de backdoors.
 
-On atteint jamais le zero knowledge, le fonctionnement de l'application nécessite forcément la connaissance d'une adresse IP et la clé publique de chiffrement qui peut être l'identifiant, pas moyen d'échapper à ça. Or cela engendre des métadonnées qui peuvent déjà laisser transparaître des informations.   
+On atteint jamais le zero knowledge, le fonctionnement de l'application nécessite forcément la connaissance d'une adresse IP et la clé publique de chiffrement qui peut être l'identifiant, pas moyen d'échapper à ça comme nous l'explique **[cet article](https://blog.cryptpad.fr/2017/07/07/cryptpad-analytics-what-we-cant-know-what-we-must-know-what-we-want-to-know/)**. Les métadonnées générées par le fonctionnement peuvent déjà laisser transparaître des informations.   
 
  ## Conclusion
 
