@@ -10,6 +10,8 @@ tags:
   - architecture
   - crypto
   - ZKA
+  - data privacy
+  - cybersecurity
 ---
 
 ## Introduction
@@ -35,7 +37,7 @@ Etant donné qu'il s'agit uniquement d'un principe d'architecture il pourrait ê
 
 Pour prouver son âge typiquement on montre une pièce d'identité, après vérification aucune donnée n'est conservée. Cependant sur Internet ce n'est pas si simple, et si on en vient à montrer une pièce d'identité, on la numérise puis la transmet. Ceci se fait généralement de manière non chiffrée, ce qui représente un premier problème, laissant les données d'identité de l'utilisateur, sensibles à des écoutes ou a des fuites sur les canaux de communucation. Un second problème s'ajoute à celà : la pièce d'identité contient plus d'informations que nécessaire. En effet, il suffit de prouver son âge afin d'obtenir le droit de jouer au loto, mais dans le cas de la pièce d'identité, ce sont bien toutes les données d'identités (prénom, nom, âge, mais aussi adresse postale et nationalité) qui sont révélées. Ce second problème est aggravé par le fait que nous ne savons pas vraiment comment sont gérées les données de la pièce d'indentité, une fois la preuve de majorité obtenue. Malgré l'application de la loi RGPD, des doutes sur les pratiques de stockage des données subsistent, en l'absence d'audit complet de l'infrastructure du service.
 
-Maintenant imaginons qu'il existe une application comme le **[Dossier Médical Partagé](https://www.dmp.fr/)** qui gère le suivi médical et l'identité en adhérant aux principes zero knowledge. Si Billy veut s'inscrire sur un site de loto en ligne il doit prouver qu'il est majeur, dans le cas où le site accepte ce mode d'identification Billy peut le faire sans dévoiler son âge exact ou son identité. Etant donné que le système contient aussi ses informations médicales le site du loto pourrait utiliser l'API pour vérifier que Billy n'a pas d'historique d'addiction aux jeux d'argent avant de lui permettre de jouer de grosses sommes. L'accès aux données sera nécessairement validé par Billy, et son historique médical exact ne sera pas révélé, l'application répondra avec un score abstrait ou un booléen. 
+Imaginons maintenant un second scénario, tel qu'une application médicale ayant accès au **[Dossier Médical Partagé](https://www.dmp.fr/)**. Cette application gère le suivi médical et l'identité des patients, en adhérant aux principes zero knowledge.
 
 
 ## Axes de mise en oeuvre
@@ -75,7 +77,7 @@ Préservation de la vie privée en ne divulguant que les données nécessaires, 
 
 Compte tenu de l'omniprésence de la cryptographie dans l'architecture, la ZKA est assez complexe, ce qui implique une montée en compétence sur la cryptographie et un coût de mise en place supplèmentaire.
 
-Dans les cas où il faut absolument être sur de pouvoir retrouver ses données il faut mettre en place un système de récupération de clé, mais ce n'est pas critique tout le temps.
+Il n'y a pas moyen de réinitialier le mot de passe ou les clés, pour s'assurer de conserver l'accès il faut mettre en place un système de récupération de clé. Ce n'est pas forcément critique, un système de messagerie instantanée par exemple 
 
 Si on veut développer le client dans les navigateurs on a besoin de nombreuses mesures de sécurités, CORS, CSP (Content security policy), SRI (verification d'assets), Referrer-Policy et File-API, et idéalement faire tourner la couche crypto en WebAssembly afin de compliquer les manipulations lors de l'exécution.
 
