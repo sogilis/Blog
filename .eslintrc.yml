@@ -45,6 +45,10 @@ rules:
     - error
     - max: 60
 
+  max-lines:
+    - error
+    - max: 400
+
   lines-around-comment: off
 
   no-ternary: off
