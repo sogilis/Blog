@@ -35,6 +35,9 @@
   {{ $article := resources.Get "css/article.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $article.Permalink }}" type="text/css" />
 
+  {{ $header := resources.Get "css/header.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $header.Permalink }}" type="text/css" />
+
   {{ $headerInf767 := resources.Get "css/header-inf767.css" | minify | fingerprint }}
   <link
     rel="stylesheet"
@@ -50,9 +53,6 @@
     href="{{ $headerSup768.Permalink }}"
     type="text/css"
   />
-
-  {{ $header := resources.Get "css/header.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $header.Permalink }}" type="text/css" />
 
   {{ $shared := resources.Get "css/shared.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $shared.Permalink }}" type="text/css" />

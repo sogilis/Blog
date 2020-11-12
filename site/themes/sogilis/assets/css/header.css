@@ -49,33 +49,24 @@ header {
 }
 
 .search-bar__input {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  width: 0;
   outline: none;
+  border: 0;
   background: transparent;
-  transition: width 0.5s;
-  color: #0056b3;
-}
-
-.search-bar__input:focus {
-  margin-left: 0.5em;
-  width: 10em;
 }
 
 .search-bar__results {
   box-sizing: border-box;
   position: fixed;
-  top: 116px;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: white;
-  padding: 0 4em;
-  margin: 2em 0 0 0;
   overflow-y: auto;
   cursor: auto;
+  background-color: white;
+}
+
+#search-result {
+  padding: 0;
 }
 
 .search-bar__results-item:last-child {

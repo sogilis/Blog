@@ -1,5 +1,11 @@
 main {
-  padding-top: 12em;
+  padding-top: 7em;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-top: 12em;
+  }
 }
 
 /* The grid element on the index page */
