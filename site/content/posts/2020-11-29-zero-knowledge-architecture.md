@@ -40,7 +40,7 @@ Pour prouver son âge typiquement on montre une pièce d'identité, après véri
 Pour répondre à ce scénario imaginons une application médicale comme le **[Dossier Médical Partagé](https://www.dmp.fr/)**. Cette application gère le suivi médical et l'identité des patients, en adhérant aux principes zero knowledge. Billy a un compte sur lequel se trouve tout son historique médical numérisé, ses rendez-vous, ses ordonnances etc... Grâce à ce compte il partage sélectivement ses informations avec les professionnels de santé, les ordonnances avec les pharmaciens, les informations de facturation avec sa mutuelle et chaque professionel ne voit que les données qui lui sont utiles. Sur le même principe, si le site du Loto peut accdeder à l'âge et l'identité de Billy il peut s'authentifier et jouer au Loto sans devoir partager de pièce d'identité.
 Il est également possible de ne pas partager l'information directement, on demande alors à un tiers de confiance de valider une condition pour nous, ce qui permet de verifier que quelqu'un est majeur sans apprendre son age exact par exemple.
 
-![Cycle itératif incrémental](/img/ZKA/zka-loto.gif)
+![Schéma fonctionnel d'un example de ZKA](/img/ZKA/zka-loto.gif)
 
 ## Axes de mise en oeuvre
 
