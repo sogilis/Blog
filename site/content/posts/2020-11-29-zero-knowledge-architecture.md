@@ -17,16 +17,14 @@ tags:
 ## Introduction
 
 On retrouve une quantité grandissante de données très sensibles stockées dans le cloud (documents d'identité, bulletin de salaires en pièce jointe des mails, etc.). Aussi, la possibilité de fuite de ces données n'est plus à prouver aujourd'hui, et la conscience du grand public sur les problématiques de protection de la vie privée et des données sensibles n'a cessée de croître. Les questions suivantes gagnent alors en popularité : qui stocke mes données ? Comment ? Qui d'autre peut y avoir accès ? Sont-elles protégées pendant le transport sur le réseau ? 
-En d'autres termes, les utilisateurs veulent garder le contrôle de leur données, savoir qui a accès à quoi et pendant combien de temps.
+En d'autres termes, les utilisateurs veulent garder le contrôle de leur données, savoir qui a accès, à quoi, et pendant combien de temps.
 
 L'architecture Zero Knowledge (ou ZKA) est un principe d'architecture logicielle visant à assurer la protection et le contrôle des données à caractère privé. Idéalement, les services « zero knowledge » n'ont même pas accès aux données qu'ils manipulent (d'où le principe de connaissance nulle).
 Par exemple, on peut considérer qu'un service de stockage de données dit « zero knowledge », met en place un système de chiffrement qui assure que seul l'utilisateur final peut lire les dites données.
 
-À noter que le nom « Zero Knowledge Architecture » est issue du concept de « [preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance) » aka « Zero Knowledge Proof » en anglais. 
+À noter que le nom « Zero Knowledge Architecture » est issu du concept de « [preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance) » aka « Zero Knowledge Proof » en anglais.
 
-**TODO: reformuler la citation Wiipedia**
-
-> Cette expression désigne un protocole sécurisé dans lequel une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans toutefois révéler d'autres informations que la véracité de la proposition
+Cette expression désigne un protocole sécurisé qui est une brique de base utilisée en cryptologie pour prouver qu'une proposition est vraie sans révéler d'autre information que la véracité de la proposition.
 
 Cette définition ancre le principe suivant : les services d'une architecture dite « Zero knowledge », y compris les éventuels moyen de transport de données qui la composent, ne peuvent accèder à des données utilisateurs, que si le consentement a été explicitement donné.  Nous verrons aussi un peu plus tard, que la granularité des blocs d'informations qui composent les données à caractère privé, joue un rôle essentiel dans les architectures zero knowledge.
 
@@ -44,16 +42,16 @@ Il est également possible de ne pas partager l'information directement, on dema
 
 ## Axes de mise en oeuvre
 
-Cette architecture repose sur 3 grand axes de mises en oeuvre
+La ZKA repose sur 3 axes
 
-  1. Authentification à preuve à divulgation nulle de connaissance
+  1. Utilisation de preuve à divulgation nulle de connaissance
   2. Approche non naïve
   3. Chiffrement de bout en bout (ou E2EE pour End to End Encryption)
   
-**Authentification à preuve à divulgation nulle de connaissance**
+**Preuve à divulgation nulle de connaissance**
 
 S'authentifier avec une comabinaison de nom d'utilisateur et de mot de passe a plusieurs inconvénients, dans ce système l'authentification est faite sans transférer de mot de passe.
-Pour cela on utilise une **[preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)**, c'est une brique de base utilisée en cryptologie pour prouver qu'une proposition est vraie sans révéler d'autre information que la véracité de la proposition. Généralement ce type de preuve repose sur des protocoles défi/réponse, le "vérficateur" envoie un challenge au "fournisseur de preuve" qui répond grâce à une information que seul lui connait afin de prouver son identité.
+Pour cela on utilise une **[preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)**, c'est un protocole sécurisé dans lequel une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition. Généralement ce type de preuve repose sur des protocoles défi/réponse, le "vérficateur" envoie un challenge au "fournisseur de preuve" qui répond grâce à une information que seul lui connait afin de prouver son identité.
 
 
 **Approche non naÏve**
@@ -63,7 +61,7 @@ Compte tenu de nos objectifs en terme de vie privée on ne va pas tout transmett
 **Chiffrement de bout en bout**
 
 Idéalement, dans une architecture zero-knowledge, toutes les opérations de chiffrement et déchiffrement sont réalisées côté client, c'est à dire sur la machine de l'utilisateur. C'est également le cas pour partager des données avec un service externe, les données ne sont jamais stockées ou transmises en clair. Lorsqu'un service demande des données à caractère privé, seul le service identifié comme destinataire possède la clef pour déchiffrer les données transmises.
-C'est une pratique qui est également connue sous le nom de **[Zero Access Encryption](https://protonmail.com/blog/zero-access-encryption/)**
+Dans le cas ou la source de donnée utilisée n'est pas chiffrée on met en place une pratique proche, le **[Zero Access Encryption](https://protonmail.com/blog/zero-access-encryption/)**.
 
 ## Points forts de La ZKA
 
