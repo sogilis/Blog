@@ -258,7 +258,7 @@ body.menuMobileIsDisplayed {
   margin-left: 0;
   width: 100%;
   padding: 1em;
-  border: initial
+  border: initial;
 }
 
 .search-bar__results {
