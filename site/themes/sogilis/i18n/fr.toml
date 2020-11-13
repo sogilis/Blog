@@ -20,16 +20,22 @@ other = "Logiciels Critiques"
 other = "L'Entreprise"
 
 [ourVision]
-other = "Notre Vision"
+other = "Notre vision"
+
+[ourApproach]
+other = "Notre approche"
+
+[joinUs]
+other = "Nous rejoindre"
+
+[blog]
+other = "Blog"
 
 [contact]
 other = "Contact"
 
 [jobs]
 other = "Emplois"
-
-[blog]
-other = "Blog"
 
 [contactUs]
 other = "Contactez nous"

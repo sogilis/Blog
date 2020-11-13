@@ -20,16 +20,22 @@ other = "Embedded Softwares & IoT"
 other = "Company"
 
 [ourVision]
-other = "Our Purpose"
+other = "Our Vision"
+
+[ourApproach]
+other = "Notre Approach"
+
+[joinUs]
+other = "Nous rejoindre"
+
+[blog]
+other = "Blog"
 
 [contact]
 other = "Contact"
 
 [jobs]
 other = "Jobs"
-
-[blog]
-other = "Blog"
 
 [contactUs]
 other = "Contact us"
