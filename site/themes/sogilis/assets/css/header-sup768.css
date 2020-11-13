@@ -104,3 +104,11 @@ header {
 .header-desktop-right-dropdown-content-link:hover {
   color: black;
 }
+
+.dropdown-content-company {
+  margin-left: 60px;
+
+  .bar-deco {
+    padding-right: 0;
+  }
+}
