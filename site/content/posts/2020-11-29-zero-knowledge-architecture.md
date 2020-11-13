@@ -69,7 +69,8 @@ Si un utilisateur a des objectifs de protection de vie privée, il ne doit trans
 **Chiffrement de bout en bout**
 
 Dans une architecture zero-knowledge, tout transfert de données est chiffré. Idéalement, tout stockage de données, même temporaire, est également chiffré. Lorsqu'un service demande des données à caractère privé, seul le service identifié comme destinataire possède la clef pour déchiffrer les données transmises.
-**zero-access-encryption**
+
+**Zero access encryption**
 TODO: décrire
 Dans le cas ou la source de donnée utilisée n'est pas chiffrée on met en place une pratique proche, le **[Zero Access Encryption](https://protonmail.com/blog/zero-access-encryption/)**.
 
