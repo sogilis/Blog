@@ -1,8 +1,8 @@
 ---
 title: Sécurité et éthique avec l'Architecture Zero Knowledge
-author: Mathieu W.
+author: Mathieu Willay, Jordan Prudhomme, Willy Malvault
 date: 2020-11-20
-image: /img/image-name.jpeg
+image: /img/ZKA/cover.jpg
 categories:
   - cat1
 tags:
@@ -16,7 +16,7 @@ tags:
 
 ## Introduction
 
-On retrouve une quantité grandissante de données très sensibles stockées dans le cloud (documents d'identité, bulletin de salaires en pièce jointe des mails, etc.). Aussi, la possibilité de fuite de ces données n'est plus à prouver aujourd'hui, et la conscience du grand public sur les problématiques de protection de la vie privée et des données sensibles n'a cessée de croître. Les questions suivantes gagnent alors en popularité : qui stocke mes données ? Comment ? Qui d'autre peut y avoir accès ? Sont-elles protégées pendant le transport sur le réseau ? 
+Aujourd'hui, on retrouve une quantité grandissante de données sensibles, privées et personelles stockées dans le cloud (documents d'identité, bulletins de salaires dans les emails, etc.). Aussi, la possibilité de fuite de ces données n'est plus à prouver, et la conscience du grand public sur les problématiques de protection de la vie privée et des données sensibles n'a cessée de croître. Les questions suivantes gagnent alors en popularité : qui stocke mes données ? Comment ? Qui d'autre peut y avoir accès ? Sont-elles protégées pendant le transport sur le réseau ? 
 En d'autres termes, les utilisateurs veulent garder le contrôle de leur données, savoir qui a accès, à quoi, et pendant combien de temps.
 
 L'architecture Zero Knowledge (ou ZKA) est un principe d'architecture logicielle visant à assurer la protection et le contrôle des données à caractère privé. Idéalement, les services « zero knowledge » n'ont même pas accès aux données qu'ils manipulent (d'où le principe de connaissance nulle).
@@ -24,13 +24,13 @@ Par exemple, on peut considérer qu'un service de stockage de données dit « ze
 
 À noter que le nom « Zero Knowledge Architecture » est issu du concept de « [preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance) » aka « Zero Knowledge Proof » en anglais.
 
-Cette expression désigne un protocole sécurisé qui est une brique de base utilisée en cryptologie pour prouver qu'une proposition est vraie sans révéler d'autre information que la véracité de la proposition.
+Cette expression désigne un protocole sécurisé, qui est une brique de base utilisée en cryptologie, pour prouver qu'une proposition est vraie, le tout sans révéler d'autre information que la véracité de la proposition.
 
 Cette définition ancre le principe suivant : les services d'une architecture dite « Zero knowledge », y compris les éventuels moyen de transport de données qui la composent, ne peuvent accèder à des données utilisateurs, que si le consentement a été explicitement donné.  Nous verrons aussi un peu plus tard, que la granularité des blocs d'informations qui composent les données à caractère privé, joue un rôle essentiel dans les architectures zero knowledge.
 
 ## Quelle utilité ? 
 
-Il y a de nombreux domaines d'applications possibles pour la ZKA et certaines entreprises utilisent déjà ses principes dans leurs produits. Par exemple, **[Signal](https://signal.org/blog/private-contact-discovery/)**, **[NordPass](https://nordpass.com/features/zero-knowledge-architecture/)** ou **[CryptPad](https://blog.cryptpad.fr/2017/02/20/Time-to-Encrypt-the-Cloud/)** qui sont respectivement, une application de messagerie chiffrée, un gestionnaire de mots de passe et un concurrent à google suite. Le lien vers CryptPad est un article contenant une liste d'autres services zero knowledge.
+Il y a de nombreux domaines d'applications possibles pour la ZKA et certaines entreprises utilisent déjà ses principes dans leurs produits. Par exemple, **[Signal](https://signal.org/blog/private-contact-discovery/)**, **[NordPass](https://nordpass.com/features/zero-knowledge-architecture/)** ou **[CryptPad](https://blog.cryptpad.fr/2017/02/20/Time-to-Encrypt-the-Cloud/)** qui sont respectivement, une application de messagerie chiffrée, un gestionnaire de mots de passe et un concurrent à google suite (le lien vers l'article CryptPad fournit une liste d'autres services zero knowledge).
 Etant donné qu'il s'agit uniquement d'un principe d'architecture il pourrait être appliqué à presque tous les domaines, pour mieux comprendre nous allons nous concentrer sur un exemple : jouer au loto en ligne.
 
 Pour prouver son âge typiquement on montre une pièce d'identité, après vérification aucune donnée n'est conservée. Cependant sur Internet ce n'est pas si simple, et si on en vient à montrer une pièce d'identité, on la numérise puis la transmet. Ceci se fait généralement de manière non chiffrée, ce qui représente un premier problème, laissant les données d'identité de l'utilisateur, sensibles à des écoutes ou a des fuites sur les canaux de communucation. Un second problème s'ajoute à celà : la pièce d'identité contient plus d'informations que nécessaire. En effet, il suffit de prouver son âge afin d'obtenir le droit de jouer au loto, mais dans le cas de la pièce d'identité, ce sont bien toutes les données d'identités (prénom, nom, âge, mais aussi adresse postale et nationalité) qui sont révélées. Ce second problème est aggravé par le fait que nous ne savons pas vraiment comment sont gérées les données de la pièce d'indentité, une fois la preuve de majorité obtenue. Malgré l'application de la loi RGPD, des doutes sur les pratiques de stockage des données subsistent, en l'absence d'audit complet de l'infrastructure du service.
@@ -110,3 +110,5 @@ L'évolution des lois et de la mentalité des utilisateurs ammène des principes
 **[Preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)** 
 
 **[Article de Payfone sur le sujet](https://www.payfone.com/insights/what-is-zero-knowledge-architecture-and-how-can-it-make-the-digital-world-a-safer-place/)**
+
+**[Crédit photo](www.bluecoat.com/)**
