@@ -26,23 +26,28 @@ De fait, une architecture dite « Zero knowledge », met en œuvre des service
 
 ## Preuve de majorité pour un jeu en ligne
 
-Imaginons un service physique (pas en ligne) de jeu d'argent en France.Typiquement, afin d'accéder au service, on montre une pièce d'identité pour justifier de son âge. Après vérification aucune donnée n'est conservée.
-Si on essaie de fournir le même service via un service de jeu en ligne, accessible depuis Internet, ce n'est pas si simple.En effet, si doit « montrer » une pièce d'identité à un service en ligne, l'approche naïve consiste à la numériser,  puis à la transmettre à l'opérateur sur service, via le réseau Internet. De plus, ceci se fait généralement de manière non chiffrée, ce qui représente un premier problème, laissant les données d'identité de l'utilisateur, sensibles à des écoutes ou à des fuites sur les canaux de communucation.
+Imaginons un service physique (pas en ligne) de jeu d'argent en France. Typiquement, on montre une pièce d'identité pour justifier de son âge et accéder au jeu. Après vérification aucune donnée n'est conservée, et il est probable qu'aucune information n'ait fuité.
+Si on essaie de fournir le même service de jeu « en ligne », la protection de nos informations d'identité n'est pas si simple. En effet, si on doit justifier de sa majorité auprès d'un service en ligne, l'approche naïve consiste à numériser un document administratif (passeport ou carte nationale d'identité), puis à transmettre la copie numérisée à l'opérateur du service, par mail ou en la téléchargeant sur un de ses serveurs. Et si on est honnête, on avouera ne pas avoir chiffré la copie numérique de notre document d'identité, avant de la transmettre.
+
+Nous sommes face a un problème: en cas d'attaque de type [Man In The Middle (ou MITM)](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), ou de compromission du serveur de jeu, nos informations d'identité sont révélées. Pour les sceptiques sur les risques de fuite de données, nous vous invitons à consulter la [section « fuites »](https://www.zataz.com/?s=fuite) du site zataz.com. Le premier axe de protection que nous proposons d'étudier est le chiffrement de bout en bout.
+
+### Chiffrement de bout en bout
+
+chiffrer les données « en transite », « à l'utilisation » et au « repos » , standards like
+Dans une architecture zero-knowledge idéale, tout transfert de données est chiffré et tout stockage de données, même temporaire, est également chiffré. Lorsqu'un service demande des données à caractère privé, seul le service identifié comme destinataire possède la clef pour déchiffrer les données transmises.
 
 Un second problème s'ajoute à celà : la pièce d'identité contient plus d'informations que nécessaire. En effet, il suffit de prouver son âge afin d'obtenir le droit de jouer au loto, mais dans le cas de la pièce d'identité, ce sont bien toutes les données d'identités (prénom, nom, âge, mais aussi adresse postale et nationalité) qui sont révélées. Ce second problème est aggravé par le fait que nous ne savons pas vraiment comment sont gérées les données de la pièce d'indentité, une fois la preuve de majorité obtenue. Malgré l'application de la loi RGPD, des doutes sur les pratiques de stockage des données subsistent, en l'absence d'audit complet de l'infrastructure du service.
 
-**Preuve à divulgation nulle de connaissance**
-
-La ZKA utilise la **[preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)**, c'est un protocole sécurisé dans lequel une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition. Généralement ce type de preuve repose sur des protocoles défi/réponse, le "vérficateur" envoie un challenge au "fournisseur de preuve" qui répond grâce à une information que seul lui connait afin de prouver son identité.
-
+problème 2: trop d'info --> approche non naive --> probablement une autre structure de données
+solution 3: ZK proof
 **Approche non naÏve**
 
-Si un utilisateur a des objectifs de protection de vie privée, il ne doit transmettre que les informations strictement nécessaires, quand un tiers lui demande l'accès à certaines données, c'est une approche dite "non naïve". Pour ce faire, la ZKA utilise des blobs, qui sont des ensembles de données liées et conçus pour être les plus unitaires possibles. Des exemples de blobs peuvent être le blob "identité", qui contient uniquement l'identité de l'utilisateur, le blob "est majeur(e) ?" pour donner l'accès à cette information uniquement. Ou encore le blob "rendez-vous médical" qui lui même contient, entres autres, un sous-blob "informations de facturation". Cela permet de contrôler avec une granularité extrêmement fine les données que l'on va partager avec les différents services, en s'adaptant systématiquement à leurs besoins. 
-Pour reprendre l'exemple de la preuve de majorité, transmettre une pièce d'identité complète est l'approche "naïve", on donne trop d'information ce qui augmente le risque de fuite et d'usages malicieux de nos données.  
+Si un utilisateur a des objectifs de protection de vie privée, il ne doit transmettre que les informations strictement nécessaires, quand un tiers lui demande l'accès ses données. C'est l'approche dite "non naïve". La ZKA préconise donc l'utilisation de blobs, qui sont des ensembles de données conçus pour être les plus unitaires possibles. Des exemples de blobs peuvent être le blob "identité", qui contient uniquement l'identité de l'utilisateur, ou encore le blob "est majeur(e) ?" pour donner l'accès à cette information uniquement. Et si on fait la supposition que l'on dispose d'un tiers de confiance, lequel disposerait d'un certificat TLS (à tout hasard), on pourrait même signer ce blob « est majeur » afin de justifier de son authenticité. Dans notre scénario théorique de jeu en ligne, ce blob signé devient une preuve de majorité à divulgation nulle de connaissance.
 
-**Chiffrement de bout en bout (at rest, in-transit and in-use)**
-chiffrer les données « en transite », « à l'utilisation » et au « repos » , standards like
-Dans une architecture zero-knowledge idéale, tout transfert de données est chiffré et tout stockage de données, même temporaire, est également chiffré. Lorsqu'un service demande des données à caractère privé, seul le service identifié comme destinataire possède la clef pour déchiffrer les données transmises.
+**Preuve à divulgation nulle de connaissance**
+
+La **[preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)**, pilier de la ZKA, est un protocole sécurisé dans lequel une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition. Généralement ce type de preuve repose sur des protocoles défi/réponse, le "vérficateur" envoie un challenge au "fournisseur de preuve" qui répond grâce à une information que seul lui connait afin de prouver son identité.
+
 Avec une architecture zero-knowledge, l'utilisateur pourrait utiliser un service tiers de preuve de majorité, et ne laisserait aucune données sensible transiter sur le réseau. 
 Le fonctionnement du système est schématisé dans l'image ci dessous.
 
