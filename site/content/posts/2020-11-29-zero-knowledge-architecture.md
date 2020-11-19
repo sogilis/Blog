@@ -10,75 +10,65 @@ tags:
   - architecture
   - crypto
   - ZKA
-  - data 
+  - data
   - privacy
   - cybersecurity
 ---
 
-## Introduction
+## Le problème de la protection des données dans le Cloud
 
-Aujourd'hui, on retrouve une quantité grandissante de données sensibles, privées et personelles stockées dans le cloud (documents d'identité, bulletins de salaires dans les emails, etc.). Aussi, la possibilité de fuite de ces données n'est plus à prouver, et la conscience du grand public sur les problématiques de protection de la vie privée et des données sensibles n'a cessée de croître. Les questions suivantes gagnent alors en popularité : qui stocke mes données ? Comment ? Qui d'autre peut y avoir accès ? Sont-elles protégées pendant le transport sur le réseau ? 
-En d'autres termes, les utilisateurs veulent garder le contrôle de leur données, savoir qui a accès, à quoi, et pendant combien de temps.
+Nous vivons aujourd'hui une ére où la digitalisation des documents est démocratisée et banalisée. On retrouve une quantité grandissante de données sensibles, privées et personelles stockées dans le cloud. On pourra citer les données bancaires communiquées aux sites marchands, les documents administratifs que nous échangeons par emails, nos informations de santés, ou encore les photos de notre dernier voyage en famille. Une chose est sûre : ces données ont de la valeur pour beaucoup de monde ! Une recrudescence naturelle de cyber-criminalité, d'espionnage et d'usages détournés ou « non-autorisé » se met en place. Les questions relativent à la protection de nos données deviennent alors primordiales : qui stocke mes données ? Comment ? Qui peut y avoir accès ? Comment sont-elles protégées ? En d'autres termes, les utilisateurs veulent garder le contrôle de leur données, savoir qui a accès, à quoi, et pendant combien de temps.
 
-L'architecture Zero Knowledge (ou ZKA) est un principe d'architecture logicielle visant à assurer la protection et le contrôle des données à caractère privé. Idéalement, les services « zero knowledge » n'ont même pas accès aux données qu'ils manipulent (d'où le principe de connaissance nulle).
-Par exemple, on peut considérer qu'un service de stockage de données dit « zero knowledge », met en place un système de chiffrement qui assure que seul l'utilisateur final peut lire les dites données.
+D'ailleurs le nombre grandissant d'initiatives autour de la protection des données sensibles, reflète l'importance de la question. La conformité aux standards relatifs à la protection des données se banalise : [ISO 27001](https://www.iso.org/isoiec-27001-information-security.html), [HDS](https://esante.gouv.fr/labels-certifications/hds/liste-des-herbergeurs-certifies) pour les données de santé, [PCIDSS](https://fr.pcisecuritystandards.org/index.php) pour le paiement en ligne, ou encore [RGPD](https://gdpr.eu/) pour la protection de la vie privée. Et avec ces standards, le chiffrement des données « en transite », « à l'usage » et « au repos »se banalise. Les Cloud privés, eux aussi, gagnent en maturité, comme le prouve l'adoption grandissante des projets [Cozy Cloud](https://cozy.io) ou [Next Cloud](https://nextcloud.com/). Ils abordent la problématique de la confiance dans l'hébergeur cloud, et proposent des hébergements privés et maitrisés.
 
-À noter que le nom « Zero Knowledge Architecture » est issu du concept de « [preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance) » aka « Zero Knowledge Proof » en anglais.
+C'est dans cette démarche de protection des données à caractère privé, que se situe l'architecture Zero Knowledge (ou ZKA). La ZKA est un principe d'architecture logicielle, qui pousse la divulgation des données de l'utilisateur jusqu'à son paroxisme : **la connaissance nulle**. En effet, le nom « Zero Knowledge Architecture » est issu du concept de « [preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance) » aka « Zero Knowledge Proof » en anglais. Cette expression désigne un protocole sécurisé, qui permet de prouver qu'une proposition est vraie, le tout, sans révéler d'autre information que la véracité de la proposition. Donnons un exemple : pour prouver qu'un utilisateur est majeur, on prouve qu'il a plus de 18 ans, le tout sans divulguer d'autre information sur cette personne, à commencer par son âge.
+De fait, une architecture dite « Zero knowledge », met en œuvre des services qui n'ont aucune connaissance des données personnelles de l'utilisateur. Comme nous le verrons dans cet article, la connaissance nulle appliquée strictement atteind vite ses limites dans le Cloud (il est difficile de ne pas divulguer une addresse IP, fusse-t-elle celle d'un proxy, ou encore le type de son navigateur sur le Web). L'approche Zero Knowledge consiste alors à faire en sorte que la divulgation d'informations personnelles soit réduite à son minimum par conception. Mais le plus simple est de découvrir la ZKA à travers des cas d'usages. Nous illustrerons donc les principes de la ZKA avec un premier scénario théorique de « preuve de majorité pour un jeu en ligne », puis nous étudierons l'authentification à divulgation nulle de connaissance à travers le protocole SRP. Nous verrons également comment le service protonmail fonctionne sans connaître les mots de passe, ni même le contenu des mails de ses utilisateurs. Finalement, nous conclurons avec une réflexion sur l'intérêt de la ZKA dans l'implémentation du dossier médical partagé.
 
-Cette expression désigne un protocole sécurisé, qui est une brique de base utilisée en cryptologie pour prouver qu'une proposition est vraie, le tout sans révéler d'autre information que la véracité de la proposition.
+## Preuve de majorité pour un jeu en ligne
 
-Cette définition ancre le principe suivant : les services d'une architecture dite « Zero knowledge », y compris les éventuels moyen de transport de données qui la composent, ne peuvent accèder à des données utilisateurs, que si le consentement a été explicitement donné.  Nous verrons aussi un peu plus tard, que la granularité des blocs d'informations qui composent les données à caractère privé, joue un rôle essentiel dans les architectures zero knowledge.
+Imaginons un service physique (pas en ligne) de jeu d'argent en France.Typiquement, afin d'accéder au service, on montre une pièce d'identité pour justifier de son âge. Après vérification aucune donnée n'est conservée.
+Si on essaie de fournir le même service via un service de jeu en ligne, accessible depuis Internet, ce n'est pas si simple.En effet, si doit « montrer » une pièce d'identité à un service en ligne, l'approche naïve consiste à la numériser,  puis à la transmettre à l'opérateur sur service, via le réseau Internet. De plus, ceci se fait généralement de manière non chiffrée, ce qui représente un premier problème, laissant les données d'identité de l'utilisateur, sensibles à des écoutes ou à des fuites sur les canaux de communucation.
 
-## Quelle utilité ? 
+Un second problème s'ajoute à celà : la pièce d'identité contient plus d'informations que nécessaire. En effet, il suffit de prouver son âge afin d'obtenir le droit de jouer au loto, mais dans le cas de la pièce d'identité, ce sont bien toutes les données d'identités (prénom, nom, âge, mais aussi adresse postale et nationalité) qui sont révélées. Ce second problème est aggravé par le fait que nous ne savons pas vraiment comment sont gérées les données de la pièce d'indentité, une fois la preuve de majorité obtenue. Malgré l'application de la loi RGPD, des doutes sur les pratiques de stockage des données subsistent, en l'absence d'audit complet de l'infrastructure du service.
 
-Il y a de nombreux domaines d'applications possibles pour la ZKA et certaines entreprises utilisent déjà ses principes dans leurs produits. Par exemple, **[Signal](https://signal.org/blog/private-contact-discovery/)**, **[NordPass](https://nordpass.com/features/zero-knowledge-architecture/)** ou **[CryptPad](https://blog.cryptpad.fr/2017/02/20/Time-to-Encrypt-the-Cloud/)** qui sont respectivement, une application de messagerie chiffrée, un gestionnaire de mots de passe et un concurrent à google suite (le lien vers l'article CryptPad fournit une liste d'autres services zero knowledge).
-Etant donné qu'il s'agit uniquement d'un principe d'architecture il pourrait être appliqué à presque tous les domaines, pour mieux comprendre nous allons nous concentrer sur un exemple : « jouer au loto en ligne ».
-
-### Jouer au loto en ligne
-
-Pour prouver son âge typiquement on montre une pièce d'identité, après vérification aucune donnée n'est conservée. Cependant sur Internet ce n'est pas si simple, et si on en vient à montrer une pièce d'identité, on la numérise puis la transmet. Ceci se fait généralement de manière non chiffrée, ce qui représente un premier problème, laissant les données d'identité de l'utilisateur, sensibles à des écoutes ou à des fuites sur les canaux de communucation. Un second problème s'ajoute à celà : la pièce d'identité contient plus d'informations que nécessaire. En effet, il suffit de prouver son âge afin d'obtenir le droit de jouer au loto, mais dans le cas de la pièce d'identité, ce sont bien toutes les données d'identités (prénom, nom, âge, mais aussi adresse postale et nationalité) qui sont révélées. Ce second problème est aggravé par le fait que nous ne savons pas vraiment comment sont gérées les données de la pièce d'indentité, une fois la preuve de majorité obtenue. Malgré l'application de la loi RGPD, des doutes sur les pratiques de stockage des données subsistent, en l'absence d'audit complet de l'infrastructure du service.
-
-Avec une architecture zero-knowledge, l'utilisateur pourrait utiliser un service tiers de preuve de majorité, et ne laisserait aucune données sensible transiter sur le réseau. 
-Le fonctionnement du système est schématisé dans l'image ci dessous.
-
-![Schéma fonctionnel d'un example de ZKA](/img/ZKA/zka-loto.gif)
-
-
-Intéressons nous à un second scénario populaire : le dossier médical partagé.
-
-### Dossier médical partagé
-
-C'est un cas d'application idéal pour l'architecture ZKA, d'autant plus l'applicatif actuel du **[Dossier Médical Partagé](https://www.dmp.fr/)** est largement critiqué. Cette application gère le suivi médical et l'identité des patients, une sorte de carnet de santé virtuel. En adhérant aux principes zero knowledge on obtient exactement le controle que l'on souhaite avoir sur ses données avec la sécurité induite par l'architecture. L'utilisateur a un compte sur lequel se trouve tout son historique médical numérisé, ses rendez-vous, ses ordonnances etc... Grâce à ce compte il partage sélectivement ses informations avec les professionnels de santé, les ordonnances avec les pharmaciens, les informations de facturation avec sa mutuelle et chaque professionel ne voit que les données qui lui sont utiles. Compte tenu de la criticité des données gérées c'est exactement le genre de scénaro pour lequel la ZKA a beaucoup d'interet.
-
-## Axes de mise en oeuvre
-
-La ZKA repose sur 3 axes
-
-  1. Utilisation de preuve à divulgation nulle de connaissance
-  2. Approche non naïve
-  3. Chiffrement de bout en bout (ou E2EE pour End to End Encryption)
-  
 **Preuve à divulgation nulle de connaissance**
 
 La ZKA utilise la **[preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)**, c'est un protocole sécurisé dans lequel une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition. Généralement ce type de preuve repose sur des protocoles défi/réponse, le "vérficateur" envoie un challenge au "fournisseur de preuve" qui répond grâce à une information que seul lui connait afin de prouver son identité.
-S'authentifier avec une comabinaison de nom d'utilisateur et de mot de passe a plusieurs inconvénients, dans ce système l'authentification est faite sans transférer le mot de passe.
-
-Un exemple d'implémentation de preuve à divulgation nulle est le **[Secure Remote Password protocol (SRP)](https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol)** qui permet de réaliser une authentification sans que le mot de passe ne sorte du client. La **[RFC 5054](https://tools.ietf.org/html/rfc5054)** et la **[RFC 2945](https://www.ietf.org/rfc/rfc2945.txt)** décrivent le fonctionnement de ce protocole en détail.
 
 **Approche non naÏve**
 
 Si un utilisateur a des objectifs de protection de vie privée, il ne doit transmettre que les informations strictement nécessaires, quand un tiers lui demande l'accès à certaines données, c'est une approche dite "non naïve". Pour ce faire, la ZKA utilise des blobs, qui sont des ensembles de données liées et conçus pour être les plus unitaires possibles. Des exemples de blobs peuvent être le blob "identité", qui contient uniquement l'identité de l'utilisateur, le blob "est majeur(e) ?" pour donner l'accès à cette information uniquement. Ou encore le blob "rendez-vous médical" qui lui même contient, entres autres, un sous-blob "informations de facturation". Cela permet de contrôler avec une granularité extrêmement fine les données que l'on va partager avec les différents services, en s'adaptant systématiquement à leurs besoins. 
 Pour reprendre l'exemple de la preuve de majorité, transmettre une pièce d'identité complète est l'approche "naïve", on donne trop d'information ce qui augmente le risque de fuite et d'usages malicieux de nos données.  
 
-**Chiffrement de bout en bout**
-
+**Chiffrement de bout en bout (at rest, in-transit and in-use)**
+chiffrer les données « en transite », « à l'utilisation » et au « repos » , standards like
 Dans une architecture zero-knowledge idéale, tout transfert de données est chiffré et tout stockage de données, même temporaire, est également chiffré. Lorsqu'un service demande des données à caractère privé, seul le service identifié comme destinataire possède la clef pour déchiffrer les données transmises.
+Avec une architecture zero-knowledge, l'utilisateur pourrait utiliser un service tiers de preuve de majorité, et ne laisserait aucune données sensible transiter sur le réseau. 
+Le fonctionnement du système est schématisé dans l'image ci dessous.
 
+![Schéma fonctionnel d'un example de ZKA](/img/ZKA/zka-loto.gif)
+
+### Authentification zero-knowledge
+S'authentifier avec une comabinaison de nom d'utilisateur et de mot de passe a plusieurs inconvénients, dans ce système l'authentification est faite sans transférer le mot de passe.
+
+Un exemple d'implémentation de preuve à divulgation nulle est le **[Secure Remote Password protocol (SRP)](https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol)** qui permet de réaliser une authentification sans que le mot de passe ne sorte du client. La **[RFC 5054](https://tools.ietf.org/html/rfc5054)** et la **[RFC 2945](https://www.ietf.org/rfc/rfc2945.txt)** décrivent le fonctionnement de ce protocole en détail.
+
+### La messagerie zero-knowledge Protonmail
 **Zero access encryption**
 TODO: décrire
 Dans le cas ou la source de donnée utilisée n'est pas chiffrée on met en place une pratique proche, le **[Zero Access Encryption](https://protonmail.com/blog/zero-access-encryption/)**.
 
-## Points forts de la ZKA
+
+### Réflexion sur le dossier médical partagé
+
+C'est un cas d'application idéal pour l'architecture ZKA, d'autant plus l'applicatif actuel du **[Dossier Médical Partagé](https://www.dmp.fr/)** est largement critiqué. Cette application gère le suivi médical et l'identité des patients, une sorte de carnet de santé virtuel. En adhérant aux principes zero knowledge on obtient exactement le controle que l'on souhaite avoir sur ses données avec la sécurité induite par l'architecture. L'utilisateur a un compte sur lequel se trouve tout son historique médical numérisé, ses rendez-vous, ses ordonnances etc... Grâce à ce compte il partage sélectivement ses informations avec les professionnels de santé, les ordonnances avec les pharmaciens, les informations de facturation avec sa mutuelle et chaque professionel ne voit que les données qui lui sont utiles. Compte tenu de la criticité des données gérées c'est exactement le genre de scénaro pour lequel la ZKA a beaucoup d'interet.
+
+### Autres service ZKA
+
+Au cours de nos recherches pour la rédaction de notre article, nous avons pu identifier d'autres service qui utilise les principes zero-knowledge dans leurs produits. On pourra citer la messagerie chiffrée **[Signal](https://signal.org/blog/private-contact-discovery/)**, le gestionnaire de mots de passge **[NordPass](https://nordpass.com/features/zero-knowledge-architecture/)**, ou encore le gestionnaire de documents en ligne **[CryptPad](https://blog.cryptpad.fr/2017/02/20/Time-to-Encrypt-the-Cloud/)** (le lien vers l'article CryptPad fournit une liste d'autres services zero knowledge).
+
+## Conclusion
+### Points forts de la ZKA
 
 Cette architecture généralise l'usage du chiffrement des données et de la cryptographie, cela apporte un  bénéfice double :  un renforcement de la sécurité des données à caractères privé, et l'éducation des utilisateurs à l'usage de la cryptographie.
 
@@ -89,7 +79,7 @@ De plus, le challenge émis par le serveur étant différent à chaque requête,
 
 Préservation de la vie privée avec l'approche non-naïve, en ne divulguant que les données nécessaires. Certains service Zero-knowledge proposent même un contrôle dans le temps d'accès aux données de l'utiliateur, en mettant en place des mécanismes de révocation et d'expiration des clefs qui permetent de déchiffrer ses données.
 
-## Limites 
+### Limites 
 
 Compte tenu de l'omniprésence de la cryptographie dans l'architecture, la ZKA est assez complexe, ce qui implique une montée en compétence sur la cryptographie et un coût de mise en place supplèmentaire.
 
@@ -104,9 +94,10 @@ Afin d'avoir confiance en l'implémentation de l'application ZKA, il faut au min
 
 Dans la vraie vie, on atteint rarement le zero knowledge pur. En effet, le fonctionnement des services nécessite bien souvent la connaissance d'une adresse IP et d'une clé publique de chiffrement, pouvant servir d'identifiant. Il est très compliqué d'échapper à ce partage d'informations, comme nous l'explique **[cet article de cryptpad](https://blog.cryptpad.fr/2017/07/07/cryptpad-analytics-what-we-cant-know-what-we-must-know-what-we-want-to-know/)**. Il faut alors avoir consience que les métadonnées, nécessaires au fonctionnement du service, peuvent déjà laisser transparaître des informations.   
 
- ## Conclusion
+Autre points à traiter: 
 
-L'évolution des lois et de la mentalité des utilisateurs ammène des principes d'architecture logicielle radicalement nouveaux, centrés sur la vie privée et la sécurité. L'apparition de nouveaux services basés sur cette architecture va stimuler l'écosystème ce qui développera à terme les briques technologiques nécessaires pour que toute l'industrie puisse appliquer ces approches architecturales. Les utilisateurs ont beaucoup à y gagner puisqu'en plus de la sécurité accrue, ces pratiques assurent l'éthique des développeurs qui ne peuvent pas accéder aux informations afin de faire de la publicité ciblée ou d'espionner leurs utilisateurs.
+* Confiance dans le réseau
+* Confiance dans l'hébergeur (ex: AWS, Azure, GCP, ...)
 
 ## Pour approfondir 
 
