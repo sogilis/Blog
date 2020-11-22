@@ -35,6 +35,12 @@
   {{ $article := resources.Get "css/article.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $article.Permalink }}" type="text/css" />
 
+  {{ $tag_page := resources.Get "css/tag-page.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $tag_page.Permalink }}" type="text/css" />
+
+  {{ $tags_page := resources.Get "css/tags-page.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $tags_page.Permalink }}" type="text/css" />
+
   {{ $header := resources.Get "css/header.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $header.Permalink }}" type="text/css" />
 

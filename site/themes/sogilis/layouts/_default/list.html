@@ -1,34 +1,42 @@
-<a href="{{ .Permalink }}" class="blogindex-article">
+<a href="{{ .Permalink }}" class="articles-list-item">
   <div>
     <!-- Should be inner a div tag -->
     <!-- Otherwise "CSS Grid, grid item “height: 100%” not working in Chrome" -->
     <!-- (like in Safari) -->
     <!-- See https://stackoverflow.com/questions/50691765/css-grid-grid-item-height-100-not-working-in-chrome -->
-    {{ with .Params.image }}
-    <img
-      class="blogindex-article-img"
-      alt="Illustration de l'article"
-      src="{{ . | relURL }}"
-    />
+    {{ $defaultAltImage := "Illustration de l'article" }}
+    {{ if isset .Params "image" }}
+      <img
+        class="articles-list-item-img"
+        src="{{ .Params.image | relURL }}"
+        alt="{{ default $defaultAltImage .Params.altimage }}"
+      />
     {{ else }}
-    <img
-      class="blogindex-article-img"
-      alt="Illustration de l'article"
-      src="{{ "images/blog_preview_default.jpg" | relURL }}"
+      <img
+        class="articles-list-item-img"
+        src="{{ "images/blog_preview_default.jpg" | relURL }}"
+        alt="{{ $defaultAltImage }}"
       />
     {{ end }}
   </div>
   <p class="
       title-1
-      blogindex-article-title
-      blogindex-article-text
+      articles-list-item-title
+      articles-list-item-text
      "
   >
     {{ .Title }}
   </p>
+  <p class="articles-list-item-tags articles-list-item-text">
+    {{ if isset .Params "tags" }}
+      {{ range .Params.tags }}
+        <span class="tag">{{ . }}</span>
+      {{ end }}
+    {{ end }}
+  </p>
   <p class="
-      blogindex-article-readmore
-      blogindex-article-text
+      articles-list-item-readmore
+      articles-list-item-text
      "
   >
     {{ i18n "readMore" }}…

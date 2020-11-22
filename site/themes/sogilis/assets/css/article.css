@@ -121,12 +121,12 @@ figcaption h4 {
   margin: 0 auto;
 }
 
-#articlepage a {
+#articlepage-content a {
   color: var(--wolf-blue);
   transition: color 0.3s;
 }
 
-#articlepage a:hover {
+#articlepage-content a:hover {
   color: var(--dark-grey);
 }
 
@@ -144,26 +144,6 @@ figcaption h4 {
   word-wrap: break-word;
 }
 
-#articlepage-header-title {
-  margin-left: 1.9rem;
-}
-
-#articlepage-header-title-h1 {
-  font-size: 2rem;
-  color: var(--wolf-blue);
-  font-weight: 600;
-}
-
-#articlepage-header-title-h1::before {
-  content: '';
-  position: absolute;
-  height: 0.3rem;
-  width: 1.5rem;
-  background-color: var(--light-electric-blue);
-  margin-top: 1.25rem;
-  margin-left: -2.25rem;
-}
-
 #articlepage-header-img-container {
   width: 100%;
   margin-bottom: 1em;
@@ -178,6 +158,10 @@ figcaption h4 {
     width: 70%;
     margin-bottom: 0;
   }
+}
+
+.articlepage-header-title-details {
+  margin-left: 1.6rem;
 }
 
 /* Section content */

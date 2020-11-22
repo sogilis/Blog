@@ -34,6 +34,34 @@ body {
   font-size: 1.4rem;
 }
 
+.title {
+  font-size: 2rem;
+  color: var(--wolf-blue);
+  font-weight: 600;
+  padding-left: 1.9rem;
+}
+
+.title .tag {
+  font-size: 0.8em;
+  margin-left: 2em;
+}
+
+@media (max-width: 991px) {
+  .article-title {
+    margin-top: 3rem;
+  }
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  height: 0.3rem;
+  width: 1.5rem;
+  background-color: var(--light-electric-blue);
+  margin-top: 1.25rem;
+  margin-left: -2.25rem;
+}
+
 /* As Bootstrap 4 Grid System                                                 */
 /* See also https://getbootstrap.com/docs/4.0/layout/grid/#grid-options       */
 /* ========================================================================== */
@@ -205,4 +233,65 @@ header ul {
 
 .bar-deco-hover:hover::after {
   width: 2.5rem;
+}
+
+/* tag                                                                        */
+/* ========================================================================== */
+
+.tags-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+:root {
+  --tag-background-color: #999999;
+}
+
+.tag {
+  color: #fff;
+  display: inline;
+  background: var(--tag-background-color);
+  display: inline-block;
+  position: relative;
+  padding-left: 0.7em;
+  padding-right: 0.5em;
+  margin-left: 0.8em;
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 4px;
+  text-decoration: none;
+}
+
+/* Note: can not be in .tag to get priority on reboot */
+.tag a {
+  color: #fff;
+}
+
+/* Left arrow */
+.tag:before {
+  display: inline-block;
+  border-width: 0.75em;
+  border-style: solid;
+  border-color: transparent var(--tag-background-color) transparent transparent;
+  height: 1.5em;
+  width: 1.5em;
+  position: absolute;
+  left: -1.5em;
+  top: 0;
+  content: '';
+  display: inline-block;
+}
+
+/* Dot */
+.tag:after {
+  background: #fff;
+  width: 0.3em;
+  height: 0.3em;
+  content: '';
+  display: inline-block;
+  border-radius: 0.2em;
+  margin: 0;
+  margin-left: -0.3em;
+  top: 0.6em;
+  left: 0;
+  position: absolute;
 }
