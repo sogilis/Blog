@@ -4,15 +4,15 @@
   <section id="articlepage-header">
     <!-- Illustration -->
     <span id="articlepage-header-img-container">
-      {{ with .Params.image }}
-      <img
-        id="articlepage-header-img"
-        class="articlepage-img"
-        alt="Illustration de l'article"
-        src="{{ . | relURL }}"
-        />
-        {{ else }}
+      {{ if (isset .Params "image") }}
+        <img
+          id="articlepage-header-img"
+          class="articlepage-img"
+          alt="{{ .Params.altimage | default "Illustration de l'article" }}"
+          src="{{ .Params.image | relURL }}"
+          />
         <!-- Default illustration -->
+        {{ else }}
       <img
         id="articlepage-header-img"
         class="articlepage-img"
