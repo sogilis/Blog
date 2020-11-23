@@ -3,6 +3,7 @@ title: Un état centralisé, oui, mais sans Vuex !
 author: Alban et Jean-Baptiste
 date: 2020-11-06
 image: /img/2020-08-31-vuex-alternative/title.jpeg
+altimage: "Vuex article illustration with a big X capital letter"
 categories:
   - DÉVELOPPEMENT
 tags:

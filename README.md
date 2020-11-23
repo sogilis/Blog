@@ -129,6 +129,7 @@ make docker-stop
    author: Author (author@sogilis.com)
    date: 2020-08-20
    image: /img/image-name.jpeg
+   altimage: description and credits of the image
    categories:
      - cat1
      - cat2
