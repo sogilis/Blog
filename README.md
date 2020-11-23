@@ -120,7 +120,6 @@ make docker-stop
    Create a new `.md` file in `site/content/posts`.
    Only `Markdown` is supported with following [syntax](https://commonmark.org/help/) (more details [here](docs/content-format.md)).
 
-
    Here is a basic markdown template to start with:
 
    ```markdown
@@ -149,6 +148,7 @@ make docker-stop
    - the date should not be later than the current date, otherwise the article will not be published (and therefore not visible from the home page in the article list)
    - you can set any values to categories and tags. Look at values that have been used in previous articles to avoid duplicates
    - put your images under the `site/static/img/` directory
+   - 🧰 See [tools for writing](docs/writing.md).
 
 3. See the result at [http://localhost:1313](http://localhost:1313)
 
