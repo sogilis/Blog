@@ -48,3 +48,6 @@ other = "Legal Information"
 
 [allRightsReserved]
 other = "Sogilis - All rights reserved - 2018"
+
+[license]
+other = "This article is pubished under the following license: "
