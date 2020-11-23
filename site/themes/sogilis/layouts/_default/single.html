@@ -38,6 +38,13 @@
             >
             {{ i18n "publishdate" . }}
           </time>
+          <br />
+          {{ i18n "license" }}
+          {{- with .Params.license }}
+          {{ . }}
+          {{- else }}
+          CC BY-SA
+          {{- end }}
         </p>
       </div>
   </section>

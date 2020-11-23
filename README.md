@@ -161,10 +161,11 @@ make docker-stop
 
    So when you open your Pull Request Netlify builds the new website and you can check the result of your Pull Request in [Netlifly](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys). See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
 
+2. Do not forget to license your work by filling the template parameter `license`, oterhwise your article will be published by default with the [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) creative common license.
 
-2. If you're satisfied with the result in the preview you can merge the Pull Request into `master` branch.
+3. If you're satisfied with the result in the preview you can merge the Pull Request into `master` branch.
 
-6. It's done, the deployment is automated.
+4. It's done, the deployment is automated.
 
 
 # Credits
