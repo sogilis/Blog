@@ -7,7 +7,7 @@ Only supported format is `Markdown`, more precisely [CommonMark](https://commonm
 
 A [sum up of all feature](https://www.markdownguide.org/tools/hugo/) is available in Markdown Guide.
 
-In addition, Hugo provide many [built in shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes), but let's try as much as possible to use "standard" Markdown, since shortcodes make portability harder.
+In addition, Hugo provides many [built in shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes), but let's try as much as possible to use "standard" Markdown, since shortcodes make portability harder.
 
 If necessary, `Asciidoc` could be added quite easily. There are many things which prevent use to use this format today:
 - add `asciidoctor` and mandatory dependency
