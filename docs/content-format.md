@@ -13,3 +13,7 @@ If necessary, `Asciidoc` could be added quite easily. There are many things whic
 - add `asciidoctor` and mandatory dependency
 - make sure `NetlifyCMS` can handle this format
 - makre sure `Asciidoc` support is as expected
+
+## Useful details
+
+- Spaces and tabs can be used for code block indentations (1 tab = 4 spaces). Keep in mind that too little spaces can harm lisibility with small indentation.
