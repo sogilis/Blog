@@ -14,3 +14,6 @@ insert_final_newline = true
 # Change these settings to your own preference
 indent_style = space
 indent_size = 2
+
+[*.md]
+indent_size = 4
