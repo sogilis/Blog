@@ -9,6 +9,8 @@ A [sum up of all feature](https://www.markdownguide.org/tools/hugo/) is availabl
 
 In addition, Hugo provides many [built in shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes), but let's try as much as possible to use "standard" Markdown, since shortcodes make portability harder.
 
+:warning: prefer `{linenos=inline}` (instead of `true` or `table`) if you need line number on code block (the stylesheet does not handle these values correctly).
+
 If necessary, `Asciidoc` could be added quite easily. There are many things which prevent use to use this format today:
 - add `asciidoctor` and mandatory dependency
 - make sure `NetlifyCMS` can handle this format
