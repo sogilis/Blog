@@ -212,7 +212,7 @@ class SearchBar extends HTMLElement {
     this.searchResults = this.querySelector('#search-result');
 
     this.noResultElement = document.createElement('h1');
-    this.noResultElement.innerHTML = 'No results found.';
+    this.noResultElement.innerHTML = 'Aucun résultat trouvé.';
 
     this.form.addEventListener(
       'submit',
