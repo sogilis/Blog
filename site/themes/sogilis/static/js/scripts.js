@@ -201,7 +201,7 @@ class SearchBar extends HTMLElement {
           <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
           </svg>
         </label>
-        <input type="search" id="search-input" class="search-bar__input" placeholder="Search...">
+        <input type="search" id="search-input" class="search-bar__input" placeholder="Rechercher…">
       </form>
       <div class="search-bar__results" hidden><ul id="search-result"></ul></div>
     `;
