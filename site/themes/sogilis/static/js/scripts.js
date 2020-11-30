@@ -253,7 +253,9 @@ class SearchBar extends HTMLElement {
   toggleInput(event) {
     event.stopImmediatePropagation();
     this.input.classList.toggle('search-bar__input--active');
-    this.input.focus();
+    setTimeout(() => {
+      this.input.focus();
+    }, 1);
     this.closeSearchBarResults();
   }
 
