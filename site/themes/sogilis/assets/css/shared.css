@@ -4,6 +4,7 @@
 :root {
   --super-light-grey: #f9f9f9;
   --super-light-grey2: #fcfcfc;
+  --color-black-mine-shaft: #292929;
   --medium-grey: #707070;
   --dark-grey: #282e36;
   --wolf-blue: #016099;
@@ -25,15 +26,6 @@ body {
 /* Titles */
 /* Note: all titles should have a serif font */
 /* ========================================================================== */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-serif);
-}
 
 .title-1 {
   font-family: var(--font-serif);

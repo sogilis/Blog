@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   max-width: inherit;
-  color: var(--medium-grey);
+  color: var(--color-black-mine-shaft);
 }
 
 /* Folliwng copied from Bootstrap 4.4.1 */
@@ -68,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 blockquote,
@@ -80,8 +80,7 @@ pre,
 
 blockquote,
 pre {
-  width: 70%;
-  margin: 1.9rem 0 1.9rem 3.75rem;
+  margin: 2rem 0;
   padding: 0.4rem 1.25rem;
   border: solid 5px transparent;
 }
@@ -122,11 +121,7 @@ pre {
 #articlepage p {
   hyphens: auto;
   text-align: justify;
-}
-@media (min-width: 768px) {
-  #articlepage p {
-    margin-left: 1.5rem;
-  }
+  margin-bottom: 1em;
 }
 
 /* Reduce caption margin in a <figure> (instead of default h4 margin) */
@@ -193,17 +188,37 @@ figcaption h4 {
 }
 
 /* Section content */
+#articlepage-content {
+  margin-bottom: 1em;
+}
+#articlepage-content > .wrapper-paragraph {
+  max-width: 42.5rem;
+  margin: 0 auto;
+}
+#articlepage-content > .wrapper-paragraph__has-image {
+  max-width: 100%;
+  margin-top: 2em;
+}
 /* ========================================================================== */
 /* Waring: Some pictures could be to small in some screens */
 /* Like into http://blog.sogilis.fr/posts/2016-09-27-mise-place-livret-accueil/# */
 #articlepage-content img {
+  display: block;
   max-width: 100%;
+  margin: 0 auto;
+}
+#articlepage-content figure img {
+  max-width: auto;
+  margin: 0;
 }
 
 /* Image on the bottom */
 /* ========================================================================== */
-#articlepage-img-bottom {
-  max-width: 100%;
+@media (min-width: 768px) {
+  #articlepage-img-bottom {
+    max-width: 50%;
+    margin: 0 auto;
+  }
 }
 
 /* Section comment */
