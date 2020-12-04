@@ -98,18 +98,6 @@ const throwError = (message) => {
   }
 })();
 
-(() => {
-  const allArticlePageContentElement = document.querySelectorAll(
-    '#articlepage-content > *'
-  );
-  allArticlePageContentElement.forEach((element) => {
-    const wrapper = document.createElement('div');
-    wrapper.classList.add('wrapper-paragraph');
-    element.parentNode.insertBefore(wrapper, element);
-    wrapper.appendChild(element);
-  });
-})();
-
 /**
  * ============================================================================
  * Index page

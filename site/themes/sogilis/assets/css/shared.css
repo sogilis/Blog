@@ -40,7 +40,6 @@ body {
 
 .maincolumn {
   margin: 0 auto 0 auto;
-  display: flex;
   box-sizing: border-box;
 }
 
