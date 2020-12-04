@@ -63,12 +63,15 @@ samp {
   font-size: 1rem;
 }
 
-h2,
+h2 {
+  margin: 1.75rem 0;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  margin-top: 2em;
+  margin: 1.5rem 0;
 }
 
 blockquote,
@@ -122,6 +125,7 @@ pre {
   hyphens: auto;
   text-align: justify;
   margin-bottom: 1em;
+  line-height: 2rem;
 }
 
 /* Reduce caption margin in a <figure> (instead of default h4 margin) */
@@ -195,8 +199,7 @@ figcaption h4 {
   max-width: 42.5rem;
   margin: 0 auto;
 }
-#articlepage-content > .wrapper-paragraph__has-image {
-  max-width: 100%;
+#articlepage-content > .wrapper-paragraph img {
   margin-top: 2em;
 }
 /* ========================================================================== */
