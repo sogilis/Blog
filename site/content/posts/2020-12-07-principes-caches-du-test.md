@@ -111,7 +111,7 @@ Et pour comprendre ce cas de test rapidement, il n'y a pas 36 solutions : il do
 - quel est l'objet du test (la fonction testée) ?
 - que veut-on vérifier ?
 
-**Note :** vous noterez l'analogie avec les 3 grandes sections du [Behavior Driven Development](https://de.wikipedia.org/wiki/Behavior_Driven_Development) (given, when, then).
+**Note :** vous noterez l'analogie avec les 3 grandes sections du [Behavior Driven Development](https://fr.wikipedia.org/wiki/Programmation_pilotée_par_le_comportement) (given, when, then).
 
 Prenons l'exemple suivant :
 
