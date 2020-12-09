@@ -12,7 +12,7 @@ tags:
 
 ## De quoi allons-nous parler ?
 
-Dans cet article, nous parlerons de certains types de tests logiciels. Plus précisément, il sera question de tests automatisés (pas de tests manuels) portant sur une base de code maintenable et évolutive (pas de code jetable, de [POC](https://fr.wikipedia.org/wiki/Preuve_de_concept), etc.).
+Dans cet article, nous parlerons de tests automatisés (pas de tests manuels) portant sur une base de code maintenable et évolutive (pas de code jetable, de [POC](https://fr.wikipedia.org/wiki/Preuve_de_concept), etc.).
 
 Lorsque l'on travaille avec ce type de tests, de nombreux problèmes / difficultés / frustrations peuvent apparaître. Heureusement, certains **principes de base** existent pour limiter cela. Certains appellent cela des « bonnes pratiques ».
 
@@ -35,7 +35,7 @@ L'idée derrière ce principe est de faciliter au maximum la compréhension du c
 
 ### Comment faire ?
 
-Le boilerplate est majoritairement composé de code technique, par exemple, préparer une base de donnée, initialiser une couche réseau, nettoyer la base de donnée après l'exécution du test, etc. Le boilerplate intervenant à plusieurs niveaux, les moyens sont multiples :
+Le boilerplate est majoritairement composé de code technique, par exemple, préparer une base de données, initialiser une couche réseau, nettoyer la base de données après l'exécution du test, etc. Le boilerplate intervenant à plusieurs niveaux, les moyens sont multiples :
 
 - déplacer le code du boilerplate dans un "setup", "before each", "after"…
 - externaliser le code dans une fonction dédiée.
@@ -75,7 +75,7 @@ func TestHeroDAO_ResurrectAllKnights(t *testing.T) {
 }
 ```
 
-En réduisant le boilerplate a l'extrème, on peut arriver à ceci :
+En réduisant le boilerplate a l'extrême, on peut arriver à ceci :
 
 ```go {linenos=inline}
 func TestHeroDAO_ResurrectAllKnights(t *testing.T, heroDAO *HeroDAO) {
@@ -90,7 +90,7 @@ func TestHeroDAO_ResurrectAllKnights(t *testing.T, heroDAO *HeroDAO) {
 }
 ```
 
-- toute la partie connexion de la base de donnée a été déplacée en amont, pour être exécutée avant chaque test.
+- toute la partie connexion de la base de données a été déplacée en amont, pour être exécutée avant chaque test.
 - idem avec le `TRUNCATE` (ligne 12).
 - ainsi que la création de `HeroDAO` (ligne 16), tous les tests de ce fichier ayant besoin du même `HeroDAO`.
 
@@ -166,7 +166,7 @@ function buildHero() {
 
 Soit cette fonction `buildHero()` est mal nommée (et devrait s'appeler `buildHeroWithDetiny()`), soit il manque quelque chose dans le test (comme `hero.hasDestiny = true`).
 
-**Note :** ce principe allié au précédent n'est finalement que l'expression du principe ["Code at Wrong Level of Abstraction"](https://moderatemisbehaviour.github.io/clean-code-smells-and-heuristics/general/g6-code-at-wrong-level-of-abstraction.html) exprimé dans *Clean Code*.
+**Note :** ce principe allié au précédent n'est finalement que l'expression du principe ["Code at Wrong Level of Abstraction"](https://moderatemisbehaviour.github.io/clean-code-smells-and-heuristics/general/g6-code-at-wrong-level-of-abstraction.html) décrit dans *Clean Code*.
 
 ## 3. Minimiser le jeu de données
 
@@ -247,15 +247,15 @@ Le surcoût engendré par cette étape de refactoring peut être amorti :
 - avec l'utilisation d'une lib tierce, et si cette lib tierce est **bien testée** (il y a alors moins de risque de bug)
 - l'utilisation d'une **lib tierce largement employée** dans l'écosystème permet d'améliorer la productivité des nouveaux dev (vu qu'il y a de bonnes chances qu'ils connaissent cette lib)
 
-**Note :** l'utilisation d'assertions personnalisées (cf. exemple naïf) est une option a ne pas négliger.
+**Note :** l'utilisation d'assertions personnalisées (cf. exemple naïf) est une option à ne pas négliger.
 
 ## 6. Éviter les fixtures de test
 
-Lors de l'écriture d'un test nécessitant un état particulier en **base de donnée**, l'utilisation de fixtures de test[^testfixture] peut se faire de différentes manières, mais toutes posent problème :
+Lors de l'écriture d'un test nécessitant un état particulier en **base de données**, l'utilisation de fixtures de test[^testfixture] peut se faire de différentes manières, mais toutes posent problème :
 
 - **Utiliser une fixture existante ?** Le jeu de données sera alors plus important que nécessaire, puisque partagé entre plusieurs tests qui requièrent chacun des données différentes. En cas de test en échec, l'investigation sera plus difficile, les données intéressantes étant polluées.
 - **Adapter une fixture existante ?** On prend alors le risque de casser un autre test qui utilise cette fixture car on ne sait pas quel élément de la fixture est important pour quel test.
-- **Créer une nouvelle fixture ?** Multiplier les fixtures alourdi la modification du modèle de données.
+- **Créer une nouvelle fixture ?** Multiplier les fixtures alourdit la modification du modèle de données.
 
 Les fixtures présentent un autre inconvénient majeur : elles masquent des informations qui devraient être dans le test (cf principe [Expliciter le cas de test complet](#explicite-test-case))).
 
@@ -265,7 +265,7 @@ Pour toutes ces raisons, il est préférable de privilégier la création de don
 
 ## 7. Commenter en dernier recours, mais commenter
 
-Si le contexte (techno utilisée, contraintes du projets…) ne permet pas d'avoir un code explicitant clairement et rapidement le cas de test, alors, et seulement alors, il ne faut pas hésiter à commenter le test pour expliciter certains points.
+Si le contexte (techno utilisée, contraintes du projets…) ne permet pas d'avoir un code explicitant clairement et rapidement le cas de test, alors, et seulement alors, il ne faut pas hésiter à commenter le teste pour expliciter certains points.
 
 Certes les commentaires présentent de nombreux inconvénients, mais dans certaines situations bien particulières, les bénéfices peuvent l'emporter.
 
