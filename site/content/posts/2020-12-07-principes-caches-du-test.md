@@ -65,12 +65,12 @@ func TestHeroDAO_ResurrectAllKnights(t *testing.T) {
     // then
     knightsContainsBohort := false
     for _, knight := range kights {
-        if knight.name == "Bohort" {
+        if knight.alive && knight.name == "Bohort" {
             knightsContainsBohort = true
         }
     }
     if !knightsContainsBohort {
-        t.Fatalf("Expected %s to contains 'Bohort'", knights)
+        t.Fatalf("Expected %s to contains 'Bohort' alive", knights)
     }
 }
 ```
@@ -86,7 +86,7 @@ func TestHeroDAO_ResurrectAllKnights(t *testing.T, heroDAO *HeroDAO) {
     kights := heroDAO.resurrectAllKnights()
 
     // then
-    assertOneKnightWithName(t, knights, "Bohort")
+    assertOneAliveKnightWithName(t, knights, "Bohort")
 }
 ```
 
