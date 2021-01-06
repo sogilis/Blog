@@ -14,11 +14,12 @@
     "build": "make build",
     "build:preview": "make build_preview",
     "prettier:format": "prettier --write \"{,site/**/}*.{json,ts,css,scss,yml}\"",
-    "prettier:check": "prettier --check \"{,site/**/}*.{json,ts,css,scss,yml}\"",
+    "prettier:check": "prettier --check \"{,site/**/}*.{ts,css,scss,yml}\"",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "yarn lint -- --fix"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0",

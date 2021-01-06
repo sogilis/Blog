@@ -1,0 +1,10 @@
+[
+  {{ range $index, $e := (where .Site.AllPages.ByDate "Kind" "page").Reverse }}
+    {{ if $index }}, {{ end }}
+    {
+      "id": {{ $index }},
+      "title": {{ .Title | jsonify }},
+      "url" : {{ .Permalink | jsonify }}
+    }
+  {{ end }}
+]

@@ -6,10 +6,6 @@
  * When we click on the top right button, the tag <nav> appears smoothy..
  */
 
-header {
-  margin-top: 1rem;
-}
-
 #header-desktop {
   display: none;
 }
@@ -17,10 +13,11 @@ header {
 #header-mobile {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .header-mobile-link {
-  height: 2rem;
+  height: 3em;
 }
 
 /* When we scroll */
@@ -35,7 +32,7 @@ header {
 /* =========================================================================== */
 
 #header-mobile-logo {
-  height: 122%;
+  height: 100%;
 }
 
 /* ========================================================================== */
@@ -47,6 +44,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 1.5em;
+  height: 40%;
 }
 
 #header-mobile-threebarbutton::before,
@@ -201,7 +200,7 @@ header {
 
 #header-mobile-threebarbutton.menuMobileIsDisplayed::before {
   /* Following declaration is animated thanks `transition:` attribute */
-  transform: rotate(45deg) translate(0.5rem, 0.5rem);
+  transform: rotate(45deg) translate(0.45rem, 0.4rem);
 }
 
 #header-mobile-threebarbutton.menuMobileIsDisplayed::after {
@@ -236,4 +235,38 @@ body.menuMobileIsDisplayed {
 #header-mobile-navmenu.menuMobileIsDisplayed li:nth-child(even) {
   /* Following declaration is animated thanks `transition:` attribute */
   transform: translateX(0);
+}
+
+/* Search */
+.search-bar-wrapper {
+  margin-left: auto;
+}
+
+.search-bar__input {
+  display: none;
+}
+
+.search-bar__input--active {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75);
+  margin-left: 0;
+  width: 100%;
+  padding: 1em;
+  border: initial;
+}
+
+.search-bar__results {
+  top: 132px;
+  z-index: 1;
+  padding: 1em 1em 0 1em;
+}
+
+.search-bar__icon path {
+  fill: #000;
 }

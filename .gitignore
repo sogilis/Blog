@@ -51,4 +51,5 @@
 # VS Code editor
 .vscode
 
+# macOS files
 ./.DS_Store

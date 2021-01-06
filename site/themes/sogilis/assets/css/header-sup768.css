@@ -105,6 +105,26 @@ header {
   color: black;
 }
 
+/* Search */
+.search-bar__input {
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: width 0.5s;
+  color: #0056b3;
+}
+
+.search-bar__input--active {
+  margin-left: 0.5em;
+  width: 10em;
+}
+
+.search-bar__results {
+  top: 116px;
+  padding: 0 4em;
+  margin: 2em 0 0 0;
+}
+
 .dropdown-content-company {
   margin-left: 60px;
 
