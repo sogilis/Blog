@@ -1,6 +1,6 @@
-<a href="{{ .Permalink }}" class="articles-list-item">
-  <div>
-    <!-- Should be inner a div tag -->
+<div class="articles-list-item">
+  <a href="{{ .Permalink }}">
+    <!-- Should be nested in a tag -->
     <!-- Otherwise "CSS Grid, grid item “height: 100%” not working in Chrome" -->
     <!-- (like in Safari) -->
     <!-- See https://stackoverflow.com/questions/50691765/css-grid-grid-item-height-100-not-working-in-chrome -->
@@ -18,27 +18,31 @@
         alt="{{ $defaultAltImage }}"
       />
     {{ end }}
-  </div>
-  <p class="
+  </a>
+  <a class="
       title-1
       articles-list-item-title
       articles-list-item-text
      "
+     href="{{ .Permalink }}"
   >
-    {{ .Title }}
-  </p>
+      {{ .Title }}
+  </a>
   <p class="articles-list-item-tags articles-list-item-text">
     {{ if isset .Params "tags" }}
       {{ range .Params.tags }}
-        <span class="tag">{{ . }}</span>
+      <span class="tag">
+        <a href="/tags/{{ . | urlize}}">{{ . }}</a>
+      </span>
       {{ end }}
     {{ end }}
   </p>
-  <p class="
+  <a class="
       articles-list-item-readmore
       articles-list-item-text
      "
+     href="{{ .Permalink }}"
   >
-    {{ i18n "readMore" }}…
-  </p>
-</a>
+      {{ i18n "readMore" }}…
+  </a>
+</div>

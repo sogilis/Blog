@@ -60,10 +60,6 @@ main {
   transition: all 0.8s;
 }
 
-.articles-list-item:hover .articles-list-item-img {
-  filter: grayscale(100%);
-}
-
 /* The title and 'Lire la suite */
 /* ========================================================================== */
 
@@ -77,6 +73,10 @@ main {
 
 .articles-list-item-title {
   color: var(--dark-grey);
+}
+
+.articles-list-item-title:hover {
+  text-decoration: none;
 }
 
 /* Tag */
@@ -99,7 +99,7 @@ main {
   text-align: right;
 }
 
-.articles-list-item:hover > .articles-list-item-readmore {
+.articles-list-item-readmore:hover {
   color: var(--light-electric-blue);
   text-decoration: underline;
 }
