@@ -64,25 +64,31 @@ Ici, on parle bien uniquement de composants qui ont une **logique UI** (icônes,
 
 ## Charte graphique commune entre micro-frontends
 
-
 Le cas d'une bibliothèque de composants partagées est pensable dans de grosses applications, avec plusieurs pages et où il est possible de visualiser plusieurs composants qui peuvent être réutilisés de partout.
 Prenons l'exemple d'un site de commerce de produit en tout genre. La charte graphique a été réalisé par une équipe d'UX/UI et a été fourni à tous les équipes de développement.
-En terme de micro-frontends, nous pouvons identifier
+
+En terme de micro-frontends, nous pouvons identifier :
 - une équipe en charge du processus de panier/paiement
 - une autre qui s'occupe de la page produit
 - une autre de la page d'accueil qui affiche tous les produits.
-De plus, sur la page produit, il est voulu d'afficher une liste de produit similaire.
-Afficher un produit revient à afficher son image, son intitulé, son prix et un lien dirigeant vers sa fiche. La façon d'afficher un produit va être conduit par l'équipe de la page d'accueil qui en a besoin et de celle de la page produit qui en a besoin aussi.
-Chacun va donc créer son composant avec les règles qui lui sont propres. Ensuite, plusieurs personnes peuvent avoir la responsabilité de déployer ce composant dans une bibliothèque, en fusionnant les règles définies par les deux autres équipes.
 
+De plus, sur la page produit, il est indiqué dans la charte d'afficher une liste de produit similaire.
+Afficher un produit revient alors à afficher son image, son intitulé, son prix et un lien dirigeant vers sa propre page. La façon d'afficher un produit va être conduit par l'équipe de la page d'accueil qui en a besoin et de celle de la page produit qui en a besoin aussi pour les produits similaires.
+Chacun va donc créer son composant avec les règles qui lui sont propres. Ensuite, plusieurs personnes ont la responsabilité de déployer ce composant dans une bibliothèque, en fusionnant les règles définies par les deux autres équipes, et en respectant la charte initiale. Il serira donc de composant de référence indiquant à toutes les équipes ses marges, padding, tailles, fonts etc...
+
+## L'anarchie des micro-frontends
+
+De plus en plus, les systèmes en micro-frontends gagnent en popularité. Mais ils sont parfois mal utilisée voir complètement abusée. Un biais serait de s'en service d'excuse pour mélanger les technologies et les outils, laissant lieu à une complexité indéniable. L'utilisation de plusieurs framework (ReactJS, VueJS, Angular), ou sur la manière dont le style est mis en place (une application avec SASS, l'autre en BEM, ou encore avec du CSS-in-JS) déteriore la cohérence technique de l'application globale.
+Là où les équipes sont complètement autonomne dans un système micro-frontend, il faut quand même essayer de standardiser les approches et les technologies utilisées.
 
 ## Sources :
+- [Micro Frontends - extending the microservice idea to frontend development](https://micro-frontends.org/)
+- [Micro frontend - Martinfowler](https://martinfowler.com/articles/micro-frontends.html)
+- [Micro frontend - Article - Thoughworks](https://www.thoughtworks.com/radar/techniques/micro-frontends)
+- [Micro frontend - Podcast - Thoughworks](https://www.thoughtworks.com/podcasts/micro-frontends)
+- [Micro frontend anarchy - Article - Thoughworks](https://www.thoughtworks.com/radar/techniques/micro-frontend-anarchy)
 - [De l'application monolithique aux architectures microservices - Julien Dubreuil - Freelance spécialisé Drupal, architecte web et développeur Drupal - ScrumMaster](https://juliendubreuil.fr/blog/developpement/de-application-monolithique-aux-architectures-microservices-ou-orientees-composants/#:~:text=A%20mon%20sens%2C%20le%20principal,r%C3%A9alis%C3%A9es%20dans%20une%20seule%20technologie.&text=Au%20fil%20du%20temps%2C%20cette,modulaire%20pr%C3%A9vue%20%C3%A0%20l'origine)
 - [Que signifie architecture monolithique? - Definition IT de Whatis.fr](https://whatis.techtarget.com/fr/definition/architecture-monolithique)
 - [Architectures micro-services : objectifs, bénéfices et défis - Partie 1](https://www.technologies-ebusiness.com/enjeux-et-tendances/architectures-micro-services-objectifs-benefices-defis-partie-1)
 - [Donnez un Microfrontend à vos Microservices | by Yann L | Medium](https://medium.com/@ylerjen/donnez-un-microfrontend-%C3%A0-vos-microservices-f6c422b2bb46)
 - [Micro Frontend: le casse tête des micro services étendu au FrontEnd ! (Audrey Neveu) - YouTube](https://www.youtube.com/watch?v=f6_99ExOvWs)
-- [Micro Frontends - extending the microservice idea to frontend development](https://micro-frontends.org/)
-- https://www.thoughtworks.com/radar/techniques/micro-frontends
-- https://martinfowler.com/articles/micro-frontends.html
-- https://www.thoughtworks.com/podcasts/micro-frontends
