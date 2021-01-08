@@ -21,7 +21,7 @@ Pour cela, chaque sous-produit d’un produit applicatif est sous la responsabil
 Ainsi, celle-ci a donc la responsabilité du backend et du frontend, on y trouve donc des développeurs fullstack et/ou des développeurs backend et/ou des développeurs frontend.
 Dans cette architecture, le plus important va être de livrer de bout-en-bout en étant totalement indépendant.
 
-[image]
+![micro-frontend](/img/2021-01-08-micro-frontend/micro-frontend.png)
 
 Les premiers avantages à relevés sont « l'indépendance opérationnelle » ou « l’indépendance au runtime » :
 
