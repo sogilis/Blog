@@ -60,7 +60,20 @@ Il est donc préférable de remplir encore la case de l’autonomie d’équipe,
 Il peut y avoir des duplications, mais une fois qu’elles sont devenues évidentes au niveau du modèle, c’est à ce moment-là qu’il est intéressant de récolter tout ça et de l’inscrire dans une bibliothèque partagée.
 Ici, on parle bien uniquement de composants qui ont une **logique UI** (icônes, étiquettes, boutons, fonts, grilles, champs de recherche etc…). La bibliothèque ne doit pas contenir de logique métier (ou de domaine). Ces dernières appartiennent aux codes métiers du micro-frontend, pas à la bibliothèque.
 
-Émerge de cela un modèle de bibliothèque de composants avec un **gardien** (une personne ou une équipe) qui va arbitrer et cultiver l’outil pour que la collaboration front entre les équipes se déroule bien. Il faut que les contributions à cette bibliothèque soient de bonne qualité, avec de la cohérence, et une bonne validité. Cela permet de consommer l’outil convenablement sans que les équipes se marchent dessus.
+Émerge de cela un modèle de bibliothèque de composants avec un **gardien** ou **guilde** (une personne ou une équipe) qui va arbitrer et cultiver l’outil pour que la collaboration front entre les équipes se déroule bien. Il faut que les contributions à cette bibliothèque soient de bonne qualité, avec de la cohérence, et une bonne validité. Cela permet de consommer l’outil convenablement sans que les équipes se marchent dessus.
+
+## Charte graphique commune entre micro-frontends
+
+
+Le cas d'une bibliothèque de composants partagées est pensable dans de grosses applications, avec plusieurs pages et où il est possible de visualiser plusieurs composants qui peuvent être réutilisés de partout.
+Prenons l'exemple d'un site de commerce de produit en tout genre. La charte graphique a été réalisé par une équipe d'UX/UI et a été fourni à tous les équipes de développement.
+En terme de micro-frontends, nous pouvons identifier
+- une équipe en charge du processus de panier/paiement
+- une autre qui s'occupe de la page produit
+- une autre de la page d'accueil qui affiche tous les produits.
+De plus, sur la page produit, il est voulu d'afficher une liste de produit similaire.
+Afficher un produit revient à afficher son image, son intitulé, son prix et un lien dirigeant vers sa fiche. La façon d'afficher un produit va être conduit par l'équipe de la page d'accueil qui en a besoin et de celle de la page produit qui en a besoin aussi.
+Chacun va donc créer son composant avec les règles qui lui sont propres. Ensuite, plusieurs personnes peuvent avoir la responsabilité de déployer ce composant dans une bibliothèque, en fusionnant les règles définies par les deux autres équipes.
 
 
 ## Sources :
