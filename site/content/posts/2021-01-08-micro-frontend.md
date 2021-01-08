@@ -15,10 +15,10 @@ tags:
 Le mode de développement en micro-service a rapidement été adopté pour les services backend des applications web, typiquement via un découpage des services en blocs métiers. La préconisation pour la réalisation de ces services est une implémentation de type REST, qui permet un découplage complet entre la partie cliente (Web User Interface) d’un produit, et la partie backend qui gère les données.
 Malgré ce découpage en micro-services backend, la possibilité d’une application cliente (ou front) monolithique était toujours possible.
 
-Le micro-frontend vient alors en aide. C’est un style d’architecture dans lequel des sous-produits fronts indépendants sont composées ensemble pour former un tout plus grand.
+Le micro-frontend vient alors en aide. C’est un style d’architecture dans lequel des **sous-produits fronts indépendants** sont **composées ensemble pour former un tout plus grand**.
 Si l’approche DDD (Domain Driven Design), voyez les sous-produits comme les sous-domaines d’un domaine.
-Pour cela, chaque sous-produit d’un produit applicatif est sous la responsabilité d’une seule équipe fullstack autonome, et n’a ainsi pas besoin de se coordonner avec quelqu’un d’autre pour le mettre en production.
-Ainsi, celle-ci a donc la responsabilité du backend et du frontend, on y trouve donc des développeurs fullstack et/ou des développeurs backend et/ou des développeurs frontend.
+Pour cela, chaque sous-produit d’un produit applicatif est sous la responsabilité **d’une seule équipe fullstack autonome**, et n’a ainsi pas besoin de se coordonner avec quelqu’un d’autre pour le mettre en production.
+Ainsi, celle-ci a donc la responsabilité **du backend et du frontend**, on y trouve donc des développeurs fullstack et/ou des développeurs backend et/ou des développeurs frontend.
 Dans cette architecture, le plus important va être de livrer de bout-en-bout en étant totalement indépendant.
 
 ![micro-frontend](/img/2021-01-08-micro-frontend/micro-frontend.png)
@@ -58,9 +58,9 @@ Visuellement, il est clair qu’il faut mettre de l’importance sur la cohéren
 Cependant, avant d’utiliser un composant front de ce styleguide, il va devoir être pensé, puis créer, remanier, ou repenser encore. Difficile alors d’attendre qu’une autre équipe mette en place un composant, de comprendre comment il fonctionne, pour ensuite l’implémenter ailleurs où là base de code est peut être complètement différente.
 Il est donc préférable de remplir encore la case de l’autonomie d’équipe, et de les laisser créer leurs propres composants chez eux au fur et à mesure qu’ils en ont besoin.
 Il peut y avoir des duplications, mais une fois qu’elles sont devenues évidentes au niveau du modèle, c’est à ce moment-là qu’il est intéressant de récolter tout ça et de l’inscrire dans une bibliothèque partagée.
-Ici, on parle bien uniquement de composants qui ont une logique UI (icônes, étiquettes, boutons, fonts, grilles, champs de recherche etc…). La bibliothèque ne doit pas contenir de logique métier (ou de domaine). Ces dernières appartiennent aux codes métiers du micro-frontend, pas à la bibliothèque.
+Ici, on parle bien uniquement de composants qui ont une **logique UI** (icônes, étiquettes, boutons, fonts, grilles, champs de recherche etc…). La bibliothèque ne doit pas contenir de logique métier (ou de domaine). Ces dernières appartiennent aux codes métiers du micro-frontend, pas à la bibliothèque.
 
-Émerge de cela un modèle de bibliothèque de composants avec un gardien (une personne ou une équipe) qui va arbitrer et cultiver l’outil pour que la collaboration front entre les équipes se déroule bien. Il faut que les contributions à cette bibliothèque soient de bonne qualité, avec de la cohérence, et une bonne validité. Cela permet de consommer l’outil convenablement sans que les équipes se marchent dessus.
+Émerge de cela un modèle de bibliothèque de composants avec un **gardien** (une personne ou une équipe) qui va arbitrer et cultiver l’outil pour que la collaboration front entre les équipes se déroule bien. Il faut que les contributions à cette bibliothèque soient de bonne qualité, avec de la cohérence, et une bonne validité. Cela permet de consommer l’outil convenablement sans que les équipes se marchent dessus.
 
 
 ## Sources :
