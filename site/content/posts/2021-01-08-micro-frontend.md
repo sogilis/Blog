@@ -2,7 +2,8 @@
 title: Micro frontend
 author: Benoit et Willy
 date: 2021-01-08
-image:
+image: /img/2021-01-08-micro-frontend/microfrontend-thumbnail.jpeg
+altimage: "'Crayons de couleur' by Supernico26 is licensed under CC BY 2.0"
 categories:
     - FRONTEND
 tags:
@@ -65,16 +66,21 @@ Ici, on parle bien uniquement de composants qui ont une **logique UI** (icônes,
 ## Charte graphique commune entre micro-frontends
 
 Le cas d'une bibliothèque de composants partagés est recommandable dans de grosses applications, avec plusieurs pages, et où il est possible d'identifier plusieurs composants pouvant être réutilisés de partout.
+
 Prenons l'exemple d'un site de commerce de produit en tout genre. La charte graphique a été réalisée par une équipe d'UX/UI et a été fournie à toutes les équipes de développement.
 
 En terme de micro-frontends, nous pouvons identifier :
-- une équipe en charge du processus de panier/paiement
-- une autre qui s'occupe de la page produit
-- une autre de la page d'accueil qui affiche tous les produits.
+- une équipe A qui s'occupe de la page produit
+- une équipe B qui s'occupe de la page d'accueil affichant tous les produits.
+- une équipe C en charge du processus de panier/paiement
 
 De plus, sur la page produit, il est indiqué dans la charte d'afficher une liste de produit similaire.
-Afficher un produit revient alors à afficher son image, son intitulé, son prix et un lien dirigeant vers sa propre page. La façon d'afficher un produit va être conduit par l'équipe de la page d'accueil, qui en a besoin, et de celle de la page produit, qui en a besoin aussi pour les produits similaires.
-Chacun va donc créer son composant avec les règles qui lui sont propres. Ensuite, plusieurs personnes ont la responsabilité de déployer ce composant dans une bibliothèque, en fusionnant les règles définies par les deux autres équipes, et en respectant la charte initiale. Il serira donc de composant de référence indiquant à toutes les équipes ses marges, padding, tailles, fonts etc...
+
+Afficher un produit revient alors à afficher un bloc contenant son image, son intitulé, son prix et un lien dirigeant vers sa propre page.
+
+La façon d'afficher ces produits va être conduit par l'équipe A qui en a besoin pour sa page d'accueil, et par l'équipe B qui en a besoin aussi pour les produits similaires.
+Chacune des équipes va donc créer son propre composant produit, avec ses propres règles. Ensuite, une équipe plus annexe, va avoir la responsabilité de fusionner les règles du composant définient par l'équipe A et B en respectant la charte initiale. Cette fusion va donner aux équipes de développement un composant produit de référence, ranger dans une bibliothèque qui leurs est accessible.
+Cette équipe annexe n'est même pas dans l'obligation de fournir un composant de référence dans une bibliothèque, mais peut simplement emettre aux équipes de développement les règles CSS (padding, marging, fonts, taille etc...) qui doivent être respectées.
 
 ## L'anarchie des micro-frontends
 
