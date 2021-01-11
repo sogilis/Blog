@@ -73,7 +73,7 @@ En terme de micro-frontends, nous pouvons identifier :
 - une autre de la page d'accueil qui affiche tous les produits.
 
 De plus, sur la page produit, il est indiqué dans la charte d'afficher une liste de produit similaire.
-Afficher un produit revient alors à afficher son image, son intitulé, son prix et un lien dirigeant vers sa propre page. La façon d'afficher un produit va être conduit par l'équipe de la page d'accueil qui en a besoin et de celle de la page produit qui en a besoin aussi pour les produits similaires.
+Afficher un produit revient alors à afficher son image, son intitulé, son prix et un lien dirigeant vers sa propre page. La façon d'afficher un produit va être conduit par l'équipe de la page d'accueil, qui en a besoin, et de celle de la page produit, qui en a besoin aussi pour les produits similaires.
 Chacun va donc créer son composant avec les règles qui lui sont propres. Ensuite, plusieurs personnes ont la responsabilité de déployer ce composant dans une bibliothèque, en fusionnant les règles définies par les deux autres équipes, et en respectant la charte initiale. Il serira donc de composant de référence indiquant à toutes les équipes ses marges, padding, tailles, fonts etc...
 
 ## L'anarchie des micro-frontends
