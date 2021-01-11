@@ -65,7 +65,7 @@ Ici, on parle bien uniquement de composants qui ont une **logique UI** (icônes,
 ## Charte graphique commune entre micro-frontends
 
 Le cas d'une bibliothèque de composants partagés est recommandable dans de grosses applications, avec plusieurs pages, et où il est possible d'identifier plusieurs composants pouvant être réutilisés de partout.
-Prenons l'exemple d'un site de commerce de produit en tout genre. La charte graphique a été réalisé par une équipe d'UX/UI et a été fourni à tous les équipes de développement.
+Prenons l'exemple d'un site de commerce de produit en tout genre. La charte graphique a été réalisée par une équipe d'UX/UI et a été fournie à toutes les équipes de développement.
 
 En terme de micro-frontends, nous pouvons identifier :
 - une équipe en charge du processus de panier/paiement
