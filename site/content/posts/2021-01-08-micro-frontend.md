@@ -16,7 +16,7 @@ L'architecture micro-service a rapidement été adoptée pour les services backe
 Cependant, et grâce au découplage apporté par l'intertace REST, ce découpage en micro-services backend n'influence en rien l'architecture de la partie cliente (ou front). Aussi, une application frontend monolithique s'interface très bien avec de multiples services backend, et malheureusement, c'est encore l'architecture que l'on retrouve le plus souvent dans les logiciels Web.
 
 Le micro-frontend vient alors en aide. C’est un style d’architecture dans lequel des **sous-produits fronts indépendants** sont **composées ensemble pour former un tout plus grand**.
-Si l’approche DDD (Domain Driven Design), voyez les sous-produits comme les sous-domaines d’un domaine.
+Par exemple, avec l’approche DDD (Domain Driven Design), on peut voir les sous-produits comme des sous-domaines d’un domaine.
 Pour cela, chaque sous-produit d’un produit applicatif est sous la responsabilité **d’une seule équipe fullstack autonome**, et n’a ainsi pas besoin de se coordonner avec quelqu’un d’autre pour le mettre en production.
 Ainsi, celle-ci a donc la responsabilité **du backend et du frontend**, on y trouve donc des développeurs fullstack et/ou des développeurs backend et/ou des développeurs frontend.
 Dans cette architecture, le plus important va être de livrer de bout-en-bout en étant totalement indépendant.
