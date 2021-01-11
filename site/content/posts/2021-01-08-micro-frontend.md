@@ -17,7 +17,7 @@ Cependant, et grâce au découplage apporté par l'intertace REST, ce découpage
 
 Le micro-frontend vient alors en aide. C’est un style d’architecture dans lequel des **sous-produits fronts indépendants** sont **composées ensemble pour former un tout plus grand**.
 Par exemple, avec l’approche DDD (Domain Driven Design), on peut voir les sous-produits comme des sous-domaines d’un domaine.
-Pour cela, chaque sous-produit d’un produit applicatif est sous la responsabilité **d’une seule équipe fullstack autonome**, et n’a ainsi pas besoin de se coordonner avec quelqu’un d’autre pour le mettre en production.
+Dans une architecture micro-frontend, chaque sous-produit est indépendant, et peut potentiellement être sous la responsabilité **d’une seule équipe autonome**. L'équipe en charge de déveloper ce sous-produit, n’a ainsi pas besoin de se coordonner avec les autres équipes pour gérer son cycle de vie (déploiement, mise en production, mise à jours, etc.). Toute problématique d'intégration avec les autres sous-produits et les équipes qui en ont la charge est alors éliminée.
 Ainsi, celle-ci a donc la responsabilité **du backend et du frontend**, on y trouve donc des développeurs fullstack et/ou des développeurs backend et/ou des développeurs frontend.
 Dans cette architecture, le plus important va être de livrer de bout-en-bout en étant totalement indépendant.
 
