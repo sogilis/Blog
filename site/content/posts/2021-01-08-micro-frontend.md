@@ -78,7 +78,7 @@ Chacun va donc créer son composant avec les règles qui lui sont propres. Ensui
 
 ## L'anarchie des micro-frontends
 
-De plus en plus, les systèmes en micro-frontends gagnent en popularité. Mais ils sont parfois mal utilisée voir complètement abusée. Un biais serait de s'en service d'excuse pour mélanger les technologies et les outils, laissant lieu à une complexité indéniable. L'utilisation de plusieurs framework (ReactJS, VueJS, Angular), ou sur la manière dont le style est mis en place (une application avec SASS, l'autre en BEM, ou encore avec du CSS-in-JS) déteriore la cohérence technique de l'application globale.
+De plus en plus, l'architecture en micro-frontend gagne en popularité. Mais elle est parfois mal utilisée, voir utilisée avec abus. Un biais commun, est de mélanger les technologies et les outils, laissant lieu à une complexité indéniable. Un exemple peut être l'utilisation de plusieurs frameworks structurants, comme React, Vue, Angular, ou encore diversifier à outrance la gestion du style (une application avec SASS, l'autre en BEM, ou encore avec du CSS-in-JS). Tout cela déteriore la cohérence technique de l'application globale.
 Là où les équipes sont complètement autonomne dans un système micro-frontend, il faut quand même essayer de standardiser les approches et les technologies utilisées.
 
 ## Sources :
