@@ -113,8 +113,6 @@ TODO              text
 .gitattributes    text
 .gitconfig        text
 .htaccess         text
-*.lock            text -diff
-package-lock.json text -diff
 *.toml            text
 *.yaml            text
 *.yml             text
