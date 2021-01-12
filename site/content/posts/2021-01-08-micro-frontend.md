@@ -85,7 +85,7 @@ Cette équipe annexe n'est même pas dans l'obligation de fournir un composant d
 ## L'anarchie des micro-frontends
 
 De plus en plus, l'architecture en micro-frontend gagne en popularité. Mais elle est parfois mal utilisée, voir utilisée avec abus. Un biais commun, est de mélanger les technologies et les outils, laissant lieu à une complexité indéniable. Un exemple peut être l'utilisation de plusieurs frameworks structurants, comme React, Vue, Angular, ou encore diversifier à outrance la gestion du style (une application avec SASS, l'autre en BEM, ou encore avec du CSS-in-JS). Tout cela déteriore la cohérence technique de l'application globale.
-Là où les équipes sont complètement autonomne dans un système micro-frontend, il faut quand même essayer de standardiser les approches et les technologies utilisées.
+Même si les équipes sont complètement autonomes dans un système micro-frontend, il faut tout de même essayer de standardiser les approches et les technologies utilisées.
 
 ## Sources :
 - [Micro Frontends - extending the microservice idea to frontend development](https://micro-frontends.org/)
