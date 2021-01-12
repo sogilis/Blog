@@ -13,7 +13,7 @@ tags:
     - front
 ---
 
-L'architecture micro-service a rapidement été adoptée pour les services backend des applications web, typiquement en découpant ces services en différents blocs métiers. Généralement, ces services reposent sur une implémentation de type REST, qui permet un découplage complet entre la partie cliente (Web User Interface) d’un produit, et la partie backend qui gère les données.
+L'architecture micro-service a rapidement été adoptée pour les services backend des applications web, typiquement en découpant ces services en différents blocs métiers. Généralement, ces services reposent sur une implémentation de type REST. Ceci  permet un découplage complet entre la partie cliente (Web User Interface) d’un produit et la partie backend qui gère les données.
 Cependant, et grâce au découplage apporté par l'intertace REST, ce découpage en micro-services backend n'influence en rien l'architecture de la partie cliente (ou front). Aussi, une application frontend monolithique s'interface très bien avec de multiples services backend, et malheureusement, c'est encore l'architecture que l'on retrouve le plus souvent dans les logiciels Web.
 
 Le micro-frontend vient alors en aide. C’est un style d’architecture dans lequel des **sous-produits fronts indépendants** sont **composées ensemble pour former un tout plus grand**.
