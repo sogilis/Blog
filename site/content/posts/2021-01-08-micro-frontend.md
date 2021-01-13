@@ -14,11 +14,12 @@ tags:
 ---
 
 L'architecture micro-service a rapidement été adoptée pour les services backend des applications web, typiquement en découpant ces services en différents blocs métiers. Généralement, ces services reposent sur une implémentation de type REST. Ceci  permet un découplage complet entre la partie cliente (Web User Interface) d’un produit et la partie backend qui gère les données.
-Cependant, et grâce au découplage apporté par l'intertace REST, ce découpage en micro-services backend n'influence en rien l'architecture de la partie cliente (ou front). Aussi, une application frontend monolithique s'interface très bien avec de multiples services backend, et malheureusement, c'est encore l'architecture que l'on retrouve le plus souvent dans les logiciels Web.
+Cependant, et grâce au découplage apporté par l'intertace REST, ce découpage en micro-services backend n'influence en rien l'architecture de la partie cliente (ou front).
+Cette problématique est aussi présente sur des applications frontend monolothique. C'est encore l'architecture que l'on retrouve malheuresement le plus souvent dans les logiciels Web.
 
-Le micro-frontend vient alors en aide. C’est un style d’architecture dans lequel des **sous-produits fronts indépendants** sont **composées ensemble pour former un tout plus grand**.
-Par exemple, avec l’approche DDD (Domain Driven Design), on peut voir les sous-produits comme des sous-domaines d’un domaine.
-Dans une architecture micro-frontend, chaque sous-produit est indépendant, et peut potentiellement être sous la responsabilité **d’une seule équipe autonome**. L'équipe en charge de déveloper ce sous-produit, n’a ainsi pas besoin de se coordonner avec les autres équipes pour gérer son cycle de vie (déploiement, mise en production, mise à jours, etc.). Toute problématique d'intégration avec les autres sous-produits et les équipes qui en ont la charge est alors éliminée.
+Le micro-frontend propose alors une approche différente. C’est un style d’architecture dans lequel des **sous-produits fronts indépendants** sont **composées ensemble pour former un tout plus grand**.
+Par exemple, avec l’approche DDD (Domain Driven Design), on peut voir les sous-produits comme des "sous-domaines" (bounded context) d’un domaine.
+Dans une architecture micro-frontend, chaque sous-produit est indépendant, et peut potentiellement être sous la responsabilité **d’une seule équipe autonome**. Ainsi, on limite au maximum les interactions entre les équipes concernant son cycle de vie (déploiement, mise en production, mise à jours, etc.). Toute problématique d'intégration avec les autres sous-produits et les équipes qui en ont la charge est alors éliminée.
 Ainsi, celle-ci a donc la responsabilité **du backend et du frontend**, on y trouve donc des développeurs fullstack et/ou des développeurs backend et/ou des développeurs frontend.
 Dans cette architecture, le plus important va être de livrer de bout-en-bout en étant totalement indépendant.
 
@@ -34,7 +35,7 @@ De cette manière, une seule équipe peut prendre par exemple la charge d’ajou
 Le produit général se retrouve avec des bases de codes plus petites, plus cohérentes et maintenables. Mais aussi avec des équipes découplées et autonomes permettant de gagner en évolutivité. Tout cela favorise une mise à jour, une mise à niveau ou une réécriture des parties du frontend, bien plus progressive qu’auparavant.
 
 Quel est le coût d’une telle architecture ? Il peut y avoir des fragmentations dans la manière dont les équipes travaillent et qui peut être causée par l’autonomie qui leurs sont accordées.
-Plus les équipes augmentent, plus il devient difficile de s’assurer que les connaissances sont transférées et que les équipes ne deviennent pas cloisonnées.
+Plus les équipes augmentent, plus il devient difficile de s’assurer que les connaissances sont transférées et que le code ne devienne pas trop hétérogène entre les équipes.
 
 ## Comment gérer la cohérence du style ?
 
@@ -58,8 +59,8 @@ par exemple avec la [syntaxe BEM](http://getbem.com/) qui s’assure que les sé
 Visuellement, il est clair qu’il faut mettre de l’importance sur la cohérence visuelle entre les micro-frontends. Une bibliothèque de composants UI partagés et réutilisables est en général une bonne préconisation. Cette bibliothèque de composants sert de guide de style (styleguide) collaboratif entre les acteurs du produit à développer.
 Cependant, avant d’utiliser un composant front de ce styleguide, il va devoir être pensé, puis créer, remanier, ou repenser encore. Difficile alors d’attendre qu’une autre équipe mette en place un composant, de comprendre comment il fonctionne, pour ensuite l’implémenter ailleurs où là base de code est peut être complètement différente.
 Il est donc préférable de remplir encore la case de l’autonomie d’équipe, et de les laisser créer leurs propres composants chez eux au fur et à mesure qu’ils en ont besoin.
-Il peut y avoir des duplications, mais une fois qu’elles sont devenues évidentes au niveau du modèle, c’est à ce moment-là qu’il est intéressant de récolter tout ça et de l’inscrire dans une bibliothèque partagée.
-Ici, on parle bien uniquement de composants qui ont une **logique UI** (icônes, étiquettes, boutons, fonts, grilles, champs de recherche etc…). La bibliothèque ne doit pas contenir de logique métier (ou de domaine). Ces dernières appartiennent aux codes métiers du micro-frontend, pas à la bibliothèque.
+Il peut y avoir des duplications, mais une fois qu’elles sont devenues évidentes au niveau de la modélisation graphique, c’est à ce moment-là qu’il est intéressant de récolter tout ça et de l’inscrire dans une bibliothèque partagée.
+Ici, on parle bien uniquement de composants qui ont une **logique UI** (marges, icônes, étiquettes, boutons, fonts, grilles, champs de recherche etc…). La bibliothèque ne doit pas contenir de logique métier (ou de domaine). Ces dernières appartiennent aux codes métiers du micro-frontend, pas à la bibliothèque.
 
 Émerge de cela un modèle de bibliothèque de composants avec un **gardien** ou **guilde** (une personne ou une équipe) qui va arbitrer et cultiver l’outil pour que la collaboration front entre les équipes se déroule bien. Il faut que les contributions à cette bibliothèque soient de bonne qualité, avec de la cohérence, et une bonne validité. Cela permet de consommer l’outil convenablement sans que les équipes se marchent dessus.
 
@@ -67,16 +68,16 @@ Ici, on parle bien uniquement de composants qui ont une **logique UI** (icônes,
 
 Le cas d'une bibliothèque de composants partagés est recommandable dans de grosses applications, avec plusieurs pages, et où il est possible d'identifier plusieurs composants pouvant être réutilisés de partout.
 
-Prenons l'exemple d'un site de commerce de produit en tout genre. La charte graphique a été réalisée par une équipe d'UX/UI et a été fournie à toutes les équipes de développement.
+Prenons l'exemple d'un site de commerce de produit en tout genre. La maquette et la charte graphique ont été réalisées par une équipe d'UX/UI et ont été fournies à toutes les équipes de développement.
 
 En terme de micro-frontends, nous pouvons identifier :
 - une équipe A qui s'occupe de la page produit
 - une équipe B qui s'occupe de la page d'accueil affichant tous les produits.
 - une équipe C en charge du processus de panier/paiement
 
-De plus, sur la page produit, il est indiqué dans la charte d'afficher une liste de produit similaire.
+De plus, sur la page produit, il est indiqué dans la maquette d'afficher une liste de produits similaires.
 
-Afficher un produit revient alors à afficher un bloc contenant son image, son intitulé, son prix et un lien dirigeant vers sa propre page.
+Afficher un produit revient à afficher un bloc contenant son image, son intitulé, son prix et un lien dirigeant vers sa propre page.
 
 La façon d'afficher ces produits va être conduit par l'équipe A qui en a besoin pour sa page d'accueil, et par l'équipe B qui en a besoin aussi pour les produits similaires.
 Chacune des équipes va donc créer son propre composant produit, avec ses propres règles. Ensuite, une équipe annexe, a la responsabilité de fusionner les règles du composant définies par les équipes A et B en respectant la charte initiale. Cette fusion va donner aux équipes de développement un composant produit de référence, disponible dans une bibliothèque qui leurs est accessible.
