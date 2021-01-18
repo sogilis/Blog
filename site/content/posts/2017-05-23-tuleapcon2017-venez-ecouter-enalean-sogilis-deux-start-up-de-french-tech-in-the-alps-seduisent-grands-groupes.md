@@ -5,7 +5,6 @@ date: 2017-05-23T10:08:42+00:00
 image: /img/2017-05-tuleapcon2017.png
 categories:
   - LA VIE À SOGILIS
-  - Non classé
   - NOTRE VISION
 tags:
   - agilité

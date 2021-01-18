@@ -105,10 +105,10 @@ const throwError = (message) => {
  */
 
 (() => {
-  const titleMaxLength = 60;
+  const titleMaxLength = 50;
   // `blogIndexArticleTitleAll' is never null, but could be empty.
   const blogIndexArticleTitleAll = document.querySelectorAll(
-    '.blogindex-article-title'
+    '.articles-list-item-title'
   );
   blogIndexArticleTitleAll.forEach((blogIndexArticleTitle) => {
     // `text' is never null, but could be empty string.

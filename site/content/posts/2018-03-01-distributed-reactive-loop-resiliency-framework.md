@@ -5,7 +5,6 @@ date: 2018-03-01T09:21:28+00:00
 image: /img/2018-02-full_fsm.png
 categories:
   - DÉVELOPPEMENT
-  - Web
 tags:
   - 'Distributed'
   - 'distributedsystems'

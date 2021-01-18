@@ -5,7 +5,6 @@ date: 2018-07-23T13:47:51+00:00
 image: /img/2018-07-Web2Day-featured.jpg
 categories:
   - NOTRE VISION
-  - Web
 tags:
   - conférence
   - microservices

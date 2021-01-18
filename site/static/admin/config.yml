@@ -20,6 +20,20 @@ collections: # A list of collections the CMS should be able to edit
           required: false,
         }
       - { label: 'Image', name: 'image', widget: 'image', required: false }
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'select'
+        required: true
+        multiple: true
+        options:
+          [
+            'DÉVELOPPEMENT',
+            'NOTRE VISION',
+            'LA VIE À SOGILIS',
+            'ERGONOMIE',
+            'DESIGN',
+            'TÉMOIGNAGES CLIENTS',
+          ]
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
 # Working with a Local Git Repository

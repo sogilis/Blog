@@ -23,22 +23,31 @@
     </span>
 
       <div id="articlepage-header-title">
-        <h1 id="articlepage-header-title-h1">{{ .Title }}</h1>
-        <p>
-          {{ i18n "writtenBy" }}
-          {{- with .Params.Author }}
-          {{ . }}
-          {{- else }}
-          {{ .Site.Params.Author }}
-          {{- end }}
-          <br />
-          <time
-            class="post-date"
-            datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"
-            >
-            {{ i18n "publishdate" . }}
-          </time>
-        </p>
+        <h1 class="title article-title">{{ .Title }}</h1>
+        <div class="articlepage-header-title-details">
+          <ul class="tags-list">
+            {{ range .Params.tags }}
+              <li class="tag">
+                <a href="/tags/{{ . | urlize}}">{{ . }}</a>
+              </li>
+            {{ end }}
+          </ul>
+          <div>
+            {{ i18n "writtenBy" }}
+            {{- with .Params.Author }}
+            {{ . }}
+            {{- else }}
+            {{ .Site.Params.Author }}
+            {{- end }}
+            <br />
+            <time
+              class="post-date"
+              datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"
+              >
+              {{ i18n "publishdate" . }}
+            </time>
+          </div>
+        </div>
       </div>
   </section>
 
