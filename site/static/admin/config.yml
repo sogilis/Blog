@@ -20,19 +20,20 @@ collections: # A list of collections the CMS should be able to edit
           required: false,
         }
       - { label: 'Image', name: 'image', widget: 'image', required: false }
-      - label: 'Categories'
-        name: 'categories'
+      - label: 'Tags'
+        name: 'tags'
         widget: 'select'
         required: true
         multiple: true
         options:
           [
-            'DÉVELOPPEMENT',
-            'NOTRE VISION',
-            'LA VIE À SOGILIS',
-            'ERGONOMIE',
-            'DESIGN',
-            'TÉMOIGNAGES CLIENTS',
+            'dev',
+            'test',
+            'sécurité',
+            'design',
+            'conférences',
+            'process',
+            'vie à Sogilis',
           ]
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
