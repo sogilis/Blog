@@ -20,16 +20,16 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.16.0",
-    "eslint-config-prettier": "^7.1.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.0",
-    "netlify-cms-proxy-server": "^1.3.8",
+    "netlify-cms-proxy-server": "^1.3.9",
     "prettier": "^2.2.1"
   },
   "dependencies": {
     "bootstrap-reboot": "^4.5.4",
-    "hugo-bin": "^0.67.1",
-    "netlify-cms": "^2.10.78",
+    "hugo-bin": "^0.68.0",
+    "netlify-cms": "^2.10.88",
     "typeface-eb-garamond": "^1.1.13",
     "typeface-montserrat": "^1.1.13"
   },
