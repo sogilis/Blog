@@ -4,3 +4,6 @@
 
 [context.deploy-preview]
   command = "yarn build:preview"
+
+[build.environment]
+  NODE_VERSION = "12.20.1"
