@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/sogilis/Blog.git"
   },
+  "engines" : {
+    "node" : ">=12"
+  },
   "scripts": {
     "start": "make start",
     "start:netlify": "make start_netlify",
