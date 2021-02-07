@@ -1,6 +1,6 @@
 ---
 tag:
-  - vue 
+  - vue
   - summary
 ---
 
@@ -9,4 +9,3 @@ tag:
 - Summary
 - Summary
 - Summary
-
