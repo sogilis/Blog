@@ -6,11 +6,26 @@
   "author": "ULIVZ <chl814@foxmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf docs/.vuepress/.temp docs/.vuepress/.cache docs/.vuepress/dist",
     "dev": "vuepress dev examples",
-    "build": "vuepress build examples"
+    "build": "yarn clean && vuepress build examples",
+    "serve": "yarn build && anywhere -h localhost -d docs/.vuepress/dist",
+    "lint": "export NODE_OPTIONS=\"--max-old-space-size=4096\" && eslint --ext .js,.ts,.vue .",
+    "lint:fix": "yarn lint --fix",
+    "prettier": "prettier . --check --ignore-unknown",
+    "prettier:fix": "prettier . --write --ignore-unknown",
+    "test": "yarn prettier && yarn lint"
   },
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.9.4",
-    "vuepress": "^1.8.0"
+    "vuepress": "^1.8.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-vuepress": "^3.1.0",
+    "eslint-config-vuepress-typescript": "^2.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.2.1",
+    "sort-package-json": "^1.48.1",
+    "typescript": "^4.1.3"
   }
 }
