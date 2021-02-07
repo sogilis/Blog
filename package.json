@@ -10,7 +10,7 @@
     "build": "vuepress build examples"
   },
   "devDependencies": {
-    "@vuepress/plugin-blog": "latest",
-    "vuepress": "next"
+    "@vuepress/plugin-blog": "^1.9.4",
+    "vuepress": "^1.8.0"
   }
 }
