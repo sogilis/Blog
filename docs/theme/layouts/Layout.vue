@@ -2,17 +2,17 @@
   <div>
     <ul id="default-layout">
       <li v-for="page in $pagination.pages">
-        <router-link class="page-link" :to="page.path">{{
+        <RouterLink class="page-link" :to="page.path">{{
           page.title
-        }}</router-link>
+        }}</RouterLink>
       </li>
     </ul>
     <div id="pagination">
-      <router-link v-if="$pagination.hasPrev" :to="$pagination.prevLink"
-        >Prev</router-link
+      <RouterLink v-if="$pagination.hasPrev" :to="$pagination.prevLink"
+        >Prev</RouterLink
       >
-      <router-link v-if="$pagination.hasNext" :to="$pagination.nextLink"
-        >Next</router-link
+      <RouterLink v-if="$pagination.hasNext" :to="$pagination.nextLink"
+        >Next</RouterLink
       >
     </div>
   </div>
