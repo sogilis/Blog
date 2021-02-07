@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf docs/.vuepress/.temp docs/.vuepress/.cache docs/.vuepress/dist",
-    "dev": "vuepress dev examples",
-    "build": "yarn clean && vuepress build examples",
+    "dev": "vuepress dev docs",
+    "build": "yarn clean && vuepress build docs",
     "serve": "yarn build && anywhere -h localhost -d docs/.vuepress/dist",
     "lint": "export NODE_OPTIONS=\"--max-old-space-size=4096\" && eslint --ext .js,.ts,.vue .",
     "lint:fix": "yarn lint --fix",
