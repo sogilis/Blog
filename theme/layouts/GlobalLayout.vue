@@ -15,10 +15,14 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import GlobalLayout from '@vuepress/core/lib/client/components/GlobalLayout.vue';
+import { toto } from '../essai';
 
 export default {
   components: { DefaultGlobalLayout: GlobalLayout },
 };
+toto();
 </script>

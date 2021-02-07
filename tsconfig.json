@@ -7,7 +7,9 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "newLine": "lf",
-    "noEmitOnError": true,
+    "noEmit": false,
+    "allowJs": false,
+    "noEmitOnError": false,
     "noImplicitAny": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
@@ -16,5 +18,16 @@
     "strictNullChecks": true,
     "target": "ES2018"
   },
-  "include": ["./docs/.vuepress/**/*", "./theme/**/*"]
+  "include": [
+    "./docs/.vuepress/**/*",
+    "./docs/.vuepress/**/*.js",
+    "./docs/.vuepress/**/*.ts",
+    "./docs/.vuepress/**/*.vue",
+    "./theme/**/*",
+    "./theme/**/*.js",
+    "./theme/**/*.ts",
+    "./theme/**/*.ts",
+    "./theme/**/*.vue"
+  ],
+  "exclude": ["node_modules"]
 }
