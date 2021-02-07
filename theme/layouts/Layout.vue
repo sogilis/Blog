@@ -1,9 +1,9 @@
 <template>
   <div>
     <ul id="default-layout">
-      <li v-for="page in $pagination.pages">
-        <RouterLink class="page-link" :to="page.path">{{
-          page.title
+      <li v-for="aPage in $pagination.pages" :key="aPage.path">
+        <RouterLink class="page-link" :to="aPage.path">{{
+          aPage.title
         }}</RouterLink>
       </li>
     </ul>

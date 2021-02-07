@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import GlobalLayout from '@app/components/GlobalLayout.vue';
+import GlobalLayout from '@vuepress/core/lib/client/components/GlobalLayout.vue';
 
 export default {
   components: { DefaultGlobalLayout: GlobalLayout },
