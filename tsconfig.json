@@ -16,5 +16,5 @@
     "strictNullChecks": true,
     "target": "ES2018"
   },
-  "include": ["./docs/.vuepress/**/*", "./docs/theme/**/*"]
+  "include": ["./docs/.vuepress/**/*", "./theme/**/*"]
 }
