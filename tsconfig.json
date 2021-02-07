@@ -14,7 +14,7 @@
     "sourceMap": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "ES2018",
-    "include": ["./docs/.vuepress/**/*", "./docs/theme/**/*"]
-  }
+    "target": "ES2018"
+  },
+  "include": ["./docs/.vuepress/**/*", "./docs/theme/**/*"]
 }
