@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.9.4",
+    "anywhere": "^1.5.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-vuepress": "^3.1.0",
