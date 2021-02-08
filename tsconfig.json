@@ -1,22 +1,12 @@
+// See example at https://github.com/salazarr-js/vuepress-ts
 {
   "compilerOptions": {
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
     "lib": ["DOM", "ES2020"],
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "newLine": "lf",
-    "noEmit": false,
-    "allowJs": true,
-    "noEmitOnError": false,
     "noImplicitAny": true,
-    "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "strictNullChecks": true,
-    "target": "ES2018"
+    "strictNullChecks": true
   },
   "include": [
     "./docs/.vuepress/**/*",
