@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": "true",
   "license": "MIT",
-  "main": "./theme/index.js",
+  "main": "./docs/.vuepress/config.js",
   "scripts": {
     "build": "yarn clean && vuepress build docs",
     "clean": "rm -rf docs/.vuepress/.temp docs/.vuepress/.cache docs/.vuepress/dist",
