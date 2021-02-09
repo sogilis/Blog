@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { getDateInEnglish } from '../utils/date';
+import { getDateInEnglish } from '../utils/date.vue';
 
 export default {
   methods: {

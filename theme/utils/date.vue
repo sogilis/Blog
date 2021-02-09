@@ -1,3 +1,4 @@
+<script lang="ts">
 export const getDateInEnglish = (dateString: string): string => {
   const date = new Date(dateString);
   if (Object.prototype.toString.call(date) === '[object Date]') {
@@ -11,3 +12,8 @@ export const getDateInEnglish = (dateString: string): string => {
   }
   return 'No date';
 };
+
+export default {
+  getDateInEnglish,
+};
+</script>

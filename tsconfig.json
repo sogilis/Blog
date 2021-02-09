@@ -1,21 +1,19 @@
 // See example at https://github.com/salazarr-js/vuepress-ts
 {
   "compilerOptions": {
+    "lib": ["DOM", "ES2020"],
     "noImplicitAny": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
     "strict": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "target": "ES2018"
   },
   "include": [
-    "./docs/.vuepress/**/*",
-    "./docs/.vuepress/**/*.js",
     "./docs/.vuepress/**/*.ts",
     "./docs/.vuepress/**/*.vue",
-    "./theme/**/*",
-    "./theme/**/*.js",
-    "./theme/**/*.ts",
     "./theme/**/*.ts",
     "./theme/**/*.vue"
-  ]
-  // https://github.com/vuepress/vuepress-community/issues/51
-  // "exclude": ["node_modules"]
+  ],
+  "exclude": ["node_modules"]
 }

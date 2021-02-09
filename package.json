@@ -7,7 +7,7 @@
   "scripts": {
     "build": "yarn clean && vuepress build docs",
     "clean": "rm -rf docs/.vuepress/.temp docs/.vuepress/.cache docs/.vuepress/dist",
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --no-clear-screen",
     "lint": "export NODE_OPTIONS=\"--max-old-space-size=4096\" && eslint --ext .js,.ts,.vue .",
     "lint:fix": "yarn lint --fix",
     "prettier": "prettier . --check --ignore-unknown",
