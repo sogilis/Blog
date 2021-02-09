@@ -5,8 +5,12 @@
         <RouterLink class="page-link" :to="aPage.path">{{
           aPage.title
         }}</RouterLink>
+        <br />
+        Read time {{ aPage.readingTime.minutes }} minutes
+        <br />
         {{ aPage.frontmatter.description }}
         {{ getDate(aPage.frontmatter.date) }}
+        {{ aPage.frontmatter.readingTime }}
         <img :src="aPage.frontmatter.image" />
       </li>
     </ol>
