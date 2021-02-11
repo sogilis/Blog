@@ -1,6 +1,6 @@
-# 70-lines-of-vuepress-blog-theme
+# Sogilis VuePress Typescrit POC
 
-A VuePress Blog Theme implemented in around 70 lines.
+A VuePress Blog Theme implemented in some lines
 
 ## Quick start
 
@@ -32,9 +32,9 @@ A VuePress Blog Theme implemented in around 70 lines.
   yarn serve
   ```
 
-## Develop to develop TypeScript
+## Develop in TypeScript
 
-***Do not create `*.ts` files*** (let only ./theme/keep.ts empty).
+**_Do not create `_.ts` files\*** (let only ./theme/keep.ts empty).
 
 Otherwise we have error described at https://github.com/vuepress/vuepress-community/issues/51
 
@@ -51,7 +51,7 @@ Not that when there was `date.ts` file, when we edit this file the bug
 disappear for the current `yarn dev` instance. When we restart a new
 `yarn dev`, it fail again.
 
-***You could create vue file with only TypeScript elements***, like into
+**_You could create vue file with only TypeScript elements_**, like into
 ./theme/utils/date.vue
 
 ## Motivation

@@ -1,5 +1,8 @@
 module.exports = {
   plugins: [
+    'typescript',
+    // A very simple plugin
+    'vuepress-plugin-reading-time',
     [
       '@vuepress/blog',
       {
@@ -29,4 +32,10 @@ module.exports = {
       },
     ],
   ],
+  markdown: {
+    extendMarkdown: (md) => {
+      // eslint-disable-next-line global-require
+      md.use(require('markdown-it-footnote'));
+    },
+  },
 };
