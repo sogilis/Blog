@@ -6,12 +6,7 @@
     </header>
     <br />
     <DefaultGlobalLayout /><br />
-    <footer style="background-color: #ddd">
-      <a href="https://github.com/ulivz/70-lines-of-vuepress-blog-theme"
-        >Github</a
-      >
-      · Powered by VuePress
-    </footer>
+    <Footer> </Footer>
   </div>
 </template>
 
@@ -19,8 +14,12 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import GlobalLayout from '@vuepress/core/lib/client/components/GlobalLayout.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
-  components: { DefaultGlobalLayout: GlobalLayout },
+  components: {
+    DefaultGlobalLayout: GlobalLayout,
+    Footer,
+  },
 };
 </script>
