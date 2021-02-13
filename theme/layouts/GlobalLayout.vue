@@ -1,9 +1,10 @@
 <template>
   <div id="global-layout">
-    <header style="background-color: #ddd">
+    <Header />
+    <div style="background-color: #ddd">
       <RouterLink to="/">{{ $site.title }}</RouterLink
       >· <RouterLink to="/tag/">Tag</RouterLink>
-    </header>
+    </div>
     <br />
     <DefaultGlobalLayout /><br />
     <Footer />
@@ -14,11 +15,13 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import GlobalLayout from '@vuepress/core/lib/client/components/GlobalLayout.vue';
+import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
   components: {
     DefaultGlobalLayout: GlobalLayout,
+    Header,
     Footer,
   },
 };
