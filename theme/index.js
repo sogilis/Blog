@@ -32,10 +32,4 @@ module.exports = {
       },
     ],
   ],
-  markdown: {
-    extendMarkdown: (md) => {
-      // eslint-disable-next-line global-require
-      md.use(require('markdown-it-footnote'));
-    },
-  },
 };

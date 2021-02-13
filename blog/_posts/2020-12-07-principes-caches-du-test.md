@@ -44,7 +44,7 @@ L'inconvénient de la seconde solution, c'est qu'il reste encore du bruit dans l
 
 Voilà ce que cela peut donner, en partant de ce test où la majorité du boilerplate est surligné :
 
-```go {linenos=inline,hl_lines=["3-12","19-25"]}
+```go{3-12,19-25}
 func TestHeroDAO_ResurrectAllKnights(t *testing.T) {
     // given
     sql.Register("mysql", &MySQLDriver{})
@@ -77,7 +77,7 @@ func TestHeroDAO_ResurrectAllKnights(t *testing.T) {
 
 En réduisant le boilerplate a l'extrême, on peut arriver à ceci :
 
-```go {linenos=inline}
+```go
 func TestHeroDAO_ResurrectAllKnights(t *testing.T, heroDAO *HeroDAO) {
     // given
     dbtest.InsertDeadKnight("Bohort")
@@ -116,7 +116,7 @@ Et pour comprendre ce cas de test rapidement, il n'y a pas 36 solutions : il do
 
 Prenons l'exemple suivant :
 
-```kotlin {linenos=inline}
+```kotlin
 @Test
 fun `/knights?dummy=true returns dummy knights`() {
     mockMvc.perform(get("/knights?dummy=true"))
@@ -129,7 +129,7 @@ D'où sort ce chiffre `7`, ligne 5 ? Pourquoi 7 et pas 42 ? Le problème ici
 
 Quelque chose comme cela aurait été plus limpide pour le lecteur :
 
-```kotlin {linenos=inline}
+```kotlin
 @Test
 fun `/knights returns dummy knights`() {
     repeat(7) {
@@ -143,7 +143,7 @@ fun `/knights returns dummy knights`() {
 
 Autre exemple :
 
-```javascript {linenos=inline}
+```javascript
 describe('Excalibur', () => {
   it('changeBearer() returns sparkling excalibur when bearer has destiny', () => {
     const hero = buildHero();
@@ -155,7 +155,7 @@ describe('Excalibur', () => {
 
 En lisant ce code, on comprend que n'importe quel hero peut faire étinceler excalibur, alors que seuls ceux qui ont une destinée devraient pouvoir. Pourtant le test fonctionne puisque `buildHero()` retourne un héro ayant une destinée :
 
-```javascript {linenos=inline,hl_lines=["5"]}
+```javascript{5}
 function buildHero() {
     return {
         id: 3,

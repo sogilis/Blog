@@ -54,6 +54,14 @@ disappear for the current `yarn dev` instance. When we restart a new
 **_You could create vue file with only TypeScript elements_**, like into
 ./theme/utils/date.vue
 
+## scss
+
+:warning:
+
+Do not upgrade sass-loader to version > 11 because VuePress 1.x use WebPack 4.x
+and sass-loader 11+ needs WebPack 5.x
+https://stackoverflow.com/questions/66082397/typeerror-this-getoptions-is-not-a-function
+
 ## Motivation
 
 In fact, this project is a classic use case for the [official vuepress blog plugin](https://github.com/ulivz/vuepress-plugin-blog). This project aims to minimize the cost of developing a vuepress blog theme, so that developers only care about the implementation of the theme style, without paying attention to the underlying details of the complex implementation.
