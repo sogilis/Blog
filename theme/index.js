@@ -1,3 +1,21 @@
+const mediumZoon = [
+  // Official plugins is buggy. It works only for the first page loaded
+  // When we follow an internal link (trigger SPA navigatione)
+  // it does not appear.
+  // '@vuepress/medium-zoom',
+  'vuepress-plugin-medium-zoom',
+  {
+    selector: '#articlepage img',
+  },
+];
+
+const search = [
+  '@vuepress/search',
+  {
+    searchMaxSuggestions: 10,
+  },
+];
+
 const vuePressBlog = [
   '@vuepress/blog',
   {
@@ -27,17 +45,6 @@ const vuePressBlog = [
   },
 ];
 
-const mediumZoon = [
-  // Official plugins is buggy. It works only for the first page loaded
-  // When we follow an internal link (trigger SPA navigatione)
-  // it does not appear.
-  // '@vuepress/medium-zoom',
-  'vuepress-plugin-medium-zoom',
-  {
-    selector: '#articlepage img',
-  },
-];
-
 module.exports = {
   plugins: [
     'typescript',
@@ -47,6 +54,7 @@ module.exports = {
     // '@vuepress/plugin-nprogress',
 
     mediumZoon,
+    search,
 
     '@vuepress/back-to-top',
 

@@ -91,19 +91,26 @@
         <!-- TODO i18n -->
         Contact
       </a>
-      <!-- <a -->
-      <!--   class="header&#45;desktop&#45;right&#45;category header&#45;desktop&#45;right&#45;text" -->
-      <!--   href="#" -->
-      <!-- > -->
-      <!--   <search&#45;bar></search&#45;bar> -->
-      <!-- </a> -->
+      <a
+        class="header-desktop-right-category header-desktop-right-text"
+        href="#"
+      >
+        <SearchBox />
+      </a>
     </div>
   </nav>
 </template>
 
 <script lang="ts">
+// eslint-disable-next-line import/no-unresolved
+import SearchBox from '@SearchBox';
+
 export default {
   name: 'HeaderDesktop',
+
+  components: {
+    SearchBox,
+  },
 };
 </script>
 
@@ -217,34 +224,6 @@ export default {
   .header-desktop-right-dropdown-content-link,
   .header-desktop-right-dropdown-content-link:hover {
     color: black;
-  }
-
-  /* Search */
-  .search-bar__input {
-    padding: 0;
-    margin: 0;
-    width: 0;
-    transition: width 0.5s;
-    color: #0056b3;
-  }
-
-  .search-bar__input--active {
-    margin-left: 0.5em;
-    width: 10em;
-  }
-
-  .search-bar__results {
-    top: 116px;
-    padding: 0 4em;
-    margin: 2em 0 0 0;
-  }
-
-  .dropdown-content-company {
-    margin-left: 60px;
-  }
-
-  .dropdown-content-company .bar-deco {
-    padding-right: 0;
   }
 }
 </style>

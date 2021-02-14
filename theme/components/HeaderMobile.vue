@@ -19,7 +19,7 @@
       />
     </a>
 
-    <!-- <search&#45;bar class="search&#45;bar&#45;wrapper"></search&#45;bar> -->
+    <SearchBox class="search-bar-wrapper" />
 
     <a id="header-mobile-threebarbutton" class="header-mobile-link" href="#">
       <div id="header-mobile-threebarbutton-centralbar">&nbsp;</div>
@@ -117,8 +117,15 @@
 </template>
 
 <script lang="ts">
+// eslint-disable-next-line import/no-unresolved
+import SearchBox from '@SearchBox';
+
 export default {
   name: 'HeaderMobile',
+
+  components: {
+    SearchBox,
+  },
 };
 </script>
 
@@ -365,38 +372,8 @@ export default {
     transform: translateX(0);
   }
 
-  /* Search */
   .search-bar-wrapper {
     margin-left: auto;
-  }
-
-  .search-bar__input {
-    display: none;
-  }
-
-  .search-bar__input--active {
-    display: block;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    background: #fff;
-    box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75);
-    margin-left: 0;
-    width: 100%;
-    padding: 1em;
-    border: initial;
-  }
-
-  .search-bar__results {
-    top: 132px;
-    z-index: 1;
-    padding: 1em 1em 0 1em;
-  }
-
-  .search-bar__icon path {
-    fill: #000;
   }
 }
 </style>
