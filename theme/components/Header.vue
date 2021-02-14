@@ -120,10 +120,10 @@ const switchHeaderDesktopHeaderMobile = (): void => {
 };
 </script>
 
-<style lang="scss">
+<style lang="css">
 header {
   position: fixed;
-  z-index: 2;
+  z-index: var(--z-index-max);
   height: 5rem;
   width: 100%;
   box-sizing: border-box;
