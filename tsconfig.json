@@ -8,6 +8,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "ES2018",
+    "module": "ES2020",
     "moduleResolution": "node"
   },
   "include": ["./theme/**/*.ts", "./theme/**/*.vue"],

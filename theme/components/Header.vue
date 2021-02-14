@@ -2,12 +2,16 @@
   <header>
     <HeaderDesktop />
     <HeaderMobile />
+    <ClientOnly>
+      <HeaderScript />
+    </ClientOnly>
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import HeaderDesktop from './HeaderDesktop.vue';
 import HeaderMobile from './HeaderMobile.vue';
+import HeaderScript from './HeaderScript.vue';
 
 export default {
   name: 'Header',
@@ -15,6 +19,7 @@ export default {
   components: {
     HeaderDesktop,
     HeaderMobile,
+    HeaderScript,
   },
 };
 </script>
