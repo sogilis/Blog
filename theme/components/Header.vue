@@ -121,6 +121,8 @@ const switchHeaderDesktopHeaderMobile = (): void => {
 </script>
 
 <style lang="css">
+/* can't be scopped currently */
+
 header {
   position: fixed;
   z-index: var(--z-index-max);

@@ -122,7 +122,9 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="css">
+/* can't be scopped currently */
+
 @media (max-width: 767px) {
   /*
   * In this screen size, we have three tags child

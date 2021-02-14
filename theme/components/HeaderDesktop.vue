@@ -107,7 +107,9 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="css">
+/* can't be scopped currently */
+
 @media (min-width: 768px) {
   header {
     height: 5rem;
