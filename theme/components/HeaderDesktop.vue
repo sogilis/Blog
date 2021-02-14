@@ -91,12 +91,12 @@
         <!-- TODO i18n -->
         Contact
       </a>
-      <a
-        class="header-desktop-right-category header-desktop-right-text"
-        href="#"
-      >
-        <!-- <search&#45;bar></search&#45;bar> -->
-      </a>
+      <!-- <a -->
+      <!--   class="header&#45;desktop&#45;right&#45;category header&#45;desktop&#45;right&#45;text" -->
+      <!--   href="#" -->
+      <!-- > -->
+      <!--   <search&#45;bar></search&#45;bar> -->
+      <!-- </a> -->
     </div>
   </nav>
 </template>
