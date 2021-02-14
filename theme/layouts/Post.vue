@@ -22,12 +22,15 @@
       <div id="articlepage-header-title">
         <h1 class="title article-title">{{ $frontmatter.title }}</h1>
         <div class="articlepage-header-title-details">
-          <ul class="tags-list" v-for="tag in $frontmatter.tag" :key="tag">
+          <ul v-for="tag in $frontmatter.tags" :key="tag" class="tags-list">
             <li class="tag">
-              <RouterLink :to="'/tag/' + tag">{{ tag }}</RouterLink>
+              <RouterLink :to="'/tags/' + tag">{{ tag }}</RouterLink>
             </li>
           </ul>
           <div>
+            <div v-if="$frontmatter.categorie">
+              Catégorie&nbsp;: {{ $frontmatter.categorie }}
+            </div>
             Écrit par
             <template v-if="$frontmatter.author">
               {{ $frontmatter.author }}

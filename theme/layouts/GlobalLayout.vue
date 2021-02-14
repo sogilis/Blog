@@ -4,7 +4,7 @@
     <main class="maincolumn">
       <div style="background-color: #ddd">
         <RouterLink to="/">{{ $site.title }}</RouterLink
-        >· <RouterLink to="/tag/">Tag</RouterLink>
+        >· <RouterLink to="/tags/">Tags</RouterLink>
       </div>
       <br />
       <br />

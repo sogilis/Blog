@@ -4,8 +4,7 @@ author: Jean-Baptiste
 date: 2020-12-07
 image: /img/2020-12-07-principes-caches-du-test.jpg
 altimage: '"Ten" by Mark Bonica is licensed with CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/'
-categories:
-  - DÉVELOPPEMENT
+categorie: Développement logiciel
 tags:
   - test
 ---
@@ -255,7 +254,7 @@ Le surcoût engendré par cette étape de refactoring peut être amorti :
 
 Lors de l'écriture d'un test nécessitant un état particulier en **base de données**, l'utilisation de fixtures de test[^testfixture] peut se faire de différentes manières, mais toutes posent problème :
 
-- **Utiliser une fixture existante ?** Le jeu de données sera alors plus important que nécessaire, puisque partagé entre plusieurs tests qui requièrent chacun des données différentes. En cas de test en échec, l'investigation sera plus difficile, les données intéressantes étant polluées.
+- **Utiliser une fixture existante ?** Le jeu de données sera alors plus important que nécessaire, puisque partagsé entre plusieurs tests qui requièrent chacun des données différentes. En cas de test en échec, l'investigation sera plus difficile, les données intéressantes étant polluées.
 - **Adapter une fixture existante ?** On prend alors le risque de casser un autre test qui utilise cette fixture car on ne sait pas quel élément de la fixture est important pour quel test.
 - **Créer une nouvelle fixture ?** Multiplier les fixtures alourdit la modification du modèle de données.
 

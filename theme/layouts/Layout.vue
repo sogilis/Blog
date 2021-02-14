@@ -34,8 +34,8 @@
           {{ aPage.frontmatter.description }}
         </RouterLink>
         <p class="articles-list-item-tags articles-list-item-text">
-          <span v-for="tag in aPage.frontmatter.tag" :key="tag" class="tag">
-            <RouterLink :to="'/tag/' + tag">{{ tag }}</RouterLink>
+          <span v-for="tag in aPage.frontmatter.tags" :key="tag" class="tag">
+            <RouterLink :to="'/tags/' + tag">{{ tag }}</RouterLink>
           </span>
         </p>
         <RouterLink

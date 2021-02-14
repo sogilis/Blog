@@ -18,12 +18,12 @@ module.exports = {
         ],
         frontmatters: [
           {
-            id: 'tag',
-            keys: ['tag', 'tags'],
-            path: '/tag/',
-            layout: 'Tag',
-            frontmatter: { title: 'Tag' },
-            itemlayout: 'Tag',
+            id: 'tags',
+            keys: ['tags', 'tags'],
+            path: '/tags/',
+            layout: 'Tags',
+            frontmatter: { title: 'Tags' },
+            itemlayout: 'Tags',
             pagination: {
               perPagePosts: 3,
             },
