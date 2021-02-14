@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    'typescript',
     // A very simple plugin
     'vuepress-plugin-reading-time',
     [

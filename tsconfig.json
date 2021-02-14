@@ -1,0 +1,16 @@
+// See example at https://github.com/salazarr-js/vuepress-ts
+// See also https://vuejs.org/v2/guide/typescript.html
+{
+  "compilerOptions": {
+    "lib": ["DOM", "ES2020"],
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2018",
+    "module": "ES2020",
+    "moduleResolution": "node"
+  },
+  "include": ["./theme/**/*.ts", "./theme/**/*.vue"],
+  "exclude": ["node_modules"]
+}

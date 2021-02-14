@@ -11,7 +11,9 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import GlobalLayout from '@vuepress/core/lib/client/components/GlobalLayout.vue';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
