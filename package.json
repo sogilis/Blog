@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "./blog/.vuepress/config.js",
   "scripts": {
-    "build": "yarn clean && vuepress build --debug blog",
+    "build": "yarn clean && vuepress build blog",
     "clean": "rm -rf blog/.vuepress/.temp blog/.vuepress/.cache blog/.vuepress/dist",
     "dev": "vuepress dev blog --no-clear-screen",
     "lint": "export NODE_OPTIONS=\"--max-old-space-size=4096\" && eslint --ext .js,.ts,.vue .",
