@@ -6,15 +6,6 @@
 module.exports = {
   root: true,
   extends: ['vuepress', 'airbnb-base'],
-  overrides: [
-    {
-      files: ['*.ts', '*.vue'],
-      extends: 'vuepress-typescript',
-      parserOptions: {
-        project: ['tsconfig.json'],
-      },
-    },
-  ],
   settings: {
     'import/extensions': ['.js', '.jsx', '.mjs', '.ts', '.tsx'],
   },
@@ -49,5 +40,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'no-param-reassign': 'off',
+
+    // Deffined and corrected by Prettier
+    'max-len': 'off',
   },
 };

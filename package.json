@@ -24,11 +24,9 @@
     "@vuepress/plugin-blog": "^1.9.4",
     "anywhere": "^1.5.0",
     "bootstrap-reboot": "^4.5.4",
-    "css-modules-typescript-loader": "^4.0.1",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "14.2.1",
     "eslint-config-vuepress": "^3.1.0",
-    "eslint-config-vuepress-typescript": "^2.1.2",
     "eslint-plugin-import": "^2.22.1",
     "husky": "^4.3.8",
     "markdown-it-footnote": "^3.0.2",
@@ -40,8 +38,6 @@
     "typeface-montserrat": "^1.1.13",
     "typescript": "^4.1.5",
     "vuepress": "^1.8.0",
-    "vuepress-plugin-reading-time": "^0.1.1",
-    "vuepress-plugin-typescript": "^0.3.1",
-    "vuepress-types": "^0.9.4"
+    "vuepress-plugin-reading-time": "^0.1.1"
   }
 }
