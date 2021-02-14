@@ -1,12 +1,15 @@
 <template>
   <div id="global-layout">
     <Header />
-    <div style="background-color: #ddd">
-      <RouterLink to="/">{{ $site.title }}</RouterLink
-      >· <RouterLink to="/tag/">Tag</RouterLink>
-    </div>
-    <br />
-    <DefaultGlobalLayout /><br />
+    <main class="maincolumn">
+      <div style="background-color: #ddd">
+        <RouterLink to="/">{{ $site.title }}</RouterLink
+        >· <RouterLink to="/tag/">Tag</RouterLink>
+      </div>
+      <br />
+      <br />
+      <DefaultGlobalLayout />
+    </main>
     <Footer />
   </div>
 </template>
@@ -29,4 +32,14 @@ export default {
 
 <style lang="scss">
 @import '../styles/index.scss';
+
+main {
+  padding-top: 7em;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-top: 12em;
+  }
+}
 </style>
