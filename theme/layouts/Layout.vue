@@ -19,8 +19,8 @@
                 : '/img/blog_preview_default.jpg'
             "
             :alt="
-              aPage.frontmatter.alt
-                ? aPage.frontmatter.alt
+              aPage.frontmatter.imgTextAlt
+                ? aPage.frontmatter.imgTextAlt
                 : 'Cover Image of Article'
             "
           />
