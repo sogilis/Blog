@@ -2,7 +2,7 @@
 // See also https://vuejs.org/v2/guide/typescript.html
 {
   "compilerOptions": {
-    "lib": ["DOM", "ES2020"],
+    "lib": ["DOM", "ES2020", "dom.iterable"],
     "noImplicitAny": false,
     "noImplicitThis": true,
     "sourceMap": true,
