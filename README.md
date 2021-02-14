@@ -34,7 +34,7 @@ A VuePress Blog Theme implemented in some lines
 
 ## Develop in TypeScript
 
-**_Do not create `_.ts` files\*** (let only ./theme/keep.ts empty).
+**_Do not create `_.ts` files\***
 
 Otherwise we have error described at https://github.com/vuepress/vuepress-community/issues/51
 
