@@ -1,50 +1,52 @@
 <template>
-  <div class="articles-list">
-    <article
-      v-for="aPage in $pagination.pages"
-      :key="aPage.path"
-      class="articles-list-item"
-    >
-      <RouterLink :to="aPage.path">
-        <!-- Should be nested in a tag -->
-        <!-- Otherwise "CSS Grid, grid item “height: 100%” not working in Chrome" -->
-        <!-- (like in Safari) -->
-        <!-- See https://stackoverflow.com/questions/50691765/css-grid-grid-item-height-100-not-working-in-chrome -->
-        <img
-          class="articles-list-item-img"
-          :src="
-            aPage.frontmatter.image
-              ? aPage.frontmatter.image
-              : '/img/blog_preview_default.jpg'
-          "
-          :alt="
-            aPage.frontmatter.alt
-              ? aPage.frontmatter.alt
-              : 'Cover Image of Article'
-          "
-        />
-      </RouterLink>
-      <RouterLink
-        class="title-1 articles-list-item-title articles-list-item-text"
-        :to="aPage.path"
+  <div id="layout">
+    <div class="articles-list">
+      <article
+        v-for="aPage in $pagination.pages"
+        :key="aPage.path"
+        class="articles-list-item"
       >
-        Read time {{ aPage.readingTime.minutes }} minutes
-        {{ aPage.title }}
-        {{ aPage.frontmatter.description }}
-      </RouterLink>
-      <p class="articles-list-item-tags articles-list-item-text">
-        <span v-for="tag in aPage.frontmatter.tag" :key="tag" class="tag">
-          <RouterLink :to="'/tag/' + tag">{{ tag }}</RouterLink>
-        </span>
-      </p>
-      <RouterLink
-        class="articles-list-item-readmore articles-list-item-text"
-        :to="aPage.path"
-      >
-        <!-- TODO i18n -->
-        Lire la suite…
-      </RouterLink>
-    </article>
+        <RouterLink :to="aPage.path">
+          <!-- Should be nested in a tag -->
+          <!-- Otherwise "CSS Grid, grid item “height: 100%” not working in Chrome" -->
+          <!-- (like in Safari) -->
+          <!-- See https://stackoverflow.com/questions/50691765/css-grid-grid-item-height-100-not-working-in-chrome -->
+          <img
+            class="articles-list-item-img"
+            :src="
+              aPage.frontmatter.image
+                ? aPage.frontmatter.image
+                : '/img/blog_preview_default.jpg'
+            "
+            :alt="
+              aPage.frontmatter.alt
+                ? aPage.frontmatter.alt
+                : 'Cover Image of Article'
+            "
+          />
+        </RouterLink>
+        <RouterLink
+          class="title-1 articles-list-item-title articles-list-item-text"
+          :to="aPage.path"
+        >
+          Read time {{ aPage.readingTime.minutes }} minutes
+          {{ aPage.title }}
+          {{ aPage.frontmatter.description }}
+        </RouterLink>
+        <p class="articles-list-item-tags articles-list-item-text">
+          <span v-for="tag in aPage.frontmatter.tag" :key="tag" class="tag">
+            <RouterLink :to="'/tag/' + tag">{{ tag }}</RouterLink>
+          </span>
+        </p>
+        <RouterLink
+          class="articles-list-item-readmore articles-list-item-text"
+          :to="aPage.path"
+        >
+          <!-- TODO i18n -->
+          Lire la suite…
+        </RouterLink>
+      </article>
+    </div>
 
     <div id="pagination">
       <RouterLink v-if="$pagination.hasPrev" :to="$pagination.prevLink"
@@ -54,6 +56,10 @@
         >Next</RouterLink
       >
     </div>
+
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 
