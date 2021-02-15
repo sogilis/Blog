@@ -66,3 +66,13 @@ https://stackoverflow.com/questions/66082397/typeerror-this-getoptions-is-not-a-
 
 - Header : correct scope of CSS
 - Header : remove access to DOM API
+
+## License
+
+- For css files and design and somme articles : all right reserved to Sogilis.
+  See https://github.com/sogilis/Blog and https://sogilis.com/
+
+- For SquareScale articles, all right reserved to SquareScale.
+  See https://github.com/squarescale/ and https://github.com/squarescale/
+
+- All other files are under MIT license. Written by JulioJu during his free time.
