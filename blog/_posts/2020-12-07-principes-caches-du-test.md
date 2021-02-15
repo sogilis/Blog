@@ -4,7 +4,7 @@ author: Jean-Baptiste
 date: 2020-12-07
 image: /img/2020-12-07-principes-caches-du-test.jpg
 altimage: '"Ten" by Mark Bonica is licensed with CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/'
-categorie: Développement logiciel
+category: Développement logiciel
 tags:
   - test
 ---

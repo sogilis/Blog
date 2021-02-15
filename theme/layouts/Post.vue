@@ -28,8 +28,10 @@
             </li>
           </ul>
           <div>
-            <div v-if="$frontmatter.categorie">
-              Catégorie&nbsp;: {{ $frontmatter.categorie }}
+            <div v-if="$frontmatter.category">
+              <RouterLink :to="'/category/' + $frontmatter.category">
+                Catégorie&nbsp;: {{ $frontmatter.category }}
+              </RouterLink>
             </div>
             Écrit par
             <template v-if="$frontmatter.author">

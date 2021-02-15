@@ -24,22 +24,20 @@ const vuePressBlog = [
         id: 'post',
         dirname: '_posts',
         path: '/',
-        pagination: {
-          perPagePosts: 2,
-        },
       },
     ],
     frontmatters: [
       {
         id: 'tags',
-        keys: ['tags', 'tags'],
+        keys: ['tags'],
         path: '/tags/',
         layout: 'Tags',
-        frontmatter: { title: 'Tags' },
-        itemlayout: 'Tags',
-        pagination: {
-          perPagePosts: 3,
-        },
+      },
+      {
+        id: 'category',
+        keys: ['category'],
+        path: '/category/',
+        layout: 'Categories',
       },
     ],
   },
