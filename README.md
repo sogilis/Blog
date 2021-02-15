@@ -62,19 +62,7 @@ Do not upgrade sass-loader to version > 11 because VuePress 1.x use WebPack 4.x
 and sass-loader 11+ needs WebPack 5.x
 https://stackoverflow.com/questions/66082397/typeerror-this-getoptions-is-not-a-function
 
-## Motivation
+## TODO
 
-In fact, this project is a classic use case for the [official vuepress blog plugin](https://github.com/ulivz/vuepress-plugin-blog). This project aims to minimize the cost of developing a vuepress blog theme, so that developers only care about the implementation of the theme style, without paying attention to the underlying details of the complex implementation.
-
-## Features
-
-All of following features are out-of-box:
-
-- Blogging Convention
-- Blog-Styled Permalinks
-- Pagination
-- Frontmatter-Based Tag Classification
-
-## License
-
-MIT · ULIVZ
+- Header : correct scope of CSS
+- Header : remove access to DOM API

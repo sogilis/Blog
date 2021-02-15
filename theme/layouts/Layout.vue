@@ -29,9 +29,7 @@
           class="title-1 articles-list-item-title articles-list-item-text"
           :to="aPage.path"
         >
-          Read time {{ aPage.readingTime.minutes }} minutes
-          {{ aPage.title }}
-          {{ aPage.frontmatter.description }}
+          {{ shrinkTitleBlogIndex(aPage) }}
         </RouterLink>
         <p class="articles-list-item-tags articles-list-item-text">
           <span v-for="tag in aPage.frontmatter.tags" :key="tag" class="tag">
@@ -67,26 +65,17 @@
 export default {
   name: 'Layout',
 
-  mounted(): void {
-    shrinkTitleBlogIndex();
+  methods: {
+    // eslint-disable-next-line
+    shrinkTitleBlogIndex(aPage: any): string {
+      const titleMaxLength = 50;
+      let text = `Read time ${aPage.readingTime.minutes} minutes ${aPage.title} ${aPage.frontmatter.description}`;
+      if (text.length > titleMaxLength) {
+        text = `${text.substring(0, titleMaxLength)}…`;
+      }
+      return text;
+    },
   },
-};
-
-const shrinkTitleBlogIndex = (): void => {
-  const titleMaxLength = 50;
-  // `blogIndexArticleTitleAll' is never null, but could be empty.
-  const blogIndexArticleTitleAll: NodeListOf<HTMLAnchorElement> = document.querySelectorAll(
-    '.articles-list-item-title'
-  ) as NodeListOf<HTMLAnchorElement>;
-  blogIndexArticleTitleAll.forEach((blogIndexArticleTitle) => {
-    // `text' is never null, but could be empty string.
-    const text = blogIndexArticleTitle.innerText;
-    if (text.length > titleMaxLength) {
-      blogIndexArticleTitle.title = text;
-      const textTruncate = text.substring(0, titleMaxLength);
-      blogIndexArticleTitle.innerHTML = `${textTruncate}…`;
-    }
-  });
 };
 </script>
 
