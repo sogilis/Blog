@@ -9463,6 +9463,11 @@ vuepress-plugin-medium-zoom@^1.1.9:
   dependencies:
     medium-zoom "^1.0.4"
 
+vuepress-plugin-reading-progress@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-reading-progress/-/vuepress-plugin-reading-progress-1.0.10.tgz#0b9d44e27d583ff20e0307993aa4cbda49f3bdca"
+  integrity sha512-7OxcjNEDf9gqFTns0YnXrqPnTRlX6wvxWFr7D8tlfyMPpsZwJkh/MkJveRrEaKcU0gk8QGmPHnXLAZ3soTThVg==
+
 vuepress-plugin-reading-time@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-reading-time/-/vuepress-plugin-reading-time-0.1.1.tgz#3ea3dcded424a00c1d5175a50af8d5694899f1ea"

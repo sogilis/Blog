@@ -48,6 +48,8 @@ module.exports = {
     'typescript',
     // A very simple plugin
     'vuepress-plugin-reading-time',
+    // A very simple plugin easy customizable
+    'reading-progress',
 
     // '@vuepress/plugin-nprogress',
 
