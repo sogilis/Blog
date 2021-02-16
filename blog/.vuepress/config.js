@@ -1,7 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  title: 'VuePress 1 POC with TypeScript',
+  title: "Sogilis's blog",
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
   theme: path.join(__dirname, '/../../theme/'),
   // Configuration of Markdown should not be in ../../theme/index
   markdown: {
