@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2016-07-28T10:37:41+00:00
 image: /img/2016-07-Sogilis-Christophe-Levet-Photographe-7971.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - recrutement
 ---

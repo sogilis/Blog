@@ -4,7 +4,7 @@ author: Sogilis
 date: 2018-06-12T08:11:26+00:00
 image: /img/2018-06-Recompense-pommes.png
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - agile
   - amélioration continue

@@ -4,7 +4,7 @@ author: Myriam, avec l'aide de l'équipe
 date: 2016-05-31T14:36:55+00:00
 image: /img/2016-04-0.Haut_page.png
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - accompagnement
   - amélioration continue

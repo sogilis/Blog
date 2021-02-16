@@ -4,7 +4,7 @@ author: Sogilis
 date: 2015-03-10T13:03:36+00:00
 image: /img/2015-03-Sogilis-Christophe-Levet-Photographe-7503.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - ansible
   - devops

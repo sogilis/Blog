@@ -6,7 +6,7 @@ draft: true
 private: true
 image: /img/2017-12-flipper.png
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - feature flag
   - flipper

@@ -4,7 +4,7 @@ author: Simon
 date: 2016-06-16T15:06:54+00:00
 image: /img/2016-06-Article-Simon.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - développement
   - english

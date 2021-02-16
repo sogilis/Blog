@@ -4,7 +4,7 @@ author: Simon Denier
 date: 2017-02-07T15:49:06+00:00
 image: /img/2017-02-Matching_columns-2.png
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - codereview
   - development

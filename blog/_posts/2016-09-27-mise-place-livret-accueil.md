@@ -4,7 +4,7 @@ author: Myriam
 date: 2016-09-27T07:00:22+00:00
 image: /img/2015-12-Sogilis-Christophe-Levet-Photographe-7811.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - intégration
   - vie interne

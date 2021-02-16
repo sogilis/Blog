@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2015-07-16T13:01:42+00:00
 image: /img/2015-07-Sogilis-Christophe-Levet-Photographe-7533.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - interview
   - Sogiteam

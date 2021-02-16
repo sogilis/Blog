@@ -4,7 +4,7 @@ author: Marien Fressinaud
 date: 2016-12-13T10:15:45+00:00
 image: /img/2016-05-Sogilis-Christophe-Levet-Photographe-8218.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - agile
   - amélioration continue

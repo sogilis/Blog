@@ -4,8 +4,8 @@ author: Tiphaine
 date: 2014-11-25T15:01:00+00:00
 image: /img/2016-04-1.Notre-vision.jpg
 categories:
-  - NOTRE VISION
-  - TÉMOIGNAGES CLIENTS
+  - Notre vision
+  - Témoignages clients
 tags:
   - logiciel
   - témoignage

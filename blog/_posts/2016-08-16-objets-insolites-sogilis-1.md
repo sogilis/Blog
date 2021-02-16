@@ -4,7 +4,7 @@ author: Sogilis
 date: 2016-08-16T13:51:08+00:00
 image: /img/2015-09-SogiPeluche.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - Fun
   - viedebureau

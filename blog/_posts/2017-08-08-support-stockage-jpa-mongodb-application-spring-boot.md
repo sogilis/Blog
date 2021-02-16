@@ -3,7 +3,7 @@ title: Support du stockage JPA et MongoDB dans une application Spring-boot
 author: Alexandre et Jean-Baptiste
 date: 2017-08-08T15:32:27+00:00
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 ---
 
 Dans le cadre d’un projet sur lequel nous travaillons actuellement, nous avons été amenés à implémenter un service web spring-boot capable de stocker des objets relativement simples dans une base de données.

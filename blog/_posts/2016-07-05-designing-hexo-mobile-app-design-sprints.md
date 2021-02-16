@@ -4,7 +4,7 @@ author: Laurie
 date: 2016-07-05T15:06:09+00:00
 image: /img/2016-06-Hexo-article-1.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - design
   - mobile app

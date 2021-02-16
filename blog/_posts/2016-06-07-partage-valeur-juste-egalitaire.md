@@ -4,7 +4,7 @@ author: Christophe Baillon
 date: 2016-06-07T08:42:41+00:00
 image: /img/2016-06-Moneymoneymoney.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - amélioration continue
   - "modèle d'organisation"

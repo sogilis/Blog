@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2014-05-22T07:33:00+00:00
 image: /img/2014-05-Sogilis-Christophe-Levet-Photographe-8389.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - amélioration continue
   - bonheur au travail

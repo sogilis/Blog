@@ -4,7 +4,7 @@ author: Yves Brissaud
 date: 2016-02-18T13:49:31+00:00
 image: /img/2016-04-1.Formations.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - clojure
   - go

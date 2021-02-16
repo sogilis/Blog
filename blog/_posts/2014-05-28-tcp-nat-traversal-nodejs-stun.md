@@ -4,7 +4,7 @@ author: Shanti
 date: 2014-05-28T07:57:00+00:00
 image: /img/2016-04-2.Produits.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - code
   - développement

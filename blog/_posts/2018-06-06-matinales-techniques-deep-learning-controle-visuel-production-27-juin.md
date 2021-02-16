@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2018-06-06T10:26:26+00:00
 image: /img/2018-06-CNN.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - 'production'
   - cnn

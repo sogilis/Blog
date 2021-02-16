@@ -4,7 +4,7 @@ author: Yves Brissaud
 date: 2016-03-03T10:40:50+00:00
 image: /img/2016-04-2.Developpement-1.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - elm
   - google

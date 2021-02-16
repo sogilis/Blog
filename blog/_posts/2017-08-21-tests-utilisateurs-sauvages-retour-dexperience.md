@@ -4,7 +4,7 @@ author: Sogilis
 date: -001-11-30T00:00:00+00:00
 draft: true
 categories:
-  - ERGONOMIE
+  - Ergonomie
 ---
 
 # Qu’est-ce qu’un test utilisateur ?

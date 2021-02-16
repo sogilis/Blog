@@ -4,7 +4,7 @@ author: Tiphaine Guittat
 date: 2017-11-20T15:20:54+00:00
 image: /img/2017-11-ofii-min.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - ambassade
   - australie

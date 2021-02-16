@@ -4,7 +4,7 @@ author: Laurie
 date: 2016-07-13T10:19:55+00:00
 image: /img/2016-07-CameraFollowBlack.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - design
   - mobile app

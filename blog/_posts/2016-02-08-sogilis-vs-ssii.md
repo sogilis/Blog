@@ -4,7 +4,7 @@ author: Jérémy et Corentin
 date: 2016-02-08T16:12:25+00:00
 image: /img/2016-04-2.On-simplique.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - amélioration continue
   - management

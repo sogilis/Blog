@@ -5,7 +5,7 @@ date: -001-11-30T00:00:00+00:00
 draft: true
 image: /img/2017-06-node_closed.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 ---
 
 Les objets connectés sont de plus en plus présents autour de nous et font partie des axes sur lesquels Sogilis souhaite montrer son savoir faire et mettre en avant son expertise. Après une sollicitation de l'avis des membres de la BU systèmes critiques sur le meilleur moyen d’aborder cette thématique au sein de l'équipe nous avons décidé d’instrumenter les bureaux avec différents capteurs et actionneurs.

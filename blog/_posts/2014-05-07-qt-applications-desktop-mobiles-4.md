@@ -4,7 +4,7 @@ author: Yves
 date: 2014-05-07T08:26:00+00:00
 image: /img/2014-08-Sogilis-Christophe-Levet-Photographe-7517.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - c++
   - mobile

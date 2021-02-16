@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2014-12-30T13:37:25+00:00
 image: /img/2016-04-1.Design.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - Sogiteam
   - témoignage

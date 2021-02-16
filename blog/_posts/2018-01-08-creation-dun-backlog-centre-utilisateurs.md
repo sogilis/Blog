@@ -3,7 +3,7 @@ title: "Création d'un backlog centré utilisateurs : l'utilisation des UX Cards
 author: Marion Georges
 date: 2018-01-08T15:59:03+00:00
 categories:
-  - ERGONOMIE
+  - Ergonomie
 tags:
   - ergonomie
   - expérience

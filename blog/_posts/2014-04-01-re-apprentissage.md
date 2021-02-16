@@ -4,7 +4,7 @@ author: Valentin
 date: 2014-04-01T07:26:00+00:00
 image: /img/2016-04-0.Haut_page.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - apprentissage
 ---

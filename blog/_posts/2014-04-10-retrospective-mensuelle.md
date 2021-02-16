@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2014-04-10T08:54:00+00:00
 image: /img/2016-05-IMG_0527.png
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - amélioration continue
   - vie interne

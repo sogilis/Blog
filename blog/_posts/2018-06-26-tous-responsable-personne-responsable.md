@@ -4,7 +4,7 @@ author: Sogilis
 date: 2018-06-26T14:20:00+00:00
 image: /img/2018-06-affiches_roles.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - amélioration continue
   - management

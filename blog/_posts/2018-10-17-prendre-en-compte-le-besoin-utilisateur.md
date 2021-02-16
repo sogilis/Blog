@@ -3,8 +3,8 @@ title: Prendre en compte le besoin utilisateur, sans utilisateur.
 author: Sogilis
 date: 2018-10-17T14:05:55+00:00
 categories:
-  - DESIGN
-  - ERGONOMIE
+  - Design
+  - Ergonomie
 tags:
   - business
   - design

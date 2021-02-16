@@ -4,7 +4,7 @@ author: Simon Denier
 date: 2015-02-03T14:32:00+00:00
 image: /img/2015-02-Jérémy2.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - agile
   - capabilities

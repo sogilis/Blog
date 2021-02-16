@@ -4,7 +4,7 @@ author: Victor Lambret
 date: 2017-10-11T13:27:23+00:00
 image: /img/2017-10-first_image.png
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 ---
 
 # Compiling & Dangerous {#compiling-dangerous}

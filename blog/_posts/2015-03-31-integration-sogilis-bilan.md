@@ -4,7 +4,7 @@ author: Jérémy
 date: 2015-03-31T12:11:33+00:00
 image: /img/2015-03-Jérémy-1.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - intégration
   - témoignage

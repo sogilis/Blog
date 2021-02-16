@@ -4,7 +4,7 @@ author: jean-baptiste@sogilis.com
 date: 2019-01-11T14:05:55+00:00
 image: /img/2019-01-objectmother_builder_java.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - builder
   - Java

@@ -4,7 +4,7 @@ author: Simon Denier
 date: 2015-02-10T15:21:00+00:00
 image: /img/2015-02-storymap.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - agile
   - capabilities

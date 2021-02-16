@@ -4,7 +4,7 @@ author: Alexandre Dumont
 date: 2014-04-01T08:28:00+00:00
 image: /img/2015-03-Sogilis-Christophe-Levet-Photographe-7461.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - columndb
   - documentdb

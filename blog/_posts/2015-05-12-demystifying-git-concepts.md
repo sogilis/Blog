@@ -4,7 +4,7 @@ author: Simon Denier
 date: 2015-05-12T13:05:31+00:00
 image: /img/2016-05-Sogilis-Christophe-Levet-Photographe-8824-e1462795824232.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - dev
   - en

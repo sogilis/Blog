@@ -4,7 +4,7 @@ author: Shanti
 date: 2014-08-12T09:10:00+00:00
 image: /img/2014-08-Sogilis-Christophe-Levet-Photographe-7517.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - debian
   - deployment

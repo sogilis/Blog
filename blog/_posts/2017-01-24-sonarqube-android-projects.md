@@ -4,7 +4,7 @@ author: Jean-Baptiste
 date: 2017-01-24T09:26:44+00:00
 image: /img/2016-04-2.Notre-vision.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - Android
   - Couverture

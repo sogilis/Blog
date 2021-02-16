@@ -4,7 +4,7 @@ author: Luc
 date: 2014-01-29T05:59:00+00:00
 image: /img/2014-01-Sogilis-Christophe-Levet-Photographe-7914.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - témoignage
   - vie interne

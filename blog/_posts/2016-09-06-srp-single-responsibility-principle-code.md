@@ -4,7 +4,7 @@ author: Jean-Baptiste
 date: 2016-09-06T07:00:21+00:00
 image: /img/2016-02-Sogilis-Christophe-Levet-Photographe-7803.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - développement
   - SRP

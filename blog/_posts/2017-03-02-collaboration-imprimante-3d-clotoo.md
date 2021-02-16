@@ -4,8 +4,8 @@ author: Tiphaine
 date: 2017-03-02T09:46:27+00:00
 image: /img/2017-03-article_clotoo3.jpg
 categories:
-  - NOTRE VISION
-  - TÉMOIGNAGES CLIENTS
+  - Notre vision
+  - Témoignages clients
 tags:
   - 3Dprint
   - Clotoo

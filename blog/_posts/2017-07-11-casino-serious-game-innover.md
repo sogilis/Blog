@@ -4,7 +4,7 @@ author: Arnaud BENISTANT
 date: 2017-07-11T08:37:13+00:00
 image: /img/2017-07-Be-Ready-CasinoGame.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - agilité
   - innovation

@@ -4,7 +4,7 @@ author: Xavier Spengler
 date: 2015-01-15T13:10:00+00:00
 image: /img/2016-04-3.CS_BUSINESS_BasPage.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - accompagnement
   - businessmodel

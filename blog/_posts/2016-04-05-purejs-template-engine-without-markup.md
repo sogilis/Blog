@@ -4,7 +4,7 @@ author: Shanti
 date: 2016-04-05T09:49:45+00:00
 image: /img/2016-04-1.Produits.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - pure.js
   - template

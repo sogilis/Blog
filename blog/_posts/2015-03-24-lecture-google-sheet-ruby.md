@@ -4,7 +4,7 @@ author: Sogilis
 date: 2015-03-24T12:54:22+00:00
 image: /img/2015-03-Sogilis-Christophe-Levet-Photographe-7461.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - google
   - google drive

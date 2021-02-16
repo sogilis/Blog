@@ -4,7 +4,7 @@ author: Alexandre
 date: 2014-11-18T14:03:33+00:00
 image: /img/2014-11-Sogilis-Christophe-Levet-Photographe-8877.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - cassandra
   - couchdb

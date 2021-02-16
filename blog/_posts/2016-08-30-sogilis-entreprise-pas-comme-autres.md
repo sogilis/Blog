@@ -4,7 +4,7 @@ author: Luc
 date: 2016-08-30T12:00:26+00:00
 image: /img/2015-11-Luc.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - entrepriselibérée
   - témoignage

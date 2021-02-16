@@ -4,7 +4,7 @@ author: Shanti
 date: 2014-02-20T10:01:00+00:00
 image: /img/2016-04-2.Developpement-1.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - llvm
   - sogiday

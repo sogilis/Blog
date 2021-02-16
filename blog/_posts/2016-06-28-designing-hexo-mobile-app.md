@@ -4,7 +4,7 @@ author: Laurie
 date: 2016-06-28T13:39:43+00:00
 image: /img/2016-06-Hexo-NB.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - design
   - mobile app

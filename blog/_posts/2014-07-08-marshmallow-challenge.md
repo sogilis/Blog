@@ -4,7 +4,7 @@ author: Luc Jeanniard
 date: 2014-07-08T07:25:00+00:00
 image: /img/2016-04-1.Produits.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - agile
 ---

@@ -4,7 +4,7 @@ author: Sogilis
 date: 2014-09-05T12:26:00+00:00
 image: /img/2016-04-2.Produits.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - développement
   - peertopeer

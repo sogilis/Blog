@@ -4,8 +4,8 @@ author: Sogilis
 date: 2018-06-19T15:33:22+00:00
 image: /img/2018-06-banière_questionnaire.png
 categories:
-  - DESIGN
-  - ERGONOMIE
+  - Design
+  - Ergonomie
 tags:
   - business
   - design

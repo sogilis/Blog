@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2014-11-12T12:54:00+00:00
 image: /img/2016-04-2.CS_BUSINESS_BasPage.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - accompagnement
   - business

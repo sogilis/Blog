@@ -4,7 +4,7 @@ author: Sogilis
 date: 2015-03-03T12:26:06+00:00
 image: /img/2016-04-2.Developpement-e1460448074336.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - ansible
   - bash

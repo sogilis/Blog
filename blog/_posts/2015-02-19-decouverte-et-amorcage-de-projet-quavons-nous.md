@@ -4,7 +4,7 @@ author: Simon Denier
 date: 2015-02-19T15:46:00+00:00
 image: /img/2016-04-2.Produits.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - agile
   - capabilities

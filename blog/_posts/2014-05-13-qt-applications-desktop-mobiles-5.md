@@ -4,7 +4,7 @@ author: Yves
 date: 2014-05-13T07:20:00+00:00
 image: /img/2016-05-Sogilis-produits.png
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - c++
   - mobile

@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2014-10-24T08:35:00+00:00
 image: /img/2014-10-Sogilis-Christophe-Levet-Photographe-7651.jpg
 categories:
-  - LA VIE À SOGILIS
+  - La vie à sogilis
 tags:
   - Hexo+
   - start-up

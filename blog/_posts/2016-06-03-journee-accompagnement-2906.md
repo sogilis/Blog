@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2016-06-03T09:00:28+00:00
 image: /img/2015-02-storymap.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - accompagnement
   - business

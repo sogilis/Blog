@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2018-06-05T14:35:58+00:00
 image: /img/2018-06-illustration-prod.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - 'efficience'
   - 'procedure'

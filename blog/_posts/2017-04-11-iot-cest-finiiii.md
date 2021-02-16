@@ -4,7 +4,7 @@ author: Tiphaine
 date: 2017-04-11T16:10:06+00:00
 image: /img/2017-04-SiDO-et-industrie-du-futur.jpg
 categories:
-  - NOTRE VISION
+  - Notre vision
 tags:
   - 3Dprint
   - blockchain

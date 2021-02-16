@@ -4,7 +4,7 @@ author: Yves
 date: 2014-05-15T07:42:00+00:00
 image: /img/2016-04-1.Design.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - c++
   - mobile

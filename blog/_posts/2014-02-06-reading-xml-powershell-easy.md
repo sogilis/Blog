@@ -4,7 +4,7 @@ author: Luc
 date: 2014-02-06T08:07:00+00:00
 image: /img/2016-04-2.La-vie-a-Sogilis.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - code
   - dev

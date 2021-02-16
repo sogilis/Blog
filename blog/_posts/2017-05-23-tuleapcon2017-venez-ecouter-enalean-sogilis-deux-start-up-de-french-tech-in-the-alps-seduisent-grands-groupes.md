@@ -4,8 +4,8 @@ author: Tiphaine
 date: 2017-05-23T10:08:42+00:00
 image: /img/2017-05-tuleapcon2017.png
 categories:
-  - LA VIE À SOGILIS
-  - NOTRE VISION
+  - La vie à sogilis
+  - Notre vision
 tags:
   - agilité
   - ALM

@@ -4,7 +4,7 @@ author: Shanti
 date: 2014-03-06T09:04:00+00:00
 image: /img/2016-04-2.La-vie-a-Sogilis.jpg
 categories:
-  - DÉVELOPPEMENT
+  - Développement logiciel
 tags:
   - code
   - développement
