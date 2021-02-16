@@ -67,7 +67,7 @@ public double divide(double numerator, double denominator) {
 public int compare(double amount1, double amount2) {
       return Double.valueOf(amount1).compareTo(amount2);
 }
-{{< /highlight >}}
+```
 
 Il y a donc quelque chose qui cloche avec cette interprétation naïve.
 
@@ -100,7 +100,7 @@ public interface Modem {
       public void Hangup();
       public void Send(char c);
       public char Recv();
-}{{< /highlight >}}
+}```
 
 Il nous explique que les classes qui implémentent cette interface ont alors 2 responsabilités (la gestion de la connexion et la communication), mais qu'elles ne doivent pas nécessairement être scindées : tout dépend de la manière dont l'application évolue ! Si les évolutions ne porterons que sur la gestion de la connexion, alors oui, pour minimiser la rigidité, éviter de toucher à la partie communication lorsqu'on modifie la gestion de la connexion, etc., il est préférable de dissocier ces 2 responsabilités. En revanche, si les futures évolutions portent sur ces 2 aspects en même temps, alors cette séparation n'est pas nécessaire. Elle est même déconseillée pour éviter de compliquer l'architecture de manière inutile.
 
@@ -126,7 +126,7 @@ Robert nous donne quelques exemples dans son article :
                // ...
        }
   }
-  {{< /highlight >}}
+  ```
 
 Robert est clair sur ce point : **c'est presque toujours à** **éviter** puisque les évolutions de ces 2 responsabilités ont des fréquences et des raisons différentes de changer.
 

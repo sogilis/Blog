@@ -40,7 +40,7 @@ Notre premier hello world va utiliser deux fichiers. Vous avez d'abord besoin de
   sudo: yes
   tasks:
     - shell: echo Hello World > /tmp/hello
-{{< /highlight >}}
+```
 
 Vous le constatez peut-être, mais ce playbook nous indique que nous voulons nous connecter au serveur appelé perrin, que nous utiliserons sudo afin de gagner les droits administrateur, et que notre seule tâche sera d'exécuter une commande shell permettant d'écrire _Hello World_ dans `/tmp/hello`.
 
@@ -49,7 +49,7 @@ La seule chose que nous n'avons pas décrite, c'est comment accéder au serveur 
 ```ini
 [perrin]
 perrin.mildred.fr ansible_ssh_user=admin
-{{< /highlight >}}
+```
 
 Il nous indique que dans le groupe perrin, nous avons un seul serveur dont le nom de domaine est `perrin.mildred.fr` et que le nom d'utilisateur pour s'y connecter en ssh est `admin`. Si nous voulions configurer plusieurs serveurs ensemble, il aurait été possible d'indiquer d'autres adresses sur les lignes suivantes.
 
@@ -57,7 +57,7 @@ Pour exécuter ce playbook sur ce serveur, la commande est la suivante :
 
 ```bash
 ansible-playbook -i hosts hello/hello.yml
-{{< /highlight >}}
+```
 
 Dont le résultat nous donne :
 
@@ -101,7 +101,7 @@ changed: [perrin.mildred.fr]
                ||     ||
 
 perrin.mildred.fr          : ok=2    changed=1    unreachable=0    failed=0
-{{< /highlight >}}
+```
 
 Si comme moi, vous trouvez cette sortie peu lisible, je vous encourage a indiquer dans votre environnement (dans `~/.zshenv`, `~/.bashrc` ou `~/.profile`) la variable d'environnement `ANSIBLE_NOCOWS=1`. N'oubliez pas de l'exporter avec le mot clef `export`. Vous devriez alors voir la sortie suivante :
 
@@ -116,7 +116,7 @@ changed: [perrin.mildred.fr]
 
 PLAY RECAP ********************************************************************
 perrin.mildred.fr          : ok=2    changed=1    unreachable=0    failed=0
-{{< /highlight >}}
+```
 
 Nous pouvons visualiser les différentes tâches qui sont exécutées. Les tâches peuvent être dans plusieurs états, et cela est comptabilisé en fin d'exécution :
 

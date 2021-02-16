@@ -57,7 +57,7 @@ session = GoogleDrive.login_with_oauth(token)
 document_id = "xxxyyyzzz"   # Key attribute in Google drive url
 ws = session.spreadsheet_by_key(document_id).worksheets[0]
 puts ws[1,2] # Write content of cell A2
-{{< /highlight >}}
+```
 
 Mais passons à la première étape : l’authentification.
 
@@ -104,21 +104,21 @@ Ensuite, il ne reste plus qu’à coder avec tous ces éléments :
 * [Installation de la gem - google drive](https://github.com/gimite/google-drive-ruby)
   ```bash
   sudo gem install google_drive
-  {{< /highlight >}}
+  ```
 
 * Ajout des librairies qui vont bien
   ```ruby
   require 'rubygems'
   require 'google/api_client'
   require 'google_drive'
-  {{< /highlight >}}
+  ```
 
 * Création de la clé d’activation avec le fichier .p12 et le mot de passe récupéré lors de la création du compte de service
   ```ruby
   key_file = 'private-key-for-xxxxxx.p12'
   key_password = 'notasecret'
   key = Google::APIClient::KeyUtils.load_from_pkcs12(key_file, key_password)
-  {{< /highlight >}}
+  ```
 
 * Authentification
   ```ruby
@@ -134,7 +134,7 @@ Ensuite, il ne reste plus qu’à coder avec tous ces éléments :
             + 'https://spreadsheets.google.com/feeds/',
     :issuer => account_email,
     :signing_key => key)
-  {{< /highlight >}}
+  ```
 
 L’attribut « scope » contient les noms de domaine associés aux services Google auxquels on pourra accéder ensuite.
 
@@ -146,12 +146,12 @@ Les autres attributs sont des valeurs fixes fournies par Google.
   ```ruby
   client.authorization.fetch_access_token!
   token = client.authorization.access_token
-  {{< /highlight >}}
+  ```
 
 * Connexion avec ce jeton
   ```ruby
   session = GoogleDrive.login_with_oauth(token)
-  {{< /highlight >}}
+  ```
 
 Il est temps de passer à la seconde étape, la juridiction.
 
@@ -189,7 +189,7 @@ Grâce à la [gem google drive](https://github.com/gimite/google-drive-ruby), no
 document_id = "0Ag7vwNTdThiNdDNNecDYclUsMzZ1R0JpbXdUaERMUVE"
 ws = session.spreadsheet_by_key(document_id).worksheets[0]
 puts ws[1,2]
-{{< /highlight >}}
+```
 
 Ici, on va lire la cellule sur la 1ère ligne, 2ème colonne de la première page.
 
@@ -198,20 +198,20 @@ Il est aussi possible de modifier le document,
 ```ruby
 ws[1, 2] = “new value”
 ws.save
-{{< /highlight >}}
+```
 
 de récupérer le nombre de colonnes ou de lignes,
 
 ```ruby
 nbRows = ws.num_rows
 nbColumns = ws.num_cols
-{{< /highlight >}}
+```
 
 ou encore de rafraichir le document pour récupérer les modifications effectuées par d’autres utilisateurs :
 
 ```ruby
 ws.reload
-{{< /highlight >}}
+```
 
 ## Conclusion
 

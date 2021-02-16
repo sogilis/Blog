@@ -90,19 +90,19 @@ index 98d5f30..ade6329 100644
 +        dataSource.status = 'error';
        });
      }
-{{< /highlight >}}
+```
 
 To see this in action, just run `git diff HEAD~1 HEAD` in a repository. It will show you the changes between your latest commit and the previous one, directly in patch format.
 
 A patch file will register the following information:
 
-* which file is impacted by the change (`app/scripts/Results.js`)
-* where is the next change section in the file (`@@ -8,18 +8,20 @@`)
-* lines removed by the change, prefixed by **-**
-* lines added by the change, prefixed by **+**
-* as a result, changed lines appear as removed (old version) then added (new version)
-* _unchanged_ context lines before/after/between changed lines
-* and so on for all sections and all files in the changeset
+- which file is impacted by the change (`app/scripts/Results.js`)
+- where is the next change section in the file (`@@ -8,18 +8,20 @@`)
+- lines removed by the change, prefixed by **-**
+- lines added by the change, prefixed by **+**
+- as a result, changed lines appear as removed (old version) then added (new version)
+- _unchanged_ context lines before/after/between changed lines
+- and so on for all sections and all files in the changeset
 
 Git needs only to match the target files, line positions and textual context to make the changes described by the patch. In other words, it does not care about files from the snapshot which are untouched by changes. Even more, it does not care if other sections of the file have changed too. So it is easy for Git to copy changes from a commit on top of a different snapshot, provided context has not changed too much (otherwise, Git will detect and notify conflicts).
 
@@ -114,9 +114,9 @@ _Changeset can update bar file, even if there is already a change in another pla
 
 Things start to become interesting when you know that Git can compute changesets (and patch files) on the fly between any two commits of your project. That means not only how to transform commit A into its child commit B, but also:
 
-* the transformation from B to its grandchild D (in green below)
-* the transformation from branch F to parallel branch D (in blue)
-* or, why not, the reverse transformation from F to its parent E (in red, to cancel a change for example)
+- the transformation from B to its grandchild D (in green below)
+- the transformation from branch F to parallel branch D (in blue)
+- or, why not, the reverse transformation from F to its parent E (in red, to cancel a change for example)
 
 _You can read the `git diff` form as `git diff [from] X [to] Y`._
 
@@ -127,5 +127,7 @@ In other words, Git is super effective in computing state transformations and ap
 ## A Conceptual Model to Understand Git in Action
 
 This brief introduction to three concepts of revision tools is enough to understand the essentials of Git. In the [next article](https://blog.sogilis.com/posts/2015-05-12-demystifying-git-concepts/) we will put this knowledge in action to explain how some Git commands operate on your project.
+
+```
 
 ```

@@ -50,13 +50,13 @@ Si vous avez déjà fait du javaScript (_What else?_), vous avez nécessairement
 
 ````js
 $('.some-link').on('click', view.reset.bind(view))
-{{< /highlight >}}
+```
 
 Avec la méthode `bind` présente sur les objets on peut ainsi s'assurer que la méthode `reset` de `view` sera bien appelée sur l'objet `view` et non sur l'objet DOM derrière `$('.some-link')`. Cette méthode `bind` est quand même une grande avancée. Mais _ES7_ va encore plus loin (même si ce n'est pour le moment qu'une proposition) :
 
 ```js
 $('.some-link').on('click', ::view.reset)
-{{< /highlight >}}
+```
 
 L'introduction de l'opérateur `::` réalise justement la même chose que le `bind` précédent avec une plus grande lisibilité et de manière un peu moins verbeuse. Si vous voulez en savoir un peu plus sur cet opérateur (qui ne fait pas que le `bind`), je vous suggère d'aller lire [cet article](https://babeljs.io/blog/2015/05/14/function-bind).
 

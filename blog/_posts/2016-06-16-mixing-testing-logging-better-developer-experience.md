@@ -53,7 +53,7 @@ $ LOGLEVEL=info npm start
 13:50:35.349Z ERROR mw: Can not get, Id unknown 10 (context=restApp)
     Error: Can not get, Id unknown 10
 13:50:35.351Z  WARN mw: GET /productions/10 -> Status 404 (context=restApp)
-{{< /highlight >}}
+```
 
 Or I can use the bunyan CLI to filter log output on the command line.
 
@@ -64,7 +64,7 @@ $ npm start | bunyan --level warn
 13:50:35.349Z ERROR mw: Can not get, Id unknown 10 (context=restApp)
     Error: Can not get, Id unknown 10
 13:50:35.351Z  WARN mw: GET /productions/10 -> Status 404 (context=restApp)
-{{< /highlight >}}
+```
 
 Pretty easy right?
 
@@ -83,7 +83,7 @@ $ npm start | bunyan --condition 'this.context == "restApp"'
 13:50:35.349Z ERROR mw: Can not get, Id unknown 10 (context=restApp)
     Error: Can not get, Id unknown 10
 13:50:35.351Z  WARN mw: GET /productions/10 -> Status 404 (context=restApp)
-{{< /highlight >}}
+```
 
 In any case, partitioning your log output to ease filtering is a good idea. I like the approach of [node debug](https://github.com/visionmedia/debug) (although, as its name implies, I would keep it for debugging purpose).
 
@@ -94,7 +94,7 @@ const debug = require('debug')('restApp')
 
 $ DEBUG=restApp npm start
 restApp GET /printers
-{{< /highlight >}}
+```
 
 That was rather down-to-earth. Notice I did not discuss where to put the log, how to rotate files etc. This is [not your app concern](http://12factor.net/logs): it should just dump events on standard output and let the infrastructure manages it. This, however, can have some impact on our next practice - testing.
 
@@ -125,7 +125,7 @@ Started
 
 52 specs, 0 failures
 Finished in 0.347 seconds
-{{< /highlight >}}
+```
 
 For 52 specifications, I got 68 lines of output, mostly logs, which I don't really care about right now. Given my [tests are fast][3], I also would like to run them in watch mode. This would have the further inconvenience to flood my console with log output whenever I save a file and the tests run.
 
@@ -140,7 +140,7 @@ Started
 
 52 specs, 0 failures
 Finished in 0.26 seconds
-{{< /highlight >}}
+```
 
 Nice and clear message: all is right on the front line. This is much better, and I can now use my watch mode to run tests continuously, without the noise of log output. Having a lean test report is also beneficial when you run into problems. When a test fails unexpectedly, I want to have the failure and the stack trace right in front fo my eyes, not having to scroll up pages and pages of logs.
 
@@ -154,7 +154,7 @@ const nullLogger = bunyan.createLogger({
     }]
   })
   // inject nullLogger in your modules while testing
-{{< /highlight >}}
+```
 
 ## Customizing the Log Level for Tests
 
@@ -171,7 +171,7 @@ try {
     // log the error and recover
     log.error(e) // error redirected to /dev/null !
   }
-{{< /highlight >}}
+```
 
 This gives us two use cases for which we want to use log events in tests. The solution looks rather obvious. I should be able to customize the log level for my tests, so that I can get more details if need be. And by default, I only want errors to appear in my test log. This way, my test report is not disturbed by log events, unless something bad happens.
 
@@ -181,7 +181,7 @@ const testLogger = bunyan.createLogger({
     level: (process.env.LOGLEVEL || 'error')
   })
   // inject testLogger in your modules while testing
-{{< /highlight >}}
+```
 
 In other words, _by default, log events should equate test failures_.
 
@@ -200,7 +200,7 @@ Failures:
 52 specs, 1 failure
 Finished in 0.267 seconds
 npm ERR! Test failed.  See above for more details.
-{{< /highlight >}}
+```
 
 In the above example, my test fails on its assertion. But the root cause can easily be inferred from the error log screaming « Syntax Error ».
 
@@ -223,7 +223,7 @@ function resilientParse(body)
       resilientParse('not a JSON string')
     }).not.toThrowError(SyntaxError)
   });
-{{< /highlight >}}
+```
 
 Then running the test would produce an error output in the log. However, since the error is expected, having this output in our test report is not in line with _« log events should equate test failures »_. Why not silence the logger for this case?
 
@@ -236,7 +236,7 @@ it('ignores non-json message', () => {
       testLogger.level(lvl)
     }).not.toThrowError(SyntaxError)
   })
-{{< /highlight >}}
+```
 
 ## Final Guidelines
 

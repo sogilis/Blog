@@ -23,7 +23,7 @@ Commençons par créer un rôle simple correspondant exactement au playbook que 
   sudo: yes
   tasks:
     - go-install: name=go-ipfs package=github.com/jbenet/go-ipfs/cmd/ipfs
-{{< /highlight >}}
+```
 
 Le rôle que nous allons créer va nécessiter de créer une arborescence dans un dossier `roles/` qui va contenir notre role nommé `ipfs` :
 
@@ -31,7 +31,7 @@ Le rôle que nous allons créer va nécessiter de créer une arborescence dans u
   ```yml
   ---
   - go-install: name=go-ipfs package=github.com/jbenet/go-ipfs/cmd/ipfs
-  {{< /highlight >}}
+  ```
 
 Notre nouveau playbook va maintenant contenir une dépendance envers ce rôle :
 
@@ -41,7 +41,7 @@ Notre nouveau playbook va maintenant contenir une dépendance envers ce rôle :
   sudo: yes
   roles:
     - ipfs
-{{< /highlight >}}
+```
 
 ## Un second rôle : cjdns-docker
 
@@ -51,7 +51,7 @@ Ce qui est intéressant, c'est d'avoir plusieurs rôles. Nous allons donc voir c
   ```yml
   ---
   name: cjdns
-  {{< /highlight >}}
+  ```
 
 * et se compose de tâches définies dans un fichier `roles/cjdns-docker/tasks/main.yml` :
   ```yml
@@ -62,7 +62,7 @@ Ce qui est intéressant, c'est d'avoir plusieurs rôles. Nous allons donc voir c
   - docker-datadir: name='{{name}}' volume=/etc/cjdns file=/cjdroute.conf
     register: cjdroute_conf
   - file: src='{{cjdroute_conf.file}}' dest='/etc/docker-{{name}}.conf' state=link
-  {{< /highlight >}}
+  ```
 
 La variable `name` permet de nommer différents éléments du système correspondant au rôle. Elle a une valeur par défaut, mais pourra se redéfinir au niveau du playbook principal. Pour provisionner le container cjdns, il nous faut :
 
@@ -88,7 +88,7 @@ L'utilisation de ce rôle dans le playbook principal nécessite de définir une 
     - ipfs
     - role: cjdns-docker
       name: '{{name}}-cjdroute'
-{{< /highlight >}}
+```
 
 Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker-service` et `docker-datadir`. Leur conception n'implique rien de nouveau et voici leur code :
 
@@ -171,7 +171,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   }
   EOF
   exit $res_code
-  {{< /highlight >}}
+  ```
 
 * `library/docker-datadir` :
   ```ini
@@ -181,7 +181,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   failed=false
   res_code=0
   msg=Success
-  {{< /highlight >}}
+  ```
 
   ```yml
   ---
@@ -191,7 +191,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   - docker-datadir: name='{{name}}' volume=/etc/cjdns file=/cjdroute.conf
     register: cjdroute_conf
   - file: src='{{cjdroute_conf.file}}' dest='/etc/docker-{{name}}.conf' state=link
-  {{< /highlight >}}
+  ```
 
   ```bash
   exec 3>&1 >/dev/null 2>&1
@@ -217,7 +217,7 @@ Si vous tentez d'exécuter ce role, il vous manquera les modules `systemd-docker
   }
   EOF
   exit $res_code
-  {{< /highlight >}}
+  ```
 
 ## Un dernier rôle pour accéder par ssh à notre container
 
@@ -230,7 +230,7 @@ Nous aurons besoin de `nsenter`, donc nous [l'installons avec docker](http://jpe
   ---
   user: '{{name}}'
   shell: /bin/bash
-  {{< /highlight >}}
+  ```
 
 * `roles/docker-ssh/tasks/main.yml` :
   ```yml
@@ -238,7 +238,7 @@ Nous aurons besoin de `nsenter`, donc nous [l'installons avec docker](http://jpe
   - command: docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
   - user: name="{{user}}" uid=0 createhome=yes shell=/usr/sbin/nologin home='/home/{{user}}'
   - authorized_key: key="{{ssh_key}}" user='{{user}}' key_options='command="nsenter --target $(docker inspect --format {{ "{{.State.Pid}}" }} {{name}}) --mount --uts --ipc --net --pid {{shell}}"'
-  {{< /highlight >}}
+  ```
 
 Pour utiliser ce nouveau rôle, nous allons le déclarer comme dépendance dans `roles/cjdns-docker/meta/main.yml` :
 
@@ -247,7 +247,7 @@ Pour utiliser ce nouveau rôle, nous allons le déclarer comme dépendance dans 
 dependencies:
   - role: docker-ssh
     when: "'{{ssh_key}}' != ''"
-{{< /highlight >}}
+```
 
 Et notre playbook principal va être augmenté afin de définir la variable `ssh_key` pour le rôle docker-cjdns (qui sera ensuite héritée par le rôle docker-ssh instancié par dépendance) :
 
@@ -263,7 +263,7 @@ Et notre playbook principal va être augmenté afin de définir la variable `ssh
     - role: cjdns-docker
       name: '{{name}}-cjdroute'
       ssh_key: '{{admin_sshkey}}'
-{{< /highlight >}}
+```
 
 Nous avons vu dans cet article comment organiser notre code Ansible afin qu'il soit plus maintenable. Les rôles définissent des unités de code comme pourraient l'être des fonctions dans un langage plus classique. Il n'est pas possible d'invoquer un rôle directement au milieu d'une liste de tâches [dans ce cas, (la directive include](http://docs.ansible.com/playbooks_roles.html) et [le module _include vars_](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/include_vars_module.html) existent), mais il est possible de définir des dépendances entre rôles. En guise d'exercice, il est laissé au soin du lecteur de décomposer le module `systemd-docker-service` en un rôle séparé.
 ````

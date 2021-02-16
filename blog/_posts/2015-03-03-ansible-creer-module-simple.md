@@ -27,20 +27,20 @@ Un module Ansible s'utilise comme suit :
 
 ````yml
 - module_name: parameters
-{{< /highlight >}}
+```
 
 `module_name` étant le nom du module, _`parameters`_ étant une chaîne de caractères libre, généralement sous la forme `clef=valeur`, ceci n'étant pas obligatoire. Lorsqu'on utilise la forme `clef=valeur`, il est possible d'utiliser les modules avec une autre syntaxe un peu plus détaillée :
 
 ```yml
 - module_name:
    key1: value1key2: value2
-{{< /highlight >}}
+```
 
 Ceci est strictement équivalent à écrire :
 
 ```yml
 - module_name: key1=value1 key2=value2
-{{< /highlight >}}
+```
 
 Lorsque ce module sera appelé, un programme au doux nom de `module_name` sera exécuté sur le serveur à déployer avec comme premier paramètre de ligne de commande un fichier contenant la ligne`key1=value1 key2=value2`. Le programme n'a qu'à lire ce fichier pour comprendre ce qu'il doit faire, et pour les scripts shell, c'est simple, parce que c'est la syntaxe shell de définition de variables. Il suffit donc de sourcer ce fichier.
 
@@ -51,7 +51,7 @@ Pour indiquer le résultat, il doit écrire sur la sortie standard ou d'erreur i
     "failed":  false,
     "changed": false
 }
-{{< /highlight >}}
+```
 
 Ceci indique à Ansible qu'il n'y a pas eu d'erreur (variable `failed`), que le système n'a pas été changé car il était déjà configuré (variable `changed`). Si la sortie du programme n'est pas valide JSON, le module sera considéré comme ayant échoué.
 
@@ -63,7 +63,7 @@ Pour les besoins de cet article, nous allons faire un module qui installe un pro
 go get github.com/jbenet/go-ipfs/cmd/ipfs
 go build github.com/jbenet/go-ipfs/cmd/ipfs
 go install github.com/jbenet/go-ipfs/cmd/ipfs
-{{< /highlight >}}
+```
 
 Ceci va télécharger les sources dans  `$GOPATH/src`, compiler dans `$GOPATH/pkg` et installer le programme ipfs dans `$GOPATH/bin`.
 
@@ -84,7 +84,7 @@ lrwxrwxrwx 1 root staff    30 mai   13  2014 /usr/local/include/lualib.h -> ../s
 lrwxrwxrwx 1 root staff    26 mai   13  2014 /usr/local/lib/liblua.a -> ../stow/lua52/lib/liblua.a
 -rw-r--r-- 1 root staff  2204 nov.  16  2011 /usr/local/share/man/man1/lua.1
 -rw-r--r-- 1 root staff  3071 nov.  16  2011 /usr/local/share/man/man1/luac.1
-{{< /highlight >}}
+```
 
 Cela nécessite d'installer les programmes avec un préfixe particulier. Généralement cela se fait avec `./configure –prefix=/usr/local/stow/progname` ou `cmake -DCMAKE_INSTALL_PREFIX=/usr/local/stow/progname`.
 
@@ -118,13 +118,13 @@ cat <<EOF >&3
 }
 EOF
 exit 0
-{{< /highlight >}}
+```
 
 Ce module s'utilise ainsi :
 
 ```bash
 - go-install: name=go-ipfs package=github.com/jbenet/go-ipfs/cmd/ipfs
-{{< /highlight >}}
+```
 
 Ce script va d'abord supprimer le dossier `bin`, créer un dossier `/usr/local/stow/$name/bin` et faire pointer `/usr/local/src/$name/bin` vers ce dernier dossier. Ainsi `go install` placera directement les fichiers dans `/usr/local/stow/$name/bin`.
 
@@ -173,7 +173,7 @@ cat <<EOF >&3
 }
 EOF
 exit $res_code
-{{< /highlight >}}
+```
 
 ## Utilisation du module
 
@@ -183,7 +183,7 @@ Pour utiliser le module, il doit être placé dans un dossier `library/` au cot�
 ipfs.yml
 hosts
 library/go-install
-{{< /highlight >}}
+```
 
 Notre _playbook_ `ipfs.yml` pourrait être ainsi :
 
@@ -193,7 +193,7 @@ Notre _playbook_ `ipfs.yml` pourrait être ainsi :
   sudo: yes
   tasks:
     - go-install: name=go-ipfs package=github.com/jbenet/go-ipfs/cmd/ipfs
-{{< /highlight >}}
+```
 
 L'exécution donne ceci :
 
@@ -208,7 +208,7 @@ changed: [perrin.mildred.fr]
 
 PLAY RECAP ********************************************************************
 perrin.mildred.fr          : ok=2    changed=1    unreachable=0    failed=0
-{{< /highlight >}}
+```
 
 Vous avez maintenant pu voir le fonctionnement des modules Ansible, je vous encourage à jouer avec. Si vous étiez à l'aise avec le shell, et redoutiez les outils de déploiement automatique — parce-qu'il faut l'avouer, le langage est parfois bien plus compliqué — vous êtes maintenant armé pour utiliser Ansible en toute simplicité. Dans un prochain article, nous verrons comment structurer des _playbooks_ Ansible lorsque vous souhaitez mixer différentes tâches.
 ````

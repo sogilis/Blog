@@ -52,7 +52,7 @@ Object.values(obj);
 // ["a", "b", "c"]
 Object.entries(obj);
 // [["0", "a"], ["1", "b"], ["2", "c"]]
-{{< /highlight >}}
+```
 
 > I believe JavaScript is usually not a good choice for server side applications.
 >
@@ -91,7 +91,7 @@ fact : Float -> Float
 fact x = if x  Float
 sine x =
   foldl (i sum -> sum + (pow -1 i) * (pow x (i * 2 + 1)) / (fact (i * 2 + 1))) 0 [0..9]
-{{< /highlight >}}
+```
 
 ### CSS, SVG
 
