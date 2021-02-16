@@ -54,7 +54,7 @@ export default {
     // eslint-disable-next-line
     shrinkTitleBlogIndex(aPage: any): string {
       const titleMaxLength = 50;
-      let text = `Read time ${aPage.readingTime.minutes} minutes ${aPage.title} ${aPage.frontmatter.description}`;
+      let text = `${aPage.title}`;
       if (text.length > titleMaxLength) {
         text = `${text.substring(0, titleMaxLength)}…`;
       }
