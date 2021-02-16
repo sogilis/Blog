@@ -37,9 +37,9 @@ const vuePressBlog = [
         layout: 'Tags',
       },
       {
-        id: 'category',
-        keys: ['category'],
-        path: '/category/',
+        id: 'categories',
+        keys: ['categories'],
+        path: '/categories/',
         layout: 'Categories',
       },
     ],

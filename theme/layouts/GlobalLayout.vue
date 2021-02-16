@@ -5,7 +5,7 @@
       <div style="background-color: #ddd">
         <RouterLink to="/">{{ $site.title }}</RouterLink
         >· <RouterLink to="/tags/">Tags</RouterLink>·
-        <RouterLink to="/category/">Categories</RouterLink>
+        <RouterLink to="/categories/">Categories</RouterLink>
       </div>
       <br />
       <br />
