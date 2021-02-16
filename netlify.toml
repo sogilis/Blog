@@ -1,9 +1,7 @@
 [build]
+  # No need to trigger `yarn install`
   command = "yarn build"
-  publish = "dist"
-
-[context.deploy-preview]
-  command = "yarn build:preview"
+  publish = "blog/.vuepress/dist/"
 
 [build.environment]
   NODE_VERSION = "12.20.1"
