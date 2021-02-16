@@ -1,7 +1,7 @@
 ---
 title: "Tests utilisateurs 'sauvages' : retour d’expérience"
 author: Sogilis
-date: -001-11-30T00:00:00+00:00
+date: 2017-08-21
 draft: true
 categories:
   - Ergonomie
