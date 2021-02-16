@@ -19,8 +19,8 @@ tags:
   - Qualité
   - Quality
   - SonarQube
-
 ---
+
 # How to monitor code quality of your Android application with SonarQube ?
 
 [SonarQube.org](http://www.sonarqube.org) is a powerful tool to monitor and analyze code quality, and especially technical debt on Java projects (and more). As Android projects are based on Java sources, it is possible to analyze such projects with SonarQube. But if you already tried this, you probably noticed how difficult it is to find right and complete documentation.
@@ -80,7 +80,8 @@ sonarqube {
 
 Add the same configuration in **build.gradle** for an **android library** module (i.e. with **com.android.library** plugin) with following modifications:
 
-- Remove « build/intermediates/exploded-aar/**/classes.jar » from library variable as follow:
+- Remove « build/intermediates/exploded-aar/\*\*/classes.jar » from library variable as follow:
+
   ```groovy
   def libraries = project.android.sdkDirectory.getPath() + "/platforms/android-23/android.jar"
   ```
@@ -91,6 +92,7 @@ Add the same configuration in **build.gradle** for an **android library** module
   ```
 
 SonarQube configuration for a **java module** is straightforward with a single line in **build.gradle**:
+
 ```groovy
 apply plugin: 'org.sonarqube'
 ```
@@ -103,7 +105,7 @@ Now, you can test your configuration by analyzing your project with a SonarQube 
 ./gradlew clean test jacocoTestReport sonarqube \
           -Dsonar.host.url=http://[Sonarqube server IP]:9000 \
           --info --stacktrace
- ```
+```
 
 ## Configure SonarQube analysis
 
@@ -230,7 +232,7 @@ java.lang.NullPointerException
 ```
 
 - **StackOverflowError** with **sonar-gradle-plugin 2.1** : downgrade to **2.0.1**
-- Jenkins does not find XML test report. Check Jenkins does look after */build/test-results/**/*.xml.
+- Jenkins does not find XML test report. Check Jenkins does look after _/build/test-results/\*\*/_.xml.
 - My workspace:module-name is not a valid project or module key. Allowed characters are alphanumeric, `-`, `_`, `.` and `:`, with at least one non-digit. The Default SonarQube project name is the project folder. So if this folder contains invalid character, this could be the explanation. You can set project name and key (see tips above).
 - :jacocoTestReport SKIPPED: run **test** task before **jacocoTestReport**
 - org.gradle.internal.jvm.Jvm.getRuntimeJar()Ljava/io/File : incompatible gradle version. Downgrade from gradle 3 to 2.

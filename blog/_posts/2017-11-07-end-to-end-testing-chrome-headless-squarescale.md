@@ -11,8 +11,8 @@ tags:
   - end-to-end testing
   - puppeteer
   - squarescale
-
 ---
+
 # End-to-end testing with chrome headless at SquareScale {#end-to-end-testing-with-chrome-headless-at-squarescale}
 
 We just completed writing our first tests using chrome with [Puppeteer][1] at [SquareScale][2] and we are very proud of it. That’s why we really wanted to share it with everybody. But before diving in to how we test our frontend application, we would like to say a few words about how we work on features, our workflow and how we realized that we needed automated tests in a browser.
@@ -38,9 +38,7 @@ The first milestone for me was to set up the whole environment and process with 
 The API is really easy to handle. As you can see on their website it is very straight forward, `goto(url)`, `click()`, `type()`. In the end, showing the homepage’s URL code was really tiny:
 
 ```js
-const exists = await chromeless
-.goto(sqsc_url)
-.html()
+const exists = await chromeless.goto(sqsc_url).html();
 ```
 
 I then decided to write a more complex test which would check if a user could login from the front page. But I run into my second problem, different executions of my test led to different results. Sometimes timeouts, sometimes it could not find the right DOM element. Moreover the whole team had to work for the imminent release and continuing on this project became less important. I felt very disappointed to drop one week of work. I also felt a bit exhausted to have worked one week just to package chrome into docker to finally see that the library I chose was not reliable. On the top of that, the number of contributions on the project, which were quite high when I started to use the library, started to decrease.
@@ -64,16 +62,15 @@ beforeEach(async () => {
   jest.setTimeout(2400000); // 40mn by test
 
   browser = await puppeteer.launch({
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox'
-    ]
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
 
   page = await browser.newPage();
 
   // Capture logging
-  page.on('console', (...args) => console.log.apply(console, ['[Browser]', ...args]));
+  page.on('console', (...args) =>
+    console.log.apply(console, ['[Browser]', ...args])
+  );
 });
 
 afterEach(async () => {
@@ -89,11 +86,12 @@ const sqsc_url = env === 'dev' ? 'squarescale.local' : `squarescale.${env}`;
 
 module.exports = {
   setupTestFrameworkScriptFile: './setup/browser.js',
-  globals: { // available in all tests
+  globals: {
+    // available in all tests
     browser: null,
     page: null,
-    sqsc_url
-  }
+    sqsc_url,
+  },
 };
 ```
 
@@ -125,8 +123,7 @@ try {
   await page.click('.btn');
   await page.waitForNavigation({ waitUntil: 'networkidle' });
   await page.waitForSelector('html.signed');
-}
-catch (e) {
+} catch (e) {
   console.error(e);
   throw 'Exception during login';
 }

@@ -1,12 +1,12 @@
 ---
-title: "Compiling & Dangerous : wrong usage of extern keyword in C"
+title: 'Compiling & Dangerous : wrong usage of extern keyword in C'
 author: Victor Lambret
 date: 2017-10-11T13:27:23+00:00
 image: /img/2017-10-first_image.png
 categories:
   - DÉVELOPPEMENT
-
 ---
+
 # Compiling & Dangerous {#compiling-dangerous}
 
 C is not a strong typed language but it can run some basic checks. Knowing that, C developers are generally careful because debugging type problems is annoying and can be limited with some simple good practices.

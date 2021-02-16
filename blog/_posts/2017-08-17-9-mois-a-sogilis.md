@@ -9,8 +9,8 @@ tags:
   - entreprise-libérée
   - ergonomie
   - témoignage
-
 ---
+
 C’est l’été, au moment où j’écris ces lignes c’est même le 15 août, vous êtes peut-être en vacances ou en week-end prolongé, ou vous profitez juste d’un jour férié pour prendre un peu de repos, boire une bière en terrasse ou vous prélasser au bord de la piscine de vos beaux-parents.
 
 Moi, aujourd’hui, je travaille (pourquoi ? J’y reviendrai), et comme la période estivale est moins chargée, j’ai décidé d’écrire un article de blog pour faire le bilan de mes 9 premiers mois à Sogilis. Un peu de contexte pour commencer.
@@ -29,7 +29,6 @@ Après 2 ans dans cette entreprise et une expérience vraiment enrichissante, le
 
 Lorsque je suis arrivée dans l’entreprise où j’étais précédemment, une des personnes qui m’a le mieux accueillie était Luc Jeanniard, scrum-master arrivé un mois avant moi, en charge de mettre en place l’agilité dans l’entreprise. Il venait de Sogilis, et est reparti pour Sogilis 18 mois plus tard ([son retour d’expérience ici](https://blog.sogilis.com/posts/2016-08-30-sogilis-entreprise-pas-comme-autres/)). Nous avons continué à déjeuner ensemble régulièrement, et son discours sur Sogilis était très attrayant : **une entreprise libérée, aux horaires souples, basée sur la confiance et l’implication, avec une grande variété de projets courts**. Tout ce dont je rêvais. Il m’a fallu tout de même une dizaine de mois pour sauter le pas, entre son départ et ma candidature. Tout est une question de balance bénéfice/risque : en juillet 2016 le bénéfice semblait conséquent et le risque faible, il était temps ! Dernier argument pour Sogilis : **l’existence de Sogilis Lyon**. Pour des raisons personnelles, je souhaitais retourner à Lyon à moyen terme. Trouver un boulot à Lyon il y a un an m’aurait mis dans une situation compliquée (trop tôt), et trouver une entreprise 100% grenobloise me condamnait à changer à nouveau d’entreprise un an plus tard, ou à renoncer à mon projet de retour à Lyon. La situation de Sogilis et les échos que j’en avais me laissaient supposer un possible basculement de Grenoble à Lyon le moment venu.
 
-
 # Processus de recrutement
 
 Luc m’avait prévenu que les équipes se retrouvaient le jeudi en fin de matinée pour un point recrutement, j’ai donc envoyé ma candidature un jeudi matin. Le lendemain, je recevais un mail de Myriam, chargée de communication, me proposant un **entretien avec deux développeurs et elle-même**. Elle me disait d’apporter un ou plusieurs **exemples de projets personnels pour les leur présenter**.
@@ -44,9 +43,9 @@ Lors de l’entretien, on a parlé de Sogilis, de moi, de mes envies, de mes pra
 
 En 9 mois, j’ai travaillé sur 10 projets différents dans des **secteurs très variés** : immobilier, militaire, industrie, agronomie, énergie, traduction… et avec des approches différentes :
 
-* quelques projets pour lesquels j’ai fait un **travail court de consultante interne** (maquettage essentiellement, tests utilisateurs de temps à autre)
-* quelques projets intermédiaires courts, pour lesquels j’ai **travaillé en équipe** une dizaine de jours répartis sur 2 mois maximum, sur des aspects variés **en phase amont des projets** : entretiens, story mapping, ateliers de co-conception, maquettage, rédaction de cahier des charges...
-* un **gros projet** sur lequel j’ai travaillé 45 jours depuis 8 mois, faisant un **travail d’ergonome plus abouti et m’impliquant dans la gestion du projet** au quotidien en tant que représentante utilisateur et proxy PO. Sur ce projet, je fais **partie intégrante de l’équipe** de développement. C’est très important pour moi de me sentir appartenir à un groupe, et je le trouve aujourd’hui essentiellement grâce à ce projet.
+- quelques projets pour lesquels j’ai fait un **travail court de consultante interne** (maquettage essentiellement, tests utilisateurs de temps à autre)
+- quelques projets intermédiaires courts, pour lesquels j’ai **travaillé en équipe** une dizaine de jours répartis sur 2 mois maximum, sur des aspects variés **en phase amont des projets** : entretiens, story mapping, ateliers de co-conception, maquettage, rédaction de cahier des charges...
+- un **gros projet** sur lequel j’ai travaillé 45 jours depuis 8 mois, faisant un **travail d’ergonome plus abouti et m’impliquant dans la gestion du projet** au quotidien en tant que représentante utilisateur et proxy PO. Sur ce projet, je fais **partie intégrante de l’équipe** de développement. C’est très important pour moi de me sentir appartenir à un groupe, et je le trouve aujourd’hui essentiellement grâce à ce projet.
 
 ## Avant-ventes
 
@@ -56,19 +55,19 @@ J’ai également participé à une douzaine d’avant-ventes, dans des secteurs
 
 Le besoin d'ergonomie, au regard de la taille de l'entreprise, est cyclique et me laisse du temps pour d'autres activités. En particulier, je m’implique dans les questions de communication interne et externe :
 
-* mise en place d’une landing page pour Sogilis Australie
+- mise en place d’une landing page pour Sogilis Australie
   ![licorne-sticker](/img/2017-08-licorne-sticker.png)
-* (co-)écriture d’articles de blog
-* participation à des conférences en tant qu’oratrice ou visiteuse (live-tweet, sketchnotes, networking…)
-* mise en place d’un workshop interne pour réfléchir à des supports de communication
-* création d’un sticker licorne
-* création d’un kakémono pour une conférence
-* cocréation de supports de communication pour des évènements organisés par Sogilis
-* mise à jour du livret d’accueil
-* mise en place d’une dynamique de partage entre Sogilis Lyon et Sogilis Grenoble :
-    * avec Marion, ergonome à Lyon, nous avons organisé des _Ergogames_ [petits jeux pour sensibiliser aux pratiques d’ergonomie, (on en parle ici](https://blog.sogilis.com/posts/2017-05-31-ergogame-jeu-decouvrir-principes-de-conception-dergonomie-cognitive/)) ;
-    * avec Kevin, développeur à Lyon, nous avons mis en place un challenge photo (une photo par mois sur un thème donné avec photo gagnante publiée sur Twitter, permettant également de renouveler le stock de photos pour la communication externe)
-* organisation des premières rétrospectives de l’équipe “Cloud Native”
+- (co-)écriture d’articles de blog
+- participation à des conférences en tant qu’oratrice ou visiteuse (live-tweet, sketchnotes, networking…)
+- mise en place d’un workshop interne pour réfléchir à des supports de communication
+- création d’un sticker licorne
+- création d’un kakémono pour une conférence
+- cocréation de supports de communication pour des évènements organisés par Sogilis
+- mise à jour du livret d’accueil
+- mise en place d’une dynamique de partage entre Sogilis Lyon et Sogilis Grenoble :
+  - avec Marion, ergonome à Lyon, nous avons organisé des _Ergogames_ [petits jeux pour sensibiliser aux pratiques d’ergonomie, (on en parle ici](https://blog.sogilis.com/posts/2017-05-31-ergogame-jeu-decouvrir-principes-de-conception-dergonomie-cognitive/)) ;
+  - avec Kevin, développeur à Lyon, nous avons mis en place un challenge photo (une photo par mois sur un thème donné avec photo gagnante publiée sur Twitter, permettant également de renouveler le stock de photos pour la communication externe)
+- organisation des premières rétrospectives de l’équipe “Cloud Native”
 
 Enfin, de manière ponctuelle, je participe au recrutement et je fais un peu de business development.
 
@@ -78,8 +77,8 @@ Enfin, de manière ponctuelle, je participe au recrutement et je fais un peu de 
 
 Si l’on repart de mes motivations à quitter mon entreprise précédente, on peut résumer ça en 2 axes :
 
-* **mon travail et mon impact** : besoin de me sentir utile, envie de travailler sur des projets plus courts et plus variés pour apprendre de nouvelles choses et voir rapidement le fruit de mon travail ;
-* **le management / l’organisation du travail** : envie de trouver une entreprise en accord avec mes valeurs, que j’avais d’ailleurs choisi d’afficher clairement sur mon CV (justice, solidarité, responsabilité, éthique, transparence).
+- **mon travail et mon impact** : besoin de me sentir utile, envie de travailler sur des projets plus courts et plus variés pour apprendre de nouvelles choses et voir rapidement le fruit de mon travail ;
+- **le management / l’organisation du travail** : envie de trouver une entreprise en accord avec mes valeurs, que j’avais d’ailleurs choisi d’afficher clairement sur mon CV (justice, solidarité, responsabilité, éthique, transparence).
 
 Neuf mois plus tard, le bilan.
 
@@ -93,12 +92,12 @@ Je suis également beaucoup plus au contact des clients que je n’ai pu l’êt
 
 S’il y a toujours des choses à améliorer, beaucoup d’éléments sont conformes à mes attentes, et j’en suis ravie :
 
-* **la flexibilité** : je suis en train de travailler le 15 août pour me libérer du temps dans les jours à venir pour visiter des appartements (pour déménager à Lyon, objectif atteint !). Si je veux faire des horaires décalés c’est mon problème, si je veux travailler de chez moi je le fais. Tant que ma manière de travailler n’a pas d’impact négatif sur les projets que je mène, je fais ce que je veux.
-* **la confiance** : il n'y a personne qui vérifie mes horaires, personne qui contrôle 20 fois mon travail, personne qui vient derrière mon épaule pour regarder ce sur quoi je travaille, personne qui m'interdit de prévoir un goûter à 16h30 car ça va réduire la productivité…
-* **la bienveillance** : même quand ça ne se passe pas comme on l’aurait voulu, on part globalement du principe que chaque membre de l’équipe a fait du mieux qu’il a pu avec les informations qu’il avait. Il n’y a jamais qui que ce soit qui surgit en hurlant sur les équipes car un problème est survenu en prod’. Jamais un middle manager qui reporte son stress ou la faute sur les équipes de développement (faut dire, y’a pas de middle manager à Sogilis, ça évite ce genre de problème). On s'y habitue vite et c'est vraiment agréable.
-* **la transparence** : nous avons accès à toutes les finances de l’entreprise. La vision de l’entreprise portée par Christophe est régulièrement communiquée à toute l’entreprise. Lorsqu’une décision est prise par la direction en désaccord avec les équipes elle est expliquée, avec pédagogie.
-* **l’implication de tous** : ça peut toujours être mieux, mais il n’y a vraiment pas photo par rapport à de nombreuses entreprises. Ici les gens sont tous impliqués dans les projets de nos clients et dans la vie de l’entreprise. Je ne vois personne glander toute la journée. Je ne vois même personne qui fasse son boulot correctement mais sans conviction. Je ne vois personne se cacher dans un coin pour ne pas participer aux tâches transverses liées à la vie de l’entreprise.
-* **la liberté d’entreprendre et le droit à l’erreur** : si on a une idée, une envie, une méthode que l’on souhaite tester, on y va ! Pas besoin de faire valider par qui que ce soit, seulement consulter les personnes impactées. On ne se retrouve pas dans la situation malheureusement si courante en entreprise où un·e salarié·e arrive hyper motivé·e, plein·e d’idées et d’initiatives, et se désengage après 6 mois passés dans l’entreprise à entendre des “oui mais...” en réponse à ses propositions. Ainsi, j’ai pu très facilement mettre en place les _ergogames_, le challenge photo, ou un workshop communication.
+- **la flexibilité** : je suis en train de travailler le 15 août pour me libérer du temps dans les jours à venir pour visiter des appartements (pour déménager à Lyon, objectif atteint !). Si je veux faire des horaires décalés c’est mon problème, si je veux travailler de chez moi je le fais. Tant que ma manière de travailler n’a pas d’impact négatif sur les projets que je mène, je fais ce que je veux.
+- **la confiance** : il n'y a personne qui vérifie mes horaires, personne qui contrôle 20 fois mon travail, personne qui vient derrière mon épaule pour regarder ce sur quoi je travaille, personne qui m'interdit de prévoir un goûter à 16h30 car ça va réduire la productivité…
+- **la bienveillance** : même quand ça ne se passe pas comme on l’aurait voulu, on part globalement du principe que chaque membre de l’équipe a fait du mieux qu’il a pu avec les informations qu’il avait. Il n’y a jamais qui que ce soit qui surgit en hurlant sur les équipes car un problème est survenu en prod’. Jamais un middle manager qui reporte son stress ou la faute sur les équipes de développement (faut dire, y’a pas de middle manager à Sogilis, ça évite ce genre de problème). On s'y habitue vite et c'est vraiment agréable.
+- **la transparence** : nous avons accès à toutes les finances de l’entreprise. La vision de l’entreprise portée par Christophe est régulièrement communiquée à toute l’entreprise. Lorsqu’une décision est prise par la direction en désaccord avec les équipes elle est expliquée, avec pédagogie.
+- **l’implication de tous** : ça peut toujours être mieux, mais il n’y a vraiment pas photo par rapport à de nombreuses entreprises. Ici les gens sont tous impliqués dans les projets de nos clients et dans la vie de l’entreprise. Je ne vois personne glander toute la journée. Je ne vois même personne qui fasse son boulot correctement mais sans conviction. Je ne vois personne se cacher dans un coin pour ne pas participer aux tâches transverses liées à la vie de l’entreprise.
+- **la liberté d’entreprendre et le droit à l’erreur** : si on a une idée, une envie, une méthode que l’on souhaite tester, on y va ! Pas besoin de faire valider par qui que ce soit, seulement consulter les personnes impactées. On ne se retrouve pas dans la situation malheureusement si courante en entreprise où un·e salarié·e arrive hyper motivé·e, plein·e d’idées et d’initiatives, et se désengage après 6 mois passés dans l’entreprise à entendre des “oui mais...” en réponse à ses propositions. Ainsi, j’ai pu très facilement mettre en place les _ergogames_, le challenge photo, ou un workshop communication.
 
 Que celles et ceux qui ne croient pas aux entreprises basées sur ces valeurs viennent faire un stage à Sogilis !
 

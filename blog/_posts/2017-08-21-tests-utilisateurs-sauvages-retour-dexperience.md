@@ -5,8 +5,8 @@ date: -001-11-30T00:00:00+00:00
 draft: true
 categories:
   - ERGONOMIE
-
 ---
+
 # Qu’est-ce qu’un test utilisateur ?
 
 Le test utilisateur est un outil d’analyse permettant de vérifier que l’interface imaginée est adaptée aux utilisateurs cibles. Concrètement, ces utilisateurs vont utiliser l’interface comme un vrai site web, ou une vraie application. Ils seront guidés par un ou plusieurs scénarios préparés par l’ergonome. Celui-ci va pouvoir répondre à plusieurs hypothèses au cours du test utilisateur :

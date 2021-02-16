@@ -4,8 +4,8 @@ author: Alexandre et Jean-Baptiste
 date: 2017-08-08T15:32:27+00:00
 categories:
   - DÉVELOPPEMENT
-
 ---
+
 Dans le cadre d’un projet sur lequel nous travaillons actuellement, nous avons été amenés à implémenter un service web spring-boot capable de stocker des objets relativement simples dans une base de données.
 
 ![Support du stockage JPA et MongoDB dans une application Spring-boot - header](/img/2017-07-blog-header-2-1024x309.png)
@@ -68,7 +68,7 @@ Il suffit alors d’annoter une même classe avec ces 2 annotations, ce qui évi
 Toute entité doit pouvoir être identifiée de manière unique. Pour cela, il existe aussi 2 annotations distinctes, mais qui ont le même nom (_@Id_) :
 
 - JPA : _javax.persistence.Id_
-- MongoDB : _org.springframework.data.annotation.Id_ ([permet de mapper la colonne sur l’identifiant natif MongoDB : _id](http://docs.spring.io/spring-data/data-mongo/docs/1.10.4.RELEASE/reference/html/#mongo-template.id-handling))
+- MongoDB : _org.springframework.data.annotation.Id_ ([permet de mapper la colonne sur l’identifiant natif MongoDB : \_id](http://docs.spring.io/spring-data/data-mongo/docs/1.10.4.RELEASE/reference/html/#mongo-template.id-handling))
 
 Attention au type de cet identifiant et comment il sera défini, il doit être à la fois compatible avec JPA et MongoDB.
 

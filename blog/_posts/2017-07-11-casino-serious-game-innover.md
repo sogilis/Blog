@@ -1,5 +1,5 @@
 ---
-title: "Casino Game : Un serious game pour Innover"
+title: 'Casino Game : Un serious game pour Innover'
 author: Arnaud BENISTANT
 date: 2017-07-11T08:37:13+00:00
 image: /img/2017-07-Be-Ready-CasinoGame.jpg
@@ -12,8 +12,8 @@ tags:
   - lean startup
   - OpenInnovation
   - serious game
-
 ---
+
 ![Innovation et Serious Game](/img/2017-07-Be-Ready-1024x442.jpg)
 
 Toutes les entreprises ont besoin d’innover pour exister et prendre de nouvelles part de marché : une position un peu trop “conservatrice” sur un marché traditionnel et c’est le risque de l’uberisation dans les prochains mois. Mais pour ces entreprises, PME, ETI ou Grands Groupes, l’innovation est parfois perçue comme une prise de risque. C’est vrai, innover c’est accepter de prendre un risque. Comme tous les risques, ceux-ci peuvent être maîtrisés si l’on comprend quels sont les bons leviers. Regardons en détail les challenges à franchir :

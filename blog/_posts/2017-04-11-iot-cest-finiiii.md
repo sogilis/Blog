@@ -1,5 +1,5 @@
 ---
-title: "IoT, c’est finiiii : Retour sur le #SiDO2017 vu par Sogilis"
+title: 'IoT, c’est finiiii : Retour sur le #SiDO2017 vu par Sogilis'
 author: Tiphaine
 date: 2017-04-11T16:10:06+00:00
 image: /img/2017-04-SiDO-et-industrie-du-futur.jpg
@@ -16,8 +16,8 @@ tags:
   - sido
   - timetomarket
   - usages
-
 ---
+
 Le bidouillage technique et l’objet passif, c’est fini. Pendant 2 jours, nous avons parlé d’accès au marché et d’objets utiles. Les 5 & 6 avril 2017 se sont réunis pas moins de 6500 professionnels de la grande famille de l’IoT. Grande famille car c’est dans ce creuset que se rencontrent 3 mondes qui n’ont pas si souvent l’habitude de collaborer : le hard, le soft et le business.
 
 # La fin des gadgets

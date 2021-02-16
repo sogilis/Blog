@@ -1,5 +1,5 @@
 ---
-title: "Privé : Feature flags at SquareScale"
+title: 'Privé : Feature flags at SquareScale'
 author: Adrien
 date: 2017-12-11T15:20:42+00:00
 draft: true
@@ -14,8 +14,8 @@ tags:
   - ruby on rails
   - sogilis
   - squarescale
-
 ---
+
 # Feature flags at SquareScale {#feature-flags-at-squarescale}
 
 We started to talk about feature flags a while ago at SquareScale but never had the time to introduce themin our web application. None of us had the chance to work with feature flags in a previous application so we did not know very much about how to implement them, how to manage them in the application lifetime, and the most important part is that we didn't have any feedbacks about feature flags being used in production. That being said, we of course read about it. We especially read Martin Fowler's article: [Feature Toggles (aka Feature Flags)][1]. There are many reasons we need feature flags.
@@ -157,7 +157,6 @@ Special thanks to Haze for his feedback.
 
 [1]: https://martinfowler.com/articles/feature-toggles.html
 [2]: https://blog.sogilis.com/posts/2017-11-07-end-to-end-testing-chrome-headless-squarescale/
-
 [3]: https://github.com/fetlife/rollout
 [4]: https://github.com/jnunemaker/flipper
 [5]: https://stackoverflow.com/questions/25712621/cant-get-flipper-feature-to-enable-for-a-group

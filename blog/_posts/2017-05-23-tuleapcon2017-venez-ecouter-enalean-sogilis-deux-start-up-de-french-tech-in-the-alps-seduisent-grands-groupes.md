@@ -1,5 +1,5 @@
 ---
-title: "TuleapCon2017 : Venez écouter Enalean et Sogilis, deux start-up de la «French Tech in the Alps» qui séduisent les grands groupes"
+title: 'TuleapCon2017 : Venez écouter Enalean et Sogilis, deux start-up de la «French Tech in the Alps» qui séduisent les grands groupes'
 author: Tiphaine
 date: 2017-05-23T10:08:42+00:00
 image: /img/2017-05-tuleapcon2017.png
@@ -16,8 +16,8 @@ tags:
   - OpenSource
   - tuleap
   - TuleapCon2017
-
 ---
+
 DevOps, livraison continue, open innovation, agilité, quand deux start-up arrivent à faire de ces « buzz words » une réalité, les grands comptes industriels comme **Airbus**, **STMicroelectronics** ou **Orange** suivent la marche.
 
 [**Enalean**][1], éditeur du logiciel open source Tuleap, basé à Grenoble et Savoie Technolac, et [**Sogilis**][2], société d'ingénierie informatique basée à Grenoble et Lyon, collaborent depuis plus de 3 ans. Ensemble, les deux sociétés du sillon alpin fournissent des applications logicielles de haute qualité, de véritables avantages concurrentiels pour les industriels. Car si l’avenir d’une start-up peut être lié à un grand compte, le contraire est tout aussi vrai !
