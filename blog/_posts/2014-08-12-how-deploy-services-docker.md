@@ -138,7 +138,7 @@ How is that implemented? Following [host integration](https://docs.docker.com/co
 
 - that you are running systemd:
 
-  ```systemd
+  ```
   DEBIAN_FRONTEND=noninteractive apt-get install -y systemd systemd-sysv
   ```
 
@@ -157,7 +157,7 @@ How is that implemented? Following [host integration](https://docs.docker.com/co
 
 Once you have all that, let’s see how these shell functions are implemented. The function `docker-unit NAME ARGS` is there to declare a new instance of a container. It takes the instance name (`NAME`) and the docker arguments (`ARGS`) given to `docker run`. Its job is to create a systemd unit file, and that’s what it does literally:
 
-```systemd
+```
 docker-unit(){
   local name="$1"
   shift
