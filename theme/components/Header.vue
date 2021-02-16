@@ -5,7 +5,7 @@
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import HeaderDesktop from './HeaderDesktop.vue';
 import HeaderMobile from './HeaderMobile.vue';
 
@@ -16,7 +16,7 @@ export default {
     HeaderDesktop,
     HeaderMobile,
   },
-  mounted(): void {
+  mounted() {
     displayScrolledHeader();
     switchHeaderDesktopHeaderMobile();
   },
@@ -34,7 +34,7 @@ export default {
  * Throw an error
  * @param {string} message the message of the error
  */
-const throwError = (message: string): void => {
+const throwError = (message) => {
   // eslint-disable-next-line no-alert
   alert(message);
   throw new Error(message);
@@ -51,7 +51,7 @@ const throwError = (message: string): void => {
  */
 // See above why we disale this eslint rules
 // eslint-disable-next-line max-lines-per-function, max-statements
-const displayScrolledHeader = (): void => {
+const displayScrolledHeader = () => {
   const [header] = document.getElementsByTagName('header');
   if (!header) {
     const message = 'No tag element "header"';
@@ -63,7 +63,7 @@ const displayScrolledHeader = (): void => {
   /*
    * Set value of scrollMenuOffset
    */
-  const setScrollMenuOffset = (): number => {
+  const setScrollMenuOffset = () => {
     const paddingTopMainTag = 12;
     const scrollMenuOffsetDesktop = paddingTopMainTag * baseFontSize;
     const scrollMenuOffsetMobile = 100;
@@ -82,7 +82,7 @@ const displayScrolledHeader = (): void => {
    * Set Add or remove css class 'header--scrollstate' to header tag
    * if window.scrollY > scrollMenuOffset
    */
-  const testDisplayScrollMenu = (scrollMenuOffsetVar: number): void => {
+  const testDisplayScrollMenu = (scrollMenuOffsetVar) => {
     if (window.scrollY > scrollMenuOffsetVar) {
       header.classList.add('header--scrollstate');
     } else {
@@ -101,7 +101,7 @@ const displayScrolledHeader = (): void => {
  * Script to display menu mobile when we click on the button with three
  * horizontals lines
  */
-const switchHeaderDesktopHeaderMobile = (): void => {
+const switchHeaderDesktopHeaderMobile = () => {
   const menuBtn = document.getElementById('header-mobile-threebarbutton');
   const menuMobile = document.getElementById('header-mobile-navmenu');
   const [body] = document.getElementsByTagName('body');
@@ -112,7 +112,9 @@ const switchHeaderDesktopHeaderMobile = (): void => {
       body.classList.toggle('menuMobileIsDisplayed');
     });
   } else {
+    // eslint-disable-next-line
     const message =
+      // eslint-disable-next-line
       'No element with id "header-mobile-threebarbutton" ' +
       ' and / or "header-mobile-navmenu"';
     throwError(message);

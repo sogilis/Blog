@@ -1,5 +1,4 @@
-<script lang="ts">
-export const getDateInEnglish = (dateString: string): string => {
+export const getDateInEnglish = (dateString) => {
   const date = new Date(dateString);
   if (Object.prototype.toString.call(date) === '[object Date]') {
     // eslint-disable-next-line no-restricted-globals
@@ -16,4 +15,3 @@ export const getDateInEnglish = (dateString: string): string => {
 export default {
   getDateInEnglish,
 };
-</script>

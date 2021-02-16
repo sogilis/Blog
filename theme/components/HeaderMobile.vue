@@ -116,7 +116,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 // eslint-disable-next-line import/no-unresolved
 import SearchBox from '@SearchBox';
 

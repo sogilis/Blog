@@ -79,12 +79,12 @@
   </article>
 </template>
 
-<script lang="ts">
-import { getDateInEnglish } from '../utils/date.vue';
+<script>
+import { getDateInEnglish } from '../utils/date';
 
 export default {
   methods: {
-    getDate(date: string): string {
+    getDate(date) {
       return getDateInEnglish(date);
     },
   },

@@ -48,7 +48,6 @@ const vuePressBlog = [
 
 module.exports = {
   plugins: [
-    'typescript',
     // A very simple plugin
     'vuepress-plugin-reading-time',
     // A very simple plugin easy customizable

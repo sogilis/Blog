@@ -29,7 +29,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   name: 'Pagination',
   props: {
@@ -38,25 +38,25 @@ export default {
       required: true,
     },
   },
-  data(): { currentPage: number } {
+  data() {
     return {
       currentPage: 1,
     };
   },
-  mounted(): void {
+  mounted() {
     // Is undefined when HTML is rendered
     if (this.pagination._currentPage) {
       this.currentPage = this.getCurrentPage(this.pagination._currentPage.path);
     }
   },
-  updated(): void {
+  updated() {
     // Is undefined when HTML is rendered
     if (this.pagination._currentPage) {
       this.currentPage = this.getCurrentPage(this.pagination._currentPage.path);
     }
   },
   methods: {
-    getCurrentPage(currentPagePath: string): number {
+    getCurrentPage(currentPagePath) {
       if (currentPagePath !== '/') {
         return Number(currentPagePath.substring(6, currentPagePath.length - 1));
       }
