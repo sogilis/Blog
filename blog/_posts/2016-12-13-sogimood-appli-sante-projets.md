@@ -11,7 +11,7 @@ tags:
   - développement
 ---
 
-<!-- {{% disclaimer %}} -->
+<Disclaimer />
 
 Nous publions aujourd’hui, sous licence libre, une application utilisée en interne pour surveiller notre activité : SogiMood. Explications sur l’outil.
 
