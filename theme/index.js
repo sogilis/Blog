@@ -24,6 +24,9 @@ const vuePressBlog = [
         id: 'post',
         dirname: '_posts',
         path: '/',
+        pagination: {
+          lengthPerPage: 9,
+        },
       },
     ],
     frontmatters: [
