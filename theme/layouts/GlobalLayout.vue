@@ -2,9 +2,8 @@
   <div id="global-layout">
     <Header />
     <main class="maincolumn">
-      <div style="background-color: #ddd">
-        <RouterLink to="/">{{ $site.title }}</RouterLink
-        >· <RouterLink to="/tags/">Tags</RouterLink>·
+      <div>
+        <RouterLink to="/tags/" class="tag">Tags</RouterLink>
         <RouterLink to="/categories/">Categories</RouterLink>
       </div>
       <br />
