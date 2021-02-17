@@ -35,6 +35,7 @@
     "typeface-eb-garamond": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
     "vuepress": "^1.8.1",
+    "vuepress-plugin-disqus": "^0.2.0",
     "vuepress-plugin-medium-zoom": "^1.1.9",
     "vuepress-plugin-reading-progress": "^1.0.10",
     "vuepress-plugin-reading-time": "^0.1.1"

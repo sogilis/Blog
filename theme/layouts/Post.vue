@@ -70,7 +70,7 @@
     />
 
     <section id="articlepage-comments">
-      <i>Pas de commentaire pour l'instant</i>
+      <Disqus />
     </section>
     <br />
     <br />

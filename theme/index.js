@@ -55,6 +55,8 @@ module.exports = {
 
     // '@vuepress/plugin-nprogress',
 
+    ['disqus', { shortname: 'sogilisblog' }],
+
     mediumZoon,
     search,
 
