@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import { getDateInEnglish } from '../utils/date';
+import getDateInEnglish from '../utils/date';
 
 export default {
   methods: {

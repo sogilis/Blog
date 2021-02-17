@@ -1,4 +1,4 @@
-export const getDateInEnglish = (dateString) => {
+const getDateInEnglish = (dateString) => {
   const date = new Date(dateString);
   if (Object.prototype.toString.call(date) === '[object Date]') {
     // eslint-disable-next-line no-restricted-globals
@@ -12,6 +12,4 @@ export const getDateInEnglish = (dateString) => {
   return 'No date';
 };
 
-export default {
-  getDateInEnglish,
-};
+export default getDateInEnglish;
