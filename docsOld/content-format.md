@@ -12,6 +12,7 @@ In addition, Hugo provides many [built in shortcodes](https://gohugo.io/content-
 :warning: prefer `{linenos=inline}` (instead of `true` or `table`) if you need line number on code block (the stylesheet does not handle these values correctly).
 
 If necessary, `Asciidoc` could be added quite easily. There are many things which prevent use to use this format today:
+
 - add `asciidoctor` and mandatory dependency
 - make sure `NetlifyCMS` can handle this format
 - makre sure `Asciidoc` support is as expected

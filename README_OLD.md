@@ -1,18 +1,18 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/be2fba7f-a8a8-44de-b957-efc6901dba61/deploy-status)](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys)
 
-* [Sogilis Blog](#sogilis-blog)
-* [How to write a new article?](#how-to-write-a-new-article)
-    * [🌍 Online](#online)
-    * [🔌 Offline](#offline)
-        * [☑️ Prerequisites](#prerequisites)
-        * [⬇️ Download blog](#download-blog)
-        * [▶️ Start the blog](#start-the-blog)
-            * [🤘 Without Docker](#without-docker)
-            * [🐳 With Docker](#with-docker)
-        * [✏️ Write a new article](#write-a-new-article)
-        * [✉️ Publish your article](#publish-your-article)
-* [Notes for developers (not for writers of articles)](docs/dev.md)
-* [Credits](#credits)
+- [Sogilis Blog](#sogilis-blog)
+- [How to write a new article?](#how-to-write-a-new-article)
+  - [🌍 Online](#online)
+  - [🔌 Offline](#offline)
+    - [☑️ Prerequisites](#prerequisites)
+    - [⬇️ Download blog](#download-blog)
+    - [▶️ Start the blog](#start-the-blog)
+      - [🤘 Without Docker](#without-docker)
+      - [🐳 With Docker](#with-docker)
+    - [✏️ Write a new article](#write-a-new-article)
+    - [✉️ Publish your article](#publish-your-article)
+- [Notes for developers (not for writers of articles)](docs/dev.md)
+- [Credits](#credits)
 
 # Sogilis Blog
 
@@ -29,12 +29,12 @@ The backlog is available in [Github project](https://github.com/sogilis/Blog/pro
 
 # How to write a new article?
 
-***Do not hesitate to ask help.*** . We answer with enjoy :-) !
+**_Do not hesitate to ask help._** . We answer with enjoy :-) !
 
 ## 🌍 Online
 
 1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in with your Google account.
-:information_source: All members of Sogilis team have access to this admin interface.
+   :information_source: All members of Sogilis team have access to this admin interface.
 
 2. That's it. You can now create/modify/review/delete/publish articles.
 
@@ -49,15 +49,16 @@ So you will be able to write a new article offline.
 
 You will need to install the following software:
 
-* [GNU Make](docs/prerequisites.md#gnu-make)
+- [GNU Make](docs/prerequisites.md#gnu-make)
 
-* [Git](https://git-scm.com)
+- [Git](https://git-scm.com)
 
-* Alternative 1 (without docker)
-    1. [NodeJS](https://nodejs.org) >= 12
-    2. [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+- Alternative 1 (without docker)
 
-* Alternative 2 : [docker](https://docs.docker.com/install/) (more details [here](docs/prerequisites.md#docker)).
+  1. [NodeJS](https://nodejs.org) >= 12
+  2. [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+
+- Alternative 2 : [docker](https://docs.docker.com/install/) (more details [here](docs/prerequisites.md#docker)).
 
 ### ⬇️ Download blog
 
@@ -94,6 +95,7 @@ make docker-build
 ```bash
 make docker-start
 ```
+
 Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
 
 3. Eventually, see logs (especially if there is a problem):
@@ -108,10 +110,9 @@ make docker-logs
 make docker-stop
 ```
 
-
 ### ✏️ Write a new article
 
-:warning: __The branch `master` is automatically pushed on the production server, you need to work on a new branch and use the Pull Request mechanism.__ :warning:
+:warning: **The branch `master` is automatically pushed on the production server, you need to work on a new branch and use the Pull Request mechanism.** :warning:
 
 1. Create a new branch
 
@@ -145,6 +146,7 @@ make docker-stop
    ```
 
    Note that:
+
    - the date should not be later than the current date, otherwise the article will not be published (and therefore not visible from the home page in the article list)
    - you can set any values to categories and tags. Look at values that have been used in previous articles to avoid duplicates
    - put your images under the `site/static/img/` directory
@@ -162,11 +164,9 @@ make docker-stop
 
    So when you open your Pull Request Netlify builds the new website and you can check the result of your Pull Request in [Netlifly](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys). See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
 
-
 2. If you're satisfied with the result in the preview you can merge the Pull Request into `master` branch.
 
-6. It's done, the deployment is automated.
-
+3. It's done, the deployment is automated.
 
 # Credits
 

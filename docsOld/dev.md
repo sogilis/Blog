@@ -3,6 +3,7 @@
 ## Upgrade the CMS
 
 Run the following command:
+
 ```sh
 $ yarn upgrade --latest
 ```
@@ -27,24 +28,25 @@ in a short time.
 We should considerate to migrate to a self-hosted GitLab solution for this reason.
 
 See also
-* « Github Backend - API Rate Limiting » https://github.com/netlify/netlify-cms/issues/68
-* « Slow search » https://github.com/netlify/netlify-cms/issues/2350
-* « Paginate published posts in overview » https://github.com/netlify/netlify-cms/issues/50
-* « Netlify CMS Alternative » https://buttercms.com/netlifycms-alternative/
-    than explains that a main problem with Netlify is this problem.
+
+- « Github Backend - API Rate Limiting » https://github.com/netlify/netlify-cms/issues/68
+- « Slow search » https://github.com/netlify/netlify-cms/issues/2350
+- « Paginate published posts in overview » https://github.com/netlify/netlify-cms/issues/50
+- « Netlify CMS Alternative » https://buttercms.com/netlifycms-alternative/
+  than explains that a main problem with Netlify is this problem.
 
 ## TODO
 
-* Actually, at the link https://blog.sogilis.fr/admin/#/collections/post
-    the grid view with image is very slow. There are several solutions.
+- Actually, at the link https://blog.sogilis.fr/admin/#/collections/post
+  the grid view with image is very slow. There are several solutions.
 
-* Stylish with our style the preview of https://blog.sogilis.fr/admin/#/collections/post/new
+- Stylish with our style the preview of https://blog.sogilis.fr/admin/#/collections/post/new
 
-* In package.json remove Linux shell syntax and use only node modules to
-    have compatibility with PowerShell or MS Batch. Use also https://www.npmjs.com/package/yarn-or-npm
+- In package.json remove Linux shell syntax and use only node modules to
+  have compatibility with PowerShell or MS Batch. Use also https://www.npmjs.com/package/yarn-or-npm
 
-* For netlify-cms.js, use https://webpack.js.org/guides/caching/
-    (actually reboot.min.css is cached).
+- For netlify-cms.js, use https://webpack.js.org/guides/caching/
+  (actually reboot.min.css is cached).
 
 ## Troubleshooting
 
