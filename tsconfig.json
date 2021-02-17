@@ -4,7 +4,7 @@
   "compilerOptions": {
     "lib": ["DOM", "ES2020", "dom.iterable"],
     "noImplicitAny": false,
-    "noImplicitThis": true,
+    "noImplicitThis": false,
     "sourceMap": true,
     "strict": true,
     "target": "ES2018",
