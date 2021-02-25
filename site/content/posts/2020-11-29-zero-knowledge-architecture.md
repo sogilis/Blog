@@ -47,7 +47,7 @@ Dans la ZKA, on préconise l'utilisation de blobs, qui sont des ensembles de don
 
 ### Preuve à divulgation nulle de connaissance
 
-La **[preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)**, pilier de la ZKA, est un protocole sécurisé dans lequel une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition. Généralement ce type de preuve repose sur des protocoles défi/réponse, le "vérficateur" envoie un challenge au "fournisseur de preuve" qui répond grâce à une information que seul lui connait afin de prouver son identité.
+La **[preuve à divulgation nulle de connaissance](https://fr.wikipedia.org/wiki/Preuve_%C3%A0_divulgation_nulle_de_connaissance)**, pilier de la ZKA, est un protocole sécurisé dans lequel une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition. Généralement ce type de preuve repose sur des protocoles défi/réponse, le "vérificateur" envoie un challenge au "fournisseur de preuve" qui répond grâce à une information que seul lui connaît afin de prouver son identité.
 
 Avec une architecture zero-knowledge, l'utilisateur pourrait utiliser un service tiers de preuve de majorité, et ne laisserait aucune données sensible transiter sur le réseau. 
 Le fonctionnement du système est schématisé dans l'image ci dessous.
