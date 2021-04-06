@@ -28,7 +28,7 @@ Le principe est basé sur le découpage du code pour qu'il puisse être **repré
 
 ![Graph](/img/2021-04-06-how-to-split-code-in-methods/graph.gif)
 
-Chaque noeud représente une fonction, et chaque lien un appel de fonction. Ainsi, A -> B signifie que la fonction A appelle la fonction B.
+Chaque nœud représente une fonction, et chaque lien un appel de fonction. Ainsi, A -> B signifie que la fonction A appelle la fonction B.
 
 De plus, dans ce graphe, les fonctions doivent être **regroupées par niveaux d'abstraction**, ce qui pourrait donner avec le graphe ci-dessus :
 
@@ -81,7 +81,7 @@ func findArticlesToDiscover(current Article) []Article {
 }
 ```
 
-Alors apparait le deuxième niveau d'abstraction :
+Alors apparaît le deuxième niveau d'abstraction :
 
 ![Graph](/img/2021-04-06-how-to-split-code-in-methods/level-2.png)
 
@@ -144,7 +144,7 @@ En faisant de même avec `findAll()`, le schéma suivant émerge :
 Ainsi, nous pouvons définir le périmètre de chaque niveau, ce qui permettra de faciliter l'organisation de futures fonctions :
 
 - **Niveau 1** : les fonctions métier répondant aux exigences fonctionnelles.
-- **Niveau 2** : les fonctions manipulant des concepts métiers, sortes de briques élémentaires métier.
+- **Niveau 2** : les fonctions manipulant des concepts métier, sortes de briques élémentaires métier.
 - **Niveau 3** : l'abstraction de la base de données (ou autre infrastructure).
 - **Niveau 4** : les fonctions manipulant les types de base du langage.
 
@@ -160,8 +160,8 @@ De la même manière, **la séparation par niveaux d'abstraction évite de méla
 
 Nous avons vu un principe relativement simple permettant de produire un code avec un niveau minimum de lisibilité.
 
+Le principe exposé ici est une **stratégie "top-down"** où l'on part de ce dont on a besoin pour "descendre" vers "comment" le construire.
 L'approche inverse consisterait à partir des données disponibles pour construire petit à petit ce que l'on doit retourner.
-Le principe exposé ici se rapproche donc plus d'une **stratégie "top-down"** où l'on part de ce dont on a besoin pour "descendre" vers "comment" le construire.
 
 Les quelques idées exposées dans cet article rejoignent le principe [Single Level of Abstraction](http://principles-wiki.net/principles:single_level_of_abstraction) de Clean Code à quelques détails près :
 - nous parlons ici de programmation procédurale.
