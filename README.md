@@ -1,173 +1,93 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/be2fba7f-a8a8-44de-b957-efc6901dba61/deploy-status)](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys)
+# Sogilis VuePress Typescrit POC
 
-* [Sogilis Blog](#sogilis-blog)
-* [How to write a new article?](#how-to-write-a-new-article)
-    * [🌍 Online](#online)
-    * [🔌 Offline](#offline)
-        * [☑️ Prerequisites](#prerequisites)
-        * [⬇️ Download blog](#download-blog)
-        * [▶️ Start the blog](#start-the-blog)
-            * [🤘 Without Docker](#without-docker)
-            * [🐳 With Docker](#with-docker)
-        * [✏️ Write a new article](#write-a-new-article)
-        * [✉️ Publish your article](#publish-your-article)
-* [Notes for developers (not for writers of articles)](docs/dev.md)
-* [Credits](#credits)
+A VuePress Blog Theme implemented in some lines
 
-# Sogilis Blog
+## Quick start
 
-Welcome to the open source Blog of Sogilis !
-It is alive with following urls:
+**_Do not use `npm`_**
 
-- [https://blog.sogilis.com](https://blog.sogilis.com)
-- [https://blog.sogilis.fr](https://blog.sogilis.fr)
+- Linter:
 
-:information_source: For the moment, all is in french.
-:information_source: All articles regardless their languages are visible in all languages.
+  ```bash
+  yarn test
+  ```
 
-The backlog is available in [Github project](https://github.com/sogilis/Blog/projects/2).
+- Dev:
 
-# How to write a new article?
+  ```bash
+  yarn dev
+  ```
 
-***Do not hesitate to ask help.*** . We answer with enjoy :-) !
+  - Then http://localhost:8080
 
-## 🌍 Online
+- Build:
 
-1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in with your Google account.
-:information_source: All members of Sogilis team have access to this admin interface.
+  ```bash
+  yarn build
+  ```
 
-2. That's it. You can now create/modify/review/delete/publish articles.
+* Serve build website as if it were deployed on GitHub Pages
 
-## 🔌 Offline
+  ```bash
+  yarn serve
+  ```
 
-These instructions will get you a copy of the project up and running on your
-local machine.
+## scss
 
-So you will be able to write a new article offline.
+:warning:
 
-### ☑️ Prerequisites
+Do not upgrade sass-loader to version > 11 because VuePress 1.x use WebPack 4.x
+and sass-loader 11+ needs WebPack 5.x
+https://stackoverflow.com/questions/66082397/typeerror-this-getoptions-is-not-a-function
 
-You will need to install the following software:
+## Note about migration from Hugo to VuePress
 
-* [GNU Make](docs/prerequisites.md#gnu-make)
+I've used following bash commands
 
-* [Git](https://git-scm.com)
+````bash
+sed -i 's/{{< ref "posts\//.\//' *
+sed -i -E 's/\{\{< highlight >\}\}/```/' *
+sed -i -E 's/\{\{< highlight ([a-z]+) >\}\}/```\1/' *
+sed -i -E 's/\{\{< \/highlight >\}\}/```/' *
+sed -i 's/" >}})/)/' *
+sed -i 's/{{< relref "posts\//.\//' *
+````
 
-* Alternative 1 (without docker)
-    1. [NodeJS](https://nodejs.org) >= 12
-    2. [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+## Iframe video (Youtube, Vimeo, etc)
 
-* Alternative 2 : [docker](https://docs.docker.com/install/) (more details [here](docs/prerequisites.md#docker)).
+### YouTube
 
-### ⬇️ Download blog
+1. Start watching a video on youtube.com.
+2. Under the video, click Share .
+3. A panel will appear, presenting different sharing options:
+4. Embed: Click the Embed button to generate a code you can use to embed the video in a website.
+5. In your Markdown file copy the content
+6. Surround the contend copied by tag `<VideoIframe> </VideoIframe>`
 
-```bash
-git clone git@github.com:sogilis/Blog.git
-cd Blog
+The result is something like:
+
+```md
+<VideoIframe>
+  <iframe
+    src="https://www.youtube.com/embed/kPmyROdRBpk"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</VideoIframe>
 ```
 
-### ▶️ Start the blog
+## TODO
 
-With the both methods, each time you save a change on an article, the local
-website is updated (**live reload**).
+- Header : correct scope of CSS
+- Header : remove access to DOM API
 
-#### 🤘 Without Docker
+## License
 
-1. Start the blog:
+- For css files and design and somme articles : all right reserved to Sogilis.
+  See https://github.com/sogilis/Blog and https://sogilis.com/
 
-```bash
-make start
-```
+- For SquareScale articles, all right reserved to SquareScale.
+  See https://github.com/squarescale/ and https://github.com/squarescale/
 
-Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
-
-#### 🐳 With Docker
-
-1. Create the docker image (only once. see [docker considerations](docs/docker.md)):
-
-```bash
-make docker-build
-```
-
-2. Start the blog and the watcher:
-
-```bash
-make docker-start
-```
-Wait a few seconds then, go to [http://localhost:1313](http://localhost:1313).
-
-3. Eventually, see logs (especially if there is a problem):
-
-```bash
-make docker-logs
-```
-
-4. Stop the container with:
-
-```bash
-make docker-stop
-```
-
-
-### ✏️ Write a new article
-
-:warning: __The branch `master` is automatically pushed on the production server, you need to work on a new branch and use the Pull Request mechanism.__ :warning:
-
-1. Create a new branch
-
-2. Write your article:
-
-   Create a new `.md` file in `site/content/posts`.
-   Only `Markdown` is supported with following [syntax](https://commonmark.org/help/) (more details [here](docs/content-format.md)).
-
-   Here is a basic markdown template to start with:
-
-   ```markdown
-   ---
-   title: My article title
-   author: Author (author@sogilis.com)
-   date: 2020-08-20
-   image: /img/image-name.jpeg
-   altimage: description and credits of the image
-   categories:
-     - cat1
-     - cat2
-     - ...
-   tags:
-     - tag1
-     - tag2
-     - ...
-   ---
-
-   ## A first subtitle
-
-   Start writing your content here.
-   ```
-
-   Note that:
-   - the date should not be later than the current date, otherwise the article will not be published (and therefore not visible from the home page in the article list)
-   - you can set any values to categories and tags. Look at values that have been used in previous articles to avoid duplicates
-   - put your images under the `site/static/img/` directory
-   - 🧰 See [tools for writing](docs/writing.md).
-
-3. See the result at [http://localhost:1313](http://localhost:1313)
-
-4. Finalize your article, and see the output in real time.
-
-### ✉️ Publish your article
-
-1. Create a new Pull Request to get feedbacks from other team members.
-
-   :information_source: Netlify provides a preview environment.
-
-   So when you open your Pull Request Netlify builds the new website and you can check the result of your Pull Request in [Netlifly](https://app.netlify.com/sites/wizardly-roentgen-e7f07e/deploys). See `deploy-preview` jobs triggered by your Pull Request to get the corresponding url.
-
-
-2. If you're satisfied with the result in the preview you can merge the Pull Request into `master` branch.
-
-6. It's done, the deployment is automated.
-
-
-# Credits
-
-Articles are created by Sogilis collaborators
+- All other files are under MIT license. Written by JulioJu during his free time.

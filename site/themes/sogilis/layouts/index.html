@@ -1,7 +1,0 @@
-{{ define "main" }}
-<div class="articles-list">
-  {{ range (where .Site.AllPages.ByDate "Kind" "page").Reverse }}
-    {{ .Render "list" }}
-  {{ end }}
-</div>
-{{ end }}

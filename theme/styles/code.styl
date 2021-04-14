@@ -1,0 +1,160 @@
+/**
+ * Inspired from https://github.com/vuepress/vuepress-theme-blog/blob/ad2d689f0f144e208fe4e1a35448bc2fc7ae8d5a/styles/palette.styl
+ */
+
+// colors
+$accentColor = lighten(#4a154b, 50%)
+
+$textColor = #2c3e50
+$darkTextColor = #000
+
+$borderColor = rgba($darkTextColor,.05)
+$darkBorderColor = $darkTextColor
+
+$codeBgColor = $darkTextColor
+
+// code
+$lineNumbersWrapperWidth = 3.5rem
+
+// See https://lucidar.me/en/web-dev/list-of-supported-languages-by-prism/
+$codeLang = 'markup' 'css' 'clike' 'javascript' 'abap' 'actionscript' 'ada' 'apacheconf' 'apl' 'applescript' 'arduino' 'arff' 'asciidoc' 'asm6502' 'aspnet' 'autohotkey' 'autoit' 'bash' 'basic' 'batch' 'bison' 'brainfuck' 'bro' 'c' 'csharp' 'cpp' 'coffeescript' 'clojure' 'crystal' 'csp' 'css-extras' 'd' 'dart' 'diff' 'django' 'docker' 'eiffel' 'elixir' 'elm' 'erb' 'erlang' 'fsharp' 'flow' 'fortran' 'gedcom' 'gherkin' 'git' 'glsl' 'gml' 'go' 'graphql' 'groovy' 'haml' 'handlebars' 'haskell' 'haxe' 'http' 'hpkp' 'hsts' 'ichigojam' 'icon' 'inform7' 'ini' 'io' 'j' 'java' 'jolie' 'json' 'julia' 'keyman' 'kotlin' 'latex' 'less' 'liquid' 'lisp' 'livescript' 'lolcode' 'lua' 'makefile' 'markdown' 'markup-templating' 'matlab' 'mel' 'mizar' 'monkey' 'n4js' 'nasm' 'nginx' 'nim' 'nix' 'nsis' 'objectivec' 'ocaml' 'opencl' 'oz' 'parigp' 'parser' 'pascal' 'perl' 'php' 'php-extras' 'plsql' 'powershell' 'processing' 'prolog' 'properties' 'protobuf' 'pug' 'puppet' 'pure' 'python' 'q' 'qore' 'r' 'jsx' 'tsx' 'renpy' 'reason' 'rest' 'rip' 'roboconf' 'ruby' 'rust' 'sas' 'sass' 'scss' 'scala' 'scheme' 'smalltalk' 'smarty' 'sql' 'soy' 'stylus' 'swift' 'tap' 'tcl' 'textile' 'tt2' 'twig' 'typescript' 'vbnet' 'velocity' 'verilog' 'vhdl' 'vim' 'visual-basic' 'wasm' 'wiki' 'xeora' 'xojo' 'xquery' 'yaml';
+
+/**
+ * Inspired from https://github.com/vuejs/vuepress/blob/3e1f5d844b16a3f829465a35e734a5f556c3dd22/packages/%40vuepress/theme-default/styles/code.styl
+ */
+
+{$contentClass}
+  code
+    color lighten($textColor, 20%)
+    padding 0.25rem 0.4rem
+    margin 0
+    background-color rgba(27,31,35,0.05)
+    border-radius 3px
+    .token
+      &.deleted
+        color #EC5975
+      &.inserted
+        color $accentColor
+
+{$contentClass}
+  pre, pre[class*="language-"]
+    line-height 1.5
+    padding 1.25rem 1.5rem
+    margin 0.85rem 0
+    background-color $codeBgColor
+    border-radius 6px
+    overflow auto
+    code
+      color #fff
+      padding 0
+      background-color transparent
+      border-radius 0
+
+div[class*="language-"]
+  position relative
+  background-color $codeBgColor
+  border-radius 6px
+  .highlight-lines
+    user-select none
+    padding-top 1.3rem
+    position absolute
+    top 0
+    left 0
+    width 100%
+    line-height 1.5
+    .highlighted
+      background-color rgba(0, 0, 0, 66%)
+  pre, pre[class*="language-"]
+    background transparent
+    position relative
+    z-index 1
+  &::before
+    position absolute
+    z-index 3
+    top 0.8em
+    right 1em
+    color rgba(255, 255, 255, 0.4)
+  &:not(.line-numbers-mode)
+    .line-numbers-wrapper
+      display none
+  &.line-numbers-mode
+    .highlight-lines .highlighted
+        position relative
+        &:before
+          content ' '
+          position absolute
+          z-index 3
+          left 0
+          top 0
+          display block
+          width $lineNumbersWrapperWidth
+          height 100%
+          background-color rgba(0, 0, 0, 66%)
+    pre
+      padding-left $lineNumbersWrapperWidth + 1 rem
+      vertical-align middle
+    .line-numbers-wrapper
+      position absolute
+      top 0
+      width $lineNumbersWrapperWidth
+      text-align center
+      color rgba(255, 255, 255, 0.3)
+      // https://github.com/vuejs/vuepress/issues/1294
+      padding 1rem 0
+      line-height 1.5
+      br
+        user-select none
+      .line-number
+        position relative
+        z-index 4
+        user-select none
+        font-size 1.12rem
+    &::after
+      content ''
+      position absolute
+      z-index 2
+      top 0
+      left 0
+      width $lineNumbersWrapperWidth
+      height 100%
+      border-radius 6px 0 0 6px
+      border-right 1px solid rgba(0, 0, 0, 66%)
+      background-color $codeBgColor
+
+for lang in $codeLang
+  div{'[class~="language-' + lang + '"]'}
+    &:before
+      content ('' + lang)
+
+div[class~="language-javascript"]
+  &:before
+    content "js"
+
+div[class~="language-typescript"]
+  &:before
+    content "ts"
+
+div[class~="language-markup"]
+  &:before
+    content "html"
+
+div[class~="language-markdown"]
+  &:before
+    content "md"
+
+div[class~="language-json"]:before
+  content "json"
+
+div[class~="language-ruby"]:before
+  content "rb"
+
+div[class~="language-python"]:before
+  content "py"
+
+div[class~="language-bash"]:before
+  content "sh"
+
+div[class~="language-php"]:before
+  content "php"
+
+@import '~prismjs/themes/prism-okaidia.css'
