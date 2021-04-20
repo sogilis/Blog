@@ -67,3 +67,6 @@ rules:
   wrap-iife:
     - error
     - inside
+
+  sort-keys: off
+  sort-vars: off

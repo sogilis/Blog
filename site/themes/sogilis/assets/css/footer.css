@@ -284,6 +284,8 @@ footer {
   transition: color 0.3s;
 }
 
+/* override reboot.css */
+a.footer-nav-a:not([href]):not([tabindex]):hover,
 .footer-nav-a:hover {
   color: var(--wolf-blue);
 }

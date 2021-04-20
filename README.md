@@ -171,3 +171,5 @@ make docker-stop
 # Credits
 
 Articles are created by Sogilis collaborators
+
+[![](https://data.jsdelivr.com/v1/package/npm/tarteaucitronjs/badge)](https://www.jsdelivr.com/package/npm/tarteaucitronjs)
