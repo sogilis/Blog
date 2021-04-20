@@ -23,6 +23,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* Titles */
 /* Note: all titles should have a serif font */
 /* ========================================================================== */

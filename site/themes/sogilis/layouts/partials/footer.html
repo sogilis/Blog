@@ -188,12 +188,19 @@
 
     <section id="footer-subfooter">
       <p>{{ i18n "allRightsReserved" }}</p>
-      <a
-        href="https://sogilis.fr/mentions-legal.html"
-        class="footer-nav-a"
-      >
-        {{ i18n "LegalInfo" }}
-      </a>
+      <p>
+        <a
+          onclick='tarteaucitron.userInterface.openPanel();'
+          class="footer-nav-a"
+        >
+          Gestion de cookies
+        </a>
+      </p>
+      <p>
+        <a href="https://sogilis.fr/mentions-legal.html" class="footer-nav-a">
+          {{ i18n "LegalInfo" }}
+        </a>
+      </p>
     </section>
   </div>
 </footer>
