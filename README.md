@@ -33,8 +33,7 @@ The backlog is available in [Github project](https://github.com/sogilis/Blog/pro
 
 ## 🌍 Online
 
-1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in with your Google account.
-:information_source: All members of Sogilis team have access to this admin interface.
+1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in.
 
 2. That's it. You can now create/modify/review/delete/publish articles.
 
