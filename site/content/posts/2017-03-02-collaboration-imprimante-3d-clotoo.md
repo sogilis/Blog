@@ -1,7 +1,13 @@
 ---
-title: "Retour d’expérience : collaboration autour de l’imprimante 3D de Clotoo, « la manufacture particulière »"
+title: "Retour d’expérience : collaboration autour de l’imprimante 3D de Clotoo,
+  « la manufacture particulière »"
 author: Tiphaine
 date: 2017-03-02T09:46:27+00:00
+description: Mi 2016, Sogilis a été sollicitée par lotoo, une start-up
+  grenobloise proposant un réseau collaboratif d’imprimantes 3D entre designers,
+  industriels et particuliers. Notre objectif a été de les accompagner sur la
+  construction d'un système distribué avec des contraintes fortes de résilience,
+  de tolérance aux pannes, couplé à une interface utilisateurs fonctionnelle.
 image: /img/2017-03-article_clotoo3.jpg
 categories:
   - NOTRE VISION
@@ -17,7 +23,6 @@ tags:
   - monitoring
   - prototypage
   - startup
-
 ---
 
 **Mi 2016, Sogilis a été sollicitée par lotoo, une start-up grenobloise proposant un réseau collaboratif d’imprimantes 3D entre designers, industriels et particuliers. Notre objectif a été de les accompagner sur la construction d'un système distribué avec des contraintes fortes de résilience, de tolérance aux pannes, couplé à une interface utilisateurs fonctionnelle.**
@@ -59,4 +64,4 @@ Pendant ces quatre mois, nous avons conçu un système distribué avec des contr
 
 Source : [FrenchWeb, interview du 20 mai 2016](http://www.dailymotion.com/video/x4bh0ji_le-debrief-de-la-semaine-avec-remy-oliel-clotoo-et-antoine-martin-zenly_tech)
 
-[1]: https://drive.google.com/file/d/0B9DiUUwC4ObVOF82WTRyZkcySG8/view?usp=sharing
+[1]: https://www.dailymotion.com/video/x4bh0ji
