@@ -1,7 +1,13 @@
 ---
-title: "Retour d’expérience : collaboration autour de l’imprimante 3D de Clotoo, « la manufacture particulière »"
+title: "Retour d’expérience : collaboration autour de l’imprimante 3D de Clotoo,
+  « la manufacture particulière »"
 author: Tiphaine
 date: 2017-03-02T09:46:27+00:00
+description: Mi 2016, Sogilis a été sollicitée par Clotoo, une start-up
+  grenobloise proposant un réseau collaboratif d’imprimantes 3D entre designers,
+  industriels et particuliers. Notre objectif a été de les accompagner sur la
+  construction d'un système distribué avec des contraintes fortes de résilience,
+  de tolérance aux pannes, couplé à une interface utilisateurs fonctionnelle.
 image: /img/2017-03-article_clotoo3.jpg
 categories:
   - NOTRE VISION
@@ -17,10 +23,8 @@ tags:
   - monitoring
   - prototypage
   - startup
-
 ---
-
-**Mi 2016, Sogilis a été sollicitée par lotoo, une start-up grenobloise proposant un réseau collaboratif d’imprimantes 3D entre designers, industriels et particuliers. Notre objectif a été de les accompagner sur la construction d'un système distribué avec des contraintes fortes de résilience, de tolérance aux pannes, couplé à une interface utilisateurs fonctionnelle.**
+**Mi 2016, Sogilis a été sollicitée par Clotoo, une start-up grenobloise proposant un réseau collaboratif d’imprimantes 3D entre designers, industriels et particuliers. Notre objectif a été de les accompagner sur la construction d'un système distribué avec des contraintes fortes de résilience, de tolérance aux pannes, couplé à une interface utilisateurs fonctionnelle.**
 
 **Retour sur cette expérience avec Luc.**
 
@@ -48,15 +52,13 @@ En plus des entreprises, Clotoo souhaite mettre en relation des particuliers ave
 
 Nous avons travaillé autour de 3 besoins :
 
-- gérer les impressions sur le réseau d'imprimantes, permettant d’avoir un état précis des imprimantes
-- participer au développement de l’interface entre le réseau d’imprimantes et la boutique pour les particuliers et designers
+* gérer les impressions sur le réseau d'imprimantes, permettant d’avoir un état précis des imprimantes
+* participer au développement de l’interface entre le réseau d’imprimantes et la boutique pour les particuliers et designers
 
 Pendant ces quatre mois, nous avons conçu un système distribué avec des contraintes fortes de résilience, de tolérance aux pannes. Nous avons aussi su concilier notre expertise sur le domaine du Web avec du développement plus proche du matériel, notamment sur la réalisation du logiciel qui tourne sur les imprimantes.
 
 **Rémy Oliel, le co-fondateur de Clotoo, a répondu aux questions de FrenchWeb. Il présente les spécificités du marché grenoblois avec ses entreprises de haute technologie, la place du Scrum Master ou facilitateur et le rôle des itérations. C’est très intéressant !**
 
-[![Capture d’écran 2017-03-02 à 09.45.32](/img/2017-03-Capture-2017-03-02-09.45.32.png)][1]
+[![Capture d’écran 2017-03-02 à 09.45.32](/img/2017-03-Capture-2017-03-02-09.45.32.png)](https://www.dailymotion.com/video/x4bh0ji)
 
 Source : [FrenchWeb, interview du 20 mai 2016](http://www.dailymotion.com/video/x4bh0ji_le-debrief-de-la-semaine-avec-remy-oliel-clotoo-et-antoine-martin-zenly_tech)
-
-[1]: https://drive.google.com/file/d/0B9DiUUwC4ObVOF82WTRyZkcySG8/view?usp=sharing
