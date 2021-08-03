@@ -24,7 +24,7 @@ DevOps, livraison continue, open innovation, agilité, quand deux start-up arriv
 
 ## Pourquoi ça marche ?
 
-**Côté start-up** : Enalean et Sogilis partagent les mêmes valeurs : mise en place des dernières méthodologies d'ingénierie, exigence envers eux-même, implication des équipes internes. Ces pépites innovent constamment. En matière de business model -avec l'[Open Roadmap™ de Enalean](https://blog.enalean.com/open-roadmap-enalean-comment-ca-marche/) ou l’accompagnement [Market Driven Development de Sogilis](https://sogilis.com/purpose.html) par exemple-, en Ressources Humaines -les équipes sont auto-organisées-, en R&D -Hackathons- .
+**Côté start-up** : Enalean et Sogilis partagent les mêmes valeurs : mise en place des dernières méthodologies d'ingénierie, exigence envers eux-même, implication des équipes internes. Ces pépites innovent constamment. En matière de business model -avec l'[Open Roadmap™ de Enalean](https://blog.enalean.com/open-roadmap-enalean-comment-ca-marche/) ou l’accompagnement [Market Driven Development de Sogilis](https://sogilis.com) par exemple-, en Ressources Humaines -les équipes sont auto-organisées-, en R&D -Hackathons- .
 
 **Côté grand compte** : En travaillant avec de petites entreprises, les grands comptes développent et profitent d'idées neuves et d'une inventivité qui change la donne. À l’heure où des nouveautés émergent chaque jour, il est capital pour les industriels de suivre la cadence. Être la première à lancer et à adopter une innovation est un atout concurrentiel qui n’a pas de prix.
 
@@ -66,7 +66,7 @@ CA 2016 : 2 millions consolidés
 35 collaborateurs.
 
 [@sogilis](https://twitter.com/Sogilis)
-[https://sogilis.fr](https://sogilis.fr)
+[https://sogilis.com](https://sogilis.com)
 
 ![sogilis](/img/2017-05-Sogilis-Christophe-Levet-Photographe-7461-1024x615.jpg)
 

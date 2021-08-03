@@ -26,7 +26,7 @@ Ces facteurs d’échec et de dépassement de coûts pourraient être évités e
 
 La section II présente un état de l’art des plateformes de développement BDD existantes. La section III discute les avantages d’utiliser l’approche BDD pour améliorer la qualité et l’efficience des développements logiciels. Les sections IV et V expliquent comment une approche BDD peut être utilisée dans le développement et la vérification d’exigences fonctionnelles, y compris dans le cadre du développement de logiciels critiques et normés. La section VI présente le Framework XReq [XReq] et des exemples de cas d’utilisation.
 
-## II.	Développement piloté par le comportement 
+## II.	Développement piloté par le comportement
 
 Le développement piloté par le comportement favorise l’utilisation d’un langage naturel et commun pour expliquer les exigences fonctionnelles à travers des scénarios de test. Les scénarios de tests permettent d’apporter des exemples concrets d’application des exigences. Le développement piloté par le comportement permet de s’assurer que les exigences logicielles répondent bien aux besoins utilisateurs. Le langage naturel Gherkin [Gherkin] est utilisé par la plupart des Framework BDD pour écrire les scénarios de tests. Il s’agit d’un langage simple et facile à comprendre et à utiliser pour décrire le déroulement d’une fonctionnalité. Il décompose un scénario de test en trois principales étapes :
 
@@ -40,11 +40,11 @@ Le scénario de test est parfois suivi par un jeu de données qui complète l’
 
 La figure 2 illustre un exemple de scénario de test qui se déroule autant de fois que de nombre de lignes dans le jeu de données avec XReq.
 
-Des Frameworks de développement BDD existent comme Cucumber [Cucumber], XReq [Xreq], SpecFlow [Specflow], Jbehave [Jbehave] et Concordion [Concordion]. Cucumber est le Framework le plus connu, qui propose différentes implémentations pour de nombreux langages de programmation (Java, Go, Javascript, etc.). 
+Des Frameworks de développement BDD existent comme Cucumber [Cucumber], XReq [Xreq], SpecFlow [Specflow], Jbehave [Jbehave] et Concordion [Concordion]. Cucumber est le Framework le plus connu, qui propose différentes implémentations pour de nombreux langages de programmation (Java, Go, Javascript, etc.).
 
 SpecFlow a été développé en s’inspirant de Cucumber et utilise le langage Gherkin dans la description des scénarios de tests. Il est dédié aux applications implémentées en .net C# et s’interface avec Visual Studio. Concordion [Concordion] est un Framework de BDD écrit en Java et intègre le Framework de tests unitaires JUnit.
 
-XReq [XReq] est un Framework de test dédié au développement de logiciels embarqués écrits en C/C++ ou en Ada. Avec XReq, il est possible de générer du code de test, en langage C et en Ada et de générer des rapports de tests, en natif ou en mode croisé (tests XReq exécutés sur la plateforme cible). XReq dispose d’un outil de reporting et se greffe facilement avec l’outil de reporting cucumber-report. 
+XReq [XReq] est un Framework de test dédié au développement de logiciels embarqués écrits en C/C++ ou en Ada. Avec XReq, il est possible de générer du code de test, en langage C et en Ada et de générer des rapports de tests, en natif ou en mode croisé (tests XReq exécutés sur la plateforme cible). XReq dispose d’un outil de reporting et se greffe facilement avec l’outil de reporting cucumber-report.
 
 {{< figure src="/img/article_bdd/2020_09_09_bdd_figure_3.png" title="Figure 3. Exemples de Frameworks BDD">}}
 
@@ -56,7 +56,7 @@ La plupart des Frameworks BDD ne se contentent pas de l’aspect documentaire da
 
 L’utilisation des techniques BDD dans le développement logiciel pourrait contribuer à l’amélioration de la qualité logicielle et à l’efficience des équipes de développement. Cela peut se traduire à plusieurs niveaux, pour plusieurs activités techniques :
 
-**Maîtriser le niveau de la qualité logicielle et améliorer la qualité des exigences** : la perte de la maîtrise de la qualité d’un logiciel est souvent liée à l’accumulation des anomalies. Ces anomalies sont souvent découvertes tard dans le cycle de vie de développement logiciel et deviennent compliquées à corriger. Elles deviennent coûteuses car les équipes de développement ne disposent pas de moyens suffisants, en termes de tests, pour vérifier la non régression du logiciel suite à la livraison d’un correctif. Une des causes racines de la perte ou la non maîtrise d’un logiciel est l’absence de tests logiciels automatiques couvrant les principales fonctionnalités. 
+**Maîtriser le niveau de la qualité logicielle et améliorer la qualité des exigences** : la perte de la maîtrise de la qualité d’un logiciel est souvent liée à l’accumulation des anomalies. Ces anomalies sont souvent découvertes tard dans le cycle de vie de développement logiciel et deviennent compliquées à corriger. Elles deviennent coûteuses car les équipes de développement ne disposent pas de moyens suffisants, en termes de tests, pour vérifier la non régression du logiciel suite à la livraison d’un correctif. Une des causes racines de la perte ou la non maîtrise d’un logiciel est l’absence de tests logiciels automatiques couvrant les principales fonctionnalités.
 
 L’application d’une approche BDD durant la phase de capture de besoins permet d’écrire les scénarios de tests à implémenter dans un second temps. Les scénarios de tests écrits en BDD seront les tests de non régression qui vont aider à garantir un niveau de fiabilité du logiciel et à le maintenir plus facilement.
 
@@ -68,7 +68,7 @@ Une approche BDD peut apporter des solutions à ce niveau en améliorant d’une
 
 Les scénarios de tests BDD permettent aux équipes de développement d’apporter plus d’expressivité dans l’écriture des scénarios de tests. En effet, quand les développeurs implémentent les tests après l’implémentation des fonctionnalités, ils sont limités par l’expressivité des composants logiciels déjà implémentés. En écrivant les scénarios de tests au même moment que les exigences, ils peuvent écrire des scénarios qui appellent à la fois des composants logiciels et matériels. L’implémentation de ces tests passent par l’implémentation de composants Stub. Ces pratiques favorisent l’implémentation de tests ayant un important taux de couverture fonctionnelle. Le taux de couverture fonctionnelle est un indicateur pertinent de qualité et pourrait être amélioré et piloté par l’utilisation des techniques de BDD.
 
-**Efficience des équipes de développement** : la mise en œuvre d’une approche BDD permet aux équipes de développement d’exploiter directement des scénarios de tests validés sans passer du temps à les écrire. Nous pensons que les scénarios de tests doivent être écrits par l’équipe fonctionnelle et que l’équipe de développement doit se contenter d’implémenter ces scénarios sans les modifier. Ainsi, l’équipe de développement se contente de générer le code des tests, de les compléter, pour ensuite les exécuter et générer le rapport de tests complet. 
+**Efficience des équipes de développement** : la mise en œuvre d’une approche BDD permet aux équipes de développement d’exploiter directement des scénarios de tests validés sans passer du temps à les écrire. Nous pensons que les scénarios de tests doivent être écrits par l’équipe fonctionnelle et que l’équipe de développement doit se contenter d’implémenter ces scénarios sans les modifier. Ainsi, l’équipe de développement se contente de générer le code des tests, de les compléter, pour ensuite les exécuter et générer le rapport de tests complet.
 
 L’utilisation des outils automatiques des Framework BDD (génération de code des tests, exécution du jeu de données entier, génération des rapports de tests (Voir figure 4)) permet à l’équipe de développement de gagner en efficience.  Le BDD n’est plus seulement une démarche pour améliorer et vérifier la capture des besoins mais un ensemble d’outils pour optimiser le cycle de vie de développement logiciel. Il permet de laisser une trace documentaire à jour aidant à maintenir l’intégrité des développements.
 
@@ -77,15 +77,15 @@ L’utilisation des outils automatiques des Framework BDD (génération de code 
 Pour certains projets de certains acteurs industriels chez qui nous sommes intervenus, nous avons préconisé de remplacer la définition d’exigences par la description de scénarios de test. Un scénario de test complet avec un jeu de données complet peut remplacer une exigence. Cela peut être fait sous certaines conditions :
 
 -	L’équipe de développement doit maîtriser les techniques BDD et être mature sur la technologie.
--	L’équipe de développement doit mettre en place des standards d’architecture logicielle et d’écriture de scénario de tests pour maintenir l’intégrité et la cohérence des exigences. 
--	Associer un scénario de test, qui remplace l’exigence, à un composant logiciel. 
+-	L’équipe de développement doit mettre en place des standards d’architecture logicielle et d’écriture de scénario de tests pour maintenir l’intégrité et la cohérence des exigences.
+-	Associer un scénario de test, qui remplace l’exigence, à un composant logiciel.
 -	Les scénarios de tests doivent être écrits sous forme de tests logiciels de type boites noires et boites blanches.
 
 Pour réduire l’effort de test et standardiser l’écriture des exigences, certaines équipes ont choisi d’utiliser du pseudo code ou de la preuve formelle dans l’écriture des exigences. Cela nécessite des compétences chez l’équipe fonctionnelle pour maîtriser l’algorithmique et les langages formels, ce qui représente un frein réel et une source de génération d’anomalies. Cependant, ces problèmes peuvent être surmontés quand l’exigence est décrite sous forme de scénarios de tests avec un langage naturel simple et facile à lire et à écrire.
 
 ## V. Le BDD pour le développement de logiciels critiques
 
-Le développement de logiciels critiques, pour certains domaines (aéronautique, médical, automobile, ferroviaire, nucléaire, etc.) s’appuie sur des normes, qui déclinent tous de l’IEC 61508 [iec61508]. Chaque norme décrit des objectifs à atteindre (les exigences sont en cohérence avec l’architecture, le code respecte les standards de codage définis, toutes les exigences sont testées, etc.) pour garantir un certain niveau de fiabilité, qui consiste à démontrer et à garantir que le logiciel livré implémente exactement les fonctionnalités souhaitées. La liste des objectifs à atteindre diffère d’un niveau de criticité à un autre. 
+Le développement de logiciels critiques, pour certains domaines (aéronautique, médical, automobile, ferroviaire, nucléaire, etc.) s’appuie sur des normes, qui déclinent tous de l’IEC 61508 [iec61508]. Chaque norme décrit des objectifs à atteindre (les exigences sont en cohérence avec l’architecture, le code respecte les standards de codage définis, toutes les exigences sont testées, etc.) pour garantir un certain niveau de fiabilité, qui consiste à démontrer et à garantir que le logiciel livré implémente exactement les fonctionnalités souhaitées. La liste des objectifs à atteindre diffère d’un niveau de criticité à un autre.
 
 Dans cette section, et en partant de nos expériences de développement, nous présentons comment le BDD peut répondre à certains objectifs des normes DO-178C/ED12C (développement des logiciels aéronautiques) et IEC 62304 (développements de logiciels pour les dispositifs médicaux (DM)).
 
@@ -113,15 +113,15 @@ Dans la norme IEC 62304, nous pouvons utiliser les techniques de BDD de la même
 
 {{< figure src="/img/article_bdd/2020_09_09_bdd_figure_7.png" title="Figure 7. Description des cas de tests et génération du code des step_definitions avec XReq">}}
 
-Après exécution des tests, **XReq** génère un rapport détaillant le statut d’exécution des scénarios de tests en précisant l’état de chaque étape des scénarios (step_def) (voir figure 8). 
+Après exécution des tests, **XReq** génère un rapport détaillant le statut d’exécution des scénarios de tests en précisant l’état de chaque étape des scénarios (step_def) (voir figure 8).
 
-Aujourd’hui, le **Framework XReq** est utilisé dans plusieurs projets industriels, à la fois dans le développement de logiciels industriels et dans le développement de logiciels critiques normés. 
+Aujourd’hui, le **Framework XReq** est utilisé dans plusieurs projets industriels, à la fois dans le développement de logiciels industriels et dans le développement de logiciels critiques normés.
 
 {{< figure src="/img/article_bdd/2020_09_09_bdd_figure_8.png" title="Figure 8. Rapport de test généré par XReq">}}
 
 ### A. Développement de logiciels normés
 
-Le BDD, à travers XReq est utilisé dans le cadre du développement d’un contrôleur de vol certifié en conformité avec la DO-178C DAL A [Pulsar]. Une des principales raisons du développement de XReq par Sogilis est l’absence sur le marché d’un Framework BDD dédié aux applications embarquées et pour les logiciels critiques. L’utilisation du BDD et de XReq a été introduite dans les plans de certification décrivant les activités des processus de développement et de vérification des données logicielles. Dans ce projet, les équipes de développement ont produit jusqu’à aujourd’hui avec XReq plus de 600 cas de test de haut niveau en face des HLR (~7000 assertions implémentées dans les blocs « Then ») et plus de 1000 cas de test de bas niveau en face des LLR ((~8000 assertions implémentées dans les blocs « Then »). Grâce à cette approche, nous avons pu stabiliser le temps de gestion des anomalies à ~8% du temps total de développement logiciel.  
+Le BDD, à travers XReq est utilisé dans le cadre du développement d’un contrôleur de vol certifié en conformité avec la DO-178C DAL A [Pulsar]. Une des principales raisons du développement de XReq par Sogilis est l’absence sur le marché d’un Framework BDD dédié aux applications embarquées et pour les logiciels critiques. L’utilisation du BDD et de XReq a été introduite dans les plans de certification décrivant les activités des processus de développement et de vérification des données logicielles. Dans ce projet, les équipes de développement ont produit jusqu’à aujourd’hui avec XReq plus de 600 cas de test de haut niveau en face des HLR (~7000 assertions implémentées dans les blocs « Then ») et plus de 1000 cas de test de bas niveau en face des LLR ((~8000 assertions implémentées dans les blocs « Then »). Grâce à cette approche, nous avons pu stabiliser le temps de gestion des anomalies à ~8% du temps total de développement logiciel.
 
 XReq, et l’approche BDD d’une manière générale, a apporté de l’efficience dans ce développement logiciel. Cela nous a fortement aidé à la réalisation de plusieurs activités et pour satisfaire plusieurs objectifs de la norme, à savoir :
 -	Favoriser l’indépendance des rôles dans les activités de vérification : Efficience dans la vérification des scénarios de tests, en simplifiant la vérification des jeux de données par exemple (MC/DC, classes d’équivalence, complétude, valeurs limites, etc.) ;
@@ -129,13 +129,13 @@ XReq, et l’approche BDD d’une manière générale, a apporté de l’efficie
 -	Favoriser l’écriture d’exigences vérifiables, précises et cohérentes ;
 -	Intégration facile de l’environnement de test dans une plateforme d’intégration continue (CI)
 -	Intégration facile des scénarios de tests dans un environnement de test de type HIL (Hardware
-In the Loop) 
+In the Loop)
 
 ### B. Développement de logiciels pour automates PLC
 
-**XReq** est également utilisé pour améliorer l’efficience et la qualité dans le développement de logiciels industriels de contrôle-commande sûrs et embarqués sur des automates PLC. XReq est utilisé pour vérifier et améliorer la qualité des exigences logicielles. Les tests XReq sont implémentés en face des composants logiciels écrits avec le langage Reflex [Reflex]. Reflex est un langage de programmation de haut niveau, de type GALS « Globalement Asynchrone, Localement Synchrone » basé sur le langage Ada. Il permet d’écrire des applications logicielles de haut niveau pour du prototypage virtuel des applications de contrôle-commande. Une fois l’application Reflex testée et vérifiée en utilisant XReq, nous procédons dans un second temps à la génération de code du logiciel final qui sera déployé sur les équipements d’automates cibles. 
+**XReq** est également utilisé pour améliorer l’efficience et la qualité dans le développement de logiciels industriels de contrôle-commande sûrs et embarqués sur des automates PLC. XReq est utilisé pour vérifier et améliorer la qualité des exigences logicielles. Les tests XReq sont implémentés en face des composants logiciels écrits avec le langage Reflex [Reflex]. Reflex est un langage de programmation de haut niveau, de type GALS « Globalement Asynchrone, Localement Synchrone » basé sur le langage Ada. Il permet d’écrire des applications logicielles de haut niveau pour du prototypage virtuel des applications de contrôle-commande. Une fois l’application Reflex testée et vérifiée en utilisant XReq, nous procédons dans un second temps à la génération de code du logiciel final qui sera déployé sur les équipements d’automates cibles.
 
-Aujourd’hui, les développeurs des applications d’automates sont confrontés au manque d’outillage pour tester et vérifier les applications implémentées directement avec les outils des constructeurs des PLC. L’utilisation du BDD avec un langage de haut niveau, comme Reflex permet de vérifier les fonctionnalités et de détecter les anomalies tôt dans le cycle de vie de développement applicatif. 
+Aujourd’hui, les développeurs des applications d’automates sont confrontés au manque d’outillage pour tester et vérifier les applications implémentées directement avec les outils des constructeurs des PLC. L’utilisation du BDD avec un langage de haut niveau, comme Reflex permet de vérifier les fonctionnalités et de détecter les anomalies tôt dans le cycle de vie de développement applicatif.
 
 Dans le cadre du développement d’une application simple de gestion d’un réseau de pompes, l’équipe logicielle a produit avec XReq ~60 cas de test en face des exigences avec ~700 vérifications de type « assertion ». A ce stade, les différentes fonctionnalités de l’application ont été testées sans connaissance de plateforme matérielle cible. L’utilisation du BDD a apporté de l’efficience et de la qualité pour les logiciels industriels de contrôle-commande, et cela à plusieurs niveaux :
 -	Favoriser et améliorer la qualité et la documentation des exigences logicielles (en renforçant l’expression du besoin) et des liens de traçabilité entre les toutes les données produites (voir Figure 9);
@@ -151,13 +151,13 @@ En résumé, le BDD est une approche qui réinvente les stratégies de test et l
 
 ## VIII. Références
 
-**[ChaosReport]** : Standish Group: “Standish Group Chaos Report” 
+**[ChaosReport]** : Standish Group: “Standish Group Chaos Report”
 
 **[EcoImp]** : The Economic Impacts of Inadequate Infrastructure for Software Testing, Studies by the National Institute of Standards and Technology and the National Aeronautics and Space Administration,
 
-https://www.nist.gov/system/files/documents/director/planning/report02-3.pdf 
+https://www.nist.gov/system/files/documents/director/planning/report02-3.pdf
 
-**[Xreq]** : https://sogilis.com/services-safety-critical.html
+**[Xreq]** : https://sogilis.com/services-logiciels-critiques/
 
 **[Gherkin]** : https://cucumber.io/docs/gherkin/reference/
 
