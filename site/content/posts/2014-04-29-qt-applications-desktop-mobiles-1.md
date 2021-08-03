@@ -12,7 +12,7 @@ tags:
   - qt quick
 ---
 
-Chez [Sogilis](https://sogilis.fr), on aime bien les technologies qui nous rendent productif et qui nous permettent de se concentrer sur ce qui a vraiment de la valeur : la qualité de nos logiciels.
+Chez [Sogilis](https://sogilis.com), on aime bien les technologies qui nous rendent productif et qui nous permettent de se concentrer sur ce qui a vraiment de la valeur : la qualité de nos logiciels.
 
 Certains de nos logiciels (par exemple dans le domaine médical) utilisent [Qt](http://qt-project.org).
 

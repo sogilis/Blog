@@ -270,7 +270,7 @@ Que pensez-vous de ce workflow ? Lequel utilisez-vous de votre côté, et surtou
 
 ## Pour aller plus loin
 
-Si vous souhaitez aller plus loin, ou juste apprendre Git, nous [donnons des formations Git](https://sogilis.com/contact.html).
+Si vous souhaitez aller plus loin, ou juste apprendre Git, nous [donnons des formations Git](https://sogilis.com/contact/).
 
 Et si vous n'êtes pas rassasiés, voici une petite collection de liens à suivre :
 
