@@ -20,7 +20,7 @@ Welcome to the open source Blog of Sogilis !
 It is alive with following urls:
 
 - [https://blog.sogilis.com](https://blog.sogilis.com)
-- [https://blog.sogilis.fr](https://blog.sogilis.fr)
+- [https://blog.sogilis.com](https://blog.sogilis.fr)
 
 :information_source: For the moment, all is in french.
 :information_source: All articles regardless their languages are visible in all languages.
@@ -33,7 +33,7 @@ The backlog is available in [Github project](https://github.com/sogilis/Blog/pro
 
 ## 🌍 Online
 
-1. Go to [https://blog.sogilis.fr/admin](https://blog.sogilis.fr/admin), and sign in.
+1. Go to [https://blog.sogilis.com/admin](https://blog.sogilis.fr/admin), and sign in.
 
 2. That's it. You can now create/modify/review/delete/publish articles.
 

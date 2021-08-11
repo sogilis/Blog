@@ -20,7 +20,7 @@ jobs:
         id: check
         uses: victoriadrake/link-snitch@master
         env:
-          URL: https://blog.sogilis.fr
+          URL: https://blog.sogilis.com
           CONFIG: hydra-link-checker.json
 
       - name: Send Slack notification
