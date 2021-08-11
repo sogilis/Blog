@@ -163,9 +163,9 @@ Et pour finir cet veille, voici un article basé sur des interviews de certains 
 ### Misc
 
 * [Le secret des inventions de Google ? Nous tuons nos projets](http://rue89.nouvelobs.com/2016/02/28/secret-inventions-google-tuons-projets-263297)
-* [le problème avec les story maps](https://blog.sogilis.fr/posts/2015-02-03-decouverte-amorcage-projet-storymap/)
-* [planifier des capacités et des risques](https://blog.sogilis.fr/posts/2015-02-10-decouverte-amorcage-projet-planifier/)
-* [qu'avons-nous appris de la planification par capacités](https://blog.sogilis.fr/posts/2015-02-19-decouverte-et-amorcage-de-projet-quavons-nous/)
+* [le problème avec les story maps](https://blog.sogilis.com/posts/2015-02-03-decouverte-amorcage-projet-storymap/)
+* [planifier des capacités et des risques](https://blog.sogilis.com/posts/2015-02-10-decouverte-amorcage-projet-planifier/)
+* [qu'avons-nous appris de la planification par capacités](https://blog.sogilis.com/posts/2015-02-19-decouverte-et-amorcage-de-projet-quavons-nous/)
 * [How to Level up as a Developer](https://medium.freecodecamp.com/how-to-level-up-as-a-developer-87344584777c)
 
 [1]: https://67.media.tumblr.com/4e8e610a765d515139c83dc932c21070/tumblr_inline_o3glitq8841sv6muh_500.png

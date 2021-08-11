@@ -21,7 +21,7 @@ See also https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git
 ## API limit reach
 
 Due to GitHub limitations, you could reach the API limit when you access to
-https://blog.sogilis.fr/admin/*, especially when you `git push` many times
+https://blog.sogilis.com/admin/*, especially when you `git push` many times
 in a short time.
 
 We should considerate to migrate to a self-hosted GitLab solution for this reason.
@@ -35,10 +35,10 @@ See also
 
 ## TODO
 
-* Actually, at the link https://blog.sogilis.fr/admin/#/collections/post
+* Actually, at the link https://blog.sogilis.com/admin/#/collections/post
     the grid view with image is very slow. There are several solutions.
 
-* Stylish with our style the preview of https://blog.sogilis.fr/admin/#/collections/post/new
+* Stylish with our style the preview of https://blog.sogilis.com/admin/#/collections/post/new
 
 * In package.json remove Linux shell syntax and use only node modules to
     have compatibility with PowerShell or MS Batch. Use also https://www.npmjs.com/package/yarn-or-npm
