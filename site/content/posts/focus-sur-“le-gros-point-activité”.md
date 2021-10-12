@@ -2,6 +2,7 @@
 title: Focus sur “Le gros point activité”
 date: 2021-10-12T09:40:56.118Z
 description: Le gros point activité
+image: /img/sogilis-christophe-levet-photographe-7790.jpg
 tags:
   - vie à Sogilis
   - process
