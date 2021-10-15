@@ -1,7 +1,7 @@
 ---
 title: Focus sur “Le gros point activité”
 date: 2021-10-12T09:40:56.118Z
-description: Le gros point activité
+description: Le "gros point activité" - Luc Jeanniard
 image: /img/sogilis-christophe-levet-photographe-7790.jpg
 tags:
   - vie à Sogilis
@@ -13,7 +13,7 @@ Sogilis est une ESN qui s’est construite sur un principe fort :
 
 > ***“Ce sont les personnes compétentes et ceux qui font qui décident”***
 
-Cela se traduit par une implication de tous les collaborateurs dans les choix qui rythment la vie de l’entreprise sur des sujets tels que le recrutement, la formation, les propositions commerciales, la composition d’équipes projets, l’organisation d'événement, etc.
+Cela se traduit par une implication de tous les collaborateurs dans les choix qui rythment la vie de l’entreprise sur des sujets tels que le recrutement, la formation, les propositions commerciales, la composition d’équipes projets, l’organisation d'événements, etc.
 
 Un gros point de frustration dans certaines ESN concerne la qualité et le choix des projets des collaborateurs. Souvent, et en vue d’optimiser l’occupation des équipes, les collaborateurs ont peu de choix et se voient plus ou moins imposer de travailler pour un projet ou pour un autre. 
 
@@ -23,7 +23,7 @@ Le choix de Sogilis est d’impliquer les collaborateurs dans la co-construction
 * Avoir du plaisir à travailler
 * Être rentable
 
-Sogilis fait confiance au collectif pour atteindre ces trois objectifs. Afin d’animer les discussions et faire des choix, nous avons au fil du temps créé des points de rencontre concernant le planning d’activité : *Le Gros Point Activité*.
+Sogilis fait confiance au collectif pour atteindre ces trois objectifs. Afin d’animer les discussions et faire des choix, nous avons au fil du temps créé des points de rencontre concernant le planning d’activité : Le Gros Point Activité.
 
 Pour parler concrètement, ce temps de rencontre permet de déterminer : 
 
@@ -60,7 +60,7 @@ Puis tous les collaborateurs vont pouvoir évidemment poser des questions et lev
 
 *A titre d’exemple, lors du dernier "gros point activité", il y avait une dizaine d’opportunités très concrètes.* 
 
-Une fois toutes les données transcrites au tableau, l’équipe co-construit les hypothèses de travail afin de converger vers l’optimisation de l’activité, de la réponse aux aspirations, les équipes idéales d’un point de vue compétences et équilibre des expériences. 
+Une fois toutes les données transcrites au tableau, l’équipe co-construit les hypothèses de travail afin de converger vers l’optimisation de l’activité et de la réponse aux aspirations pour avoir les équipes idéales d’un point de vue compétences et équilibre des expériences. 
 
 Le processus est itératif car bien que les opportunités soient à une étape avancée commercialement parlant, tant qu’elles ne sont pas conclues, il y a toujours un risque qu’un projet ne se fasse pas. Si cela se produit, nous retravaillons les hypothèses. 
 
