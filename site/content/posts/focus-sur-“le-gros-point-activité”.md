@@ -18,15 +18,17 @@ Cela se traduit par une implication de tous les collaborateurs dans les choix qu
 Un gros point de frustration dans certaines ESN concerne la qualité et le choix des projets des collaborateurs. Souvent, et en vue d’optimiser l’occupation des équipes, les collaborateurs ont peu de choix et se voient plus ou moins imposer de travailler pour un projet ou pour un autre. 
 
 Le choix de Sogilis est d’impliquer les collaborateurs dans la co-construction de solutions afin de répondre à tous les enjeux importants pour l’équilibre de l’entreprise. Nous avons souvent dit que nous avons trois objectifs de plus haut niveau :
-- Enthousiasmer nos clients
-- Avoir du plaisir à travailler
-- Être rentable
+
+* Enthousiasmer nos clients
+* Avoir du plaisir à travailler
+* Être rentable
 
 Sogilis fait confiance au collectif pour atteindre ces trois objectifs. Afin d’animer les discussions et faire des choix, nous avons au fil du temps créé des points de rencontre concernant le planning d’activité : *Le Gros Point Activité*.
 
 Pour parler concrètement, ce temps de rencontre permet de déterminer : 
-- Les projets pour lesquels nous formulons des propositions
-- Qui travaillera sur les projets sélectionnés. 
+
+* Les projets pour lesquels nous formulons des propositions
+* Qui travaillera sur les projets sélectionnés. 
 
 **Principe**
 
@@ -34,23 +36,25 @@ L’équipe commerciale déclenche la proposition d’animer un “gros point ac
 
 *Comment ça se passe concrètement ?*
 
-Un créneaux de deux heures est bloqué dans les agendas et sont conviés :
-tous les collaborateurs disponibles ou prochainement disponibles (dans les 2 ou 3 mois suivants)
-tous les collaborateurs qui souhaitent s’informer des opportunités actuelles
-tous les collaborateurs qui souhaitent potentiellement changer de projet
+Un créneau de deux heures est bloqué dans les agendas et sont conviés :
+
+* tous les collaborateurs disponibles ou prochainement disponibles (dans les 2 ou 3 mois suivants)
+* tous les collaborateurs qui souhaitent s’informer des opportunités actuelles
+* tous les collaborateurs qui souhaitent potentiellement changer de projet
 
 L’équipe commerciale fait la liste des opportunités et présente le contexte de chacune d’elle (métier, attente, proposition envisagée). L’équipe technique ayant qualifiée les opportunités expose de son point de vue le travail à réaliser, les enjeux techniques, les travaux à mener et la typologie d’équipe adéquate afin de maximiser la réussite des projets. 
 
 Toutes les opportunités sont listées dans un tableau avec les différents paramètres :
-- Client
-- Projet
-- Charge
-- Taille d’équipe idéale
-- Budget
-- TJM
-- Etape commerciale
-- Plage de démarrage possible
-- Typologie du travail : conseil, dev, architecture etc. 
+
+* Client
+* Projet
+* Charge
+* Taille d’équipe idéale
+* Budget
+* TJM
+* Etape commerciale
+* Plage de démarrage possible
+* Typologie du travail : conseil, dev, architecture etc. 
 
 Puis tous les collaborateurs vont pouvoir évidemment poser des questions et lever la main pour signaler leur intérêt pour tel ou tel projet. Il peut y en avoir plusieurs. 
 
