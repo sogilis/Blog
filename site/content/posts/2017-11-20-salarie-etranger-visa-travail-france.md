@@ -38,7 +38,7 @@ Je vais tenter de vous décrire de manière synthétique et détaillée l'ensemb
 
   ![](/img/2017-10-Capture-2017-10-30-16.26.58.png)
 
-Ce document, qui comporte 5 pages, est fondamental pour l'instruction du dossier du futur salarié. Pour nous, seules les 2 premières pages étaient pertinentes. [https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15187.do](https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15187.do) et sa notice n°51883#02 : [https://www.formulaires.modernisation.gouv.fr/gf/getNotice.do?cerfaNotice=51883&cerfaFormulaire=15187](https://www.formulaires.modernisation.gouv.fr/gf/getNotice.do?cerfaNotice=51883&cerfaFormulaire=15187)
+Ce document, qui comporte 5 pages, est fondamental pour l'instruction du dossier du futur salarié. Pour nous, seules les 2 premières pages étaient pertinentes.
 
 **La liste des pièces à fournir est la suivante :**
 

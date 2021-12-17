@@ -67,8 +67,6 @@ Mais passons à la première étape : l’authentification.
 
 La première difficulté est de comprendre les mécanismes du protocole OAuth 2.0 utilisé par Google, Facebook… Pour schématiser – beaucoup –, le principe consiste à **récupérer un jeton** (représenté par une chaîne de caractères) qui permettra ensuite d’interroger les services google **sous une certaine identité** pendant une durée définie.
 
-De nombreux articles expliquent cette techno en détail, notamment celui-ci : « [Comprendre OAuth2](http://www.bubblecode.net/fr/2013/03/10/comprendre-oauth2/) ».
-
 A noter : Google propose aussi une authentification par OAuth 1.0, mais la déconseille, même si elle est encore largement utilisée.
 
 Histoire de ne pas réinventer la roue, nous allons utiliser la gem ruby [gem google drive](https://github.com/gimite/google-drive-ruby) pour l'authentification. Elle permet d’accéder aux documents Google Drive par la même occasion.

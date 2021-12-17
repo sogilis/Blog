@@ -239,8 +239,7 @@ java.lang.NullPointerException
 
 Here are some useful links to go further:
 
-- [SonarQube gradle plugin documentation](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle)
-- [SonarQube GitHub Plugin](http://docs.sonarqube.org/display/PLUG/GitHub+Plugin)
+- [SonarQube GitHub Plugin](https://github.com/SonarSource/sonar-github)
 - [GitHub pull request analysis](http://www.sonarqube.org/github-pull-request-analysis-helps-fix-the-leak/)
 - [jenkins + sonar + github integration](http://stackoverflow.com/questions/32047585/jenkins-sonar-github-integration)
 

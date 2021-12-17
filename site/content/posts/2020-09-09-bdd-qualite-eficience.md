@@ -175,5 +175,5 @@ https://www.iec.ch/functionalsafety/standards/
 
 **[Pulsar]** : Pulsar Flight System: https://www.hionos.com/#pulsar
 
-**[Reflex]** : https://www.artics.fr/produits
+**[Reflex]** : http://www.artics.fr/produits    
 
