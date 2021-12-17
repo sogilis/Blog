@@ -193,7 +193,7 @@ L’investissement dans la qualité logicielle garantit une fiabilité et une qu
 
 **[Hicken2018]** :  A. Hicken. 2018, “The Shift-Left Approach to Software Testing »,  https://www.stickyminds.com/article/shift-left-approach-software-testing
 
-**[Xreq]** : https://sogilis.com/services-logiciels-critiques/
+**[Xreq]** : https://sogilis.com/service-logiciels-critiques/
 
 
 
