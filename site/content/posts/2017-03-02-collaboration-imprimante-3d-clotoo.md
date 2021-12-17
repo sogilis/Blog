@@ -55,8 +55,4 @@ Pendant ces quatre mois, nous avons conçu un système distribué avec des contr
 
 **Rémy Oliel, le co-fondateur de Clotoo, a répondu aux questions de FrenchWeb. Il présente les spécificités du marché grenoblois avec ses entreprises de haute technologie, la place du Scrum Master ou facilitateur et le rôle des itérations. C’est très intéressant !**
 
-[![Capture d’écran 2017-03-02 à 09.45.32](/img/2017-03-Capture-2017-03-02-09.45.32.png)][1]
-
-Source : [FrenchWeb, interview du 20 mai 2016](http://www.dailymotion.com/video/x4bh0ji_le-debrief-de-la-semaine-avec-remy-oliel-clotoo-et-antoine-martin-zenly_tech)
-
-[1]: https://drive.google.com/file/d/0B9DiUUwC4ObVOF82WTRyZkcySG8/view?usp=sharing
+[FrenchWeb, interview du 20 mai 2016](http://www.dailymotion.com/video/x4bh0ji_le-debrief-de-la-semaine-avec-remy-oliel-clotoo-et-antoine-martin-zenly_tech)

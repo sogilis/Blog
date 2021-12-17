@@ -73,7 +73,7 @@ Il y a donc quelque chose qui cloche avec cette interprétation naïve.
 
 ## Que dit Internet ?
 
-Une recherche rapide sur [Grogeule](http://www.grogueule.fr) nous donne les éléments suivants :
+Une recherche rapide nous donne les éléments suivants :
 
 * _Every class should have a single responsibility, and that responsibility should be entirely encapsulated by the class_
   Le niveau d'abstraction est la **classe**. **De plus, on va ici plus loin que notre interprétation naïve : il y a **bijection** entre classe et responsabilité.
