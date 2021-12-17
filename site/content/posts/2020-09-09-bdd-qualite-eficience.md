@@ -157,7 +157,7 @@ En résumé, le BDD est une approche qui réinvente les stratégies de test et l
 
 https://www.nist.gov/system/files/documents/director/planning/report02-3.pdf
 
-**[Xreq]** : https://sogilis.com/services-logiciels-critiques/
+**[Xreq]** : https://sogilis.com/service-logiciels-critiques/
 
 **[Gherkin]** : https://cucumber.io/docs/gherkin/reference/
 
