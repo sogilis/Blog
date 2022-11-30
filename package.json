@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "bootstrap-reboot": "^4.5.4",
-    "hugo-bin": "^0.68.0",
+    "hugo-bin": "^0.95.0",
     "netlify-cms": "^2.10.91",
     "typeface-eb-garamond": "^1.1.13",
     "typeface-montserrat": "^1.1.13"
