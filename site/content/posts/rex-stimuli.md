@@ -1,7 +1,7 @@
 ---
 title: "Retour d'expérience : Stimuli "
 author: Sogilis
-date: 2022-11-30T14:33:26.805Z
+date: 2022-12-01T14:33:26.805Z
 description: >+
   Il y a quelques jours maintenant nous avons terminé une collaboration d’un an
   avec notre client Stimuli ! Une startup co-fondée par Thomas Mignard et
@@ -16,6 +16,8 @@ tags:
   - dev
   - design
 ---
+lI y a quelques jours maintenant nous avons terminé une collaboration d’un an avec notre client Stimuli ! Une startup co-fondée par Thomas Mignard et André-Charles Idier, dans le but de stimuler l’envie d’apprendre. Dans cet article, vous retrouverez le retour d'expérience de Stimuli pour cette collaboration avec Sogilis.
+
 \-﻿--
 
 **Margaux** : Bonjour, je suis Margaux. Je suis aujourd'hui avec André-Charles et Thomas, fondateurs de la start up Stimuli. La mission qu'ils se sont donnés avec Stimuli c'est de favoriser durablement pour toutes et tous l'accès, la transmission et le partage de connaissances fiables dans tous les moments de la vie. Partant de là, le premier problème qu'ils ont décidé de résoudre, c'est celui qu'éprouvent de nombreux collégiens et lycéens qui, chaque jour, lorsqu'ils sont en classe ou qu'il font leurs devoirs, ne trouvent aucune motivation et se demandent à quoi ça peut bien leur servir d'apprendre tout ça. Leur promesse avec Stimuli, c'est de stimuler la curiosité et l'envie d'apprendre. En proposant des parcours pédagogiques adaptatifs et personnalisés selon la personnalité, les centres d'intérêt et les projets de l'adolescent pour en faire les moteurs de son désir d'apprendre. 
