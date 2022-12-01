@@ -1,5 +1,5 @@
 ---
-title: "REX : Stimuli "
+title: "Retour d'expérience : Stimuli "
 author: Sogilis
 date: 2022-11-30T14:33:26.805Z
 description: >+
