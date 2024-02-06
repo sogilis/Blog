@@ -31,8 +31,6 @@ Le code source correspondant à l'article est disponible sur Github à l'address
 
 Dans certains langages la gestion de la mémoire est automatisée, que ce soit par un [garbage collector](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science))(Java, C#, Javascript, OCaml…) ou par du code généré par le compilateur (C++ [destructors](https://www.geeksforgeeks.org/destructors-c/), [Rust](https://www.rust-lang.org/) …). Dans d'autre, particulièrement le [C](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation), allouer et libérer la mémoire relève de la responsabilité du programmeur. Des objets ou structures de données créés dynamiquement (i.e. de manière non-bornée à la compilation) doivent être explicitement libérés par des fonctions dédiées, ce qui implique de respecter certaines conventions de "propriétés" sur ces données afin de s'assurer que de la mémoire allouée ne fuitera pas en étant jamais libérée ("memory-leak") ou bien, à l'inverse, que plusieurs zones du code n'essayeront pas de nettoyer plusieurs fois la même zone mémoire ("double-free").
 
-
-
 ## [](https://github.com/Brice-sogilis/di-post/blob/main/Post_fr.md#avantages-de-linjection-de-d%C3%A9pendances)Avantages de l'injection de dépendances
 
 Nous allons traiter de trois principales 'features' implémentées avec l'injection de dépendances :
@@ -280,7 +278,7 @@ fun onlySplitPolygonInSegments(polygon: Polygon): List<Segment> {
 
 ### Exemple Zig
 
-Il n'est pas toujours nécessaire d'allouer de la mémoire. En étant forcer à passer explicitement un allocator quand on a besoin de mémoire dynamique, on est plus incité à réfléchir à une solution plus simple ou efficiente, par exemple en se passant de structures de données intermédiaires :
+Il n'est pas toujours nécessaire d'allouer de la mémoire. En étant forcé à passer explicitement un allocator quand on a besoin de mémoire dynamique, on est plus incité à réfléchir à une solution plus simple ou efficiente, par exemple en se passant de structures de données intermédiaires :
 
 ```rust
 fn sumOddNumbers(numbers: []const u32) u32 {
