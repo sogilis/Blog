@@ -9,6 +9,7 @@ description: Plongez dans le monde de Zig et découvrez comment ce langage
   cette approche, avec des exemples pratiques pour illustrer son impact sur la
   programmation. Idéal pour les développeurs curieux et ceux intéressés par les
   meilleures pratiques en programmation
+image: /img/téléchargement.png
 tags:
   - dev
   - test
