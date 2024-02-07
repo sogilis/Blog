@@ -1,6 +1,6 @@
 ---
 title: 3 avantages de l'injection de dépendances, illustrés avec le cas de
-  l'allocation mémoire dans le language Zig
+  l'allocation mémoire dans le langage Zig
 author: Brice Decaestecker
 date: 2024-02-05T10:06:15.525Z
 description: Plongez dans le monde de Zig et découvrez comment ce langage
