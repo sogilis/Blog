@@ -11,7 +11,7 @@ description: >-
 
 
   Restez connecté pour d'autres articles approfondis sur des sujets liés à React.
-image: /img/2008-création-de-sogilis-à-grenoble-1-.png
+image: /img/2008-création-de-sogilis-à-grenoble-3-.png
 tags:
   - dev
 ---
