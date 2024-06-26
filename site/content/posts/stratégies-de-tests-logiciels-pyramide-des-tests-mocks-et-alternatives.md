@@ -10,6 +10,7 @@ description: La mise en place d'une bonne stratégie de tests est considérée
   d'ailleurs l'une des stratégies les plus citées et recommandées dans un projet
   logiciel. Cependant, on oublie souvent d'expliquer certaines failles qui
   accompagnent cette stratégie
+image: /img/minimalist-black-white-modern-thanks-for-watching-youtube-outro-video-16-.png
 tags:
   - test
 ---
