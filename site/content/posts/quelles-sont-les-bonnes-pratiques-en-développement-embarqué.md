@@ -11,7 +11,7 @@ image: /img/minimalist-black-white-modern-thanks-for-watching-youtube-outro-vide
 tags:
   - dev
 ---
-# LI﻿ntroduction
+# I﻿ntroduction
 
 Les systèmes embarqués tendent à être de plus en plus **complexes** ce qui **augmente** le **risque** lié aux composants logiciels. Pour rappel, ils sont conçus pour une application **spécifique**, ce qui en fait des ordinateurs avec un matériel **adapté** et dont l’utilisation ne va pas changer durant la durée de vie du produit. Ils sont souvent déployés de manière **définitive**. De plus, le coût de résolution d’un bug évolue de manière exponentielle en fonction de sa détection dans le processus de développement (étude de Barry Boehm dans “*Software Engineering economics*”).
 
@@ -26,9 +26,7 @@ Le cycle de vie du développement logiciel en embarqué utilisé de manière gé
 
 Avec ce mode de fonctionnement, les **tests** interviennent relativement **tard** dans le processus de développement et sont de nature exclusivement **fonctionnelle** (ou de **validation**). Et les **équipes** de **développement** sont **séparées** des **équipes** de **test**. Les conséquences de ce mode de développement sont l’augmentation des **risques** et des **retards** dans la livraison.
 
-
-
-# O﻿bjectifs et bonnes pratiques 
+# O﻿bjectifs et bonnes pratiques
 
 Les bonnes pratiques dans le monde du développement logiciel cherchent donc à **limiter** les **risques** et les **retards** de livraison mais aussi à **améliorer** de façon globale la **qualité** du code.
 
@@ -82,13 +80,9 @@ Ils impliquent de **compiler** et d’**exécuter** les tests sur l’environnem
 * [CppUTest](https://cpputest.github.io/)
 * [GoogleTest](https://google.github.io/googletest/)
 
-
-
 # Les tests sur cible
 
 Ils impliquent l’utilisation des **vrais pilotes** matériels. Le vrai **compilateur** est utilisé avec l’environnement **matériel réel**. Par contre, les **cycles** de test sont beaucoup plus **longs** et la configuration est souvent **impossible** à tout **automatiser**. Cependant, dans certains cas on peut également vouloir faire tourner un *framework* de test directement sur la cible. Pour automatiser les tests systèmes et fonctionnels (parfois appelé d’acceptance) il existe les framework tel que [Robot Framework](https://robotframework.org/) et [Cucumber](https://cucumber.io/).
-
-
 
 # **Test-Driven Development**
 
