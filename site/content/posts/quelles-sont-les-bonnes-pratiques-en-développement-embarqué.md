@@ -11,7 +11,7 @@ image: /img/minimalist-black-white-modern-thanks-for-watching-youtube-outro-vide
 tags:
   - dev
 ---
-# I﻿ntroduction
+# **I﻿ntroduction**
 
 Les systèmes embarqués tendent à être de plus en plus **complexes** ce qui **augmente** le **risque** lié aux composants logiciels. Pour rappel, ils sont conçus pour une application **spécifique**, ce qui en fait des ordinateurs avec un matériel **adapté** et dont l’utilisation ne va pas changer durant la durée de vie du produit. Ils sont souvent déployés de manière **définitive**. De plus, le coût de résolution d’un bug évolue de manière exponentielle en fonction de sa détection dans le processus de développement (étude de Barry Boehm dans “*Software Engineering economics*”).
 
@@ -26,6 +26,8 @@ Le cycle de vie du développement logiciel en embarqué utilisé de manière gé
 
 Avec ce mode de fonctionnement, les **tests** interviennent relativement **tard** dans le processus de développement et sont de nature exclusivement **fonctionnelle** (ou de **validation**). Et les **équipes** de **développement** sont **séparées** des **équipes** de **test**. Les conséquences de ce mode de développement sont l’augmentation des **risques** et des **retards** dans la livraison.
 
+
+
 # O﻿bjectifs et bonnes pratiques
 
 Les bonnes pratiques dans le monde du développement logiciel cherchent donc à **limiter** les **risques** et les **retards** de livraison mais aussi à **améliorer** de façon globale la **qualité** du code.
@@ -36,6 +38,8 @@ Les principaux objectifs de la mise en place des bonnes pratiques sont donc les 
 * **Assurer** la **qualité**, la **fiabilité** et la **performance** du code
 * **Détecter** et **éliminer** les **bugs** le plus **rapidement** possible
 
+
+
 # Problématiques de la mise en place des pratiques courantes du développement logiciel
 
 Le monde du développement logiciel au sens large (application native sur ordinateur, web …) a mis en place des **méthodes** de **travail** et des **bonnes** **pratiques** pour répondre aux problématiques courantes. Cependant, la mise en place de ces concepts dans le domaine de l’embarqué est **limitée** par certains aspects :
@@ -43,6 +47,8 @@ Le monde du développement logiciel au sens large (application native sur ordina
 * La **dépendance** très forte entre le **matériel** et le **logiciel** (on parle de **co-conception**)
 * L’**indisponibilité** du matériel en début de projet et/ou limitation à son accès
 * **La limitation** des **ressources** matérielles par rapport au poste de travail standard
+
+
 
 # **Règles et normes de codage**
 
@@ -61,6 +67,8 @@ Pour vérifier les règles de codage, il faut utiliser un **analyseur statique**
 
 Pour automatiser le formatage du code, il existe des outils comme [uncrustify](https://github.com/uncrustify/uncrustify) et [clang-format](https://clang.llvm.org/docs/ClangFormat.html).
 
+
+
 # **Stratégie de tests**
 
 Dans le processus de développement “*waterfall*”, il n’y a pas vraiment de stratégie de tests à proprement parler. Après l’écriture du code, le développeur **teste** son implémentation de façon **manuelle**, Grenning nomme ça le DLP (*Debug Later Programming*). Ensuite un testeur (différent du développeur) va effectuer des tests manuels pour valider (ou non) une certaine quantité de fonctionnalité au niveau système.
@@ -71,6 +79,8 @@ Dans le contexte embarqué, il est parfois **difficile** voire impossible de fai
 
 Il est donc nécessaire de faire tourner des jeux de **test** en **natif** et sur **cible** en arbitrant (suivant le contexte) sur le choix à faire.
 
+
+
 # Les tests en natif
 
 Ils impliquent de **compiler** et d’**exécuter** les tests sur l’environnement **hôte** grâce à un *framework* de test. Cette technique permet d’avoir un **feedback** très **rapide** sur le code écrit. La stratégie est basée sur des **pilotes** **virtuels** qui simulent (*mock* en anglais) le matériel. Les limites sont qu’il n’y a pas de garantie sur le comportement des pilotes virtuels (identiques à celui du matériel réel). Le développeur n’est donc pas certain que le code exécuté sur la machine hôte fonctionnera de la même manière que sur la cible matérielle. Les tests en natif sont particulièrement utiles pour les tests d’intégration et les UT. Pour automatiser les UT, il existe des frameworks tels que :
@@ -80,9 +90,13 @@ Ils impliquent de **compiler** et d’**exécuter** les tests sur l’environnem
 * [CppUTest](https://cpputest.github.io/)
 * [GoogleTest](https://google.github.io/googletest/)
 
+
+
 # Les tests sur cible
 
 Ils impliquent l’utilisation des **vrais pilotes** matériels. Le vrai **compilateur** est utilisé avec l’environnement **matériel réel**. Par contre, les **cycles** de test sont beaucoup plus **longs** et la configuration est souvent **impossible** à tout **automatiser**. Cependant, dans certains cas on peut également vouloir faire tourner un *framework* de test directement sur la cible. Pour automatiser les tests systèmes et fonctionnels (parfois appelé d’acceptance) il existe les framework tel que [Robot Framework](https://robotframework.org/) et [Cucumber](https://cucumber.io/).
+
+
 
 # **Test-Driven Development**
 
@@ -93,6 +107,8 @@ Le TDD permet également de faire de **l’encapsulation,** le développeur se f
 Les **UT** sont à la base du TDD qui permet de donner un **feedback** **rapide** au développeur. Une des bonnes pratiques d’écriture des UT est la méthode **FIRST** pour *Fast, Independent, Repeatable, Self-validating and Timely*.
 
 Cependant, il existe de nombreux biais et pièges dans l’utilisation des tests, Martin Fowler parle des [Test Cancer](https://martinfowler.com/bliki/TestCancer.html) et Edsger Dijkstra rappelle que les tests sont utiles pour démontrer la présence de bugs mais inutiles pour justifier l’absence de bugs.
+
+
 
 # **Intégration Continue**
 
@@ -106,6 +122,8 @@ Les différentes étapes de la CI peuvent être séquencée suivant ces différe
 * ***Reporting*** – La tâche de rapport rassemblera les résultats des tâches précédentes pour fournir des informations sur la réussite de la construction, les résultats de l'analyse, la couverture et les résultats des tests, etc.
 * ***Merge*** – Cette tâche fusionnera la nouvelle fonctionnalité dans la branche de déploiement lorsque tous les travaux auront abouti. Il s'agit souvent d'une tâche humaine, mais elle peut également être automatisée.
 * ***Deployment*** – Lorsque la tâche de *merge* se termine avec succès, la tâche de déploiement s'exécute et lance le processus de déploiement sur le terrain. Le déploiement interagit généralement avec un logiciel de déploiement de flotte qui peut envoyer des microprogrammes aux appareils sur le terrain. Elle est parfois difficilement automatisable et restera manuelle.
+
+
 
 # **Design Patterns**
 
@@ -135,6 +153,8 @@ Dans ses travaux, Micheal Karlesky propose une architecture modulaire avec le MC
 * Hardware : C’est une couche d’abstraction sur le matériel physique. L’état peut être les registres matériels ou un *flag* fixé par une fonction d’interruptions ou une autre routine matérielle.
 
 En résumé, il existe beaucoup de *design patterns*, le choix doit donc se faire en fonction des besoins métiers et d’architectures du système.
+
+
 
 # Ressources
 
