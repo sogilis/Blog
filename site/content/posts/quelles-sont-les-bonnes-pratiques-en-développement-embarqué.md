@@ -11,7 +11,7 @@ image: /img/minimalist-black-white-modern-thanks-for-watching-youtube-outro-vide
 tags:
   - dev
 ---
-# **I﻿ntroduction**
+# I﻿ntroduction
 
 Les systèmes embarqués tendent à être de plus en plus **complexes** ce qui **augmente** le **risque** lié aux composants logiciels. Pour rappel, ils sont conçus pour une application **spécifique**, ce qui en fait des ordinateurs avec un matériel **adapté** et dont l’utilisation ne va pas changer durant la durée de vie du produit. Ils sont souvent déployés de manière **définitive**. De plus, le coût de résolution d’un bug évolue de manière exponentielle en fonction de sa détection dans le processus de développement (étude de Barry Boehm dans “*Software Engineering economics*”).
 
@@ -26,9 +26,7 @@ Le cycle de vie du développement logiciel en embarqué utilisé de manière gé
 
 Avec ce mode de fonctionnement, les **tests** interviennent relativement **tard** dans le processus de développement et sont de nature exclusivement **fonctionnelle** (ou de **validation**). Et les **équipes** de **développement** sont **séparées** des **équipes** de **test**. Les conséquences de ce mode de développement sont l’augmentation des **risques** et des **retards** dans la livraison.
 
-
-
-# O﻿bjectifs et bonnes pratiques
+# O﻿bjectifs et bonnes pratiques 
 
 Les bonnes pratiques dans le monde du développement logiciel cherchent donc à **limiter** les **risques** et les **retards** de livraison mais aussi à **améliorer** de façon globale la **qualité** du code.
 
@@ -38,9 +36,7 @@ Les principaux objectifs de la mise en place des bonnes pratiques sont donc les 
 * **Assurer** la **qualité**, la **fiabilité** et la **performance** du code
 * **Détecter** et **éliminer** les **bugs** le plus **rapidement** possible
 
-
-
-# Problématiques de la mise en place des pratiques courantes du développement logiciel
+# P﻿roblématiques de la mise en place des pratiques courantes du développement logiciel 
 
 Le monde du développement logiciel au sens large (application native sur ordinateur, web …) a mis en place des **méthodes** de **travail** et des **bonnes** **pratiques** pour répondre aux problématiques courantes. Cependant, la mise en place de ces concepts dans le domaine de l’embarqué est **limitée** par certains aspects :
 
@@ -50,7 +46,7 @@ Le monde du développement logiciel au sens large (application native sur ordina
 
 
 
-# **Règles et normes de codage**
+# R﻿ègles et normes de codage 
 
 Le principal **langage** utilisé pour programmer les systèmes embarqués est le **C**. Dans ce langage, le développeur a une grande liberté notamment pour gérer la mémoire donc une utilisation incorrecte peut entraîner des **problèmes** et des **vulnérabilités**. Les normes de codage ont donc été introduites pour limiter les possibilités offertes par le langage et de standardiser la façon de coder.
 
@@ -69,7 +65,7 @@ Pour automatiser le formatage du code, il existe des outils comme [uncrustify](h
 
 
 
-# **Stratégie de tests**
+# S﻿tratégie de tests 
 
 Dans le processus de développement “*waterfall*”, il n’y a pas vraiment de stratégie de tests à proprement parler. Après l’écriture du code, le développeur **teste** son implémentation de façon **manuelle**, Grenning nomme ça le DLP (*Debug Later Programming*). Ensuite un testeur (différent du développeur) va effectuer des tests manuels pour valider (ou non) une certaine quantité de fonctionnalité au niveau système.
 
@@ -81,7 +77,7 @@ Il est donc nécessaire de faire tourner des jeux de **test** en **natif** et su
 
 
 
-# Les tests en natif
+# L﻿es tests en natif 
 
 Ils impliquent de **compiler** et d’**exécuter** les tests sur l’environnement **hôte** grâce à un *framework* de test. Cette technique permet d’avoir un **feedback** très **rapide** sur le code écrit. La stratégie est basée sur des **pilotes** **virtuels** qui simulent (*mock* en anglais) le matériel. Les limites sont qu’il n’y a pas de garantie sur le comportement des pilotes virtuels (identiques à celui du matériel réel). Le développeur n’est donc pas certain que le code exécuté sur la machine hôte fonctionnera de la même manière que sur la cible matérielle. Les tests en natif sont particulièrement utiles pour les tests d’intégration et les UT. Pour automatiser les UT, il existe des frameworks tels que :
 
@@ -90,15 +86,13 @@ Ils impliquent de **compiler** et d’**exécuter** les tests sur l’environnem
 * [CppUTest](https://cpputest.github.io/)
 * [GoogleTest](https://google.github.io/googletest/)
 
-
-
-# Les tests sur cible
+# L﻿es tests sur cible 
 
 Ils impliquent l’utilisation des **vrais pilotes** matériels. Le vrai **compilateur** est utilisé avec l’environnement **matériel réel**. Par contre, les **cycles** de test sont beaucoup plus **longs** et la configuration est souvent **impossible** à tout **automatiser**. Cependant, dans certains cas on peut également vouloir faire tourner un *framework* de test directement sur la cible. Pour automatiser les tests systèmes et fonctionnels (parfois appelé d’acceptance) il existe les framework tel que [Robot Framework](https://robotframework.org/) et [Cucumber](https://cucumber.io/).
 
 
 
-# **Test-Driven Development**
+# T﻿est-Driven Development
 
 Une des méthodes de travail du monde du logiciel est le **TDD** (*Test-Driven Development*) et pourtant elle est très **peu** **présente** dans le développement **embarqué**. Le TDD est une **pratique** qui vise à écrire en **premier** les **tests** puis à passer par **l’implémentation** du code en suivant un cycle avec de **petites** **itérations**. Le code produit tend à être mieux conçus et facile à intégrer. Dans le contexte de l’embarqué, il permet aussi un **découpage** du **matériel** et du **logiciel**, le développeur est amené à travailler sans la cible matérielle.
 
@@ -110,7 +104,7 @@ Cependant, il existe de nombreux biais et pièges dans l’utilisation des tests
 
 
 
-# **Intégration Continue**
+# I﻿ntégration Continue 
 
 Les **UT** sont des tests facilement **automatisable** et **intégrable** dans une logique **d’intégration** **continue**. C’est une méthode de développement de logiciel par laquelle les développeurs intègrent **régulièrement** leurs **modifications** de code. La construction automatique du système permet au code de **grossir** en terme de **fonctionnalités** et de taille de façon **contrôlée**.
 
@@ -125,7 +119,7 @@ Les différentes étapes de la CI peuvent être séquencée suivant ces différe
 
 
 
-# **Design Patterns**
+# D﻿esign Patterns 
 
 Pour faire face aux problèmes de conception logicielle, il existe des **solutions** **standard** qui permettent de ne pas réinventer la roue, ce sont les *design patterns*. Un catalogue est disponible sur le site d’*Embedded Artistry* pour lister les design patterns utiles dans le contexte de l’embarqué : <https://embeddedartistry.com/fieldatlas/design-pattern-catalogue/>.
 
@@ -156,7 +150,7 @@ En résumé, il existe beaucoup de *design patterns*, le choix doit donc se fair
 
 
 
-# Ressources
+# R﻿essources
 
 * <https://www.researchgate.net/publication/291135562_Test-Driven_Development_of_Embedded_Software>
 * <https://www.researchgate.net/publication/261282763_Effective_Test_Driven_Development_for_Embedded_Software>
@@ -168,7 +162,9 @@ En résumé, il existe beaucoup de *design patterns*, le choix doit donc se fair
 * <https://ldra.com/capabilities/coding-standard-compliance/>
 * <https://www.embedded.com/how-to-define-your-ideal-embedded-ci-cd-pipeline/>
 
-# Glossaire
+
+
+# G﻿lossaire
 
 * AUTOSAR : AUTomotive Open System ARchitecture
 * CI : Continuous Integration
