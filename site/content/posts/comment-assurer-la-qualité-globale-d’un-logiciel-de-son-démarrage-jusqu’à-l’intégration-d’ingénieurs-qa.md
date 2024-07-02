@@ -10,6 +10,7 @@ description: Assurer la qualité d’un logiciel dès son démarrage est un déf
   aborderons les pratiques à mettre en place, les signes indiquant qu'il est
   temps d'intégrer des QA, et comment choisir le bon profil QA pour votre
   équipe.
+image: /img/minimalist-black-white-modern-thanks-for-watching-youtube-outro-video-20-.png
 tags:
   - dev
 ---
