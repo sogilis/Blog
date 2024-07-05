@@ -29,23 +29,28 @@ Il est crucial de définir une architecture logicielle qui soit à la fois simpl
 
 ### 3. Mise en place de processus simples orientés Product Owner (PO)
 
-* **Acceptance** : Définissez des critères d'acceptance clairs pour chaque fonctionnalité.
-* **Rédaction de User Stories (US)** : Rédigez des user stories claires et précises pour guider le développement.
-* **Gestion du backlog** : Maintenez un backlog propre et bien organisé pour faciliter la gestion des priorités.
+* **Acceptance** : Définissez des critères d'acceptance simples et clairs pour chaque fonctionnalité. Faites en sorte d’utiliser ces critères pour réaliser l’acceptance de chaque fonctionnalité
+* **Rédaction de User Stories (US)** : Rédigez des user stories claires et précises pour cadrer les développements
+* **Gestion du backlog** : Maintenez un backlog propre et bien organisé pour faciliter la gestion des priorités et la prise de décision.
+* **Definition of Done (DoD)** : Mettez en place un ensemble de “super” critères d’acceptance à utiliser pour chaque fonctionnalité, qui permettent de garantir des aspects récurrents à chaque fonctionnalité
 
 ### 4. Mise en place d’une intégration continue (CI)
 
-* **Builds et déploiements réguliers** : Assurez-vous d'avoir des builds réguliers et des déploiements fréquents en environnement de test pour faciliter la vérification continue du logiciel.
-* **Lancement régulier des tests** : Automatisez le lancement des tests unitaires, d'intégration, end-to-end, d'installation, et de performance pour détecter rapidement les problèmes.
+* **Builds et déploiements réguliers :** Assurez-vous d'avoir des builds réguliers et des déploiements fréquents en environnement de test pour faciliter la validation continue du logiciel.
+* **Lancement régulier des tests :** Automatisez le lancement des tests unitaires, d'intégration, end-to-end, d'installation, et de performance pour détecter rapidement les problèmes.
 
 ### 5. Pratiques de développement (Software Craftsmanship)
 
-* **Test-Driven Development (TDD)** : Adoptez le TDD pour améliorer la qualité et la maintenabilité du code.
+* **Test-Driven Development (TDD)** : Adoptez le TDD pour améliorer la qualité et la maintenabilité du code, et s’assurer que ce qui va être développé correspond au mieux à ce qui est spécifié
 * **Documentation complète** : Documentez l'architecture, les spécifications et les processus pour une meilleure compréhension et évolution du système.
+
+
 
 ## Détecter les limites des moyens autonomes et intégrer des QA
 
-Bien que ces pratiques assurent une bonne qualité logicielle, elles atteignent leur limite à un certain point. Voici les indicateurs montrant qu'il est temps d'intégrer des ingénieurs QA :
+Bien que ces pratiques assurent une bonne qualité logicielle, lorsque l’équipe grandit, elles atteignent leur limite. Voici les indicateurs montrant que ces limites sont atteintes et qu'il est temps d'intégrer des ingénieurs QA :
+
+
 
 ### Indicateurs internes
 
@@ -54,12 +59,12 @@ Bien que ces pratiques assurent une bonne qualité logicielle, elles atteignent 
 * **Combinaisons de tests multiples** : Besoin de tester sur plusieurs navigateurs, OS ou matériels.
 * **Augmentation des bugs** : Davantage de bugs détectés en interne et par les clients.
 * **Validation des features** : De plus en plus de fonctionnalités à valider et des tests de non-régression insuffisants.
-* **Qualification des bugs** : Analyse et résolution des bugs demandant plus de temps et des environnements dédiés.
+* **Qualification des bugs :** Analyse et résolution des bugs demandant plus de temps et des environnements dédiés.
 
 ### Indicateurs orientés clients
 
 * **Retours clients** : Augmentation des retours clients sur des bugs ou des fonctionnalités.
-* **Validation unitaire** : Les fonctionnalités validées individuellement sans prise en compte de l'expérience utilisateur globale.
+* **Validation unitaire** : Les fonctionnalités sont validées individuellement sans prise en compte de l'expérience utilisateur globale.
 
 ## Quel profil QA recruter : Junior vs Expérimenté ?
 
@@ -67,16 +72,18 @@ Bien que ces pratiques assurent une bonne qualité logicielle, elles atteignent 
 
 **Avantages :**
 
-* Salaire moins élevé.
-* Bonne exécution des tests.
-* Adaptabilité aux outils de tests.
-* Souvent des développeurs reconvertis.
+* Pas fermé à faire seulement de l'exécution de tests pour démarrer dans le job
+* Bonne adaptabilité aux outils de tests
+* Souvent des développeurs reconvertis, donc bonne compréhension technique
+* Salaire un peu moins élevé donc intéressant pour des startups
 
 **Inconvénients :**
 
 * Difficulté à définir une stratégie de tests.
-* Besoin de temps pour comprendre les fonctionnalités.
+* Besoin de plus de temps pour comprendre les fonctionnalités et le contexte global du produit
 * Moins de recul sur l'efficacité globale des tests.
+
+
 
 ### Avantages et Inconvénients d’un QA Expérimenté
 
@@ -86,11 +93,13 @@ Bien que ces pratiques assurent une bonne qualité logicielle, elles atteignent 
 * Écriture de scénarios de tests complets.
 * Bonne connaissance des outils de tests.
 * Pertinence dans la qualification des bugs.
+* Autonomie et leadership
 
 **Inconvénients :**
 
-* Salaire plus élevé.
+* Salaire un peu plus élevé donc moins enclin aux entreprises avec budget restreint
+* Attentes de carrière plus élevées, cherchant souvent des postes avec des responsabilités accrues ou des opportunités de leadership
 
 ## Conclusion
 
-Assurer la qualité d’un logiciel sans équipe QA est possible en suivant des pratiques rigoureuses et en adoptant une approche méthodique dès le début. Cependant, reconnaître les limites de ces moyens et savoir quand intégrer des ingénieurs QA est crucial pour maintenir la qualité à long terme. Choisir le bon profil QA, qu'il soit junior ou expérimenté, dépendra des besoins spécifiques de votre projet et de votre organisation. En adoptant ces stratégies, vous pouvez garantir une qualité logicielle élevée, même sans une équipe QA dédiée dès le départ.
+Assurer la qualité d’un logiciel sans équipe QA est possible en suivant des pratiques rigoureuses et en adoptant une approche méthodique dès le début. Cependant, reconnaître les limites de ces moyens et savoir quand intégrer des ingénieurs QA est crucial pour maintenir la qualité à long terme. Choisir le bon profil QA, qu'il soit junior ou expérimenté, dépendra des besoins spécifiques de votre projet et de votre organisation ainsi que de votre budget. En adoptant ces stratégies, vous pouvez garantir une qualité logicielle élevée, même sans une équipe QA dédiée dès le départ.
