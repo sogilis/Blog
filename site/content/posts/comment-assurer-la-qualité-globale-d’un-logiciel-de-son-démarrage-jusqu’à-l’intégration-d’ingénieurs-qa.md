@@ -14,17 +14,17 @@ image: /img/minimalist-black-white-modern-thanks-for-watching-youtube-outro-vide
 tags:
   - dev
 ---
-## Que mettre en place quand on n’a pas de QA? 
+## Que mettre en place quand on n’a pas de QA?
 
 ### 1. Définir une architecture logicielle simple, robuste et performante
 
-Pour se focaliser sur les fonctionnalités essentielles, il est crucial de définir une architecture logicielle qui soit à la fois simple, robuste et performante. Cette architecture doit répondre spécifiquement aux besoins du projet pour éviter des complications inutiles dès le départ.
+Il est crucial de définir une architecture logicielle qui soit à la fois simple, robuste et performante. Cette architecture doit répondre spécifiquement aux besoins du projet pour éviter des complications inutiles dès le départ. En faisant ainsi, cela permet à l’équipe en place de se focaliser sur le développement des fonctionnalités essentielles du produit et ne pas avoir à valider sans cesse des changements d’architecture technique.
 
 ### 2. Mise en place de processus simples orientés développeurs
 
 * **Tests unitaires avec couverture** : Assurez-vous que chaque fonctionnalité dispose de tests unitaires et définissez une couverture minimale à respecter.
-* **Revue de code systématique** : Mettez en place des revues de code pour garantir la qualité et la cohérence du code.
-* **Règles pour merger et workflow de gestion de branches** : Établissez des règles claires pour les fusions de code et un workflow efficace pour la gestion des branches.
+* **Revue de code systématique** : Mettez en place des revues de code pour garantir la qualité et la cohérence du code. Faites en sorte que ces revues soient guidées par un template qui permet aux reviewers d’avoir un maximum d'informations sur ce qui a été fait sans avoir à le déduire du code source.
+* **Règles pour merger et workflow de gestion de branches** : Établissez des règles claires pour les merge des différentes branches et ayez un gitflow simple mais efficace pour la gestion de vos branches.
 * **Tests automatisés** : Intégrez différents types de tests automatisés (tests d'intégration, end-to-end, installation, upgrade) pour détecter rapidement les anomalies.
 
 ### 3. Mise en place de processus simples orientés Product Owner (PO)
@@ -42,8 +42,6 @@ Pour se focaliser sur les fonctionnalités essentielles, il est crucial de défi
 
 * **Test-Driven Development (TDD)** : Adoptez le TDD pour améliorer la qualité et la maintenabilité du code.
 * **Documentation complète** : Documentez l'architecture, les spécifications et les processus pour une meilleure compréhension et évolution du système.
-
-
 
 ## Détecter les limites des moyens autonomes et intégrer des QA
 
