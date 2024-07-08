@@ -15,6 +15,8 @@ tags:
   - process
   - dev
 ---
+Assurer la qualité d’un logiciel dès son démarrage est un défi majeur, surtout en l'absence d'une équipe QA dédiée. Cet article explore les étapes cruciales pour garantir la qualité logicielle, des premières lignes de code jusqu’à ce que l’équipe soit en mesure d’intégrer des ingénieurs QA. Nous aborderons les pratiques à mettre en place, les signes indiquant qu'il est temps d'intégrer des QA, et comment choisir le bon profil QA pour votre équipe.
+
 ## Que mettre en place quand on n’a pas de QA?
 
 ### 1. Définir une architecture logicielle simple, robuste et performante
