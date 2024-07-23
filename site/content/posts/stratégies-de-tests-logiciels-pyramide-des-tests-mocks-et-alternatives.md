@@ -1,5 +1,5 @@
 ---
-title: "Stratégies de Tests Logiciels : Pyramide des Tests, Mocks et Alternatives"
+title: "Stratégies de tests logiciels : Pyramide des tests, mocks et alternatives"
 author: Pôle pratiques de développement
 date: 2024-06-26T13:12:42.668Z
 description: La mise en place d'une bonne stratégie de tests est considérée
