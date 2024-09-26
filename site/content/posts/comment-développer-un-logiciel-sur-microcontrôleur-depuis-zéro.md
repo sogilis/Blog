@@ -5,6 +5,7 @@ date: 2024-09-19T07:54:56.720Z
 description: L'objectif de cet article est de présenter et d'expliquer les
   différentes étapes à réaliser pour construire et exécuter un programme
   informatique sur un microcontrôleur (firmware).
+image: /img/minimalist-black-white-modern-thanks-for-watching-youtube-outro-video-25-.png
 tags:
   - dev
 ---
@@ -58,26 +59,26 @@ L’élément central de la carte d’évaluation Nucleo-F446 est le **microcont
 * 512 kBytes de Flash
 * 128 kBytes de SRAM
 
-La **Flash** est un type de **mémoire morte** (EEPROM souvent abbrévié en ROM) qui permet d’avoir une grande capacité de stockage non volatile ce qui signifie qu’il n’y a pas de perte de données lors de la mise hors tension du système. C’est dans cette zone mémoire que le code sera chargé.
+La **Flash** est un type de **mémoire morte** (EEPROM souvent abrégé en ROM) qui permet d’avoir une grande capacité de stockage non-volatile ce qui signifie qu’il n’y a pas de perte de données lors de la mise hors tension du système. C’est dans cette zone mémoire que le code sera chargé.
 
-La **SRAM** (Static Random-Access Memory) est un type de **mémoire vive** qui permet un accès rapide aux données mais volatile ce qui signifie une perte des données lors de la mise hors tension du système.
+La **SRAM** (Static Random-Access Memory) est un type de **mémoire vive** qui permet un accès rapide aux données,mais volatile ce qui signifie une perte des données lors de la mise hors tension du système. 
 
 ![](/img/untitled-13-.png)
 
-Les documentations techniques sont fourni par ST-Microelectronics :
+Les documentations techniques sont fournies par ST-Microelectronics :  
 
 * Le [Reference Manual (RM0390)](https://www.st.com/resource/en/reference_manual/rm0390-stm32f446xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf) qui donne les explications pour utiliser la mémoire et les périphériques du microcontrôleur.
-* Le [Programming Manual (PM0214)](https://www.st.com/content/ccc/resource/technical/document/programming_manual/6c/3a/cb/e7/e4/ea/44/9b/DM00046982.pdf/files/DM00046982.pdf/jcr:content/translations/en.DM00046982.pdf) qui donne une description complète du processeur STM32 Cortex-M4 avec le jeux d’instructions et les périphériques du processeur.
+* Le [Programming Manual (PM0214)](https://www.st.com/content/ccc/resource/technical/document/programming_manual/6c/3a/cb/e7/e4/ea/44/9b/DM00046982.pdf/files/DM00046982.pdf/jcr:content/translations/en.DM00046982.pdf) qui donne une description complète du processeur STM32 Cortex-M4 avec le jeu d’instructions et les périphériques du processeur.
 
 ## Démarrage de la carte
 
-A la mise sous tension de la carte, le processeur effectue une suite d’opérations élémentaires avant d’exécuter le programme, cette séquence est appelé **séquence d’amorçage** (*boot*).
+À la mise sous tension de la carte, le processeur effectue une suite d’opérations élémentaires avant d’exécuter le programme, cette séquence est appelée **séquence d’amorçage** (*boot*).
 
 Une configuration matérielle permet de choisir quel type d’opération seront effectuées (*boot* *mode* avec les pins BOOT0 et BOOT1).
 
 ![](/img/rm0390-boot-conf.png)
 
-Par défaut, la configuration BOOT0 est défini ce qui signifie que c’est la zone de mémoire principal en Flash qui est sélectionnée. Une autre configuration possible serait celle qui permet de reprogrammer le programme avec l’UART, l’I2C, le SPI ou encore l’USB-DFU.
+Par défaut, la configuration BOOT0 est définie ce qui signifie que c’est la zone de mémoire principale en Flash qui est sélectionnée. Une autre configuration possible serait celle qui permet de reprogrammer le programme avec l’UART, l’I2C, le SPI ou encore l’USB-DFU.
 
 ![](/img/rm0390-memory-map.png)
 
@@ -85,12 +86,12 @@ Par défaut, la configuration BOOT0 est défini ce qui signifie que c’est la z
 
 Les emplacements mémoire dans le mode *Main Flash Memory* sont donc les suivant :
 
-* SRAM : A l’adresse 0x20000000 de taille 128kB
-* Flash : A l’adresse 0x08000000 de taille 512kB
+* SRAM : À l’adresse 0x20000000 de taille 128kB
+* Flash : À l’adresse 0x08000000 de taille 512kB
 
 Lors du *boot* en mode *Main Flash Memory*, les données stockées dans la zone mémoire de la Flash seront en miroir dans la zone mémoire commençant à l’adresse 0x00000000.
 
-A la mise sous-tension (ou après un redémarrage) de la carte, le processeur lève une **interruption** matérielle : ***RESET***.
+À la mise sous tension (ou après un redémarrage) de la carte, le processeur lève une **interruption** matérielle : ***RESET***.
 
 ![](/img/pm0214-exception-types.png)
 
@@ -105,7 +106,7 @@ Le processeur va alors charger les registres dans l’ordre suivant :
 
 Durant l’exécution du programme, le registre MSP contient l’adresse de la pile et le registre PC contient l’adresse de l’instruction en cours.
 
-Donc au démarrage de la carte, le registre MSP va pointer sur le début de la pile et le registre PC sur l’adresse mémoire de la fonction *Reset*.
+Donc, au démarrage de la carte, le registre MSP va pointer sur le début de la pile et le registre PC sur l’adresse mémoire de la fonction *Reset*.
 
 ![](/img/pm0214-on-reset.png)
 
@@ -113,9 +114,9 @@ La gestion des données est définie dans un fichier de configuration pour l’�
 
 ![](/img/présentation-sans-titre.png)
 
-La fonction *Reset* est la porte d’entrée dans notre application et elle doit être en charge de:
+La fonction *Reset* est la porte d’entrée dans notre application et elle doit être en charge de :
 
-* Copier la section .data de la ROM (aussi appelé Flash) vers la RAM
+* Copier la section .data de la ROM (aussi appelée Flash) vers la RAM
 * Initialiser les variables de la section .bss à 0
 * Appeler la fonction *main()*
 
@@ -125,7 +126,7 @@ Avant l’écriture de ligne de code, il faut mettre en place son **environnemen
 
 ![](/img/untitled-14-.png)
 
-L’environnement de développement présenté dans cet article est celui du kata ***[nucleo-board-from-scratch](https://github.com/sogilis/sogilis-katalog/tree/main/nucleo-board-from-scratch/C)*** sur le dépôt de sogilis.
+L’environnement de développement présenté dans cet article est celui du kata ***[nucleo-board-from-scratch](https://github.com/sogilis/sogilis-katalog/tree/main/nucleo-board-from-scratch/C)*** sur le dépôt de Sogilis.
 
 Il intègre les outils suivants :
 
@@ -133,9 +134,9 @@ Il intègre les outils suivants :
 
 Le choix des outils s’est tourné vers des solutions **open-source** qui sont largement utilisé dans le monde de l’industrie.
 
-L’installation des outils se fait dans un environnement **Linux** (Ubuntu:22.04) ou avec **Docker**, le projet contient un dockerfile pour construire une image Docker contenant tout les outils nécessaire.
+L’installation des outils se fait dans un environnement **Linux** (Ubuntu:22.04) ou avec **Docker**, le projet contient un dockerfile pour construire une image Docker contenant tous les outils nécessaires.
 
-La suite de commande pour compiler, exécuter le code ou autre sont explicités dans le fichier *[Readme.md](http://Readme.md)* présent à la racine du projet.
+La suite des commandes pour compiler, exécuter le code ou autre sont explicités dans le fichier *[Readme.md](http://Readme.md)* présent à la racine du projet.
 
 L’**arborescence** du projet est la suivante :
 
@@ -194,9 +195,9 @@ Pour pouvoir faire varier l’état de ce GPIO, il faut suivre les étapes suiva
 5. Configurer la pin GPIO en *no pull-up/down* (registre GPIOA_PUPDR)
 6. Mettre la pin GPIO à l’état bas (registre GPIOA_ODR)
 
-D’un point de vue du code, l’**accès** aux **périphériques** se fait par des **adresses mémoires** de **32 bits** dans le cadre de notre microcontrôleur. Pour cela il y a plusieurs méthodes :
+D’un point de vue du code, l’**accès** aux **périphériques** se fait par des **adresses mémoires** de **32 bits** dans le cadre de notre microcontrôleur. Pour cela, il y a plusieurs méthodes :
 
-La première méthode consiste à déclarer des **pointeurs** mais cette solution fait utiliser la mémoire RAM :
+La première méthode consiste à déclarer des **pointeurs,** mais cette solution fait utiliser la mémoire RAM :
 
 ```c
 volatile uint32_t *GPIOA_MODER = 0x40020000;
@@ -206,7 +207,7 @@ volatile uint32_t *GPIOA_PUPDR = 0x4002000C;
 volatile uint32_t *GPIOA_ODR = 0x40020014;
 ```
 
-La deuxième méthode consiste à déférencer des pointeurs :
+La deuxième méthode consiste à déréférencer des pointeurs :
 
 ```c
 #define RCC_AHB1ENR (*(volatile uint32_t *)0x40023830)
@@ -217,7 +218,7 @@ La deuxième méthode consiste à déférencer des pointeurs :
 #define GPIOA_ODR (*(volatile uint32_t *)0x40020014)
 ```
 
-La troisième méthode est d’utilisé un pointeur de structure :
+La troisième méthode est d’utiliser un pointeur de structure :
 
 ```c
 /* 3ème méthode - Pointeur de structure */
@@ -232,7 +233,7 @@ typedef struct {
 #define GPIOA (*(gpio_s*)(0x40020000))
 ```
 
-STMicroelectronics met à disposition une bibliothèque HAL (Hardware Abstraction Layer) open-source qui à pour objectif de faciliter la vie des développeurs en réduisant les efforts, le temps et les coûts ([Lien vers Github](https://github.com/STMicroelectronics/stm32f4xx_hal_driver)). Cette HAL utilise les méthodes 2 et 3 pour définir l’accès aux périphériques. Cependant, dans le cadre de notre article, le choix a été fait de ne pas l’utiliser.
+STMicroelectronics met à disposition une bibliothèque HAL (Hardware Abstraction Layer) open-source qui a pour objectif de faciliter la vie des développeurs en réduisant les efforts, le temps et les coûts ([Lien vers Github](https://github.com/STMicroelectronics/stm32f4xx_hal_driver)). Cette HAL utilise les méthodes 2 et 3 pour définir l’accès aux périphériques. Cependant, dans le cadre de notre article, le choix a été fait de ne pas l’utiliser.
 
 ***Le mot-clés volatile permet d’éviter les optimisations du compilateur sur la variable et que le programme veut accéder à une variable qui peut être modifiée par le matériel.***
 
@@ -299,7 +300,7 @@ void userLed_set(userLed_state_e state) {
 }
 ```
 
-Ces lignes de code ne sont pas directement utilisable comme tels mais doivent être intégrées dans une fonction *main()* et un fichier de liens (voir section **Démarrage de la carte**).
+Ces lignes de code ne sont pas directement utilisables comme tels mais doivent être intégrées dans une fonction *main()* et un fichier de liens (voir section **Démarrage de la carte**).
 
 Le code ne peut donc pas être testé sur le matériel.
 
@@ -307,9 +308,9 @@ En revanche, il est tout à fait faisable de tester ce code sur la machine hôte
 
 ## Test en natif
 
-Les tests en natif sont pratique pour **tester** rapidement des modules de code sur la machine **hôte** (et non pas le *firmware* complet). Ils ont l’avantage de pouvoir être exécuté rapidement, d’être indépendant du matériel cible et de donner un feedback rapide aux développeurs.
+Les tests en natif sont pratiques pour **tester** rapidement des modules de code sur la machine **hôte** (et non pas le *firmware* complet). Ils ont l’avantage de pouvoir être exécuté rapidement, d’être indépendant du matériel cible et de donner un feedback rapide aux développeurs.
 
-***Dans le cadre de la pratique du TDD, les développeurs vont privilégier ce type de méchanisme de test.***
+***Dans le cadre de la pratique du TDD, les développeurs vont privilégier ce type de mécanisme de test.***
 
 Cependant, il nécessite d’avoir une seconde *toolchain* pour pouvoir compiler les binaires de test qui seront exécutés sur la machine hôte. Des **divergences** peuvent exister entre les configurations matérielles des deux machines comme par exemple la taille des registres, des adresses mémoires et d’*endianness* (qui désigne la manière dont les ordinateurs organisent les octets pour constituer des nombres avec soit les bits de points fort *MSB* en premier ou les bits de poids faible *LSB* en premier).
 
@@ -317,7 +318,7 @@ De plus, pour simuler les registres matériels, une configuration **complexe** e
 
 ## Adaptation pour les tests
 
-L’accès aux adresses mémoires du microcontrôleur n’est pas possible lorsqu’on compile les tests puisqu’ils sont compilés en natif. Les adresses des périphériques pointeront alors vers une zone mémoire de la machine hôte ce qui peut proposer un comportement non prévue. Il est donc nécessaire de **redéfinir** ces adresses vers une zone mémoire permis.
+L’accès aux adresses mémoires du microcontrôleur n’est pas possible lorsqu’on compile les tests puisqu’ils sont compilés en natif. Les adresses des périphériques pointeront alors vers une zone mémoire de la machine hôte ce qui peut proposer un comportement non prévu. Il est donc nécessaire de **redéfinir** ces adresses vers une zone mémoire permis.
 
 ```c
 #ifndef UTEST
@@ -346,7 +347,7 @@ volatile uint32_t RCC_AHB1ENR = 0;
 
 ## Mock avec CMocka
 
-Le *framework* CMocka permet en plus d’écrire des tests unitaires, de ***mocker*** des objets. Cette fonctionalité permet d’imiter le comportement d’objets réels en vérifiant les paramètres attendues et de retourner un état contrôler depuis le test.
+Le *framework* CMocka permet en plus d’écrire des tests unitaires, de ***mocker*** des objets. Cette fonctionnalité permet d’imiter le comportement d’objets réels en vérifiant les paramètres attendus et de retourner un état contrôlé depuis le test.
 
 Dans notre cas, on peut mocker la fonction `userLed_set()` de cette manière :
 
@@ -365,7 +366,7 @@ void userLed_set(userLed_state_e state) {
 
 Le développement logiciel sur microcontrôleur varie d’un développement traditionnel sur ordinateur. Il faut prendre en compte la forte **dépendance** du matériel et adapté ses implémentations en conséquence. Néanmoins, il est possible de mettre en place des mécanismes pour pouvoir faire des tests en **natifs** et donc **accélérer** les boucles de **feedback**.
 
-Cet article a traité du développement logiciel sur microcontrôleur en partant de zéro mais sans aborder les notions de mise en place d’un environnement de travail ni même dans la mise en place d’un système d’exploitation temps réel (*RTOS*).
+Cet article a traité du développement logiciel sur microcontrôleur en partant de zéro, mais sans aborder les notions de mise en place d’un environnement de travail ni même dans la mise en place d’un système d’exploitation temps réel (*RTOS*).
 
 ### Ressources
 
