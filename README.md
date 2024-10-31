@@ -17,10 +17,9 @@
 # Sogilis Blog
 
 Welcome to the open source Blog of Sogilis !
-It is alive with following urls:
+It is alive with following url:
 
 - [https://blog.sogilis.com](https://blog.sogilis.com)
-- [https://blog.sogilis.com](https://blog.sogilis.fr)
 
 :information_source: For the moment, all is in french.
 :information_source: All articles regardless their languages are visible in all languages.
@@ -29,7 +28,7 @@ The backlog is available in [Github project](https://github.com/sogilis/Blog/pro
 
 # How to write a new article?
 
-***Do not hesitate to ask help.*** . We answer with enjoy :-) !
+***Do not hesitate to ask help***. We answer with enjoy :-) !
 
 ## 🌍 Online
 
