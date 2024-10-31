@@ -7,15 +7,6 @@ other = "Publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf \"%d\" .Da
 [services]
 other = "Services"
 
-[cloudNativeApplications]
-other = "Applications Cloud Natives"
-
-[embeddedSoftwares]
-other = "Logiciels Embarqués & IoT"
-
-[criticalSoftwares]
-other = "Logiciels Critiques"
-
 [theCompany]
 other = "L'entreprise"
 

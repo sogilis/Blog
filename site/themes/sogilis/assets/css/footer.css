@@ -30,18 +30,6 @@ footer {
   grid-area: footer-logo;
 }
 
-/* Services */
-/* ======== */
-#footer-services {
-  grid-area: footer-services;
-}
-
-/* company */
-/* ======= */
-#footer-company {
-  grid-area: footer-company;
-}
-
 /* hr */
 /* == */
 #footer-hr {
@@ -141,8 +129,6 @@ footer {
   #sofooter {
     grid-template-areas:
       'footer-subgridadress'
-      'footer-services'
-      'footer-company'
       'footer-hr'
       'footer-subfooter';
     justify-content: center;
@@ -183,7 +169,6 @@ footer {
   #sofooter {
     grid-template-areas:
       'footer-subgridadress  footer-subgridadress'
-      'footer-services     footer-company'
       'footer-hr           footer-hr'
       'footer-subfooter    footer-subfooter';
     grid-template-columns: 50% 50%;
@@ -213,7 +198,6 @@ footer {
   #sofooter {
     grid-template-areas:
       'footer-logo        .                   footer-subgridadress   footer-subgridadress'
-      '.                   .                   footer-services      footer-company'
       'footer-hr          footer-hr          footer-hr            footer-hr'
       'footer-subfooter   footer-subfooter   footer-subfooter     footer-subfooter';
     /* Should be after */
