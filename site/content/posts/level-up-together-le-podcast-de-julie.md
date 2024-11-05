@@ -1,7 +1,7 @@
 ---
 title: Level up together - Le podcast de Julie
 author: Sogilis
-date: 2024-11-05T13:07:37.646Z
+date: 2024-06-03T12:07:37.646Z
 description: Plongez dans le podcast de Julie Bernard qui explore diverses
   dimensions des ressources humaines, allant du recrutement à l'onboarding, du
   management au développement des compétences, en passant par les modes
