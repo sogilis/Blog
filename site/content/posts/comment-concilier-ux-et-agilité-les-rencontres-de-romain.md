@@ -1,7 +1,7 @@
 ---
 title: Comment concilier UX et agilité ? - Les rencontres de Romain
 author: Sogilis
-date: 2024-08-13T09:14:17.439Z
+date: 2024-09-16T09:14:17.439Z
 description: Plongez dans les entretiens captivants de Romain Chabbal avec des
   experts influents du design UX et de l'agilité. À travers ces rencontres,
   explorez des idées novatrices et des pratiques pionnières qui façonnent notre
