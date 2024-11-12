@@ -2,7 +2,7 @@
 title: "Julie Bernard : Un Double Témoignage sur l’Attraction et la Fidélisation
   des Talents chez Sogilis"
 author: Sogilis
-date: 2024-06-09T12:41:34.446Z
+date: 2023-06-12T12:41:34.446Z
 description: Dans un contexte où la pénurie de talents dans le secteur IT
   devient un défi majeur, Julie Bernard, responsable du développement des
   compétences chez Sogilis, s'exprime à travers deux publications pour partager
