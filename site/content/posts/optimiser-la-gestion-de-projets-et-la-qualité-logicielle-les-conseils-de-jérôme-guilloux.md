@@ -61,3 +61,5 @@ Voici un résumé de ses articles LinkedIn 2024 !
 - - -
 
 Ces articles ne sont pas seulement des ressources techniques, mais des outils pour repenser la manière dont nous abordons la gestion de projets et la qualité logicielle au quotidien. Jérôme Guilloux met l'accent sur l’importance d’adopter des stratégies adaptées, de choisir les bons profils, et d’automatiser ce qui peut l’être pour gagner en efficacité. En intégrant ces pratiques dans votre organisation, vous pourrez non seulement répondre aux défis actuels mais aussi vous préparer à une évolution constante des besoins du marché. Un véritable guide pour transformer des défis en opportunités.
+
+Pour d'autres contenus de Jérôme, consultez [cet article ](https://blog.sogilis.com/posts/les-interventions-de-j%C3%A9r%C3%B4me-guilloux-en-2023-une-expertise-partag%C3%A9e-pour-am%C3%A9liorer-linnovation-et-la-performance-des-%C3%A9quipes-tech/)avec des vidéos et podcasts réalisés en 2023.
