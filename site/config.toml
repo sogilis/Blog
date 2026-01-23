@@ -16,7 +16,7 @@ enableRobotsTXT = true
   languageName = "Français"
 
   [languages.fr.params]
-    twitter = "https://twitter.com/Sogilis?lang=fr"
+    # twitter = "https://twitter.com/Sogilis?lang=fr" # no longer in use
     linkedin = "https://www.linkedin.com/company/sogilis/"
 
 [outputs]
