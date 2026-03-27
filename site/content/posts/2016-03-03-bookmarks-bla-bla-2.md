@@ -39,7 +39,7 @@ Histoire de rester dans les nouveaux langages et dans les emoji, il m'est très 
 
 ### Web
 
-Il existe, depuis longtemps, de très nombreuses études, articles, blog post, sur la criticité de réaliser des sites web rapides. Avec l'avènement des applications web, des single page app, le problème est encore plus central aujourd'hui. Néanmoins, le temps moyen de chargement semble être toujours autour de 5 secondes sur desktop et 8 secondes sur mobile. Quand on sait que [66% des utilisateurs n'attendent que 4 secondes](http://www.yottaa.com/company/blog/application-optimization/the-four-second-syndrome/), j'espère que vous comprendrez l'avantage significatif de réaliser des applications réellement rapides à charger.
+Il existe, depuis longtemps, de très nombreuses études, articles, blog post, sur la criticité de réaliser des sites web rapides. Avec l'avènement des applications web, des single page app, le problème est encore plus central aujourd'hui. Néanmoins, le temps moyen de chargement semble être toujours autour de 5 secondes sur desktop et 8 secondes sur mobile. Quand on sait que [66% des utilisateurs n'attendent que 4 secondes](https://www.yottaa.com/the-four-second-syndrome/), j'espère que vous comprendrez l'avantage significatif de réaliser des applications réellement rapides à charger.
 
 ### JavaScript
 
